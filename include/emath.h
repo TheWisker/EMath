@@ -37,6 +37,8 @@ class Monomial {
         std::string expression;
 
         void swap(Monomial& other) noexcept; //Swap function
+
+        inline void refresh_degree() noexcept; //Update degree function
         inline void refresh_expression() noexcept; //Update expression function
 };
 
@@ -69,6 +71,7 @@ class Polynomial {
         std::string expression;
 
         void swap(Polynomial& ogn) noexcept; //Swap function
+        inline void refresh_degree() noexcept; //Update degree function
         inline void refresh_expression() noexcept; //Update expression function
 
         struct Values {

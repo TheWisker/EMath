@@ -130,46 +130,70 @@ Polynomial Polynomial::operator /(Polynomial ogn) const noexcept {return ogn /= 
 
 //Arithmetic assigment operators
 Polynomial& Polynomial::operator +=(const Polynomial& ogn) noexcept {
-    int k, kk;
-    while(k < this->monomials.size()) {
-        kk = 0;
-        while(kk < ogn.monomials.size()) {
-            if (ogn.monomials[kk].get_degree() == this->monomials[k].get_degree()) {break;}
-            kk++;
+    for (Monomial k : this->monomials) {
+        for(Monomial kk: ogn.monomials) {
+            if (k.get_degree() == kk.get_degree()) {
+                k += kk;
+                break;
+            }
         }
-        this->monomials[k] += ogn.monomials[kk];
     }
+    //Add the no matching degree monomials to k
+    //Update degree
     this->refresh_expression();
     return *this;
 }
 Polynomial& Polynomial::operator -=(const Polynomial& ogn) noexcept {
-    int k, kk;
-    while(k < this->monomials.size()) {
-        kk = 0;
-        while(kk < ogn.monomials.size()) {
-            if (ogn.monomials[kk].get_degree() == this->monomials[k].get_degree()) {break;}
-            kk++;
+    for (Monomial k : this->monomials) {
+        for(Monomial kk: ogn.monomials) {
+            if (k.get_degree() == kk.get_degree()) {
+                k -= kk;
+                break;
+            }
         }
-        this->monomials[k] -= ogn.monomials[kk];
     }
+    //Add the no matching degree monomials to k
+    //Update degree
     this->refresh_expression();
     return *this;
 }
 Polynomial& Polynomial::operator *=(const Polynomial& ogn) noexcept {
-    for(int k = 0; k < this->monomials.size(); k++) {
-        for(int kk = 0; kk < ogn.monomials.size(); kk++) {
-            this->monomials[k] *= ogn.monomials[kk];
+    std::vector<Monomial> mns;
+    for(Monomial k : this->monomials) {
+        for(Monomial kk : ogn.monomials) {
+            mns.push_back(k * kk);
         }
     }
+    for (Monomial k : mns) {
+        for(int kk = 0; kk < mns.size(); kk++) {
+            if (mns[kk].get_degree() == mns[kk].get_degree()) {
+                k += mns[kk];
+                mns.erase(mns.begin() + kk);
+            }
+        }
+    }
+    this->monomials = mns;
+    //Update degree
     this->refresh_expression();
     return *this;
 }
 Polynomial& Polynomial::operator /=(const Polynomial& ogn) noexcept {
-    if (coeff == 0) {
-        throw std::invalid_argument("Divide by zero");
+    std::vector<Monomial> mns;
+    for(Monomial k : this->monomials) {
+        for(Monomial kk : ogn.monomials) {
+            mns.push_back(k / kk);
+        }
     }
-    this->coeff /= ogn.coeff;
-    this->degree -= ogn.degree;
+    for (Monomial k : mns) {
+        for(int kk = 0; kk < mns.size(); kk++) {
+            if (mns[kk].get_degree() == mns[kk].get_degree()) {
+                k += mns[kk];
+                mns.erase(mns.begin() + kk);
+            }
+        }
+    }
+    //Check for el Resto
+    //Update degree
     this->refresh_expression();
     return *this;
 }
