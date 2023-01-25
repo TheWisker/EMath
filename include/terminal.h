@@ -8,7 +8,8 @@
 class Terminal {
     public:
         Terminal();
-        int start(auto* ptr);
+        //int start(auto* ptr);
+        int start();
 
     private:
         class {}* core;

@@ -7,11 +7,11 @@ Terminal::Terminal() {
     this->output(getmaxx(stdscr) / 2 - 17, 1, "Welcome to the equation calculator!\n", COLOR_BLUE);
 }
 
-int Terminal::start(auto* ptr) {
+int Terminal::start() { //auto* ptr
     int option;
     bool active = true;
 
-    this->core = ptr;
+    //this->core = ptr;
     this->clear();
 
     do {
@@ -37,7 +37,8 @@ int Terminal::start(auto* ptr) {
         }
     } while (active);
 
-    delete this->core, &option, &active;
+    //delete this->core,
+    delete &option, &active;
     endwin();
     return 0;
 }
@@ -68,7 +69,7 @@ template <typename T> inline void Terminal::input(int x, int y, std::string s, T
 
 inline void Terminal::option_add() {
     this->title("Create a new equation");
-
+    /*
     Equation eq;
     std::string count;
     this->input(5, 3, "Degree:", &eq.degree, COLOR_YELLOW);
@@ -80,16 +81,18 @@ inline void Terminal::option_add() {
     delete &count;
 
     this->core->add(&eq);
+    
     delete &eq;
+    */
 };
 
 inline void Terminal::option_remove() {
-    this->core->remove();
+    /*this->core->remove();*/
 };
 
 inline void Terminal::option_show() {
     this->title("Show all equations");
-
+    /*
     std::vector<Equation> eqs;
     this->core->get(&eqs);
 
@@ -99,4 +102,11 @@ inline void Terminal::option_show() {
     }
 
     delete &eqs;
+    */
 };
+
+int main() {
+    Terminal* terminal = new Terminal();
+    terminal->start();
+    return 0;
+}
