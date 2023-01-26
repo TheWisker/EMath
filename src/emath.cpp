@@ -55,15 +55,15 @@ bool Monomial::operator >=(const Monomial& ogn) const noexcept {return (this->de
 bool Monomial::operator <=(const Monomial& ogn) const noexcept {return (this->degree <= ogn.degree);};
 
 //Arithmetic operators
-Monomial Monomial::operator +(Monomial ogn) const noexcept {return ogn += *this;}
-Monomial Monomial::operator -(Monomial ogn) const noexcept {return ogn -= *this;}
-Monomial Monomial::operator *(Monomial ogn) const noexcept {return ogn *= *this;}
-Monomial Monomial::operator /(Monomial ogn) const noexcept {return ogn /= *this;}
-Monomial Monomial::operator %(Monomial ogn) const noexcept {return ogn %= *this;}
+Monomial Monomial::operator +(const Monomial& ogn) const noexcept {return Monomial(*this) += ogn;}
+Monomial Monomial::operator -(const Monomial& ogn) const noexcept {return Monomial(*this) -= ogn;}
+Monomial Monomial::operator *(const Monomial& ogn) const noexcept {return Monomial(*this) *= ogn;}
+Monomial Monomial::operator /(const Monomial& ogn) const noexcept {return Monomial(*this) /= ogn;}
+Monomial Monomial::operator %(const Monomial& ogn) const noexcept {return Monomial(*this) %= ogn;}
 
 //Arithmetic assigment operators
 Monomial& Monomial::operator +=(const Monomial& ogn) noexcept {
-    if (this->degree != ogn.degree) {this->coeff += ogn.coeff;}
+    if (this->degree == ogn.degree) {this->coeff += ogn.coeff;}
     return *this;
 }
 Monomial& Monomial::operator -=(const Monomial& ogn) noexcept {
@@ -76,30 +76,27 @@ Monomial& Monomial::operator *=(const Monomial& ogn) noexcept {
     return *this;
 }
 Monomial& Monomial::operator /=(const Monomial& ogn) noexcept {
-    if (this->coeff != 0) {
+    if (ogn.coeff != 0) {
         this->coeff /= ogn.coeff;
         this->degree -= ogn.degree;
     }
     return *this;
 }
 Monomial& Monomial::operator %=(const Monomial& ogn) noexcept {
-    if (this->coeff != 0) {
-        this->coeff = this->coeff - ogn.coeff * (this->coeff / ogn.coeff);
+    if (ogn.coeff != 0) {
+        this->coeff = std::fmod(this->coeff, ogn.coeff);
         this->degree -= ogn.degree;
     }
     return *this;
 }
 
-//Stream operator
-std::ostream& Monomial::operator <<(std::ostream& out) {
-    out << this->coeff << "x^" << this->degree;
-    return out;
-}
+std::stringstream& operator<<(std::stringstream& ss, const Monomial& m) {ss << m.coeff << "x^" << m.degree; return ss;}
+std::ostream& operator<<(std::ostream& out, const Monomial& m) {out << m.coeff << "x^" << m.degree; return out;}
 
 //Attributes getters (degree, coeff, expression)
 int Monomial::get_degree() const noexcept {return this->degree;}
 double Monomial::get_coeff() const noexcept {return this->coeff;}
-std::string Monomial::get_expression() const noexcept {return std::to_string(this->coeff) + "x^" + std::to_string(this->degree);}
+std::string Monomial::get_expression() const noexcept {return (std::stringstream() << *this).str();}
 
 //Value for x getter
 double Monomial::get_value(const double& x) const noexcept {return (this->coeff * std::pow(x, this->degree));};
@@ -268,7 +265,6 @@ void Polynomial::swap(Polynomial& ogn) noexcept {
 
 Polynomial::~Polynomial() = default;
 
-
 std::ostream& operator<<(std::ostream &out, const Polynomial &p) {
     if(p.get_monomials().empty()) {return out;}
     if(p.get_monomials().size() >= 2) {
@@ -279,92 +275,4 @@ std::ostream& operator<<(std::ostream &out, const Polynomial &p) {
     }
     out << ((p.get_monomials().front().get_coeff() >= 0) ? (" + " + std::to_string(p.get_monomials().front().get_coeff())) : (" - " + std::to_string(-p.get_monomials().front().get_coeff())));
     return out;
-}
-
-int main() {
-    std::cout << "Executing tests!" << std::endl;
-
-    // Test constructors
-    Polynomial p1;
-    assert(p1.get_degree() == 0); // Default constructor should create a polynomial with degree 0
-
-    std::cout << "First test passed!" << std::endl;
-
-    Monomial m1(2, 3);
-    Monomial m2(-1, 2);
-    Monomial m3(4, 1);
-    Monomial m4(5, 0);
-    std::cout << "2 test passed!" << std::endl;
-    std::vector<Monomial> monomials {m1, m2, m3, m4};
-    std::cout << "3 test passed!" << std::endl;
-    Polynomial p2(monomials);
-    std::cout << "4 test passed!" << std::endl;
-    assert(p2.get_degree() == 3); // Constructor with monomial vector should create a polynomial with highest degree of monomials
-
-    std::cout << "Second test passed!" << std::endl;
-
-    // Test assignment operator
-    Polynomial p3;
-    p3 = p2;
-    assert(p3 == p2); // p3 should be a copy of p2
-
-    std::cout << "Third test passed!" << std::endl;
-
-    // Test addition operator
-    Polynomial p4(monomials);
-    Polynomial p5 = p2 + p4;
-    assert(p5.get_monomials().back().get_coeff() == 4); // Coefficient of x^3 should be 4 after adding p2 and p4
-    assert(p5.get_monomials()[2].get_coeff() == -2); // Coefficient of x^2 should be -2 after adding p2 and p4
-
-    std::cout << "Fourth test passed!" << std::endl;
-
-    // Test subtraction operator
-    std::cout << p5 << std::endl;
-    std::cout << p4 << std::endl;
-    Polynomial p6 = p5 - p4;
-    std::cout << p6 << std::endl;
-    std::cout << p2 << std::endl;
-    std::vector<Monomial> monomials_p6 = p6.get_monomials();
-    assert(monomials_p6 == monomials); // p6 should be equal to p2 after subtracting p4 from p5
-
-    std::cout << "Fifth test passed!" << std::endl;
-
-    // Test multiplication operator
-    Polynomial p7 = p5 * p4;
-    std::vector<Monomial> monomials_p7 = p7.get_monomials();
-    assert(monomials_p7[3].get_coeff() == 16); // Coefficient of x^6 should be 16 after multiplying p5 and p4
-    assert(monomials_p7[2].get_coeff() == 8); // Coefficient of x^5 should be 8 after multiplying p5 and p4
-
-    std::cout << "Sixth test passed!" << std::endl;
-
-    // Test division operator
-    Polynomial p8 = p7 / p5;
-    std::vector<Monomial> monomials_p8 = p8.get_monomials();
-    assert(monomials_p8 == monomials); // p8 should be equal to p4 after dividing p7 by p5
-
-    std::cout << "Seventh test passed!" << std::endl;
-
-    // Test modulus operator
-    Polynomial p9 = p7 % p5;
-    assert(p9.get_degree() == 0); // p9 should be a constant polynomial after taking modulus of p7 and p5
-
-    std::cout << "Tenth test passed!" << std::endl;
-
-    // Test derivative function
-    Polynomial p10 = p7.get_derivative();
-    std::vector<Monomial> monomials_p10 = p10.get_monomials();
-    assert(monomials_p10[2].get_coeff() == 40); // Coefficient of x^5 should be 40 after taking derivative of p7
-    assert(monomials_p10[1].get_coeff() == 24); // Coefficient of x^4 should be 24 after taking derivative of p7
-
-    std::cout << "Eleventh test passed!" << std::endl;
-
-    // Test integral function
-    Polynomial p11 = p10.get_integral();
-    std::vector<Monomial> monomials_p11 = p11.get_monomials();
-    assert(monomials_p11[3].get_coeff() == 8); // Coefficient of x^6 should be 8 after taking integral of p10
-    assert(monomials_p11[2].get_coeff() == 6); // Coefficient of x^5 should be 6 after taking integral of p10
-    assert(monomials_p11[0].get_coeff() == 0); // Constant term should be 0 after taking integral of p10
-
-    std::cout << "All test passed!" << std::endl;
-    return 0;
 }

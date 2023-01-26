@@ -35,11 +35,11 @@ class Monomial {
         bool operator >=(const Monomial& ogn) const noexcept; //Greater or Equal than logic operator
         bool operator <=(const Monomial& ogn) const noexcept; //Lesser or Equal than logic operator
 
-        Monomial operator +(Monomial ogn) const noexcept; //Addition operator
-        Monomial operator -(Monomial ogn) const noexcept; //Substraction operator
-        Monomial operator *(Monomial ogn) const noexcept; //Multiplication operator
-        Monomial operator /(Monomial ogn) const noexcept; //Division operator
-        Monomial operator %(Monomial ogn) const noexcept; //Modulus operator
+        Monomial operator +(const Monomial& ogn) const noexcept; //Addition operator
+        Monomial operator -(const Monomial& ogn) const noexcept; //Substraction operator
+        Monomial operator *(const Monomial& ogn) const noexcept; //Multiplication operator
+        Monomial operator /(const Monomial& ogn) const noexcept; //Division operator
+        Monomial operator %(const Monomial& ogn) const noexcept; //Modulus operator
 
         Monomial& operator +=(const Monomial& ogn) noexcept; //Addition assigment operator
         Monomial& operator -=(const Monomial& ogn) noexcept; //Substraction assigment operator
@@ -47,7 +47,8 @@ class Monomial {
         Monomial& operator /=(const Monomial& ogn) noexcept; //Division assigment operator
         Monomial& operator %=(const Monomial& ogn) noexcept; //Modulus assigment operator
 
-        std::ostream& operator <<(std::ostream& out); //Stream operator
+        friend std::stringstream& operator<<(std::stringstream& ss, const Monomial& m); //Stream operator
+        friend std::ostream& operator<<(std::ostream& out, const Monomial& m);
        
         int get_degree() const noexcept; //Degree getter
         double get_coeff() const noexcept; //Coefficient getter
