@@ -1,14 +1,13 @@
-<h1 align="center">C++ Set Theory Library</h1>
-<p align="center">Library for set theory operation on std::vector</p>
+<h1 align="center">C++ Equation Math Library</h1>
+<p align="center">Library for representing and operating abstract algebraic concepts</p>
 
 <h2 align="center">Introdution</h2>
 
-This is a simple project that aims to provide some simple and fast methods for working with mathematical sets on std::vectors.
-At the moment it only includes a handful of functions in the set namespace. The library may be expanded at a future time depending on my needs.
+This is a project that aims to provide some wrapper classes for algebraic mathematical concepts. At the moment it includes the Monomial and Polynomial classes for general calculus. The library is currently in expansion. Any feedback is much appreciated!
 
 <h2 align="center">Documentation</h2>
 
-<p align="center">https://thewisker.github.io/CSet</p>
+<p align="center">https://thewisker.github.io/EMath</p>
 
 <h2 align="center">Author</h2>
 <div align="center">

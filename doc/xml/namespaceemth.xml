@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="namespaceemth" kind="namespace" language="C++">
+    <compoundname>emth</compoundname>
+    <innerclass refid="classemth_1_1Arithmetic" prot="public">emth::Arithmetic</innerclass>
+    <innerclass refid="classemth_1_1Monomial" prot="public">emth::Monomial</innerclass>
+    <innerclass refid="classemth_1_1Polynomial" prot="public">emth::Polynomial</innerclass>
+    <briefdescription>
+<para>Englobes all the classes and functions of the emath library. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The emth namespace contains three classes: <ref refid="classemth_1_1Arithmetic" kindref="compound">Arithmetic</ref>, <ref refid="classemth_1_1Monomial" kindref="compound">Monomial</ref> and <ref refid="classemth_1_1Polynomial" kindref="compound">Polynomial</ref>. The first contains functions for arithmetic operations. The last two are wrappers on abstract algebraic concepts. </para>
+    </detaileddescription>
+    <location file="include/emath.h" line="57" column="1"/>
+  </compounddef>
+</doxygen>
