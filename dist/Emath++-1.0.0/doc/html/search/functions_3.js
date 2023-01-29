@@ -1,4 +1,0 @@
-var searchData=
-[
-  ['polynomial_0',['Polynomial',['../classemth_1_1Polynomial.html#a7a6489fae8e62f7171ba1b094253f206',1,'emth::Polynomial::Polynomial() noexcept'],['../classemth_1_1Polynomial.html#af0f389de210155a112852f013aaa18d3',1,'emth::Polynomial::Polynomial(const std::map&lt; int, Monomial &gt; mns) noexcept'],['../classemth_1_1Polynomial.html#a98e8835f620927464b617d6b6ebd1329',1,'emth::Polynomial::Polynomial(const std::initializer_list&lt; Monomial &gt; mns) noexcept'],['../classemth_1_1Polynomial.html#a084aed33935ade2f689f09103daaac53',1,'emth::Polynomial::Polynomial(const std::vector&lt; Monomial &gt; mns) noexcept'],['../classemth_1_1Polynomial.html#a3612ca54a3bef015a9809d77af2be355',1,'emth::Polynomial::Polynomial(const Polynomial &amp;ogn) noexcept'],['../classemth_1_1Polynomial.html#a3f55b493797c89e9079c7019fb905059',1,'emth::Polynomial::Polynomial(Polynomial &amp;&amp;ogn) noexcept']]]
-];

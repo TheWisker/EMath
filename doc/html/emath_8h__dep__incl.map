@@ -1,5 +1,0 @@
-<map id="include/emath.h" name="include/emath.h">
-<area shape="rect" id="node1" title="This is the main header file for the emath library." alt="" coords="66,5,181,31"/>
-<area shape="rect" id="node2" href="$src_2emath_8cpp.html" title="This is the main source file for the mathematical equation operations." alt="" coords="5,79,111,104"/>
-<area shape="rect" id="node3" href="$test_2emath_8cpp.html" title="This is the main test file of the emath library. It contains all the tests needed to assure that the ..." alt="" coords="135,79,245,104"/>
-</map>
