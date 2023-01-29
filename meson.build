@@ -1,10 +1,10 @@
 project('Emath++', 'cpp', version : '1.0.0')
 
-run_command('rm', '-fr', './third_party')
-run_command('git', 'clone', '-q', 'https://github.com/TheWisker/CSet', './third_party')
+run_command('rm', '-fr', './third_party/CSet')
+run_command('git', 'clone', '-q', 'https://github.com/TheWisker/CSet', './third_party/CSet')
 
-include = ['./include/', './third_party/CSet/include/']
-header_files = ['./include/emath.h']
+include = ['./include/']
+header_files = ['./include/emath.h', './third_party/CSet/include/set.h']
 source_files = ['./src/emath.cpp']
 test_files = ['./test/emath.cpp']
 
@@ -22,14 +22,14 @@ else
 endif
 
 # Compile the source code into a shared and a static library
-shlib = shared_library('dynamic_emath', files(header_files, source_files), include_directories: files(include), name_suffix: shared_ext, install: not meson.is_cross_build())
-stlib = static_library('static_emath', files(header_files, source_files), include_directories: files(include), name_suffix: static_ext, install: not meson.is_cross_build())
+shlib = shared_library('dynamic_emath', files(header_files, source_files), include_directories: include, name_suffix: shared_ext, install: not meson.is_cross_build())
+stlib = static_library('static_emath', files(header_files, source_files), include_directories: include, name_suffix: static_ext, install: not meson.is_cross_build())
 
 #Create an installable target for the headers
 install_headers(files(header_files))
 
 #Add test file
-test = executable('test_emath', files(test_files, source_files), name_suffix: exe_ext, include_directories: files(include))
+test = executable('test_emath', files(test_files, source_files), name_suffix: exe_ext, include_directories: include)
 test('tests', test, is_parallel: true)
 
 #Install the documentation and create a target
