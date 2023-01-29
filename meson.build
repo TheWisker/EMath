@@ -1,6 +1,6 @@
 project('Emath++', 'cpp', version : '1.0.0')
 
-run_command('rm', 'clone', '-q', 'https://github.com/TheWisker/CSet', './third_party')
+run_command('rm', '-fr', './third_party')
 run_command('git', 'clone', '-q', 'https://github.com/TheWisker/CSet', './third_party')
 
 include = ['./include/', './third_party/CSet/include/']
