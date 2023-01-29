@@ -2,7 +2,7 @@ project('Emath++', 'cpp', version : '1.0.0')
 
 run_command('git', 'clone', '-q', 'https://github.com/TheWisker/CSet', './third_party')
 
-include = ['./include', './third_party/CSet/include']
+include = ['./include/', './third_party/CSet/include/']
 header_files = ['./include/emath.h']
 source_files = ['./src/emath.cpp']
 test_files = ['./test/emath.cpp']
