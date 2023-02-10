@@ -1,12 +1,13 @@
-project('Emath++', 'cpp', version : '1.0.0')
+project('Emath++', 'cpp', version : '1.1.0')
 
-run_command('rm', '-fr', './third_party/CSet')
-run_command('git', 'clone', '-q', 'https://github.com/TheWisker/CSet', './third_party/CSet')
-2
 include = ['./include/', './third_party/CSet/include/']
-header_files = ['./include/emath.h', './third_party/CSet/include/set.h']
-source_files = ['./src/emath.cpp']
-test_files = ['./test/emath.cpp']
+emath_headers = ['./include/emath.h', './third_party/CSet/include/set.h']
+eparser_headers = ['./include/eparser.h']
+emath_files = [emath_headers, './src/emath.cpp']
+eparser_files = [eparser_headers, './src/eparser.cpp', emath_files]
+
+emath_test_files = ['./test/emath.cpp', emath_files]
+eparser_test_files = [eparser_files, './test/eparser.cpp']
 
 # Determine the system that is being built on
 if host_machine.system() in ['windows', 'mingw']
@@ -21,27 +22,35 @@ else
     exe_ext = []
 endif
 
-# Compile the source code into a shared and a static library
-shlib = shared_library('dynamic_emath', files(header_files, source_files), include_directories: include, name_suffix: shared_ext, install: not meson.is_cross_build())
-stlib = static_library('static_emath', files(header_files, source_files), include_directories: include, name_suffix: static_ext, install: not meson.is_cross_build())
+# Compile the source code into shared and a static libraries
+emath_shlib = shared_library('dynamic_emath', files(emath_files), include_directories: include, name_suffix: shared_ext, install: not meson.is_cross_build())
+emath_stlib = static_library('static_emath', files(emath_files), include_directories: include, name_suffix: static_ext, install: not meson.is_cross_build())
+
+eparser_shlib = shared_library('dynamic_eparser', files(eparser_files), include_directories: include, name_suffix: shared_ext, install: not meson.is_cross_build())
+eparser_stlib = static_library('static_eparser', files(eparser_files), include_directories: include, name_suffix: static_ext, install: not meson.is_cross_build())
 
 #Create an installable target for the headers
-install_headers(files(header_files))
+install_headers(files(emath_headers, eparser_headers))
 
-#Add test file
-test = executable('test_emath', files(test_files, source_files), name_suffix: exe_ext, include_directories: include)
-test('tests', test, is_parallel: true)
+#Add test files
+emath_test = executable('test_emath', files(emath_test_files), name_suffix: exe_ext, include_directories: include)
+eparser_test = executable('test_eparser', files(eparser_test_files), name_suffix: exe_ext, dependencies: dependency('gtest'), include_directories: include)
+test('emath_tests', emath_test,)
+test('eparser_tests', eparser_test)
 
-#Install the documentation and create a target
-run_command('doxygen', 'doxygen.conf', check: true)
+#Install the documentation
+run_command('doxygen', 'doxygen.conf', check: false)
 
 #Print a summary of the build
 summary('Project', 'Emath++')
-summary('Version', '1.0.0')
+summary('Version', '1.1.0')
 summary('Langs', 'C++')
-summary('Shared library', shlib.full_path())
-summary('Static library', stlib.full_path())
-summary('Header files', header_files)
-summary('Source files', source_files)
-summary('Test files', test_files)
+summary('Emath shared library', emath_shlib.full_path())
+summary('Emath static library', emath_stlib.full_path())
+summary('Emath header files', emath_headers)
+summary('Eparser shared library', eparser_shlib.full_path())
+summary('Eparser static library', eparser_stlib.full_path())
+summary('Eparser header files', eparser_headers)
+summary('Source files', emath_files + eparser_files)
+summary('Test files', emath_test_files + eparser_test_files)
 summary('Host machine', host_machine.system())

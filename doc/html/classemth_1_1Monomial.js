@@ -27,6 +27,8 @@ var classemth_1_1Monomial =
     [ "operator==", "classemth_1_1Monomial.html#a2f9d14fa6443fc160258121c7907b989", null ],
     [ "operator>", "classemth_1_1Monomial.html#a995abc13b689075b21b43a30ce043e72", null ],
     [ "operator>=", "classemth_1_1Monomial.html#a36079411f2ae6f90e71a09b6723ecf35", null ],
+    [ "set_coeff", "classemth_1_1Monomial.html#adae9aaac815a7c86ec651e5bdb3d3043", null ],
+    [ "set_degree", "classemth_1_1Monomial.html#ab695cba07bcbf08cfec7d32e0bf4cc20", null ],
     [ "operator<<", "classemth_1_1Monomial.html#ada77c9969b0422090c05636a895c0e8e", null ],
     [ "operator<<", "classemth_1_1Monomial.html#a01135c72790e63387bc07601dd3acc5b", null ]
 ];

@@ -74,10 +74,10 @@
         <inbodydescription>
         </inbodydescription>
         <location file="test/emath.cpp" line="15" column="5" bodyfile="test/emath.cpp" bodystart="15" bodyend="97"/>
-        <references refid="classemth_1_1Monomial_1ac0ea8a4e12483048519184c536c27124" compoundref="src_2emath_8cpp" startline="212" endline="212">emth::Monomial::get_coeff</references>
-        <references refid="classemth_1_1Monomial_1a1a11b6043ddc48006fe37241bb6bc6d0" compoundref="src_2emath_8cpp" startline="207" endline="207">emth::Monomial::get_degree</references>
-        <references refid="classemth_1_1Monomial_1a2940ea82172b382f8354fe4d1556b996" compoundref="src_2emath_8cpp" startline="217" endline="217">emth::Monomial::get_expression</references>
-        <references refid="classemth_1_1Monomial_1a50a76c251c4a66c3522b78f0aba3c157" compoundref="src_2emath_8cpp" startline="223" endline="223">emth::Monomial::get_value</references>
+        <references refid="classemth_1_1Monomial_1ac0ea8a4e12483048519184c536c27124" compoundref="src_2emath_8cpp" startline="207" endline="207">emth::Monomial::get_coeff</references>
+        <references refid="classemth_1_1Monomial_1a1a11b6043ddc48006fe37241bb6bc6d0" compoundref="src_2emath_8cpp" startline="212" endline="212">emth::Monomial::get_degree</references>
+        <references refid="classemth_1_1Monomial_1a2940ea82172b382f8354fe4d1556b996" compoundref="src_2emath_8cpp" startline="227" endline="227">emth::Monomial::get_expression</references>
+        <references refid="classemth_1_1Monomial_1a50a76c251c4a66c3522b78f0aba3c157" compoundref="src_2emath_8cpp" startline="233" endline="233">emth::Monomial::get_value</references>
       </memberdef>
       <memberdef kind="function" id="test_2emath_8cpp_1ada79f825efa86697f40154987f0f6129" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -95,12 +95,12 @@
         <inbodydescription>
         </inbodydescription>
         <location file="test/emath.cpp" line="102" column="5" bodyfile="test/emath.cpp" bodystart="102" bodyend="201"/>
-        <references refid="classemth_1_1Polynomial_1a7eb2c1c9bbbb013220d24f5d2a24a963" compoundref="src_2emath_8cpp" startline="438" endline="438">emth::Polynomial::get_degree</references>
-        <references refid="classemth_1_1Polynomial_1a1f27fae485c94bb0f00a46c50214ab37" compoundref="src_2emath_8cpp" startline="463" endline="469">emth::Polynomial::get_derivative</references>
-        <references refid="classemth_1_1Polynomial_1a6f3eb1e674dbce5f0a172d8b5fd7ab2b" compoundref="src_2emath_8cpp" startline="448" endline="448">emth::Polynomial::get_expression</references>
-        <references refid="classemth_1_1Polynomial_1ac87df7094ce26a8e9cba6df79a3eaf2d" compoundref="src_2emath_8cpp" startline="474" endline="480">emth::Polynomial::get_integral</references>
-        <references refid="classemth_1_1Polynomial_1a02fda10cd15abff226c5a8013f4928f7" compoundref="src_2emath_8cpp" startline="443" endline="443">emth::Polynomial::get_monomials</references>
-        <references refid="classemth_1_1Polynomial_1a644cd3ebe3afa676cc3db99557f6eed3" compoundref="src_2emath_8cpp" startline="454" endline="458">emth::Polynomial::get_value</references>
+        <references refid="classemth_1_1Polynomial_1a7eb2c1c9bbbb013220d24f5d2a24a963" compoundref="src_2emath_8cpp" startline="448" endline="448">emth::Polynomial::get_degree</references>
+        <references refid="classemth_1_1Polynomial_1a1f27fae485c94bb0f00a46c50214ab37" compoundref="src_2emath_8cpp" startline="490" endline="496">emth::Polynomial::get_derivative</references>
+        <references refid="classemth_1_1Polynomial_1a6f3eb1e674dbce5f0a172d8b5fd7ab2b" compoundref="src_2emath_8cpp" startline="475" endline="475">emth::Polynomial::get_expression</references>
+        <references refid="classemth_1_1Polynomial_1ac87df7094ce26a8e9cba6df79a3eaf2d" compoundref="src_2emath_8cpp" startline="501" endline="507">emth::Polynomial::get_integral</references>
+        <references refid="classemth_1_1Polynomial_1a02fda10cd15abff226c5a8013f4928f7" compoundref="src_2emath_8cpp" startline="453" endline="453">emth::Polynomial::get_monomials</references>
+        <references refid="classemth_1_1Polynomial_1a644cd3ebe3afa676cc3db99557f6eed3" compoundref="src_2emath_8cpp" startline="481" endline="485">emth::Polynomial::get_value</references>
       </memberdef>
       <memberdef kind="function" id="test_2emath_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>

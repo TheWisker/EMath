@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="260" column="20" bodyfile="include/emath.h" bodystart="260" bodyend="-1"/>
+        <location file="include/emath.h" line="270" column="20" bodyfile="include/emath.h" bodystart="270" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classemth_1_1Monomial_1a7ac5ee0ccb8199fb3dc40d93059d95ba" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="264" column="17" bodyfile="include/emath.h" bodystart="264" bodyend="-1"/>
+        <location file="include/emath.h" line="274" column="17" bodyfile="include/emath.h" bodystart="274" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -720,24 +720,6 @@
         </inbodydescription>
         <location file="include/emath.h" line="216" column="22" bodyfile="src/emath.cpp" bodystart="182" bodyend="188"/>
       </memberdef>
-      <memberdef kind="function" id="classemth_1_1Monomial_1a1a11b6043ddc48006fe37241bb6bc6d0" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
-        <type>int</type>
-        <definition>int emth::Monomial::get_degree</definition>
-        <argsstring>() const noexcept</argsstring>
-        <name>get_degree</name>
-        <qualifiedname>emth::Monomial::get_degree</qualifiedname>
-        <briefdescription>
-<para>Getter function for getting the degree of the <ref refid="classemth_1_1Monomial" kindref="compound">Monomial</ref>. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>(int) The degree of the <ref refid="classemth_1_1Monomial" kindref="compound">Monomial</ref>. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/emath.h" line="235" column="17" bodyfile="src/emath.cpp" bodystart="207" bodyend="207"/>
-      </memberdef>
       <memberdef kind="function" id="classemth_1_1Monomial_1ac0ea8a4e12483048519184c536c27124" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>double</type>
         <definition>double emth::Monomial::get_coeff</definition>
@@ -754,7 +736,83 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="240" column="20" bodyfile="src/emath.cpp" bodystart="212" bodyend="212"/>
+        <location file="include/emath.h" line="235" column="20" bodyfile="src/emath.cpp" bodystart="207" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classemth_1_1Monomial_1a1a11b6043ddc48006fe37241bb6bc6d0" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int emth::Monomial::get_degree</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>get_degree</name>
+        <qualifiedname>emth::Monomial::get_degree</qualifiedname>
+        <briefdescription>
+<para>Getter function for getting the degree of the <ref refid="classemth_1_1Monomial" kindref="compound">Monomial</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>(int) The degree of the <ref refid="classemth_1_1Monomial" kindref="compound">Monomial</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/emath.h" line="240" column="17" bodyfile="src/emath.cpp" bodystart="212" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="classemth_1_1Monomial_1adae9aaac815a7c86ec651e5bdb3d3043" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void emth::Monomial::set_coeff</definition>
+        <argsstring>(double cf) noexcept</argsstring>
+        <name>set_coeff</name>
+        <qualifiedname>emth::Monomial::set_coeff</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>cf</declname>
+        </param>
+        <briefdescription>
+<para>Setter function for setting the coefficient of the <ref refid="classemth_1_1Monomial" kindref="compound">Monomial</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The coefficient to set to. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/emath.h" line="245" column="18" bodyfile="src/emath.cpp" bodystart="217" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="classemth_1_1Monomial_1ab695cba07bcbf08cfec7d32e0bf4cc20" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void emth::Monomial::set_degree</definition>
+        <argsstring>(int dgr) noexcept</argsstring>
+        <name>set_degree</name>
+        <qualifiedname>emth::Monomial::set_degree</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>dgr</declname>
+        </param>
+        <briefdescription>
+<para>Setter function for setting the degree of the <ref refid="classemth_1_1Monomial" kindref="compound">Monomial</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dgr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The degree to set to. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/emath.h" line="250" column="18" bodyfile="src/emath.cpp" bodystart="222" bodyend="222"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Monomial_1a2940ea82172b382f8354fe4d1556b996" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>std::string</type>
@@ -772,7 +830,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="245" column="25" bodyfile="src/emath.cpp" bodystart="217" bodyend="217"/>
+        <location file="include/emath.h" line="255" column="25" bodyfile="src/emath.cpp" bodystart="227" bodyend="227"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Monomial_1a50a76c251c4a66c3522b78f0aba3c157" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>double</type>
@@ -803,7 +861,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="251" column="20" bodyfile="src/emath.cpp" bodystart="223" bodyend="223"/>
+        <location file="include/emath.h" line="261" column="20" bodyfile="src/emath.cpp" bodystart="233" bodyend="233"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Monomial_1aecedb04edd52a33ba0ee110eedbd74db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -818,7 +876,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="255" column="13"/>
+        <location file="include/emath.h" line="265" column="13"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
@@ -937,7 +995,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="269" column="18" bodyfile="src/emath.cpp" bodystart="228" bodyend="232"/>
+        <location file="include/emath.h" line="279" column="18" bodyfile="src/emath.cpp" bodystart="238" bodyend="242"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -946,7 +1004,7 @@
     <detaileddescription>
 <para>The class consists of the constructors, the operators, the getters, the properties and some private functions. </para>
     </detaileddescription>
-    <location file="include/emath.h" line="81" column="5" bodyfile="include/emath.h" bodystart="81" bodyend="270"/>
+    <location file="include/emath.h" line="81" column="5" bodyfile="include/emath.h" bodystart="81" bodyend="280"/>
     <listofallmembers>
       <member refid="classemth_1_1Monomial_1a997731ccf2707a956c8e236b25451702" prot="private" virt="non-virtual"><scope>emth::Monomial</scope><name>coeff</name></member>
       <member refid="classemth_1_1Monomial_1a7ac5ee0ccb8199fb3dc40d93059d95ba" prot="private" virt="non-virtual"><scope>emth::Monomial</scope><name>degree</name></member>
@@ -978,6 +1036,8 @@
       <member refid="classemth_1_1Monomial_1a2f9d14fa6443fc160258121c7907b989" prot="public" virt="non-virtual"><scope>emth::Monomial</scope><name>operator==</name></member>
       <member refid="classemth_1_1Monomial_1a995abc13b689075b21b43a30ce043e72" prot="public" virt="non-virtual"><scope>emth::Monomial</scope><name>operator&gt;</name></member>
       <member refid="classemth_1_1Monomial_1a36079411f2ae6f90e71a09b6723ecf35" prot="public" virt="non-virtual"><scope>emth::Monomial</scope><name>operator&gt;=</name></member>
+      <member refid="classemth_1_1Monomial_1adae9aaac815a7c86ec651e5bdb3d3043" prot="public" virt="non-virtual"><scope>emth::Monomial</scope><name>set_coeff</name></member>
+      <member refid="classemth_1_1Monomial_1ab695cba07bcbf08cfec7d32e0bf4cc20" prot="public" virt="non-virtual"><scope>emth::Monomial</scope><name>set_degree</name></member>
       <member refid="classemth_1_1Monomial_1a7cba04b35f6b0b4b3dfe909aca0391cb" prot="private" virt="non-virtual"><scope>emth::Monomial</scope><name>swap</name></member>
       <member refid="classemth_1_1Monomial_1aecedb04edd52a33ba0ee110eedbd74db" prot="public" virt="non-virtual"><scope>emth::Monomial</scope><name>~Monomial</name></member>
     </listofallmembers>

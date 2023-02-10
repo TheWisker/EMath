@@ -229,15 +229,25 @@ namespace emth {
             **/
             friend std::ostream& operator<<(std::ostream& out, const Monomial& m); //Stream operator
             /**
+            * @brief Getter function for getting the coefficient of the Monomial
+            * @return (double) The coefficient of the Monomial.
+            **/
+            double get_coeff() const noexcept; //Coefficient getter
+            /**
             * @brief Getter function for getting the degree of the Monomial
             * @return (int) The degree of the Monomial.
             **/
             int get_degree() const noexcept; //Degree getter
             /**
-            * @brief Getter function for getting the coefficient of the Monomial
-            * @return (double) The coefficient of the Monomial.
+            * @brief Setter function for setting the coefficient of the Monomial
+            * @param cf The coefficient to set to.
             **/
-            double get_coeff() const noexcept; //Coefficient getter
+            void set_coeff(double cf) noexcept; //Coefficient setter
+            /**
+            * @brief Setter function for setting the degree of the Monomial
+            * @param dgr The degree to set to.
+            **/
+            void set_degree(int dgr) noexcept; //Degree setter
             /**
             * @brief Getter function for getting the expression of the Monomial
             * @return (std::string) The expression of the Monomial.
@@ -442,6 +452,18 @@ namespace emth {
             * @return (std::map<int, Monomial>) The monomials of the Polynomial.
             **/
             std::map<int, Monomial> get_monomials()  const noexcept; //Monomials getter
+            /**
+            * @brief Function for appending a lvalue monomial to the Polynomial
+            * @param m The Monomial object to append.
+            * @return (bool) If the operation was successful.
+            **/
+            bool push_monomial(const Monomial& m) noexcept; //Monomials appender
+            /**
+            * @brief Function for appending a rvalue monomial to the Polynomial
+            * @param m The Monomial object to append.
+            * @return (bool) If the operation was successful.
+            **/
+            bool push_monomial(Monomial&& m) noexcept; //Monomials appender
             /**
             * @brief Getter function for getting the expression of the Polynomial
             * @return (std::string) The expression of the Polynomial.

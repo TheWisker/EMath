@@ -1,0 +1,119 @@
+\hypertarget{classemthp_1_1Lexer}{}\doxysection{emthp\+::Lexer Class Reference}
+\label{classemthp_1_1Lexer}\index{emthp::Lexer@{emthp::Lexer}}
+
+
+Class that works as a token supplier for the \mbox{\hyperlink{classemthp_1_1Parser}{Parser}} class.  
+
+
+
+
+{\ttfamily \#include $<$eparser.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classemthp_1_1Lexer_ad3560b27e6813e3e0aeaa48b19dc5dd2}{Lexer}} (const std\+::string \&input) noexcept
+\begin{DoxyCompactList}\small\item\em Standalone constructor for the \mbox{\hyperlink{classemthp_1_1Lexer}{Lexer}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classemthp_1_1Lexer}{Lexer}} \& \mbox{\hyperlink{classemthp_1_1Lexer_a5116f34af8ec69634dc9202ae2d48b4a}{operator=}} (const \mbox{\hyperlink{classemthp_1_1Lexer}{Lexer}} \&ogn) noexcept
+\begin{DoxyCompactList}\small\item\em Assigment operator for when called with an lvalue. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structemthp_1_1Token}{Token}} \mbox{\hyperlink{classemthp_1_1Lexer_a629ea5f393603e05dad17b004caba27d}{next}} () noexcept
+\begin{DoxyCompactList}\small\item\em Function that returns the next \mbox{\hyperlink{structemthp_1_1Token}{Token}} in the input provided in the constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classemthp_1_1Lexer_a273b288699191ec896c9857cfe7f5704}{back}} () noexcept
+\begin{DoxyCompactList}\small\item\em Backtrack function that moves the cursor\textquotesingle{}s position one position backwards. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that works as a token supplier for the \mbox{\hyperlink{classemthp_1_1Parser}{Parser}} class. 
+
+The class consists of two public functions, one for getting the next \mbox{\hyperlink{structemthp_1_1Token}{Token}} and the other for going back one position. 
+
+Definition at line \mbox{\hyperlink{eparser_8h_source_l00052}{52}} of file \mbox{\hyperlink{eparser_8h_source}{eparser.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classemthp_1_1Lexer_ad3560b27e6813e3e0aeaa48b19dc5dd2}\label{classemthp_1_1Lexer_ad3560b27e6813e3e0aeaa48b19dc5dd2}} 
+\index{emthp::Lexer@{emthp::Lexer}!Lexer@{Lexer}}
+\index{Lexer@{Lexer}!emthp::Lexer@{emthp::Lexer}}
+\doxysubsubsection{\texorpdfstring{Lexer()}{Lexer()}}
+{\footnotesize\ttfamily emthp\+::\+Lexer\+::\+Lexer (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Standalone constructor for the \mbox{\hyperlink{classemthp_1_1Lexer}{Lexer}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & A const reference to the std\+::string to tokenize. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{src_2eparser_8cpp_source_l00014}{14}} of file \mbox{\hyperlink{src_2eparser_8cpp_source}{eparser.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classemthp_1_1Lexer_a273b288699191ec896c9857cfe7f5704}\label{classemthp_1_1Lexer_a273b288699191ec896c9857cfe7f5704}} 
+\index{emthp::Lexer@{emthp::Lexer}!back@{back}}
+\index{back@{back}!emthp::Lexer@{emthp::Lexer}}
+\doxysubsubsection{\texorpdfstring{back()}{back()}}
+{\footnotesize\ttfamily void emthp\+::\+Lexer\+::back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Backtrack function that moves the cursor\textquotesingle{}s position one position backwards. 
+
+
+
+Definition at line \mbox{\hyperlink{src_2eparser_8cpp_source_l00052}{52}} of file \mbox{\hyperlink{src_2eparser_8cpp_source}{eparser.\+cpp}}.
+
+\mbox{\Hypertarget{classemthp_1_1Lexer_a629ea5f393603e05dad17b004caba27d}\label{classemthp_1_1Lexer_a629ea5f393603e05dad17b004caba27d}} 
+\index{emthp::Lexer@{emthp::Lexer}!next@{next}}
+\index{next@{next}!emthp::Lexer@{emthp::Lexer}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structemthp_1_1Token}{emthp\+::\+Token}} emthp\+::\+Lexer\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Function that returns the next \mbox{\hyperlink{structemthp_1_1Token}{Token}} in the input provided in the constructor. 
+
+\begin{DoxyReturn}{Returns}
+(\mbox{\hyperlink{structemthp_1_1Token}{Token}}) The next \mbox{\hyperlink{structemthp_1_1Token}{Token}} in the input 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{src_2eparser_8cpp_source_l00029}{29}} of file \mbox{\hyperlink{src_2eparser_8cpp_source}{eparser.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{src_2eparser_8cpp_source_l00029}{next()}}, and \mbox{\hyperlink{eparser_8h_source_l00025}{emthp\+::\+T\+\_\+\+PLUS}}.
+
+\mbox{\Hypertarget{classemthp_1_1Lexer_a5116f34af8ec69634dc9202ae2d48b4a}\label{classemthp_1_1Lexer_a5116f34af8ec69634dc9202ae2d48b4a}} 
+\index{emthp::Lexer@{emthp::Lexer}!operator=@{operator=}}
+\index{operator=@{operator=}!emthp::Lexer@{emthp::Lexer}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classemthp_1_1Lexer}{emthp\+::\+Lexer}} \& emthp\+::\+Lexer\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classemthp_1_1Lexer}{Lexer}} \&}]{ogn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Assigment operator for when called with an lvalue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ogn} & The lvalue \mbox{\hyperlink{classemthp_1_1Lexer}{Lexer}} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(\mbox{\hyperlink{classemthp_1_1Lexer}{Lexer}}\&) A reference to the lvalue of the operation 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{src_2eparser_8cpp_source_l00020}{20}} of file \mbox{\hyperlink{src_2eparser_8cpp_source}{eparser.\+cpp}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{eparser_8h}{eparser.\+h}}\item 
+src/\mbox{\hyperlink{src_2eparser_8cpp}{eparser.\+cpp}}\end{DoxyCompactItemize}

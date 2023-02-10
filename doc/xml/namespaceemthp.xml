@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="namespaceemthp" kind="namespace" language="C++">
+    <compoundname>emthp</compoundname>
+    <innerclass refid="classemthp_1_1Lexer" prot="public">emthp::Lexer</innerclass>
+    <innerclass refid="classemthp_1_1Parser" prot="public">emthp::Parser</innerclass>
+    <innerclass refid="structemthp_1_1Token" prot="public">emthp::Token</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>TokenType</name>
+        <qualifiedname>emthp::TokenType</qualifiedname>
+        <enumvalue id="namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6bab0be00ab2ea8e4a56ab22f220c7de9bf" prot="public">
+          <name>T_PLUS</name>
+          <briefdescription>
+<para>Enum with all the possible <ref refid="structemthp_1_1Token" kindref="compound">Token</ref> types. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6ba636464f87ad08d661e8f664b4a5903db" prot="public">
+          <name>T_MINUS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6bad7549ed90d6122d0761f3acfb1b56923" prot="public">
+          <name>T_NUMBER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6ba6aa4d0d8ca8e058abc4e4e38f466bbd2" prot="public">
+          <name>T_VARIABLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6ba7b607d6341806fa8bc4505c44670de8c" prot="public">
+          <name>T_EXPONENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6ba5a13d17b3d73d6aa1a545e430284ec6d" prot="public">
+          <name>T_EOF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum with all the possible <ref refid="structemthp_1_1Token" kindref="compound">Token</ref> types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/eparser.h" line="21" column="5" bodyfile="include/eparser.h" bodystart="21" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Englobes all the classes and functions of the parser. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The emthp namespace contains two classes: <ref refid="classemthp_1_1Parser" kindref="compound">Parser</ref> and <ref refid="classemthp_1_1Lexer" kindref="compound">Lexer</ref>. It also contains the TokenType enum and a <ref refid="structemthp_1_1Token" kindref="compound">Token</ref> struct. </para>
+    </detaileddescription>
+    <location file="include/eparser.h" line="12" column="1"/>
+  </compounddef>
+</doxygen>

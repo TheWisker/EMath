@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classemthp_1_1Parser" xml:lang="en-US">
+<title>emthp::Parser Class Reference</title>
+<indexterm><primary>emthp::Parser</primary></indexterm>
+<para>
+
+<para>Class that wraps a std::string and parses it as a Monomial or as a Polynomial. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;eparser.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classemthp_1_1Parser_1a4eb818d42bac1e3e3419c848e521cbdb">Parser</link> (const std::string &amp;input) noexcept</para>
+
+<para>Standalone constructor for the <link linkend="_classemthp_1_1Parser">Parser</link> class. </para>
+</listitem>
+            <listitem><para><link linkend="_classemthp_1_1Parser">Parser</link> &amp; <link linkend="_classemthp_1_1Parser_1ada7e099319ce350bb2d5dcfd5ea8b36a">operator=</link> (const <link linkend="_classemthp_1_1Parser">Parser</link> &amp;ogn) noexcept</para>
+
+<para>Assigment operator for when called with an lvalue. </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Polynomial">emth::Polynomial</link> <link linkend="_classemthp_1_1Parser_1a933df3ba2501887aa6d947bfe6eafe4b">parse_polynomial</link> () noexcept</para>
+
+<para>Function that parses the input as a Polynomial. </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Monomial">emth::Monomial</link> <link linkend="_classemthp_1_1Parser_1a590566c3e893515a0dbb9db032a889cd">parse_monomial</link> () noexcept</para>
+
+<para>Function that parses the next Monomial in the input. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Class that wraps a std::string and parses it as a Monomial or as a Polynomial. </para>
+
+
+
+<para>The class consists of two public functions, one for parsing the entire input as a Polynomial and the other for parsing only the next Monomial. </para>
+<para>
+Definition at line <link linkend="_eparser_8h_source_1l00107">107</link> of file <link linkend="_eparser_8h_source">eparser.h</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classemthp_1_1Parser_1a4eb818d42bac1e3e3419c848e521cbdb"/><section>
+    <title>Parser()</title>
+<indexterm><primary>Parser</primary><secondary>emthp::Parser</secondary></indexterm>
+<indexterm><primary>emthp::Parser</primary><secondary>Parser</secondary></indexterm>
+<para><computeroutput>emthp::Parser::Parser (const std::string &amp; input)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Standalone constructor for the <link linkend="_classemthp_1_1Parser">Parser</link> class. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>input</entry><entry>
+<para>A const reference to the std::string to parse when needed. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_src_2eparser_8cpp_source_1l00095">95</link> of file <link linkend="_src_2eparser_8cpp_source">eparser.cpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classemthp_1_1Parser_1ada7e099319ce350bb2d5dcfd5ea8b36a"/><section>
+    <title>operator=()</title>
+<indexterm><primary>operator=</primary><secondary>emthp::Parser</secondary></indexterm>
+<indexterm><primary>emthp::Parser</primary><secondary>operator=</secondary></indexterm>
+<para><computeroutput><link linkend="_classemthp_1_1Parser">emthp::Parser</link> &amp; emthp::Parser::operator= (const <link linkend="_classemthp_1_1Parser">Parser</link> &amp; ogn)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Assigment operator for when called with an lvalue. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The lvalue <link linkend="_classemthp_1_1Parser">Parser</link> object. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(<link linkend="_classemthp_1_1Parser">Parser</link>&amp;) A reference to the lvalue of the operation </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2eparser_8cpp_source_1l00101">101</link> of file <link linkend="_src_2eparser_8cpp_source">eparser.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemthp_1_1Parser_1a590566c3e893515a0dbb9db032a889cd"/><section>
+    <title>parse_monomial()</title>
+<indexterm><primary>parse_monomial</primary><secondary>emthp::Parser</secondary></indexterm>
+<indexterm><primary>emthp::Parser</primary><secondary>parse_monomial</secondary></indexterm>
+<para><computeroutput><link linkend="_classemth_1_1Monomial">emth::Monomial</link> emthp::Parser::parse_monomial ( )<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Function that parses the next Monomial in the input. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>(<link linkend="_classemth_1_1Monomial">emth::Monomial</link>) The next Monomial in the input </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2eparser_8cpp_source_1l00114">114</link> of file <link linkend="_src_2eparser_8cpp_source">eparser.cpp</link>.</para>
+<para>
+References <link linkend="_src_2emath_8cpp_source_1l00217">emth::Monomial::set_coeff()</link>, <link linkend="_src_2emath_8cpp_source_1l00222">emth::Monomial::set_degree()</link>, <link linkend="_eparser_8h_source_1l00025">emthp::T_PLUS</link>, and <link linkend="_eparser_8h_source_1l00041">emthp::Token::type</link>.</para>
+</section>
+<anchor xml:id="_classemthp_1_1Parser_1a933df3ba2501887aa6d947bfe6eafe4b"/><section>
+    <title>parse_polynomial()</title>
+<indexterm><primary>parse_polynomial</primary><secondary>emthp::Parser</secondary></indexterm>
+<indexterm><primary>emthp::Parser</primary><secondary>parse_polynomial</secondary></indexterm>
+<para><computeroutput><link linkend="_classemth_1_1Polynomial">emth::Polynomial</link> emthp::Parser::parse_polynomial ( )<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Function that parses the input as a Polynomial. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>(<link linkend="_classemth_1_1Polynomial">emth::Polynomial</link>) The input as a Polynomial </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2eparser_8cpp_source_1l00106">106</link> of file <link linkend="_src_2eparser_8cpp_source">eparser.cpp</link>.</para>
+<para>
+References <link linkend="_src_2emath_8cpp_source_1l00459">emth::Polynomial::push_monomial()</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+include/<link linkend="_eparser_8h">eparser.h</link>src/<link linkend="_src_2eparser_8cpp">eparser.cpp</link></section>
+</section>

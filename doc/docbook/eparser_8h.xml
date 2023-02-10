@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_eparser_8h" xml:lang="en-US">
+<title>include/eparser.h File Reference</title>
+<indexterm><primary>include/eparser.h</primary></indexterm>
+<para>
+
+<para>This is the main header file for the equation parser. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &lt;string&gt;<?linebreak?>#include &quot;emath.h&quot;<?linebreak?></programlisting>Include dependency graph for eparser.h:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="eparser_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+This graph shows which files directly or indirectly include this file:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="eparser_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structemthp_1_1Token">emthp::Token</link></para>
+
+<para>Struct for representing a token as a type and a value. </para>
+</listitem>
+            <listitem><para>class <link linkend="_classemthp_1_1Lexer">emthp::Lexer</link></para>
+
+<para>Class that works as a token supplier for the <link linkend="_classemthp_1_1Parser">Parser</link> class. </para>
+</listitem>
+            <listitem><para>class <link linkend="_classemthp_1_1Parser">emthp::Parser</link></para>
+
+<para>Class that wraps a std::string and parses it as a Monomial or as a Polynomial. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespaceemthp">emthp</link></para>
+
+<para>Englobes all the classes and functions of the parser. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6b">emthp::TokenType</link> { <?linebreak?><link linkend="_namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6bab0be00ab2ea8e4a56ab22f220c7de9bf">emthp::T_PLUS</link>
+, <emphasis role="strong">T_MINUS</emphasis>
+, <emphasis role="strong">T_NUMBER</emphasis>
+, <emphasis role="strong">T_VARIABLE</emphasis>
+, <?linebreak?><emphasis role="strong">T_EXPONENT</emphasis>
+, <emphasis role="strong">T_EOF</emphasis>
+ }</para>
+
+<para>Enum with all the possible Token types. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>This is the main header file for the equation parser. </para>
+
+<para>This file contains the classes and functions for parsing polynomials and monomials.<?linebreak?>It consists of two classes, the Parser class and the Lexer class.<?linebreak?>The Parser class consists of two functions, one for parsing the entire input as a Polynomial and another for parsing a Monomial at a time.<?linebreak?>The Lexer class just provides a token supplier for the Parser class.<?linebreak?></para>
+<para>
+Definition in file <link linkend="_eparser_8h_source">eparser.h</link>.</para>
+</section>
+</section>

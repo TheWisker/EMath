@@ -117,6 +117,757 @@ $doxydocs=
       }
     },
     {
+      name => 'EParserTest',
+      kind => 'class',
+      base => [
+        {
+          name => 'testing::Test',
+          virtualness => 'non_virtual',
+          protection => 'public'
+        }
+      ],
+      inner => [
+      ],
+      all_members => [
+        {
+          name => 'EParserTest',
+          virtualness => 'non_virtual',
+          protection => 'public',
+          scope => 'EParserTest'
+        },
+        {
+          name => 'lexer',
+          virtualness => 'non_virtual',
+          protection => 'protected',
+          scope => 'EParserTest'
+        },
+        {
+          name => 'parser',
+          virtualness => 'non_virtual',
+          protection => 'protected',
+          scope => 'EParserTest'
+        },
+        {
+          name => 'set_input',
+          virtualness => 'non_virtual',
+          protection => 'public',
+          scope => 'EParserTest'
+        }
+      ],
+      public_methods => {
+        members => [
+          {
+            kind => 'function',
+            name => 'EParserTest',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'Standalone constructor for the '
+                },
+                {
+                  type => 'url',
+                  link => 'classEParserTest',
+                  content => 'EParserTest'
+                },
+                {
+                  type => 'text',
+                  content => ' class. '
+                }
+              ]
+            },
+            detailed => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'Initializes the lexer and parser object with empty inputs. '
+                }
+              ]
+            },
+            const => 'no',
+            volatile => 'no',
+            parameters => [
+            ]
+          },
+          {
+            kind => 'function',
+            name => 'set_input',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'Function for setting the input to the lexer and parser objects. '
+                }
+              ]
+            },
+            detailed => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  params => [
+                    {
+                      parameters => [
+                        {
+                          name => 'input'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'text',
+                          content => 'The std::string to set as input '
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            type => 'void',
+            const => 'no',
+            volatile => 'no',
+            parameters => [
+              {
+                declaration_name => 'input',
+                type => 'const std::string &'
+              }
+            ]
+          }
+        ]
+      },
+      protected_members => {
+        members => [
+          {
+            kind => 'variable',
+            name => 'lexer',
+            virtualness => 'non_virtual',
+            protection => 'protected',
+            static => 'no',
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'The lexer object on which to perform the tests on. '
+                }
+              ]
+            },
+            detailed => {},
+            type => 'emthp::Lexer'
+          },
+          {
+            kind => 'variable',
+            name => 'parser',
+            virtualness => 'non_virtual',
+            protection => 'protected',
+            static => 'no',
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'The parser object on which to perform the tests on. '
+                }
+              ]
+            },
+            detailed => {},
+            type => 'emthp::Parser'
+          }
+        ]
+      },
+      brief => {
+        doc => [
+          {
+            type => 'parbreak'
+          },
+          {
+            type => 'text',
+            content => 'Class that provides a test fixture for the test cases. '
+          }
+        ]
+      },
+      detailed => {}
+    },
+    {
+      name => 'emthp::Lexer',
+      kind => 'class',
+      inner => [
+      ],
+      includes => {
+        local => 'no',
+        name => 'eparser.h'
+      },
+      all_members => [
+        {
+          name => '_input',
+          virtualness => 'non_virtual',
+          protection => 'private',
+          scope => 'emthp::Lexer'
+        },
+        {
+          name => '_pos',
+          virtualness => 'non_virtual',
+          protection => 'private',
+          scope => 'emthp::Lexer'
+        },
+        {
+          name => 'back',
+          virtualness => 'non_virtual',
+          protection => 'public',
+          scope => 'emthp::Lexer'
+        },
+        {
+          name => 'clean',
+          virtualness => 'non_virtual',
+          protection => 'private',
+          scope => 'emthp::Lexer'
+        },
+        {
+          name => 'is_digit',
+          virtualness => 'non_virtual',
+          protection => 'private',
+          scope => 'emthp::Lexer'
+        },
+        {
+          name => 'Lexer',
+          virtualness => 'non_virtual',
+          protection => 'public',
+          scope => 'emthp::Lexer'
+        },
+        {
+          name => 'next',
+          virtualness => 'non_virtual',
+          protection => 'public',
+          scope => 'emthp::Lexer'
+        },
+        {
+          name => 'operator=',
+          virtualness => 'non_virtual',
+          protection => 'public',
+          scope => 'emthp::Lexer'
+        },
+        {
+          name => 'read_number',
+          virtualness => 'non_virtual',
+          protection => 'private',
+          scope => 'emthp::Lexer'
+        }
+      ],
+      public_methods => {
+        members => [
+          {
+            kind => 'function',
+            name => 'Lexer',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'Standalone constructor for the '
+                },
+                {
+                  type => 'url',
+                  link => 'classemthp_1_1Lexer',
+                  content => 'Lexer'
+                },
+                {
+                  type => 'text',
+                  content => ' class. '
+                }
+              ]
+            },
+            detailed => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  params => [
+                    {
+                      parameters => [
+                        {
+                          name => 'input'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'text',
+                          content => 'A const reference to the std::string to tokenize. '
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            const => 'no',
+            volatile => 'no',
+            parameters => [
+              {
+                declaration_name => 'input',
+                type => 'const std::string &'
+              }
+            ]
+          },
+          {
+            kind => 'function',
+            name => 'operator=',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'Assigment operator for when called with an lvalue. '
+                }
+              ]
+            },
+            detailed => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  params => [
+                    {
+                      parameters => [
+                        {
+                          name => 'ogn'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'text',
+                          content => 'The lvalue '
+                        },
+                        {
+                          type => 'url',
+                          link => 'classemthp_1_1Lexer',
+                          content => 'Lexer'
+                        },
+                        {
+                          type => 'text',
+                          content => ' object. '
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  return => [
+                    {
+                      type => 'text',
+                      content => '('
+                    },
+                    {
+                      type => 'url',
+                      link => 'classemthp_1_1Lexer',
+                      content => 'Lexer'
+                    },
+                    {
+                      type => 'text',
+                      content => '&) A reference to the lvalue of the operation '
+                    }
+                  ]
+                }
+              ]
+            },
+            type => 'Lexer &',
+            const => 'no',
+            volatile => 'no',
+            parameters => [
+              {
+                declaration_name => 'ogn',
+                type => 'const Lexer &'
+              }
+            ]
+          },
+          {
+            kind => 'function',
+            name => 'next',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'Function that returns the next '
+                },
+                {
+                  type => 'url',
+                  link => 'structemthp_1_1Token',
+                  content => 'Token'
+                },
+                {
+                  type => 'text',
+                  content => ' in the input provided in the constructor. '
+                }
+              ]
+            },
+            detailed => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  return => [
+                    {
+                      type => 'text',
+                      content => '('
+                    },
+                    {
+                      type => 'url',
+                      link => 'structemthp_1_1Token',
+                      content => 'Token'
+                    },
+                    {
+                      type => 'text',
+                      content => ') The next '
+                    },
+                    {
+                      type => 'url',
+                      link => 'structemthp_1_1Token',
+                      content => 'Token'
+                    },
+                    {
+                      type => 'text',
+                      content => ' in the input '
+                    }
+                  ]
+                }
+              ]
+            },
+            type => 'Token',
+            const => 'no',
+            volatile => 'no',
+            parameters => [
+            ]
+          },
+          {
+            kind => 'function',
+            name => 'back',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'Backtrack function that moves the cursor\'s position one position backwards. '
+                }
+              ]
+            },
+            detailed => {},
+            type => 'void',
+            const => 'no',
+            volatile => 'no',
+            parameters => [
+            ]
+          }
+        ]
+      },
+      private_methods => {
+        members => [
+          {
+            kind => 'function',
+            name => 'read_number',
+            virtualness => 'non_virtual',
+            protection => 'private',
+            static => 'no',
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'Private function that reads the next '
+                },
+                {
+                  type => 'url',
+                  link => 'structemthp_1_1Token',
+                  content => 'Token'
+                },
+                {
+                  type => 'text',
+                  content => ' as a number consisting of various characters. '
+                }
+              ]
+            },
+            detailed => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  return => [
+                    {
+                      type => 'text',
+                      content => '(double) The number that was read '
+                    }
+                  ]
+                }
+              ]
+            },
+            type => 'double',
+            const => 'no',
+            volatile => 'no',
+            parameters => [
+            ]
+          }
+        ]
+      },
+      private_members => {
+        members => [
+          {
+            kind => 'variable',
+            name => '_input',
+            virtualness => 'non_virtual',
+            protection => 'private',
+            static => 'no',
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'The provided input as a private std::string. '
+                }
+              ]
+            },
+            detailed => {},
+            type => 'std::string'
+          },
+          {
+            kind => 'variable',
+            name => '_pos',
+            virtualness => 'non_virtual',
+            protection => 'private',
+            static => 'no',
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'Private long unsigned int that represents the cursor\'s position. '
+                }
+              ]
+            },
+            detailed => {},
+            type => 'long unsigned int'
+          }
+        ]
+      },
+      private_static_methods => {
+        members => [
+          {
+            kind => 'function',
+            name => 'clean',
+            virtualness => 'non_virtual',
+            protection => 'private',
+            static => 'yes',
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'Private static function that cleans the input string of the unexpected characters. '
+                }
+              ]
+            },
+            detailed => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  params => [
+                    {
+                      parameters => [
+                        {
+                          name => 'input'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'text',
+                          content => 'The string to clean. '
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  return => [
+                    {
+                      type => 'text',
+                      content => '(std::string) The clean output '
+                    }
+                  ]
+                }
+              ]
+            },
+            type => 'static std::string',
+            const => 'no',
+            volatile => 'no',
+            parameters => [
+              {
+                declaration_name => 'input',
+                type => 'const std::string &'
+              }
+            ]
+          },
+          {
+            kind => 'function',
+            name => 'is_digit',
+            virtualness => 'non_virtual',
+            protection => 'private',
+            static => 'yes',
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'Miscellaneous private function that checks if a char is a digit. '
+                }
+              ]
+            },
+            detailed => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  params => [
+                    {
+                      parameters => [
+                        {
+                          name => 'c'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'text',
+                          content => 'The char to check if it is a digit. '
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  return => [
+                    {
+                      type => 'text',
+                      content => '(true) If the char is a digit '
+                    },
+                    {
+                      type => 'parbreak'
+                    },
+                    {
+                      type => 'text',
+                      content => '(false) If the char is not a digit '
+                    }
+                  ]
+                }
+              ]
+            },
+            type => 'static constexpr bool',
+            const => 'no',
+            volatile => 'no',
+            parameters => [
+              {
+                declaration_name => 'c',
+                type => 'const char &'
+              }
+            ]
+          }
+        ]
+      },
+      brief => {
+        doc => [
+          {
+            type => 'parbreak'
+          },
+          {
+            type => 'text',
+            content => 'Class that works as a token supplier for the '
+          },
+          {
+            type => 'url',
+            link => 'classemthp_1_1Parser',
+            content => 'Parser'
+          },
+          {
+            type => 'text',
+            content => ' class. '
+          }
+        ]
+      },
+      detailed => {
+        doc => [
+          {
+            type => 'parbreak'
+          },
+          {
+            type => 'text',
+            content => 'The class consists of two public functions, one for getting the next '
+          },
+          {
+            type => 'url',
+            link => 'structemthp_1_1Token',
+            content => 'Token'
+          },
+          {
+            type => 'text',
+            content => ' and the other for going back one position. '
+          }
+        ]
+      }
+    },
+    {
       name => 'emth::Monomial',
       kind => 'class',
       inner => [
@@ -302,6 +1053,18 @@ $doxydocs=
         },
         {
           name => 'operator>=',
+          virtualness => 'non_virtual',
+          protection => 'public',
+          scope => 'emth::Monomial'
+        },
+        {
+          name => 'set_coeff',
+          virtualness => 'non_virtual',
+          protection => 'public',
+          scope => 'emth::Monomial'
+        },
+        {
+          name => 'set_degree',
           virtualness => 'non_virtual',
           protection => 'public',
           scope => 'emth::Monomial'
@@ -2151,6 +2914,62 @@ $doxydocs=
           },
           {
             kind => 'function',
+            name => 'get_coeff',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'Getter function for getting the coefficient of the '
+                },
+                {
+                  type => 'url',
+                  link => 'classemth_1_1Monomial',
+                  content => 'Monomial'
+                },
+                {
+                  type => 'text',
+                  content => '. '
+                }
+              ]
+            },
+            detailed => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  return => [
+                    {
+                      type => 'text',
+                      content => '(double) The coefficient of the '
+                    },
+                    {
+                      type => 'url',
+                      link => 'classemth_1_1Monomial',
+                      content => 'Monomial'
+                    },
+                    {
+                      type => 'text',
+                      content => '. '
+                    }
+                  ]
+                }
+              ]
+            },
+            type => 'double',
+            const => 'yes',
+            volatile => 'no',
+            parameters => [
+            ]
+          },
+          {
+            kind => 'function',
             name => 'get_degree',
             virtualness => 'non_virtual',
             protection => 'public',
@@ -2207,7 +3026,7 @@ $doxydocs=
           },
           {
             kind => 'function',
-            name => 'get_coeff',
+            name => 'set_coeff',
             virtualness => 'non_virtual',
             protection => 'public',
             static => 'no',
@@ -2218,7 +3037,7 @@ $doxydocs=
                 },
                 {
                   type => 'text',
-                  content => 'Getter function for getting the coefficient of the '
+                  content => 'Setter function for setting the coefficient of the '
                 },
                 {
                   type => 'url',
@@ -2237,28 +3056,92 @@ $doxydocs=
                   type => 'parbreak'
                 },
                 {
-                  return => [
+                  params => [
                     {
-                      type => 'text',
-                      content => '(double) The coefficient of the '
-                    },
-                    {
-                      type => 'url',
-                      link => 'classemth_1_1Monomial',
-                      content => 'Monomial'
-                    },
-                    {
-                      type => 'text',
-                      content => '. '
+                      parameters => [
+                        {
+                          name => 'cf'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'text',
+                          content => 'The coefficient to set to. '
+                        }
+                      ]
                     }
                   ]
                 }
               ]
             },
-            type => 'double',
-            const => 'yes',
+            type => 'void',
+            const => 'no',
             volatile => 'no',
             parameters => [
+              {
+                declaration_name => 'cf',
+                type => 'double'
+              }
+            ]
+          },
+          {
+            kind => 'function',
+            name => 'set_degree',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'Setter function for setting the degree of the '
+                },
+                {
+                  type => 'url',
+                  link => 'classemth_1_1Monomial',
+                  content => 'Monomial'
+                },
+                {
+                  type => 'text',
+                  content => '. '
+                }
+              ]
+            },
+            detailed => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  params => [
+                    {
+                      parameters => [
+                        {
+                          name => 'dgr'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'text',
+                          content => 'The degree to set to. '
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            type => 'void',
+            const => 'no',
+            volatile => 'no',
+            parameters => [
+              {
+                declaration_name => 'dgr',
+                type => 'int'
+              }
             ]
           },
           {
@@ -2767,6 +3650,385 @@ $doxydocs=
       }
     },
     {
+      name => 'emthp::Parser',
+      kind => 'class',
+      inner => [
+      ],
+      includes => {
+        local => 'no',
+        name => 'eparser.h'
+      },
+      all_members => [
+        {
+          name => '_lexer',
+          virtualness => 'non_virtual',
+          protection => 'private',
+          scope => 'emthp::Parser'
+        },
+        {
+          name => 'operator=',
+          virtualness => 'non_virtual',
+          protection => 'public',
+          scope => 'emthp::Parser'
+        },
+        {
+          name => 'parse_monomial',
+          virtualness => 'non_virtual',
+          protection => 'public',
+          scope => 'emthp::Parser'
+        },
+        {
+          name => 'parse_number',
+          virtualness => 'non_virtual',
+          protection => 'private',
+          scope => 'emthp::Parser'
+        },
+        {
+          name => 'parse_polynomial',
+          virtualness => 'non_virtual',
+          protection => 'public',
+          scope => 'emthp::Parser'
+        },
+        {
+          name => 'Parser',
+          virtualness => 'non_virtual',
+          protection => 'public',
+          scope => 'emthp::Parser'
+        }
+      ],
+      public_methods => {
+        members => [
+          {
+            kind => 'function',
+            name => 'Parser',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'Standalone constructor for the '
+                },
+                {
+                  type => 'url',
+                  link => 'classemthp_1_1Parser',
+                  content => 'Parser'
+                },
+                {
+                  type => 'text',
+                  content => ' class. '
+                }
+              ]
+            },
+            detailed => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  params => [
+                    {
+                      parameters => [
+                        {
+                          name => 'input'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'text',
+                          content => 'A const reference to the std::string to parse when needed. '
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            const => 'no',
+            volatile => 'no',
+            parameters => [
+              {
+                declaration_name => 'input',
+                type => 'const std::string &'
+              }
+            ]
+          },
+          {
+            kind => 'function',
+            name => 'operator=',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'Assigment operator for when called with an lvalue. '
+                }
+              ]
+            },
+            detailed => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  params => [
+                    {
+                      parameters => [
+                        {
+                          name => 'ogn'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'text',
+                          content => 'The lvalue '
+                        },
+                        {
+                          type => 'url',
+                          link => 'classemthp_1_1Parser',
+                          content => 'Parser'
+                        },
+                        {
+                          type => 'text',
+                          content => ' object. '
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  return => [
+                    {
+                      type => 'text',
+                      content => '('
+                    },
+                    {
+                      type => 'url',
+                      link => 'classemthp_1_1Parser',
+                      content => 'Parser'
+                    },
+                    {
+                      type => 'text',
+                      content => '&) A reference to the lvalue of the operation '
+                    }
+                  ]
+                }
+              ]
+            },
+            type => 'Parser &',
+            const => 'no',
+            volatile => 'no',
+            parameters => [
+              {
+                declaration_name => 'ogn',
+                type => 'const Parser &'
+              }
+            ]
+          },
+          {
+            kind => 'function',
+            name => 'parse_polynomial',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'Function that parses the input as a Polynomial. '
+                }
+              ]
+            },
+            detailed => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  return => [
+                    {
+                      type => 'text',
+                      content => '('
+                    },
+                    {
+                      type => 'url',
+                      link => 'classemth_1_1Polynomial',
+                      content => 'emth::Polynomial'
+                    },
+                    {
+                      type => 'text',
+                      content => ') The input as a Polynomial '
+                    }
+                  ]
+                }
+              ]
+            },
+            type => 'emth::Polynomial',
+            const => 'no',
+            volatile => 'no',
+            parameters => [
+            ]
+          },
+          {
+            kind => 'function',
+            name => 'parse_monomial',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'Function that parses the next Monomial in the input. '
+                }
+              ]
+            },
+            detailed => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  return => [
+                    {
+                      type => 'text',
+                      content => '('
+                    },
+                    {
+                      type => 'url',
+                      link => 'classemth_1_1Monomial',
+                      content => 'emth::Monomial'
+                    },
+                    {
+                      type => 'text',
+                      content => ') The next Monomial in the input '
+                    }
+                  ]
+                }
+              ]
+            },
+            type => 'emth::Monomial',
+            const => 'no',
+            volatile => 'no',
+            parameters => [
+            ]
+          }
+        ]
+      },
+      private_methods => {
+        members => [
+          {
+            kind => 'function',
+            name => 'parse_number',
+            virtualness => 'non_virtual',
+            protection => 'private',
+            static => 'no',
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'Private function for parsing a plus, minus and number Tokens as a positive or negative double. '
+                }
+              ]
+            },
+            detailed => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  return => [
+                    {
+                      type => 'text',
+                      content => '(double) The parsed number '
+                    }
+                  ]
+                }
+              ]
+            },
+            type => 'double',
+            const => 'no',
+            volatile => 'no',
+            parameters => [
+            ]
+          }
+        ]
+      },
+      private_members => {
+        members => [
+          {
+            kind => 'variable',
+            name => '_lexer',
+            virtualness => 'non_virtual',
+            protection => 'private',
+            static => 'no',
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'Private '
+                },
+                {
+                  type => 'url',
+                  link => 'classemthp_1_1Lexer',
+                  content => 'Lexer'
+                },
+                {
+                  type => 'text',
+                  content => ' instance for supplying tokens. '
+                }
+              ]
+            },
+            detailed => {},
+            type => 'Lexer'
+          }
+        ]
+      },
+      brief => {
+        doc => [
+          {
+            type => 'parbreak'
+          },
+          {
+            type => 'text',
+            content => 'Class that wraps a std::string and parses it as a Monomial or as a Polynomial. '
+          }
+        ]
+      },
+      detailed => {
+        doc => [
+          {
+            type => 'parbreak'
+          },
+          {
+            type => 'text',
+            content => 'The class consists of two public functions, one for parsing the entire input as a Polynomial and the other for parsing only the next Monomial. '
+          }
+        ]
+      }
+    },
+    {
       name => 'emth::Polynomial',
       kind => 'class',
       inner => [
@@ -2970,6 +4232,18 @@ $doxydocs=
         },
         {
           name => 'Polynomial',
+          virtualness => 'non_virtual',
+          protection => 'public',
+          scope => 'emth::Polynomial'
+        },
+        {
+          name => 'push_monomial',
+          virtualness => 'non_virtual',
+          protection => 'public',
+          scope => 'emth::Polynomial'
+        },
+        {
+          name => 'push_monomial',
           virtualness => 'non_virtual',
           protection => 'public',
           scope => 'emth::Polynomial'
@@ -5017,6 +6291,160 @@ $doxydocs=
           },
           {
             kind => 'function',
+            name => 'push_monomial',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'Function for appending a lvalue monomial to the '
+                },
+                {
+                  type => 'url',
+                  link => 'classemth_1_1Polynomial',
+                  content => 'Polynomial'
+                },
+                {
+                  type => 'text',
+                  content => '. '
+                }
+              ]
+            },
+            detailed => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  params => [
+                    {
+                      parameters => [
+                        {
+                          name => 'm'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'text',
+                          content => 'The '
+                        },
+                        {
+                          type => 'url',
+                          link => 'classemth_1_1Monomial',
+                          content => 'Monomial'
+                        },
+                        {
+                          type => 'text',
+                          content => ' object to append. '
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  return => [
+                    {
+                      type => 'text',
+                      content => '(bool) If the operation was successful. '
+                    }
+                  ]
+                }
+              ]
+            },
+            type => 'bool',
+            const => 'no',
+            volatile => 'no',
+            parameters => [
+              {
+                declaration_name => 'm',
+                type => 'const Monomial &'
+              }
+            ]
+          },
+          {
+            kind => 'function',
+            name => 'push_monomial',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'Function for appending a rvalue monomial to the '
+                },
+                {
+                  type => 'url',
+                  link => 'classemth_1_1Polynomial',
+                  content => 'Polynomial'
+                },
+                {
+                  type => 'text',
+                  content => '. '
+                }
+              ]
+            },
+            detailed => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  params => [
+                    {
+                      parameters => [
+                        {
+                          name => 'm'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'text',
+                          content => 'The '
+                        },
+                        {
+                          type => 'url',
+                          link => 'classemth_1_1Monomial',
+                          content => 'Monomial'
+                        },
+                        {
+                          type => 'text',
+                          content => ' object to append. '
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  return => [
+                    {
+                      type => 'text',
+                      content => '(bool) If the operation was successful. '
+                    }
+                  ]
+                }
+              ]
+            },
+            type => 'bool',
+            const => 'no',
+            volatile => 'no',
+            parameters => [
+              {
+                declaration_name => 'm',
+                type => 'Monomial &&'
+              }
+            ]
+          },
+          {
+            kind => 'function',
             name => 'get_expression',
             virtualness => 'non_virtual',
             protection => 'public',
@@ -5653,6 +7081,103 @@ $doxydocs=
           }
         ]
       }
+    },
+    {
+      name => 'testing::Test',
+      kind => 'class',
+      derived => [
+        {
+          name => 'EParserTest',
+          virtualness => 'non_virtual',
+          protection => 'public'
+        }
+      ],
+      inner => [
+      ],
+      all_members => [
+      ],
+      brief => {},
+      detailed => {}
+    },
+    {
+      name => 'emthp::Token',
+      kind => 'struct',
+      inner => [
+      ],
+      includes => {
+        local => 'no',
+        name => 'eparser.h'
+      },
+      all_members => [
+        {
+          name => 'type',
+          virtualness => 'non_virtual',
+          protection => 'public',
+          scope => 'emthp::Token'
+        },
+        {
+          name => 'value',
+          virtualness => 'non_virtual',
+          protection => 'public',
+          scope => 'emthp::Token'
+        }
+      ],
+      public_members => {
+        members => [
+          {
+            kind => 'variable',
+            name => 'type',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'The token\'s type as a TokenType. '
+                }
+              ]
+            },
+            detailed => {},
+            type => 'TokenType'
+          },
+          {
+            kind => 'variable',
+            name => 'value',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'The token\'s numerical value as a double. '
+                }
+              ]
+            },
+            detailed => {},
+            type => 'double'
+          }
+        ]
+      },
+      brief => {
+        doc => [
+          {
+            type => 'parbreak'
+          },
+          {
+            type => 'text',
+            content => 'Struct for representing a token as a type and a value. '
+          }
+        ]
+      },
+      detailed => {}
     }
   ],
   concepts => [
@@ -5693,6 +7218,130 @@ $doxydocs=
           }
         ]
       }
+    },
+    {
+      name => 'emthp',
+      classes => [
+        {
+          name => 'emthp::Lexer'
+        },
+        {
+          name => 'emthp::Parser'
+        },
+        {
+          name => 'emthp::Token'
+        }
+      ],
+      enums => {
+        members => [
+          {
+            kind => 'enum',
+            name => 'TokenType',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'Enum with all the possible '
+                },
+                {
+                  type => 'url',
+                  link => 'structemthp_1_1Token',
+                  content => 'Token'
+                },
+                {
+                  type => 'text',
+                  content => ' types. '
+                }
+              ]
+            },
+            detailed => {},
+            values => [
+              {
+                name => 'T_PLUS',
+                brief => {
+                  doc => [
+                    {
+                      type => 'parbreak'
+                    },
+                    {
+                      type => 'text',
+                      content => 'Enum with all the possible '
+                    },
+                    {
+                      type => 'url',
+                      link => 'structemthp_1_1Token',
+                      content => 'Token'
+                    },
+                    {
+                      type => 'text',
+                      content => ' types. '
+                    }
+                  ]
+                },
+                detailed => {}
+              },
+              {
+                name => 'T_MINUS',
+                brief => {},
+                detailed => {}
+              },
+              {
+                name => 'T_NUMBER',
+                brief => {},
+                detailed => {}
+              },
+              {
+                name => 'T_VARIABLE',
+                brief => {},
+                detailed => {}
+              },
+              {
+                name => 'T_EXPONENT',
+                brief => {},
+                detailed => {}
+              },
+              {
+                name => 'T_EOF',
+                brief => {},
+                detailed => {}
+              }
+            ]
+          }
+        ]
+      },
+      brief => {
+        doc => [
+          {
+            type => 'parbreak'
+          },
+          {
+            type => 'text',
+            content => 'Englobes all the classes and functions of the parser. '
+          }
+        ]
+      },
+      detailed => {
+        doc => [
+          {
+            type => 'parbreak'
+          },
+          {
+            type => 'text',
+            content => 'The emthp namespace contains two classes: Parser and Lexer. It also contains the TokenType enum and a Token struct. '
+          }
+        ]
+      }
+    },
+    {
+      name => 'testing',
+      brief => {},
+      detailed => {}
     }
   ],
   files => [
@@ -5719,6 +7368,10 @@ $doxydocs=
         }
       ],
       included_by => [
+        {
+          name => 'include/eparser.h',
+          ref => 'eparser_8h'
+        },
         {
           name => 'src/emath.cpp',
           ref => 'src_2emath_8cpp'
@@ -5768,6 +7421,157 @@ $doxydocs=
           {
             type => 'text',
             content => 'The Polynomial class declares all the functions, operators, and properties for representing and operating polynomials.'
+          },
+          {
+            type => 'linebreak'
+          }
+        ]
+      }
+    },
+    {
+      name => 'eparser.h',
+      includes => [
+        {
+          name => 'string'
+        },
+        {
+          name => 'emath.h',
+          ref => 'emath_8h'
+        }
+      ],
+      included_by => [
+        {
+          name => 'src/eparser.cpp',
+          ref => 'src_2eparser_8cpp'
+        },
+        {
+          name => 'test/eparser.cpp',
+          ref => 'test_2eparser_8cpp'
+        }
+      ],
+      enums => {
+        members => [
+          {
+            kind => 'enum',
+            name => 'TokenType',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'Enum with all the possible '
+                },
+                {
+                  type => 'url',
+                  link => 'structemthp_1_1Token',
+                  content => 'Token'
+                },
+                {
+                  type => 'text',
+                  content => ' types. '
+                }
+              ]
+            },
+            detailed => {},
+            values => [
+              {
+                name => 'T_PLUS',
+                brief => {
+                  doc => [
+                    {
+                      type => 'parbreak'
+                    },
+                    {
+                      type => 'text',
+                      content => 'Enum with all the possible '
+                    },
+                    {
+                      type => 'url',
+                      link => 'structemthp_1_1Token',
+                      content => 'Token'
+                    },
+                    {
+                      type => 'text',
+                      content => ' types. '
+                    }
+                  ]
+                },
+                detailed => {}
+              },
+              {
+                name => 'T_MINUS',
+                brief => {},
+                detailed => {}
+              },
+              {
+                name => 'T_NUMBER',
+                brief => {},
+                detailed => {}
+              },
+              {
+                name => 'T_VARIABLE',
+                brief => {},
+                detailed => {}
+              },
+              {
+                name => 'T_EXPONENT',
+                brief => {},
+                detailed => {}
+              },
+              {
+                name => 'T_EOF',
+                brief => {},
+                detailed => {}
+              }
+            ]
+          }
+        ]
+      },
+      brief => {
+        doc => [
+          {
+            type => 'parbreak'
+          },
+          {
+            type => 'text',
+            content => 'This is the main header file for the equation parser. '
+          }
+        ]
+      },
+      detailed => {
+        doc => [
+          {
+            type => 'parbreak'
+          },
+          {
+            type => 'text',
+            content => 'This file contains the classes and functions for parsing polynomials and monomials.'
+          },
+          {
+            type => 'linebreak'
+          },
+          {
+            type => 'text',
+            content => 'It consists of two classes, the Parser class and the Lexer class.'
+          },
+          {
+            type => 'linebreak'
+          },
+          {
+            type => 'text',
+            content => 'The Parser class consists of two functions, one for parsing the entire input as a Polynomial and another for parsing a Monomial at a time.'
+          },
+          {
+            type => 'linebreak'
+          },
+          {
+            type => 'text',
+            content => 'The Lexer class just provides a token supplier for the Parser class.'
           },
           {
             type => 'linebreak'
@@ -6004,11 +7808,752 @@ $doxydocs=
           }
         ]
       }
+    },
+    {
+      name => 'eparser.cpp',
+      includes => [
+        {
+          name => 'eparser.h',
+          ref => 'eparser_8h'
+        }
+      ],
+      included_by => [
+      ],
+      brief => {
+        doc => [
+          {
+            type => 'parbreak'
+          },
+          {
+            type => 'text',
+            content => 'This is the main implementation file for the equation parser. '
+          }
+        ]
+      },
+      detailed => {
+        doc => [
+          {
+            type => 'parbreak'
+          },
+          {
+            type => 'text',
+            content => 'This file contains the implementation of the classes and functions for parsing polynomials and monomials.'
+          },
+          {
+            type => 'linebreak'
+          },
+          {
+            type => 'text',
+            content => 'It consists of two classes, the Parser class and the Lexer class.'
+          },
+          {
+            type => 'linebreak'
+          },
+          {
+            type => 'text',
+            content => 'The Parser class consists of two functions, one for parsing the entire input as a Polynomial and another for parsing a Monomial at a time.'
+          },
+          {
+            type => 'linebreak'
+          },
+          {
+            type => 'text',
+            content => 'The Lexer class just provides a token supplier for the Parser class.'
+          },
+          {
+            type => 'linebreak'
+          }
+        ]
+      }
+    },
+    {
+      name => 'eparser.cpp',
+      includes => [
+        {
+          name => 'gtest/gtest.h'
+        },
+        {
+          name => 'eparser.h',
+          ref => 'eparser_8h'
+        }
+      ],
+      included_by => [
+      ],
+      functions => {
+        members => [
+          {
+            kind => 'function',
+            name => 'TEST_F',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {},
+            detailed => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'xrefitem',
+                  content => [
+                    {
+                      type => 'text',
+                      content => 'Test lexer functionality with simple expressions '
+                    }
+                  ]
+                }
+              ]
+            },
+            const => 'no',
+            volatile => 'no',
+            parameters => [
+              {
+                type => 'EParserTest'
+              },
+              {
+                type => 'Lexer'
+              }
+            ]
+          },
+          {
+            kind => 'function',
+            name => 'TEST_F',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {},
+            detailed => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'xrefitem',
+                  content => [
+                    {
+                      type => 'text',
+                      content => 'Test lexer functionality with compund expressions '
+                    }
+                  ]
+                }
+              ]
+            },
+            const => 'no',
+            volatile => 'no',
+            parameters => [
+              {
+                type => 'EParserTest'
+              },
+              {
+                type => 'CompoundLexer'
+              }
+            ]
+          },
+          {
+            kind => 'function',
+            name => 'TEST_F',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {},
+            detailed => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'xrefitem',
+                  content => [
+                    {
+                      type => 'text',
+                      content => 'Test lexer functionality with arithmetic expressions '
+                    }
+                  ]
+                }
+              ]
+            },
+            const => 'no',
+            volatile => 'no',
+            parameters => [
+              {
+                type => 'EParserTest'
+              },
+              {
+                type => 'ArithmeticLexer'
+              }
+            ]
+          },
+          {
+            kind => 'function',
+            name => 'TEST_F',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {},
+            detailed => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'xrefitem',
+                  content => [
+                    {
+                      type => 'text',
+                      content => 'Test parser functionality with monomial expressions '
+                    }
+                  ]
+                }
+              ]
+            },
+            const => 'no',
+            volatile => 'no',
+            parameters => [
+              {
+                type => 'EParserTest'
+              },
+              {
+                type => 'Variables'
+              }
+            ]
+          },
+          {
+            kind => 'function',
+            name => 'TEST_F',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {},
+            detailed => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'xrefitem',
+                  content => [
+                    {
+                      type => 'text',
+                      content => 'Test parser functionality with polynomial expressions '
+                    }
+                  ]
+                }
+              ]
+            },
+            const => 'no',
+            volatile => 'no',
+            parameters => [
+              {
+                type => 'EParserTest'
+              },
+              {
+                type => 'Compound'
+              }
+            ]
+          },
+          {
+            kind => 'function',
+            name => 'TEST_F',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {},
+            detailed => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'xrefitem',
+                  content => [
+                    {
+                      type => 'text',
+                      content => 'Test parser functionality with sign expressions '
+                    }
+                  ]
+                }
+              ]
+            },
+            const => 'no',
+            volatile => 'no',
+            parameters => [
+              {
+                type => 'EParserTest'
+              },
+              {
+                type => 'Signs'
+              }
+            ]
+          },
+          {
+            kind => 'function',
+            name => 'TEST_F',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {},
+            detailed => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'xrefitem',
+                  content => [
+                    {
+                      type => 'text',
+                      content => 'Test parser functionality with noise in the expressions '
+                    }
+                  ]
+                }
+              ]
+            },
+            const => 'no',
+            volatile => 'no',
+            parameters => [
+              {
+                type => 'EParserTest'
+              },
+              {
+                type => 'Noise'
+              }
+            ]
+          },
+          {
+            kind => 'function',
+            name => 'TEST_F',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {},
+            detailed => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'xrefitem',
+                  content => [
+                    {
+                      type => 'text',
+                      content => 'Test parser edge cases '
+                    }
+                  ]
+                }
+              ]
+            },
+            const => 'no',
+            volatile => 'no',
+            parameters => [
+              {
+                type => 'EParserTest'
+              },
+              {
+                type => 'Edge'
+              }
+            ]
+          },
+          {
+            kind => 'function',
+            name => 'main',
+            virtualness => 'non_virtual',
+            protection => 'public',
+            static => 'no',
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'Function that runs all the declared tests. '
+                }
+              ]
+            },
+            detailed => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  params => [
+                    {
+                      parameters => [
+                        {
+                          name => 'argc'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'text',
+                          content => 'The console arguments count '
+                        }
+                      ]
+                    },
+                    {
+                      parameters => [
+                        {
+                          name => 'argv'
+                        }
+                      ],
+                      doc => [
+                        {
+                          type => 'parbreak'
+                        },
+                        {
+                          type => 'text',
+                          content => 'The console arguments as a array of char arrays '
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  return => [
+                    {
+                      type => 'text',
+                      content => '(0) If all tests passed '
+                    },
+                    {
+                      type => 'parbreak'
+                    },
+                    {
+                      type => 'text',
+                      content => '(1) If one or more tests failed '
+                    }
+                  ]
+                }
+              ]
+            },
+            type => 'int',
+            const => 'no',
+            volatile => 'no',
+            parameters => [
+              {
+                declaration_name => 'argc',
+                type => 'int'
+              },
+              {
+                declaration_name => 'argv',
+                type => 'char **'
+              }
+            ]
+          }
+        ]
+      },
+      brief => {
+        doc => [
+          {
+            type => 'parbreak'
+          },
+          {
+            type => 'text',
+            content => 'This is the main test file for the equation parser. '
+          }
+        ]
+      },
+      detailed => {
+        doc => [
+          {
+            type => 'parbreak'
+          },
+          {
+            type => 'text',
+            content => 'This file contains a text fixture class and all the test cases.'
+          },
+          {
+            type => 'linebreak'
+          },
+          {
+            type => 'text',
+            content => 'It consists of the '
+          },
+          {
+            type => 'url',
+            link => 'classEParserTest',
+            content => 'EParserTest'
+          },
+          {
+            type => 'text',
+            content => ' classe that provides the test fixture for all the tests.'
+          },
+          {
+            type => 'linebreak'
+          },
+          {
+            type => 'text',
+            content => 'Then it contains all the test cases, for testing correct execution. '
+          }
+        ]
+      }
     }
   ],
   groups => [
   ],
   pages => [
+    {
+      name => 'test',
+      title4 => 'Testing',
+      detailed => {
+        doc => [
+          {
+            type => 'parbreak'
+          },
+          {
+            type => 'text',
+            content => 'Member '
+          },
+          {
+            type => 'ref',
+            link => 'test_2eparser_8cpp_1adb859937dfb6fcd56c656c3c2555afc9',
+            content => [
+              {
+                type => 'text',
+                content => 'TEST_F'
+              }
+            ]
+          },
+          {
+            type => 'text',
+            content => ' ('
+          },
+          {
+            type => 'url',
+            link => 'classEParserTest',
+            content => 'EParserTest'
+          },
+          {
+            type => 'text',
+            content => ', Lexer)'
+          },
+          {
+            type => 'anchor',
+            id => 'test_1_test000001'
+          },
+          {
+            type => 'text',
+            content => 'Test lexer functionality with simple expressions  Member '
+          },
+          {
+            type => 'ref',
+            link => 'test_2eparser_8cpp_1a9d00584eda85ad91bd3b865309697a92',
+            content => [
+              {
+                type => 'text',
+                content => 'TEST_F'
+              }
+            ]
+          },
+          {
+            type => 'text',
+            content => ' ('
+          },
+          {
+            type => 'url',
+            link => 'classEParserTest',
+            content => 'EParserTest'
+          },
+          {
+            type => 'text',
+            content => ', CompoundLexer)'
+          },
+          {
+            type => 'anchor',
+            id => 'test_1_test000002'
+          },
+          {
+            type => 'text',
+            content => 'Test lexer functionality with compund expressions  Member '
+          },
+          {
+            type => 'ref',
+            link => 'test_2eparser_8cpp_1a9bae16de43d72897f903e5977107c60a',
+            content => [
+              {
+                type => 'text',
+                content => 'TEST_F'
+              }
+            ]
+          },
+          {
+            type => 'text',
+            content => ' ('
+          },
+          {
+            type => 'url',
+            link => 'classEParserTest',
+            content => 'EParserTest'
+          },
+          {
+            type => 'text',
+            content => ', ArithmeticLexer)'
+          },
+          {
+            type => 'anchor',
+            id => 'test_1_test000003'
+          },
+          {
+            type => 'text',
+            content => 'Test lexer functionality with arithmetic expressions  Member '
+          },
+          {
+            type => 'ref',
+            link => 'test_2eparser_8cpp_1a7ed288e238950900345be1751b543ab5',
+            content => [
+              {
+                type => 'text',
+                content => 'TEST_F'
+              }
+            ]
+          },
+          {
+            type => 'text',
+            content => ' ('
+          },
+          {
+            type => 'url',
+            link => 'classEParserTest',
+            content => 'EParserTest'
+          },
+          {
+            type => 'text',
+            content => ', Variables)'
+          },
+          {
+            type => 'anchor',
+            id => 'test_1_test000004'
+          },
+          {
+            type => 'text',
+            content => 'Test parser functionality with monomial expressions  Member '
+          },
+          {
+            type => 'ref',
+            link => 'test_2eparser_8cpp_1a21f8c875c668e6dc3d1a1423cdba58a3',
+            content => [
+              {
+                type => 'text',
+                content => 'TEST_F'
+              }
+            ]
+          },
+          {
+            type => 'text',
+            content => ' ('
+          },
+          {
+            type => 'url',
+            link => 'classEParserTest',
+            content => 'EParserTest'
+          },
+          {
+            type => 'text',
+            content => ', Compound)'
+          },
+          {
+            type => 'anchor',
+            id => 'test_1_test000005'
+          },
+          {
+            type => 'text',
+            content => 'Test parser functionality with polynomial expressions  Member '
+          },
+          {
+            type => 'ref',
+            link => 'test_2eparser_8cpp_1aee28f89b9e4ebad2361a1f87e5068314',
+            content => [
+              {
+                type => 'text',
+                content => 'TEST_F'
+              }
+            ]
+          },
+          {
+            type => 'text',
+            content => ' ('
+          },
+          {
+            type => 'url',
+            link => 'classEParserTest',
+            content => 'EParserTest'
+          },
+          {
+            type => 'text',
+            content => ', Signs)'
+          },
+          {
+            type => 'anchor',
+            id => 'test_1_test000006'
+          },
+          {
+            type => 'text',
+            content => 'Test parser functionality with sign expressions  Member '
+          },
+          {
+            type => 'ref',
+            link => 'test_2eparser_8cpp_1a8178a3e2dd566ffdd7520265ce0c2fe3',
+            content => [
+              {
+                type => 'text',
+                content => 'TEST_F'
+              }
+            ]
+          },
+          {
+            type => 'text',
+            content => ' ('
+          },
+          {
+            type => 'url',
+            link => 'classEParserTest',
+            content => 'EParserTest'
+          },
+          {
+            type => 'text',
+            content => ', Noise)'
+          },
+          {
+            type => 'anchor',
+            id => 'test_1_test000007'
+          },
+          {
+            type => 'text',
+            content => 'Test parser functionality with noise in the expressions  Member '
+          },
+          {
+            type => 'ref',
+            link => 'test_2eparser_8cpp_1aeed0ae0397e5f82225fde1a6ba4f65a9',
+            content => [
+              {
+                type => 'text',
+                content => 'TEST_F'
+              }
+            ]
+          },
+          {
+            type => 'text',
+            content => ' ('
+          },
+          {
+            type => 'url',
+            link => 'classEParserTest',
+            content => 'EParserTest'
+          },
+          {
+            type => 'text',
+            content => ', Edge)'
+          },
+          {
+            type => 'anchor',
+            id => 'test_1_test000008'
+          },
+          {
+            type => 'text',
+            content => 'Test parser edge cases '
+          }
+        ]
+      }
+    },
     {
       name => 'index',
       title4 => 'EMath++ Project',

@@ -117,6 +117,14 @@
 
 <para>Getter function for getting the monomials of the <link linkend="_classemth_1_1Polynomial">Polynomial</link>. </para>
 </listitem>
+            <listitem><para>bool <link linkend="_classemth_1_1Polynomial_1a1dc4825c3d5005949f0869e204e4fedc">push_monomial</link> (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp;m) noexcept</para>
+
+<para>Function for appending a lvalue monomial to the <link linkend="_classemth_1_1Polynomial">Polynomial</link>. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_classemth_1_1Polynomial_1acd1befa11dd8d4e3da213114dc88cff7">push_monomial</link> (<link linkend="_classemth_1_1Monomial">Monomial</link> &amp;&amp;m) noexcept</para>
+
+<para>Function for appending a rvalue monomial to the <link linkend="_classemth_1_1Polynomial">Polynomial</link>. </para>
+</listitem>
             <listitem><para>std::string <link linkend="_classemth_1_1Polynomial_1a6f3eb1e674dbce5f0a172d8b5fd7ab2b">get_expression</link> () const noexcept</para>
 
 <para>Getter function for getting the expression of the <link linkend="_classemth_1_1Polynomial">Polynomial</link>. </para>
@@ -161,7 +169,7 @@
 
 <para>The class consists of the constructors, the operators, the getters, the properties and some private functions. </para>
 <para>
-Definition at line <link linkend="_emath_8h_source_1l00276">276</link> of file <link linkend="_emath_8h_source">emath.h</link>.</para>
+Definition at line <link linkend="_emath_8h_source_1l00286">286</link> of file <link linkend="_emath_8h_source">emath.h</link>.</para>
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
@@ -174,7 +182,7 @@ Definition at line <link linkend="_emath_8h_source_1l00276">276</link> of file <
 <para>Default constructor for when initialized with no arguments. </para>
 </para>
 <para>
-Definition at line <link linkend="_src_2emath_8cpp_source_1l00240">240</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00250">250</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
 </section>
 <anchor xml:id="_classemth_1_1Polynomial_1af0f389de210155a112852f013aaa18d3"/><section>
     <title>Polynomial()<computeroutput>[2/6]</computeroutput></title>
@@ -300,7 +308,7 @@ Parameters</title>
                 </formalpara>
                 </para>
 <para>
-Definition at line <link linkend="_src_2emath_8cpp_source_1l00260">260</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00270">270</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
 </section>
 <anchor xml:id="_classemth_1_1Polynomial_1a3f55b493797c89e9079c7019fb905059"/><section>
     <title>Polynomial()<computeroutput>[6/6]</computeroutput></title>
@@ -333,7 +341,7 @@ Parameters</title>
                 </formalpara>
                 </para>
 <para>
-Definition at line <link linkend="_src_2emath_8cpp_source_1l00265">265</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00275">275</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
 </section>
 </section>
 <section>
@@ -353,7 +361,7 @@ Definition at line <link linkend="_src_2emath_8cpp_source_1l00265">265</link> of
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_src_2emath_8cpp_source_1l00438">438</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00448">448</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
 </section>
 <anchor xml:id="_classemth_1_1Polynomial_1a1f27fae485c94bb0f00a46c50214ab37"/><section>
     <title>get_derivative()</title>
@@ -370,7 +378,7 @@ Definition at line <link linkend="_src_2emath_8cpp_source_1l00438">438</link> of
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_src_2emath_8cpp_source_1l00463">463</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00490">490</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
 </section>
 <anchor xml:id="_classemth_1_1Polynomial_1a6f3eb1e674dbce5f0a172d8b5fd7ab2b"/><section>
     <title>get_expression()</title>
@@ -387,7 +395,7 @@ Definition at line <link linkend="_src_2emath_8cpp_source_1l00463">463</link> of
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_src_2emath_8cpp_source_1l00448">448</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00475">475</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
 </section>
 <anchor xml:id="_classemth_1_1Polynomial_1ac87df7094ce26a8e9cba6df79a3eaf2d"/><section>
     <title>get_integral()</title>
@@ -404,7 +412,7 @@ Definition at line <link linkend="_src_2emath_8cpp_source_1l00448">448</link> of
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_src_2emath_8cpp_source_1l00474">474</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00501">501</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
 </section>
 <anchor xml:id="_classemth_1_1Polynomial_1a02fda10cd15abff226c5a8013f4928f7"/><section>
     <title>get_monomials()</title>
@@ -421,7 +429,7 @@ Definition at line <link linkend="_src_2emath_8cpp_source_1l00474">474</link> of
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_src_2emath_8cpp_source_1l00443">443</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00453">453</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
 </section>
 <anchor xml:id="_classemth_1_1Polynomial_1a644cd3ebe3afa676cc3db99557f6eed3"/><section>
     <title>get_value()</title>
@@ -458,7 +466,7 @@ Parameters</title>
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_src_2emath_8cpp_source_1l00454">454</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00481">481</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
 </section>
 <anchor xml:id="_classemth_1_1Polynomial_1a40fefffeb0043d193d5aa7ecb3adba55"/><section>
     <title>operator!=()</title>
@@ -497,7 +505,7 @@ Parameters</title>
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_src_2emath_8cpp_source_1l00291">291</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00301">301</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
 </section>
 <anchor xml:id="_classemth_1_1Polynomial_1a56a499385ad24715b1240611217277c5"/><section>
     <title>operator%()</title>
@@ -534,7 +542,7 @@ Parameters</title>
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_src_2emath_8cpp_source_1l00349">349</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00359">359</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
 </section>
 <anchor xml:id="_classemth_1_1Polynomial_1a2e6bd9b16b732b38caabf950acfd5cb2"/><section>
     <title>operator%=()</title>
@@ -571,7 +579,7 @@ Parameters</title>
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_src_2emath_8cpp_source_1l00405">405</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00415">415</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
 </section>
 <anchor xml:id="_classemth_1_1Polynomial_1ac461b9aeb93c33d540f0a918bdefd203"/><section>
     <title>operator*()</title>
@@ -608,7 +616,7 @@ Parameters</title>
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_src_2emath_8cpp_source_1l00337">337</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00347">347</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
 </section>
 <anchor xml:id="_classemth_1_1Polynomial_1abdeb3769c43eec881ae8ed1a20a5d01d"/><section>
     <title>operator*=()</title>
@@ -645,7 +653,7 @@ Parameters</title>
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_src_2emath_8cpp_source_1l00373">373</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00383">383</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
 </section>
 <anchor xml:id="_classemth_1_1Polynomial_1a9d46082ad38edc17f875127208626281"/><section>
     <title>operator+()</title>
@@ -682,7 +690,7 @@ Parameters</title>
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_src_2emath_8cpp_source_1l00325">325</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00335">335</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
 </section>
 <anchor xml:id="_classemth_1_1Polynomial_1a791a5aa2207acd2fccc4124ff36eb0bf"/><section>
     <title>operator+=()</title>
@@ -719,7 +727,7 @@ Parameters</title>
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_src_2emath_8cpp_source_1l00355">355</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00365">365</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
 </section>
 <anchor xml:id="_classemth_1_1Polynomial_1a1cd22ae48bfcb14b53835730091e5f4d"/><section>
     <title>operator-()</title>
@@ -756,7 +764,7 @@ Parameters</title>
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_src_2emath_8cpp_source_1l00331">331</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00341">341</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
 </section>
 <anchor xml:id="_classemth_1_1Polynomial_1af545354b4dade3e286be26207d02a442"/><section>
     <title>operator-=()</title>
@@ -793,7 +801,7 @@ Parameters</title>
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_src_2emath_8cpp_source_1l00364">364</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00374">374</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
 </section>
 <anchor xml:id="_classemth_1_1Polynomial_1aa2a054dcc203257bfc3d06621ce876b1"/><section>
     <title>operator/()</title>
@@ -830,7 +838,7 @@ Parameters</title>
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_src_2emath_8cpp_source_1l00343">343</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00353">353</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
 </section>
 <anchor xml:id="_classemth_1_1Polynomial_1ac5a003db2381c99c97c4a78341145b26"/><section>
     <title>operator/=()</title>
@@ -867,9 +875,9 @@ Parameters</title>
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_src_2emath_8cpp_source_1l00388">388</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00398">398</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
 <para>
-References <link linkend="_src_2emath_8cpp_source_1l00207">emth::Monomial::get_degree()</link>.</para>
+References <link linkend="_src_2emath_8cpp_source_1l00212">emth::Monomial::get_degree()</link>.</para>
 </section>
 <anchor xml:id="_classemth_1_1Polynomial_1a0f0640fcb0dd0a59b685a646d494bfc7"/><section>
     <title>operator&lt;()</title>
@@ -908,7 +916,7 @@ Parameters</title>
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_src_2emath_8cpp_source_1l00305">305</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00315">315</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
 </section>
 <anchor xml:id="_classemth_1_1Polynomial_1a7b234cebd032016c0a8ece92a4f68141"/><section>
     <title>operator&lt;=()</title>
@@ -947,7 +955,7 @@ Parameters</title>
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_src_2emath_8cpp_source_1l00319">319</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00329">329</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
 </section>
 <anchor xml:id="_classemth_1_1Polynomial_1a33ba807b5465ead26edd077d8289f4f3"/><section>
     <title>operator=()<computeroutput>[1/2]</computeroutput></title>
@@ -984,7 +992,7 @@ Parameters</title>
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_src_2emath_8cpp_source_1l00271">271</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00281">281</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
 </section>
 <anchor xml:id="_classemth_1_1Polynomial_1a93818b33532e3f8e80fa614ca8287479"/><section>
     <title>operator=()<computeroutput>[2/2]</computeroutput></title>
@@ -1021,7 +1029,7 @@ Parameters</title>
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_src_2emath_8cpp_source_1l00277">277</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00287">287</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
 </section>
 <anchor xml:id="_classemth_1_1Polynomial_1ad042381e1713be21b332d3f8fbdfd0a7"/><section>
     <title>operator==()</title>
@@ -1060,7 +1068,7 @@ Parameters</title>
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_src_2emath_8cpp_source_1l00284">284</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00294">294</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
 </section>
 <anchor xml:id="_classemth_1_1Polynomial_1ae358f6f9b93783601af6999b67e0dafb"/><section>
     <title>operator&gt;()</title>
@@ -1099,7 +1107,7 @@ Parameters</title>
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_src_2emath_8cpp_source_1l00298">298</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00308">308</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
 </section>
 <anchor xml:id="_classemth_1_1Polynomial_1a2321b93b1482b6677dbd125739848724"/><section>
     <title>operator&gt;=()</title>
@@ -1138,7 +1146,81 @@ Parameters</title>
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_src_2emath_8cpp_source_1l00312">312</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00322">322</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Polynomial_1a1dc4825c3d5005949f0869e204e4fedc"/><section>
+    <title>push_monomial()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>push_monomial</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>push_monomial</secondary></indexterm>
+<para><computeroutput>bool emth::Polynomial::push_monomial (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp; m)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Function for appending a lvalue monomial to the <link linkend="_classemth_1_1Polynomial">Polynomial</link>. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>m</entry><entry>
+<para>The <link linkend="_classemth_1_1Monomial">Monomial</link> object to append. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(bool) If the operation was successful. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00459">459</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Polynomial_1acd1befa11dd8d4e3da213114dc88cff7"/><section>
+    <title>push_monomial()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>push_monomial</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>push_monomial</secondary></indexterm>
+<para><computeroutput>bool emth::Polynomial::push_monomial (<link linkend="_classemth_1_1Monomial">emth::Monomial</link> &amp;&amp; m)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Function for appending a rvalue monomial to the <link linkend="_classemth_1_1Polynomial">Polynomial</link>. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>m</entry><entry>
+<para>The <link linkend="_classemth_1_1Monomial">Monomial</link> object to append. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(bool) If the operation was successful. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00465">465</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
 </section>
 </section>
 <section>

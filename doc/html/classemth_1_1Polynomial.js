@@ -31,6 +31,8 @@ var classemth_1_1Polynomial =
     [ "operator==", "classemth_1_1Polynomial.html#ad042381e1713be21b332d3f8fbdfd0a7", null ],
     [ "operator>", "classemth_1_1Polynomial.html#ae358f6f9b93783601af6999b67e0dafb", null ],
     [ "operator>=", "classemth_1_1Polynomial.html#a2321b93b1482b6677dbd125739848724", null ],
+    [ "push_monomial", "classemth_1_1Polynomial.html#a1dc4825c3d5005949f0869e204e4fedc", null ],
+    [ "push_monomial", "classemth_1_1Polynomial.html#acd1befa11dd8d4e3da213114dc88cff7", null ],
     [ "operator<<", "classemth_1_1Polynomial.html#a444148f9a6121f040d0149c4b5d94ac5", null ],
     [ "operator<<", "classemth_1_1Polynomial.html#a66068882dda621b9bca207d72a9fb2d7", null ]
 ];

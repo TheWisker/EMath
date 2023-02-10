@@ -1,0 +1,126 @@
+\hypertarget{classemthp_1_1Parser}{}\doxysection{emthp\+::Parser Class Reference}
+\label{classemthp_1_1Parser}\index{emthp::Parser@{emthp::Parser}}
+
+
+Class that wraps a std\+::string and parses it as a Monomial or as a Polynomial.  
+
+
+
+
+{\ttfamily \#include $<$eparser.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classemthp_1_1Parser_a4eb818d42bac1e3e3419c848e521cbdb}{Parser}} (const std\+::string \&input) noexcept
+\begin{DoxyCompactList}\small\item\em Standalone constructor for the \mbox{\hyperlink{classemthp_1_1Parser}{Parser}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classemthp_1_1Parser}{Parser}} \& \mbox{\hyperlink{classemthp_1_1Parser_ada7e099319ce350bb2d5dcfd5ea8b36a}{operator=}} (const \mbox{\hyperlink{classemthp_1_1Parser}{Parser}} \&ogn) noexcept
+\begin{DoxyCompactList}\small\item\em Assigment operator for when called with an lvalue. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classemth_1_1Polynomial}{emth\+::\+Polynomial}} \mbox{\hyperlink{classemthp_1_1Parser_a933df3ba2501887aa6d947bfe6eafe4b}{parse\+\_\+polynomial}} () noexcept
+\begin{DoxyCompactList}\small\item\em Function that parses the input as a Polynomial. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classemth_1_1Monomial}{emth\+::\+Monomial}} \mbox{\hyperlink{classemthp_1_1Parser_a590566c3e893515a0dbb9db032a889cd}{parse\+\_\+monomial}} () noexcept
+\begin{DoxyCompactList}\small\item\em Function that parses the next Monomial in the input. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that wraps a std\+::string and parses it as a Monomial or as a Polynomial. 
+
+The class consists of two public functions, one for parsing the entire input as a Polynomial and the other for parsing only the next Monomial. 
+
+Definition at line \mbox{\hyperlink{eparser_8h_source_l00107}{107}} of file \mbox{\hyperlink{eparser_8h_source}{eparser.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classemthp_1_1Parser_a4eb818d42bac1e3e3419c848e521cbdb}\label{classemthp_1_1Parser_a4eb818d42bac1e3e3419c848e521cbdb}} 
+\index{emthp::Parser@{emthp::Parser}!Parser@{Parser}}
+\index{Parser@{Parser}!emthp::Parser@{emthp::Parser}}
+\doxysubsubsection{\texorpdfstring{Parser()}{Parser()}}
+{\footnotesize\ttfamily emthp\+::\+Parser\+::\+Parser (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Standalone constructor for the \mbox{\hyperlink{classemthp_1_1Parser}{Parser}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & A const reference to the std\+::string to parse when needed. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{src_2eparser_8cpp_source_l00095}{95}} of file \mbox{\hyperlink{src_2eparser_8cpp_source}{eparser.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classemthp_1_1Parser_ada7e099319ce350bb2d5dcfd5ea8b36a}\label{classemthp_1_1Parser_ada7e099319ce350bb2d5dcfd5ea8b36a}} 
+\index{emthp::Parser@{emthp::Parser}!operator=@{operator=}}
+\index{operator=@{operator=}!emthp::Parser@{emthp::Parser}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classemthp_1_1Parser}{emthp\+::\+Parser}} \& emthp\+::\+Parser\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classemthp_1_1Parser}{Parser}} \&}]{ogn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Assigment operator for when called with an lvalue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ogn} & The lvalue \mbox{\hyperlink{classemthp_1_1Parser}{Parser}} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(\mbox{\hyperlink{classemthp_1_1Parser}{Parser}}\&) A reference to the lvalue of the operation 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{src_2eparser_8cpp_source_l00101}{101}} of file \mbox{\hyperlink{src_2eparser_8cpp_source}{eparser.\+cpp}}.
+
+\mbox{\Hypertarget{classemthp_1_1Parser_a590566c3e893515a0dbb9db032a889cd}\label{classemthp_1_1Parser_a590566c3e893515a0dbb9db032a889cd}} 
+\index{emthp::Parser@{emthp::Parser}!parse\_monomial@{parse\_monomial}}
+\index{parse\_monomial@{parse\_monomial}!emthp::Parser@{emthp::Parser}}
+\doxysubsubsection{\texorpdfstring{parse\_monomial()}{parse\_monomial()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classemth_1_1Monomial}{emth\+::\+Monomial}} emthp\+::\+Parser\+::parse\+\_\+monomial (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Function that parses the next Monomial in the input. 
+
+\begin{DoxyReturn}{Returns}
+(\mbox{\hyperlink{classemth_1_1Monomial}{emth\+::\+Monomial}}) The next Monomial in the input 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{src_2eparser_8cpp_source_l00114}{114}} of file \mbox{\hyperlink{src_2eparser_8cpp_source}{eparser.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{src_2emath_8cpp_source_l00217}{emth\+::\+Monomial\+::set\+\_\+coeff()}}, \mbox{\hyperlink{src_2emath_8cpp_source_l00222}{emth\+::\+Monomial\+::set\+\_\+degree()}}, \mbox{\hyperlink{eparser_8h_source_l00025}{emthp\+::\+T\+\_\+\+PLUS}}, and \mbox{\hyperlink{eparser_8h_source_l00041}{emthp\+::\+Token\+::type}}.
+
+\mbox{\Hypertarget{classemthp_1_1Parser_a933df3ba2501887aa6d947bfe6eafe4b}\label{classemthp_1_1Parser_a933df3ba2501887aa6d947bfe6eafe4b}} 
+\index{emthp::Parser@{emthp::Parser}!parse\_polynomial@{parse\_polynomial}}
+\index{parse\_polynomial@{parse\_polynomial}!emthp::Parser@{emthp::Parser}}
+\doxysubsubsection{\texorpdfstring{parse\_polynomial()}{parse\_polynomial()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classemth_1_1Polynomial}{emth\+::\+Polynomial}} emthp\+::\+Parser\+::parse\+\_\+polynomial (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Function that parses the input as a Polynomial. 
+
+\begin{DoxyReturn}{Returns}
+(\mbox{\hyperlink{classemth_1_1Polynomial}{emth\+::\+Polynomial}}) The input as a Polynomial 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{src_2eparser_8cpp_source_l00106}{106}} of file \mbox{\hyperlink{src_2eparser_8cpp_source}{eparser.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{src_2emath_8cpp_source_l00459}{emth\+::\+Polynomial\+::push\+\_\+monomial()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{eparser_8h}{eparser.\+h}}\item 
+src/\mbox{\hyperlink{src_2eparser_8cpp}{eparser.\+cpp}}\end{DoxyCompactItemize}

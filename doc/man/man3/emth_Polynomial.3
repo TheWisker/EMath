@@ -1,4 +1,4 @@
-.TH "emth::Polynomial" 3 "Sun Jan 29 2023" "EMath++" \" -*- nroff -*-
+.TH "emth::Polynomial" 3 "Sat Feb 11 2023" "EMath++" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -117,6 +117,14 @@ emth::Polynomial \- Class for representing and operating polynomials\&.
 .br
 .RI "Getter function for getting the monomials of the \fBPolynomial\fP\&. "
 .ti -1c
+.RI "bool \fBpush_monomial\fP (const \fBMonomial\fP &m) noexcept"
+.br
+.RI "Function for appending a lvalue monomial to the \fBPolynomial\fP\&. "
+.ti -1c
+.RI "bool \fBpush_monomial\fP (\fBMonomial\fP &&m) noexcept"
+.br
+.RI "Function for appending a rvalue monomial to the \fBPolynomial\fP\&. "
+.ti -1c
 .RI "std::string \fBget_expression\fP () const noexcept"
 .br
 .RI "Getter function for getting the expression of the \fBPolynomial\fP\&. "
@@ -155,7 +163,7 @@ Class for representing and operating polynomials\&.
 
 The class consists of the constructors, the operators, the getters, the properties and some private functions\&. 
 .PP
-Definition at line \fB276\fP of file \fBemath\&.h\fP\&.
+Definition at line \fB286\fP of file \fBemath\&.h\fP\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "emth::Polynomial::Polynomial ()\fC [noexcept]\fP"
@@ -163,7 +171,7 @@ Definition at line \fB276\fP of file \fBemath\&.h\fP\&.
 .PP
 Default constructor for when initialized with no arguments\&. 
 .PP
-Definition at line \fB240\fP of file \fBemath\&.cpp\fP\&.
+Definition at line \fB250\fP of file \fBemath\&.cpp\fP\&.
 .SS "emth::Polynomial::Polynomial (const std::map< int, \fBMonomial\fP > mns)\fC [noexcept]\fP"
 
 .PP
@@ -209,7 +217,7 @@ Copy constructor for when initialized with an lvalue \fBPolynomial\fP object\&.
 .PP
 
 .PP
-Definition at line \fB260\fP of file \fBemath\&.cpp\fP\&.
+Definition at line \fB270\fP of file \fBemath\&.cpp\fP\&.
 .SS "emth::Polynomial::Polynomial (\fBemth::Polynomial\fP && ogn)\fC [noexcept]\fP"
 
 .PP
@@ -222,7 +230,7 @@ Move constructor for when initialized with an rvalue \fBPolynomial\fP object\&.
 .PP
 
 .PP
-Definition at line \fB265\fP of file \fBemath\&.cpp\fP\&.
+Definition at line \fB275\fP of file \fBemath\&.cpp\fP\&.
 .SH "Member Function Documentation"
 .PP 
 .SS "int emth::Polynomial::get_degree () const\fC [noexcept]\fP"
@@ -237,7 +245,7 @@ Getter function for getting the degree of the \fBPolynomial\fP\&.
 .PP
 
 .PP
-Definition at line \fB438\fP of file \fBemath\&.cpp\fP\&.
+Definition at line \fB448\fP of file \fBemath\&.cpp\fP\&.
 .SS "\fBemth::Polynomial\fP emth::Polynomial::get_derivative () const\fC [noexcept]\fP"
 
 .PP
@@ -250,7 +258,7 @@ Calculus function for getting the derivative of the \fBPolynomial\fP\&.
 .PP
 
 .PP
-Definition at line \fB463\fP of file \fBemath\&.cpp\fP\&.
+Definition at line \fB490\fP of file \fBemath\&.cpp\fP\&.
 .SS "std::string emth::Polynomial::get_expression () const\fC [noexcept]\fP"
 
 .PP
@@ -263,7 +271,7 @@ Getter function for getting the expression of the \fBPolynomial\fP\&.
 .PP
 
 .PP
-Definition at line \fB448\fP of file \fBemath\&.cpp\fP\&.
+Definition at line \fB475\fP of file \fBemath\&.cpp\fP\&.
 .SS "\fBemth::Polynomial\fP emth::Polynomial::get_integral () const\fC [noexcept]\fP"
 
 .PP
@@ -276,7 +284,7 @@ Calculus function for getting the integral of the \fBPolynomial\fP\&.
 .PP
 
 .PP
-Definition at line \fB474\fP of file \fBemath\&.cpp\fP\&.
+Definition at line \fB501\fP of file \fBemath\&.cpp\fP\&.
 .SS "std::map< int, \fBemth::Monomial\fP > emth::Polynomial::get_monomials () const\fC [noexcept]\fP"
 
 .PP
@@ -289,7 +297,7 @@ Getter function for getting the monomials of the \fBPolynomial\fP\&.
 .PP
 
 .PP
-Definition at line \fB443\fP of file \fBemath\&.cpp\fP\&.
+Definition at line \fB453\fP of file \fBemath\&.cpp\fP\&.
 .SS "double emth::Polynomial::get_value (const double & x) const\fC [noexcept]\fP"
 
 .PP
@@ -307,7 +315,7 @@ Calculus function for getting the value of the \fBPolynomial\fP at a point\&.
 .PP
 
 .PP
-Definition at line \fB454\fP of file \fBemath\&.cpp\fP\&.
+Definition at line \fB481\fP of file \fBemath\&.cpp\fP\&.
 .SS "bool emth::Polynomial::operator!= (const \fBPolynomial\fP & ogn) const\fC [noexcept]\fP"
 
 .PP
@@ -327,7 +335,7 @@ Not equal logic operator overload\&.
 .PP
 
 .PP
-Definition at line \fB291\fP of file \fBemath\&.cpp\fP\&.
+Definition at line \fB301\fP of file \fBemath\&.cpp\fP\&.
 .SS "\fBemth::Polynomial\fP emth::Polynomial::operator% (const \fBPolynomial\fP & ogn) const\fC [noexcept]\fP"
 
 .PP
@@ -345,7 +353,7 @@ Modulus operator overload\&.
 .PP
 
 .PP
-Definition at line \fB349\fP of file \fBemath\&.cpp\fP\&.
+Definition at line \fB359\fP of file \fBemath\&.cpp\fP\&.
 .SS "\fBemth::Polynomial\fP & emth::Polynomial::operator%= (const \fBPolynomial\fP & ogn)\fC [noexcept]\fP"
 
 .PP
@@ -363,7 +371,7 @@ Modulus assigment operator overload\&.
 .PP
 
 .PP
-Definition at line \fB405\fP of file \fBemath\&.cpp\fP\&.
+Definition at line \fB415\fP of file \fBemath\&.cpp\fP\&.
 .SS "\fBemth::Polynomial\fP emth::Polynomial::operator* (const \fBPolynomial\fP & ogn) const\fC [noexcept]\fP"
 
 .PP
@@ -381,7 +389,7 @@ Multiplication operator overload\&.
 .PP
 
 .PP
-Definition at line \fB337\fP of file \fBemath\&.cpp\fP\&.
+Definition at line \fB347\fP of file \fBemath\&.cpp\fP\&.
 .SS "\fBemth::Polynomial\fP & emth::Polynomial::operator*= (const \fBPolynomial\fP & ogn)\fC [noexcept]\fP"
 
 .PP
@@ -399,7 +407,7 @@ Multiplication assigment operator overload\&.
 .PP
 
 .PP
-Definition at line \fB373\fP of file \fBemath\&.cpp\fP\&.
+Definition at line \fB383\fP of file \fBemath\&.cpp\fP\&.
 .SS "\fBemth::Polynomial\fP emth::Polynomial::operator+ (const \fBPolynomial\fP & ogn) const\fC [noexcept]\fP"
 
 .PP
@@ -417,7 +425,7 @@ Addition operator overload\&.
 .PP
 
 .PP
-Definition at line \fB325\fP of file \fBemath\&.cpp\fP\&.
+Definition at line \fB335\fP of file \fBemath\&.cpp\fP\&.
 .SS "\fBemth::Polynomial\fP & emth::Polynomial::operator+= (const \fBPolynomial\fP & ogn)\fC [noexcept]\fP"
 
 .PP
@@ -435,7 +443,7 @@ Addition assigment operator overload\&.
 .PP
 
 .PP
-Definition at line \fB355\fP of file \fBemath\&.cpp\fP\&.
+Definition at line \fB365\fP of file \fBemath\&.cpp\fP\&.
 .SS "\fBemth::Polynomial\fP emth::Polynomial::operator\- (const \fBPolynomial\fP & ogn) const\fC [noexcept]\fP"
 
 .PP
@@ -453,7 +461,7 @@ Substraction operator overload\&.
 .PP
 
 .PP
-Definition at line \fB331\fP of file \fBemath\&.cpp\fP\&.
+Definition at line \fB341\fP of file \fBemath\&.cpp\fP\&.
 .SS "\fBemth::Polynomial\fP & emth::Polynomial::operator\-= (const \fBPolynomial\fP & ogn)\fC [noexcept]\fP"
 
 .PP
@@ -471,7 +479,7 @@ Substraction assigment operator overload\&.
 .PP
 
 .PP
-Definition at line \fB364\fP of file \fBemath\&.cpp\fP\&.
+Definition at line \fB374\fP of file \fBemath\&.cpp\fP\&.
 .SS "\fBemth::Polynomial\fP emth::Polynomial::operator/ (const \fBPolynomial\fP & ogn) const\fC [noexcept]\fP"
 
 .PP
@@ -489,7 +497,7 @@ Division operator overload\&.
 .PP
 
 .PP
-Definition at line \fB343\fP of file \fBemath\&.cpp\fP\&.
+Definition at line \fB353\fP of file \fBemath\&.cpp\fP\&.
 .SS "\fBemth::Polynomial\fP & emth::Polynomial::operator/= (const \fBPolynomial\fP & ogn)\fC [noexcept]\fP"
 
 .PP
@@ -507,7 +515,7 @@ Division assigment operator overload\&.
 .PP
 
 .PP
-Definition at line \fB388\fP of file \fBemath\&.cpp\fP\&.
+Definition at line \fB398\fP of file \fBemath\&.cpp\fP\&.
 .PP
 References \fBemth::Monomial::get_degree()\fP\&.
 .SS "bool emth::Polynomial::operator< (const \fBPolynomial\fP & ogn) const\fC [noexcept]\fP"
@@ -529,7 +537,7 @@ Less than logic operator overload\&.
 .PP
 
 .PP
-Definition at line \fB305\fP of file \fBemath\&.cpp\fP\&.
+Definition at line \fB315\fP of file \fBemath\&.cpp\fP\&.
 .SS "bool emth::Polynomial::operator<= (const \fBPolynomial\fP & ogn) const\fC [noexcept]\fP"
 
 .PP
@@ -549,7 +557,7 @@ Less or equal than logic operator overload\&.
 .PP
 
 .PP
-Definition at line \fB319\fP of file \fBemath\&.cpp\fP\&.
+Definition at line \fB329\fP of file \fBemath\&.cpp\fP\&.
 .SS "\fBemth::Polynomial\fP & emth::Polynomial::operator= (const \fBPolynomial\fP & ogn)\fC [noexcept]\fP"
 
 .PP
@@ -567,7 +575,7 @@ Assigment operator overload for when called with an lvalue\&.
 .PP
 
 .PP
-Definition at line \fB271\fP of file \fBemath\&.cpp\fP\&.
+Definition at line \fB281\fP of file \fBemath\&.cpp\fP\&.
 .SS "\fBemth::Polynomial\fP & emth::Polynomial::operator= (\fBemth::Polynomial\fP && ogn)\fC [noexcept]\fP"
 
 .PP
@@ -585,7 +593,7 @@ Move assigment operator overload for when called with an rvalue\&.
 .PP
 
 .PP
-Definition at line \fB277\fP of file \fBemath\&.cpp\fP\&.
+Definition at line \fB287\fP of file \fBemath\&.cpp\fP\&.
 .SS "bool emth::Polynomial::operator== (const \fBPolynomial\fP & ogn) const\fC [noexcept]\fP"
 
 .PP
@@ -605,7 +613,7 @@ Equal logic operator overload\&.
 .PP
 
 .PP
-Definition at line \fB284\fP of file \fBemath\&.cpp\fP\&.
+Definition at line \fB294\fP of file \fBemath\&.cpp\fP\&.
 .SS "bool emth::Polynomial::operator> (const \fBPolynomial\fP & ogn) const\fC [noexcept]\fP"
 
 .PP
@@ -625,7 +633,7 @@ Greater than logic operator overload\&.
 .PP
 
 .PP
-Definition at line \fB298\fP of file \fBemath\&.cpp\fP\&.
+Definition at line \fB308\fP of file \fBemath\&.cpp\fP\&.
 .SS "bool emth::Polynomial::operator>= (const \fBPolynomial\fP & ogn) const\fC [noexcept]\fP"
 
 .PP
@@ -645,7 +653,43 @@ Greater or equal than logic operator overload\&.
 .PP
 
 .PP
-Definition at line \fB312\fP of file \fBemath\&.cpp\fP\&.
+Definition at line \fB322\fP of file \fBemath\&.cpp\fP\&.
+.SS "bool emth::Polynomial::push_monomial (const \fBMonomial\fP & m)\fC [noexcept]\fP"
+
+.PP
+Function for appending a lvalue monomial to the \fBPolynomial\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIm\fP The \fBMonomial\fP object to append\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(bool) If the operation was successful\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB459\fP of file \fBemath\&.cpp\fP\&.
+.SS "bool emth::Polynomial::push_monomial (\fBemth::Monomial\fP && m)\fC [noexcept]\fP"
+
+.PP
+Function for appending a rvalue monomial to the \fBPolynomial\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIm\fP The \fBMonomial\fP object to append\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(bool) If the operation was successful\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB465\fP of file \fBemath\&.cpp\fP\&.
 .SH "Friends And Related Function Documentation"
 .PP 
 .SS "std::ostream & operator<< (std::ostream & out, const \fBPolynomial\fP & p)\fC [friend]\fP"

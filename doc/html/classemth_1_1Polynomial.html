@@ -202,6 +202,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a02fda10cd15abff226c5a8013f4928f7"><td class="memItemLeft" align="right" valign="top">std::map&lt; int, <a class="el" href="classemth_1_1Monomial.html">Monomial</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classemth_1_1Polynomial.html#a02fda10cd15abff226c5a8013f4928f7">get_monomials</a> () const noexcept</td></tr>
 <tr class="memdesc:a02fda10cd15abff226c5a8013f4928f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter function for getting the monomials of the <a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a>.  <br /></td></tr>
 <tr class="separator:a02fda10cd15abff226c5a8013f4928f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dc4825c3d5005949f0869e204e4fedc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classemth_1_1Polynomial.html#a1dc4825c3d5005949f0869e204e4fedc">push_monomial</a> (const <a class="el" href="classemth_1_1Monomial.html">Monomial</a> &amp;m) noexcept</td></tr>
+<tr class="memdesc:a1dc4825c3d5005949f0869e204e4fedc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function for appending a lvalue monomial to the <a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a>.  <br /></td></tr>
+<tr class="separator:a1dc4825c3d5005949f0869e204e4fedc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd1befa11dd8d4e3da213114dc88cff7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classemth_1_1Polynomial.html#acd1befa11dd8d4e3da213114dc88cff7">push_monomial</a> (<a class="el" href="classemth_1_1Monomial.html">Monomial</a> &amp;&amp;m) noexcept</td></tr>
+<tr class="memdesc:acd1befa11dd8d4e3da213114dc88cff7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function for appending a rvalue monomial to the <a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a>.  <br /></td></tr>
+<tr class="separator:acd1befa11dd8d4e3da213114dc88cff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f3eb1e674dbce5f0a172d8b5fd7ab2b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classemth_1_1Polynomial.html#a6f3eb1e674dbce5f0a172d8b5fd7ab2b">get_expression</a> () const noexcept</td></tr>
 <tr class="memdesc:a6f3eb1e674dbce5f0a172d8b5fd7ab2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter function for getting the expression of the <a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a>.  <br /></td></tr>
 <tr class="separator:a6f3eb1e674dbce5f0a172d8b5fd7ab2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -232,7 +238,7 @@ Friends</h2></td></tr>
 <div class="textblock"><p>Class for representing and operating polynomials. </p>
 <p>The class consists of the constructors, the operators, the getters, the properties and some private functions. </p>
 
-<p class="definition">Definition at line <a class="el" href="emath_8h_source.html#l00276">276</a> of file <a class="el" href="emath_8h_source.html">emath.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="emath_8h_source.html#l00286">286</a> of file <a class="el" href="emath_8h_source.html">emath.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7a6489fae8e62f7171ba1b094253f206" name="a7a6489fae8e62f7171ba1b094253f206"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7a6489fae8e62f7171ba1b094253f206">&#9670;&#160;</a></span>Polynomial() <span class="overload">[1/6]</span></h2>
@@ -259,7 +265,7 @@ Friends</h2></td></tr>
 
 <p>Default constructor for when initialized with no arguments. </p>
 
-<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00240">240</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00250">250</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
 
 </div>
 </div>
@@ -397,7 +403,7 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00260">260</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00270">270</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
 
 </div>
 </div>
@@ -433,7 +439,7 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00265">265</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00275">275</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
 
 </div>
 </div>
@@ -464,7 +470,7 @@ Friends</h2></td></tr>
 <p>Getter function for getting the degree of the <a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a>. </p>
 <dl class="section return"><dt>Returns</dt><dd>(int) The degree of the <a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a>. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00438">438</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00448">448</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
 
 </div>
 </div>
@@ -494,7 +500,7 @@ Friends</h2></td></tr>
 <p>Calculus function for getting the derivative of the <a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a>. </p>
 <dl class="section return"><dt>Returns</dt><dd>(<a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a>) The result of the derivative of the <a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a>. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00463">463</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00490">490</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
 
 </div>
 </div>
@@ -524,7 +530,7 @@ Friends</h2></td></tr>
 <p>Getter function for getting the expression of the <a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a>. </p>
 <dl class="section return"><dt>Returns</dt><dd>(std::string) The expression of the <a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a>. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00448">448</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00475">475</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
 
 </div>
 </div>
@@ -554,7 +560,7 @@ Friends</h2></td></tr>
 <p>Calculus function for getting the integral of the <a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a>. </p>
 <dl class="section return"><dt>Returns</dt><dd>(<a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a>) The result of the integral of the <a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a>. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00474">474</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00501">501</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
 
 </div>
 </div>
@@ -584,7 +590,7 @@ Friends</h2></td></tr>
 <p>Getter function for getting the monomials of the <a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a>. </p>
 <dl class="section return"><dt>Returns</dt><dd>(std::map&lt;int, Monomial&gt;) The monomials of the <a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a>. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00443">443</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00453">453</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
 
 </div>
 </div>
@@ -621,7 +627,7 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>(double) The result of the evaluation of the <a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a>. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00454">454</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00481">481</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
 
 </div>
 </div>
@@ -660,7 +666,7 @@ Friends</h2></td></tr>
 <dd>
 (false) If <a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a> objects degrees and monomials match. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00291">291</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00301">301</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
 
 </div>
 </div>
@@ -697,7 +703,7 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>(<a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a>) A brand new <a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a> that represents the result. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00349">349</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00359">359</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
 
 </div>
 </div>
@@ -734,7 +740,7 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>(<a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a>&amp;) A reference to the lvalue of the operation. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00405">405</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00415">415</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
 
 </div>
 </div>
@@ -771,7 +777,7 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>(<a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a>) A brand new <a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a> that represents the result. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00337">337</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00347">347</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
 
 </div>
 </div>
@@ -808,7 +814,7 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>(<a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a>&amp;) A reference to the lvalue of the operation. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00373">373</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00383">383</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
 
 </div>
 </div>
@@ -845,7 +851,7 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>(<a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a>) A brand new <a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a> that represents the result. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00325">325</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00335">335</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
 
 </div>
 </div>
@@ -882,7 +888,7 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>(<a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a>&amp;) A reference to the lvalue of the operation. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00355">355</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00365">365</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
 
 </div>
 </div>
@@ -919,7 +925,7 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>(<a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a>) A brand new <a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a> that represents the result. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00331">331</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00341">341</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
 
 </div>
 </div>
@@ -956,7 +962,7 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>(<a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a>&amp;) A reference to the lvalue of the operation. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00364">364</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00374">374</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
 
 </div>
 </div>
@@ -993,7 +999,7 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>(<a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a>) A brand new <a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a> that represents the result. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00343">343</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00353">353</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
 
 </div>
 </div>
@@ -1030,9 +1036,9 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>(<a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a>&amp;) A reference to the lvalue of the operation. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00388">388</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00398">398</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="src_2emath_8cpp_source.html#l00207">emth::Monomial::get_degree()</a>.</p>
+<p class="reference">References <a class="el" href="src_2emath_8cpp_source.html#l00212">emth::Monomial::get_degree()</a>.</p>
 
 </div>
 </div>
@@ -1071,7 +1077,7 @@ Friends</h2></td></tr>
 <dd>
 (false) If the <a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a> object degree is equal or greater than the degree of the passed <a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a>. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00305">305</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00315">315</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
 
 </div>
 </div>
@@ -1110,7 +1116,7 @@ Friends</h2></td></tr>
 <dd>
 (false) If the <a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a> object degree is greater than the degree of the passed <a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a>. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00319">319</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00329">329</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
 
 </div>
 </div>
@@ -1147,7 +1153,7 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>(<a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a>&amp;) A reference to the lvalue of the operation </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00271">271</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00281">281</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
 
 </div>
 </div>
@@ -1184,7 +1190,7 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>(<a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a>&amp;) A reference to the lvalue of the operation </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00277">277</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00287">287</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
 
 </div>
 </div>
@@ -1223,7 +1229,7 @@ Friends</h2></td></tr>
 <dd>
 (false) If <a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a> objects degrees and monomials dont match. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00284">284</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00294">294</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
 
 </div>
 </div>
@@ -1262,7 +1268,7 @@ Friends</h2></td></tr>
 <dd>
 (false) If the <a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a> object degree is equal or less than the degree of the passed <a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a>. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00298">298</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00308">308</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
 
 </div>
 </div>
@@ -1301,7 +1307,81 @@ Friends</h2></td></tr>
 <dd>
 (false) If the <a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a> object degree is less than the degree of the passed <a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a>. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00312">312</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00322">322</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1dc4825c3d5005949f0869e204e4fedc" name="a1dc4825c3d5005949f0869e204e4fedc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dc4825c3d5005949f0869e204e4fedc">&#9670;&#160;</a></span>push_monomial() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool emth::Polynomial::push_monomial </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classemth_1_1Monomial.html">Monomial</a> &amp;&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Function for appending a lvalue monomial to the <a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>The <a class="el" href="classemth_1_1Monomial.html" title="Class for representing and operating monomials.">Monomial</a> object to append. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>(bool) If the operation was successful. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00459">459</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acd1befa11dd8d4e3da213114dc88cff7" name="acd1befa11dd8d4e3da213114dc88cff7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd1befa11dd8d4e3da213114dc88cff7">&#9670;&#160;</a></span>push_monomial() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool emth::Polynomial::push_monomial </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classemth_1_1Monomial.html">emth::Monomial</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Function for appending a rvalue monomial to the <a class="el" href="classemth_1_1Polynomial.html" title="Class for representing and operating polynomials.">Polynomial</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>The <a class="el" href="classemth_1_1Monomial.html" title="Class for representing and operating monomials.">Monomial</a> object to append. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>(bool) If the operation was successful. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="src_2emath_8cpp_source.html#l00465">465</a> of file <a class="el" href="src_2emath_8cpp_source.html">emath.cpp</a>.</p>
 
 </div>
 </div>
@@ -1408,7 +1488,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceemth.html">emth</a></li><li class="navelem"><a class="el" href="classemth_1_1Polynomial.html">Polynomial</a></li>
-    <li class="footer">Generated on Sun Jan 29 2023 18:52:38 for EMath++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated on Sat Feb 11 2023 00:12:42 for EMath++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

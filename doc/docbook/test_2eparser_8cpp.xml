@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_test_2eparser_8cpp" xml:lang="en-US">
+<title>test/eparser.cpp File Reference</title>
+<indexterm><primary>test/eparser.cpp</primary></indexterm>
+<para>
+
+<para>This is the main test file for the equation parser. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &lt;gtest/gtest.h&gt;<?linebreak?>#include &quot;eparser.h&quot;<?linebreak?></programlisting>Include dependency graph for eparser.cpp:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="test_2eparser_8cpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classEParserTest">EParserTest</link></para>
+
+<para>Class that provides a test fixture for the test cases. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_test_2eparser_8cpp_1adb859937dfb6fcd56c656c3c2555afc9">TEST_F</link> (<link linkend="_classEParserTest">EParserTest</link>, Lexer)</para>
+</listitem>
+            <listitem><para><link linkend="_test_2eparser_8cpp_1a9d00584eda85ad91bd3b865309697a92">TEST_F</link> (<link linkend="_classEParserTest">EParserTest</link>, CompoundLexer)</para>
+</listitem>
+            <listitem><para><link linkend="_test_2eparser_8cpp_1a9bae16de43d72897f903e5977107c60a">TEST_F</link> (<link linkend="_classEParserTest">EParserTest</link>, ArithmeticLexer)</para>
+</listitem>
+            <listitem><para><link linkend="_test_2eparser_8cpp_1a7ed288e238950900345be1751b543ab5">TEST_F</link> (<link linkend="_classEParserTest">EParserTest</link>, Variables)</para>
+</listitem>
+            <listitem><para><link linkend="_test_2eparser_8cpp_1a21f8c875c668e6dc3d1a1423cdba58a3">TEST_F</link> (<link linkend="_classEParserTest">EParserTest</link>, Compound)</para>
+</listitem>
+            <listitem><para><link linkend="_test_2eparser_8cpp_1aee28f89b9e4ebad2361a1f87e5068314">TEST_F</link> (<link linkend="_classEParserTest">EParserTest</link>, Signs)</para>
+</listitem>
+            <listitem><para><link linkend="_test_2eparser_8cpp_1a8178a3e2dd566ffdd7520265ce0c2fe3">TEST_F</link> (<link linkend="_classEParserTest">EParserTest</link>, Noise)</para>
+</listitem>
+            <listitem><para><link linkend="_test_2eparser_8cpp_1aeed0ae0397e5f82225fde1a6ba4f65a9">TEST_F</link> (<link linkend="_classEParserTest">EParserTest</link>, Edge)</para>
+</listitem>
+            <listitem><para>int <link linkend="_test_2eparser_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627">main</link> (int argc, char **argv)</para>
+
+<para>Function that runs all the declared tests. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>This is the main test file for the equation parser. </para>
+
+<para>This file contains a text fixture class and all the test cases.<?linebreak?>It consists of the <link linkend="_classEParserTest">EParserTest</link> classe that provides the test fixture for all the tests.<?linebreak?>Then it contains all the test cases, for testing correct execution. </para>
+<para>
+Definition in file <link linkend="_test_2eparser_8cpp_source">eparser.cpp</link>.</para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_test_2eparser_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627"/><section>
+    <title>main()</title>
+<indexterm><primary>main</primary><secondary>eparser.cpp</secondary></indexterm>
+<indexterm><primary>eparser.cpp</primary><secondary>main</secondary></indexterm>
+<para><computeroutput>int main (int argc, char ** argv)</computeroutput></para><para>
+
+<para>Function that runs all the declared tests. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>argc</entry><entry>
+<para>The console arguments count </para>
+</entry>
+                            </row>
+                            <row>
+<entry>argv</entry><entry>
+<para>The console arguments as a array of char arrays </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(0) If all tests passed </para>
+
+<para>(1) If one or more tests failed </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_test_2eparser_8cpp_source_1l00169">169</link> of file <link linkend="_test_2eparser_8cpp_source">eparser.cpp</link>.</para>
+</section>
+<anchor xml:id="_test_2eparser_8cpp_1a9bae16de43d72897f903e5977107c60a"/><section>
+    <title>TEST_F()<computeroutput>[1/8]</computeroutput></title>
+<indexterm><primary>TEST_F</primary><secondary>eparser.cpp</secondary></indexterm>
+<indexterm><primary>eparser.cpp</primary><secondary>TEST_F</secondary></indexterm>
+<para><computeroutput>TEST_F (<link linkend="_classEParserTest">EParserTest</link> , ArithmeticLexer )</computeroutput></para>
+<para><para><link linkend="_test_1_test000003">Test</link> 
+<para>Test lexer functionality with arithmetic expressions </para>
+</para></para>
+<para>
+Definition at line <link linkend="_test_2eparser_8cpp_source_1l00104">104</link> of file <link linkend="_test_2eparser_8cpp_source">eparser.cpp</link>.</para>
+<para>
+References <link linkend="_eparser_8h_source_1l00041">emthp::Token::type</link>, and <link linkend="_eparser_8h_source_1l00045">emthp::Token::value</link>.</para>
+</section>
+<anchor xml:id="_test_2eparser_8cpp_1a21f8c875c668e6dc3d1a1423cdba58a3"/><section>
+    <title>TEST_F()<computeroutput>[2/8]</computeroutput></title>
+<indexterm><primary>TEST_F</primary><secondary>eparser.cpp</secondary></indexterm>
+<indexterm><primary>eparser.cpp</primary><secondary>TEST_F</secondary></indexterm>
+<para><computeroutput>TEST_F (<link linkend="_classEParserTest">EParserTest</link> , Compound )</computeroutput></para>
+<para><para><link linkend="_test_1_test000005">Test</link> 
+<para>Test parser functionality with polynomial expressions </para>
+</para></para>
+<para>
+Definition at line <link linkend="_test_2eparser_8cpp_source_1l00140">140</link> of file <link linkend="_test_2eparser_8cpp_source">eparser.cpp</link>.</para>
+</section>
+<anchor xml:id="_test_2eparser_8cpp_1a9d00584eda85ad91bd3b865309697a92"/><section>
+    <title>TEST_F()<computeroutput>[3/8]</computeroutput></title>
+<indexterm><primary>TEST_F</primary><secondary>eparser.cpp</secondary></indexterm>
+<indexterm><primary>eparser.cpp</primary><secondary>TEST_F</secondary></indexterm>
+<para><computeroutput>TEST_F (<link linkend="_classEParserTest">EParserTest</link> , CompoundLexer )</computeroutput></para>
+<para><para><link linkend="_test_1_test000002">Test</link> 
+<para>Test lexer functionality with compund expressions </para>
+</para></para>
+<para>
+Definition at line <link linkend="_test_2eparser_8cpp_source_1l00077">77</link> of file <link linkend="_test_2eparser_8cpp_source">eparser.cpp</link>.</para>
+<para>
+References <link linkend="_eparser_8h_source_1l00041">emthp::Token::type</link>, and <link linkend="_eparser_8h_source_1l00045">emthp::Token::value</link>.</para>
+</section>
+<anchor xml:id="_test_2eparser_8cpp_1aeed0ae0397e5f82225fde1a6ba4f65a9"/><section>
+    <title>TEST_F()<computeroutput>[4/8]</computeroutput></title>
+<indexterm><primary>TEST_F</primary><secondary>eparser.cpp</secondary></indexterm>
+<indexterm><primary>eparser.cpp</primary><secondary>TEST_F</secondary></indexterm>
+<para><computeroutput>TEST_F (<link linkend="_classEParserTest">EParserTest</link> , Edge )</computeroutput></para>
+<para><para><link linkend="_test_1_test000008">Test</link> 
+<para>Test parser edge cases </para>
+</para></para>
+<para>
+Definition at line <link linkend="_test_2eparser_8cpp_source_1l00161">161</link> of file <link linkend="_test_2eparser_8cpp_source">eparser.cpp</link>.</para>
+</section>
+<anchor xml:id="_test_2eparser_8cpp_1adb859937dfb6fcd56c656c3c2555afc9"/><section>
+    <title>TEST_F()<computeroutput>[5/8]</computeroutput></title>
+<indexterm><primary>TEST_F</primary><secondary>eparser.cpp</secondary></indexterm>
+<indexterm><primary>eparser.cpp</primary><secondary>TEST_F</secondary></indexterm>
+<para><computeroutput>TEST_F (<link linkend="_classEParserTest">EParserTest</link> , Lexer )</computeroutput></para>
+<para><para><link linkend="_test_1_test000001">Test</link> 
+<para>Test lexer functionality with simple expressions </para>
+</para></para>
+<para>
+Definition at line <link linkend="_test_2eparser_8cpp_source_1l00042">42</link> of file <link linkend="_test_2eparser_8cpp_source">eparser.cpp</link>.</para>
+<para>
+References <link linkend="_eparser_8h_source_1l00041">emthp::Token::type</link>, and <link linkend="_eparser_8h_source_1l00045">emthp::Token::value</link>.</para>
+</section>
+<anchor xml:id="_test_2eparser_8cpp_1a8178a3e2dd566ffdd7520265ce0c2fe3"/><section>
+    <title>TEST_F()<computeroutput>[6/8]</computeroutput></title>
+<indexterm><primary>TEST_F</primary><secondary>eparser.cpp</secondary></indexterm>
+<indexterm><primary>eparser.cpp</primary><secondary>TEST_F</secondary></indexterm>
+<para><computeroutput>TEST_F (<link linkend="_classEParserTest">EParserTest</link> , Noise )</computeroutput></para>
+<para><para><link linkend="_test_1_test000007">Test</link> 
+<para>Test parser functionality with noise in the expressions </para>
+</para></para>
+<para>
+Definition at line <link linkend="_test_2eparser_8cpp_source_1l00154">154</link> of file <link linkend="_test_2eparser_8cpp_source">eparser.cpp</link>.</para>
+</section>
+<anchor xml:id="_test_2eparser_8cpp_1aee28f89b9e4ebad2361a1f87e5068314"/><section>
+    <title>TEST_F()<computeroutput>[7/8]</computeroutput></title>
+<indexterm><primary>TEST_F</primary><secondary>eparser.cpp</secondary></indexterm>
+<indexterm><primary>eparser.cpp</primary><secondary>TEST_F</secondary></indexterm>
+<para><computeroutput>TEST_F (<link linkend="_classEParserTest">EParserTest</link> , Signs )</computeroutput></para>
+<para><para><link linkend="_test_1_test000006">Test</link> 
+<para>Test parser functionality with sign expressions </para>
+</para></para>
+<para>
+Definition at line <link linkend="_test_2eparser_8cpp_source_1l00144">144</link> of file <link linkend="_test_2eparser_8cpp_source">eparser.cpp</link>.</para>
+</section>
+<anchor xml:id="_test_2eparser_8cpp_1a7ed288e238950900345be1751b543ab5"/><section>
+    <title>TEST_F()<computeroutput>[8/8]</computeroutput></title>
+<indexterm><primary>TEST_F</primary><secondary>eparser.cpp</secondary></indexterm>
+<indexterm><primary>eparser.cpp</primary><secondary>TEST_F</secondary></indexterm>
+<para><computeroutput>TEST_F (<link linkend="_classEParserTest">EParserTest</link> , Variables )</computeroutput></para>
+<para><para><link linkend="_test_1_test000004">Test</link> 
+<para>Test parser functionality with monomial expressions </para>
+</para></para>
+<para>
+Definition at line <link linkend="_test_2eparser_8cpp_source_1l00131">131</link> of file <link linkend="_test_2eparser_8cpp_source">eparser.cpp</link>.</para>
+</section>
+</section>
+</section>

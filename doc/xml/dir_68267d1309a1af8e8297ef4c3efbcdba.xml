@@ -3,6 +3,7 @@
   <compounddef id="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir">
     <compoundname>src</compoundname>
     <innerfile refid="src_2emath_8cpp">emath.cpp</innerfile>
+    <innerfile refid="src_2eparser_8cpp">eparser.cpp</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

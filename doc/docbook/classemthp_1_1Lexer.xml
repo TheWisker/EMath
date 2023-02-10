@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classemthp_1_1Lexer" xml:lang="en-US">
+<title>emthp::Lexer Class Reference</title>
+<indexterm><primary>emthp::Lexer</primary></indexterm>
+<para>
+
+<para>Class that works as a token supplier for the <link linkend="_classemthp_1_1Parser">Parser</link> class. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;eparser.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classemthp_1_1Lexer_1ad3560b27e6813e3e0aeaa48b19dc5dd2">Lexer</link> (const std::string &amp;input) noexcept</para>
+
+<para>Standalone constructor for the <link linkend="_classemthp_1_1Lexer">Lexer</link> class. </para>
+</listitem>
+            <listitem><para><link linkend="_classemthp_1_1Lexer">Lexer</link> &amp; <link linkend="_classemthp_1_1Lexer_1a5116f34af8ec69634dc9202ae2d48b4a">operator=</link> (const <link linkend="_classemthp_1_1Lexer">Lexer</link> &amp;ogn) noexcept</para>
+
+<para>Assigment operator for when called with an lvalue. </para>
+</listitem>
+            <listitem><para><link linkend="_structemthp_1_1Token">Token</link> <link linkend="_classemthp_1_1Lexer_1a629ea5f393603e05dad17b004caba27d">next</link> () noexcept</para>
+
+<para>Function that returns the next <link linkend="_structemthp_1_1Token">Token</link> in the input provided in the constructor. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classemthp_1_1Lexer_1a273b288699191ec896c9857cfe7f5704">back</link> () noexcept</para>
+
+<para>Backtrack function that moves the cursor&apos;s position one position backwards. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Class that works as a token supplier for the <link linkend="_classemthp_1_1Parser">Parser</link> class. </para>
+
+
+
+<para>The class consists of two public functions, one for getting the next <link linkend="_structemthp_1_1Token">Token</link> and the other for going back one position. </para>
+<para>
+Definition at line <link linkend="_eparser_8h_source_1l00052">52</link> of file <link linkend="_eparser_8h_source">eparser.h</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classemthp_1_1Lexer_1ad3560b27e6813e3e0aeaa48b19dc5dd2"/><section>
+    <title>Lexer()</title>
+<indexterm><primary>Lexer</primary><secondary>emthp::Lexer</secondary></indexterm>
+<indexterm><primary>emthp::Lexer</primary><secondary>Lexer</secondary></indexterm>
+<para><computeroutput>emthp::Lexer::Lexer (const std::string &amp; input)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Standalone constructor for the <link linkend="_classemthp_1_1Lexer">Lexer</link> class. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>input</entry><entry>
+<para>A const reference to the std::string to tokenize. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_src_2eparser_8cpp_source_1l00014">14</link> of file <link linkend="_src_2eparser_8cpp_source">eparser.cpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classemthp_1_1Lexer_1a273b288699191ec896c9857cfe7f5704"/><section>
+    <title>back()</title>
+<indexterm><primary>back</primary><secondary>emthp::Lexer</secondary></indexterm>
+<indexterm><primary>emthp::Lexer</primary><secondary>back</secondary></indexterm>
+<para><computeroutput>void emthp::Lexer::back ( )<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Backtrack function that moves the cursor&apos;s position one position backwards. </para>
+</para>
+<para>
+Definition at line <link linkend="_src_2eparser_8cpp_source_1l00052">52</link> of file <link linkend="_src_2eparser_8cpp_source">eparser.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemthp_1_1Lexer_1a629ea5f393603e05dad17b004caba27d"/><section>
+    <title>next()</title>
+<indexterm><primary>next</primary><secondary>emthp::Lexer</secondary></indexterm>
+<indexterm><primary>emthp::Lexer</primary><secondary>next</secondary></indexterm>
+<para><computeroutput><link linkend="_structemthp_1_1Token">emthp::Token</link> emthp::Lexer::next ( )<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Function that returns the next <link linkend="_structemthp_1_1Token">Token</link> in the input provided in the constructor. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>(<link linkend="_structemthp_1_1Token">Token</link>) The next <link linkend="_structemthp_1_1Token">Token</link> in the input </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2eparser_8cpp_source_1l00029">29</link> of file <link linkend="_src_2eparser_8cpp_source">eparser.cpp</link>.</para>
+<para>
+References <link linkend="_src_2eparser_8cpp_source_1l00029">next()</link>, and <link linkend="_eparser_8h_source_1l00025">emthp::T_PLUS</link>.</para>
+</section>
+<anchor xml:id="_classemthp_1_1Lexer_1a5116f34af8ec69634dc9202ae2d48b4a"/><section>
+    <title>operator=()</title>
+<indexterm><primary>operator=</primary><secondary>emthp::Lexer</secondary></indexterm>
+<indexterm><primary>emthp::Lexer</primary><secondary>operator=</secondary></indexterm>
+<para><computeroutput><link linkend="_classemthp_1_1Lexer">emthp::Lexer</link> &amp; emthp::Lexer::operator= (const <link linkend="_classemthp_1_1Lexer">Lexer</link> &amp; ogn)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Assigment operator for when called with an lvalue. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The lvalue <link linkend="_classemthp_1_1Lexer">Lexer</link> object. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(<link linkend="_classemthp_1_1Lexer">Lexer</link>&amp;) A reference to the lvalue of the operation </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2eparser_8cpp_source_1l00020">20</link> of file <link linkend="_src_2eparser_8cpp_source">eparser.cpp</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+include/<link linkend="_eparser_8h">eparser.h</link>src/<link linkend="_src_2eparser_8cpp">eparser.cpp</link></section>
+</section>

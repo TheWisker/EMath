@@ -64,6 +64,10 @@ int \mbox{\hyperlink{classemth_1_1Polynomial_a7eb2c1c9bbbb013220d24f5d2a24a963}{
 \begin{DoxyCompactList}\small\item\em Getter function for getting the degree of the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}. \end{DoxyCompactList}\item 
 std\+::map$<$ int, \mbox{\hyperlink{classemth_1_1Monomial}{Monomial}} $>$ \mbox{\hyperlink{classemth_1_1Polynomial_a02fda10cd15abff226c5a8013f4928f7}{get\+\_\+monomials}} () const noexcept
 \begin{DoxyCompactList}\small\item\em Getter function for getting the monomials of the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classemth_1_1Polynomial_a1dc4825c3d5005949f0869e204e4fedc}{push\+\_\+monomial}} (const \mbox{\hyperlink{classemth_1_1Monomial}{Monomial}} \&m) noexcept
+\begin{DoxyCompactList}\small\item\em Function for appending a lvalue monomial to the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classemth_1_1Polynomial_acd1befa11dd8d4e3da213114dc88cff7}{push\+\_\+monomial}} (\mbox{\hyperlink{classemth_1_1Monomial}{Monomial}} \&\&m) noexcept
+\begin{DoxyCompactList}\small\item\em Function for appending a rvalue monomial to the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{classemth_1_1Polynomial_a6f3eb1e674dbce5f0a172d8b5fd7ab2b}{get\+\_\+expression}} () const noexcept
 \begin{DoxyCompactList}\small\item\em Getter function for getting the expression of the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}. \end{DoxyCompactList}\item 
 double \mbox{\hyperlink{classemth_1_1Polynomial_a644cd3ebe3afa676cc3db99557f6eed3}{get\+\_\+value}} (const double \&x) const noexcept
@@ -89,7 +93,7 @@ Class for representing and operating polynomials.
 
 The class consists of the constructors, the operators, the getters, the properties and some private functions. 
 
-Definition at line \mbox{\hyperlink{emath_8h_source_l00276}{276}} of file \mbox{\hyperlink{emath_8h_source}{emath.\+h}}.
+Definition at line \mbox{\hyperlink{emath_8h_source_l00286}{286}} of file \mbox{\hyperlink{emath_8h_source}{emath.\+h}}.
 
 
 
@@ -106,7 +110,7 @@ Default constructor for when initialized with no arguments.
 
 
 
-Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00240}{240}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00250}{250}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
 
 \mbox{\Hypertarget{classemth_1_1Polynomial_af0f389de210155a112852f013aaa18d3}\label{classemth_1_1Polynomial_af0f389de210155a112852f013aaa18d3}} 
 \index{emth::Polynomial@{emth::Polynomial}!Polynomial@{Polynomial}}
@@ -170,7 +174,7 @@ Copy constructor for when initialized with an lvalue \mbox{\hyperlink{classemth_
 \end{DoxyParams}
 
 
-Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00260}{260}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00270}{270}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
 
 \mbox{\Hypertarget{classemth_1_1Polynomial_a3f55b493797c89e9079c7019fb905059}\label{classemth_1_1Polynomial_a3f55b493797c89e9079c7019fb905059}} 
 \index{emth::Polynomial@{emth::Polynomial}!Polynomial@{Polynomial}}
@@ -189,7 +193,7 @@ Move constructor for when initialized with an rvalue \mbox{\hyperlink{classemth_
 \end{DoxyParams}
 
 
-Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00265}{265}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00275}{275}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
 
 
 
@@ -209,7 +213,7 @@ Getter function for getting the degree of the \mbox{\hyperlink{classemth_1_1Poly
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00438}{438}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00448}{448}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
 
 \mbox{\Hypertarget{classemth_1_1Polynomial_a1f27fae485c94bb0f00a46c50214ab37}\label{classemth_1_1Polynomial_a1f27fae485c94bb0f00a46c50214ab37}} 
 \index{emth::Polynomial@{emth::Polynomial}!get\_derivative@{get\_derivative}}
@@ -226,7 +230,7 @@ Calculus function for getting the derivative of the \mbox{\hyperlink{classemth_1
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00463}{463}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00490}{490}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
 
 \mbox{\Hypertarget{classemth_1_1Polynomial_a6f3eb1e674dbce5f0a172d8b5fd7ab2b}\label{classemth_1_1Polynomial_a6f3eb1e674dbce5f0a172d8b5fd7ab2b}} 
 \index{emth::Polynomial@{emth::Polynomial}!get\_expression@{get\_expression}}
@@ -243,7 +247,7 @@ Getter function for getting the expression of the \mbox{\hyperlink{classemth_1_1
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00448}{448}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00475}{475}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
 
 \mbox{\Hypertarget{classemth_1_1Polynomial_ac87df7094ce26a8e9cba6df79a3eaf2d}\label{classemth_1_1Polynomial_ac87df7094ce26a8e9cba6df79a3eaf2d}} 
 \index{emth::Polynomial@{emth::Polynomial}!get\_integral@{get\_integral}}
@@ -260,7 +264,7 @@ Calculus function for getting the integral of the \mbox{\hyperlink{classemth_1_1
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00474}{474}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00501}{501}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
 
 \mbox{\Hypertarget{classemth_1_1Polynomial_a02fda10cd15abff226c5a8013f4928f7}\label{classemth_1_1Polynomial_a02fda10cd15abff226c5a8013f4928f7}} 
 \index{emth::Polynomial@{emth::Polynomial}!get\_monomials@{get\_monomials}}
@@ -277,7 +281,7 @@ Getter function for getting the monomials of the \mbox{\hyperlink{classemth_1_1P
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00443}{443}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00453}{453}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
 
 \mbox{\Hypertarget{classemth_1_1Polynomial_a644cd3ebe3afa676cc3db99557f6eed3}\label{classemth_1_1Polynomial_a644cd3ebe3afa676cc3db99557f6eed3}} 
 \index{emth::Polynomial@{emth::Polynomial}!get\_value@{get\_value}}
@@ -299,7 +303,7 @@ Calculus function for getting the value of the \mbox{\hyperlink{classemth_1_1Pol
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00454}{454}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00481}{481}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
 
 \mbox{\Hypertarget{classemth_1_1Polynomial_a40fefffeb0043d193d5aa7ecb3adba55}\label{classemth_1_1Polynomial_a40fefffeb0043d193d5aa7ecb3adba55}} 
 \index{emth::Polynomial@{emth::Polynomial}!operator"!=@{operator"!=}}
@@ -323,7 +327,7 @@ Not equal logic operator overload.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00291}{291}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00301}{301}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
 
 \mbox{\Hypertarget{classemth_1_1Polynomial_a56a499385ad24715b1240611217277c5}\label{classemth_1_1Polynomial_a56a499385ad24715b1240611217277c5}} 
 \index{emth::Polynomial@{emth::Polynomial}!operator\%@{operator\%}}
@@ -345,7 +349,7 @@ Modulus operator overload.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00349}{349}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00359}{359}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
 
 \mbox{\Hypertarget{classemth_1_1Polynomial_a2e6bd9b16b732b38caabf950acfd5cb2}\label{classemth_1_1Polynomial_a2e6bd9b16b732b38caabf950acfd5cb2}} 
 \index{emth::Polynomial@{emth::Polynomial}!operator\%=@{operator\%=}}
@@ -367,7 +371,7 @@ Modulus assigment operator overload.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00405}{405}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00415}{415}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
 
 \mbox{\Hypertarget{classemth_1_1Polynomial_ac461b9aeb93c33d540f0a918bdefd203}\label{classemth_1_1Polynomial_ac461b9aeb93c33d540f0a918bdefd203}} 
 \index{emth::Polynomial@{emth::Polynomial}!operator$\ast$@{operator$\ast$}}
@@ -389,7 +393,7 @@ Multiplication operator overload.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00337}{337}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00347}{347}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
 
 \mbox{\Hypertarget{classemth_1_1Polynomial_abdeb3769c43eec881ae8ed1a20a5d01d}\label{classemth_1_1Polynomial_abdeb3769c43eec881ae8ed1a20a5d01d}} 
 \index{emth::Polynomial@{emth::Polynomial}!operator$\ast$=@{operator$\ast$=}}
@@ -411,7 +415,7 @@ Multiplication assigment operator overload.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00373}{373}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00383}{383}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
 
 \mbox{\Hypertarget{classemth_1_1Polynomial_a9d46082ad38edc17f875127208626281}\label{classemth_1_1Polynomial_a9d46082ad38edc17f875127208626281}} 
 \index{emth::Polynomial@{emth::Polynomial}!operator+@{operator+}}
@@ -433,7 +437,7 @@ Addition operator overload.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00325}{325}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00335}{335}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
 
 \mbox{\Hypertarget{classemth_1_1Polynomial_a791a5aa2207acd2fccc4124ff36eb0bf}\label{classemth_1_1Polynomial_a791a5aa2207acd2fccc4124ff36eb0bf}} 
 \index{emth::Polynomial@{emth::Polynomial}!operator+=@{operator+=}}
@@ -455,7 +459,7 @@ Addition assigment operator overload.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00355}{355}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00365}{365}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
 
 \mbox{\Hypertarget{classemth_1_1Polynomial_a1cd22ae48bfcb14b53835730091e5f4d}\label{classemth_1_1Polynomial_a1cd22ae48bfcb14b53835730091e5f4d}} 
 \index{emth::Polynomial@{emth::Polynomial}!operator-\/@{operator-\/}}
@@ -477,7 +481,7 @@ Substraction operator overload.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00331}{331}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00341}{341}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
 
 \mbox{\Hypertarget{classemth_1_1Polynomial_af545354b4dade3e286be26207d02a442}\label{classemth_1_1Polynomial_af545354b4dade3e286be26207d02a442}} 
 \index{emth::Polynomial@{emth::Polynomial}!operator-\/=@{operator-\/=}}
@@ -499,7 +503,7 @@ Substraction assigment operator overload.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00364}{364}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00374}{374}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
 
 \mbox{\Hypertarget{classemth_1_1Polynomial_aa2a054dcc203257bfc3d06621ce876b1}\label{classemth_1_1Polynomial_aa2a054dcc203257bfc3d06621ce876b1}} 
 \index{emth::Polynomial@{emth::Polynomial}!operator/@{operator/}}
@@ -521,7 +525,7 @@ Division operator overload.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00343}{343}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00353}{353}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
 
 \mbox{\Hypertarget{classemth_1_1Polynomial_ac5a003db2381c99c97c4a78341145b26}\label{classemth_1_1Polynomial_ac5a003db2381c99c97c4a78341145b26}} 
 \index{emth::Polynomial@{emth::Polynomial}!operator/=@{operator/=}}
@@ -543,11 +547,11 @@ Division assigment operator overload.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00388}{388}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00398}{398}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
 
 
 
-References \mbox{\hyperlink{src_2emath_8cpp_source_l00207}{emth\+::\+Monomial\+::get\+\_\+degree()}}.
+References \mbox{\hyperlink{src_2emath_8cpp_source_l00212}{emth\+::\+Monomial\+::get\+\_\+degree()}}.
 
 \mbox{\Hypertarget{classemth_1_1Polynomial_a0f0640fcb0dd0a59b685a646d494bfc7}\label{classemth_1_1Polynomial_a0f0640fcb0dd0a59b685a646d494bfc7}} 
 \index{emth::Polynomial@{emth::Polynomial}!operator$<$@{operator$<$}}
@@ -571,7 +575,7 @@ Less than logic operator overload.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00305}{305}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00315}{315}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
 
 \mbox{\Hypertarget{classemth_1_1Polynomial_a7b234cebd032016c0a8ece92a4f68141}\label{classemth_1_1Polynomial_a7b234cebd032016c0a8ece92a4f68141}} 
 \index{emth::Polynomial@{emth::Polynomial}!operator$<$=@{operator$<$=}}
@@ -595,7 +599,7 @@ Less or equal than logic operator overload.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00319}{319}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00329}{329}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
 
 \mbox{\Hypertarget{classemth_1_1Polynomial_a33ba807b5465ead26edd077d8289f4f3}\label{classemth_1_1Polynomial_a33ba807b5465ead26edd077d8289f4f3}} 
 \index{emth::Polynomial@{emth::Polynomial}!operator=@{operator=}}
@@ -617,7 +621,7 @@ Assigment operator overload for when called with an lvalue.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00271}{271}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00281}{281}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
 
 \mbox{\Hypertarget{classemth_1_1Polynomial_a93818b33532e3f8e80fa614ca8287479}\label{classemth_1_1Polynomial_a93818b33532e3f8e80fa614ca8287479}} 
 \index{emth::Polynomial@{emth::Polynomial}!operator=@{operator=}}
@@ -639,7 +643,7 @@ Move assigment operator overload for when called with an rvalue.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00277}{277}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00287}{287}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
 
 \mbox{\Hypertarget{classemth_1_1Polynomial_ad042381e1713be21b332d3f8fbdfd0a7}\label{classemth_1_1Polynomial_ad042381e1713be21b332d3f8fbdfd0a7}} 
 \index{emth::Polynomial@{emth::Polynomial}!operator==@{operator==}}
@@ -663,7 +667,7 @@ Equal logic operator overload.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00284}{284}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00294}{294}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
 
 \mbox{\Hypertarget{classemth_1_1Polynomial_ae358f6f9b93783601af6999b67e0dafb}\label{classemth_1_1Polynomial_ae358f6f9b93783601af6999b67e0dafb}} 
 \index{emth::Polynomial@{emth::Polynomial}!operator$>$@{operator$>$}}
@@ -687,7 +691,7 @@ Greater than logic operator overload.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00298}{298}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00308}{308}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
 
 \mbox{\Hypertarget{classemth_1_1Polynomial_a2321b93b1482b6677dbd125739848724}\label{classemth_1_1Polynomial_a2321b93b1482b6677dbd125739848724}} 
 \index{emth::Polynomial@{emth::Polynomial}!operator$>$=@{operator$>$=}}
@@ -711,7 +715,51 @@ Greater or equal than logic operator overload.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00312}{312}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00322}{322}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+
+\mbox{\Hypertarget{classemth_1_1Polynomial_a1dc4825c3d5005949f0869e204e4fedc}\label{classemth_1_1Polynomial_a1dc4825c3d5005949f0869e204e4fedc}} 
+\index{emth::Polynomial@{emth::Polynomial}!push\_monomial@{push\_monomial}}
+\index{push\_monomial@{push\_monomial}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{push\_monomial()}{push\_monomial()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool emth\+::\+Polynomial\+::push\+\_\+monomial (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classemth_1_1Monomial}{Monomial}} \&}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Function for appending a lvalue monomial to the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & The \mbox{\hyperlink{classemth_1_1Monomial}{Monomial}} object to append. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(bool) If the operation was successful. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00459}{459}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+
+\mbox{\Hypertarget{classemth_1_1Polynomial_acd1befa11dd8d4e3da213114dc88cff7}\label{classemth_1_1Polynomial_acd1befa11dd8d4e3da213114dc88cff7}} 
+\index{emth::Polynomial@{emth::Polynomial}!push\_monomial@{push\_monomial}}
+\index{push\_monomial@{push\_monomial}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{push\_monomial()}{push\_monomial()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool emth\+::\+Polynomial\+::push\+\_\+monomial (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classemth_1_1Monomial}{emth\+::\+Monomial}} \&\&}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Function for appending a rvalue monomial to the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & The \mbox{\hyperlink{classemth_1_1Monomial}{Monomial}} object to append. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(bool) If the operation was successful. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00465}{465}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
 
 
 

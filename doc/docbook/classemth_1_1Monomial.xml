@@ -101,13 +101,21 @@
 
 <para>Modulus assigment operator overload. </para>
 </listitem>
+            <listitem><para>double <link linkend="_classemth_1_1Monomial_1ac0ea8a4e12483048519184c536c27124">get_coeff</link> () const noexcept</para>
+
+<para>Getter function for getting the coefficient of the <link linkend="_classemth_1_1Monomial">Monomial</link>. </para>
+</listitem>
             <listitem><para>int <link linkend="_classemth_1_1Monomial_1a1a11b6043ddc48006fe37241bb6bc6d0">get_degree</link> () const noexcept</para>
 
 <para>Getter function for getting the degree of the <link linkend="_classemth_1_1Monomial">Monomial</link>. </para>
 </listitem>
-            <listitem><para>double <link linkend="_classemth_1_1Monomial_1ac0ea8a4e12483048519184c536c27124">get_coeff</link> () const noexcept</para>
+            <listitem><para>void <link linkend="_classemth_1_1Monomial_1adae9aaac815a7c86ec651e5bdb3d3043">set_coeff</link> (double cf) noexcept</para>
 
-<para>Getter function for getting the coefficient of the <link linkend="_classemth_1_1Monomial">Monomial</link>. </para>
+<para>Setter function for setting the coefficient of the <link linkend="_classemth_1_1Monomial">Monomial</link>. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classemth_1_1Monomial_1ab695cba07bcbf08cfec7d32e0bf4cc20">set_degree</link> (int dgr) noexcept</para>
+
+<para>Setter function for setting the degree of the <link linkend="_classemth_1_1Monomial">Monomial</link>. </para>
 </listitem>
             <listitem><para>std::string <link linkend="_classemth_1_1Monomial_1a2940ea82172b382f8354fe4d1556b996">get_expression</link> () const noexcept</para>
 
@@ -282,7 +290,7 @@ Definition at line <link linkend="_src_2emath_8cpp_source_1l00046">46</link> of 
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_src_2emath_8cpp_source_1l00212">212</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00207">207</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
 </section>
 <anchor xml:id="_classemth_1_1Monomial_1a1a11b6043ddc48006fe37241bb6bc6d0"/><section>
     <title>get_degree()</title>
@@ -299,7 +307,7 @@ Definition at line <link linkend="_src_2emath_8cpp_source_1l00212">212</link> of
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_src_2emath_8cpp_source_1l00207">207</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00212">212</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
 </section>
 <anchor xml:id="_classemth_1_1Monomial_1a2940ea82172b382f8354fe4d1556b996"/><section>
     <title>get_expression()</title>
@@ -316,7 +324,7 @@ Definition at line <link linkend="_src_2emath_8cpp_source_1l00207">207</link> of
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_src_2emath_8cpp_source_1l00217">217</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00227">227</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
 </section>
 <anchor xml:id="_classemth_1_1Monomial_1a50a76c251c4a66c3522b78f0aba3c157"/><section>
     <title>get_value()</title>
@@ -353,7 +361,7 @@ Parameters</title>
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_src_2emath_8cpp_source_1l00223">223</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00233">233</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
 </section>
 <anchor xml:id="_classemth_1_1Monomial_1ab7f80ead25e2f5d4ad80cdbbfe49d5e3"/><section>
     <title>operator!=()</title>
@@ -1032,6 +1040,72 @@ Parameters</title>
 </para>
 <para>
 Definition at line <link linkend="_src_2emath_8cpp_source_1l00093">93</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Monomial_1adae9aaac815a7c86ec651e5bdb3d3043"/><section>
+    <title>set_coeff()</title>
+<indexterm><primary>set_coeff</primary><secondary>emth::Monomial</secondary></indexterm>
+<indexterm><primary>emth::Monomial</primary><secondary>set_coeff</secondary></indexterm>
+<para><computeroutput>void emth::Monomial::set_coeff (double cf)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Setter function for setting the coefficient of the <link linkend="_classemth_1_1Monomial">Monomial</link>. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>cf</entry><entry>
+<para>The coefficient to set to. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00217">217</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Monomial_1ab695cba07bcbf08cfec7d32e0bf4cc20"/><section>
+    <title>set_degree()</title>
+<indexterm><primary>set_degree</primary><secondary>emth::Monomial</secondary></indexterm>
+<indexterm><primary>emth::Monomial</primary><secondary>set_degree</secondary></indexterm>
+<para><computeroutput>void emth::Monomial::set_degree (int dgr)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Setter function for setting the degree of the <link linkend="_classemth_1_1Monomial">Monomial</link>. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>dgr</entry><entry>
+<para>The degree to set to. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00222">222</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
 </section>
 </section>
 <section>

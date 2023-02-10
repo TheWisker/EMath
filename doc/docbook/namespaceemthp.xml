@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespaceemthp" xml:lang="en-US">
+<title>emthp Namespace Reference</title>
+<indexterm><primary>emthp</primary></indexterm>
+<para>
+
+<para>Englobes all the classes and functions of the parser. </para>
+ 
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classemthp_1_1Lexer">Lexer</link></para>
+
+<para>Class that works as a token supplier for the <link linkend="_classemthp_1_1Parser">Parser</link> class. </para>
+</listitem>
+            <listitem><para>class <link linkend="_classemthp_1_1Parser">Parser</link></para>
+
+<para>Class that wraps a std::string and parses it as a Monomial or as a Polynomial. </para>
+</listitem>
+            <listitem><para>struct <link linkend="_structemthp_1_1Token">Token</link></para>
+
+<para>Struct for representing a token as a type and a value. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6b">TokenType</link> { <?linebreak?><link linkend="_namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6bab0be00ab2ea8e4a56ab22f220c7de9bf">T_PLUS</link>
+, <emphasis role="strong">T_MINUS</emphasis>
+, <emphasis role="strong">T_NUMBER</emphasis>
+, <emphasis role="strong">T_VARIABLE</emphasis>
+, <?linebreak?><emphasis role="strong">T_EXPONENT</emphasis>
+, <emphasis role="strong">T_EOF</emphasis>
+ }</para>
+
+<para>Enum with all the possible Token types. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Englobes all the classes and functions of the parser. </para>
+
+<para>The emthp namespace contains two classes: <link linkend="_classemthp_1_1Parser">Parser</link> and <link linkend="_classemthp_1_1Lexer">Lexer</link>. It also contains the TokenType enum and a <link linkend="_structemthp_1_1Token">Token</link> struct. </para>
+</section>
+<section>
+<title>Enumeration Type Documentation</title>
+<anchor xml:id="_namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6b"/><section>
+    <title>TokenType</title>
+<indexterm><primary>TokenType</primary><secondary>emthp</secondary></indexterm>
+<indexterm><primary>emthp</primary><secondary>TokenType</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6b">emthp::TokenType</link></computeroutput></para><para>
+
+<para>Enum with all the possible <link linkend="_structemthp_1_1Token">Token</link> types. </para>
+</para>
+<informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>T_PLUS</primary><secondary>emthp</secondary></indexterm>
+<indexterm><primary>emthp</primary><secondary>T_PLUS</secondary></indexterm>
+<anchor xml:id="_namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6bab0be00ab2ea8e4a56ab22f220c7de9bf"/>T_PLUS</entry><entry>
+<para>Enum with all the possible <link linkend="_structemthp_1_1Token">Token</link> types. </para>
+</entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+<para>
+Definition at line <link linkend="_eparser_8h_source_1l00021">21</link> of file <link linkend="_eparser_8h_source">eparser.h</link>.</para>
+</section>
+</section>
+</section>

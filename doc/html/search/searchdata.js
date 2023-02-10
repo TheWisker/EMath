@@ -1,12 +1,15 @@
 var indexSectionsWithContent =
 {
-  0: "aegmopt~",
-  1: "amp",
+  0: "abeglmnopstv~",
+  1: "aelmpt",
   2: "e",
   3: "e",
-  4: "gmopt~",
-  5: "o",
-  6: "e"
+  4: "beglmnopst~",
+  5: "lptv",
+  6: "t",
+  7: "t",
+  8: "o",
+  9: "et"
 };
 
 var indexSectionNames =
@@ -16,8 +19,11 @@ var indexSectionNames =
   2: "namespaces",
   3: "files",
   4: "functions",
-  5: "related",
-  6: "pages"
+  5: "variables",
+  6: "enums",
+  7: "enumvalues",
+  8: "related",
+  9: "pages"
 };
 
 var indexSectionLabels =
@@ -27,7 +33,10 @@ var indexSectionLabels =
   2: "Namespaces",
   3: "Files",
   4: "Functions",
-  5: "Friends",
-  6: "Pages"
+  5: "Variables",
+  6: "Enumerations",
+  7: "Enumerator",
+  8: "Friends",
+  9: "Pages"
 };
 

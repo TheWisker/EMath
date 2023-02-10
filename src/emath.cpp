@@ -201,15 +201,25 @@ std::stringstream& emth::operator<<(std::stringstream& ss, const emth::Monomial&
 **/
 std::ostream& emth::operator<<(std::ostream& out, const emth::Monomial& m) {out << m.coeff << "x^" << m.degree; return out;}
 /**
+* @brief Getter function for getting the coefficient of the Monomial
+* @return (double) The coefficient of the Monomial.
+**/
+double emth::Monomial::get_coeff() const noexcept {return this->coeff;}
+/**
 * @brief Getter function for getting the degree of the Monomial
 * @return (int) The degree of the Monomial.
 **/
 int emth::Monomial::get_degree() const noexcept {return this->degree;}
 /**
-* @brief Getter function for getting the coefficient of the Monomial
-* @return (double) The coefficient of the Monomial.
+* @brief Setter function for setting the coefficient of the Monomial
+* @param cf The coefficient to set to.
 **/
-double emth::Monomial::get_coeff() const noexcept {return this->coeff;}
+void emth::Monomial::set_coeff(double cf) noexcept {this->coeff = cf; return;}
+/**
+* @brief Setter function for setting the degree of the Monomial
+* @param dgr The degree to set to.
+**/
+void emth::Monomial::set_degree(int dgr) noexcept {this->degree = dgr; return;}
 /**
 * @brief Getter function for getting the expression of the Monomial
 * @return (std::string) The expression of the Monomial.
@@ -441,6 +451,23 @@ int emth::Polynomial::get_degree() const noexcept {return this->monomials.crbegi
 * @return (std::map<int, Monomial>) The monomials of the Polynomial.
 **/
 std::map<int, emth::Monomial> emth::Polynomial::get_monomials() const noexcept {return this->monomials;}
+/**
+* @brief Function for appending a lvalue monomial to the Polynomial
+* @param m The Monomial object to append.
+* @return (bool) If the operation was successful.
+**/
+bool emth::Polynomial::push_monomial(const emth::Monomial& m) noexcept {this->push_monomial(emth::Monomial(m));};
+/**
+* @brief Function for appending a rvalue monomial to the Polynomial
+* @param m The Monomial object to append.
+* @return (bool) If the operation was successful.
+**/
+bool emth::Polynomial::push_monomial(emth::Monomial&& m) noexcept {
+    if (m.get_coeff() == 0) {return false;}
+    this->monomials[m.get_degree()] += m;
+    this->redux();
+    return true;
+};
 /**
 * @brief Getter function for getting the expression of the Polynomial
 * @return (std::string) The expression of the Polynomial.
