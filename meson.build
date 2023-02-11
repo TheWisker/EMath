@@ -33,7 +33,7 @@ eparser_stlib = static_library('static_eparser', files(eparser_files), include_d
 install_headers(files(emath_headers, eparser_headers))
 
 #Add test files
-if !host_machine.system() in ['windows', 'mingw']
+if not host_machine.system() in ['windows', 'mingw']
     emath_test = executable('test_emath', files(emath_test_files), name_suffix: exe_ext, include_directories: include)
     eparser_test = executable('test_eparser', files(eparser_test_files), name_suffix: exe_ext, include_directories: include) #dependencies: dependency('gtest')
     test('emath_tests', emath_test,)
