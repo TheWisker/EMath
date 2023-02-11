@@ -6,15 +6,21 @@ mkdir -v ./bin
 mkdir -v ./bin/win
 meson setup ./bin --prefix=$source_path/
 meson setup ./bin/win --cross-file assets/crosswin.txt --prefix=$source_path/
-git add .
-git commit -m "Cross compilation executing"
 cd ./bin
 meson configure --buildtype=release --optimization=3
 meson compile
+cd ../
+git add .
+git commit -m "Cross compilation executing"
+cd ./bin
 meson dist --no-tests
 cd ./win
 meson configure --buildtype=release --optimization=3
 meson compile
+cd ../../
+git add .
+git commit -m "Cross compilation executing"
+cd ./bin/win
 meson dist --formats zip --no-tests
 mkdir -v ../../dist/
 cp -r ./meson-dist/* ../../dist/
