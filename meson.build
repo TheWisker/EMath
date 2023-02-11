@@ -1,15 +1,13 @@
 project('Emath++', 'cpp', version : '1.1.0')
 
-include = ['./include/', './third_party/CSet/include/', './third_party/googletest/googletest/include/']
+include = ['./include/', './third_party/CSet/include/']
 emath_headers = ['./include/emath.h', './third_party/CSet/include/set.h']
 eparser_headers = ['./include/eparser.h']
 emath_files = [emath_headers, './src/emath.cpp']
 eparser_files = [eparser_headers, './src/eparser.cpp', emath_files]
 
-gtest_files = ['./third_party/googletest/googletest/include/gtest/gtest.h', './third_party/googletest/googletest/include/gtest/gtest.cc']
-
 emath_test_files = ['./test/emath.cpp', emath_files]
-eparser_test_files = [eparser_files, './test/eparser.cpp', gtest_files]
+eparser_test_files = [eparser_files, './test/eparser.cpp']
 
 # Determine the system that is being built on
 if host_machine.system() in ['windows', 'mingw']
@@ -35,10 +33,12 @@ eparser_stlib = static_library('static_eparser', files(eparser_files), include_d
 install_headers(files(emath_headers, eparser_headers))
 
 #Add test files
-emath_test = executable('test_emath', files(emath_test_files), name_suffix: exe_ext, include_directories: include)
-eparser_test = executable('test_eparser', files(eparser_test_files), name_suffix: exe_ext, dependencies: dependency('gtest'), include_directories: include)
-test('emath_tests', emath_test,)
-test('eparser_tests', eparser_test)
+if !host_machine.system() in ['windows', 'mingw']
+    emath_test = executable('test_emath', files(emath_test_files), name_suffix: exe_ext, include_directories: include)
+    eparser_test = executable('test_eparser', files(eparser_test_files), name_suffix: exe_ext, include_directories: include) #dependencies: dependency('gtest')
+    test('emath_tests', emath_test,)
+    test('eparser_tests', eparser_test)
+endif
 
 #Install the documentation
 run_command('doxygen', 'doxygen.conf', check: false)
