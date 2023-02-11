@@ -1,4 +1,3 @@
-subdir('.')
 project('Emath++', 'cpp', version : '1.1.0')
 
 include = ['./include/', './third_party/CSet/include/']
