@@ -35,7 +35,7 @@ install_headers(files(emath_headers, eparser_headers))
 #Add test files
 if host_machine.system() not in ['windows', 'mingw']
     emath_test = executable('test_emath', files(emath_test_files), name_suffix: exe_ext, include_directories: include)
-    eparser_test = executable('test_eparser', files(eparser_test_files), name_suffix: exe_ext, include_directories: include) #dependencies: dependency('gtest')
+    eparser_test = executable('test_eparser', files(eparser_test_files), name_suffix: exe_ext, dependencies: dependency('gtest'), include_directories: include) #
     test('emath_tests', emath_test,)
     test('eparser_tests', eparser_test)
 endif
