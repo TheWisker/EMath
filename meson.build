@@ -6,7 +6,7 @@ eparser_headers = ['./include/eparser.h']
 emath_files = [emath_headers, './src/emath.cpp']
 eparser_files = [eparser_headers, './src/eparser.cpp', emath_files]
 
-warning(meson.current_source_dir())
+warning(meson.source_root())
 
 emath_test_files = ['./test/emath.cpp', emath_files]
 eparser_test_files = [eparser_files, './test/eparser.cpp']
