@@ -1,0 +1,3051 @@
+AutoGen Definitions dummy;
+class = {
+  cp-id     = 'classemth_1_1Arithmetic';
+  cp-name   = 'emth::Arithmetic';
+  cp-section = {
+    sec-kind = 'public-static-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Arithmetic_1adddfba367517025753ae37062ac6f483';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'get_divisors';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'n';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::vector< int > &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'v';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '74';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Gets the all the positive divisors for an integer.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param n The integer to get the divisors for.
+@param v The vector reference where to store the divisors.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+  cp-fileline  = '67';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+Class with some functions for arithmetic math.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+ The class consists of the functions that operate with real numbers.
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classEParserTest';
+  cp-name   = 'EParserTest';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'classtesting_1_1Test';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classEParserTest_1abcb56f6fe9d5fd3ca9320b5f981bc52c';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'EParserTest';
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/test/eparser.cpp';
+      sec-mem-desc-line = '20';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Standalone constructor for the EParserTest class.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+ Initializes the lexer and parser object with empty inputs.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classEParserTest_1a3f86e942a3c31352d1a6019e22fabe14';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'set_input';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const std::string &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'input';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/test/eparser.cpp';
+      sec-mem-desc-line = '25';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Function for setting the input to the lexer and parser objects.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param input The std::string to set as input
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'test_2eparser_8cpp_1a84cd16fd9d2f4b968c36ec280b7a7423';
+        sec-mem-ref-line = '33';
+        sec-mem-ref-name = 'lexer';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'test_2eparser_8cpp_1a272d2e82239321467bce8dacd326bf6f';
+        sec-mem-ref-line = '37';
+        sec-mem-ref-name = 'parser';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'protected-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classEParserTest_1a84cd16fd9d2f4b968c36ec280b7a7423';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+emthp::Lexer
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'lexer';
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/test/eparser.cpp';
+      sec-mem-desc-line = '33';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+The lexer object on which to perform the tests on.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classEParserTest_1a272d2e82239321467bce8dacd326bf6f';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+emthp::Parser
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'parser';
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/test/eparser.cpp';
+      sec-mem-desc-line = '37';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+The parser object on which to perform the tests on.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/kopi/GitHub/Archived/EMath++/test/eparser.cpp';
+  cp-fileline  = '14';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+Class that provides a test fixture for the test cases.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 1;
+        node-label = 'EParserTest';
+        node-link = {
+          node-link-id = 'classEParserTest';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'testing::Test';
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 1;
+        node-label = 'EParserTest';
+        node-link = {
+          node-link-id = 'classEParserTest';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+        node-child = {
+          child-id = '3';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+lexer
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+        node-child = {
+          child-id = '4';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+parser
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 3;
+        node-label = 'emthp::Lexer';
+        node-link = {
+          node-link-id = 'classemthp_1_1Lexer';
+        };
+      }; /* node */
+      node = {
+        node-id    = 4;
+        node-label = 'emthp::Parser';
+        node-link = {
+          node-link-id = 'classemthp_1_1Parser';
+        };
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'testing::Test';
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classemthp_1_1Lexer';
+  cp-name   = 'emthp::Lexer';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemthp_1_1Lexer_1ad3560b27e6813e3e0aeaa48b19dc5dd2';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Lexer';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const std::string &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'input';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/eparser.h';
+      sec-mem-desc-line = '58';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Standalone constructor for the Lexer class.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param input A const reference to the std::string to tokenize.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemthp_1_1Lexer_1a5116f34af8ec69634dc9202ae2d48b4a';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Lexer &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator=';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Lexer &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/eparser.h';
+      sec-mem-desc-line = '64';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Assigment operator for when called with an lvalue.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The lvalue Lexer object.
+@return (Lexer&) A reference to the lvalue of the operation
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemthp_1_1Lexer_1a629ea5f393603e05dad17b004caba27d';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Token
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'next';
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/eparser.h';
+      sec-mem-desc-line = '69';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Function that returns the next Token in the input provided in the constructor.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return (Token) The next Token in the input
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'src_2eparser_8cpp_1a629ea5f393603e05dad17b004caba27d';
+        sec-mem-ref-line = '29';
+        sec-mem-ref-name = 'next';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'eparser_8h_1a29873cfffe66c1e0b36436ebcc54dc6bab0be00ab2ea8e4a56ab22f220c7de9bf';
+        sec-mem-ref-line = '25';
+        sec-mem-ref-name = 'emthp::T_PLUS';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemthp_1_1Lexer_1a273b288699191ec896c9857cfe7f5704';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'back';
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/eparser.h';
+      sec-mem-desc-line = '73';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Backtrack function that moves the cursor's position one position backwards.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemthp_1_1Lexer_1a638bde6ca6cb63363ef550a54261f3eb';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'read_number';
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/eparser.h';
+      sec-mem-desc-line = '87';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Private function that reads the next Token as a number consisting of various characters.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return (double) The number that was read
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classemthp_1_1Lexer_1a9d9656d89fd1ef35aec1a8af4ff56cd5';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '_input';
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/eparser.h';
+      sec-mem-desc-line = '78';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+The provided input as a private std::string.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classemthp_1_1Lexer_1a6e704edea7f4eaf079d0674eeb57ffb7';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+long unsigned int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '_pos';
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/eparser.h';
+      sec-mem-desc-line = '82';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Private long unsigned int that represents the cursor's position.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-static-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemthp_1_1Lexer_1a4f42a6e9643892a58267d5e37baf261f';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'clean';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const std::string &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'input';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/eparser.h';
+      sec-mem-desc-line = '93';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Private static function that cleans the input string of the unexpected characters.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param input The string to clean.
+@return (std::string) The clean output
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemthp_1_1Lexer_1af91a6c3eb34a9ef37002bfb7b500259e';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static constexpr bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'is_digit';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const char &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'c';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/eparser.h';
+      sec-mem-desc-line = '100';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Miscellaneous private function that checks if a char is a digit.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param c The char to check if it is a digit.
+@return (true) If the char is a digit
+@return (false) If the char is not a digit
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/kopi/GitHub/Archived/EMath++/include/eparser.h';
+  cp-fileline  = '52';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+Class that works as a token supplier for the Parser class.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+ The class consists of two public functions, one for getting the next Token and the other for going back one position.
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classemth_1_1Monomial';
+  cp-name   = 'emth::Monomial';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Monomial_1ae6048a5e8de2117072def861911aa4a7';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Monomial';
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '86';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Default constructor for when initialized with no arguments.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Monomial_1a70ba615f776f89452b3b11bb9dfe045e';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Monomial';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const double
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'cf';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'dgr';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '92';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Normal constructor for initialization with coeff and degree.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param cf The coefficient as a double.
+@param dgr The degree as a integer.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Monomial_1aa5fc7752eb6a5db663872dd7298140c1';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Monomial';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Monomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '97';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Copy constructor for when initialized with an lvalue Monomial object.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The lvalue Monomial object.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Monomial_1a0d77a762defbcd2cb1925e3258f6158f';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Monomial';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Monomial &&
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '102';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Move constructor for when initialized with an rvalue Monomial object.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The rvalue Monomial object.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Monomial_1a3de7a92cfd27acad4e1ff3d2158536f4';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Monomial &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator=';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Monomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '108';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Assigment operator overload for when called with an lvalue.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The lvalue Monomial object.
+@return (Monomial&) A reference to the lvalue of the operation
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Monomial_1a7ea9ffbef1c53c8e0f7a9bfda2dcb691';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Monomial &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator=';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Monomial &&
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '114';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Move assigment operator overload for when called with an rvalue.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The rvalue Monomial object.
+@return (Monomial&) A reference to the lvalue of the operation
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Monomial_1a2f9d14fa6443fc160258121c7907b989';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator==';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Monomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '121';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Equal logic operator overload.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The Monomial object to compare to.
+@return (true) If Monomial objects coefficients and degrees match.
+@return (false) If Monomial objects coefficients and degrees dont match. 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Monomial_1ab7f80ead25e2f5d4ad80cdbbfe49d5e3';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator!=';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Monomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '128';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Not equal logic operator overload.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The Monomial object to compare to.
+@return (true) If Monomial objects coefficients and degrees dont match.
+@return (false) If Monomial objects coefficients and degrees match. 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Monomial_1a995abc13b689075b21b43a30ce043e72';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator>';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Monomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '135';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Greater than logic operator overload.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The Monomial object to compare to.
+@return (true) If the Monomial object degree is greater than the degree of the passed Monomial.
+@return (false) If the Monomial object degree is equal or less than the degree of the passed Monomial.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Monomial_1a33c3c8003322cc2a8f2c4f2e1b44a387';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator<';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Monomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '142';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Less than logic operator overload.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The Monomial object to compare to.
+@return (true) If the Monomial object degree is less than the degree of the passed Monomial.
+@return (false) If the Monomial object degree is equal or greater than the degree of the passed Monomial.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Monomial_1a36079411f2ae6f90e71a09b6723ecf35';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator>=';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Monomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '149';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Greater or equal than logic operator overload.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The Monomial object to compare to.
+@return (true) If the Monomial object degree is greater or equal than the degree of the passed Monomial.
+@return (false) If the Monomial object degree is less than the degree of the passed Monomial.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Monomial_1a80fe0433858cf335c1e29ff15aa4bcb8';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator<=';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Monomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '156';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Less or equal than logic operator overload.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The Monomial object to compare to.
+@return (true) If the Monomial object degree is less or equal than the degree of the passed Monomial.
+@return (false) If the Monomial object degree is greater than the degree of the passed Monomial.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Monomial_1aa545290af910fc7a0c68bc02decd41c5';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Monomial
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator+';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Monomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '162';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Addition operator overload.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The Monomial object to add.
+@return (Monomial) A brand new Monomial that represents the result.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Monomial_1aee07c6d65bc594b8eaaa4d0299840e05';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Monomial
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator-';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Monomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '168';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Substraction operator overload.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The Monomial object to substract by.
+@return (Monomial) A brand new Monomial that represents the result.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Monomial_1a98a931372dbd0ddafe82ce5601f30836';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Monomial
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator*';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Monomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '174';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Multiplication operator overload.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The Monomial object to multiply by.
+@return (Monomial) A brand new Monomial that represents the result.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Monomial_1a55982755a6223cbf977e55979fcad8ff';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Monomial
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator/';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Monomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '180';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Division operator overload.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The Monomial object to divide by.
+@return (Monomial) A brand new Monomial that represents the result.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Monomial_1a8316e22fbd1420a2302fcf8bd6d3b6c2';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Monomial
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator%';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Monomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '186';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Modulus operator overload.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The Monomial object to divide by.
+@return (Monomial) A brand new Monomial that represents the result.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Monomial_1a7cac7880021c7cf783daa15ee00b94d1';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Monomial &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator+=';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Monomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '192';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Addition assigment operator overload.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The Monomial object to add.
+@return (Monomial&) A reference to the lvalue of the operation.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Monomial_1a45a932afba1f1f38c5ca16b6c16fd3c8';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Monomial &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator-=';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Monomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '198';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Substraction assigment operator overload.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The Monomial object to substract by.
+@return (Monomial&) A reference to the lvalue of the operation.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Monomial_1a59e6ec6722fe75349e84c6c3397279f5';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Monomial &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator*=';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Monomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '204';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Multiplication assigment operator overload.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The Monomial object to multiply by.
+@return (Monomial&) A reference to the lvalue of the operation.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Monomial_1a1bdb99f916437cd3a7c127b71bec5787';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Monomial &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator/=';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Monomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '210';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Division assigment operator overload.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The Monomial object to divide by.
+@return (Monomial&) A reference to the lvalue of the operation.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Monomial_1ab4c89014e13b2f35f264492486a935fe';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Monomial &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator%=';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Monomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '216';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Modulus assigment operator overload.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The Monomial object to divide by.
+@return (Monomial&) A reference to the lvalue of the operation.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Monomial_1ac0ea8a4e12483048519184c536c27124';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'get_coeff';
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '235';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Getter function for getting the coefficient of the Monomial.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return (double) The coefficient of the Monomial.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Monomial_1a1a11b6043ddc48006fe37241bb6bc6d0';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'get_degree';
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '240';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Getter function for getting the degree of the Monomial.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return (int) The degree of the Monomial.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Monomial_1adae9aaac815a7c86ec651e5bdb3d3043';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'set_coeff';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'cf';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '245';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Setter function for setting the coefficient of the Monomial.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param cf The coefficient to set to.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Monomial_1ab695cba07bcbf08cfec7d32e0bf4cc20';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'set_degree';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'dgr';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '250';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Setter function for setting the degree of the Monomial.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param dgr The degree to set to.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Monomial_1a2940ea82172b382f8354fe4d1556b996';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'get_expression';
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '255';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Getter function for getting the expression of the Monomial.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return (std::string) The expression of the Monomial.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Monomial_1a50a76c251c4a66c3522b78f0aba3c157';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'get_value';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const double &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'x';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '261';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Calculus function for getting the value of the Monomial at a point.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param x The point to evaluate.
+@return (double) The result of the evaluation of the Monomial.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Monomial_1aecedb04edd52a33ba0ee110eedbd74db';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '~Monomial';
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '265';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+The class destructor.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Monomial_1a7cba04b35f6b0b4b3dfe909aca0391cb';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'swap';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Monomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '279';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+The swap function for the copy-and-swap idiom implemented by the assigment operators.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The other Monomial to swap the data with.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classemth_1_1Monomial_1a997731ccf2707a956c8e236b25451702';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'coeff';
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '270';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+The coefficient of the Monomial.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classemth_1_1Monomial_1a7ac5ee0ccb8199fb3dc40d93059d95ba';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'degree';
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '274';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+The degree of the Monomial.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'signal';
+    sec-member = {
+      sec-mem-kind = 'friend';
+      sec-mem-id   = 'classemth_1_1Monomial_1a01135c72790e63387bc07601dd3acc5b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+friend std::stringstream &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator<<';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::stringstream &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ss';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Monomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'm';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '223';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+A friend operator to insert the Monomial into a std::stringstream.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ss The std::stringstream.
+@param m The Monomial object to insert.
+@return (std::stringstream&) A reference to the std::stringstream.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'friend';
+      sec-mem-id   = 'classemth_1_1Monomial_1ada77c9969b0422090c05636a895c0e8e';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+friend std::ostream &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator<<';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::ostream &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'out';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Monomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'm';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '230';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+A friend operator to insert the Monomial into a std::ostream.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param out The std::ostream.
+@param m The Monomial object to insert.
+@return (std::ostream&) A reference to the std::ostream.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+  cp-fileline  = '81';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+Class for representing and operating monomials.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+ The class consists of the constructors, the operators, the getters, the properties and some private functions.
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classemthp_1_1Parser';
+  cp-name   = 'emthp::Parser';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemthp_1_1Parser_1a4eb818d42bac1e3e3419c848e521cbdb';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Parser';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const std::string &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'input';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/eparser.h';
+      sec-mem-desc-line = '113';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Standalone constructor for the Parser class.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param input A const reference to the std::string to parse when needed.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemthp_1_1Parser_1ada7e099319ce350bb2d5dcfd5ea8b36a';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Parser &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator=';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Parser &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/eparser.h';
+      sec-mem-desc-line = '119';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Assigment operator for when called with an lvalue.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The lvalue Parser object.
+@return (Parser&) A reference to the lvalue of the operation
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemthp_1_1Parser_1a933df3ba2501887aa6d947bfe6eafe4b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+emth::Polynomial
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'parse_polynomial';
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/eparser.h';
+      sec-mem-desc-line = '124';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Function that parses the input as a Polynomial.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return (emth::Polynomial) The input as a Polynomial
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'src_2emath_8cpp_1a1dc4825c3d5005949f0869e204e4fedc';
+        sec-mem-ref-line = '459';
+        sec-mem-ref-name = 'emth::Polynomial::push_monomial';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemthp_1_1Parser_1a590566c3e893515a0dbb9db032a889cd';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+emth::Monomial
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'parse_monomial';
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/eparser.h';
+      sec-mem-desc-line = '129';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Function that parses the next Monomial in the input.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return (emth::Monomial) The next Monomial in the input
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'src_2emath_8cpp_1adae9aaac815a7c86ec651e5bdb3d3043';
+        sec-mem-ref-line = '217';
+        sec-mem-ref-name = 'emth::Monomial::set_coeff';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'src_2emath_8cpp_1ab695cba07bcbf08cfec7d32e0bf4cc20';
+        sec-mem-ref-line = '222';
+        sec-mem-ref-name = 'emth::Monomial::set_degree';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'eparser_8h_1a29873cfffe66c1e0b36436ebcc54dc6bab0be00ab2ea8e4a56ab22f220c7de9bf';
+        sec-mem-ref-line = '25';
+        sec-mem-ref-name = 'emthp::T_PLUS';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'eparser_8h_1ae532928c40581bc20349979955dfb2f3';
+        sec-mem-ref-line = '41';
+        sec-mem-ref-name = 'emthp::Token::type';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemthp_1_1Parser_1adb63bcf01700c40eea06bd1db3d566e8';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'parse_number';
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/eparser.h';
+      sec-mem-desc-line = '139';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Private function for parsing a plus, minus and number Tokens as a positive or negative double.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return (double) The parsed number
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classemthp_1_1Parser_1ad89704cde9db5580c48811d3490d364f';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Lexer
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '_lexer';
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/eparser.h';
+      sec-mem-desc-line = '134';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Private Lexer instance for supplying tokens.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/kopi/GitHub/Archived/EMath++/include/eparser.h';
+  cp-fileline  = '107';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+Class that wraps a std::string and parses it as a Monomial or as a Polynomial.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+ The class consists of two public functions, one for parsing the entire input as a Polynomial and the other for parsing only the next Monomial.
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classemth_1_1Polynomial';
+  cp-name   = 'emth::Polynomial';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Polynomial_1a7a6489fae8e62f7171ba1b094253f206';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Polynomial';
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '291';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Default constructor for when initialized with no arguments.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Polynomial_1af0f389de210155a112852f013aaa18d3';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Polynomial';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const std::map< int, Monomial >
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'mns';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '296';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Normal constructor for initialization with a std::map<int, Monomial>
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param mns The std::map<int, Monomial>.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Polynomial_1a98e8835f620927464b617d6b6ebd1329';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Polynomial';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const std::initializer_list< Monomial >
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'mns';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '301';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+List constructor for initialization with a std::initializer_list<Monomial>
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param mns The std::initializer_list<Monomial>.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Polynomial_1a084aed33935ade2f689f09103daaac53';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Polynomial';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const std::vector< Monomial >
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'mns';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '306';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Vector constructor for initialization with a std::vector<Monomial>
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param mns The std::vector<Monomial>.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Polynomial_1a3612ca54a3bef015a9809d77af2be355';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Polynomial';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Polynomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '311';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Copy constructor for when initialized with an lvalue Polynomial object.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The lvalue Polynomial object.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Polynomial_1a3f55b493797c89e9079c7019fb905059';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Polynomial';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Polynomial &&
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '316';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Move constructor for when initialized with an rvalue Polynomial object.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The rvalue Polynomial object.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Polynomial_1a33ba807b5465ead26edd077d8289f4f3';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Polynomial &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator=';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Polynomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '322';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Assigment operator overload for when called with an lvalue.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The lvalue Polynomial object.
+@return (Polynomial&) A reference to the lvalue of the operation
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Polynomial_1a93818b33532e3f8e80fa614ca8287479';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Polynomial &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator=';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Polynomial &&
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '328';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Move assigment operator overload for when called with an rvalue.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The rvalue Polynomial object.
+@return (Polynomial&) A reference to the lvalue of the operation
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Polynomial_1ad042381e1713be21b332d3f8fbdfd0a7';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator==';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Polynomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '335';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Equal logic operator overload.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The Polynomial object to compare to.
+@return (true) If Polynomial objects degrees and monomials match.
+@return (false) If Polynomial objects degrees and monomials dont match. 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Polynomial_1a40fefffeb0043d193d5aa7ecb3adba55';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator!=';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Polynomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '342';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Not equal logic operator overload.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The Polynomial object to compare to.
+@return (true) If Polynomial objects degrees and monomials dont match.
+@return (false) If Polynomial objects degrees and monomials match. 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Polynomial_1ae358f6f9b93783601af6999b67e0dafb';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator>';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Polynomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '349';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Greater than logic operator overload.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The Polynomial object to compare to.
+@return (true) If the Polynomial object degree is greater than the degree of the passed Polynomial.
+@return (false) If the Polynomial object degree is equal or less than the degree of the passed Polynomial.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Polynomial_1a0f0640fcb0dd0a59b685a646d494bfc7';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator<';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Polynomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '356';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Less than logic operator overload.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The Polynomial object to compare to.
+@return (true) If the Polynomial object degree is less than the degree of the passed Polynomial.
+@return (false) If the Polynomial object degree is equal or greater than the degree of the passed Polynomial.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Polynomial_1a2321b93b1482b6677dbd125739848724';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator>=';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Polynomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '363';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Greater or equal than logic operator overload.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The Polynomial object to compare to.
+@return (true) If the Polynomial object degree is greater or equal than the degree of the passed Polynomial.
+@return (false) If the Polynomial object degree is less than the degree of the passed Polynomial.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Polynomial_1a7b234cebd032016c0a8ece92a4f68141';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator<=';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Polynomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '370';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Less or equal than logic operator overload.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The Polynomial object to compare to.
+@return (true) If the Polynomial object degree is less or equal than the degree of the passed Polynomial.
+@return (false) If the Polynomial object degree is greater than the degree of the passed Polynomial.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Polynomial_1a9d46082ad38edc17f875127208626281';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Polynomial
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator+';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Polynomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '376';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Addition operator overload.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The Polynomial object to add.
+@return (Polynomial) A brand new Polynomial that represents the result.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Polynomial_1a1cd22ae48bfcb14b53835730091e5f4d';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Polynomial
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator-';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Polynomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '382';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Substraction operator overload.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The Polynomial object to substract by.
+@return (Polynomial) A brand new Polynomial that represents the result.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Polynomial_1ac461b9aeb93c33d540f0a918bdefd203';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Polynomial
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator*';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Polynomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '388';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Multiplication operator overload.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The Polynomial object to multiply by.
+@return (Polynomial) A brand new Polynomial that represents the result.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Polynomial_1aa2a054dcc203257bfc3d06621ce876b1';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Polynomial
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator/';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Polynomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '394';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Division operator overload.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The Polynomial object to divide by.
+@return (Polynomial) A brand new Polynomial that represents the result.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Polynomial_1a56a499385ad24715b1240611217277c5';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Polynomial
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator%';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Polynomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '400';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Modulus operator overload.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The Polynomial object to divide by.
+@return (Polynomial) A brand new Polynomial that represents the result.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Polynomial_1a791a5aa2207acd2fccc4124ff36eb0bf';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Polynomial &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator+=';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Polynomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '406';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Addition assigment operator overload.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The Polynomial object to add.
+@return (Polynomial&) A reference to the lvalue of the operation.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Polynomial_1af545354b4dade3e286be26207d02a442';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Polynomial &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator-=';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Polynomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '412';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Substraction assigment operator overload.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The Polynomial object to substract by.
+@return (Polynomial&) A reference to the lvalue of the operation.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Polynomial_1abdeb3769c43eec881ae8ed1a20a5d01d';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Polynomial &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator*=';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Polynomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '418';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Multiplication assigment operator overload.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The Polynomial object to multiply by.
+@return (Polynomial&) A reference to the lvalue of the operation.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Polynomial_1ac5a003db2381c99c97c4a78341145b26';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Polynomial &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator/=';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Polynomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '424';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Division assigment operator overload.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The Polynomial object to divide by.
+@return (Polynomial&) A reference to the lvalue of the operation.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'src_2emath_8cpp_1a1a11b6043ddc48006fe37241bb6bc6d0';
+        sec-mem-ref-line = '212';
+        sec-mem-ref-name = 'emth::Monomial::get_degree';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Polynomial_1a2e6bd9b16b732b38caabf950acfd5cb2';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Polynomial &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator%=';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Polynomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '430';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Modulus assigment operator overload.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The Polynomial object to divide by.
+@return (Polynomial&) A reference to the lvalue of the operation.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Polynomial_1a7eb2c1c9bbbb013220d24f5d2a24a963';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'get_degree';
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '449';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Getter function for getting the degree of the Polynomial.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return (int) The degree of the Polynomial.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Polynomial_1a02fda10cd15abff226c5a8013f4928f7';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::map< int, Monomial >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'get_monomials';
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '454';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Getter function for getting the monomials of the Polynomial.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return (std::map<int, Monomial>) The monomials of the Polynomial.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Polynomial_1a1dc4825c3d5005949f0869e204e4fedc';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'push_monomial';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Monomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'm';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '460';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Function for appending a lvalue monomial to the Polynomial.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param m The Monomial object to append.
+@return (bool) If the operation was successful.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Polynomial_1acd1befa11dd8d4e3da213114dc88cff7';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'push_monomial';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Monomial &&
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'm';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '466';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Function for appending a rvalue monomial to the Polynomial.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param m The Monomial object to append.
+@return (bool) If the operation was successful.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Polynomial_1a6f3eb1e674dbce5f0a172d8b5fd7ab2b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'get_expression';
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '471';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Getter function for getting the expression of the Polynomial.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return (std::string) The expression of the Polynomial.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Polynomial_1a644cd3ebe3afa676cc3db99557f6eed3';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'get_value';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const double &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'x';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '477';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Calculus function for getting the value of the Polynomial at a point.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param x The point to evaluate.
+@return (double) The result of the evaluation of the Polynomial.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Polynomial_1a1f27fae485c94bb0f00a46c50214ab37';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Polynomial
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'get_derivative';
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '482';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Calculus function for getting the derivative of the Polynomial.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return (Polynomial) The result of the derivative of the Polynomial.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Polynomial_1ac87df7094ce26a8e9cba6df79a3eaf2d';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Polynomial
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'get_integral';
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '487';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Calculus function for getting the integral of the Polynomial.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return (Polynomial) The result of the integral of the Polynomial.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Polynomial_1a056e1df4102b0d0add0e8e2805401b82';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '~Polynomial';
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '491';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+The class destructor.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Polynomial_1a8b4f2d72f0fa4b1e5fc3d2fc434d1d52';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'swap';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Polynomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ogn';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '501';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+The swap function for the copy-and-swap idiom implemented by the assigment operators.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ogn The other Polynomial to swap the data with.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classemth_1_1Polynomial_1a3d28b34143d180686a38f5b12900a38c';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Polynomial &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'redux';
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '505';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+The redux function for removing the Monomials of zero coefficient.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classemth_1_1Polynomial_1a5fe4c61292355d30836f1de02a255162';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::map< int, Monomial >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'monomials';
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '496';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+The monomials of the Polynomial as a std::map<int, Monomial> where the key is the degree of the Monomial.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'signal';
+    sec-member = {
+      sec-mem-kind = 'friend';
+      sec-mem-id   = 'classemth_1_1Polynomial_1a66068882dda621b9bca207d72a9fb2d7';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+friend std::stringstream &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator<<';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::stringstream &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ss';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Polynomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'p';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '437';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+A friend operator to insert the Polynomial into a std::stringstream.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param ss The std::stringstream.
+@param m The Polynomial object to insert.
+@return (std::stringstream&) A reference to the std::stringstream.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'friend';
+      sec-mem-id   = 'classemth_1_1Polynomial_1a444148f9a6121f040d0149c4b5d94ac5';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+friend std::ostream &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator<<';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::ostream &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'out';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const Polynomial &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'p';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+      sec-mem-desc-line = '444';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+A friend operator to insert the Polynomial into a std::ostream.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param out The std::ostream.
+@param m The Polynomial object to insert.
+@return (std::ostream&) A reference to the std::ostream.
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+  cp-fileline  = '286';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+Class for representing and operating polynomials.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+ The class consists of the constructors, the operators, the getters, the properties and some private functions.
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classtesting_1_1Test';
+  cp-name   = 'testing::Test';
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'classEParserTest';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-filename  = '/home/kopi/GitHub/Archived/EMath++/test/eparser.cpp';
+  cp-fileline  = '14';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 2;
+        node-label = 'EParserTest';
+        node-link = {
+          node-link-id = 'classEParserTest';
+        };
+        node-child = {
+          child-id = '1';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'testing::Test';
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+struct = {
+  cp-id     = 'structemthp_1_1Token';
+  cp-name   = 'emthp::Token';
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structemthp_1_1Token_1ae532928c40581bc20349979955dfb2f3';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+TokenType
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'type';
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/eparser.h';
+      sec-mem-desc-line = '41';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+The token's type as a TokenType.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'structemthp_1_1Token_1a0512f6f4c2a7dcf724d582d971393c2c';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'value';
+      sec-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/eparser.h';
+      sec-mem-desc-line = '45';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+The token's numerical value as a double.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/kopi/GitHub/Archived/EMath++/include/eparser.h';
+  cp-fileline  = '36';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+Struct for representing a token as a type and a value.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+file = {
+  file-id   = 'emath_8h';
+  file-name = 'emath.h';
+  file-full-name  = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+This is the main header file for the emath library.
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+ This file declares the functions of the emath library.\n
+It consists of two classes, the Monomial class and the Polynomial class.\n
+The Monomial class declares all the functions, operators, and properties for representing and operating monomials.\n
+The Polynomial class declares all the functions, operators, and properties for representing and operating polynomials.\n
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'eparser_8h';
+  file-name = 'eparser.h';
+    enum = {
+    enum-member = {
+      enum-mem-kind = 'enum';
+      enum-mem-id   = 'namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6b';
+      enum-mem-virt = normal;
+      enum-mem-prot = public;
+      enum-mem-name = 'TokenType';
+      enum-mem-enum = { enum-name = T_PLUS; };
+      enum-mem-enum = { enum-name = T_MINUS; };
+      enum-mem-enum = { enum-name = T_NUMBER; };
+      enum-mem-enum = { enum-name = T_VARIABLE; };
+      enum-mem-enum = { enum-name = T_EXPONENT; };
+      enum-mem-enum = { enum-name = T_EOF; };
+      enum-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/eparser.h';
+      enum-mem-desc-line = '21';
+      enum-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Enum with all the possible Token types.
+_EnD_oF_dEf_TeXt_;
+      enum-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* enum-member */
+    };
+  file-full-name  = '/home/kopi/GitHub/Archived/EMath++/include/eparser.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+This is the main header file for the equation parser.
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+ This file contains the classes and functions for parsing polynomials and monomials.\n
+It consists of two classes, the Parser class and the Lexer class.\n
+The Parser class consists of two functions, one for parsing the entire input as a Polynomial and another for parsing a Monomial at a time.\n
+The Lexer class just provides a token supplier for the Parser class.\n
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'src_2emath_8cpp';
+  file-name = 'emath.cpp';
+  file-full-name  = '/home/kopi/GitHub/Archived/EMath++/src/emath.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+This is the main source file for the mathematical equation operations.
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+ This file implements the functions declared in emath.h.\n
+It consists of two classes, the Monomial class and the Polynomial class.\n
+The Monomial class implements all the functions, operators, and properties for representing and operating monomials.\n
+The Polynomial class implements all the functions, operators, and properties for representing and operating polynomials.\n
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'test_2emath_8cpp';
+  file-name = 'emath.cpp';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'test_2emath_8cpp_1ab880f6083075d1f2c3c6ca54d36fba6f';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'test_monomial';
+      func-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/test/emath.cpp';
+      func-mem-desc-line = '15';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Runs all the monomial class tests.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return (int) Returns 0 to specify to Meson that the tests finished correctly
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceto = {
+        func-mem-ref-id = 'src_2emath_8cpp_1ac0ea8a4e12483048519184c536c27124';
+        func-mem-ref-line = '207';
+        func-mem-ref-name = 'emth::Monomial::get_coeff';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'src_2emath_8cpp_1a1a11b6043ddc48006fe37241bb6bc6d0';
+        func-mem-ref-line = '212';
+        func-mem-ref-name = 'emth::Monomial::get_degree';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'src_2emath_8cpp_1a2940ea82172b382f8354fe4d1556b996';
+        func-mem-ref-line = '227';
+        func-mem-ref-name = 'emth::Monomial::get_expression';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'src_2emath_8cpp_1a50a76c251c4a66c3522b78f0aba3c157';
+        func-mem-ref-line = '233';
+        func-mem-ref-name = 'emth::Monomial::get_value';
+    };
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'test_2emath_8cpp_1ada79f825efa86697f40154987f0f6129';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'test_polynomial';
+      func-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/test/emath.cpp';
+      func-mem-desc-line = '102';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Runs all the polynomial class tests.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return (int) Returns 0 to specify to Meson that the tests finished correctly
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceto = {
+        func-mem-ref-id = 'src_2emath_8cpp_1a7eb2c1c9bbbb013220d24f5d2a24a963';
+        func-mem-ref-line = '448';
+        func-mem-ref-name = 'emth::Polynomial::get_degree';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'src_2emath_8cpp_1a1f27fae485c94bb0f00a46c50214ab37';
+        func-mem-ref-line = '490';
+        func-mem-ref-name = 'emth::Polynomial::get_derivative';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'src_2emath_8cpp_1a6f3eb1e674dbce5f0a172d8b5fd7ab2b';
+        func-mem-ref-line = '475';
+        func-mem-ref-name = 'emth::Polynomial::get_expression';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'src_2emath_8cpp_1ac87df7094ce26a8e9cba6df79a3eaf2d';
+        func-mem-ref-line = '501';
+        func-mem-ref-name = 'emth::Polynomial::get_integral';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'src_2emath_8cpp_1a02fda10cd15abff226c5a8013f4928f7';
+        func-mem-ref-line = '453';
+        func-mem-ref-name = 'emth::Polynomial::get_monomials';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'src_2emath_8cpp_1a644cd3ebe3afa676cc3db99557f6eed3';
+        func-mem-ref-line = '481';
+        func-mem-ref-name = 'emth::Polynomial::get_value';
+    };
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'test_2emath_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'main';
+      func-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/test/emath.cpp';
+      func-mem-desc-line = '206';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Calls the monomial and polynomial tests.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@return (int) The sum of the test_monomial and test_polynomial function wich should be zero when all tests pass
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceto = {
+        func-mem-ref-id = 'test_2emath_8cpp_1ab880f6083075d1f2c3c6ca54d36fba6f';
+        func-mem-ref-line = '15';
+        func-mem-ref-name = 'test_monomial';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'test_2emath_8cpp_1ada79f825efa86697f40154987f0f6129';
+        func-mem-ref-line = '102';
+        func-mem-ref-name = 'test_polynomial';
+    };
+    }; /* func-member */
+    };
+  file-full-name  = '/home/kopi/GitHub/Archived/EMath++/test/emath.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+This is the main test file of the emath library. It contains all the tests needed to assure that the library works properly.
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+ This file contains a main function that calls a function for the monomials and a function for the polynomials that test that every method works as it should.\n
+If it doesn't then a message gets printed to the console describing the error. If this does happen open an issue on my github page.
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'src_2eparser_8cpp';
+  file-name = 'eparser.cpp';
+  file-full-name  = '/home/kopi/GitHub/Archived/EMath++/src/eparser.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+This is the main implementation file for the equation parser.
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+ This file contains the implementation of the classes and functions for parsing polynomials and monomials.\n
+It consists of two classes, the Parser class and the Lexer class.\n
+The Parser class consists of two functions, one for parsing the entire input as a Polynomial and another for parsing a Monomial at a time.\n
+The Lexer class just provides a token supplier for the Parser class.\n
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'test_2eparser_8cpp';
+  file-name = 'eparser.cpp';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'test_2eparser_8cpp_1adb859937dfb6fcd56c656c3c2555afc9';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'TEST_F';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+EParserTest
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Lexer
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/test/eparser.cpp';
+      func-mem-desc-line = '42';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+ \xrefitem test 1.
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceto = {
+        func-mem-ref-id = 'eparser_8h_1ae532928c40581bc20349979955dfb2f3';
+        func-mem-ref-line = '41';
+        func-mem-ref-name = 'emthp::Token::type';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'eparser_8h_1a0512f6f4c2a7dcf724d582d971393c2c';
+        func-mem-ref-line = '45';
+        func-mem-ref-name = 'emthp::Token::value';
+    };
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'test_2eparser_8cpp_1a9d00584eda85ad91bd3b865309697a92';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'TEST_F';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+EParserTest
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+CompoundLexer
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/test/eparser.cpp';
+      func-mem-desc-line = '77';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+ \xrefitem test 2.
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceto = {
+        func-mem-ref-id = 'eparser_8h_1ae532928c40581bc20349979955dfb2f3';
+        func-mem-ref-line = '41';
+        func-mem-ref-name = 'emthp::Token::type';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'eparser_8h_1a0512f6f4c2a7dcf724d582d971393c2c';
+        func-mem-ref-line = '45';
+        func-mem-ref-name = 'emthp::Token::value';
+    };
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'test_2eparser_8cpp_1a9bae16de43d72897f903e5977107c60a';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'TEST_F';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+EParserTest
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+ArithmeticLexer
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/test/eparser.cpp';
+      func-mem-desc-line = '104';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+ \xrefitem test 3.
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceto = {
+        func-mem-ref-id = 'eparser_8h_1ae532928c40581bc20349979955dfb2f3';
+        func-mem-ref-line = '41';
+        func-mem-ref-name = 'emthp::Token::type';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'eparser_8h_1a0512f6f4c2a7dcf724d582d971393c2c';
+        func-mem-ref-line = '45';
+        func-mem-ref-name = 'emthp::Token::value';
+    };
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'test_2eparser_8cpp_1a7ed288e238950900345be1751b543ab5';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'TEST_F';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+EParserTest
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Variables
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/test/eparser.cpp';
+      func-mem-desc-line = '131';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+ \xrefitem test 4.
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'test_2eparser_8cpp_1a21f8c875c668e6dc3d1a1423cdba58a3';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'TEST_F';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+EParserTest
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Compound
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/test/eparser.cpp';
+      func-mem-desc-line = '140';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+ \xrefitem test 5.
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'test_2eparser_8cpp_1aee28f89b9e4ebad2361a1f87e5068314';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'TEST_F';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+EParserTest
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Signs
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/test/eparser.cpp';
+      func-mem-desc-line = '144';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+ \xrefitem test 6.
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'test_2eparser_8cpp_1a8178a3e2dd566ffdd7520265ce0c2fe3';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'TEST_F';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+EParserTest
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Noise
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/test/eparser.cpp';
+      func-mem-desc-line = '154';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+ \xrefitem test 7.
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'test_2eparser_8cpp_1aeed0ae0397e5f82225fde1a6ba4f65a9';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'TEST_F';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+EParserTest
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Edge
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/test/eparser.cpp';
+      func-mem-desc-line = '161';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+ \xrefitem test 8.
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'test_2eparser_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'main';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'argc';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char **
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'argv';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/test/eparser.cpp';
+      func-mem-desc-line = '169';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Function that runs all the declared tests.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param argc The console arguments count
+@param argv The console arguments as a array of char arrays
+@return (0) If all tests passed
+@return (1) If one or more tests failed
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+  file-full-name  = '/home/kopi/GitHub/Archived/EMath++/test/eparser.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+This is the main test file for the equation parser.
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+ This file contains a text fixture class and all the test cases.\n
+It consists of the EParserTest classe that provides the test fixture for all the tests.\n
+Then it contains all the test cases, for testing correct execution.
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+  namespace = {
+    ns-id   = 'namespaceemth';
+    ns-name = 'emth';
+  ns-filename  = '/home/kopi/GitHub/Archived/EMath++/include/emath.h';
+  ns-fileline  = '57';
+  ns-briefdesc = <<_EnD_oF_dEf_TeXt_
+Englobes all the classes and functions of the emath library.
+_EnD_oF_dEf_TeXt_;
+  ns-documentation = <<_EnD_oF_dEf_TeXt_
+ The emth namespace contains three classes: Arithmetic, Monomial and Polynomial. The first contains functions for arithmetic operations. The last two are wrappers on abstract algebraic concepts.
+_EnD_oF_dEf_TeXt_;
+  };
+  namespace = {
+    ns-id   = 'namespaceemthp';
+    ns-name = 'emthp';
+    enum = {
+    enum-member = {
+      enum-mem-kind = 'enum';
+      enum-mem-id   = 'namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6b';
+      enum-mem-virt = normal;
+      enum-mem-prot = public;
+      enum-mem-name = 'TokenType';
+      enum-mem-enum = { enum-name = T_PLUS; };
+      enum-mem-enum = { enum-name = T_MINUS; };
+      enum-mem-enum = { enum-name = T_NUMBER; };
+      enum-mem-enum = { enum-name = T_VARIABLE; };
+      enum-mem-enum = { enum-name = T_EXPONENT; };
+      enum-mem-enum = { enum-name = T_EOF; };
+      enum-mem-desc-file = '/home/kopi/GitHub/Archived/EMath++/include/eparser.h';
+      enum-mem-desc-line = '21';
+      enum-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Enum with all the possible Token types.
+_EnD_oF_dEf_TeXt_;
+      enum-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* enum-member */
+    };
+  ns-filename  = '/home/kopi/GitHub/Archived/EMath++/include/eparser.h';
+  ns-fileline  = '12';
+  ns-briefdesc = <<_EnD_oF_dEf_TeXt_
+Englobes all the classes and functions of the parser.
+_EnD_oF_dEf_TeXt_;
+  ns-documentation = <<_EnD_oF_dEf_TeXt_
+ The emthp namespace contains two classes: Parser and Lexer. It also contains the TokenType enum and a Token struct.
+_EnD_oF_dEf_TeXt_;
+  };
+  namespace = {
+    ns-id   = 'namespacetesting';
+    ns-name = 'testing';
+  ns-filename  = '[generated]';
+  ns-fileline  = '1';
+  ns-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  ns-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  };

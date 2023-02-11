@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="src_2eparser_8cpp" kind="file" language="C++">
+    <compoundname>eparser.cpp</compoundname>
+    <includes refid="eparser_8h" local="yes">eparser.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>emath.h</label>
+        <link refid="emath_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>eparser.h</label>
+        <link refid="eparser_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/eparser.cpp</label>
+        <link refid="src_2eparser_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>cmath</label>
+      </node>
+      <node id="7">
+        <label>complex</label>
+      </node>
+      <node id="5">
+        <label>map</label>
+      </node>
+      <node id="9">
+        <label>set.h</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="8">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+<para>This is the main implementation file for the equation parser. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This file contains the implementation of the classes and functions for parsing polynomials and monomials.<linebreak/>
+It consists of two classes, the Parser class and the Lexer class.<linebreak/>
+The Parser class consists of two functions, one for parsing the entire input as a Polynomial and another for parsing a Monomial at a time.<linebreak/>
+The Lexer class just provides a token supplier for the Parser class.<linebreak/>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="eparser_8h" kindref="compound">eparser.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="classemthp_1_1Lexer_1ad3560b27e6813e3e0aeaa48b19dc5dd2" refkind="member"><highlight class="normal"><ref refid="classemthp_1_1Lexer_1ad3560b27e6813e3e0aeaa48b19dc5dd2" kindref="member">emthp::Lexer::Lexer</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>input)<sp/>noexcept<sp/>:<sp/>_input(this-&gt;clean(input)),<sp/>_pos(0)<sp/>{}</highlight></codeline>
+<codeline lineno="20" refid="classemthp_1_1Lexer_1a5116f34af8ec69634dc9202ae2d48b4a" refkind="member"><highlight class="normal"><ref refid="classemthp_1_1Lexer" kindref="compound">emthp::Lexer</ref>&amp;<sp/><ref refid="classemthp_1_1Lexer_1a5116f34af8ec69634dc9202ae2d48b4a" kindref="member">emthp::Lexer::operator =</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classemthp_1_1Lexer" kindref="compound">emthp::Lexer</ref>&amp;<sp/>ogn)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;_input<sp/>=<sp/>ogn._input;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;_pos<sp/>=<sp/>ogn._pos;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="29" refid="classemthp_1_1Lexer_1a629ea5f393603e05dad17b004caba27d" refkind="member"><highlight class="normal"><ref refid="structemthp_1_1Token" kindref="compound">emthp::Token</ref><sp/><ref refid="classemthp_1_1Lexer_1a629ea5f393603e05dad17b004caba27d" kindref="member">emthp::Lexer::next</ref>()<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;_pos<sp/>&gt;=<sp/>this-&gt;_input.size())<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{emthp::TokenType::T_EOF,<sp/>{0}};}<sp/></highlight><highlight class="comment">//Returs<sp/>EOL<sp/>on<sp/>end<sp/>of<sp/>_input</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(this-&gt;_input[this-&gt;_pos])<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;+&apos;</highlight><highlight class="normal">:<sp/>this-&gt;_pos++;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{<ref refid="namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6bab0be00ab2ea8e4a56ab22f220c7de9bf" kindref="member">emthp::TokenType::T_PLUS</ref>,<sp/>{0}};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;-&apos;</highlight><highlight class="normal">:<sp/>this-&gt;_pos++;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{emthp::TokenType::T_MINUS,<sp/>{0}};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;^&apos;</highlight><highlight class="normal">:<sp/>this-&gt;_pos++;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{emthp::TokenType::T_EXPONENT,<sp/>{0}};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;x&apos;</highlight><highlight class="normal">:<sp/>this-&gt;_pos++;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{emthp::TokenType::T_VARIABLE,<sp/>{0}};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;*&apos;</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">:<sp/>this-&gt;_pos++;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classemthp_1_1Lexer_1a629ea5f393603e05dad17b004caba27d" kindref="member">next</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>number<sp/>=<sp/>this-&gt;read_number();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(this-&gt;_input[this-&gt;_pos])<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;*&apos;</highlight><highlight class="normal">:<sp/>this-&gt;_pos++;<sp/>number<sp/>*=<sp/>this-&gt;read_number();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">:<sp/>this-&gt;_pos++;<sp/>number<sp/>/=<sp/>this-&gt;read_number();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;^&apos;</highlight><highlight class="normal">:<sp/>this-&gt;_pos++;<sp/>number<sp/>=<sp/>std::pow(number,<sp/>this-&gt;read_number());<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{emthp::TokenType::T_NUMBER,<sp/>{number}};</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52" refid="classemthp_1_1Lexer_1a273b288699191ec896c9857cfe7f5704" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classemthp_1_1Lexer_1a273b288699191ec896c9857cfe7f5704" kindref="member">emthp::Lexer::back</ref>()<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;_pos<sp/>&lt;=<sp/>0)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;}<sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(emthp::Lexer::is_digit(this-&gt;_input[this-&gt;_pos-1]))<sp/>{</highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(emthp::Lexer::is_digit(this-&gt;_input[this-&gt;_pos-1]))<sp/>{this-&gt;_pos--;}<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;_pos--;</highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">std::string<sp/>emthp::Lexer::clean(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>input)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pos<sp/>=<sp/>0;<sp/>std::string<sp/>string;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(pos<sp/>&lt;<sp/>input.size())<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(input[pos])<sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;+&apos;</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>+=<sp/></highlight><highlight class="charliteral">&apos;+&apos;</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;-&apos;</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>+=<sp/></highlight><highlight class="charliteral">&apos;-&apos;</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;*&apos;</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>+=<sp/></highlight><highlight class="charliteral">&apos;*&apos;</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>+=<sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;^&apos;</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>+=<sp/></highlight><highlight class="charliteral">&apos;^&apos;</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;x&apos;</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>+=<sp/></highlight><highlight class="charliteral">&apos;x&apos;</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(emthp::Lexer::is_digit(input[pos]))<sp/>{</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>+=<sp/>input[pos];}<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pos++;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>string;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>emthp::Lexer::read_number()<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>snum;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(this-&gt;_pos<sp/>&lt;<sp/>this-&gt;_input.size()<sp/>&amp;&amp;<sp/>emthp::Lexer::is_digit(this-&gt;_input[this-&gt;_pos]))<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>snum<sp/>+=<sp/>this-&gt;_input[this-&gt;_pos];</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;_pos++;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(snum.empty())<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::stod(snum);<sp/></highlight><highlight class="comment">//<sp/>CHECK<sp/>:<sp/>2x^2<sp/>--<sp/>8x^3/3<sp/>;;;.......................4x^1<sp/>+<sp/>2x⁶</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="95" refid="classemthp_1_1Parser_1a4eb818d42bac1e3e3419c848e521cbdb" refkind="member"><highlight class="normal"><ref refid="classemthp_1_1Parser_1a4eb818d42bac1e3e3419c848e521cbdb" kindref="member">emthp::Parser::Parser</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>input)<sp/>noexcept<sp/>:<sp/>_lexer(input)<sp/>{};</highlight></codeline>
+<codeline lineno="101" refid="classemthp_1_1Parser_1ada7e099319ce350bb2d5dcfd5ea8b36a" refkind="member"><highlight class="normal"><ref refid="classemthp_1_1Parser" kindref="compound">emthp::Parser</ref>&amp;<sp/><ref refid="classemthp_1_1Parser_1ada7e099319ce350bb2d5dcfd5ea8b36a" kindref="member">emthp::Parser::operator =</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classemthp_1_1Parser" kindref="compound">emthp::Parser</ref>&amp;<sp/>ogn)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"><sp/>{this-&gt;_lexer<sp/>=<sp/>ogn._lexer;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;};</highlight></codeline>
+<codeline lineno="106" refid="classemthp_1_1Parser_1a933df3ba2501887aa6d947bfe6eafe4b" refkind="member"><highlight class="normal"><ref refid="classemth_1_1Polynomial" kindref="compound">emth::Polynomial</ref><sp/><ref refid="classemthp_1_1Parser_1a933df3ba2501887aa6d947bfe6eafe4b" kindref="member">emthp::Parser::parse_polynomial</ref>()<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classemth_1_1Polynomial" kindref="compound">emth::Polynomial</ref><sp/>polynomial;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!polynomial.<ref refid="classemth_1_1Polynomial_1a1dc4825c3d5005949f0869e204e4fedc" kindref="member">push_monomial</ref>(std::move(this-&gt;parse_monomial())))<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>polynomial;}}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="114" refid="classemthp_1_1Parser_1a590566c3e893515a0dbb9db032a889cd" refkind="member"><highlight class="normal"><ref refid="classemth_1_1Monomial" kindref="compound">emth::Monomial</ref><sp/><ref refid="classemthp_1_1Parser_1a590566c3e893515a0dbb9db032a889cd" kindref="member">emthp::Parser::parse_monomial</ref>()<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classemth_1_1Monomial" kindref="compound">emth::Monomial</ref><sp/>monomial(0,<sp/>0);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>monomial.<ref refid="classemth_1_1Monomial_1adae9aaac815a7c86ec651e5bdb3d3043" kindref="member">set_coeff</ref>(this-&gt;parse_number());</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>v<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>e<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!v<sp/>||<sp/>!e)<sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structemthp_1_1Token" kindref="compound">emthp::Token</ref><sp/>token<sp/>=<sp/>this-&gt;_lexer.next();</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(token.<ref refid="structemthp_1_1Token_1ae532928c40581bc20349979955dfb2f3" kindref="member">type</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>emthp::TokenType::T_VARIABLE:<sp/>v<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>emthp::TokenType::T_EXPONENT:<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(v)<sp/>{e<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;}<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6bab0be00ab2ea8e4a56ab22f220c7de9bf" kindref="member">emthp::TokenType::T_PLUS</ref>:<sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>emthp::TokenType::T_MINUS:<sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>emthp::TokenType::T_NUMBER:<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(v)<sp/>{monomial.<ref refid="classemth_1_1Monomial_1ab695cba07bcbf08cfec7d32e0bf4cc20" kindref="member">set_degree</ref>(1);<sp/>this-&gt;_lexer.back();}<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>monomial;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>emthp::TokenType::T_EOF:<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(v)<sp/>{monomial.<ref refid="classemth_1_1Monomial_1ab695cba07bcbf08cfec7d32e0bf4cc20" kindref="member">set_degree</ref>(1);}<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>monomial;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>monomial.<ref refid="classemth_1_1Monomial_1ab695cba07bcbf08cfec7d32e0bf4cc20" kindref="member">set_degree</ref>((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<sp/>this-&gt;parse_number());</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>monomial;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>emthp::Parser::parse_number()<sp/>noexcept<sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>positive<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structemthp_1_1Token" kindref="compound">emthp::Token</ref><sp/>token<sp/>=<sp/>this-&gt;_lexer.next();</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(token.<ref refid="structemthp_1_1Token_1ae532928c40581bc20349979955dfb2f3" kindref="member">type</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>emthp::TokenType::T_MINUS:<sp/>positive<sp/>=<sp/>!positive;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>emthp::TokenType::T_NUMBER:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>positive<sp/>?<sp/>token.<ref refid="structemthp_1_1Token_1a0512f6f4c2a7dcf724d582d971393c2c" kindref="member">value</ref><sp/>:<sp/>-token.<ref refid="structemthp_1_1Token_1a0512f6f4c2a7dcf724d582d971393c2c" kindref="member">value</ref>;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>emthp::TokenType::T_VARIABLE:<sp/>this-&gt;_lexer.back();<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>positive<sp/>?<sp/>1<sp/>:<sp/>-1;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>emthp::TokenType::T_EOF:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/eparser.cpp"/>
+  </compounddef>
+</doxygen>

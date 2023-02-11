@@ -1,0 +1,98 @@
+.TH "emthp::Lexer" 3 "Sat Feb 11 2023" "EMath++" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+emthp::Lexer \- Class that works as a token supplier for the \fBParser\fP class\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <eparser\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBLexer\fP (const std::string &input) noexcept"
+.br
+.RI "Standalone constructor for the \fBLexer\fP class\&. "
+.ti -1c
+.RI "\fBLexer\fP & \fBoperator=\fP (const \fBLexer\fP &ogn) noexcept"
+.br
+.RI "Assigment operator for when called with an lvalue\&. "
+.ti -1c
+.RI "\fBToken\fP \fBnext\fP () noexcept"
+.br
+.RI "Function that returns the next \fBToken\fP in the input provided in the constructor\&. "
+.ti -1c
+.RI "void \fBback\fP () noexcept"
+.br
+.RI "Backtrack function that moves the cursor's position one position backwards\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Class that works as a token supplier for the \fBParser\fP class\&. 
+
+The class consists of two public functions, one for getting the next \fBToken\fP and the other for going back one position\&. 
+.PP
+Definition at line \fB52\fP of file \fBeparser\&.h\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "emthp::Lexer::Lexer (const std::string & input)\fC [noexcept]\fP"
+
+.PP
+Standalone constructor for the \fBLexer\fP class\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIinput\fP A const reference to the std::string to tokenize\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB14\fP of file \fBeparser\&.cpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void emthp::Lexer::back ()\fC [noexcept]\fP"
+
+.PP
+Backtrack function that moves the cursor's position one position backwards\&. 
+.PP
+Definition at line \fB52\fP of file \fBeparser\&.cpp\fP\&.
+.SS "\fBemthp::Token\fP emthp::Lexer::next ()\fC [noexcept]\fP"
+
+.PP
+Function that returns the next \fBToken\fP in the input provided in the constructor\&. 
+.PP
+\fBReturns\fP
+.RS 4
+(\fBToken\fP) The next \fBToken\fP in the input 
+.RE
+.PP
+
+.PP
+Definition at line \fB29\fP of file \fBeparser\&.cpp\fP\&.
+.PP
+References \fBnext()\fP, and \fBemthp::T_PLUS\fP\&.
+.SS "\fBemthp::Lexer\fP & emthp::Lexer::operator= (const \fBLexer\fP & ogn)\fC [noexcept]\fP"
+
+.PP
+Assigment operator for when called with an lvalue\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The lvalue \fBLexer\fP object\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(\fBLexer\fP&) A reference to the lvalue of the operation 
+.RE
+.PP
+
+.PP
+Definition at line \fB20\fP of file \fBeparser\&.cpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for EMath++ from the source code\&.

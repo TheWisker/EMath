@@ -1,0 +1,186 @@
+.TH "test/eparser.cpp" 3 "Sat Feb 11 2023" "EMath++" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+test/eparser.cpp \- This is the main test file for the equation parser\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <gtest/gtest\&.h>\fP
+.br
+\fC#include 'eparser\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBEParserTest\fP"
+.br
+.RI "Class that provides a test fixture for the test cases\&. "
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTEST_F\fP (\fBEParserTest\fP, Lexer)"
+.br
+.ti -1c
+.RI "\fBTEST_F\fP (\fBEParserTest\fP, CompoundLexer)"
+.br
+.ti -1c
+.RI "\fBTEST_F\fP (\fBEParserTest\fP, ArithmeticLexer)"
+.br
+.ti -1c
+.RI "\fBTEST_F\fP (\fBEParserTest\fP, Variables)"
+.br
+.ti -1c
+.RI "\fBTEST_F\fP (\fBEParserTest\fP, Compound)"
+.br
+.ti -1c
+.RI "\fBTEST_F\fP (\fBEParserTest\fP, Signs)"
+.br
+.ti -1c
+.RI "\fBTEST_F\fP (\fBEParserTest\fP, Noise)"
+.br
+.ti -1c
+.RI "\fBTEST_F\fP (\fBEParserTest\fP, Edge)"
+.br
+.ti -1c
+.RI "int \fBmain\fP (int argc, char **argv)"
+.br
+.RI "Function that runs all the declared tests\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+This is the main test file for the equation parser\&. 
+
+This file contains a text fixture class and all the test cases\&.
+.br
+It consists of the \fBEParserTest\fP classe that provides the test fixture for all the tests\&.
+.br
+Then it contains all the test cases, for testing correct execution\&. 
+.PP
+Definition in file \fBeparser\&.cpp\fP\&.
+.SH "Function Documentation"
+.PP 
+.SS "int main (int argc, char ** argv)"
+
+.PP
+Function that runs all the declared tests\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIargc\fP The console arguments count 
+.br
+\fIargv\fP The console arguments as a array of char arrays 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(0) If all tests passed 
+.PP
+(1) If one or more tests failed 
+.RE
+.PP
+
+.PP
+Definition at line \fB169\fP of file \fBeparser\&.cpp\fP\&.
+.SS "TEST_F (\fBEParserTest\fP, ArithmeticLexer)"
+
+.PP
+\fBTest\fP
+.RS 4
+Test lexer functionality with arithmetic expressions 
+.RE
+.PP
+
+.PP
+Definition at line \fB104\fP of file \fBeparser\&.cpp\fP\&.
+.PP
+References \fBemthp::Token::type\fP, and \fBemthp::Token::value\fP\&.
+.SS "TEST_F (\fBEParserTest\fP, Compound)"
+
+.PP
+\fBTest\fP
+.RS 4
+Test parser functionality with polynomial expressions 
+.RE
+.PP
+
+.PP
+Definition at line \fB140\fP of file \fBeparser\&.cpp\fP\&.
+.SS "TEST_F (\fBEParserTest\fP, CompoundLexer)"
+
+.PP
+\fBTest\fP
+.RS 4
+Test lexer functionality with compund expressions 
+.RE
+.PP
+
+.PP
+Definition at line \fB77\fP of file \fBeparser\&.cpp\fP\&.
+.PP
+References \fBemthp::Token::type\fP, and \fBemthp::Token::value\fP\&.
+.SS "TEST_F (\fBEParserTest\fP, Edge)"
+
+.PP
+\fBTest\fP
+.RS 4
+Test parser edge cases 
+.RE
+.PP
+
+.PP
+Definition at line \fB161\fP of file \fBeparser\&.cpp\fP\&.
+.SS "TEST_F (\fBEParserTest\fP, Lexer)"
+
+.PP
+\fBTest\fP
+.RS 4
+Test lexer functionality with simple expressions 
+.RE
+.PP
+
+.PP
+Definition at line \fB42\fP of file \fBeparser\&.cpp\fP\&.
+.PP
+References \fBemthp::Token::type\fP, and \fBemthp::Token::value\fP\&.
+.SS "TEST_F (\fBEParserTest\fP, Noise)"
+
+.PP
+\fBTest\fP
+.RS 4
+Test parser functionality with noise in the expressions 
+.RE
+.PP
+
+.PP
+Definition at line \fB154\fP of file \fBeparser\&.cpp\fP\&.
+.SS "TEST_F (\fBEParserTest\fP, Signs)"
+
+.PP
+\fBTest\fP
+.RS 4
+Test parser functionality with sign expressions 
+.RE
+.PP
+
+.PP
+Definition at line \fB144\fP of file \fBeparser\&.cpp\fP\&.
+.SS "TEST_F (\fBEParserTest\fP, Variables)"
+
+.PP
+\fBTest\fP
+.RS 4
+Test parser functionality with monomial expressions 
+.RE
+.PP
+
+.PP
+Definition at line \fB131\fP of file \fBeparser\&.cpp\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for EMath++ from the source code\&.

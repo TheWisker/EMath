@@ -1,0 +1,662 @@
+.TH "emth::Monomial" 3 "Sat Feb 11 2023" "EMath++" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+emth::Monomial \- Class for representing and operating monomials\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <emath\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMonomial\fP () noexcept"
+.br
+.RI "Default constructor for when initialized with no arguments\&. "
+.ti -1c
+.RI "\fBMonomial\fP (const double cf, const int dgr) noexcept"
+.br
+.RI "Normal constructor for initialization with coeff and degree\&. "
+.ti -1c
+.RI "\fBMonomial\fP (const \fBMonomial\fP &ogn) noexcept"
+.br
+.RI "Copy constructor for when initialized with an lvalue \fBMonomial\fP object\&. "
+.ti -1c
+.RI "\fBMonomial\fP (\fBMonomial\fP &&ogn) noexcept"
+.br
+.RI "Move constructor for when initialized with an rvalue \fBMonomial\fP object\&. "
+.ti -1c
+.RI "\fBMonomial\fP & \fBoperator=\fP (const \fBMonomial\fP &ogn) noexcept"
+.br
+.RI "Assigment operator overload for when called with an lvalue\&. "
+.ti -1c
+.RI "\fBMonomial\fP & \fBoperator=\fP (\fBMonomial\fP &&ogn) noexcept"
+.br
+.RI "Move assigment operator overload for when called with an rvalue\&. "
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBMonomial\fP &ogn) const noexcept"
+.br
+.RI "Equal logic operator overload\&. "
+.ti -1c
+.RI "bool \fBoperator!=\fP (const \fBMonomial\fP &ogn) const noexcept"
+.br
+.RI "Not equal logic operator overload\&. "
+.ti -1c
+.RI "bool \fBoperator>\fP (const \fBMonomial\fP &ogn) const noexcept"
+.br
+.RI "Greater than logic operator overload\&. "
+.ti -1c
+.RI "bool \fBoperator<\fP (const \fBMonomial\fP &ogn) const noexcept"
+.br
+.RI "Less than logic operator overload\&. "
+.ti -1c
+.RI "bool \fBoperator>=\fP (const \fBMonomial\fP &ogn) const noexcept"
+.br
+.RI "Greater or equal than logic operator overload\&. "
+.ti -1c
+.RI "bool \fBoperator<=\fP (const \fBMonomial\fP &ogn) const noexcept"
+.br
+.RI "Less or equal than logic operator overload\&. "
+.ti -1c
+.RI "\fBMonomial\fP \fBoperator+\fP (const \fBMonomial\fP &ogn) const noexcept"
+.br
+.RI "Addition operator overload\&. "
+.ti -1c
+.RI "\fBMonomial\fP \fBoperator\-\fP (const \fBMonomial\fP &ogn) const noexcept"
+.br
+.RI "Substraction operator overload\&. "
+.ti -1c
+.RI "\fBMonomial\fP \fBoperator*\fP (const \fBMonomial\fP &ogn) const noexcept"
+.br
+.RI "Multiplication operator overload\&. "
+.ti -1c
+.RI "\fBMonomial\fP \fBoperator/\fP (const \fBMonomial\fP &ogn) const noexcept"
+.br
+.RI "Division operator overload\&. "
+.ti -1c
+.RI "\fBMonomial\fP \fBoperator%\fP (const \fBMonomial\fP &ogn) const noexcept"
+.br
+.RI "Modulus operator overload\&. "
+.ti -1c
+.RI "\fBMonomial\fP & \fBoperator+=\fP (const \fBMonomial\fP &ogn) noexcept"
+.br
+.RI "Addition assigment operator overload\&. "
+.ti -1c
+.RI "\fBMonomial\fP & \fBoperator\-=\fP (const \fBMonomial\fP &ogn) noexcept"
+.br
+.RI "Substraction assigment operator overload\&. "
+.ti -1c
+.RI "\fBMonomial\fP & \fBoperator*=\fP (const \fBMonomial\fP &ogn) noexcept"
+.br
+.RI "Multiplication assigment operator overload\&. "
+.ti -1c
+.RI "\fBMonomial\fP & \fBoperator/=\fP (const \fBMonomial\fP &ogn) noexcept"
+.br
+.RI "Division assigment operator overload\&. "
+.ti -1c
+.RI "\fBMonomial\fP & \fBoperator%=\fP (const \fBMonomial\fP &ogn) noexcept"
+.br
+.RI "Modulus assigment operator overload\&. "
+.ti -1c
+.RI "double \fBget_coeff\fP () const noexcept"
+.br
+.RI "Getter function for getting the coefficient of the \fBMonomial\fP\&. "
+.ti -1c
+.RI "int \fBget_degree\fP () const noexcept"
+.br
+.RI "Getter function for getting the degree of the \fBMonomial\fP\&. "
+.ti -1c
+.RI "void \fBset_coeff\fP (double cf) noexcept"
+.br
+.RI "Setter function for setting the coefficient of the \fBMonomial\fP\&. "
+.ti -1c
+.RI "void \fBset_degree\fP (int dgr) noexcept"
+.br
+.RI "Setter function for setting the degree of the \fBMonomial\fP\&. "
+.ti -1c
+.RI "std::string \fBget_expression\fP () const noexcept"
+.br
+.RI "Getter function for getting the expression of the \fBMonomial\fP\&. "
+.ti -1c
+.RI "double \fBget_value\fP (const double &x) const noexcept"
+.br
+.RI "Calculus function for getting the value of the \fBMonomial\fP at a point\&. "
+.ti -1c
+.RI "\fB~Monomial\fP ()"
+.br
+.RI "The class destructor\&. "
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "std::stringstream & \fBoperator<<\fP (std::stringstream &ss, const \fBMonomial\fP &m)"
+.br
+.RI "A friend operator to insert the \fBMonomial\fP into a std::stringstream\&. "
+.ti -1c
+.RI "std::ostream & \fBoperator<<\fP (std::ostream &out, const \fBMonomial\fP &m)"
+.br
+.RI "A friend operator to insert the \fBMonomial\fP into a std::ostream\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Class for representing and operating monomials\&. 
+
+The class consists of the constructors, the operators, the getters, the properties and some private functions\&. 
+.PP
+Definition at line \fB81\fP of file \fBemath\&.h\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "emth::Monomial::Monomial ()\fC [noexcept]\fP"
+
+.PP
+Default constructor for when initialized with no arguments\&. 
+.PP
+Definition at line \fB30\fP of file \fBemath\&.cpp\fP\&.
+.SS "emth::Monomial::Monomial (const double cf, const int dgr)\fC [noexcept]\fP"
+
+.PP
+Normal constructor for initialization with coeff and degree\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcf\fP The coefficient as a double\&. 
+.br
+\fIdgr\fP The degree as a integer\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB36\fP of file \fBemath\&.cpp\fP\&.
+.SS "emth::Monomial::Monomial (const \fBMonomial\fP & ogn)\fC [noexcept]\fP"
+
+.PP
+Copy constructor for when initialized with an lvalue \fBMonomial\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The lvalue \fBMonomial\fP object\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB41\fP of file \fBemath\&.cpp\fP\&.
+.SS "emth::Monomial::Monomial (\fBMonomial\fP && ogn)\fC [noexcept]\fP"
+
+.PP
+Move constructor for when initialized with an rvalue \fBMonomial\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The rvalue \fBMonomial\fP object\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB46\fP of file \fBemath\&.cpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "double emth::Monomial::get_coeff () const\fC [noexcept]\fP"
+
+.PP
+Getter function for getting the coefficient of the \fBMonomial\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+(double) The coefficient of the \fBMonomial\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB207\fP of file \fBemath\&.cpp\fP\&.
+.SS "int emth::Monomial::get_degree () const\fC [noexcept]\fP"
+
+.PP
+Getter function for getting the degree of the \fBMonomial\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+(int) The degree of the \fBMonomial\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB212\fP of file \fBemath\&.cpp\fP\&.
+.SS "std::string emth::Monomial::get_expression () const\fC [noexcept]\fP"
+
+.PP
+Getter function for getting the expression of the \fBMonomial\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+(std::string) The expression of the \fBMonomial\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB227\fP of file \fBemath\&.cpp\fP\&.
+.SS "double emth::Monomial::get_value (const double & x) const\fC [noexcept]\fP"
+
+.PP
+Calculus function for getting the value of the \fBMonomial\fP at a point\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIx\fP The point to evaluate\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(double) The result of the evaluation of the \fBMonomial\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB233\fP of file \fBemath\&.cpp\fP\&.
+.SS "bool emth::Monomial::operator!= (const \fBMonomial\fP & ogn) const\fC [noexcept]\fP"
+
+.PP
+Not equal logic operator overload\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The \fBMonomial\fP object to compare to\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(true) If \fBMonomial\fP objects coefficients and degrees dont match\&. 
+.PP
+(false) If \fBMonomial\fP objects coefficients and degrees match\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB72\fP of file \fBemath\&.cpp\fP\&.
+.SS "\fBemth::Monomial\fP emth::Monomial::operator% (const \fBMonomial\fP & ogn) const\fC [noexcept]\fP"
+
+.PP
+Modulus operator overload\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The \fBMonomial\fP object to divide by\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(\fBMonomial\fP) A brand new \fBMonomial\fP that represents the result\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB130\fP of file \fBemath\&.cpp\fP\&.
+.SS "\fBemth::Monomial\fP & emth::Monomial::operator%= (const \fBMonomial\fP & ogn)\fC [noexcept]\fP"
+
+.PP
+Modulus assigment operator overload\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The \fBMonomial\fP object to divide by\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(\fBMonomial\fP&) A reference to the lvalue of the operation\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB182\fP of file \fBemath\&.cpp\fP\&.
+.SS "\fBemth::Monomial\fP emth::Monomial::operator* (const \fBMonomial\fP & ogn) const\fC [noexcept]\fP"
+
+.PP
+Multiplication operator overload\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The \fBMonomial\fP object to multiply by\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(\fBMonomial\fP) A brand new \fBMonomial\fP that represents the result\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB118\fP of file \fBemath\&.cpp\fP\&.
+.SS "\fBemth::Monomial\fP & emth::Monomial::operator*= (const \fBMonomial\fP & ogn)\fC [noexcept]\fP"
+
+.PP
+Multiplication assigment operator overload\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The \fBMonomial\fP object to multiply by\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(\fBMonomial\fP&) A reference to the lvalue of the operation\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB160\fP of file \fBemath\&.cpp\fP\&.
+.SS "\fBemth::Monomial\fP emth::Monomial::operator+ (const \fBMonomial\fP & ogn) const\fC [noexcept]\fP"
+
+.PP
+Addition operator overload\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The \fBMonomial\fP object to add\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(\fBMonomial\fP) A brand new \fBMonomial\fP that represents the result\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB106\fP of file \fBemath\&.cpp\fP\&.
+.SS "\fBemth::Monomial\fP & emth::Monomial::operator+= (const \fBMonomial\fP & ogn)\fC [noexcept]\fP"
+
+.PP
+Addition assigment operator overload\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The \fBMonomial\fP object to add\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(\fBMonomial\fP&) A reference to the lvalue of the operation\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB136\fP of file \fBemath\&.cpp\fP\&.
+.SS "\fBemth::Monomial\fP emth::Monomial::operator\- (const \fBMonomial\fP & ogn) const\fC [noexcept]\fP"
+
+.PP
+Substraction operator overload\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The \fBMonomial\fP object to substract by\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(\fBMonomial\fP) A brand new \fBMonomial\fP that represents the result\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB112\fP of file \fBemath\&.cpp\fP\&.
+.SS "\fBemth::Monomial\fP & emth::Monomial::operator\-= (const \fBMonomial\fP & ogn)\fC [noexcept]\fP"
+
+.PP
+Substraction assigment operator overload\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The \fBMonomial\fP object to substract by\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(\fBMonomial\fP&) A reference to the lvalue of the operation\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB148\fP of file \fBemath\&.cpp\fP\&.
+.SS "\fBemth::Monomial\fP emth::Monomial::operator/ (const \fBMonomial\fP & ogn) const\fC [noexcept]\fP"
+
+.PP
+Division operator overload\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The \fBMonomial\fP object to divide by\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(\fBMonomial\fP) A brand new \fBMonomial\fP that represents the result\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB124\fP of file \fBemath\&.cpp\fP\&.
+.SS "\fBemth::Monomial\fP & emth::Monomial::operator/= (const \fBMonomial\fP & ogn)\fC [noexcept]\fP"
+
+.PP
+Division assigment operator overload\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The \fBMonomial\fP object to divide by\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(\fBMonomial\fP&) A reference to the lvalue of the operation\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB170\fP of file \fBemath\&.cpp\fP\&.
+.SS "bool emth::Monomial::operator< (const \fBMonomial\fP & ogn) const\fC [noexcept]\fP"
+
+.PP
+Less than logic operator overload\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The \fBMonomial\fP object to compare to\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(true) If the \fBMonomial\fP object degree is less than the degree of the passed \fBMonomial\fP\&. 
+.PP
+(false) If the \fBMonomial\fP object degree is equal or greater than the degree of the passed \fBMonomial\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB86\fP of file \fBemath\&.cpp\fP\&.
+.SS "bool emth::Monomial::operator<= (const \fBMonomial\fP & ogn) const\fC [noexcept]\fP"
+
+.PP
+Less or equal than logic operator overload\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The \fBMonomial\fP object to compare to\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(true) If the \fBMonomial\fP object degree is less or equal than the degree of the passed \fBMonomial\fP\&. 
+.PP
+(false) If the \fBMonomial\fP object degree is greater than the degree of the passed \fBMonomial\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB100\fP of file \fBemath\&.cpp\fP\&.
+.SS "\fBemth::Monomial\fP & emth::Monomial::operator= (const \fBMonomial\fP & ogn)\fC [noexcept]\fP"
+
+.PP
+Assigment operator overload for when called with an lvalue\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The lvalue \fBMonomial\fP object\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(\fBMonomial\fP&) A reference to the lvalue of the operation 
+.RE
+.PP
+
+.PP
+Definition at line \fB52\fP of file \fBemath\&.cpp\fP\&.
+.SS "\fBemth::Monomial\fP & emth::Monomial::operator= (\fBemth::Monomial\fP && ogn)\fC [noexcept]\fP"
+
+.PP
+Move assigment operator overload for when called with an rvalue\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The rvalue \fBMonomial\fP object\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(\fBMonomial\fP&) A reference to the lvalue of the operation 
+.RE
+.PP
+
+.PP
+Definition at line \fB58\fP of file \fBemath\&.cpp\fP\&.
+.SS "bool emth::Monomial::operator== (const \fBMonomial\fP & ogn) const\fC [noexcept]\fP"
+
+.PP
+Equal logic operator overload\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The \fBMonomial\fP object to compare to\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(true) If \fBMonomial\fP objects coefficients and degrees match\&. 
+.PP
+(false) If \fBMonomial\fP objects coefficients and degrees dont match\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB65\fP of file \fBemath\&.cpp\fP\&.
+.SS "bool emth::Monomial::operator> (const \fBMonomial\fP & ogn) const\fC [noexcept]\fP"
+
+.PP
+Greater than logic operator overload\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The \fBMonomial\fP object to compare to\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(true) If the \fBMonomial\fP object degree is greater than the degree of the passed \fBMonomial\fP\&. 
+.PP
+(false) If the \fBMonomial\fP object degree is equal or less than the degree of the passed \fBMonomial\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB79\fP of file \fBemath\&.cpp\fP\&.
+.SS "bool emth::Monomial::operator>= (const \fBMonomial\fP & ogn) const\fC [noexcept]\fP"
+
+.PP
+Greater or equal than logic operator overload\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The \fBMonomial\fP object to compare to\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(true) If the \fBMonomial\fP object degree is greater or equal than the degree of the passed \fBMonomial\fP\&. 
+.PP
+(false) If the \fBMonomial\fP object degree is less than the degree of the passed \fBMonomial\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB93\fP of file \fBemath\&.cpp\fP\&.
+.SS "void emth::Monomial::set_coeff (double cf)\fC [noexcept]\fP"
+
+.PP
+Setter function for setting the coefficient of the \fBMonomial\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcf\fP The coefficient to set to\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB217\fP of file \fBemath\&.cpp\fP\&.
+.SS "void emth::Monomial::set_degree (int dgr)\fC [noexcept]\fP"
+
+.PP
+Setter function for setting the degree of the \fBMonomial\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdgr\fP The degree to set to\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB222\fP of file \fBemath\&.cpp\fP\&.
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "std::ostream & operator<< (std::ostream & out, const \fBMonomial\fP & m)\fC [friend]\fP"
+
+.PP
+A friend operator to insert the \fBMonomial\fP into a std::ostream\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIout\fP The std::ostream\&. 
+.br
+\fIm\fP The \fBMonomial\fP object to insert\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(std::ostream&) A reference to the std::ostream\&. 
+.RE
+.PP
+
+.SS "std::stringstream & operator<< (std::stringstream & ss, const \fBMonomial\fP & m)\fC [friend]\fP"
+
+.PP
+A friend operator to insert the \fBMonomial\fP into a std::stringstream\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIss\fP The std::stringstream\&. 
+.br
+\fIm\fP The \fBMonomial\fP object to insert\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(std::stringstream&) A reference to the std::stringstream\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for EMath++ from the source code\&.

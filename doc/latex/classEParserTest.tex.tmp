@@ -1,0 +1,115 @@
+\hypertarget{classEParserTest}{}\doxysection{EParser\+Test Class Reference}
+\label{classEParserTest}\index{EParserTest@{EParserTest}}
+
+
+Class that provides a test fixture for the test cases.  
+
+
+
+
+Inheritance diagram for EParser\+Test\+:
+% FIG 0
+
+
+Collaboration diagram for EParser\+Test\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEParserTest_abcb56f6fe9d5fd3ca9320b5f981bc52c}{EParser\+Test}} ()
+\begin{DoxyCompactList}\small\item\em Standalone constructor for the \mbox{\hyperlink{classEParserTest}{EParser\+Test}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEParserTest_a3f86e942a3c31352d1a6019e22fabe14}{set\+\_\+input}} (const std\+::string \&input)
+\begin{DoxyCompactList}\small\item\em Function for setting the input to the lexer and parser objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classemthp_1_1Lexer}{emthp\+::\+Lexer}} \mbox{\hyperlink{classEParserTest_a84cd16fd9d2f4b968c36ec280b7a7423}{lexer}}
+\begin{DoxyCompactList}\small\item\em The lexer object on which to perform the tests on. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classemthp_1_1Parser}{emthp\+::\+Parser}} \mbox{\hyperlink{classEParserTest_a272d2e82239321467bce8dacd326bf6f}{parser}}
+\begin{DoxyCompactList}\small\item\em The parser object on which to perform the tests on. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that provides a test fixture for the test cases. 
+
+Definition at line \mbox{\hyperlink{test_2eparser_8cpp_source_l00014}{14}} of file \mbox{\hyperlink{test_2eparser_8cpp_source}{eparser.\+cpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEParserTest_abcb56f6fe9d5fd3ca9320b5f981bc52c}\label{classEParserTest_abcb56f6fe9d5fd3ca9320b5f981bc52c}} 
+\index{EParserTest@{EParserTest}!EParserTest@{EParserTest}}
+\index{EParserTest@{EParserTest}!EParserTest@{EParserTest}}
+\doxysubsubsection{\texorpdfstring{EParserTest()}{EParserTest()}}
+{\footnotesize\ttfamily EParser\+Test\+::\+EParser\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Standalone constructor for the \mbox{\hyperlink{classEParserTest}{EParser\+Test}} class. 
+
+Initializes the lexer and parser object with empty inputs. 
+
+Definition at line \mbox{\hyperlink{test_2eparser_8cpp_source_l00020}{20}} of file \mbox{\hyperlink{test_2eparser_8cpp_source}{eparser.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEParserTest_a3f86e942a3c31352d1a6019e22fabe14}\label{classEParserTest_a3f86e942a3c31352d1a6019e22fabe14}} 
+\index{EParserTest@{EParserTest}!set\_input@{set\_input}}
+\index{set\_input@{set\_input}!EParserTest@{EParserTest}}
+\doxysubsubsection{\texorpdfstring{set\_input()}{set\_input()}}
+{\footnotesize\ttfamily void EParser\+Test\+::set\+\_\+input (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function for setting the input to the lexer and parser objects. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The std\+::string to set as input \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{test_2eparser_8cpp_source_l00025}{25}} of file \mbox{\hyperlink{test_2eparser_8cpp_source}{eparser.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{test_2eparser_8cpp_source_l00033}{lexer}}, and \mbox{\hyperlink{test_2eparser_8cpp_source_l00037}{parser}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classEParserTest_a84cd16fd9d2f4b968c36ec280b7a7423}\label{classEParserTest_a84cd16fd9d2f4b968c36ec280b7a7423}} 
+\index{EParserTest@{EParserTest}!lexer@{lexer}}
+\index{lexer@{lexer}!EParserTest@{EParserTest}}
+\doxysubsubsection{\texorpdfstring{lexer}{lexer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classemthp_1_1Lexer}{emthp\+::\+Lexer}} EParser\+Test\+::lexer\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The lexer object on which to perform the tests on. 
+
+
+
+Definition at line \mbox{\hyperlink{test_2eparser_8cpp_source_l00033}{33}} of file \mbox{\hyperlink{test_2eparser_8cpp_source}{eparser.\+cpp}}.
+
+\mbox{\Hypertarget{classEParserTest_a272d2e82239321467bce8dacd326bf6f}\label{classEParserTest_a272d2e82239321467bce8dacd326bf6f}} 
+\index{EParserTest@{EParserTest}!parser@{parser}}
+\index{parser@{parser}!EParserTest@{EParserTest}}
+\doxysubsubsection{\texorpdfstring{parser}{parser}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classemthp_1_1Parser}{emthp\+::\+Parser}} EParser\+Test\+::parser\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The parser object on which to perform the tests on. 
+
+
+
+Definition at line \mbox{\hyperlink{test_2eparser_8cpp_source_l00037}{37}} of file \mbox{\hyperlink{test_2eparser_8cpp_source}{eparser.\+cpp}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+test/\mbox{\hyperlink{test_2eparser_8cpp}{eparser.\+cpp}}\end{DoxyCompactItemize}

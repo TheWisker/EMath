@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>EMath++ Project</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="index_1intro">
+<title>Introduction</title>
+<para>This is a project that aims to provide some wrapper classes for algebraic mathematical concepts.<linebreak/>
+At the moment it includes the Monomial and Polynomial classes for general calculus. The library is currently in expansion.<linebreak/>
+Any feedback is much appreciated!</para>
+</sect1>
+<sect1 id="index_1install">
+<title>Installation</title>
+<para>The project comes with a folder with some bash files that complete some Meson related tasks.<linebreak/>
+All bash files must be executed from the project&apos;s root directory to work properly.<linebreak/>
+To install the project, there is only need to execute two of them files.<linebreak/>
+Once installed just include the <ref refid="emath_8h" kindref="compound">emath.h</ref> header file in your code and link it with its implementation.</para>
+<sect2 id="index_1step1">
+<title>Step one: Setup the Project</title>
+<para>To setup the Meson project run the setup.sh bash file: <programlisting><codeline><highlight class="normal">bash<sp/>./scripts/setup.sh</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="index_1step2">
+<title>Step two: Install the Library</title>
+<para>To install the emath library run the install.sh bash file:</para>
+<para><programlisting><codeline><highlight class="normal">bash<sp/>./scripts/install.sh</highlight></codeline>
+</programlisting></para>
+<para><simplesect kind="note"><para>You will need a privileged user&apos;s credentials</para>
+</simplesect>
+</para>
+</sect2>
+</sect1>
+<sect1 id="index_1test">
+<title>Testing</title>
+<para>The project comes with some test files located in the test folder.<linebreak/>
+To test that the library code works properly run the following bash file: <programlisting><codeline><highlight class="normal">bash<sp/>./scripts/test.sh</highlight></codeline>
+</programlisting> </para>
+</sect1>
+    </detaileddescription>
+    <location file="include/emath.h"/>
+  </compounddef>
+</doxygen>

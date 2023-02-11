@@ -1,0 +1,8 @@
+<map id="include/emath.h" name="include/emath.h">
+<area shape="rect" id="node1" title="This is the main header file for the emath library." alt="" coords="211,5,325,31"/>
+<area shape="rect" id="node2" href="$eparser_8h.html" title="This is the main header file for the equation parser." alt="" coords="70,79,191,104"/>
+<area shape="rect" id="node5" href="$src_2emath_8cpp.html" title="This is the main source file for the mathematical equation operations." alt="" coords="215,79,321,104"/>
+<area shape="rect" id="node6" href="$test_2emath_8cpp.html" title="This is the main test file of the emath library. It contains all the tests needed to assure that the ..." alt="" coords="345,79,455,104"/>
+<area shape="rect" id="node3" href="$src_2eparser_8cpp.html" title="This is the main implementation file for the equation parser." alt="" coords="5,152,117,177"/>
+<area shape="rect" id="node4" href="$test_2eparser_8cpp.html" title="This is the main test file for the equation parser." alt="" coords="142,152,258,177"/>
+</map>

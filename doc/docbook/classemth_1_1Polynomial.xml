@@ -1,0 +1,1311 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classemth_1_1Polynomial" xml:lang="en-US">
+<title>emth::Polynomial Class Reference</title>
+<indexterm><primary>emth::Polynomial</primary></indexterm>
+<para>
+
+<para>Class for representing and operating polynomials. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;emath.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classemth_1_1Polynomial_1a7a6489fae8e62f7171ba1b094253f206">Polynomial</link> () noexcept</para>
+
+<para>Default constructor for when initialized with no arguments. </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Polynomial_1af0f389de210155a112852f013aaa18d3">Polynomial</link> (const std::map&lt; int, <link linkend="_classemth_1_1Monomial">Monomial</link> &gt; mns) noexcept</para>
+
+<para>Normal constructor for initialization with a std::map&lt;int, Monomial&gt; </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Polynomial_1a98e8835f620927464b617d6b6ebd1329">Polynomial</link> (const std::initializer_list&lt; <link linkend="_classemth_1_1Monomial">Monomial</link> &gt; mns) noexcept</para>
+
+<para>List constructor for initialization with a std::initializer_list&lt;Monomial&gt; </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Polynomial_1a084aed33935ade2f689f09103daaac53">Polynomial</link> (const std::vector&lt; <link linkend="_classemth_1_1Monomial">Monomial</link> &gt; mns) noexcept</para>
+
+<para>Vector constructor for initialization with a std::vector&lt;Monomial&gt; </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Polynomial_1a3612ca54a3bef015a9809d77af2be355">Polynomial</link> (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp;ogn) noexcept</para>
+
+<para>Copy constructor for when initialized with an lvalue <link linkend="_classemth_1_1Polynomial">Polynomial</link> object. </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Polynomial_1a3f55b493797c89e9079c7019fb905059">Polynomial</link> (<link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp;&amp;ogn) noexcept</para>
+
+<para>Move constructor for when initialized with an rvalue <link linkend="_classemth_1_1Polynomial">Polynomial</link> object. </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp; <link linkend="_classemth_1_1Polynomial_1a33ba807b5465ead26edd077d8289f4f3">operator=</link> (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp;ogn) noexcept</para>
+
+<para>Assigment operator overload for when called with an lvalue. </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp; <link linkend="_classemth_1_1Polynomial_1a93818b33532e3f8e80fa614ca8287479">operator=</link> (<link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp;&amp;ogn) noexcept</para>
+
+<para>Move assigment operator overload for when called with an rvalue. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_classemth_1_1Polynomial_1ad042381e1713be21b332d3f8fbdfd0a7">operator==</link> (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp;ogn) const noexcept</para>
+
+<para>Equal logic operator overload. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_classemth_1_1Polynomial_1a40fefffeb0043d193d5aa7ecb3adba55">operator!=</link> (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp;ogn) const noexcept</para>
+
+<para>Not equal logic operator overload. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_classemth_1_1Polynomial_1ae358f6f9b93783601af6999b67e0dafb">operator&gt;</link> (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp;ogn) const noexcept</para>
+
+<para>Greater than logic operator overload. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_classemth_1_1Polynomial_1a0f0640fcb0dd0a59b685a646d494bfc7">operator&lt;</link> (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp;ogn) const noexcept</para>
+
+<para>Less than logic operator overload. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_classemth_1_1Polynomial_1a2321b93b1482b6677dbd125739848724">operator&gt;=</link> (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp;ogn) const noexcept</para>
+
+<para>Greater or equal than logic operator overload. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_classemth_1_1Polynomial_1a7b234cebd032016c0a8ece92a4f68141">operator&lt;=</link> (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp;ogn) const noexcept</para>
+
+<para>Less or equal than logic operator overload. </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Polynomial">Polynomial</link> <link linkend="_classemth_1_1Polynomial_1a9d46082ad38edc17f875127208626281">operator+</link> (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp;ogn) const noexcept</para>
+
+<para>Addition operator overload. </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Polynomial">Polynomial</link> <link linkend="_classemth_1_1Polynomial_1a1cd22ae48bfcb14b53835730091e5f4d">operator-</link> (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp;ogn) const noexcept</para>
+
+<para>Substraction operator overload. </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Polynomial">Polynomial</link> <link linkend="_classemth_1_1Polynomial_1ac461b9aeb93c33d540f0a918bdefd203">operator*</link> (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp;ogn) const noexcept</para>
+
+<para>Multiplication operator overload. </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Polynomial">Polynomial</link> <link linkend="_classemth_1_1Polynomial_1aa2a054dcc203257bfc3d06621ce876b1">operator/</link> (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp;ogn) const noexcept</para>
+
+<para>Division operator overload. </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Polynomial">Polynomial</link> <link linkend="_classemth_1_1Polynomial_1a56a499385ad24715b1240611217277c5">operator%</link> (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp;ogn) const noexcept</para>
+
+<para>Modulus operator overload. </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp; <link linkend="_classemth_1_1Polynomial_1a791a5aa2207acd2fccc4124ff36eb0bf">operator+=</link> (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp;ogn) noexcept</para>
+
+<para>Addition assigment operator overload. </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp; <link linkend="_classemth_1_1Polynomial_1af545354b4dade3e286be26207d02a442">operator-=</link> (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp;ogn) noexcept</para>
+
+<para>Substraction assigment operator overload. </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp; <link linkend="_classemth_1_1Polynomial_1abdeb3769c43eec881ae8ed1a20a5d01d">operator*=</link> (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp;ogn) noexcept</para>
+
+<para>Multiplication assigment operator overload. </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp; <link linkend="_classemth_1_1Polynomial_1ac5a003db2381c99c97c4a78341145b26">operator/=</link> (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp;ogn) noexcept</para>
+
+<para>Division assigment operator overload. </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp; <link linkend="_classemth_1_1Polynomial_1a2e6bd9b16b732b38caabf950acfd5cb2">operator%=</link> (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp;ogn) noexcept</para>
+
+<para>Modulus assigment operator overload. </para>
+</listitem>
+            <listitem><para>int <link linkend="_classemth_1_1Polynomial_1a7eb2c1c9bbbb013220d24f5d2a24a963">get_degree</link> () const noexcept</para>
+
+<para>Getter function for getting the degree of the <link linkend="_classemth_1_1Polynomial">Polynomial</link>. </para>
+</listitem>
+            <listitem><para>std::map&lt; int, <link linkend="_classemth_1_1Monomial">Monomial</link> &gt; <link linkend="_classemth_1_1Polynomial_1a02fda10cd15abff226c5a8013f4928f7">get_monomials</link> () const noexcept</para>
+
+<para>Getter function for getting the monomials of the <link linkend="_classemth_1_1Polynomial">Polynomial</link>. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_classemth_1_1Polynomial_1a1dc4825c3d5005949f0869e204e4fedc">push_monomial</link> (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp;m) noexcept</para>
+
+<para>Function for appending a lvalue monomial to the <link linkend="_classemth_1_1Polynomial">Polynomial</link>. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_classemth_1_1Polynomial_1acd1befa11dd8d4e3da213114dc88cff7">push_monomial</link> (<link linkend="_classemth_1_1Monomial">Monomial</link> &amp;&amp;m) noexcept</para>
+
+<para>Function for appending a rvalue monomial to the <link linkend="_classemth_1_1Polynomial">Polynomial</link>. </para>
+</listitem>
+            <listitem><para>std::string <link linkend="_classemth_1_1Polynomial_1a6f3eb1e674dbce5f0a172d8b5fd7ab2b">get_expression</link> () const noexcept</para>
+
+<para>Getter function for getting the expression of the <link linkend="_classemth_1_1Polynomial">Polynomial</link>. </para>
+</listitem>
+            <listitem><para>double <link linkend="_classemth_1_1Polynomial_1a644cd3ebe3afa676cc3db99557f6eed3">get_value</link> (const double &amp;x) const noexcept</para>
+
+<para>Calculus function for getting the value of the <link linkend="_classemth_1_1Polynomial">Polynomial</link> at a point. </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Polynomial">Polynomial</link> <link linkend="_classemth_1_1Polynomial_1a1f27fae485c94bb0f00a46c50214ab37">get_derivative</link> () const noexcept</para>
+
+<para>Calculus function for getting the derivative of the <link linkend="_classemth_1_1Polynomial">Polynomial</link>. </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Polynomial">Polynomial</link> <link linkend="_classemth_1_1Polynomial_1ac87df7094ce26a8e9cba6df79a3eaf2d">get_integral</link> () const noexcept</para>
+
+<para>Calculus function for getting the integral of the <link linkend="_classemth_1_1Polynomial">Polynomial</link>. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_classemth_1_1Polynomial_1a056e1df4102b0d0add0e8e2805401b82"/><emphasis role="strong">~Polynomial</emphasis> ()</para>
+
+<para>The class destructor. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Friends    </title>
+        <itemizedlist>
+            <listitem><para>std::stringstream &amp; <link linkend="_classemth_1_1Polynomial_1a66068882dda621b9bca207d72a9fb2d7">operator&lt;&lt;</link> (std::stringstream &amp;ss, const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp;p) noexcept</para>
+
+<para>A friend operator to insert the <link linkend="_classemth_1_1Polynomial">Polynomial</link> into a std::stringstream. </para>
+</listitem>
+            <listitem><para>std::ostream &amp; <link linkend="_classemth_1_1Polynomial_1a444148f9a6121f040d0149c4b5d94ac5">operator&lt;&lt;</link> (std::ostream &amp;out, const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp;p) noexcept</para>
+
+<para>A friend operator to insert the <link linkend="_classemth_1_1Polynomial">Polynomial</link> into a std::ostream. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Class for representing and operating polynomials. </para>
+
+
+
+<para>The class consists of the constructors, the operators, the getters, the properties and some private functions. </para>
+<para>
+Definition at line <link linkend="_emath_8h_source_1l00286">286</link> of file <link linkend="_emath_8h_source">emath.h</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classemth_1_1Polynomial_1a7a6489fae8e62f7171ba1b094253f206"/><section>
+    <title>Polynomial()<computeroutput>[1/6]</computeroutput></title>
+<indexterm><primary>Polynomial</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>Polynomial</secondary></indexterm>
+<para><computeroutput>emth::Polynomial::Polynomial ( )<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Default constructor for when initialized with no arguments. </para>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00250">250</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Polynomial_1af0f389de210155a112852f013aaa18d3"/><section>
+    <title>Polynomial()<computeroutput>[2/6]</computeroutput></title>
+<indexterm><primary>Polynomial</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>Polynomial</secondary></indexterm>
+<para><computeroutput>emth::Polynomial::Polynomial (const std::map&lt; int, <link linkend="_classemth_1_1Monomial">Monomial</link> &gt; mns)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Normal constructor for initialization with a std::map&lt;int, Monomial&gt; </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>mns</entry><entry>
+<para>The std::map&lt;int, Monomial&gt;. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classemth_1_1Polynomial_1a98e8835f620927464b617d6b6ebd1329"/><section>
+    <title>Polynomial()<computeroutput>[3/6]</computeroutput></title>
+<indexterm><primary>Polynomial</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>Polynomial</secondary></indexterm>
+<para><computeroutput>emth::Polynomial::Polynomial (const std::initializer_list&lt; <link linkend="_classemth_1_1Monomial">Monomial</link> &gt; mns)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>List constructor for initialization with a std::initializer_list&lt;Monomial&gt; </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>mns</entry><entry>
+<para>The std::initializer_list&lt;Monomial&gt;. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classemth_1_1Polynomial_1a084aed33935ade2f689f09103daaac53"/><section>
+    <title>Polynomial()<computeroutput>[4/6]</computeroutput></title>
+<indexterm><primary>Polynomial</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>Polynomial</secondary></indexterm>
+<para><computeroutput>emth::Polynomial::Polynomial (const std::vector&lt; <link linkend="_classemth_1_1Monomial">Monomial</link> &gt; mns)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Vector constructor for initialization with a std::vector&lt;Monomial&gt; </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>mns</entry><entry>
+<para>The std::vector&lt;Monomial&gt;. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classemth_1_1Polynomial_1a3612ca54a3bef015a9809d77af2be355"/><section>
+    <title>Polynomial()<computeroutput>[5/6]</computeroutput></title>
+<indexterm><primary>Polynomial</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>Polynomial</secondary></indexterm>
+<para><computeroutput>emth::Polynomial::Polynomial (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp; ogn)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Copy constructor for when initialized with an lvalue <link linkend="_classemth_1_1Polynomial">Polynomial</link> object. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The lvalue <link linkend="_classemth_1_1Polynomial">Polynomial</link> object. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00270">270</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Polynomial_1a3f55b493797c89e9079c7019fb905059"/><section>
+    <title>Polynomial()<computeroutput>[6/6]</computeroutput></title>
+<indexterm><primary>Polynomial</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>Polynomial</secondary></indexterm>
+<para><computeroutput>emth::Polynomial::Polynomial (<link linkend="_classemth_1_1Polynomial">emth::Polynomial</link> &amp;&amp; ogn)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Move constructor for when initialized with an rvalue <link linkend="_classemth_1_1Polynomial">Polynomial</link> object. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The rvalue <link linkend="_classemth_1_1Polynomial">Polynomial</link> object. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00275">275</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classemth_1_1Polynomial_1a7eb2c1c9bbbb013220d24f5d2a24a963"/><section>
+    <title>get_degree()</title>
+<indexterm><primary>get_degree</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>get_degree</secondary></indexterm>
+<para><computeroutput>int emth::Polynomial::get_degree ( ) const<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Getter function for getting the degree of the <link linkend="_classemth_1_1Polynomial">Polynomial</link>. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>(int) The degree of the <link linkend="_classemth_1_1Polynomial">Polynomial</link>. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00448">448</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Polynomial_1a1f27fae485c94bb0f00a46c50214ab37"/><section>
+    <title>get_derivative()</title>
+<indexterm><primary>get_derivative</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>get_derivative</secondary></indexterm>
+<para><computeroutput><link linkend="_classemth_1_1Polynomial">emth::Polynomial</link> emth::Polynomial::get_derivative ( ) const<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Calculus function for getting the derivative of the <link linkend="_classemth_1_1Polynomial">Polynomial</link>. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>(<link linkend="_classemth_1_1Polynomial">Polynomial</link>) The result of the derivative of the <link linkend="_classemth_1_1Polynomial">Polynomial</link>. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00490">490</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Polynomial_1a6f3eb1e674dbce5f0a172d8b5fd7ab2b"/><section>
+    <title>get_expression()</title>
+<indexterm><primary>get_expression</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>get_expression</secondary></indexterm>
+<para><computeroutput>std::string emth::Polynomial::get_expression ( ) const<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Getter function for getting the expression of the <link linkend="_classemth_1_1Polynomial">Polynomial</link>. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>(std::string) The expression of the <link linkend="_classemth_1_1Polynomial">Polynomial</link>. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00475">475</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Polynomial_1ac87df7094ce26a8e9cba6df79a3eaf2d"/><section>
+    <title>get_integral()</title>
+<indexterm><primary>get_integral</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>get_integral</secondary></indexterm>
+<para><computeroutput><link linkend="_classemth_1_1Polynomial">emth::Polynomial</link> emth::Polynomial::get_integral ( ) const<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Calculus function for getting the integral of the <link linkend="_classemth_1_1Polynomial">Polynomial</link>. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>(<link linkend="_classemth_1_1Polynomial">Polynomial</link>) The result of the integral of the <link linkend="_classemth_1_1Polynomial">Polynomial</link>. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00501">501</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Polynomial_1a02fda10cd15abff226c5a8013f4928f7"/><section>
+    <title>get_monomials()</title>
+<indexterm><primary>get_monomials</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>get_monomials</secondary></indexterm>
+<para><computeroutput>std::map&lt; int, <link linkend="_classemth_1_1Monomial">emth::Monomial</link> &gt; emth::Polynomial::get_monomials ( ) const<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Getter function for getting the monomials of the <link linkend="_classemth_1_1Polynomial">Polynomial</link>. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>(std::map&lt;int, Monomial&gt;) The monomials of the <link linkend="_classemth_1_1Polynomial">Polynomial</link>. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00453">453</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Polynomial_1a644cd3ebe3afa676cc3db99557f6eed3"/><section>
+    <title>get_value()</title>
+<indexterm><primary>get_value</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>get_value</secondary></indexterm>
+<para><computeroutput>double emth::Polynomial::get_value (const double &amp; x) const<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Calculus function for getting the value of the <link linkend="_classemth_1_1Polynomial">Polynomial</link> at a point. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>x</entry><entry>
+<para>The point to evaluate. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(double) The result of the evaluation of the <link linkend="_classemth_1_1Polynomial">Polynomial</link>. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00481">481</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Polynomial_1a40fefffeb0043d193d5aa7ecb3adba55"/><section>
+    <title>operator!=()</title>
+<indexterm><primary>operator!=</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>operator!=</secondary></indexterm>
+<para><computeroutput>bool emth::Polynomial::operator!= (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp; ogn) const<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Not equal logic operator overload. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The <link linkend="_classemth_1_1Polynomial">Polynomial</link> object to compare to. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(true) If <link linkend="_classemth_1_1Polynomial">Polynomial</link> objects degrees and monomials dont match. </para>
+
+<para>(false) If <link linkend="_classemth_1_1Polynomial">Polynomial</link> objects degrees and monomials match. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00301">301</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Polynomial_1a56a499385ad24715b1240611217277c5"/><section>
+    <title>operator%()</title>
+<indexterm><primary>operator%</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>operator%</secondary></indexterm>
+<para><computeroutput><link linkend="_classemth_1_1Polynomial">emth::Polynomial</link> emth::Polynomial::operator% (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp; ogn) const<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Modulus operator overload. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The <link linkend="_classemth_1_1Polynomial">Polynomial</link> object to divide by. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(<link linkend="_classemth_1_1Polynomial">Polynomial</link>) A brand new <link linkend="_classemth_1_1Polynomial">Polynomial</link> that represents the result. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00359">359</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Polynomial_1a2e6bd9b16b732b38caabf950acfd5cb2"/><section>
+    <title>operator%=()</title>
+<indexterm><primary>operator%=</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>operator%=</secondary></indexterm>
+<para><computeroutput><link linkend="_classemth_1_1Polynomial">emth::Polynomial</link> &amp; emth::Polynomial::operator%= (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp; ogn)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Modulus assigment operator overload. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The <link linkend="_classemth_1_1Polynomial">Polynomial</link> object to divide by. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(<link linkend="_classemth_1_1Polynomial">Polynomial</link>&amp;) A reference to the lvalue of the operation. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00415">415</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Polynomial_1ac461b9aeb93c33d540f0a918bdefd203"/><section>
+    <title>operator*()</title>
+<indexterm><primary>operator*</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>operator*</secondary></indexterm>
+<para><computeroutput><link linkend="_classemth_1_1Polynomial">emth::Polynomial</link> emth::Polynomial::operator* (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp; ogn) const<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Multiplication operator overload. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The <link linkend="_classemth_1_1Polynomial">Polynomial</link> object to multiply by. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(<link linkend="_classemth_1_1Polynomial">Polynomial</link>) A brand new <link linkend="_classemth_1_1Polynomial">Polynomial</link> that represents the result. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00347">347</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Polynomial_1abdeb3769c43eec881ae8ed1a20a5d01d"/><section>
+    <title>operator*=()</title>
+<indexterm><primary>operator*=</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>operator*=</secondary></indexterm>
+<para><computeroutput><link linkend="_classemth_1_1Polynomial">emth::Polynomial</link> &amp; emth::Polynomial::operator*= (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp; ogn)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Multiplication assigment operator overload. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The <link linkend="_classemth_1_1Polynomial">Polynomial</link> object to multiply by. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(<link linkend="_classemth_1_1Polynomial">Polynomial</link>&amp;) A reference to the lvalue of the operation. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00383">383</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Polynomial_1a9d46082ad38edc17f875127208626281"/><section>
+    <title>operator+()</title>
+<indexterm><primary>operator+</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>operator+</secondary></indexterm>
+<para><computeroutput><link linkend="_classemth_1_1Polynomial">emth::Polynomial</link> emth::Polynomial::operator+ (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp; ogn) const<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Addition operator overload. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The <link linkend="_classemth_1_1Polynomial">Polynomial</link> object to add. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(<link linkend="_classemth_1_1Polynomial">Polynomial</link>) A brand new <link linkend="_classemth_1_1Polynomial">Polynomial</link> that represents the result. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00335">335</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Polynomial_1a791a5aa2207acd2fccc4124ff36eb0bf"/><section>
+    <title>operator+=()</title>
+<indexterm><primary>operator+=</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>operator+=</secondary></indexterm>
+<para><computeroutput><link linkend="_classemth_1_1Polynomial">emth::Polynomial</link> &amp; emth::Polynomial::operator+= (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp; ogn)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Addition assigment operator overload. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The <link linkend="_classemth_1_1Polynomial">Polynomial</link> object to add. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(<link linkend="_classemth_1_1Polynomial">Polynomial</link>&amp;) A reference to the lvalue of the operation. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00365">365</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Polynomial_1a1cd22ae48bfcb14b53835730091e5f4d"/><section>
+    <title>operator-()</title>
+<indexterm><primary>operator-</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>operator-</secondary></indexterm>
+<para><computeroutput><link linkend="_classemth_1_1Polynomial">emth::Polynomial</link> emth::Polynomial::operator- (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp; ogn) const<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Substraction operator overload. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The <link linkend="_classemth_1_1Polynomial">Polynomial</link> object to substract by. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(<link linkend="_classemth_1_1Polynomial">Polynomial</link>) A brand new <link linkend="_classemth_1_1Polynomial">Polynomial</link> that represents the result. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00341">341</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Polynomial_1af545354b4dade3e286be26207d02a442"/><section>
+    <title>operator-=()</title>
+<indexterm><primary>operator-=</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>operator-=</secondary></indexterm>
+<para><computeroutput><link linkend="_classemth_1_1Polynomial">emth::Polynomial</link> &amp; emth::Polynomial::operator-= (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp; ogn)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Substraction assigment operator overload. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The <link linkend="_classemth_1_1Polynomial">Polynomial</link> object to substract by. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(<link linkend="_classemth_1_1Polynomial">Polynomial</link>&amp;) A reference to the lvalue of the operation. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00374">374</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Polynomial_1aa2a054dcc203257bfc3d06621ce876b1"/><section>
+    <title>operator/()</title>
+<indexterm><primary>operator/</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>operator/</secondary></indexterm>
+<para><computeroutput><link linkend="_classemth_1_1Polynomial">emth::Polynomial</link> emth::Polynomial::operator/ (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp; ogn) const<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Division operator overload. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The <link linkend="_classemth_1_1Polynomial">Polynomial</link> object to divide by. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(<link linkend="_classemth_1_1Polynomial">Polynomial</link>) A brand new <link linkend="_classemth_1_1Polynomial">Polynomial</link> that represents the result. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00353">353</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Polynomial_1ac5a003db2381c99c97c4a78341145b26"/><section>
+    <title>operator/=()</title>
+<indexterm><primary>operator/=</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>operator/=</secondary></indexterm>
+<para><computeroutput><link linkend="_classemth_1_1Polynomial">emth::Polynomial</link> &amp; emth::Polynomial::operator/= (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp; ogn)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Division assigment operator overload. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The <link linkend="_classemth_1_1Polynomial">Polynomial</link> object to divide by. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(<link linkend="_classemth_1_1Polynomial">Polynomial</link>&amp;) A reference to the lvalue of the operation. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00398">398</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+<para>
+References <link linkend="_src_2emath_8cpp_source_1l00212">emth::Monomial::get_degree()</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Polynomial_1a0f0640fcb0dd0a59b685a646d494bfc7"/><section>
+    <title>operator&lt;()</title>
+<indexterm><primary>operator&lt;</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>operator&lt;</secondary></indexterm>
+<para><computeroutput>bool emth::Polynomial::operator&lt; (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp; ogn) const<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Less than logic operator overload. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The <link linkend="_classemth_1_1Polynomial">Polynomial</link> object to compare to. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(true) If the <link linkend="_classemth_1_1Polynomial">Polynomial</link> object degree is less than the degree of the passed <link linkend="_classemth_1_1Polynomial">Polynomial</link>. </para>
+
+<para>(false) If the <link linkend="_classemth_1_1Polynomial">Polynomial</link> object degree is equal or greater than the degree of the passed <link linkend="_classemth_1_1Polynomial">Polynomial</link>. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00315">315</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Polynomial_1a7b234cebd032016c0a8ece92a4f68141"/><section>
+    <title>operator&lt;=()</title>
+<indexterm><primary>operator&lt;=</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>operator&lt;=</secondary></indexterm>
+<para><computeroutput>bool emth::Polynomial::operator&lt;= (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp; ogn) const<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Less or equal than logic operator overload. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The <link linkend="_classemth_1_1Polynomial">Polynomial</link> object to compare to. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(true) If the <link linkend="_classemth_1_1Polynomial">Polynomial</link> object degree is less or equal than the degree of the passed <link linkend="_classemth_1_1Polynomial">Polynomial</link>. </para>
+
+<para>(false) If the <link linkend="_classemth_1_1Polynomial">Polynomial</link> object degree is greater than the degree of the passed <link linkend="_classemth_1_1Polynomial">Polynomial</link>. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00329">329</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Polynomial_1a33ba807b5465ead26edd077d8289f4f3"/><section>
+    <title>operator=()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>operator=</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>operator=</secondary></indexterm>
+<para><computeroutput><link linkend="_classemth_1_1Polynomial">emth::Polynomial</link> &amp; emth::Polynomial::operator= (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp; ogn)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Assigment operator overload for when called with an lvalue. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The lvalue <link linkend="_classemth_1_1Polynomial">Polynomial</link> object. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(<link linkend="_classemth_1_1Polynomial">Polynomial</link>&amp;) A reference to the lvalue of the operation </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00281">281</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Polynomial_1a93818b33532e3f8e80fa614ca8287479"/><section>
+    <title>operator=()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>operator=</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>operator=</secondary></indexterm>
+<para><computeroutput><link linkend="_classemth_1_1Polynomial">emth::Polynomial</link> &amp; emth::Polynomial::operator= (<link linkend="_classemth_1_1Polynomial">emth::Polynomial</link> &amp;&amp; ogn)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Move assigment operator overload for when called with an rvalue. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The rvalue <link linkend="_classemth_1_1Polynomial">Polynomial</link> object. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(<link linkend="_classemth_1_1Polynomial">Polynomial</link>&amp;) A reference to the lvalue of the operation </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00287">287</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Polynomial_1ad042381e1713be21b332d3f8fbdfd0a7"/><section>
+    <title>operator==()</title>
+<indexterm><primary>operator==</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>operator==</secondary></indexterm>
+<para><computeroutput>bool emth::Polynomial::operator== (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp; ogn) const<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Equal logic operator overload. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The <link linkend="_classemth_1_1Polynomial">Polynomial</link> object to compare to. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(true) If <link linkend="_classemth_1_1Polynomial">Polynomial</link> objects degrees and monomials match. </para>
+
+<para>(false) If <link linkend="_classemth_1_1Polynomial">Polynomial</link> objects degrees and monomials dont match. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00294">294</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Polynomial_1ae358f6f9b93783601af6999b67e0dafb"/><section>
+    <title>operator&gt;()</title>
+<indexterm><primary>operator&gt;</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>operator&gt;</secondary></indexterm>
+<para><computeroutput>bool emth::Polynomial::operator&gt; (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp; ogn) const<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Greater than logic operator overload. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The <link linkend="_classemth_1_1Polynomial">Polynomial</link> object to compare to. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(true) If the <link linkend="_classemth_1_1Polynomial">Polynomial</link> object degree is greater than the degree of the passed <link linkend="_classemth_1_1Polynomial">Polynomial</link>. </para>
+
+<para>(false) If the <link linkend="_classemth_1_1Polynomial">Polynomial</link> object degree is equal or less than the degree of the passed <link linkend="_classemth_1_1Polynomial">Polynomial</link>. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00308">308</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Polynomial_1a2321b93b1482b6677dbd125739848724"/><section>
+    <title>operator&gt;=()</title>
+<indexterm><primary>operator&gt;=</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>operator&gt;=</secondary></indexterm>
+<para><computeroutput>bool emth::Polynomial::operator&gt;= (const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp; ogn) const<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Greater or equal than logic operator overload. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The <link linkend="_classemth_1_1Polynomial">Polynomial</link> object to compare to. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(true) If the <link linkend="_classemth_1_1Polynomial">Polynomial</link> object degree is greater or equal than the degree of the passed <link linkend="_classemth_1_1Polynomial">Polynomial</link>. </para>
+
+<para>(false) If the <link linkend="_classemth_1_1Polynomial">Polynomial</link> object degree is less than the degree of the passed <link linkend="_classemth_1_1Polynomial">Polynomial</link>. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00322">322</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Polynomial_1a1dc4825c3d5005949f0869e204e4fedc"/><section>
+    <title>push_monomial()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>push_monomial</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>push_monomial</secondary></indexterm>
+<para><computeroutput>bool emth::Polynomial::push_monomial (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp; m)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Function for appending a lvalue monomial to the <link linkend="_classemth_1_1Polynomial">Polynomial</link>. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>m</entry><entry>
+<para>The <link linkend="_classemth_1_1Monomial">Monomial</link> object to append. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(bool) If the operation was successful. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00459">459</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Polynomial_1acd1befa11dd8d4e3da213114dc88cff7"/><section>
+    <title>push_monomial()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>push_monomial</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>push_monomial</secondary></indexterm>
+<para><computeroutput>bool emth::Polynomial::push_monomial (<link linkend="_classemth_1_1Monomial">emth::Monomial</link> &amp;&amp; m)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Function for appending a rvalue monomial to the <link linkend="_classemth_1_1Polynomial">Polynomial</link>. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>m</entry><entry>
+<para>The <link linkend="_classemth_1_1Monomial">Monomial</link> object to append. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(bool) If the operation was successful. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00465">465</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Friends And Related Function Documentation</title>
+<anchor xml:id="_classemth_1_1Polynomial_1a444148f9a6121f040d0149c4b5d94ac5"/><section>
+    <title>operator&lt;&lt;<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>operator&lt;&lt;</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>operator&lt;&lt;</secondary></indexterm>
+<para><computeroutput>std::ostream &amp; operator&lt;&lt; (std::ostream &amp; out, const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp; p)<computeroutput>[friend]</computeroutput></computeroutput></para><para>
+
+<para>A friend operator to insert the <link linkend="_classemth_1_1Polynomial">Polynomial</link> into a std::ostream. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>out</entry><entry>
+<para>The std::ostream. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>m</entry><entry>
+<para>The <link linkend="_classemth_1_1Polynomial">Polynomial</link> object to insert. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(std::ostream&amp;) A reference to the std::ostream. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classemth_1_1Polynomial_1a66068882dda621b9bca207d72a9fb2d7"/><section>
+    <title>operator&lt;&lt;<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>operator&lt;&lt;</primary><secondary>emth::Polynomial</secondary></indexterm>
+<indexterm><primary>emth::Polynomial</primary><secondary>operator&lt;&lt;</secondary></indexterm>
+<para><computeroutput>std::stringstream &amp; operator&lt;&lt; (std::stringstream &amp; ss, const <link linkend="_classemth_1_1Polynomial">Polynomial</link> &amp; p)<computeroutput>[friend]</computeroutput></computeroutput></para><para>
+
+<para>A friend operator to insert the <link linkend="_classemth_1_1Polynomial">Polynomial</link> into a std::stringstream. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ss</entry><entry>
+<para>The std::stringstream. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>m</entry><entry>
+<para>The <link linkend="_classemth_1_1Polynomial">Polynomial</link> object to insert. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(std::stringstream&amp;) A reference to the std::stringstream. </para>
+</formalpara>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+include/<link linkend="_emath_8h">emath.h</link>src/<link linkend="_src_2emath_8cpp">emath.cpp</link></section>
+</section>

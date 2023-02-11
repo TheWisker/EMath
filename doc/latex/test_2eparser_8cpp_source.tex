@@ -1,0 +1,120 @@
+\hypertarget{test_2eparser_8cpp_source}{}\doxysection{eparser.\+cpp}
+\label{test_2eparser_8cpp_source}\index{test/eparser.cpp@{test/eparser.cpp}}
+\mbox{\hyperlink{test_2eparser_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00008}00008\ \textcolor{preprocessor}{\#include\ <gtest/gtest.h>}}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{eparser_8h}{eparser.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00014}\mbox{\hyperlink{classEParserTest}{00014}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classEParserTest}{EParserTest}}\ :\ \textcolor{keyword}{public}\ ::testing::Test\ \{}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00015}00015\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00020}\mbox{\hyperlink{classEParserTest_abcb56f6fe9d5fd3ca9320b5f981bc52c}{00020}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEParserTest_abcb56f6fe9d5fd3ca9320b5f981bc52c}{EParserTest}}()\ :\ \mbox{\hyperlink{classEParserTest_a84cd16fd9d2f4b968c36ec280b7a7423}{lexer}}(\textcolor{stringliteral}{"{}"{}}),\ \mbox{\hyperlink{classEParserTest_a272d2e82239321467bce8dacd326bf6f}{parser}}(\textcolor{stringliteral}{"{}"{}})\ \{\};}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00025}\mbox{\hyperlink{classEParserTest_a3f86e942a3c31352d1a6019e22fabe14}{00025}}\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEParserTest_a3f86e942a3c31352d1a6019e22fabe14}{set\_input}}(\textcolor{keyword}{const}\ std::string\ \&input)\ \{}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00026}00026\ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>\mbox{\hyperlink{classEParserTest_a84cd16fd9d2f4b968c36ec280b7a7423}{lexer}}\ =\ \mbox{\hyperlink{classemthp_1_1Lexer}{emthp::Lexer}}(input);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00027}00027\ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>\mbox{\hyperlink{classEParserTest_a272d2e82239321467bce8dacd326bf6f}{parser}}\ =\ \mbox{\hyperlink{classemthp_1_1Parser}{emthp::Parser}}(input);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00028}00028\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00029}00029\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00033}\mbox{\hyperlink{classEParserTest_a84cd16fd9d2f4b968c36ec280b7a7423}{00033}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classemthp_1_1Lexer}{emthp::Lexer}}\ \mbox{\hyperlink{classEParserTest_a84cd16fd9d2f4b968c36ec280b7a7423}{lexer}};}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00037}\mbox{\hyperlink{classEParserTest_a272d2e82239321467bce8dacd326bf6f}{00037}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classemthp_1_1Parser}{emthp::Parser}}\ \mbox{\hyperlink{classEParserTest_a272d2e82239321467bce8dacd326bf6f}{parser}};}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00038}00038\ \};}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00042}\mbox{\hyperlink{test_2eparser_8cpp_adb859937dfb6fcd56c656c3c2555afc9}{00042}}\ \mbox{\hyperlink{test_2eparser_8cpp_adb859937dfb6fcd56c656c3c2555afc9}{TEST\_F}}(\mbox{\hyperlink{classEParserTest}{EParserTest}},\ Lexer)\ \{}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00043}00043\ \ \ \ \ \mbox{\hyperlink{structemthp_1_1Token}{emthp::Token}}\ token;}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00044}00044\ \ \ \ \ this-\/>set\_input(\textcolor{stringliteral}{"{}2x\string^2\ -\/\ 8"{}});}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00046}00046\ \ \ \ \ token\ =\ this-\/>lexer.next();}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00047}00047\ \ \ \ \ ASSERT\_EQ(token.\mbox{\hyperlink{structemthp_1_1Token_ae532928c40581bc20349979955dfb2f3}{type}},\ emthp::TokenType::T\_NUMBER);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00048}00048\ \ \ \ \ ASSERT\_EQ(token.\mbox{\hyperlink{structemthp_1_1Token_a0512f6f4c2a7dcf724d582d971393c2c}{value}},\ 2.0);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00050}00050\ \ \ \ \ token\ =\ this-\/>lexer.next();}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00051}00051\ \ \ \ \ ASSERT\_EQ(token.\mbox{\hyperlink{structemthp_1_1Token_ae532928c40581bc20349979955dfb2f3}{type}},\ emthp::TokenType::T\_VARIABLE);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00052}00052\ \ \ \ \ ASSERT\_EQ(token.\mbox{\hyperlink{structemthp_1_1Token_a0512f6f4c2a7dcf724d582d971393c2c}{value}},\ 0.0);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00053}00053\ }
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00054}00054\ \ \ \ \ token\ =\ this-\/>lexer.next();}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00055}00055\ \ \ \ \ ASSERT\_EQ(token.\mbox{\hyperlink{structemthp_1_1Token_ae532928c40581bc20349979955dfb2f3}{type}},\ emthp::TokenType::T\_EXPONENT);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00056}00056\ \ \ \ \ ASSERT\_EQ(token.\mbox{\hyperlink{structemthp_1_1Token_a0512f6f4c2a7dcf724d582d971393c2c}{value}},\ 0.0);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00057}00057\ }
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00058}00058\ \ \ \ \ token\ =\ this-\/>lexer.next();}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00059}00059\ \ \ \ \ ASSERT\_EQ(token.\mbox{\hyperlink{structemthp_1_1Token_ae532928c40581bc20349979955dfb2f3}{type}},\ emthp::TokenType::T\_NUMBER);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00060}00060\ \ \ \ \ ASSERT\_EQ(token.\mbox{\hyperlink{structemthp_1_1Token_a0512f6f4c2a7dcf724d582d971393c2c}{value}},\ 2.0);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00062}00062\ \ \ \ \ token\ =\ this-\/>lexer.next();}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00063}00063\ \ \ \ \ ASSERT\_EQ(token.\mbox{\hyperlink{structemthp_1_1Token_ae532928c40581bc20349979955dfb2f3}{type}},\ emthp::TokenType::T\_MINUS);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00064}00064\ \ \ \ \ ASSERT\_EQ(token.\mbox{\hyperlink{structemthp_1_1Token_a0512f6f4c2a7dcf724d582d971393c2c}{value}},\ 0.0);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00066}00066\ \ \ \ \ token\ =\ this-\/>lexer.next();}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00067}00067\ \ \ \ \ ASSERT\_EQ(token.\mbox{\hyperlink{structemthp_1_1Token_ae532928c40581bc20349979955dfb2f3}{type}},\ emthp::TokenType::T\_NUMBER);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00068}00068\ \ \ \ \ ASSERT\_EQ(token.\mbox{\hyperlink{structemthp_1_1Token_a0512f6f4c2a7dcf724d582d971393c2c}{value}},\ 8.0);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00070}00070\ \ \ \ \ token\ =\ this-\/>lexer.next();}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00071}00071\ \ \ \ \ ASSERT\_EQ(token.\mbox{\hyperlink{structemthp_1_1Token_ae532928c40581bc20349979955dfb2f3}{type}},\ emthp::TokenType::T\_EOF);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00072}00072\ \ \ \ \ ASSERT\_EQ(token.\mbox{\hyperlink{structemthp_1_1Token_a0512f6f4c2a7dcf724d582d971393c2c}{value}},\ 0.0);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00073}00073\ \}}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00077}\mbox{\hyperlink{test_2eparser_8cpp_a9d00584eda85ad91bd3b865309697a92}{00077}}\ \mbox{\hyperlink{test_2eparser_8cpp_adb859937dfb6fcd56c656c3c2555afc9}{TEST\_F}}(\mbox{\hyperlink{classEParserTest}{EParserTest}},\ CompoundLexer)\ \{}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00078}00078\ \ \ \ \ \mbox{\hyperlink{structemthp_1_1Token}{emthp::Token}}\ token;}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00079}00079\ \ \ \ \ this-\/>set\_input(\textcolor{stringliteral}{"{}1.11x\string^2.22"{}});}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00080}00080\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00081}00081\ \ \ \ \ token\ =\ this-\/>lexer.next();}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00082}00082\ \ \ \ \ ASSERT\_EQ(token.\mbox{\hyperlink{structemthp_1_1Token_ae532928c40581bc20349979955dfb2f3}{type}},\ emthp::TokenType::T\_NUMBER);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00083}00083\ \ \ \ \ ASSERT\_EQ(token.\mbox{\hyperlink{structemthp_1_1Token_a0512f6f4c2a7dcf724d582d971393c2c}{value}},\ 1.11);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00084}00084\ }
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00085}00085\ \ \ \ \ token\ =\ this-\/>lexer.next();}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00086}00086\ \ \ \ \ ASSERT\_EQ(token.\mbox{\hyperlink{structemthp_1_1Token_ae532928c40581bc20349979955dfb2f3}{type}},\ emthp::TokenType::T\_VARIABLE);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00087}00087\ \ \ \ \ ASSERT\_EQ(token.\mbox{\hyperlink{structemthp_1_1Token_a0512f6f4c2a7dcf724d582d971393c2c}{value}},\ 0.0);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00088}00088\ }
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00089}00089\ \ \ \ \ token\ =\ this-\/>lexer.next();}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00090}00090\ \ \ \ \ ASSERT\_EQ(token.\mbox{\hyperlink{structemthp_1_1Token_ae532928c40581bc20349979955dfb2f3}{type}},\ emthp::TokenType::T\_EXPONENT);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00091}00091\ \ \ \ \ ASSERT\_EQ(token.\mbox{\hyperlink{structemthp_1_1Token_a0512f6f4c2a7dcf724d582d971393c2c}{value}},\ 0.0);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00092}00092\ }
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00093}00093\ \ \ \ \ token\ =\ this-\/>lexer.next();}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00094}00094\ \ \ \ \ ASSERT\_EQ(token.\mbox{\hyperlink{structemthp_1_1Token_ae532928c40581bc20349979955dfb2f3}{type}},\ emthp::TokenType::T\_NUMBER);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00095}00095\ \ \ \ \ ASSERT\_EQ(token.\mbox{\hyperlink{structemthp_1_1Token_a0512f6f4c2a7dcf724d582d971393c2c}{value}},\ 2.22);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00096}00096\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00097}00097\ \ \ \ \ token\ =\ this-\/>lexer.next();}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00098}00098\ \ \ \ \ ASSERT\_EQ(token.\mbox{\hyperlink{structemthp_1_1Token_ae532928c40581bc20349979955dfb2f3}{type}},\ emthp::TokenType::T\_EOF);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00099}00099\ \ \ \ \ ASSERT\_EQ(token.\mbox{\hyperlink{structemthp_1_1Token_a0512f6f4c2a7dcf724d582d971393c2c}{value}},\ 0.0);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00100}00100\ \}}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00104}\mbox{\hyperlink{test_2eparser_8cpp_a9bae16de43d72897f903e5977107c60a}{00104}}\ \mbox{\hyperlink{test_2eparser_8cpp_adb859937dfb6fcd56c656c3c2555afc9}{TEST\_F}}(\mbox{\hyperlink{classEParserTest}{EParserTest}},\ ArithmeticLexer)\ \{}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00105}00105\ \ \ \ \ \mbox{\hyperlink{structemthp_1_1Token}{emthp::Token}}\ token;}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00106}00106\ \ \ \ \ this-\/>set\_input(\textcolor{stringliteral}{"{}2*8/4\string^3\ x\string^\ 2\string^2"{}});}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00107}00107\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00108}00108\ \ \ \ \ token\ =\ this-\/>lexer.next();}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00109}00109\ \ \ \ \ ASSERT\_EQ(token.\mbox{\hyperlink{structemthp_1_1Token_ae532928c40581bc20349979955dfb2f3}{type}},\ emthp::TokenType::T\_NUMBER);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00110}00110\ \ \ \ \ ASSERT\_EQ(token.\mbox{\hyperlink{structemthp_1_1Token_a0512f6f4c2a7dcf724d582d971393c2c}{value}},\ 64.0);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00111}00111\ }
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00112}00112\ \ \ \ \ token\ =\ this-\/>lexer.next();}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00113}00113\ \ \ \ \ ASSERT\_EQ(token.\mbox{\hyperlink{structemthp_1_1Token_ae532928c40581bc20349979955dfb2f3}{type}},\ emthp::TokenType::T\_VARIABLE);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00114}00114\ \ \ \ \ ASSERT\_EQ(token.\mbox{\hyperlink{structemthp_1_1Token_a0512f6f4c2a7dcf724d582d971393c2c}{value}},\ 0.0);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00115}00115\ }
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00116}00116\ \ \ \ \ token\ =\ this-\/>lexer.next();}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00117}00117\ \ \ \ \ ASSERT\_EQ(token.\mbox{\hyperlink{structemthp_1_1Token_ae532928c40581bc20349979955dfb2f3}{type}},\ emthp::TokenType::T\_EXPONENT);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00118}00118\ \ \ \ \ ASSERT\_EQ(token.\mbox{\hyperlink{structemthp_1_1Token_a0512f6f4c2a7dcf724d582d971393c2c}{value}},\ 0.0);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00119}00119\ }
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00120}00120\ \ \ \ \ token\ =\ this-\/>lexer.next();}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00121}00121\ \ \ \ \ ASSERT\_EQ(token.\mbox{\hyperlink{structemthp_1_1Token_ae532928c40581bc20349979955dfb2f3}{type}},\ emthp::TokenType::T\_NUMBER);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00122}00122\ \ \ \ \ ASSERT\_EQ(token.\mbox{\hyperlink{structemthp_1_1Token_a0512f6f4c2a7dcf724d582d971393c2c}{value}},\ 4.0);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00123}00123\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00124}00124\ \ \ \ \ token\ =\ this-\/>lexer.next();}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00125}00125\ \ \ \ \ ASSERT\_EQ(token.\mbox{\hyperlink{structemthp_1_1Token_ae532928c40581bc20349979955dfb2f3}{type}},\ emthp::TokenType::T\_EOF);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00126}00126\ \ \ \ \ ASSERT\_EQ(token.\mbox{\hyperlink{structemthp_1_1Token_a0512f6f4c2a7dcf724d582d971393c2c}{value}},\ 0.0);}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00127}00127\ \}}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00131}\mbox{\hyperlink{test_2eparser_8cpp_a7ed288e238950900345be1751b543ab5}{00131}}\ \mbox{\hyperlink{test_2eparser_8cpp_adb859937dfb6fcd56c656c3c2555afc9}{TEST\_F}}(\mbox{\hyperlink{classEParserTest}{EParserTest}},\ Variables)\ \{}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00132}00132\ \ \ \ \ this-\/>set\_input(\textcolor{stringliteral}{"{}x"{}});\ ASSERT\_EQ(this-\/>parser.parse\_monomial(),\ \mbox{\hyperlink{classemth_1_1Monomial}{emth::Monomial}}(1,\ 1));}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00133}00133\ \ \ \ \ this-\/>set\_input(\textcolor{stringliteral}{"{}2x"{}});\ ASSERT\_EQ(this-\/>parser.parse\_monomial(),\ \mbox{\hyperlink{classemth_1_1Monomial}{emth::Monomial}}(2,\ 1));}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00134}00134\ \ \ \ \ this-\/>set\_input(\textcolor{stringliteral}{"{}x\string^2"{}});\ ASSERT\_EQ(this-\/>parser.parse\_monomial(),\ \mbox{\hyperlink{classemth_1_1Monomial}{emth::Monomial}}(1,\ 2));}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00135}00135\ \ \ \ \ this-\/>set\_input(\textcolor{stringliteral}{"{}2x\string^2"{}});\ ASSERT\_EQ(this-\/>parser.parse\_monomial(),\ \mbox{\hyperlink{classemth_1_1Monomial}{emth::Monomial}}(2,\ 2));}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00136}00136\ \}}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00140}\mbox{\hyperlink{test_2eparser_8cpp_a21f8c875c668e6dc3d1a1423cdba58a3}{00140}}\ \mbox{\hyperlink{test_2eparser_8cpp_adb859937dfb6fcd56c656c3c2555afc9}{TEST\_F}}(\mbox{\hyperlink{classEParserTest}{EParserTest}},\ Compound)\ \{this-\/>set\_input(\textcolor{stringliteral}{"{}2x\string^2\ -\/\ 2x\ +\ 2"{}});\ ASSERT\_EQ(this-\/>parser.parse\_polynomial(),\ \mbox{\hyperlink{classemth_1_1Polynomial}{emth::Polynomial}}(\{emth::Monomial(2,\ 2),\ emth::Monomial(-\/2,\ 1),\ emth::Monomial(2,\ 0)\}));\}}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00144}\mbox{\hyperlink{test_2eparser_8cpp_aee28f89b9e4ebad2361a1f87e5068314}{00144}}\ \mbox{\hyperlink{test_2eparser_8cpp_adb859937dfb6fcd56c656c3c2555afc9}{TEST\_F}}(\mbox{\hyperlink{classEParserTest}{EParserTest}},\ Signs)\ \{}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00145}00145\ \ \ \ \ this-\/>set\_input(\textcolor{stringliteral}{"{}-\/x"{}});\ ASSERT\_EQ(this-\/>parser.parse\_monomial(),\ \mbox{\hyperlink{classemth_1_1Monomial}{emth::Monomial}}(-\/1,\ 1));}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00146}00146\ \ \ \ \ this-\/>set\_input(\textcolor{stringliteral}{"{}-\/-\/x"{}});\ ASSERT\_EQ(this-\/>parser.parse\_monomial(),\ \mbox{\hyperlink{classemth_1_1Monomial}{emth::Monomial}}(1,\ 1));}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00147}00147\ \ \ \ \ this-\/>set\_input(\textcolor{stringliteral}{"{}-\/-\/-\/x"{}});\ ASSERT\_EQ(this-\/>parser.parse\_monomial(),\ \mbox{\hyperlink{classemth_1_1Monomial}{emth::Monomial}}(-\/1,\ 1));}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00148}00148\ \ \ \ \ this-\/>set\_input(\textcolor{stringliteral}{"{}-\/+x"{}});\ ASSERT\_EQ(this-\/>parser.parse\_monomial(),\ \mbox{\hyperlink{classemth_1_1Monomial}{emth::Monomial}}(-\/1,\ 1));}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00149}00149\ \ \ \ \ this-\/>set\_input(\textcolor{stringliteral}{"{}+-\/+x"{}});\ ASSERT\_EQ(this-\/>parser.parse\_monomial(),\ \mbox{\hyperlink{classemth_1_1Monomial}{emth::Monomial}}(-\/1,\ 1));}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00150}00150\ \}}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00154}\mbox{\hyperlink{test_2eparser_8cpp_a8178a3e2dd566ffdd7520265ce0c2fe3}{00154}}\ \mbox{\hyperlink{test_2eparser_8cpp_adb859937dfb6fcd56c656c3c2555afc9}{TEST\_F}}(\mbox{\hyperlink{classEParserTest}{EParserTest}},\ Noise)\ \{}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00155}00155\ \ \ \ \ this-\/>set\_input(\textcolor{stringliteral}{"{}(1)<···(0)<···\_x\_···>\string^\{2\}"{}});\ ASSERT\_EQ(this-\/>parser.parse\_monomial(),\ \mbox{\hyperlink{classemth_1_1Monomial}{emth::Monomial}}(10,\ 2));}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00156}00156\ \ \ \ \ this-\/>set\_input(\textcolor{stringliteral}{"{}(1)<···(0)<···\_x\_···>\string^\{2\}\ -\/\ (0)<···(5)<···\_x\_···>\string^\{2\}"{}});\ ASSERT\_EQ(this-\/>parser.parse\_polynomial(),\ \mbox{\hyperlink{classemth_1_1Polynomial}{emth::Polynomial}}(\{emth::Monomial(5,\ 2)\}));}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00157}00157\ \}}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00161}\mbox{\hyperlink{test_2eparser_8cpp_aeed0ae0397e5f82225fde1a6ba4f65a9}{00161}}\ \mbox{\hyperlink{test_2eparser_8cpp_adb859937dfb6fcd56c656c3c2555afc9}{TEST\_F}}(\mbox{\hyperlink{classEParserTest}{EParserTest}},\ Edge)\ \{this-\/>set\_input(\textcolor{stringliteral}{"{}"{}});\ ASSERT\_EQ(this-\/>parser.parse\_polynomial(),\ \mbox{\hyperlink{classemth_1_1Polynomial}{emth::Polynomial}}());\}}
+\DoxyCodeLine{\Hypertarget{test_2eparser_8cpp_source_l00169}\mbox{\hyperlink{test_2eparser_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{00169}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{test_2emath_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}(\textcolor{keywordtype}{int}\ argc,\ \textcolor{keywordtype}{char}**\ argv)\ \{testing::InitGoogleTest(\&argc,\ argv);\ \textcolor{keywordflow}{return}\ RUN\_ALL\_TESTS();\}}
+
+\end{DoxyCode}

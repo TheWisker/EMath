@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.6" xml:lang="en-US">
+  <compound refid="classemth_1_1Arithmetic" kind="class"><name>emth::Arithmetic</name>
+    <member refid="classemth_1_1Arithmetic_1adddfba367517025753ae37062ac6f483" kind="function"><name>get_divisors</name></member>
+  </compound>
+  <compound refid="classEParserTest" kind="class"><name>EParserTest</name>
+    <member refid="classEParserTest_1a84cd16fd9d2f4b968c36ec280b7a7423" kind="variable"><name>lexer</name></member>
+    <member refid="classEParserTest_1a272d2e82239321467bce8dacd326bf6f" kind="variable"><name>parser</name></member>
+    <member refid="classEParserTest_1abcb56f6fe9d5fd3ca9320b5f981bc52c" kind="function"><name>EParserTest</name></member>
+    <member refid="classEParserTest_1a3f86e942a3c31352d1a6019e22fabe14" kind="function"><name>set_input</name></member>
+  </compound>
+  <compound refid="classemthp_1_1Lexer" kind="class"><name>emthp::Lexer</name>
+    <member refid="classemthp_1_1Lexer_1a9d9656d89fd1ef35aec1a8af4ff56cd5" kind="variable"><name>_input</name></member>
+    <member refid="classemthp_1_1Lexer_1a6e704edea7f4eaf079d0674eeb57ffb7" kind="variable"><name>_pos</name></member>
+    <member refid="classemthp_1_1Lexer_1ad3560b27e6813e3e0aeaa48b19dc5dd2" kind="function"><name>Lexer</name></member>
+    <member refid="classemthp_1_1Lexer_1a5116f34af8ec69634dc9202ae2d48b4a" kind="function"><name>operator=</name></member>
+    <member refid="classemthp_1_1Lexer_1a629ea5f393603e05dad17b004caba27d" kind="function"><name>next</name></member>
+    <member refid="classemthp_1_1Lexer_1a273b288699191ec896c9857cfe7f5704" kind="function"><name>back</name></member>
+    <member refid="classemthp_1_1Lexer_1a638bde6ca6cb63363ef550a54261f3eb" kind="function"><name>read_number</name></member>
+    <member refid="classemthp_1_1Lexer_1a4f42a6e9643892a58267d5e37baf261f" kind="function"><name>clean</name></member>
+    <member refid="classemthp_1_1Lexer_1af91a6c3eb34a9ef37002bfb7b500259e" kind="function"><name>is_digit</name></member>
+  </compound>
+  <compound refid="classemth_1_1Monomial" kind="class"><name>emth::Monomial</name>
+    <member refid="classemth_1_1Monomial_1a997731ccf2707a956c8e236b25451702" kind="variable"><name>coeff</name></member>
+    <member refid="classemth_1_1Monomial_1a7ac5ee0ccb8199fb3dc40d93059d95ba" kind="variable"><name>degree</name></member>
+    <member refid="classemth_1_1Monomial_1ae6048a5e8de2117072def861911aa4a7" kind="function"><name>Monomial</name></member>
+    <member refid="classemth_1_1Monomial_1a70ba615f776f89452b3b11bb9dfe045e" kind="function"><name>Monomial</name></member>
+    <member refid="classemth_1_1Monomial_1aa5fc7752eb6a5db663872dd7298140c1" kind="function"><name>Monomial</name></member>
+    <member refid="classemth_1_1Monomial_1a0d77a762defbcd2cb1925e3258f6158f" kind="function"><name>Monomial</name></member>
+    <member refid="classemth_1_1Monomial_1a3de7a92cfd27acad4e1ff3d2158536f4" kind="function"><name>operator=</name></member>
+    <member refid="classemth_1_1Monomial_1a7ea9ffbef1c53c8e0f7a9bfda2dcb691" kind="function"><name>operator=</name></member>
+    <member refid="classemth_1_1Monomial_1a2f9d14fa6443fc160258121c7907b989" kind="function"><name>operator==</name></member>
+    <member refid="classemth_1_1Monomial_1ab7f80ead25e2f5d4ad80cdbbfe49d5e3" kind="function"><name>operator!=</name></member>
+    <member refid="classemth_1_1Monomial_1a995abc13b689075b21b43a30ce043e72" kind="function"><name>operator&gt;</name></member>
+    <member refid="classemth_1_1Monomial_1a33c3c8003322cc2a8f2c4f2e1b44a387" kind="function"><name>operator&lt;</name></member>
+    <member refid="classemth_1_1Monomial_1a36079411f2ae6f90e71a09b6723ecf35" kind="function"><name>operator&gt;=</name></member>
+    <member refid="classemth_1_1Monomial_1a80fe0433858cf335c1e29ff15aa4bcb8" kind="function"><name>operator&lt;=</name></member>
+    <member refid="classemth_1_1Monomial_1aa545290af910fc7a0c68bc02decd41c5" kind="function"><name>operator+</name></member>
+    <member refid="classemth_1_1Monomial_1aee07c6d65bc594b8eaaa4d0299840e05" kind="function"><name>operator-</name></member>
+    <member refid="classemth_1_1Monomial_1a98a931372dbd0ddafe82ce5601f30836" kind="function"><name>operator*</name></member>
+    <member refid="classemth_1_1Monomial_1a55982755a6223cbf977e55979fcad8ff" kind="function"><name>operator/</name></member>
+    <member refid="classemth_1_1Monomial_1a8316e22fbd1420a2302fcf8bd6d3b6c2" kind="function"><name>operator%</name></member>
+    <member refid="classemth_1_1Monomial_1a7cac7880021c7cf783daa15ee00b94d1" kind="function"><name>operator+=</name></member>
+    <member refid="classemth_1_1Monomial_1a45a932afba1f1f38c5ca16b6c16fd3c8" kind="function"><name>operator-=</name></member>
+    <member refid="classemth_1_1Monomial_1a59e6ec6722fe75349e84c6c3397279f5" kind="function"><name>operator*=</name></member>
+    <member refid="classemth_1_1Monomial_1a1bdb99f916437cd3a7c127b71bec5787" kind="function"><name>operator/=</name></member>
+    <member refid="classemth_1_1Monomial_1ab4c89014e13b2f35f264492486a935fe" kind="function"><name>operator%=</name></member>
+    <member refid="classemth_1_1Monomial_1ac0ea8a4e12483048519184c536c27124" kind="function"><name>get_coeff</name></member>
+    <member refid="classemth_1_1Monomial_1a1a11b6043ddc48006fe37241bb6bc6d0" kind="function"><name>get_degree</name></member>
+    <member refid="classemth_1_1Monomial_1adae9aaac815a7c86ec651e5bdb3d3043" kind="function"><name>set_coeff</name></member>
+    <member refid="classemth_1_1Monomial_1ab695cba07bcbf08cfec7d32e0bf4cc20" kind="function"><name>set_degree</name></member>
+    <member refid="classemth_1_1Monomial_1a2940ea82172b382f8354fe4d1556b996" kind="function"><name>get_expression</name></member>
+    <member refid="classemth_1_1Monomial_1a50a76c251c4a66c3522b78f0aba3c157" kind="function"><name>get_value</name></member>
+    <member refid="classemth_1_1Monomial_1aecedb04edd52a33ba0ee110eedbd74db" kind="function"><name>~Monomial</name></member>
+    <member refid="classemth_1_1Monomial_1a01135c72790e63387bc07601dd3acc5b" kind="friend"><name>operator&lt;&lt;</name></member>
+    <member refid="classemth_1_1Monomial_1ada77c9969b0422090c05636a895c0e8e" kind="friend"><name>operator&lt;&lt;</name></member>
+    <member refid="classemth_1_1Monomial_1a7cba04b35f6b0b4b3dfe909aca0391cb" kind="function"><name>swap</name></member>
+  </compound>
+  <compound refid="classemthp_1_1Parser" kind="class"><name>emthp::Parser</name>
+    <member refid="classemthp_1_1Parser_1ad89704cde9db5580c48811d3490d364f" kind="variable"><name>_lexer</name></member>
+    <member refid="classemthp_1_1Parser_1a4eb818d42bac1e3e3419c848e521cbdb" kind="function"><name>Parser</name></member>
+    <member refid="classemthp_1_1Parser_1ada7e099319ce350bb2d5dcfd5ea8b36a" kind="function"><name>operator=</name></member>
+    <member refid="classemthp_1_1Parser_1a933df3ba2501887aa6d947bfe6eafe4b" kind="function"><name>parse_polynomial</name></member>
+    <member refid="classemthp_1_1Parser_1a590566c3e893515a0dbb9db032a889cd" kind="function"><name>parse_monomial</name></member>
+    <member refid="classemthp_1_1Parser_1adb63bcf01700c40eea06bd1db3d566e8" kind="function"><name>parse_number</name></member>
+  </compound>
+  <compound refid="classemth_1_1Polynomial" kind="class"><name>emth::Polynomial</name>
+    <member refid="classemth_1_1Polynomial_1a5fe4c61292355d30836f1de02a255162" kind="variable"><name>monomials</name></member>
+    <member refid="classemth_1_1Polynomial_1a7a6489fae8e62f7171ba1b094253f206" kind="function"><name>Polynomial</name></member>
+    <member refid="classemth_1_1Polynomial_1af0f389de210155a112852f013aaa18d3" kind="function"><name>Polynomial</name></member>
+    <member refid="classemth_1_1Polynomial_1a98e8835f620927464b617d6b6ebd1329" kind="function"><name>Polynomial</name></member>
+    <member refid="classemth_1_1Polynomial_1a084aed33935ade2f689f09103daaac53" kind="function"><name>Polynomial</name></member>
+    <member refid="classemth_1_1Polynomial_1a3612ca54a3bef015a9809d77af2be355" kind="function"><name>Polynomial</name></member>
+    <member refid="classemth_1_1Polynomial_1a3f55b493797c89e9079c7019fb905059" kind="function"><name>Polynomial</name></member>
+    <member refid="classemth_1_1Polynomial_1a33ba807b5465ead26edd077d8289f4f3" kind="function"><name>operator=</name></member>
+    <member refid="classemth_1_1Polynomial_1a93818b33532e3f8e80fa614ca8287479" kind="function"><name>operator=</name></member>
+    <member refid="classemth_1_1Polynomial_1ad042381e1713be21b332d3f8fbdfd0a7" kind="function"><name>operator==</name></member>
+    <member refid="classemth_1_1Polynomial_1a40fefffeb0043d193d5aa7ecb3adba55" kind="function"><name>operator!=</name></member>
+    <member refid="classemth_1_1Polynomial_1ae358f6f9b93783601af6999b67e0dafb" kind="function"><name>operator&gt;</name></member>
+    <member refid="classemth_1_1Polynomial_1a0f0640fcb0dd0a59b685a646d494bfc7" kind="function"><name>operator&lt;</name></member>
+    <member refid="classemth_1_1Polynomial_1a2321b93b1482b6677dbd125739848724" kind="function"><name>operator&gt;=</name></member>
+    <member refid="classemth_1_1Polynomial_1a7b234cebd032016c0a8ece92a4f68141" kind="function"><name>operator&lt;=</name></member>
+    <member refid="classemth_1_1Polynomial_1a9d46082ad38edc17f875127208626281" kind="function"><name>operator+</name></member>
+    <member refid="classemth_1_1Polynomial_1a1cd22ae48bfcb14b53835730091e5f4d" kind="function"><name>operator-</name></member>
+    <member refid="classemth_1_1Polynomial_1ac461b9aeb93c33d540f0a918bdefd203" kind="function"><name>operator*</name></member>
+    <member refid="classemth_1_1Polynomial_1aa2a054dcc203257bfc3d06621ce876b1" kind="function"><name>operator/</name></member>
+    <member refid="classemth_1_1Polynomial_1a56a499385ad24715b1240611217277c5" kind="function"><name>operator%</name></member>
+    <member refid="classemth_1_1Polynomial_1a791a5aa2207acd2fccc4124ff36eb0bf" kind="function"><name>operator+=</name></member>
+    <member refid="classemth_1_1Polynomial_1af545354b4dade3e286be26207d02a442" kind="function"><name>operator-=</name></member>
+    <member refid="classemth_1_1Polynomial_1abdeb3769c43eec881ae8ed1a20a5d01d" kind="function"><name>operator*=</name></member>
+    <member refid="classemth_1_1Polynomial_1ac5a003db2381c99c97c4a78341145b26" kind="function"><name>operator/=</name></member>
+    <member refid="classemth_1_1Polynomial_1a2e6bd9b16b732b38caabf950acfd5cb2" kind="function"><name>operator%=</name></member>
+    <member refid="classemth_1_1Polynomial_1a7eb2c1c9bbbb013220d24f5d2a24a963" kind="function"><name>get_degree</name></member>
+    <member refid="classemth_1_1Polynomial_1a02fda10cd15abff226c5a8013f4928f7" kind="function"><name>get_monomials</name></member>
+    <member refid="classemth_1_1Polynomial_1a1dc4825c3d5005949f0869e204e4fedc" kind="function"><name>push_monomial</name></member>
+    <member refid="classemth_1_1Polynomial_1acd1befa11dd8d4e3da213114dc88cff7" kind="function"><name>push_monomial</name></member>
+    <member refid="classemth_1_1Polynomial_1a6f3eb1e674dbce5f0a172d8b5fd7ab2b" kind="function"><name>get_expression</name></member>
+    <member refid="classemth_1_1Polynomial_1a644cd3ebe3afa676cc3db99557f6eed3" kind="function"><name>get_value</name></member>
+    <member refid="classemth_1_1Polynomial_1a1f27fae485c94bb0f00a46c50214ab37" kind="function"><name>get_derivative</name></member>
+    <member refid="classemth_1_1Polynomial_1ac87df7094ce26a8e9cba6df79a3eaf2d" kind="function"><name>get_integral</name></member>
+    <member refid="classemth_1_1Polynomial_1a056e1df4102b0d0add0e8e2805401b82" kind="function"><name>~Polynomial</name></member>
+    <member refid="classemth_1_1Polynomial_1a66068882dda621b9bca207d72a9fb2d7" kind="friend"><name>operator&lt;&lt;</name></member>
+    <member refid="classemth_1_1Polynomial_1a444148f9a6121f040d0149c4b5d94ac5" kind="friend"><name>operator&lt;&lt;</name></member>
+    <member refid="classemth_1_1Polynomial_1a8b4f2d72f0fa4b1e5fc3d2fc434d1d52" kind="function"><name>swap</name></member>
+    <member refid="classemth_1_1Polynomial_1a3d28b34143d180686a38f5b12900a38c" kind="function"><name>redux</name></member>
+  </compound>
+  <compound refid="structemthp_1_1Token" kind="struct"><name>emthp::Token</name>
+    <member refid="structemthp_1_1Token_1ae532928c40581bc20349979955dfb2f3" kind="variable"><name>type</name></member>
+    <member refid="structemthp_1_1Token_1a0512f6f4c2a7dcf724d582d971393c2c" kind="variable"><name>value</name></member>
+  </compound>
+  <compound refid="namespaceemth" kind="namespace"><name>emth</name>
+  </compound>
+  <compound refid="namespaceemthp" kind="namespace"><name>emthp</name>
+    <member refid="namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6b" kind="enum"><name>TokenType</name></member>
+    <member refid="namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6bab0be00ab2ea8e4a56ab22f220c7de9bf" kind="enumvalue"><name>T_PLUS</name></member>
+    <member refid="namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6ba636464f87ad08d661e8f664b4a5903db" kind="enumvalue"><name>T_MINUS</name></member>
+    <member refid="namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6bad7549ed90d6122d0761f3acfb1b56923" kind="enumvalue"><name>T_NUMBER</name></member>
+    <member refid="namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6ba6aa4d0d8ca8e058abc4e4e38f466bbd2" kind="enumvalue"><name>T_VARIABLE</name></member>
+    <member refid="namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6ba7b607d6341806fa8bc4505c44670de8c" kind="enumvalue"><name>T_EXPONENT</name></member>
+    <member refid="namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6ba5a13d17b3d73d6aa1a545e430284ec6d" kind="enumvalue"><name>T_EOF</name></member>
+  </compound>
+  <compound refid="namespacetesting" kind="namespace"><name>testing</name>
+  </compound>
+  <compound refid="emath_8h" kind="file"><name>emath.h</name>
+  </compound>
+  <compound refid="eparser_8h" kind="file"><name>eparser.h</name>
+  </compound>
+  <compound refid="src_2emath_8cpp" kind="file"><name>emath.cpp</name>
+  </compound>
+  <compound refid="test_2emath_8cpp" kind="file"><name>emath.cpp</name>
+    <member refid="test_2emath_8cpp_1ab880f6083075d1f2c3c6ca54d36fba6f" kind="function"><name>test_monomial</name></member>
+    <member refid="test_2emath_8cpp_1ada79f825efa86697f40154987f0f6129" kind="function"><name>test_polynomial</name></member>
+    <member refid="test_2emath_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="src_2eparser_8cpp" kind="file"><name>eparser.cpp</name>
+  </compound>
+  <compound refid="test_2eparser_8cpp" kind="file"><name>eparser.cpp</name>
+    <member refid="test_2eparser_8cpp_1adb859937dfb6fcd56c656c3c2555afc9" kind="function"><name>TEST_F</name></member>
+    <member refid="test_2eparser_8cpp_1a9d00584eda85ad91bd3b865309697a92" kind="function"><name>TEST_F</name></member>
+    <member refid="test_2eparser_8cpp_1a9bae16de43d72897f903e5977107c60a" kind="function"><name>TEST_F</name></member>
+    <member refid="test_2eparser_8cpp_1a7ed288e238950900345be1751b543ab5" kind="function"><name>TEST_F</name></member>
+    <member refid="test_2eparser_8cpp_1a21f8c875c668e6dc3d1a1423cdba58a3" kind="function"><name>TEST_F</name></member>
+    <member refid="test_2eparser_8cpp_1aee28f89b9e4ebad2361a1f87e5068314" kind="function"><name>TEST_F</name></member>
+    <member refid="test_2eparser_8cpp_1a8178a3e2dd566ffdd7520265ce0c2fe3" kind="function"><name>TEST_F</name></member>
+    <member refid="test_2eparser_8cpp_1aeed0ae0397e5f82225fde1a6ba4f65a9" kind="function"><name>TEST_F</name></member>
+    <member refid="test_2eparser_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="test" kind="page"><name>test</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+  <compound refid="dir_13e138d54eb8818da29c3992edef070a" kind="dir"><name>test</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

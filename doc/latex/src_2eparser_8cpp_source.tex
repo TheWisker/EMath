@@ -1,0 +1,98 @@
+\hypertarget{src_2eparser_8cpp_source}{}\doxysection{eparser.\+cpp}
+\label{src_2eparser_8cpp_source}\index{src/eparser.cpp@{src/eparser.cpp}}
+\mbox{\hyperlink{src_2eparser_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{eparser_8h}{eparser.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00014}\mbox{\hyperlink{classemthp_1_1Lexer_ad3560b27e6813e3e0aeaa48b19dc5dd2}{00014}}\ \mbox{\hyperlink{classemthp_1_1Lexer_ad3560b27e6813e3e0aeaa48b19dc5dd2}{emthp::Lexer::Lexer}}(\textcolor{keyword}{const}\ std::string\&\ input)\ noexcept\ :\ \_input(this-\/>clean(input)),\ \_pos(0)\ \{\}}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00020}\mbox{\hyperlink{classemthp_1_1Lexer_a5116f34af8ec69634dc9202ae2d48b4a}{00020}}\ \mbox{\hyperlink{classemthp_1_1Lexer}{emthp::Lexer}}\&\ \mbox{\hyperlink{classemthp_1_1Lexer_a5116f34af8ec69634dc9202ae2d48b4a}{emthp::Lexer::operator\ =}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classemthp_1_1Lexer}{emthp::Lexer}}\&\ ogn)\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00021}00021\ \ \ \ \ this-\/>\_input\ =\ ogn.\_input;}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00022}00022\ \ \ \ \ this-\/>\_pos\ =\ ogn.\_pos;}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00023}00023\ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00024}00024\ \};}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00029}\mbox{\hyperlink{classemthp_1_1Lexer_a629ea5f393603e05dad17b004caba27d}{00029}}\ \mbox{\hyperlink{structemthp_1_1Token}{emthp::Token}}\ \mbox{\hyperlink{classemthp_1_1Lexer_a629ea5f393603e05dad17b004caba27d}{emthp::Lexer::next}}()\ noexcept\ \{}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00030}00030\ \ \ \ \ \textcolor{keywordflow}{if}\ (this-\/>\_pos\ >=\ this-\/>\_input.size())\ \{\textcolor{keywordflow}{return}\ \{emthp::TokenType::T\_EOF,\ \{0\}\};\}\ \textcolor{comment}{//Returs\ EOL\ on\ end\ of\ \_input}}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00031}00031\ \ \ \ \ \textcolor{keywordflow}{switch}\ (this-\/>\_input[this-\/>\_pos])\ \{}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00032}00032\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{charliteral}{'+'}:\ this-\/>\_pos++;\ \textcolor{keywordflow}{return}\ \{\mbox{\hyperlink{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6bab0be00ab2ea8e4a56ab22f220c7de9bf}{emthp::TokenType::T\_PLUS}},\ \{0\}\};}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00033}00033\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{charliteral}{'-\/'}:\ this-\/>\_pos++;\ \textcolor{keywordflow}{return}\ \{emthp::TokenType::T\_MINUS,\ \{0\}\};}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00034}00034\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{charliteral}{'\string^'}:\ this-\/>\_pos++;\ \textcolor{keywordflow}{return}\ \{emthp::TokenType::T\_EXPONENT,\ \{0\}\};}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00035}00035\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{charliteral}{'x'}:\ this-\/>\_pos++;\ \textcolor{keywordflow}{return}\ \{emthp::TokenType::T\_VARIABLE,\ \{0\}\};}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00036}00036\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{charliteral}{'*'}:\ \textcolor{keywordflow}{case}\ \textcolor{charliteral}{'/'}:\ this-\/>\_pos++;\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classemthp_1_1Lexer_a629ea5f393603e05dad17b004caba27d}{next}}();}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00037}00037\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ number\ =\ this-\/>read\_number();}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}(\textcolor{keyword}{true})\ \{}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (this-\/>\_input[this-\/>\_pos])\ \{}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{charliteral}{'*'}:\ this-\/>\_pos++;\ number\ *=\ this-\/>read\_number();\ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{charliteral}{'/'}:\ this-\/>\_pos++;\ number\ /=\ this-\/>read\_number();\ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{charliteral}{'\string^'}:\ this-\/>\_pos++;\ number\ =\ std::pow(number,\ this-\/>read\_number());\ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:\ \textcolor{keywordflow}{return}\ \{emthp::TokenType::T\_NUMBER,\ \{number\}\};}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00047}00047\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00048}00048\ \}}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00052}\mbox{\hyperlink{classemthp_1_1Lexer_a273b288699191ec896c9857cfe7f5704}{00052}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classemthp_1_1Lexer_a273b288699191ec896c9857cfe7f5704}{emthp::Lexer::back}}()\ noexcept\ \{}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00053}00053\ \ \ \ \ \textcolor{keywordflow}{if}\ (this-\/>\_pos\ <=\ 0)\ \{\textcolor{keywordflow}{return};\}\ }
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00054}00054\ \ \ \ \ \textcolor{keywordflow}{if}\ (emthp::Lexer::is\_digit(this-\/>\_input[this-\/>\_pos-\/1]))\ \{\textcolor{keywordflow}{while}\ (emthp::Lexer::is\_digit(this-\/>\_input[this-\/>\_pos-\/1]))\ \{this-\/>\_pos-\/-\/;\}\ \textcolor{keywordflow}{return};\}}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00055}00055\ \ \ \ \ this-\/>\_pos-\/-\/;\textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00056}00056\ \}}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00062}00062\ std::string\ emthp::Lexer::clean(\textcolor{keyword}{const}\ std::string\&\ input)\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00063}00063\ \ \ \ \ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ pos\ =\ 0;\ std::string\ string;}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00064}00064\ \ \ \ \ \textcolor{keywordflow}{while}\ (pos\ <\ input.size())\ \{}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00065}00065\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (input[pos])\ \{}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00066}00066\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{charliteral}{'+'}:\ \textcolor{keywordtype}{string}\ +=\ \textcolor{charliteral}{'+'};\ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{charliteral}{'-\/'}:\ \textcolor{keywordtype}{string}\ +=\ \textcolor{charliteral}{'-\/'};\ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00068}00068\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{charliteral}{'*'}:\ \textcolor{keywordtype}{string}\ +=\ \textcolor{charliteral}{'*'};\ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00069}00069\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{charliteral}{'/'}:\ \textcolor{keywordtype}{string}\ +=\ \textcolor{charliteral}{'/'};\ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00070}00070\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{charliteral}{'\string^'}:\ \textcolor{keywordtype}{string}\ +=\ \textcolor{charliteral}{'\string^'};\ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00071}00071\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{charliteral}{'x'}:\ \textcolor{keywordtype}{string}\ +=\ \textcolor{charliteral}{'x'};\ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00072}00072\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:\ \textcolor{keywordflow}{if}\ (emthp::Lexer::is\_digit(input[pos]))\ \{\textcolor{keywordtype}{string}\ +=\ input[pos];\}\ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00073}00073\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00074}00074\ \ \ \ \ \ \ \ \ pos++;}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00075}00075\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00076}00076\ \ \ \ \ \textcolor{keywordflow}{return}\ string;}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00077}00077\ \}}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00082}00082\ \textcolor{keywordtype}{double}\ emthp::Lexer::read\_number()\ noexcept\ \{}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00083}00083\ \ \ \ \ std::string\ snum;}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00084}00084\ \ \ \ \ \textcolor{keywordflow}{while}\ (this-\/>\_pos\ <\ this-\/>\_input.size()\ \&\&\ emthp::Lexer::is\_digit(this-\/>\_input[this-\/>\_pos]))\ \{}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00085}00085\ \ \ \ \ \ \ \ \ snum\ +=\ this-\/>\_input[this-\/>\_pos];}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00086}00086\ \ \ \ \ \ \ \ \ this-\/>\_pos++;}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00087}00087\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00088}00088\ \ \ \ \ \textcolor{keywordflow}{if}\ (snum.empty())\ \{\textcolor{keywordflow}{return}\ 1;\}}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00089}00089\ \ \ \ \ \textcolor{keywordflow}{return}\ std::stod(snum);\ \textcolor{comment}{//\ CHECK\ :\ 2x\string^2\ -\/-\/\ 8x\string^3/3\ ;;;.......................4x\string^1\ +\ 2x⁶}}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00090}00090\ \}}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00095}\mbox{\hyperlink{classemthp_1_1Parser_a4eb818d42bac1e3e3419c848e521cbdb}{00095}}\ \mbox{\hyperlink{classemthp_1_1Parser_a4eb818d42bac1e3e3419c848e521cbdb}{emthp::Parser::Parser}}(\textcolor{keyword}{const}\ std::string\&\ input)\ noexcept\ :\ \_lexer(input)\ \{\};}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00101}\mbox{\hyperlink{classemthp_1_1Parser_ada7e099319ce350bb2d5dcfd5ea8b36a}{00101}}\ \mbox{\hyperlink{classemthp_1_1Parser}{emthp::Parser}}\&\ \mbox{\hyperlink{classemthp_1_1Parser_ada7e099319ce350bb2d5dcfd5ea8b36a}{emthp::Parser::operator\ =}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classemthp_1_1Parser}{emthp::Parser}}\&\ ogn)\ \textcolor{keyword}{noexcept}\ \{this-\/>\_lexer\ =\ ogn.\_lexer;\ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};\};}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00106}\mbox{\hyperlink{classemthp_1_1Parser_a933df3ba2501887aa6d947bfe6eafe4b}{00106}}\ \mbox{\hyperlink{classemth_1_1Polynomial}{emth::Polynomial}}\ \mbox{\hyperlink{classemthp_1_1Parser_a933df3ba2501887aa6d947bfe6eafe4b}{emthp::Parser::parse\_polynomial}}()\ noexcept\ \{}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00107}00107\ \ \ \ \ \mbox{\hyperlink{classemth_1_1Polynomial}{emth::Polynomial}}\ polynomial;}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00108}00108\ \ \ \ \ \textcolor{keywordflow}{while}\ (\textcolor{keyword}{true})\ \{\textcolor{keywordflow}{if}(!polynomial.\mbox{\hyperlink{classemth_1_1Polynomial_a1dc4825c3d5005949f0869e204e4fedc}{push\_monomial}}(std::move(this-\/>parse\_monomial())))\ \{\textcolor{keywordflow}{return}\ polynomial;\}\}}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00109}00109\ \}}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00114}\mbox{\hyperlink{classemthp_1_1Parser_a590566c3e893515a0dbb9db032a889cd}{00114}}\ \mbox{\hyperlink{classemth_1_1Monomial}{emth::Monomial}}\ \mbox{\hyperlink{classemthp_1_1Parser_a590566c3e893515a0dbb9db032a889cd}{emthp::Parser::parse\_monomial}}()\ noexcept\ \{}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00115}00115\ \ \ \ \ \mbox{\hyperlink{classemth_1_1Monomial}{emth::Monomial}}\ monomial(0,\ 0);}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00116}00116\ \ \ \ \ monomial.\mbox{\hyperlink{classemth_1_1Monomial_adae9aaac815a7c86ec651e5bdb3d3043}{set\_coeff}}(this-\/>parse\_number());}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00117}00117\ \ \ \ \ \textcolor{keywordtype}{bool}\ v\ =\ \textcolor{keyword}{false};\ \textcolor{keywordtype}{bool}\ e\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00118}00118\ \ \ \ \ \textcolor{keywordflow}{while}\ (!v\ ||\ !e)\ \{}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00119}00119\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structemthp_1_1Token}{emthp::Token}}\ token\ =\ this-\/>\_lexer.next();}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00120}00120\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (token.\mbox{\hyperlink{structemthp_1_1Token_ae532928c40581bc20349979955dfb2f3}{type}})\ \{}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00121}00121\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ emthp::TokenType::T\_VARIABLE:\ v\ =\ \textcolor{keyword}{true};\ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00122}00122\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ emthp::TokenType::T\_EXPONENT:\ \textcolor{keywordflow}{if}\ (v)\ \{e\ =\ \textcolor{keyword}{true};\}\ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00123}00123\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6bab0be00ab2ea8e4a56ab22f220c7de9bf}{emthp::TokenType::T\_PLUS}}:\ \textcolor{keywordflow}{case}\ emthp::TokenType::T\_MINUS:\ \textcolor{keywordflow}{case}\ emthp::TokenType::T\_NUMBER:\ \textcolor{keywordflow}{if}\ (v)\ \{monomial.\mbox{\hyperlink{classemth_1_1Monomial_ab695cba07bcbf08cfec7d32e0bf4cc20}{set\_degree}}(1);\ this-\/>\_lexer.back();\}\ \textcolor{keywordflow}{return}\ monomial;}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00124}00124\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ emthp::TokenType::T\_EOF:\ \textcolor{keywordflow}{if}\ (v)\ \{monomial.\mbox{\hyperlink{classemth_1_1Monomial_ab695cba07bcbf08cfec7d32e0bf4cc20}{set\_degree}}(1);\}\ \textcolor{keywordflow}{return}\ monomial;}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00125}00125\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00126}00126\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00127}00127\ \ \ \ \ monomial.\mbox{\hyperlink{classemth_1_1Monomial_ab695cba07bcbf08cfec7d32e0bf4cc20}{set\_degree}}((\textcolor{keywordtype}{int})\ this-\/>parse\_number());}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00128}00128\ \ \ \ \ \textcolor{keywordflow}{return}\ monomial;}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00129}00129\ \}}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00134}00134\ \textcolor{keywordtype}{double}\ emthp::Parser::parse\_number()\ noexcept\ \{}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00135}00135\ \ \ \ \ \textcolor{keywordtype}{bool}\ positive\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00136}00136\ \ \ \ \ \textcolor{keywordflow}{while}(\textcolor{keyword}{true})\ \{}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00137}00137\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structemthp_1_1Token}{emthp::Token}}\ token\ =\ this-\/>\_lexer.next();}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00138}00138\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}(token.\mbox{\hyperlink{structemthp_1_1Token_ae532928c40581bc20349979955dfb2f3}{type}})\ \{}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00139}00139\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ emthp::TokenType::T\_MINUS:\ positive\ =\ !positive;\ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00140}00140\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ emthp::TokenType::T\_NUMBER:\ \textcolor{keywordflow}{return}\ positive\ ?\ token.\mbox{\hyperlink{structemthp_1_1Token_a0512f6f4c2a7dcf724d582d971393c2c}{value}}\ :\ -\/token.\mbox{\hyperlink{structemthp_1_1Token_a0512f6f4c2a7dcf724d582d971393c2c}{value}};}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00141}00141\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ emthp::TokenType::T\_VARIABLE:\ this-\/>\_lexer.back();\ \textcolor{keywordflow}{return}\ positive\ ?\ 1\ :\ -\/1;}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00142}00142\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ emthp::TokenType::T\_EOF:\ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00143}00143\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00144}00144\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{src_2eparser_8cpp_source_l00145}00145\ \}}
+
+\end{DoxyCode}

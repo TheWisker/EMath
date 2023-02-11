@@ -1,0 +1,812 @@
+\hypertarget{classemth_1_1Polynomial}{}\doxysection{emth\+::Polynomial Class Reference}
+\label{classemth_1_1Polynomial}\index{emth::Polynomial@{emth::Polynomial}}
+
+
+Class for representing and operating polynomials.  
+
+
+
+
+{\ttfamily \#include $<$emath.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classemth_1_1Polynomial_a7a6489fae8e62f7171ba1b094253f206}{Polynomial}} () noexcept
+\begin{DoxyCompactList}\small\item\em Default constructor for when initialized with no arguments. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classemth_1_1Polynomial_af0f389de210155a112852f013aaa18d3}{Polynomial}} (const std\+::map$<$ int, \mbox{\hyperlink{classemth_1_1Monomial}{Monomial}} $>$ mns) noexcept
+\begin{DoxyCompactList}\small\item\em Normal constructor for initialization with a std\+::map$<$int, Monomial$>$ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classemth_1_1Polynomial_a98e8835f620927464b617d6b6ebd1329}{Polynomial}} (const std\+::initializer\+\_\+list$<$ \mbox{\hyperlink{classemth_1_1Monomial}{Monomial}} $>$ mns) noexcept
+\begin{DoxyCompactList}\small\item\em List constructor for initialization with a std\+::initializer\+\_\+list$<$\+Monomial$>$ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classemth_1_1Polynomial_a084aed33935ade2f689f09103daaac53}{Polynomial}} (const std\+::vector$<$ \mbox{\hyperlink{classemth_1_1Monomial}{Monomial}} $>$ mns) noexcept
+\begin{DoxyCompactList}\small\item\em Vector constructor for initialization with a std\+::vector$<$\+Monomial$>$ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classemth_1_1Polynomial_a3612ca54a3bef015a9809d77af2be355}{Polynomial}} (const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&ogn) noexcept
+\begin{DoxyCompactList}\small\item\em Copy constructor for when initialized with an lvalue \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classemth_1_1Polynomial_a3f55b493797c89e9079c7019fb905059}{Polynomial}} (\mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&\&ogn) noexcept
+\begin{DoxyCompactList}\small\item\em Move constructor for when initialized with an rvalue \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \& \mbox{\hyperlink{classemth_1_1Polynomial_a33ba807b5465ead26edd077d8289f4f3}{operator=}} (const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&ogn) noexcept
+\begin{DoxyCompactList}\small\item\em Assigment operator overload for when called with an lvalue. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \& \mbox{\hyperlink{classemth_1_1Polynomial_a93818b33532e3f8e80fa614ca8287479}{operator=}} (\mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&\&ogn) noexcept
+\begin{DoxyCompactList}\small\item\em Move assigment operator overload for when called with an rvalue. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classemth_1_1Polynomial_ad042381e1713be21b332d3f8fbdfd0a7}{operator==}} (const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&ogn) const noexcept
+\begin{DoxyCompactList}\small\item\em Equal logic operator overload. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classemth_1_1Polynomial_a40fefffeb0043d193d5aa7ecb3adba55}{operator!=}} (const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&ogn) const noexcept
+\begin{DoxyCompactList}\small\item\em Not equal logic operator overload. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classemth_1_1Polynomial_ae358f6f9b93783601af6999b67e0dafb}{operator$>$}} (const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&ogn) const noexcept
+\begin{DoxyCompactList}\small\item\em Greater than logic operator overload. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classemth_1_1Polynomial_a0f0640fcb0dd0a59b685a646d494bfc7}{operator$<$}} (const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&ogn) const noexcept
+\begin{DoxyCompactList}\small\item\em Less than logic operator overload. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classemth_1_1Polynomial_a2321b93b1482b6677dbd125739848724}{operator$>$=}} (const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&ogn) const noexcept
+\begin{DoxyCompactList}\small\item\em Greater or equal than logic operator overload. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classemth_1_1Polynomial_a7b234cebd032016c0a8ece92a4f68141}{operator$<$=}} (const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&ogn) const noexcept
+\begin{DoxyCompactList}\small\item\em Less or equal than logic operator overload. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \mbox{\hyperlink{classemth_1_1Polynomial_a9d46082ad38edc17f875127208626281}{operator+}} (const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&ogn) const noexcept
+\begin{DoxyCompactList}\small\item\em Addition operator overload. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \mbox{\hyperlink{classemth_1_1Polynomial_a1cd22ae48bfcb14b53835730091e5f4d}{operator-\/}} (const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&ogn) const noexcept
+\begin{DoxyCompactList}\small\item\em Substraction operator overload. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \mbox{\hyperlink{classemth_1_1Polynomial_ac461b9aeb93c33d540f0a918bdefd203}{operator$\ast$}} (const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&ogn) const noexcept
+\begin{DoxyCompactList}\small\item\em Multiplication operator overload. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \mbox{\hyperlink{classemth_1_1Polynomial_aa2a054dcc203257bfc3d06621ce876b1}{operator/}} (const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&ogn) const noexcept
+\begin{DoxyCompactList}\small\item\em Division operator overload. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \mbox{\hyperlink{classemth_1_1Polynomial_a56a499385ad24715b1240611217277c5}{operator\%}} (const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&ogn) const noexcept
+\begin{DoxyCompactList}\small\item\em Modulus operator overload. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \& \mbox{\hyperlink{classemth_1_1Polynomial_a791a5aa2207acd2fccc4124ff36eb0bf}{operator+=}} (const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&ogn) noexcept
+\begin{DoxyCompactList}\small\item\em Addition assigment operator overload. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \& \mbox{\hyperlink{classemth_1_1Polynomial_af545354b4dade3e286be26207d02a442}{operator-\/=}} (const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&ogn) noexcept
+\begin{DoxyCompactList}\small\item\em Substraction assigment operator overload. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \& \mbox{\hyperlink{classemth_1_1Polynomial_abdeb3769c43eec881ae8ed1a20a5d01d}{operator$\ast$=}} (const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&ogn) noexcept
+\begin{DoxyCompactList}\small\item\em Multiplication assigment operator overload. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \& \mbox{\hyperlink{classemth_1_1Polynomial_ac5a003db2381c99c97c4a78341145b26}{operator/=}} (const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&ogn) noexcept
+\begin{DoxyCompactList}\small\item\em Division assigment operator overload. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \& \mbox{\hyperlink{classemth_1_1Polynomial_a2e6bd9b16b732b38caabf950acfd5cb2}{operator\%=}} (const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&ogn) noexcept
+\begin{DoxyCompactList}\small\item\em Modulus assigment operator overload. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classemth_1_1Polynomial_a7eb2c1c9bbbb013220d24f5d2a24a963}{get\+\_\+degree}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Getter function for getting the degree of the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}. \end{DoxyCompactList}\item 
+std\+::map$<$ int, \mbox{\hyperlink{classemth_1_1Monomial}{Monomial}} $>$ \mbox{\hyperlink{classemth_1_1Polynomial_a02fda10cd15abff226c5a8013f4928f7}{get\+\_\+monomials}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Getter function for getting the monomials of the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classemth_1_1Polynomial_a1dc4825c3d5005949f0869e204e4fedc}{push\+\_\+monomial}} (const \mbox{\hyperlink{classemth_1_1Monomial}{Monomial}} \&m) noexcept
+\begin{DoxyCompactList}\small\item\em Function for appending a lvalue monomial to the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classemth_1_1Polynomial_acd1befa11dd8d4e3da213114dc88cff7}{push\+\_\+monomial}} (\mbox{\hyperlink{classemth_1_1Monomial}{Monomial}} \&\&m) noexcept
+\begin{DoxyCompactList}\small\item\em Function for appending a rvalue monomial to the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classemth_1_1Polynomial_a6f3eb1e674dbce5f0a172d8b5fd7ab2b}{get\+\_\+expression}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Getter function for getting the expression of the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classemth_1_1Polynomial_a644cd3ebe3afa676cc3db99557f6eed3}{get\+\_\+value}} (const double \&x) const noexcept
+\begin{DoxyCompactList}\small\item\em Calculus function for getting the value of the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} at a point. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \mbox{\hyperlink{classemth_1_1Polynomial_a1f27fae485c94bb0f00a46c50214ab37}{get\+\_\+derivative}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Calculus function for getting the derivative of the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \mbox{\hyperlink{classemth_1_1Polynomial_ac87df7094ce26a8e9cba6df79a3eaf2d}{get\+\_\+integral}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Calculus function for getting the integral of the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classemth_1_1Polynomial_a056e1df4102b0d0add0e8e2805401b82}\label{classemth_1_1Polynomial_a056e1df4102b0d0add0e8e2805401b82}} 
+{\bfseries $\sim$\+Polynomial} ()
+\begin{DoxyCompactList}\small\item\em The class destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::stringstream \& \mbox{\hyperlink{classemth_1_1Polynomial_a66068882dda621b9bca207d72a9fb2d7}{operator$<$$<$}} (std\+::stringstream \&ss, const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&p) noexcept
+\begin{DoxyCompactList}\small\item\em A friend operator to insert the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} into a std\+::stringstream. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{classemth_1_1Polynomial_a444148f9a6121f040d0149c4b5d94ac5}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&p) noexcept
+\begin{DoxyCompactList}\small\item\em A friend operator to insert the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} into a std\+::ostream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for representing and operating polynomials. 
+
+The class consists of the constructors, the operators, the getters, the properties and some private functions. 
+
+Definition at line \mbox{\hyperlink{emath_8h_source_l00286}{286}} of file \mbox{\hyperlink{emath_8h_source}{emath.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classemth_1_1Polynomial_a7a6489fae8e62f7171ba1b094253f206}\label{classemth_1_1Polynomial_a7a6489fae8e62f7171ba1b094253f206}} 
+\index{emth::Polynomial@{emth::Polynomial}!Polynomial@{Polynomial}}
+\index{Polynomial@{Polynomial}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{Polynomial()}{Polynomial()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily emth\+::\+Polynomial\+::\+Polynomial (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Default constructor for when initialized with no arguments. 
+
+
+
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00250}{250}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+
+\mbox{\Hypertarget{classemth_1_1Polynomial_af0f389de210155a112852f013aaa18d3}\label{classemth_1_1Polynomial_af0f389de210155a112852f013aaa18d3}} 
+\index{emth::Polynomial@{emth::Polynomial}!Polynomial@{Polynomial}}
+\index{Polynomial@{Polynomial}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{Polynomial()}{Polynomial()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily emth\+::\+Polynomial\+::\+Polynomial (\begin{DoxyParamCaption}\item[{const std\+::map$<$ int, \mbox{\hyperlink{classemth_1_1Monomial}{Monomial}} $>$}]{mns }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Normal constructor for initialization with a std\+::map$<$int, Monomial$>$ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mns} & The std\+::map$<$int, Monomial$>$. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classemth_1_1Polynomial_a98e8835f620927464b617d6b6ebd1329}\label{classemth_1_1Polynomial_a98e8835f620927464b617d6b6ebd1329}} 
+\index{emth::Polynomial@{emth::Polynomial}!Polynomial@{Polynomial}}
+\index{Polynomial@{Polynomial}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{Polynomial()}{Polynomial()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily emth\+::\+Polynomial\+::\+Polynomial (\begin{DoxyParamCaption}\item[{const std\+::initializer\+\_\+list$<$ \mbox{\hyperlink{classemth_1_1Monomial}{Monomial}} $>$}]{mns }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+List constructor for initialization with a std\+::initializer\+\_\+list$<$\+Monomial$>$ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mns} & The std\+::initializer\+\_\+list$<$\+Monomial$>$. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classemth_1_1Polynomial_a084aed33935ade2f689f09103daaac53}\label{classemth_1_1Polynomial_a084aed33935ade2f689f09103daaac53}} 
+\index{emth::Polynomial@{emth::Polynomial}!Polynomial@{Polynomial}}
+\index{Polynomial@{Polynomial}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{Polynomial()}{Polynomial()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily emth\+::\+Polynomial\+::\+Polynomial (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classemth_1_1Monomial}{Monomial}} $>$}]{mns }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Vector constructor for initialization with a std\+::vector$<$\+Monomial$>$ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mns} & The std\+::vector$<$\+Monomial$>$. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classemth_1_1Polynomial_a3612ca54a3bef015a9809d77af2be355}\label{classemth_1_1Polynomial_a3612ca54a3bef015a9809d77af2be355}} 
+\index{emth::Polynomial@{emth::Polynomial}!Polynomial@{Polynomial}}
+\index{Polynomial@{Polynomial}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{Polynomial()}{Polynomial()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily emth\+::\+Polynomial\+::\+Polynomial (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&}]{ogn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Copy constructor for when initialized with an lvalue \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ogn} & The lvalue \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} object. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00270}{270}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+
+\mbox{\Hypertarget{classemth_1_1Polynomial_a3f55b493797c89e9079c7019fb905059}\label{classemth_1_1Polynomial_a3f55b493797c89e9079c7019fb905059}} 
+\index{emth::Polynomial@{emth::Polynomial}!Polynomial@{Polynomial}}
+\index{Polynomial@{Polynomial}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{Polynomial()}{Polynomial()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily emth\+::\+Polynomial\+::\+Polynomial (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classemth_1_1Polynomial}{emth\+::\+Polynomial}} \&\&}]{ogn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Move constructor for when initialized with an rvalue \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ogn} & The rvalue \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} object. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00275}{275}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classemth_1_1Polynomial_a7eb2c1c9bbbb013220d24f5d2a24a963}\label{classemth_1_1Polynomial_a7eb2c1c9bbbb013220d24f5d2a24a963}} 
+\index{emth::Polynomial@{emth::Polynomial}!get\_degree@{get\_degree}}
+\index{get\_degree@{get\_degree}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{get\_degree()}{get\_degree()}}
+{\footnotesize\ttfamily int emth\+::\+Polynomial\+::get\+\_\+degree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Getter function for getting the degree of the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}. 
+
+\begin{DoxyReturn}{Returns}
+(int) The degree of the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00448}{448}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+
+\mbox{\Hypertarget{classemth_1_1Polynomial_a1f27fae485c94bb0f00a46c50214ab37}\label{classemth_1_1Polynomial_a1f27fae485c94bb0f00a46c50214ab37}} 
+\index{emth::Polynomial@{emth::Polynomial}!get\_derivative@{get\_derivative}}
+\index{get\_derivative@{get\_derivative}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{get\_derivative()}{get\_derivative()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classemth_1_1Polynomial}{emth\+::\+Polynomial}} emth\+::\+Polynomial\+::get\+\_\+derivative (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Calculus function for getting the derivative of the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}. 
+
+\begin{DoxyReturn}{Returns}
+(\mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}) The result of the derivative of the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00490}{490}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+
+\mbox{\Hypertarget{classemth_1_1Polynomial_a6f3eb1e674dbce5f0a172d8b5fd7ab2b}\label{classemth_1_1Polynomial_a6f3eb1e674dbce5f0a172d8b5fd7ab2b}} 
+\index{emth::Polynomial@{emth::Polynomial}!get\_expression@{get\_expression}}
+\index{get\_expression@{get\_expression}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{get\_expression()}{get\_expression()}}
+{\footnotesize\ttfamily std\+::string emth\+::\+Polynomial\+::get\+\_\+expression (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Getter function for getting the expression of the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}. 
+
+\begin{DoxyReturn}{Returns}
+(std\+::string) The expression of the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00475}{475}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+
+\mbox{\Hypertarget{classemth_1_1Polynomial_ac87df7094ce26a8e9cba6df79a3eaf2d}\label{classemth_1_1Polynomial_ac87df7094ce26a8e9cba6df79a3eaf2d}} 
+\index{emth::Polynomial@{emth::Polynomial}!get\_integral@{get\_integral}}
+\index{get\_integral@{get\_integral}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{get\_integral()}{get\_integral()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classemth_1_1Polynomial}{emth\+::\+Polynomial}} emth\+::\+Polynomial\+::get\+\_\+integral (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Calculus function for getting the integral of the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}. 
+
+\begin{DoxyReturn}{Returns}
+(\mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}) The result of the integral of the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00501}{501}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+
+\mbox{\Hypertarget{classemth_1_1Polynomial_a02fda10cd15abff226c5a8013f4928f7}\label{classemth_1_1Polynomial_a02fda10cd15abff226c5a8013f4928f7}} 
+\index{emth::Polynomial@{emth::Polynomial}!get\_monomials@{get\_monomials}}
+\index{get\_monomials@{get\_monomials}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{get\_monomials()}{get\_monomials()}}
+{\footnotesize\ttfamily std\+::map$<$ int, \mbox{\hyperlink{classemth_1_1Monomial}{emth\+::\+Monomial}} $>$ emth\+::\+Polynomial\+::get\+\_\+monomials (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Getter function for getting the monomials of the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}. 
+
+\begin{DoxyReturn}{Returns}
+(std\+::map$<$int, Monomial$>$) The monomials of the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00453}{453}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+
+\mbox{\Hypertarget{classemth_1_1Polynomial_a644cd3ebe3afa676cc3db99557f6eed3}\label{classemth_1_1Polynomial_a644cd3ebe3afa676cc3db99557f6eed3}} 
+\index{emth::Polynomial@{emth::Polynomial}!get\_value@{get\_value}}
+\index{get\_value@{get\_value}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{get\_value()}{get\_value()}}
+{\footnotesize\ttfamily double emth\+::\+Polynomial\+::get\+\_\+value (\begin{DoxyParamCaption}\item[{const double \&}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Calculus function for getting the value of the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} at a point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The point to evaluate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(double) The result of the evaluation of the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00481}{481}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+
+\mbox{\Hypertarget{classemth_1_1Polynomial_a40fefffeb0043d193d5aa7ecb3adba55}\label{classemth_1_1Polynomial_a40fefffeb0043d193d5aa7ecb3adba55}} 
+\index{emth::Polynomial@{emth::Polynomial}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool emth\+::\+Polynomial\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&}]{ogn }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Not equal logic operator overload. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ogn} & The \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} object to compare to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(true) If \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} objects degrees and monomials dont match. 
+
+(false) If \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} objects degrees and monomials match. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00301}{301}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+
+\mbox{\Hypertarget{classemth_1_1Polynomial_a56a499385ad24715b1240611217277c5}\label{classemth_1_1Polynomial_a56a499385ad24715b1240611217277c5}} 
+\index{emth::Polynomial@{emth::Polynomial}!operator\%@{operator\%}}
+\index{operator\%@{operator\%}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator\%()}{operator\%()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classemth_1_1Polynomial}{emth\+::\+Polynomial}} emth\+::\+Polynomial\+::operator\% (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&}]{ogn }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Modulus operator overload. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ogn} & The \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} object to divide by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(\mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}) A brand new \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} that represents the result. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00359}{359}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+
+\mbox{\Hypertarget{classemth_1_1Polynomial_a2e6bd9b16b732b38caabf950acfd5cb2}\label{classemth_1_1Polynomial_a2e6bd9b16b732b38caabf950acfd5cb2}} 
+\index{emth::Polynomial@{emth::Polynomial}!operator\%=@{operator\%=}}
+\index{operator\%=@{operator\%=}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator\%=()}{operator\%=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classemth_1_1Polynomial}{emth\+::\+Polynomial}} \& emth\+::\+Polynomial\+::operator\%= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&}]{ogn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Modulus assigment operator overload. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ogn} & The \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} object to divide by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(\mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}\&) A reference to the lvalue of the operation. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00415}{415}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+
+\mbox{\Hypertarget{classemth_1_1Polynomial_ac461b9aeb93c33d540f0a918bdefd203}\label{classemth_1_1Polynomial_ac461b9aeb93c33d540f0a918bdefd203}} 
+\index{emth::Polynomial@{emth::Polynomial}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classemth_1_1Polynomial}{emth\+::\+Polynomial}} emth\+::\+Polynomial\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&}]{ogn }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Multiplication operator overload. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ogn} & The \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} object to multiply by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(\mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}) A brand new \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} that represents the result. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00347}{347}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+
+\mbox{\Hypertarget{classemth_1_1Polynomial_abdeb3769c43eec881ae8ed1a20a5d01d}\label{classemth_1_1Polynomial_abdeb3769c43eec881ae8ed1a20a5d01d}} 
+\index{emth::Polynomial@{emth::Polynomial}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classemth_1_1Polynomial}{emth\+::\+Polynomial}} \& emth\+::\+Polynomial\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&}]{ogn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Multiplication assigment operator overload. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ogn} & The \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} object to multiply by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(\mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}\&) A reference to the lvalue of the operation. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00383}{383}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+
+\mbox{\Hypertarget{classemth_1_1Polynomial_a9d46082ad38edc17f875127208626281}\label{classemth_1_1Polynomial_a9d46082ad38edc17f875127208626281}} 
+\index{emth::Polynomial@{emth::Polynomial}!operator+@{operator+}}
+\index{operator+@{operator+}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classemth_1_1Polynomial}{emth\+::\+Polynomial}} emth\+::\+Polynomial\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&}]{ogn }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Addition operator overload. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ogn} & The \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} object to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(\mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}) A brand new \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} that represents the result. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00335}{335}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+
+\mbox{\Hypertarget{classemth_1_1Polynomial_a791a5aa2207acd2fccc4124ff36eb0bf}\label{classemth_1_1Polynomial_a791a5aa2207acd2fccc4124ff36eb0bf}} 
+\index{emth::Polynomial@{emth::Polynomial}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classemth_1_1Polynomial}{emth\+::\+Polynomial}} \& emth\+::\+Polynomial\+::operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&}]{ogn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Addition assigment operator overload. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ogn} & The \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} object to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(\mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}\&) A reference to the lvalue of the operation. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00365}{365}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+
+\mbox{\Hypertarget{classemth_1_1Polynomial_a1cd22ae48bfcb14b53835730091e5f4d}\label{classemth_1_1Polynomial_a1cd22ae48bfcb14b53835730091e5f4d}} 
+\index{emth::Polynomial@{emth::Polynomial}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classemth_1_1Polynomial}{emth\+::\+Polynomial}} emth\+::\+Polynomial\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&}]{ogn }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Substraction operator overload. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ogn} & The \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} object to substract by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(\mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}) A brand new \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} that represents the result. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00341}{341}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+
+\mbox{\Hypertarget{classemth_1_1Polynomial_af545354b4dade3e286be26207d02a442}\label{classemth_1_1Polynomial_af545354b4dade3e286be26207d02a442}} 
+\index{emth::Polynomial@{emth::Polynomial}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classemth_1_1Polynomial}{emth\+::\+Polynomial}} \& emth\+::\+Polynomial\+::operator-\/= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&}]{ogn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Substraction assigment operator overload. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ogn} & The \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} object to substract by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(\mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}\&) A reference to the lvalue of the operation. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00374}{374}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+
+\mbox{\Hypertarget{classemth_1_1Polynomial_aa2a054dcc203257bfc3d06621ce876b1}\label{classemth_1_1Polynomial_aa2a054dcc203257bfc3d06621ce876b1}} 
+\index{emth::Polynomial@{emth::Polynomial}!operator/@{operator/}}
+\index{operator/@{operator/}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classemth_1_1Polynomial}{emth\+::\+Polynomial}} emth\+::\+Polynomial\+::operator/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&}]{ogn }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Division operator overload. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ogn} & The \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} object to divide by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(\mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}) A brand new \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} that represents the result. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00353}{353}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+
+\mbox{\Hypertarget{classemth_1_1Polynomial_ac5a003db2381c99c97c4a78341145b26}\label{classemth_1_1Polynomial_ac5a003db2381c99c97c4a78341145b26}} 
+\index{emth::Polynomial@{emth::Polynomial}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator/=()}{operator/=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classemth_1_1Polynomial}{emth\+::\+Polynomial}} \& emth\+::\+Polynomial\+::operator/= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&}]{ogn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Division assigment operator overload. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ogn} & The \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} object to divide by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(\mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}\&) A reference to the lvalue of the operation. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00398}{398}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{src_2emath_8cpp_source_l00212}{emth\+::\+Monomial\+::get\+\_\+degree()}}.
+
+\mbox{\Hypertarget{classemth_1_1Polynomial_a0f0640fcb0dd0a59b685a646d494bfc7}\label{classemth_1_1Polynomial_a0f0640fcb0dd0a59b685a646d494bfc7}} 
+\index{emth::Polynomial@{emth::Polynomial}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool emth\+::\+Polynomial\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&}]{ogn }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Less than logic operator overload. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ogn} & The \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} object to compare to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(true) If the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} object degree is less than the degree of the passed \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}. 
+
+(false) If the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} object degree is equal or greater than the degree of the passed \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00315}{315}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+
+\mbox{\Hypertarget{classemth_1_1Polynomial_a7b234cebd032016c0a8ece92a4f68141}\label{classemth_1_1Polynomial_a7b234cebd032016c0a8ece92a4f68141}} 
+\index{emth::Polynomial@{emth::Polynomial}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily bool emth\+::\+Polynomial\+::operator$<$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&}]{ogn }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Less or equal than logic operator overload. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ogn} & The \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} object to compare to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(true) If the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} object degree is less or equal than the degree of the passed \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}. 
+
+(false) If the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} object degree is greater than the degree of the passed \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00329}{329}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+
+\mbox{\Hypertarget{classemth_1_1Polynomial_a33ba807b5465ead26edd077d8289f4f3}\label{classemth_1_1Polynomial_a33ba807b5465ead26edd077d8289f4f3}} 
+\index{emth::Polynomial@{emth::Polynomial}!operator=@{operator=}}
+\index{operator=@{operator=}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classemth_1_1Polynomial}{emth\+::\+Polynomial}} \& emth\+::\+Polynomial\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&}]{ogn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Assigment operator overload for when called with an lvalue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ogn} & The lvalue \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(\mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}\&) A reference to the lvalue of the operation 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00281}{281}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+
+\mbox{\Hypertarget{classemth_1_1Polynomial_a93818b33532e3f8e80fa614ca8287479}\label{classemth_1_1Polynomial_a93818b33532e3f8e80fa614ca8287479}} 
+\index{emth::Polynomial@{emth::Polynomial}!operator=@{operator=}}
+\index{operator=@{operator=}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classemth_1_1Polynomial}{emth\+::\+Polynomial}} \& emth\+::\+Polynomial\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classemth_1_1Polynomial}{emth\+::\+Polynomial}} \&\&}]{ogn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Move assigment operator overload for when called with an rvalue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ogn} & The rvalue \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(\mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}\&) A reference to the lvalue of the operation 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00287}{287}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+
+\mbox{\Hypertarget{classemth_1_1Polynomial_ad042381e1713be21b332d3f8fbdfd0a7}\label{classemth_1_1Polynomial_ad042381e1713be21b332d3f8fbdfd0a7}} 
+\index{emth::Polynomial@{emth::Polynomial}!operator==@{operator==}}
+\index{operator==@{operator==}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool emth\+::\+Polynomial\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&}]{ogn }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Equal logic operator overload. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ogn} & The \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} object to compare to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(true) If \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} objects degrees and monomials match. 
+
+(false) If \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} objects degrees and monomials dont match. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00294}{294}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+
+\mbox{\Hypertarget{classemth_1_1Polynomial_ae358f6f9b93783601af6999b67e0dafb}\label{classemth_1_1Polynomial_ae358f6f9b93783601af6999b67e0dafb}} 
+\index{emth::Polynomial@{emth::Polynomial}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool emth\+::\+Polynomial\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&}]{ogn }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Greater than logic operator overload. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ogn} & The \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} object to compare to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(true) If the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} object degree is greater than the degree of the passed \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}. 
+
+(false) If the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} object degree is equal or less than the degree of the passed \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00308}{308}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+
+\mbox{\Hypertarget{classemth_1_1Polynomial_a2321b93b1482b6677dbd125739848724}\label{classemth_1_1Polynomial_a2321b93b1482b6677dbd125739848724}} 
+\index{emth::Polynomial@{emth::Polynomial}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily bool emth\+::\+Polynomial\+::operator$>$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&}]{ogn }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Greater or equal than logic operator overload. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ogn} & The \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} object to compare to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(true) If the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} object degree is greater or equal than the degree of the passed \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}. 
+
+(false) If the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} object degree is less than the degree of the passed \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00322}{322}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+
+\mbox{\Hypertarget{classemth_1_1Polynomial_a1dc4825c3d5005949f0869e204e4fedc}\label{classemth_1_1Polynomial_a1dc4825c3d5005949f0869e204e4fedc}} 
+\index{emth::Polynomial@{emth::Polynomial}!push\_monomial@{push\_monomial}}
+\index{push\_monomial@{push\_monomial}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{push\_monomial()}{push\_monomial()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool emth\+::\+Polynomial\+::push\+\_\+monomial (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classemth_1_1Monomial}{Monomial}} \&}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Function for appending a lvalue monomial to the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & The \mbox{\hyperlink{classemth_1_1Monomial}{Monomial}} object to append. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(bool) If the operation was successful. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00459}{459}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+
+\mbox{\Hypertarget{classemth_1_1Polynomial_acd1befa11dd8d4e3da213114dc88cff7}\label{classemth_1_1Polynomial_acd1befa11dd8d4e3da213114dc88cff7}} 
+\index{emth::Polynomial@{emth::Polynomial}!push\_monomial@{push\_monomial}}
+\index{push\_monomial@{push\_monomial}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{push\_monomial()}{push\_monomial()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool emth\+::\+Polynomial\+::push\+\_\+monomial (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classemth_1_1Monomial}{emth\+::\+Monomial}} \&\&}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Function for appending a rvalue monomial to the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & The \mbox{\hyperlink{classemth_1_1Monomial}{Monomial}} object to append. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(bool) If the operation was successful. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{src_2emath_8cpp_source_l00465}{465}} of file \mbox{\hyperlink{src_2emath_8cpp_source}{emath.\+cpp}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classemth_1_1Polynomial_a444148f9a6121f040d0149c4b5d94ac5}\label{classemth_1_1Polynomial_a444148f9a6121f040d0149c4b5d94ac5}} 
+\index{emth::Polynomial@{emth::Polynomial}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+A friend operator to insert the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} into a std\+::ostream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & The std\+::ostream. \\
+\hline
+{\em m} & The \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} object to insert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(std\+::ostream\&) A reference to the std\+::ostream. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classemth_1_1Polynomial_a66068882dda621b9bca207d72a9fb2d7}\label{classemth_1_1Polynomial_a66068882dda621b9bca207d72a9fb2d7}} 
+\index{emth::Polynomial@{emth::Polynomial}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!emth::Polynomial@{emth::Polynomial}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::stringstream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::stringstream \&}]{ss,  }\item[{const \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+A friend operator to insert the \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} into a std\+::stringstream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ss} & The std\+::stringstream. \\
+\hline
+{\em m} & The \mbox{\hyperlink{classemth_1_1Polynomial}{Polynomial}} object to insert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(std\+::stringstream\&) A reference to the std\+::stringstream. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{emath_8h}{emath.\+h}}\item 
+src/\mbox{\hyperlink{src_2emath_8cpp}{emath.\+cpp}}\end{DoxyCompactItemize}
