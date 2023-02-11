@@ -9,9 +9,9 @@ meson setup ./bin/win --cross-file assets/crosswin.txt --prefix=$source_path/
 git add .
 git commit -m "Cross compilation executing"
 cd ./bin
-meson dist
+meson dist --no-tests
 cd ./win
-meson dist --formats zip
+meson dist --formats zip --no-tests
 mkdir -v ../../dist/
 cp -r ./meson-dist/* ../../dist/
 cd ..
