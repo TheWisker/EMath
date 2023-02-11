@@ -1,7 +1,7 @@
 project('Emath++', 'cpp', version : '1.1.0')
 
 include = ['./include/', './third_party/CSet/include/']
-emath_headers = ['./include/emath.h']
+emath_headers = ['./include/emath.h', './third_party/CSet/include/set.h']
 eparser_headers = ['./include/eparser.h']
 emath_files = [emath_headers, './src/emath.cpp']
 eparser_files = [eparser_headers, './src/eparser.cpp', emath_files]
