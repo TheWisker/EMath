@@ -1,6 +1,0 @@
-<map id="EParserTest" name="EParserTest">
-<area shape="rect" id="node1" title="Class that provides a test fixture for the test cases." alt="" coords="127,93,221,119"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,5,100,31"/>
-<area shape="rect" id="node3" href="$classemthp_1_1Lexer.html" title="Class that works as a token supplier for the Parser class." alt="" coords="125,5,223,31"/>
-<area shape="rect" id="node4" href="$classemthp_1_1Parser.html" title="Class that wraps a std::string and parses it as a Monomial or as a Polynomial." alt="" coords="247,5,351,31"/>
-</map>

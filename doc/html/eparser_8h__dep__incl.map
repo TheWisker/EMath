@@ -1,5 +1,0 @@
-<map id="include/eparser.h" name="include/eparser.h">
-<area shape="rect" id="node1" title="This is the main header file for the equation parser." alt="" coords="70,5,191,31"/>
-<area shape="rect" id="node2" href="$src_2eparser_8cpp.html" title="This is the main implementation file for the equation parser." alt="" coords="5,79,117,104"/>
-<area shape="rect" id="node3" href="$test_2eparser_8cpp.html" title="This is the main test file for the equation parser." alt="" coords="142,79,258,104"/>
-</map>
