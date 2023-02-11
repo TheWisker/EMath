@@ -1,13 +1,13 @@
 project('Emath++', 'cpp', version : '1.1.0')
 
-include = ['./include/', './third_party/CSet/include/']
-emath_headers = ['./include/emath.h', './third_party/CSet/include/set.h']
-eparser_headers = ['./include/eparser.h']
-emath_files = [emath_headers, './src/emath.cpp']
-eparser_files = [eparser_headers, './src/eparser.cpp', emath_files]
+include = ['{source_dir}/include/', '{source_dir}/third_party/CSet/include/']
+emath_headers = ['{source_dir}/include/emath.h', '{source_dir}/third_party/CSet/include/set.h']
+eparser_headers = ['{source_dir}/include/eparser.h']
+emath_files = [emath_headers, '{source_dir}/src/emath.cpp']
+eparser_files = [eparser_headers, '{source_dir}/src/eparser.cpp', emath_files]
 
-emath_test_files = ['./test/emath.cpp', emath_files]
-eparser_test_files = [eparser_files, './test/eparser.cpp']
+emath_test_files = ['{source_dir}/test/emath.cpp', emath_files]
+eparser_test_files = [eparser_files, '{source_dir}/test/eparser.cpp']
 
 # Determine the system that is being built on
 if host_machine.system() in ['windows', 'mingw']
