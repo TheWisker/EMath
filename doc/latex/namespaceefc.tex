@@ -1,0 +1,91 @@
+\hypertarget{namespaceefc}{}\doxysection{efc Namespace Reference}
+\label{namespaceefc}\index{efc@{efc}}
+
+
+Englobes all the classes and functions of the emath text user interface.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classefc_1_1Application}{Application}}
+\begin{DoxyCompactList}\small\item\em Class that contains the application inner logic. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classefc_1_1IWindow}{IWindow}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classefc_1_1Window}{Window}} class extension for input. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classefc_1_1Lexer}{Lexer}}
+\begin{DoxyCompactList}\small\item\em Class that works as a token supplier for the \mbox{\hyperlink{classefc_1_1Parser}{Parser}} class. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classefc_1_1OWindow}{OWindow}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classefc_1_1Window}{Window}} class extension for output. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classefc_1_1Parser}{Parser}}
+\begin{DoxyCompactList}\small\item\em Class that wraps a std\+::string and parses it as a number or as a operation. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classefc_1_1Plane}{Plane}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classefc_1_1Plane}{Plane}} class to draw a function in the Cartesian plane. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classefc_1_1Storage}{Storage}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classefc_1_1Storage}{Storage}} class to read and write to a file. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classefc_1_1Terminal}{Terminal}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classefc_1_1Terminal}{Terminal}} class to manage the terminal through curses. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structefc_1_1Token}{Token}}
+\begin{DoxyCompactList}\small\item\em Struct for representing a token as a type and a value. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classefc_1_1Window}{Window}}
+\begin{DoxyCompactList}\small\item\em Generic class for wrapping a curses WINDOW. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespaceefc_af24b42c9a5c7268f47143ad4e796b58c}{Token\+Type}} \{ \newline
+\mbox{\hyperlink{namespaceefc_af24b42c9a5c7268f47143ad4e796b58ca6deff0133907b9e20a1c345afd3c42aa}{T\+\_\+\+NUMBER}}
+, \mbox{\hyperlink{namespaceefc_af24b42c9a5c7268f47143ad4e796b58ca29baf11d038163906f69fb410fe1d4e0}{T\+\_\+\+PLUS}}
+, \mbox{\hyperlink{namespaceefc_af24b42c9a5c7268f47143ad4e796b58cae5e24b6fa05d86c2c2b3dd760683a775}{T\+\_\+\+MINUS}}
+, \mbox{\hyperlink{namespaceefc_af24b42c9a5c7268f47143ad4e796b58cabf0e9e601a2dbc828e933bd240bbe386}{T\+\_\+\+MULTIPLICATION}}
+, \newline
+\mbox{\hyperlink{namespaceefc_af24b42c9a5c7268f47143ad4e796b58ca452aff6a9ea8337e9b27fc43824d0d00}{T\+\_\+\+DIVISION}}
+, \mbox{\hyperlink{namespaceefc_af24b42c9a5c7268f47143ad4e796b58caa1fcef4084cd9aba09d36f5ed7110b6a}{T\+\_\+\+EOF}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum with all the possible Token types. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Englobes all the classes and functions of the emath text user interface. 
+
+The emth namespace contains the following classes\+: \mbox{\hyperlink{classefc_1_1Window}{Window}}, \mbox{\hyperlink{classefc_1_1IWindow}{IWindow}}, \mbox{\hyperlink{classefc_1_1OWindow}{OWindow}}, \mbox{\hyperlink{classefc_1_1Terminal}{Terminal}}, \mbox{\hyperlink{classefc_1_1Plane}{Plane}}, \mbox{\hyperlink{classefc_1_1Storage}{Storage}}, \mbox{\hyperlink{classefc_1_1Lexer}{Lexer}}, \mbox{\hyperlink{classefc_1_1Parser}{Parser}} and \mbox{\hyperlink{classefc_1_1Application}{Application}}. 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespaceefc_af24b42c9a5c7268f47143ad4e796b58c}\label{namespaceefc_af24b42c9a5c7268f47143ad4e796b58c}} 
+\index{efc@{efc}!TokenType@{TokenType}}
+\index{TokenType@{TokenType}!efc@{efc}}
+\doxysubsubsection{\texorpdfstring{TokenType}{TokenType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespaceefc_af24b42c9a5c7268f47143ad4e796b58c}{efc\+::\+Token\+Type}}}
+
+
+
+Enum with all the possible \mbox{\hyperlink{structefc_1_1Token}{Token}} types. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\_NUMBER@{T\_NUMBER}!efc@{efc}}\index{efc@{efc}!T\_NUMBER@{T\_NUMBER}}}\mbox{\Hypertarget{namespaceefc_af24b42c9a5c7268f47143ad4e796b58ca6deff0133907b9e20a1c345afd3c42aa}\label{namespaceefc_af24b42c9a5c7268f47143ad4e796b58ca6deff0133907b9e20a1c345afd3c42aa}} 
+T\+\_\+\+NUMBER&Number type. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\_PLUS@{T\_PLUS}!efc@{efc}}\index{efc@{efc}!T\_PLUS@{T\_PLUS}}}\mbox{\Hypertarget{namespaceefc_af24b42c9a5c7268f47143ad4e796b58ca29baf11d038163906f69fb410fe1d4e0}\label{namespaceefc_af24b42c9a5c7268f47143ad4e796b58ca29baf11d038163906f69fb410fe1d4e0}} 
+T\+\_\+\+PLUS&Plus sign type. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\_MINUS@{T\_MINUS}!efc@{efc}}\index{efc@{efc}!T\_MINUS@{T\_MINUS}}}\mbox{\Hypertarget{namespaceefc_af24b42c9a5c7268f47143ad4e796b58cae5e24b6fa05d86c2c2b3dd760683a775}\label{namespaceefc_af24b42c9a5c7268f47143ad4e796b58cae5e24b6fa05d86c2c2b3dd760683a775}} 
+T\+\_\+\+MINUS&Minus sign type. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\_MULTIPLICATION@{T\_MULTIPLICATION}!efc@{efc}}\index{efc@{efc}!T\_MULTIPLICATION@{T\_MULTIPLICATION}}}\mbox{\Hypertarget{namespaceefc_af24b42c9a5c7268f47143ad4e796b58cabf0e9e601a2dbc828e933bd240bbe386}\label{namespaceefc_af24b42c9a5c7268f47143ad4e796b58cabf0e9e601a2dbc828e933bd240bbe386}} 
+T\+\_\+\+MULTIPLICATION&Multiplication sign type. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\_DIVISION@{T\_DIVISION}!efc@{efc}}\index{efc@{efc}!T\_DIVISION@{T\_DIVISION}}}\mbox{\Hypertarget{namespaceefc_af24b42c9a5c7268f47143ad4e796b58ca452aff6a9ea8337e9b27fc43824d0d00}\label{namespaceefc_af24b42c9a5c7268f47143ad4e796b58ca452aff6a9ea8337e9b27fc43824d0d00}} 
+T\+\_\+\+DIVISION&Division sign type. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\_EOF@{T\_EOF}!efc@{efc}}\index{efc@{efc}!T\_EOF@{T\_EOF}}}\mbox{\Hypertarget{namespaceefc_af24b42c9a5c7268f47143ad4e796b58caa1fcef4084cd9aba09d36f5ed7110b6a}\label{namespaceefc_af24b42c9a5c7268f47143ad4e796b58caa1fcef4084cd9aba09d36f5ed7110b6a}} 
+T\+\_\+\+EOF&End of file type. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00650}{650}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+

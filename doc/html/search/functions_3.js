@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['get_5fcoeff_0',['get_coeff',['../classemth_1_1Monomial.html#ac0ea8a4e12483048519184c536c27124',1,'emth::Monomial']]],
+  ['get_5fdata_1',['get_data',['../classefc_1_1OWindow.html#a3b2e4975e221006d0fa253438e74b2b9',1,'efc::OWindow']]],
+  ['get_5fdata_5fsize_2',['get_data_size',['../classefc_1_1OWindow.html#a01886b4a25cc33d062c63e1908e47dc7',1,'efc::OWindow']]],
+  ['get_5fdegree_3',['get_degree',['../classemth_1_1Monomial.html#a1a11b6043ddc48006fe37241bb6bc6d0',1,'emth::Monomial::get_degree()'],['../classemth_1_1Polynomial.html#a7eb2c1c9bbbb013220d24f5d2a24a963',1,'emth::Polynomial::get_degree() const noexcept']]],
+  ['get_5fderivative_4',['get_derivative',['../classemth_1_1Polynomial.html#a1f27fae485c94bb0f00a46c50214ab37',1,'emth::Polynomial']]],
+  ['get_5fdivisors_5',['get_divisors',['../classemth_1_1Arithmetic.html#adddfba367517025753ae37062ac6f483',1,'emth::Arithmetic']]],
+  ['get_5fexpression_6',['get_expression',['../classemth_1_1Monomial.html#a2940ea82172b382f8354fe4d1556b996',1,'emth::Monomial::get_expression()'],['../classemth_1_1Polynomial.html#a6f3eb1e674dbce5f0a172d8b5fd7ab2b',1,'emth::Polynomial::get_expression()']]],
+  ['get_5fheight_7',['get_height',['../classefc_1_1Window.html#a0f64ddda75fb64027eaa7b7dd767ec4e',1,'efc::Window']]],
+  ['get_5fintegral_8',['get_integral',['../classemth_1_1Polynomial.html#ac87df7094ce26a8e9cba6df79a3eaf2d',1,'emth::Polynomial']]],
+  ['get_5flong_5finput_9',['get_long_input',['../classefc_1_1Terminal.html#a49bb9b2d0fc46335d4426c79b0b1f781',1,'efc::Terminal']]],
+  ['get_5fmonomials_10',['get_monomials',['../classemth_1_1Polynomial.html#a02fda10cd15abff226c5a8013f4928f7',1,'emth::Polynomial']]],
+  ['get_5froots_11',['get_roots',['../classemth_1_1Polynomial.html#adcba2128b5bfcc6ee15023684edc53f2',1,'emth::Polynomial']]],
+  ['get_5fscroll_5findex_12',['get_scroll_index',['../classefc_1_1OWindow.html#a6ca5318015cbded809b6e0304c64466e',1,'efc::OWindow']]],
+  ['get_5fshort_5finput_13',['get_short_input',['../classefc_1_1Terminal.html#a966affe71a3fd3c461a907e41a609cc8',1,'efc::Terminal']]],
+  ['get_5ftitle_14',['get_title',['../classefc_1_1Window.html#a933c7e9e67d7423b1facb73a26a9fba3',1,'efc::Window']]],
+  ['get_5ftitle_5fsize_15',['get_title_size',['../classefc_1_1Window.html#aad12ba19cc558f386a4f2f9e7b6f1acc',1,'efc::Window']]],
+  ['get_5ftitle_5fx_16',['get_title_x',['../classefc_1_1Window.html#a2e177d9c72e6f7fcf29371df5bc08bea',1,'efc::Window::get_title_x()'],['../classefc_1_1OWindow.html#aa0224c53de48b27b7bc791f3ff1fe9fc',1,'efc::OWindow::get_title_x()'],['../classefc_1_1IWindow.html#a91e48b892bd02b7c11020fdfc7e7c05d',1,'efc::IWindow::get_title_x()']]],
+  ['get_5ftitle_5fy_17',['get_title_y',['../classefc_1_1Window.html#a910926d607d7ac88e4d5e6640a52836a',1,'efc::Window::get_title_y()'],['../classefc_1_1OWindow.html#a6fa50bf6b31b39e3c9c2a14cedd70aac',1,'efc::OWindow::get_title_y()'],['../classefc_1_1IWindow.html#a84cb0d425e279cd2b15dc2b43cb520d2',1,'efc::IWindow::get_title_y()']]],
+  ['get_5fvalue_18',['get_value',['../classemth_1_1Monomial.html#a50a76c251c4a66c3522b78f0aba3c157',1,'emth::Monomial::get_value()'],['../classemth_1_1Polynomial.html#a644cd3ebe3afa676cc3db99557f6eed3',1,'emth::Polynomial::get_value()']]],
+  ['get_5fwidth_19',['get_width',['../classefc_1_1Window.html#a58e0eb74a3b1b20a268dae29d4525dad',1,'efc::Window']]],
+  ['get_5fx_20',['get_x',['../classefc_1_1Window.html#a1920c8ff02f120a08252797280a3a2aa',1,'efc::Window']]],
+  ['get_5fy_21',['get_y',['../classefc_1_1Window.html#a433fbcc875c6e134a8c273c46525bca2',1,'efc::Window']]]
+];

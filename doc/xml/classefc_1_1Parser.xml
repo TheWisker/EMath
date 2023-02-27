@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classefc_1_1Parser" kind="class" language="C++" prot="public">
+    <compoundname>efc::Parser</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classefc_1_1Parser_1a9725e73ad99732a3da5196ce541daefc" prot="private" static="no" mutable="no">
+        <type><ref refid="classefc_1_1Lexer" kindref="compound">Lexer</ref></type>
+        <definition>Lexer efc::Parser::_lexer</definition>
+        <argsstring></argsstring>
+        <name>_lexer</name>
+        <qualifiedname>efc::Parser::_lexer</qualifiedname>
+        <briefdescription>
+<para>Private <ref refid="classefc_1_1Lexer" kindref="compound">Lexer</ref> instance for supplying tokens. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="765" column="19" bodyfile="src/interface.cpp" bodystart="765" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classefc_1_1Parser_1ad95836dabb6525baf080aa8d0fdb3b56" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>efc::Parser::Parser</definition>
+        <argsstring>(const std::string &amp;input) noexcept</argsstring>
+        <name>Parser</name>
+        <qualifiedname>efc::Parser::Parser</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+<para>Standalone constructor for the <ref refid="classefc_1_1Parser" kindref="compound">Parser</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A const reference to the std::string to parse when needed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="771" column="13" bodyfile="src/interface.cpp" bodystart="771" bodyend="771"/>
+      </memberdef>
+      <memberdef kind="function" id="classefc_1_1Parser_1ad801320ff4014bb3e2822a2b56dc246e" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int efc::Parser::parse_number</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>parse_number</name>
+        <qualifiedname>efc::Parser::parse_number</qualifiedname>
+        <briefdescription>
+<para>Function for parsing a plus, minus and number Tokens as a positive or negative int. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>(int) The parsed number </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="776" column="23" bodyfile="src/interface.cpp" bodystart="776" bodyend="787"/>
+        <references refid="classefc_1_1Lexer_1a3eb3b61f1ba41e9d3150052b6280167b" compoundref="interface_8cpp" startline="740" endline="749">efc::Lexer::next</references>
+        <references refid="structefc_1_1Token_1abd56361d2f52a2c345e106f8e2ec4197" compoundref="interface_8cpp" startline="684">efc::Token::type</references>
+      </memberdef>
+      <memberdef kind="function" id="classefc_1_1Parser_1aa3007aab2177728edcfba4c0e4bb460f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classemth_1_1Polynomial" kindref="compound">emth::Polynomial</ref></type>
+        <definition>const emth::Polynomial efc::Parser::parse_operation</definition>
+        <argsstring>(const ::std::vector&lt; emth::Polynomial &gt; &amp;ps)</argsstring>
+        <name>parse_operation</name>
+        <qualifiedname>efc::Parser::parse_operation</qualifiedname>
+        <param>
+          <type>const ::std::vector&lt; <ref refid="classemth_1_1Polynomial" kindref="compound">emth::Polynomial</ref> &gt; &amp;</type>
+          <declname>ps</declname>
+        </param>
+        <briefdescription>
+<para>Function for parsing std::string as a mathematical operation consisting of Polynomials represented as integers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A std::vector of Polynomials, the integers representing the Polynomials map to this std::vector indexes </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>(<ref refid="classemth_1_1Polynomial" kindref="compound">emth::Polynomial</ref>) The parsed polynomial resulting of the operation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="793" column="36" bodyfile="src/interface.cpp" bodystart="793" bodyend="818"/>
+        <references refid="classefc_1_1Lexer_1a3eb3b61f1ba41e9d3150052b6280167b" compoundref="interface_8cpp" startline="740" endline="749">efc::Lexer::next</references>
+        <references refid="structefc_1_1Token_1abd56361d2f52a2c345e106f8e2ec4197" compoundref="interface_8cpp" startline="684">efc::Token::type</references>
+      </memberdef>
+      <memberdef kind="function" id="classefc_1_1Parser_1a56a3102383a805ae6e3ed858f3efbfe1" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>efc::Parser::~Parser</definition>
+        <argsstring>() noexcept=default</argsstring>
+        <name>~Parser</name>
+        <qualifiedname>efc::Parser::~Parser</qualifiedname>
+        <briefdescription>
+<para>Default destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="822" column="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class that wraps a std::string and parses it as a number or as a operation. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The class consists of two public functions, one for parsing the entire input as a number and the other for it as a operation. </para>
+    </detaileddescription>
+    <location file="src/interface.cpp" line="760" column="5" bodyfile="src/interface.cpp" bodystart="760" bodyend="823"/>
+    <listofallmembers>
+      <member refid="classefc_1_1Parser_1a9725e73ad99732a3da5196ce541daefc" prot="private" virt="non-virtual"><scope>efc::Parser</scope><name>_lexer</name></member>
+      <member refid="classefc_1_1Parser_1ad801320ff4014bb3e2822a2b56dc246e" prot="public" virt="non-virtual"><scope>efc::Parser</scope><name>parse_number</name></member>
+      <member refid="classefc_1_1Parser_1aa3007aab2177728edcfba4c0e4bb460f" prot="public" virt="non-virtual"><scope>efc::Parser</scope><name>parse_operation</name></member>
+      <member refid="classefc_1_1Parser_1ad95836dabb6525baf080aa8d0fdb3b56" prot="public" virt="non-virtual"><scope>efc::Parser</scope><name>Parser</name></member>
+      <member refid="classefc_1_1Parser_1a56a3102383a805ae6e3ed858f3efbfe1" prot="public" virt="non-virtual"><scope>efc::Parser</scope><name>~Parser</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

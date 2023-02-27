@@ -1,0 +1,105 @@
+\hypertarget{classefc_1_1Parser}{}\doxysection{efc\+::Parser Class Reference}
+\label{classefc_1_1Parser}\index{efc::Parser@{efc::Parser}}
+
+
+Class that wraps a std\+::string and parses it as a number or as a operation.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classefc_1_1Parser_ad95836dabb6525baf080aa8d0fdb3b56}{Parser}} (const std\+::string \&input) noexcept
+\begin{DoxyCompactList}\small\item\em Standalone constructor for the \mbox{\hyperlink{classefc_1_1Parser}{Parser}} class. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{classefc_1_1Parser_ad801320ff4014bb3e2822a2b56dc246e}{parse\+\_\+number}} () noexcept
+\begin{DoxyCompactList}\small\item\em Function for parsing a plus, minus and number Tokens as a positive or negative int. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classemth_1_1Polynomial}{emth\+::\+Polynomial}} \mbox{\hyperlink{classefc_1_1Parser_aa3007aab2177728edcfba4c0e4bb460f}{parse\+\_\+operation}} (const \+::std\+::vector$<$ \mbox{\hyperlink{classemth_1_1Polynomial}{emth\+::\+Polynomial}} $>$ \&ps)
+\begin{DoxyCompactList}\small\item\em Function for parsing std\+::string as a mathematical operation consisting of Polynomials represented as integers. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classefc_1_1Parser_a56a3102383a805ae6e3ed858f3efbfe1}\label{classefc_1_1Parser_a56a3102383a805ae6e3ed858f3efbfe1}} 
+{\bfseries $\sim$\+Parser} () noexcept=default
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that wraps a std\+::string and parses it as a number or as a operation. 
+
+The class consists of two public functions, one for parsing the entire input as a number and the other for it as a operation. 
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00760}{760}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classefc_1_1Parser_ad95836dabb6525baf080aa8d0fdb3b56}\label{classefc_1_1Parser_ad95836dabb6525baf080aa8d0fdb3b56}} 
+\index{efc::Parser@{efc::Parser}!Parser@{Parser}}
+\index{Parser@{Parser}!efc::Parser@{efc::Parser}}
+\doxysubsubsection{\texorpdfstring{Parser()}{Parser()}}
+{\footnotesize\ttfamily efc\+::\+Parser\+::\+Parser (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Standalone constructor for the \mbox{\hyperlink{classefc_1_1Parser}{Parser}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & A const reference to the std\+::string to parse when needed. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00771}{771}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classefc_1_1Parser_ad801320ff4014bb3e2822a2b56dc246e}\label{classefc_1_1Parser_ad801320ff4014bb3e2822a2b56dc246e}} 
+\index{efc::Parser@{efc::Parser}!parse\_number@{parse\_number}}
+\index{parse\_number@{parse\_number}!efc::Parser@{efc::Parser}}
+\doxysubsubsection{\texorpdfstring{parse\_number()}{parse\_number()}}
+{\footnotesize\ttfamily const int efc\+::\+Parser\+::parse\+\_\+number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Function for parsing a plus, minus and number Tokens as a positive or negative int. 
+
+\begin{DoxyReturn}{Returns}
+(int) The parsed number 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00776}{776}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{interface_8cpp_source_l00740}{efc\+::\+Lexer\+::next()}}, and \mbox{\hyperlink{interface_8cpp_source_l00684}{efc\+::\+Token\+::type}}.
+
+\mbox{\Hypertarget{classefc_1_1Parser_aa3007aab2177728edcfba4c0e4bb460f}\label{classefc_1_1Parser_aa3007aab2177728edcfba4c0e4bb460f}} 
+\index{efc::Parser@{efc::Parser}!parse\_operation@{parse\_operation}}
+\index{parse\_operation@{parse\_operation}!efc::Parser@{efc::Parser}}
+\doxysubsubsection{\texorpdfstring{parse\_operation()}{parse\_operation()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classemth_1_1Polynomial}{emth\+::\+Polynomial}} efc\+::\+Parser\+::parse\+\_\+operation (\begin{DoxyParamCaption}\item[{const \+::std\+::vector$<$ \mbox{\hyperlink{classemth_1_1Polynomial}{emth\+::\+Polynomial}} $>$ \&}]{ps }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function for parsing std\+::string as a mathematical operation consisting of Polynomials represented as integers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ps} & A std\+::vector of Polynomials, the integers representing the Polynomials map to this std\+::vector indexes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(\mbox{\hyperlink{classemth_1_1Polynomial}{emth\+::\+Polynomial}}) The parsed polynomial resulting of the operation 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00793}{793}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{interface_8cpp_source_l00740}{efc\+::\+Lexer\+::next()}}, and \mbox{\hyperlink{interface_8cpp_source_l00684}{efc\+::\+Token\+::type}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{interface_8cpp}{interface.\+cpp}}\end{DoxyCompactItemize}

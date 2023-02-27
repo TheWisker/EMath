@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_emath_8h" xml:lang="en-US">
+<title>include/emath.h File Reference</title>
+<indexterm><primary>include/emath.h</primary></indexterm>
+<para>
+
+<para>This is the main header file for the emath library. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &lt;map&gt;<?linebreak?>#include &lt;cmath&gt;<?linebreak?>#include &lt;complex&gt;<?linebreak?>#include &lt;vector&gt;<?linebreak?>#include &lt;string&gt;<?linebreak?>#include &lt;unsupported/Eigen/Polynomials&gt;<?linebreak?>#include &quot;set.h&quot;<?linebreak?></programlisting>Include dependency graph for emath.h:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="emath_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+This graph shows which files directly or indirectly include this file:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="emath_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classemth_1_1Arithmetic">emth::Arithmetic</link></para>
+
+<para>Class with some functions for arithmetic math. </para>
+</listitem>
+            <listitem><para>class <link linkend="_classemth_1_1Monomial">emth::Monomial</link></para>
+
+<para>Class for representing and operating monomials. </para>
+</listitem>
+            <listitem><para>class <link linkend="_classemth_1_1Polynomial">emth::Polynomial</link></para>
+
+<para>Class for representing and operating polynomials. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespaceemth">emth</link></para>
+
+<para>Englobes all the classes and functions of the emath library. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_emath_8h_1acdecae10545d6a882ff7b96070c917dc">R_TOL</link>&#160;&#160;&#160;std::numeric_limits&lt;double&gt;::epsilon()</para>
+</listitem>
+            <listitem><para>#define <link linkend="_emath_8h_1afb3809880866f9d0fcfdf6384742b15b">R_ITR</link>&#160;&#160;&#160;1000</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>This is the main header file for the emath library. </para>
+
+<para>This file declares the functions of the emath library.<?linebreak?>It consists of two classes, the Monomial class and the Polynomial class.<?linebreak?>The Monomial class declares all the functions, operators, and properties for representing and operating monomials.<?linebreak?>The Polynomial class declares all the functions, operators, and properties for representing and operating polynomials.<?linebreak?></para>
+<para>
+Definition in file <link linkend="_emath_8h_source">emath.h</link>.</para>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_emath_8h_1afb3809880866f9d0fcfdf6384742b15b"/><section>
+    <title>R_ITR</title>
+<indexterm><primary>R_ITR</primary><secondary>emath.h</secondary></indexterm>
+<indexterm><primary>emath.h</primary><secondary>R_ITR</secondary></indexterm>
+<para><computeroutput>#define R_ITR&#160;&#160;&#160;1000</computeroutput></para><para>
+Definition at line <link linkend="_emath_8h_source_1l00067">67</link> of file <link linkend="_emath_8h_source">emath.h</link>.</para>
+</section>
+<anchor xml:id="_emath_8h_1acdecae10545d6a882ff7b96070c917dc"/><section>
+    <title>R_TOL</title>
+<indexterm><primary>R_TOL</primary><secondary>emath.h</secondary></indexterm>
+<indexterm><primary>emath.h</primary><secondary>R_TOL</secondary></indexterm>
+<para><computeroutput>#define R_TOL&#160;&#160;&#160;std::numeric_limits&lt;double&gt;::epsilon()</computeroutput></para><para>
+Definition at line <link linkend="_emath_8h_source_1l00066">66</link> of file <link linkend="_emath_8h_source">emath.h</link>.</para>
+</section>
+</section>
+</section>

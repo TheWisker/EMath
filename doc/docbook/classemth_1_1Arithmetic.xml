@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classemth_1_1Arithmetic" xml:lang="en-US">
+<title>emth::Arithmetic Class Reference</title>
+<indexterm><primary>emth::Arithmetic</primary></indexterm>
+<para>
+
+<para>Class with some functions for arithmetic math. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;emath.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static void <link linkend="_classemth_1_1Arithmetic_1adddfba367517025753ae37062ac6f483">get_divisors</link> (int n, std::vector&lt; int &gt; &amp;v) noexcept</para>
+
+<para>Gets the all the positive divisors for an integer. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Class with some functions for arithmetic math. </para>
+
+
+
+<para>The class consists of the functions that operate with real numbers. </para>
+<para>
+Definition at line <link linkend="_emath_8h_source_1l00073">73</link> of file <link linkend="_emath_8h_source">emath.h</link>.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classemth_1_1Arithmetic_1adddfba367517025753ae37062ac6f483"/><section>
+    <title>get_divisors()</title>
+<indexterm><primary>get_divisors</primary><secondary>emth::Arithmetic</secondary></indexterm>
+<indexterm><primary>emth::Arithmetic</primary><secondary>get_divisors</secondary></indexterm>
+<para><computeroutput>void emth::Arithmetic::get_divisors (int n, std::vector&lt; int &gt; &amp; v)<computeroutput>[static]</computeroutput>, <computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Gets the all the positive divisors for an integer. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>n</entry><entry>
+<para>The integer to get the divisors for. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>v</entry><entry>
+<para>The vector reference where to store the divisors. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00015">15</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+include/<link linkend="_emath_8h">emath.h</link>src/<link linkend="_src_2emath_8cpp">emath.cpp</link></section>
+</section>

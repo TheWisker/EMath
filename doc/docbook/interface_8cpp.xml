@@ -1,0 +1,365 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_interface_8cpp" xml:lang="en-US">
+<title>src/interface.cpp File Reference</title>
+<indexterm><primary>src/interface.cpp</primary></indexterm>
+<para>
+
+<para>This file contains the text user interface for the emath library. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &lt;curses.h&gt;<?linebreak?>#include &lt;fstream&gt;<?linebreak?>#include &lt;string&gt;<?linebreak?>#include &lt;vector&gt;<?linebreak?>#include &quot;rapidjson/document.h&quot;<?linebreak?>#include &quot;rapidjson/writer.h&quot;<?linebreak?>#include &quot;rapidjson/stringbuffer.h&quot;<?linebreak?>#include &lt;SFML/Graphics.hpp&gt;<?linebreak?>#include &lt;thread&gt;<?linebreak?>#include &quot;emath.h&quot;<?linebreak?>#include &quot;eparser.h&quot;<?linebreak?>#include &quot;font.h&quot;<?linebreak?>#include &lt;signal.h&gt;<?linebreak?></programlisting>Include dependency graph for interface.cpp:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="interface_8cpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classefc_1_1Window">efc::Window</link></para>
+
+<para>Generic class for wrapping a curses WINDOW. </para>
+</listitem>
+            <listitem><para>class <link linkend="_classefc_1_1OWindow">efc::OWindow</link></para>
+
+<para><link linkend="_classefc_1_1Window">Window</link> class extension for output. </para>
+</listitem>
+            <listitem><para>class <link linkend="_classefc_1_1IWindow">efc::IWindow</link></para>
+
+<para><link linkend="_classefc_1_1Window">Window</link> class extension for input. </para>
+</listitem>
+            <listitem><para>class <link linkend="_classefc_1_1Terminal">efc::Terminal</link></para>
+
+<para><link linkend="_classefc_1_1Terminal">Terminal</link> class to manage the terminal through curses. </para>
+</listitem>
+            <listitem><para>class <link linkend="_classefc_1_1Plane">efc::Plane</link></para>
+
+<para><link linkend="_classefc_1_1Plane">Plane</link> class to draw a function in the Cartesian plane. </para>
+</listitem>
+            <listitem><para>class <link linkend="_classefc_1_1Storage">efc::Storage</link></para>
+
+<para><link linkend="_classefc_1_1Storage">Storage</link> class to read and write to a file. </para>
+</listitem>
+            <listitem><para>struct <link linkend="_structefc_1_1Token">efc::Token</link></para>
+
+<para>Struct for representing a token as a type and a value. </para>
+</listitem>
+            <listitem><para>class <link linkend="_classefc_1_1Lexer">efc::Lexer</link></para>
+
+<para>Class that works as a token supplier for the <link linkend="_classefc_1_1Parser">Parser</link> class. </para>
+</listitem>
+            <listitem><para>class <link linkend="_classefc_1_1Parser">efc::Parser</link></para>
+
+<para>Class that wraps a std::string and parses it as a number or as a operation. </para>
+</listitem>
+            <listitem><para>class <link linkend="_classefc_1_1Application">efc::Application</link></para>
+
+<para>Class that contains the application inner logic. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespaceefc">efc</link></para>
+
+<para>Englobes all the classes and functions of the emath text user interface. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_interface_8cpp_1a31756fa19db3072b9c12f6fc08f9fafc">INTERFACE_H</link></para>
+</listitem>
+            <listitem><para>#define <link linkend="_interface_8cpp_1af90117ebc964972ffe7ae17b5f730d84">HPADD</link>&#160;&#160;&#160;1</para>
+</listitem>
+            <listitem><para>#define <link linkend="_interface_8cpp_1a8962df677c8bafedc7d0b8fdb34aa3ec">WPADD</link>&#160;&#160;&#160;2</para>
+</listitem>
+            <listitem><para>#define <link linkend="_interface_8cpp_1abd2f426020aea634b230e411fc244864">CPOSY</link>&#160;&#160;&#160;1</para>
+</listitem>
+            <listitem><para>#define <link linkend="_interface_8cpp_1a7049d967a09a77ec18e2fbcf4b097257">CPOSX</link>&#160;&#160;&#160;2</para>
+</listitem>
+            <listitem><para>#define <link linkend="_interface_8cpp_1a69beff7cd62d1ee993c21243761488ca">PSIZE</link>&#160;&#160;&#160;3</para>
+</listitem>
+            <listitem><para>#define <link linkend="_interface_8cpp_1a2f7ee67c6d799ac1ca1c0c5db00153b2">TOFST</link>&#160;&#160;&#160;2</para>
+</listitem>
+            <listitem><para>#define <link linkend="_interface_8cpp_1ab18877221ac332d9dde05a1494ccbe8c">COLOR_ID</link>&#160;&#160;&#160;1</para>
+</listitem>
+            <listitem><para>#define <link linkend="_interface_8cpp_1a86b2b2d4eda22067d85d2287c118e2d8">KEY_ESC</link>&#160;&#160;&#160;27</para>
+</listitem>
+            <listitem><para>#define <link linkend="_interface_8cpp_1a4fa9fbcc86d5ee884a821459a87f3a54">KEY_TAB</link>&#160;&#160;&#160;9</para>
+</listitem>
+            <listitem><para>#define <link linkend="_interface_8cpp_1af0f1d3bb187064a2c4796a7609ffc7d9">KEY_SPC</link>&#160;&#160;&#160;32</para>
+</listitem>
+            <listitem><para>#define <link linkend="_interface_8cpp_1a76fcab7ae716facf6eefcee03457fe7d">KEY_E</link>&#160;&#160;&#160;101</para>
+</listitem>
+            <listitem><para>#define <link linkend="_interface_8cpp_1a201284fc5d50eea7e2db09fb5495bceb">KEY_Q</link>&#160;&#160;&#160;113</para>
+</listitem>
+            <listitem><para>#define <link linkend="_interface_8cpp_1a5a7fd35018971faa28dacd3e33a8f737">KEY_1</link>&#160;&#160;&#160;49</para>
+</listitem>
+            <listitem><para>#define <link linkend="_interface_8cpp_1a3a146cb397d373be978dfa9fd1dc9b3a">KEY_2</link>&#160;&#160;&#160;50</para>
+</listitem>
+            <listitem><para>#define <link linkend="_interface_8cpp_1a701a135e841c3cfb69d9c5bb1444e198">KEY_3</link>&#160;&#160;&#160;51</para>
+</listitem>
+            <listitem><para>#define <link linkend="_interface_8cpp_1a219891753a1b6ccd51c8ae763905dbf9">KEY_4</link>&#160;&#160;&#160;52</para>
+</listitem>
+            <listitem><para>#define <link linkend="_interface_8cpp_1a8520da12c76efb8ca95ca2068d1ca35c">KEY_5</link>&#160;&#160;&#160;53</para>
+</listitem>
+            <listitem><para>#define <link linkend="_interface_8cpp_1a4dc7a9e1034ed60729179c221d0373b0">LWIN</link>&#160;&#160;&#160;0</para>
+</listitem>
+            <listitem><para>#define <link linkend="_interface_8cpp_1a5edccfd64121a547c7322189e47066ec">RWIN</link>&#160;&#160;&#160;1</para>
+</listitem>
+            <listitem><para>#define <link linkend="_interface_8cpp_1a144dac6971aec659843df69ed0b82d01">BWIN</link>&#160;&#160;&#160;2</para>
+</listitem>
+            <listitem><para>#define <link linkend="_interface_8cpp_1aba4b9a24ebde1c981c8617d903170ff4">SG_FILE</link>&#160;&#160;&#160;&quot;polynomials.json&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interface_8cpp_1a8a5f5e613d0ade39bc451b93d0d66291"/>#define <emphasis role="strong">swp</emphasis>(l,  r,  b)&#160;&#160;&#160;this-&gt;lwin-&gt;set_active(l); this-&gt;rwin-&gt;set_active(r); this-&gt;bwin-&gt;set_active(b);</para>
+</listitem>
+            <listitem><para>#define <link linkend="_interface_8cpp_1a966b680c79ba02cc05d252dc145d64b8">V_MENU</link>&#160;&#160;&#160;{::std::string(&quot;[ESC] Exit program&quot;), ::std::string(&quot;[TAB] Cycle focus&quot;), ::std::string(&quot;[E] Add polynomial&quot;), ::std::string(&quot;[Q] Remove polynomial&quot;), ::std::string(&quot;[SPACE] New operation&quot;)}</para>
+</listitem>
+            <listitem><para>#define <link linkend="_interface_8cpp_1ad0c741ef4d243ca21ea3c32c1a86c55b">V_OPERATION</link>&#160;&#160;&#160;{::std::string(&quot;[ESC] Back&quot;), ::std::string(&quot;[TAB] Cycle focus&quot;), ::std::string(&quot;[1] Evaluate operation&quot;), ::std::string(&quot;[2] Derivative operation&quot;), ::std::string(&quot;[3] Integral operation&quot;), ::std::string(&quot;[4] Root finding operation&quot;), ::std::string(&quot;[5] Drawing operation&quot;), ::std::string(&quot;[SPACE] Arithmetic operations&quot;)}</para>
+</listitem>
+            <listitem><para>#define <link linkend="_interface_8cpp_1a1ba23172bff2dd7bfaf084bd4d440e6d">V_SCROLL</link>&#160;&#160;&#160;{::std::string(&quot;[ESC] Exit program&quot;), ::std::string(&quot;[UP ARROW] Scroll up&quot;), ::std::string(&quot;[DOWN ARROW] Scroll down&quot;)}</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interface_8cpp_1a76c0ce823505e3318aecd871f33c774c"/>#define <emphasis role="strong">swpa</emphasis>(o)&#160;&#160;&#160;this-&gt;active = o; this-&gt;terminal-&gt;swap_active(o);</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_namespaceefc_1af24b42c9a5c7268f47143ad4e796b58c">efc::TokenType</link> { <?linebreak?><link linkend="_namespaceefc_1af24b42c9a5c7268f47143ad4e796b58ca6deff0133907b9e20a1c345afd3c42aa">efc::T_NUMBER</link>
+, <link linkend="_namespaceefc_1af24b42c9a5c7268f47143ad4e796b58ca29baf11d038163906f69fb410fe1d4e0">efc::T_PLUS</link>
+, <link linkend="_namespaceefc_1af24b42c9a5c7268f47143ad4e796b58cae5e24b6fa05d86c2c2b3dd760683a775">efc::T_MINUS</link>
+, <link linkend="_namespaceefc_1af24b42c9a5c7268f47143ad4e796b58cabf0e9e601a2dbc828e933bd240bbe386">efc::T_MULTIPLICATION</link>
+, <?linebreak?><link linkend="_namespaceefc_1af24b42c9a5c7268f47143ad4e796b58ca452aff6a9ea8337e9b27fc43824d0d00">efc::T_DIVISION</link>
+, <link linkend="_namespaceefc_1af24b42c9a5c7268f47143ad4e796b58caa1fcef4084cd9aba09d36f5ed7110b6a">efc::T_EOF</link>
+ }</para>
+
+<para>Enum with all the possible Token types. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_interface_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4">main</link> ()</para>
+
+<para>The main function that creates the <link linkend="_classefc_1_1Application">efc::Application</link> instance, runs it and when it finishes it deletes it. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>This file contains the text user interface for the emath library. </para>
+
+<para>It contains an efc namespace with all the implementations inside<?linebreak?>It comes with the capability to do arithmetic operations with polynomials, parse polynomials,<?linebreak?>solve polynomials, evaluate polynomials and graphically represent polynomials. </para>
+<para>
+Definition in file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_interface_8cpp_1a144dac6971aec659843df69ed0b82d01"/><section>
+    <title>BWIN</title>
+<indexterm><primary>BWIN</primary><secondary>interface.cpp</secondary></indexterm>
+<indexterm><primary>interface.cpp</primary><secondary>BWIN</secondary></indexterm>
+<para><computeroutput>#define BWIN&#160;&#160;&#160;2</computeroutput></para><para>
+Definition at line <link linkend="_interface_8cpp_source_1l00052">52</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<anchor xml:id="_interface_8cpp_1ab18877221ac332d9dde05a1494ccbe8c"/><section>
+    <title>COLOR_ID</title>
+<indexterm><primary>COLOR_ID</primary><secondary>interface.cpp</secondary></indexterm>
+<indexterm><primary>interface.cpp</primary><secondary>COLOR_ID</secondary></indexterm>
+<para><computeroutput>#define COLOR_ID&#160;&#160;&#160;1</computeroutput></para><para>
+Definition at line <link linkend="_interface_8cpp_source_1l00039">39</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<anchor xml:id="_interface_8cpp_1a7049d967a09a77ec18e2fbcf4b097257"/><section>
+    <title>CPOSX</title>
+<indexterm><primary>CPOSX</primary><secondary>interface.cpp</secondary></indexterm>
+<indexterm><primary>interface.cpp</primary><secondary>CPOSX</secondary></indexterm>
+<para><computeroutput>#define CPOSX&#160;&#160;&#160;2</computeroutput></para><para>
+Definition at line <link linkend="_interface_8cpp_source_1l00036">36</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<anchor xml:id="_interface_8cpp_1abd2f426020aea634b230e411fc244864"/><section>
+    <title>CPOSY</title>
+<indexterm><primary>CPOSY</primary><secondary>interface.cpp</secondary></indexterm>
+<indexterm><primary>interface.cpp</primary><secondary>CPOSY</secondary></indexterm>
+<para><computeroutput>#define CPOSY&#160;&#160;&#160;1</computeroutput></para><para>
+Definition at line <link linkend="_interface_8cpp_source_1l00035">35</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<anchor xml:id="_interface_8cpp_1af90117ebc964972ffe7ae17b5f730d84"/><section>
+    <title>HPADD</title>
+<indexterm><primary>HPADD</primary><secondary>interface.cpp</secondary></indexterm>
+<indexterm><primary>interface.cpp</primary><secondary>HPADD</secondary></indexterm>
+<para><computeroutput>#define HPADD&#160;&#160;&#160;1</computeroutput></para><para>
+Definition at line <link linkend="_interface_8cpp_source_1l00033">33</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<anchor xml:id="_interface_8cpp_1a31756fa19db3072b9c12f6fc08f9fafc"/><section>
+    <title>INTERFACE_H</title>
+<indexterm><primary>INTERFACE_H</primary><secondary>interface.cpp</secondary></indexterm>
+<indexterm><primary>interface.cpp</primary><secondary>INTERFACE_H</secondary></indexterm>
+<para><computeroutput>#define INTERFACE_H</computeroutput></para><para>
+Definition at line <link linkend="_interface_8cpp_source_1l00009">9</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<anchor xml:id="_interface_8cpp_1a5a7fd35018971faa28dacd3e33a8f737"/><section>
+    <title>KEY_1</title>
+<indexterm><primary>KEY_1</primary><secondary>interface.cpp</secondary></indexterm>
+<indexterm><primary>interface.cpp</primary><secondary>KEY_1</secondary></indexterm>
+<para><computeroutput>#define KEY_1&#160;&#160;&#160;49</computeroutput></para><para>
+Definition at line <link linkend="_interface_8cpp_source_1l00045">45</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<anchor xml:id="_interface_8cpp_1a3a146cb397d373be978dfa9fd1dc9b3a"/><section>
+    <title>KEY_2</title>
+<indexterm><primary>KEY_2</primary><secondary>interface.cpp</secondary></indexterm>
+<indexterm><primary>interface.cpp</primary><secondary>KEY_2</secondary></indexterm>
+<para><computeroutput>#define KEY_2&#160;&#160;&#160;50</computeroutput></para><para>
+Definition at line <link linkend="_interface_8cpp_source_1l00046">46</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<anchor xml:id="_interface_8cpp_1a701a135e841c3cfb69d9c5bb1444e198"/><section>
+    <title>KEY_3</title>
+<indexterm><primary>KEY_3</primary><secondary>interface.cpp</secondary></indexterm>
+<indexterm><primary>interface.cpp</primary><secondary>KEY_3</secondary></indexterm>
+<para><computeroutput>#define KEY_3&#160;&#160;&#160;51</computeroutput></para><para>
+Definition at line <link linkend="_interface_8cpp_source_1l00047">47</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<anchor xml:id="_interface_8cpp_1a219891753a1b6ccd51c8ae763905dbf9"/><section>
+    <title>KEY_4</title>
+<indexterm><primary>KEY_4</primary><secondary>interface.cpp</secondary></indexterm>
+<indexterm><primary>interface.cpp</primary><secondary>KEY_4</secondary></indexterm>
+<para><computeroutput>#define KEY_4&#160;&#160;&#160;52</computeroutput></para><para>
+Definition at line <link linkend="_interface_8cpp_source_1l00048">48</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<anchor xml:id="_interface_8cpp_1a8520da12c76efb8ca95ca2068d1ca35c"/><section>
+    <title>KEY_5</title>
+<indexterm><primary>KEY_5</primary><secondary>interface.cpp</secondary></indexterm>
+<indexterm><primary>interface.cpp</primary><secondary>KEY_5</secondary></indexterm>
+<para><computeroutput>#define KEY_5&#160;&#160;&#160;53</computeroutput></para><para>
+Definition at line <link linkend="_interface_8cpp_source_1l00049">49</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<anchor xml:id="_interface_8cpp_1a76fcab7ae716facf6eefcee03457fe7d"/><section>
+    <title>KEY_E</title>
+<indexterm><primary>KEY_E</primary><secondary>interface.cpp</secondary></indexterm>
+<indexterm><primary>interface.cpp</primary><secondary>KEY_E</secondary></indexterm>
+<para><computeroutput>#define KEY_E&#160;&#160;&#160;101</computeroutput></para><para>
+Definition at line <link linkend="_interface_8cpp_source_1l00043">43</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<anchor xml:id="_interface_8cpp_1a86b2b2d4eda22067d85d2287c118e2d8"/><section>
+    <title>KEY_ESC</title>
+<indexterm><primary>KEY_ESC</primary><secondary>interface.cpp</secondary></indexterm>
+<indexterm><primary>interface.cpp</primary><secondary>KEY_ESC</secondary></indexterm>
+<para><computeroutput>#define KEY_ESC&#160;&#160;&#160;27</computeroutput></para><para>
+Definition at line <link linkend="_interface_8cpp_source_1l00040">40</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<anchor xml:id="_interface_8cpp_1a201284fc5d50eea7e2db09fb5495bceb"/><section>
+    <title>KEY_Q</title>
+<indexterm><primary>KEY_Q</primary><secondary>interface.cpp</secondary></indexterm>
+<indexterm><primary>interface.cpp</primary><secondary>KEY_Q</secondary></indexterm>
+<para><computeroutput>#define KEY_Q&#160;&#160;&#160;113</computeroutput></para><para>
+Definition at line <link linkend="_interface_8cpp_source_1l00044">44</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<anchor xml:id="_interface_8cpp_1af0f1d3bb187064a2c4796a7609ffc7d9"/><section>
+    <title>KEY_SPC</title>
+<indexterm><primary>KEY_SPC</primary><secondary>interface.cpp</secondary></indexterm>
+<indexterm><primary>interface.cpp</primary><secondary>KEY_SPC</secondary></indexterm>
+<para><computeroutput>#define KEY_SPC&#160;&#160;&#160;32</computeroutput></para><para>
+Definition at line <link linkend="_interface_8cpp_source_1l00042">42</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<anchor xml:id="_interface_8cpp_1a4fa9fbcc86d5ee884a821459a87f3a54"/><section>
+    <title>KEY_TAB</title>
+<indexterm><primary>KEY_TAB</primary><secondary>interface.cpp</secondary></indexterm>
+<indexterm><primary>interface.cpp</primary><secondary>KEY_TAB</secondary></indexterm>
+<para><computeroutput>#define KEY_TAB&#160;&#160;&#160;9</computeroutput></para><para>
+Definition at line <link linkend="_interface_8cpp_source_1l00041">41</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<anchor xml:id="_interface_8cpp_1a4dc7a9e1034ed60729179c221d0373b0"/><section>
+    <title>LWIN</title>
+<indexterm><primary>LWIN</primary><secondary>interface.cpp</secondary></indexterm>
+<indexterm><primary>interface.cpp</primary><secondary>LWIN</secondary></indexterm>
+<para><computeroutput>#define LWIN&#160;&#160;&#160;0</computeroutput></para><para>
+Definition at line <link linkend="_interface_8cpp_source_1l00050">50</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<anchor xml:id="_interface_8cpp_1a69beff7cd62d1ee993c21243761488ca"/><section>
+    <title>PSIZE</title>
+<indexterm><primary>PSIZE</primary><secondary>interface.cpp</secondary></indexterm>
+<indexterm><primary>interface.cpp</primary><secondary>PSIZE</secondary></indexterm>
+<para><computeroutput>#define PSIZE&#160;&#160;&#160;3</computeroutput></para><para>
+Definition at line <link linkend="_interface_8cpp_source_1l00037">37</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<anchor xml:id="_interface_8cpp_1a5edccfd64121a547c7322189e47066ec"/><section>
+    <title>RWIN</title>
+<indexterm><primary>RWIN</primary><secondary>interface.cpp</secondary></indexterm>
+<indexterm><primary>interface.cpp</primary><secondary>RWIN</secondary></indexterm>
+<para><computeroutput>#define RWIN&#160;&#160;&#160;1</computeroutput></para><para>
+Definition at line <link linkend="_interface_8cpp_source_1l00051">51</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<anchor xml:id="_interface_8cpp_1aba4b9a24ebde1c981c8617d903170ff4"/><section>
+    <title>SG_FILE</title>
+<indexterm><primary>SG_FILE</primary><secondary>interface.cpp</secondary></indexterm>
+<indexterm><primary>interface.cpp</primary><secondary>SG_FILE</secondary></indexterm>
+<para><computeroutput>#define SG_FILE&#160;&#160;&#160;&quot;polynomials.json&quot;</computeroutput></para><para>
+Definition at line <link linkend="_interface_8cpp_source_1l00053">53</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<anchor xml:id="_interface_8cpp_1a2f7ee67c6d799ac1ca1c0c5db00153b2"/><section>
+    <title>TOFST</title>
+<indexterm><primary>TOFST</primary><secondary>interface.cpp</secondary></indexterm>
+<indexterm><primary>interface.cpp</primary><secondary>TOFST</secondary></indexterm>
+<para><computeroutput>#define TOFST&#160;&#160;&#160;2</computeroutput></para><para>
+Definition at line <link linkend="_interface_8cpp_source_1l00038">38</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<anchor xml:id="_interface_8cpp_1a966b680c79ba02cc05d252dc145d64b8"/><section>
+    <title>V_MENU</title>
+<indexterm><primary>V_MENU</primary><secondary>interface.cpp</secondary></indexterm>
+<indexterm><primary>interface.cpp</primary><secondary>V_MENU</secondary></indexterm>
+<para><computeroutput>#define V_MENU&#160;&#160;&#160;{::std::string(&quot;[ESC] Exit program&quot;), ::std::string(&quot;[TAB] Cycle focus&quot;), ::std::string(&quot;[E] Add polynomial&quot;), ::std::string(&quot;[Q] Remove polynomial&quot;), ::std::string(&quot;[SPACE] New operation&quot;)}</computeroutput></para><para>
+Definition at line <link linkend="_interface_8cpp_source_1l00831">831</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<anchor xml:id="_interface_8cpp_1ad0c741ef4d243ca21ea3c32c1a86c55b"/><section>
+    <title>V_OPERATION</title>
+<indexterm><primary>V_OPERATION</primary><secondary>interface.cpp</secondary></indexterm>
+<indexterm><primary>interface.cpp</primary><secondary>V_OPERATION</secondary></indexterm>
+<para><computeroutput>#define V_OPERATION&#160;&#160;&#160;{::std::string(&quot;[ESC] Back&quot;), ::std::string(&quot;[TAB] Cycle focus&quot;), ::std::string(&quot;[1] Evaluate operation&quot;), ::std::string(&quot;[2] Derivative operation&quot;), ::std::string(&quot;[3] Integral operation&quot;), ::std::string(&quot;[4] Root finding operation&quot;), ::std::string(&quot;[5] Drawing operation&quot;), ::std::string(&quot;[SPACE] Arithmetic operations&quot;)}</computeroutput></para><para>
+Definition at line <link linkend="_interface_8cpp_source_1l00832">832</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<anchor xml:id="_interface_8cpp_1a1ba23172bff2dd7bfaf084bd4d440e6d"/><section>
+    <title>V_SCROLL</title>
+<indexterm><primary>V_SCROLL</primary><secondary>interface.cpp</secondary></indexterm>
+<indexterm><primary>interface.cpp</primary><secondary>V_SCROLL</secondary></indexterm>
+<para><computeroutput>#define V_SCROLL&#160;&#160;&#160;{::std::string(&quot;[ESC] Exit program&quot;), ::std::string(&quot;[UP ARROW] Scroll up&quot;), ::std::string(&quot;[DOWN ARROW] Scroll down&quot;)}</computeroutput></para><para>
+Definition at line <link linkend="_interface_8cpp_source_1l00833">833</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<anchor xml:id="_interface_8cpp_1a8962df677c8bafedc7d0b8fdb34aa3ec"/><section>
+    <title>WPADD</title>
+<indexterm><primary>WPADD</primary><secondary>interface.cpp</secondary></indexterm>
+<indexterm><primary>interface.cpp</primary><secondary>WPADD</secondary></indexterm>
+<para><computeroutput>#define WPADD&#160;&#160;&#160;2</computeroutput></para><para>
+Definition at line <link linkend="_interface_8cpp_source_1l00034">34</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_interface_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4"/><section>
+    <title>main()</title>
+<indexterm><primary>main</primary><secondary>interface.cpp</secondary></indexterm>
+<indexterm><primary>interface.cpp</primary><secondary>main</secondary></indexterm>
+<para><computeroutput>int main ( )</computeroutput></para><para>
+
+<para>The main function that creates the <link linkend="_classefc_1_1Application">efc::Application</link> instance, runs it and when it finishes it deletes it. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>Int 0 If the <link linkend="_classefc_1_1Application">efc::Application</link> did not end abrubtly </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l01104">1104</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+<para>
+References <link linkend="_interface_8cpp_source_1l01067">efc::Application::init()</link>, and <link linkend="_interface_8cpp_source_1l01074">efc::Application::run()</link>.</para>
+</section>
+</section>
+</section>

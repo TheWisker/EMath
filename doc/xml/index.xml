@@ -1,0 +1,359 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.6" xml:lang="en-US">
+  <compound refid="classefc_1_1Application" kind="class"><name>efc::Application</name>
+    <member refid="classefc_1_1Application_1a26bf17b39d8a3b7a16468826b43e425a" kind="variable"><name>instance</name></member>
+    <member refid="classefc_1_1Application_1a635dea1ef969ead7f88c8ae76981108e" kind="variable"><name>terminal</name></member>
+    <member refid="classefc_1_1Application_1ab292c34e4cb10e3cfae317b4fb9d4b09" kind="variable"><name>storage</name></member>
+    <member refid="classefc_1_1Application_1a1ec2e38410b026a66837d4a0024a9cdf" kind="variable"><name>json</name></member>
+    <member refid="classefc_1_1Application_1a4e741d91d8446d3ecbaa85543d5c8279" kind="variable"><name>polynomials</name></member>
+    <member refid="classefc_1_1Application_1a3fde6e56735191556c786c6c46bcac6a" kind="variable"><name>active</name></member>
+    <member refid="classefc_1_1Application_1a813b224b86170bce0b085af83ca15d10" kind="function"><name>Application</name></member>
+    <member refid="classefc_1_1Application_1a690dae179fe46d15c9456bc63cb291ae" kind="function"><name>save_json</name></member>
+    <member refid="classefc_1_1Application_1a442ecc993b0afec9d0d912706f2c9eeb" kind="function"><name>read_json</name></member>
+    <member refid="classefc_1_1Application_1a5d77c949c8fa11474315bd79e750623c" kind="function"><name>cycle_focus</name></member>
+    <member refid="classefc_1_1Application_1aee1a8b4512ecb9845deeb0c43a512e46" kind="function"><name>scroll_loop</name></member>
+    <member refid="classefc_1_1Application_1ab9a0c62bd0782de76bc82ff96a43e2d8" kind="function"><name>get_polynomial</name></member>
+    <member refid="classefc_1_1Application_1ae83eb076df23d827af71e1662f73246c" kind="function"><name>add_polynomial</name></member>
+    <member refid="classefc_1_1Application_1af766c0e04436c9bf05ecd3759e054dc3" kind="function"><name>remove_polynomial</name></member>
+    <member refid="classefc_1_1Application_1a8c0ef790120bec7ce7d3e343ffe8f659" kind="function"><name>stringify_polynomials</name></member>
+    <member refid="classefc_1_1Application_1af11dea6fee6e95f4eed38bb9a1947ed1" kind="function"><name>main_loop</name></member>
+    <member refid="classefc_1_1Application_1a809af0e5356af9b179873178d9fa1bf9" kind="function"><name>operation_loop</name></member>
+    <member refid="classefc_1_1Application_1ae71606094c937e0e453277a000e3ef0e" kind="function"><name>calculate</name></member>
+    <member refid="classefc_1_1Application_1a5f82f73953cf829ff907ba66434d5599" kind="function"><name>launch_plane</name></member>
+    <member refid="classefc_1_1Application_1a447e888f956520e1586d31749ca891c7" kind="function"><name>to_int</name></member>
+    <member refid="classefc_1_1Application_1a5665c2ca16c2117d8d1f5a4e73a3d35f" kind="function"><name>vtoss</name></member>
+    <member refid="classefc_1_1Application_1aa7092638b0b9b4a7506ee76ffa3725f5" kind="function"><name>ctoss</name></member>
+    <member refid="classefc_1_1Application_1a612f4545a4b1e5d89decab2f5e092d90" kind="function"><name>init</name></member>
+    <member refid="classefc_1_1Application_1a151fab3a86220c774be08189cf8dcb46" kind="function"><name>run</name></member>
+    <member refid="classefc_1_1Application_1adc655697a7fa28de4f8526819eb1a083" kind="function"><name>~Application</name></member>
+  </compound>
+  <compound refid="classemth_1_1Arithmetic" kind="class"><name>emth::Arithmetic</name>
+    <member refid="classemth_1_1Arithmetic_1adddfba367517025753ae37062ac6f483" kind="function"><name>get_divisors</name></member>
+  </compound>
+  <compound refid="classEParserTest" kind="class"><name>EParserTest</name>
+    <member refid="classEParserTest_1a84cd16fd9d2f4b968c36ec280b7a7423" kind="variable"><name>lexer</name></member>
+    <member refid="classEParserTest_1a272d2e82239321467bce8dacd326bf6f" kind="variable"><name>parser</name></member>
+    <member refid="classEParserTest_1abcb56f6fe9d5fd3ca9320b5f981bc52c" kind="function"><name>EParserTest</name></member>
+    <member refid="classEParserTest_1a3f86e942a3c31352d1a6019e22fabe14" kind="function"><name>set_input</name></member>
+  </compound>
+  <compound refid="classefc_1_1IWindow" kind="class"><name>efc::IWindow</name>
+    <member refid="classefc_1_1IWindow_1af8bd92992015e0b7f07a726ed2f329e5" kind="function"><name>IWindow</name></member>
+    <member refid="classefc_1_1IWindow_1a84cb0d425e279cd2b15dc2b43cb520d2" kind="function"><name>get_title_y</name></member>
+    <member refid="classefc_1_1IWindow_1a91e48b892bd02b7c11020fdfc7e7c05d" kind="function"><name>get_title_x</name></member>
+    <member refid="classefc_1_1IWindow_1a373ef8f5d58d8d99852a90f7096cfdef" kind="function"><name>~IWindow</name></member>
+  </compound>
+  <compound refid="classefc_1_1Lexer" kind="class"><name>efc::Lexer</name>
+    <member refid="classefc_1_1Lexer_1ac16277e2dd67e2bd313025141888818f" kind="variable"><name>_input</name></member>
+    <member refid="classefc_1_1Lexer_1aa83595f2703d850a65e78db3b25d348f" kind="variable"><name>_pos</name></member>
+    <member refid="classefc_1_1Lexer_1aa970e0a4c885ed01ee6438364a5e4be3" kind="function"><name>clean</name></member>
+    <member refid="classefc_1_1Lexer_1a87c191b744deb54023a13622b373557f" kind="function"><name>is_integer</name></member>
+    <member refid="classefc_1_1Lexer_1ab12855801b122c387031155dec257b50" kind="function"><name>Lexer</name></member>
+    <member refid="classefc_1_1Lexer_1a3eb3b61f1ba41e9d3150052b6280167b" kind="function"><name>next</name></member>
+    <member refid="classefc_1_1Lexer_1a77d56d461130cb509b3831daa7e06851" kind="function"><name>~Lexer</name></member>
+  </compound>
+  <compound refid="classemthp_1_1Lexer" kind="class"><name>emthp::Lexer</name>
+    <member refid="classemthp_1_1Lexer_1a9d9656d89fd1ef35aec1a8af4ff56cd5" kind="variable"><name>_input</name></member>
+    <member refid="classemthp_1_1Lexer_1a6e704edea7f4eaf079d0674eeb57ffb7" kind="variable"><name>_pos</name></member>
+    <member refid="classemthp_1_1Lexer_1ad3560b27e6813e3e0aeaa48b19dc5dd2" kind="function"><name>Lexer</name></member>
+    <member refid="classemthp_1_1Lexer_1a5116f34af8ec69634dc9202ae2d48b4a" kind="function"><name>operator=</name></member>
+    <member refid="classemthp_1_1Lexer_1a629ea5f393603e05dad17b004caba27d" kind="function"><name>next</name></member>
+    <member refid="classemthp_1_1Lexer_1a273b288699191ec896c9857cfe7f5704" kind="function"><name>back</name></member>
+    <member refid="classemthp_1_1Lexer_1a638bde6ca6cb63363ef550a54261f3eb" kind="function"><name>read_number</name></member>
+    <member refid="classemthp_1_1Lexer_1a4f42a6e9643892a58267d5e37baf261f" kind="function"><name>clean</name></member>
+    <member refid="classemthp_1_1Lexer_1af91a6c3eb34a9ef37002bfb7b500259e" kind="function"><name>is_digit</name></member>
+  </compound>
+  <compound refid="classemth_1_1Monomial" kind="class"><name>emth::Monomial</name>
+    <member refid="classemth_1_1Monomial_1a997731ccf2707a956c8e236b25451702" kind="variable"><name>coeff</name></member>
+    <member refid="classemth_1_1Monomial_1a7ac5ee0ccb8199fb3dc40d93059d95ba" kind="variable"><name>degree</name></member>
+    <member refid="classemth_1_1Monomial_1ae6048a5e8de2117072def861911aa4a7" kind="function"><name>Monomial</name></member>
+    <member refid="classemth_1_1Monomial_1a70ba615f776f89452b3b11bb9dfe045e" kind="function"><name>Monomial</name></member>
+    <member refid="classemth_1_1Monomial_1aa5fc7752eb6a5db663872dd7298140c1" kind="function"><name>Monomial</name></member>
+    <member refid="classemth_1_1Monomial_1a0d77a762defbcd2cb1925e3258f6158f" kind="function"><name>Monomial</name></member>
+    <member refid="classemth_1_1Monomial_1a3de7a92cfd27acad4e1ff3d2158536f4" kind="function"><name>operator=</name></member>
+    <member refid="classemth_1_1Monomial_1a7ea9ffbef1c53c8e0f7a9bfda2dcb691" kind="function"><name>operator=</name></member>
+    <member refid="classemth_1_1Monomial_1a2f9d14fa6443fc160258121c7907b989" kind="function"><name>operator==</name></member>
+    <member refid="classemth_1_1Monomial_1ab7f80ead25e2f5d4ad80cdbbfe49d5e3" kind="function"><name>operator!=</name></member>
+    <member refid="classemth_1_1Monomial_1a995abc13b689075b21b43a30ce043e72" kind="function"><name>operator&gt;</name></member>
+    <member refid="classemth_1_1Monomial_1a33c3c8003322cc2a8f2c4f2e1b44a387" kind="function"><name>operator&lt;</name></member>
+    <member refid="classemth_1_1Monomial_1a36079411f2ae6f90e71a09b6723ecf35" kind="function"><name>operator&gt;=</name></member>
+    <member refid="classemth_1_1Monomial_1a80fe0433858cf335c1e29ff15aa4bcb8" kind="function"><name>operator&lt;=</name></member>
+    <member refid="classemth_1_1Monomial_1aa545290af910fc7a0c68bc02decd41c5" kind="function"><name>operator+</name></member>
+    <member refid="classemth_1_1Monomial_1aee07c6d65bc594b8eaaa4d0299840e05" kind="function"><name>operator-</name></member>
+    <member refid="classemth_1_1Monomial_1a98a931372dbd0ddafe82ce5601f30836" kind="function"><name>operator*</name></member>
+    <member refid="classemth_1_1Monomial_1a55982755a6223cbf977e55979fcad8ff" kind="function"><name>operator/</name></member>
+    <member refid="classemth_1_1Monomial_1a8316e22fbd1420a2302fcf8bd6d3b6c2" kind="function"><name>operator%</name></member>
+    <member refid="classemth_1_1Monomial_1a7cac7880021c7cf783daa15ee00b94d1" kind="function"><name>operator+=</name></member>
+    <member refid="classemth_1_1Monomial_1a45a932afba1f1f38c5ca16b6c16fd3c8" kind="function"><name>operator-=</name></member>
+    <member refid="classemth_1_1Monomial_1a59e6ec6722fe75349e84c6c3397279f5" kind="function"><name>operator*=</name></member>
+    <member refid="classemth_1_1Monomial_1a1bdb99f916437cd3a7c127b71bec5787" kind="function"><name>operator/=</name></member>
+    <member refid="classemth_1_1Monomial_1ab4c89014e13b2f35f264492486a935fe" kind="function"><name>operator%=</name></member>
+    <member refid="classemth_1_1Monomial_1ac0ea8a4e12483048519184c536c27124" kind="function"><name>get_coeff</name></member>
+    <member refid="classemth_1_1Monomial_1a1a11b6043ddc48006fe37241bb6bc6d0" kind="function"><name>get_degree</name></member>
+    <member refid="classemth_1_1Monomial_1adae9aaac815a7c86ec651e5bdb3d3043" kind="function"><name>set_coeff</name></member>
+    <member refid="classemth_1_1Monomial_1ab695cba07bcbf08cfec7d32e0bf4cc20" kind="function"><name>set_degree</name></member>
+    <member refid="classemth_1_1Monomial_1a2940ea82172b382f8354fe4d1556b996" kind="function"><name>get_expression</name></member>
+    <member refid="classemth_1_1Monomial_1a50a76c251c4a66c3522b78f0aba3c157" kind="function"><name>get_value</name></member>
+    <member refid="classemth_1_1Monomial_1aecedb04edd52a33ba0ee110eedbd74db" kind="function"><name>~Monomial</name></member>
+    <member refid="classemth_1_1Monomial_1a01135c72790e63387bc07601dd3acc5b" kind="friend"><name>operator&lt;&lt;</name></member>
+    <member refid="classemth_1_1Monomial_1ada77c9969b0422090c05636a895c0e8e" kind="friend"><name>operator&lt;&lt;</name></member>
+    <member refid="classemth_1_1Monomial_1a7cba04b35f6b0b4b3dfe909aca0391cb" kind="function"><name>swap</name></member>
+  </compound>
+  <compound refid="classefc_1_1OWindow" kind="class"><name>efc::OWindow</name>
+    <member refid="classefc_1_1OWindow_1abcee5a72d7f758a825ae091188ad6ec9" kind="variable"><name>s</name></member>
+    <member refid="classefc_1_1OWindow_1abcfef6db088e2ca089dee62f6017b2fe" kind="variable"><name>d</name></member>
+    <member refid="classefc_1_1OWindow_1a004301001ab6897854d50d001524c952" kind="function"><name>OWindow</name></member>
+    <member refid="classefc_1_1OWindow_1a6ca5318015cbded809b6e0304c64466e" kind="function"><name>get_scroll_index</name></member>
+    <member refid="classefc_1_1OWindow_1a3b2e4975e221006d0fa253438e74b2b9" kind="function"><name>get_data</name></member>
+    <member refid="classefc_1_1OWindow_1a01886b4a25cc33d062c63e1908e47dc7" kind="function"><name>get_data_size</name></member>
+    <member refid="classefc_1_1OWindow_1a6fa50bf6b31b39e3c9c2a14cedd70aac" kind="function"><name>get_title_y</name></member>
+    <member refid="classefc_1_1OWindow_1aa0224c53de48b27b7bc791f3ff1fe9fc" kind="function"><name>get_title_x</name></member>
+    <member refid="classefc_1_1OWindow_1ae8e1bfbd75a83c820e825a73765a5691" kind="function"><name>set_data</name></member>
+    <member refid="classefc_1_1OWindow_1aac80548173360aa9c8336b60330a14a8" kind="function"><name>scroll_up</name></member>
+    <member refid="classefc_1_1OWindow_1a360df1d628255154c3cefce86d88499d" kind="function"><name>scroll_down</name></member>
+    <member refid="classefc_1_1OWindow_1a95ca8430661cb7bb742b4bba9b5a4952" kind="function"><name>~OWindow</name></member>
+  </compound>
+  <compound refid="classefc_1_1Parser" kind="class"><name>efc::Parser</name>
+    <member refid="classefc_1_1Parser_1a9725e73ad99732a3da5196ce541daefc" kind="variable"><name>_lexer</name></member>
+    <member refid="classefc_1_1Parser_1ad95836dabb6525baf080aa8d0fdb3b56" kind="function"><name>Parser</name></member>
+    <member refid="classefc_1_1Parser_1ad801320ff4014bb3e2822a2b56dc246e" kind="function"><name>parse_number</name></member>
+    <member refid="classefc_1_1Parser_1aa3007aab2177728edcfba4c0e4bb460f" kind="function"><name>parse_operation</name></member>
+    <member refid="classefc_1_1Parser_1a56a3102383a805ae6e3ed858f3efbfe1" kind="function"><name>~Parser</name></member>
+  </compound>
+  <compound refid="classemthp_1_1Parser" kind="class"><name>emthp::Parser</name>
+    <member refid="classemthp_1_1Parser_1ad89704cde9db5580c48811d3490d364f" kind="variable"><name>_lexer</name></member>
+    <member refid="classemthp_1_1Parser_1a4eb818d42bac1e3e3419c848e521cbdb" kind="function"><name>Parser</name></member>
+    <member refid="classemthp_1_1Parser_1ada7e099319ce350bb2d5dcfd5ea8b36a" kind="function"><name>operator=</name></member>
+    <member refid="classemthp_1_1Parser_1a933df3ba2501887aa6d947bfe6eafe4b" kind="function"><name>parse_polynomial</name></member>
+    <member refid="classemthp_1_1Parser_1a590566c3e893515a0dbb9db032a889cd" kind="function"><name>parse_monomial</name></member>
+    <member refid="classemthp_1_1Parser_1adb63bcf01700c40eea06bd1db3d566e8" kind="function"><name>parse_number</name></member>
+  </compound>
+  <compound refid="classefc_1_1Plane" kind="class"><name>efc::Plane</name>
+    <member refid="classefc_1_1Plane_1a9747c7ae721d8ed0802b0f5ba4c5046b" kind="variable"><name>xogn</name></member>
+    <member refid="classefc_1_1Plane_1a4277e9297d50cca99d7b9dc805afe9da" kind="variable"><name>yogn</name></member>
+    <member refid="classefc_1_1Plane_1a40f8caf029cbb6dd9791fb6549f5c371" kind="variable"><name>_xogn</name></member>
+    <member refid="classefc_1_1Plane_1ad99f943f9e7003cc993844daca1e66b5" kind="variable"><name>_yogn</name></member>
+    <member refid="classefc_1_1Plane_1a56f1e4d70f873583d71338769c846281" kind="variable"><name>domain</name></member>
+    <member refid="classefc_1_1Plane_1af3b69a0b97fe039ba70edc61f390e1c5" kind="variable"><name>image</name></member>
+    <member refid="classefc_1_1Plane_1aa339c940ad9f49d1e5e556d24117aab9" kind="variable"><name>function</name></member>
+    <member refid="classefc_1_1Plane_1a328b55648088128e29e01ee42cd600fd" kind="variable"><name>font</name></member>
+    <member refid="classefc_1_1Plane_1ac6ea3d776ca07561a4d7ba3f2c32f878" kind="variable"><name>tooltip</name></member>
+    <member refid="classefc_1_1Plane_1aa212846ffd8e77176560d4bf9e794eec" kind="variable"><name>axes</name></member>
+    <member refid="classefc_1_1Plane_1a781ba0c9b6b13978ddc6ebdf0745001a" kind="variable"><name>window</name></member>
+    <member refid="classefc_1_1Plane_1a9d2dc87d59fe49cbb266c502633f9f03" kind="variable"><name>line</name></member>
+    <member refid="classefc_1_1Plane_1a04c414305224c91390311aa60c9cf7b8" kind="variable"><name>intersection</name></member>
+    <member refid="classefc_1_1Plane_1ab18ac66ecb99594953163e735c89d308" kind="variable"><name>representation</name></member>
+    <member refid="classefc_1_1Plane_1a0322d412e5fa1ea41c5dcf7fe14e7df0" kind="function"><name>draw</name></member>
+    <member refid="classefc_1_1Plane_1ab3444096cc5192892c611a9b701aea57" kind="function"><name>populate</name></member>
+    <member refid="classefc_1_1Plane_1a9d8c3d6344387936a54378f80ea64a5f" kind="function"><name>resize</name></member>
+    <member refid="classefc_1_1Plane_1aead86518dab0bbea050a5399bc85a801" kind="function"><name>inverse</name></member>
+    <member refid="classefc_1_1Plane_1a59f6b4316752f2dfb6b56b2196017a4d" kind="function"><name>Plane</name></member>
+    <member refid="classefc_1_1Plane_1a972b3c48d4213d433dc4b3e99ded3727" kind="function"><name>run</name></member>
+  </compound>
+  <compound refid="classemth_1_1Polynomial" kind="class"><name>emth::Polynomial</name>
+    <member refid="classemth_1_1Polynomial_1a5fe4c61292355d30836f1de02a255162" kind="variable"><name>monomials</name></member>
+    <member refid="classemth_1_1Polynomial_1a7a6489fae8e62f7171ba1b094253f206" kind="function"><name>Polynomial</name></member>
+    <member refid="classemth_1_1Polynomial_1af0f389de210155a112852f013aaa18d3" kind="function"><name>Polynomial</name></member>
+    <member refid="classemth_1_1Polynomial_1a98e8835f620927464b617d6b6ebd1329" kind="function"><name>Polynomial</name></member>
+    <member refid="classemth_1_1Polynomial_1a084aed33935ade2f689f09103daaac53" kind="function"><name>Polynomial</name></member>
+    <member refid="classemth_1_1Polynomial_1a3612ca54a3bef015a9809d77af2be355" kind="function"><name>Polynomial</name></member>
+    <member refid="classemth_1_1Polynomial_1a3f55b493797c89e9079c7019fb905059" kind="function"><name>Polynomial</name></member>
+    <member refid="classemth_1_1Polynomial_1a33ba807b5465ead26edd077d8289f4f3" kind="function"><name>operator=</name></member>
+    <member refid="classemth_1_1Polynomial_1a93818b33532e3f8e80fa614ca8287479" kind="function"><name>operator=</name></member>
+    <member refid="classemth_1_1Polynomial_1ad042381e1713be21b332d3f8fbdfd0a7" kind="function"><name>operator==</name></member>
+    <member refid="classemth_1_1Polynomial_1a40fefffeb0043d193d5aa7ecb3adba55" kind="function"><name>operator!=</name></member>
+    <member refid="classemth_1_1Polynomial_1ae358f6f9b93783601af6999b67e0dafb" kind="function"><name>operator&gt;</name></member>
+    <member refid="classemth_1_1Polynomial_1a0f0640fcb0dd0a59b685a646d494bfc7" kind="function"><name>operator&lt;</name></member>
+    <member refid="classemth_1_1Polynomial_1a2321b93b1482b6677dbd125739848724" kind="function"><name>operator&gt;=</name></member>
+    <member refid="classemth_1_1Polynomial_1a7b234cebd032016c0a8ece92a4f68141" kind="function"><name>operator&lt;=</name></member>
+    <member refid="classemth_1_1Polynomial_1a9d46082ad38edc17f875127208626281" kind="function"><name>operator+</name></member>
+    <member refid="classemth_1_1Polynomial_1a1cd22ae48bfcb14b53835730091e5f4d" kind="function"><name>operator-</name></member>
+    <member refid="classemth_1_1Polynomial_1ac461b9aeb93c33d540f0a918bdefd203" kind="function"><name>operator*</name></member>
+    <member refid="classemth_1_1Polynomial_1aa2a054dcc203257bfc3d06621ce876b1" kind="function"><name>operator/</name></member>
+    <member refid="classemth_1_1Polynomial_1a56a499385ad24715b1240611217277c5" kind="function"><name>operator%</name></member>
+    <member refid="classemth_1_1Polynomial_1a791a5aa2207acd2fccc4124ff36eb0bf" kind="function"><name>operator+=</name></member>
+    <member refid="classemth_1_1Polynomial_1af545354b4dade3e286be26207d02a442" kind="function"><name>operator-=</name></member>
+    <member refid="classemth_1_1Polynomial_1abdeb3769c43eec881ae8ed1a20a5d01d" kind="function"><name>operator*=</name></member>
+    <member refid="classemth_1_1Polynomial_1ac5a003db2381c99c97c4a78341145b26" kind="function"><name>operator/=</name></member>
+    <member refid="classemth_1_1Polynomial_1a2e6bd9b16b732b38caabf950acfd5cb2" kind="function"><name>operator%=</name></member>
+    <member refid="classemth_1_1Polynomial_1a7eb2c1c9bbbb013220d24f5d2a24a963" kind="function"><name>get_degree</name></member>
+    <member refid="classemth_1_1Polynomial_1a02fda10cd15abff226c5a8013f4928f7" kind="function"><name>get_monomials</name></member>
+    <member refid="classemth_1_1Polynomial_1a66649c1d2b624555d375096e27bc9855" kind="function"><name>is_empty</name></member>
+    <member refid="classemth_1_1Polynomial_1a1dc4825c3d5005949f0869e204e4fedc" kind="function"><name>push_monomial</name></member>
+    <member refid="classemth_1_1Polynomial_1acd1befa11dd8d4e3da213114dc88cff7" kind="function"><name>push_monomial</name></member>
+    <member refid="classemth_1_1Polynomial_1a6f3eb1e674dbce5f0a172d8b5fd7ab2b" kind="function"><name>get_expression</name></member>
+    <member refid="classemth_1_1Polynomial_1a644cd3ebe3afa676cc3db99557f6eed3" kind="function"><name>get_value</name></member>
+    <member refid="classemth_1_1Polynomial_1a1f27fae485c94bb0f00a46c50214ab37" kind="function"><name>get_derivative</name></member>
+    <member refid="classemth_1_1Polynomial_1ac87df7094ce26a8e9cba6df79a3eaf2d" kind="function"><name>get_integral</name></member>
+    <member refid="classemth_1_1Polynomial_1adcba2128b5bfcc6ee15023684edc53f2" kind="function"><name>get_roots</name></member>
+    <member refid="classemth_1_1Polynomial_1a056e1df4102b0d0add0e8e2805401b82" kind="function"><name>~Polynomial</name></member>
+    <member refid="classemth_1_1Polynomial_1a66068882dda621b9bca207d72a9fb2d7" kind="friend"><name>operator&lt;&lt;</name></member>
+    <member refid="classemth_1_1Polynomial_1a444148f9a6121f040d0149c4b5d94ac5" kind="friend"><name>operator&lt;&lt;</name></member>
+    <member refid="classemth_1_1Polynomial_1a8b4f2d72f0fa4b1e5fc3d2fc434d1d52" kind="function"><name>swap</name></member>
+    <member refid="classemth_1_1Polynomial_1a3d28b34143d180686a38f5b12900a38c" kind="function"><name>redux</name></member>
+  </compound>
+  <compound refid="classefc_1_1Storage" kind="class"><name>efc::Storage</name>
+    <member refid="classefc_1_1Storage_1a70bb36f639d31d0341b17fd262ff0215" kind="variable"><name>filename</name></member>
+    <member refid="classefc_1_1Storage_1a9a9cfce79f418f1ad0ee0bb53bb9d048" kind="function"><name>Storage</name></member>
+    <member refid="classefc_1_1Storage_1a62ca8189455b39656aa25531c3875cbd" kind="function"><name>read</name></member>
+    <member refid="classefc_1_1Storage_1af2c8369dcb906c07867a931387659788" kind="function"><name>write</name></member>
+    <member refid="classefc_1_1Storage_1ac141ea203205c34ebd653682d88b7e2c" kind="function"><name>exists</name></member>
+    <member refid="classefc_1_1Storage_1a5d83512b8daaf9e2cb188f877cb7bb5b" kind="function"><name>~Storage</name></member>
+  </compound>
+  <compound refid="classefc_1_1Terminal" kind="class"><name>efc::Terminal</name>
+    <member refid="classefc_1_1Terminal_1ae5cb3d5788e8c462b43211dd585bc4d7" kind="variable"><name>instance</name></member>
+    <member refid="classefc_1_1Terminal_1a522bbbc47d0ab5023d053af9898984c4" kind="variable"><name>lwin</name></member>
+    <member refid="classefc_1_1Terminal_1afe39d6953778243999d633f5fe2448d5" kind="variable"><name>rwin</name></member>
+    <member refid="classefc_1_1Terminal_1abf489ab89aa473897bc808d726960b8e" kind="variable"><name>bwin</name></member>
+    <member refid="classefc_1_1Terminal_1a7d909c25717e74f2e4227bed55e2dcbc" kind="function"><name>Terminal</name></member>
+    <member refid="classefc_1_1Terminal_1a985ca5779ab03587d9c51cc6e24ecefa" kind="function"><name>cbounds</name></member>
+    <member refid="classefc_1_1Terminal_1a86da6924013493d6a129bb1140a81307" kind="function"><name>wflush</name></member>
+    <member refid="classefc_1_1Terminal_1acaf638a07e093298ba3c19fa0db448b6" kind="function"><name>resize</name></member>
+    <member refid="classefc_1_1Terminal_1a298926a6d67a4cea719f24aeb8132f2d" kind="function"><name>launch</name></member>
+    <member refid="classefc_1_1Terminal_1aa058bcd027c3dc1212fb53eb0a6ecafb" kind="function"><name>init</name></member>
+    <member refid="classefc_1_1Terminal_1a873c2d27e271e805c0665ff6952bf8a2" kind="function"><name>flush</name></member>
+    <member refid="classefc_1_1Terminal_1a9103a252f46463cd09adc2bb2436fa30" kind="function"><name>set_ltitle</name></member>
+    <member refid="classefc_1_1Terminal_1acc6236b69a0d0a2b1c9ae9cb3e6b1056" kind="function"><name>set_rtitle</name></member>
+    <member refid="classefc_1_1Terminal_1ad8cb9d988b58a3b0d59dd703b47467fa" kind="function"><name>set_prompt</name></member>
+    <member refid="classefc_1_1Terminal_1aa705ec16ca8fcc9549b90793c58b4d83" kind="function"><name>set_ldata</name></member>
+    <member refid="classefc_1_1Terminal_1ac9e693242036242db200bbbebc3d83e6" kind="function"><name>set_rdata</name></member>
+    <member refid="classefc_1_1Terminal_1a966affe71a3fd3c461a907e41a609cc8" kind="function"><name>get_short_input</name></member>
+    <member refid="classefc_1_1Terminal_1a49bb9b2d0fc46335d4426c79b0b1f781" kind="function"><name>get_long_input</name></member>
+    <member refid="classefc_1_1Terminal_1ab06e104fb3af3517e2e0413e26accd9a" kind="function"><name>scroll_down</name></member>
+    <member refid="classefc_1_1Terminal_1a2b2ddbc6125d3a7ffa8101e161066034" kind="function"><name>scroll_up</name></member>
+    <member refid="classefc_1_1Terminal_1ac8d0de8abed39f84908622187f5cb95e" kind="function"><name>echo_result</name></member>
+    <member refid="classefc_1_1Terminal_1ad3b80961a79f1534316d8e57ec4ada30" kind="function"><name>swap_active</name></member>
+    <member refid="classefc_1_1Terminal_1a64a6c41cf5396f6a5ab91a75e44faac6" kind="function"><name>~Terminal</name></member>
+  </compound>
+  <compound refid="structefc_1_1Token" kind="struct"><name>efc::Token</name>
+    <member refid="structefc_1_1Token_1abd56361d2f52a2c345e106f8e2ec4197" kind="variable"><name>type</name></member>
+    <member refid="structefc_1_1Token_1a2bcb3afeb2d611ead7041f924d621587" kind="variable"><name>c</name></member>
+    <member refid="structefc_1_1Token_1a8fbcc67cb189f58f5e1a6af27e059c2b" kind="variable"><name>n</name></member>
+    <member refid="structefc_1_1Token_1ad5ee17926cf07cb994367a0d86717248" kind="variable"><name>value</name></member>
+  </compound>
+  <compound refid="structemthp_1_1Token" kind="struct"><name>emthp::Token</name>
+    <member refid="structemthp_1_1Token_1ae532928c40581bc20349979955dfb2f3" kind="variable"><name>type</name></member>
+    <member refid="structemthp_1_1Token_1a0512f6f4c2a7dcf724d582d971393c2c" kind="variable"><name>value</name></member>
+  </compound>
+  <compound refid="unionvalue" kind="union"><name>value</name>
+  </compound>
+  <compound refid="classefc_1_1Window" kind="class"><name>efc::Window</name>
+    <member refid="classefc_1_1Window_1add171873b1a7a5c5e1263e8b3a61b6f9" kind="variable"><name>c</name></member>
+    <member refid="classefc_1_1Window_1aea9ca4761c6305661f459b77f9e95f87" kind="variable"><name>a</name></member>
+    <member refid="classefc_1_1Window_1a7dc5e87a2ff69618b81041809b052e70" kind="variable"><name>t</name></member>
+    <member refid="classefc_1_1Window_1a560218b58e4b8e0a87d17d9d51c75ee0" kind="variable"><name>y</name></member>
+    <member refid="classefc_1_1Window_1a07e3095c7f4d7320c008d5fd67692b61" kind="variable"><name>x</name></member>
+    <member refid="classefc_1_1Window_1a282f9857345806e5232bbbb0bc88c60c" kind="variable"><name>h</name></member>
+    <member refid="classefc_1_1Window_1ac189a55138f75bc910051d1598957018" kind="variable"><name>w</name></member>
+    <member refid="classefc_1_1Window_1ab18720ed62461884b759594ed60fb824" kind="variable"><name>o</name></member>
+    <member refid="classefc_1_1Window_1ae5fb6b6600ebc4b528d664e8c6947ab2" kind="function"><name>Window</name></member>
+    <member refid="classefc_1_1Window_1a933c7e9e67d7423b1facb73a26a9fba3" kind="function"><name>get_title</name></member>
+    <member refid="classefc_1_1Window_1a433fbcc875c6e134a8c273c46525bca2" kind="function"><name>get_y</name></member>
+    <member refid="classefc_1_1Window_1a1920c8ff02f120a08252797280a3a2aa" kind="function"><name>get_x</name></member>
+    <member refid="classefc_1_1Window_1a0f64ddda75fb64027eaa7b7dd767ec4e" kind="function"><name>get_height</name></member>
+    <member refid="classefc_1_1Window_1a58e0eb74a3b1b20a268dae29d4525dad" kind="function"><name>get_width</name></member>
+    <member refid="classefc_1_1Window_1aad12ba19cc558f386a4f2f9e7b6f1acc" kind="function"><name>get_title_size</name></member>
+    <member refid="classefc_1_1Window_1aead8ed85b65db6a0b0c27d34903b8db5" kind="function"><name>set_title</name></member>
+    <member refid="classefc_1_1Window_1adb89ea880c531bb3e611378ec1f10f5f" kind="function"><name>set_coords</name></member>
+    <member refid="classefc_1_1Window_1ad9f8b6f349dfe11addce9781a4e32ffb" kind="function"><name>set_size</name></member>
+    <member refid="classefc_1_1Window_1a18c9f4d362aa8ae7cd322e038828e4de" kind="function"><name>set_active</name></member>
+    <member refid="classefc_1_1Window_1a910926d607d7ac88e4d5e6640a52836a" kind="function"><name>get_title_y</name></member>
+    <member refid="classefc_1_1Window_1a2e177d9c72e6f7fcf29371df5bc08bea" kind="function"><name>get_title_x</name></member>
+    <member refid="classefc_1_1Window_1a2f46320775d22ce67fdbacf50772fd02" kind="function"><name>needs_update</name></member>
+    <member refid="classefc_1_1Window_1a64f20e7199e6a9e85c1db282cd820ad6" kind="function"><name>is_active</name></member>
+    <member refid="classefc_1_1Window_1a2feeecd90c7c634a15c4e84a3921ee14" kind="function"><name>place</name></member>
+    <member refid="classefc_1_1Window_1ac8ec94fb12450e4fc37ea2adc30f81f8" kind="function"><name>~Window</name></member>
+  </compound>
+  <compound refid="namespaceefc" kind="namespace"><name>efc</name>
+    <member refid="namespaceefc_1af24b42c9a5c7268f47143ad4e796b58c" kind="enum"><name>TokenType</name></member>
+    <member refid="namespaceefc_1af24b42c9a5c7268f47143ad4e796b58ca6deff0133907b9e20a1c345afd3c42aa" kind="enumvalue"><name>T_NUMBER</name></member>
+    <member refid="namespaceefc_1af24b42c9a5c7268f47143ad4e796b58ca29baf11d038163906f69fb410fe1d4e0" kind="enumvalue"><name>T_PLUS</name></member>
+    <member refid="namespaceefc_1af24b42c9a5c7268f47143ad4e796b58cae5e24b6fa05d86c2c2b3dd760683a775" kind="enumvalue"><name>T_MINUS</name></member>
+    <member refid="namespaceefc_1af24b42c9a5c7268f47143ad4e796b58cabf0e9e601a2dbc828e933bd240bbe386" kind="enumvalue"><name>T_MULTIPLICATION</name></member>
+    <member refid="namespaceefc_1af24b42c9a5c7268f47143ad4e796b58ca452aff6a9ea8337e9b27fc43824d0d00" kind="enumvalue"><name>T_DIVISION</name></member>
+    <member refid="namespaceefc_1af24b42c9a5c7268f47143ad4e796b58caa1fcef4084cd9aba09d36f5ed7110b6a" kind="enumvalue"><name>T_EOF</name></member>
+  </compound>
+  <compound refid="namespaceemth" kind="namespace"><name>emth</name>
+  </compound>
+  <compound refid="namespaceemthp" kind="namespace"><name>emthp</name>
+    <member refid="namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6b" kind="enum"><name>TokenType</name></member>
+    <member refid="namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6bab0be00ab2ea8e4a56ab22f220c7de9bf" kind="enumvalue"><name>T_PLUS</name></member>
+    <member refid="namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6ba636464f87ad08d661e8f664b4a5903db" kind="enumvalue"><name>T_MINUS</name></member>
+    <member refid="namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6bad7549ed90d6122d0761f3acfb1b56923" kind="enumvalue"><name>T_NUMBER</name></member>
+    <member refid="namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6ba6aa4d0d8ca8e058abc4e4e38f466bbd2" kind="enumvalue"><name>T_VARIABLE</name></member>
+    <member refid="namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6ba7b607d6341806fa8bc4505c44670de8c" kind="enumvalue"><name>T_EXPONENT</name></member>
+    <member refid="namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6ba5a13d17b3d73d6aa1a545e430284ec6d" kind="enumvalue"><name>T_EOF</name></member>
+  </compound>
+  <compound refid="namespacetesting" kind="namespace"><name>testing</name>
+  </compound>
+  <compound refid="emath_8h" kind="file"><name>emath.h</name>
+    <member refid="emath_8h_1acdecae10545d6a882ff7b96070c917dc" kind="define"><name>R_TOL</name></member>
+    <member refid="emath_8h_1afb3809880866f9d0fcfdf6384742b15b" kind="define"><name>R_ITR</name></member>
+  </compound>
+  <compound refid="eparser_8h" kind="file"><name>eparser.h</name>
+  </compound>
+  <compound refid="src_2emath_8cpp" kind="file"><name>emath.cpp</name>
+  </compound>
+  <compound refid="test_2emath_8cpp" kind="file"><name>emath.cpp</name>
+    <member refid="test_2emath_8cpp_1aa47d761ab4eda6102588b7c387bf9414" kind="function"><name>vequal</name></member>
+    <member refid="test_2emath_8cpp_1ab880f6083075d1f2c3c6ca54d36fba6f" kind="function"><name>test_monomial</name></member>
+    <member refid="test_2emath_8cpp_1ada79f825efa86697f40154987f0f6129" kind="function"><name>test_polynomial</name></member>
+    <member refid="test_2emath_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="src_2eparser_8cpp" kind="file"><name>eparser.cpp</name>
+  </compound>
+  <compound refid="test_2eparser_8cpp" kind="file"><name>eparser.cpp</name>
+    <member refid="test_2eparser_8cpp_1adb859937dfb6fcd56c656c3c2555afc9" kind="function"><name>TEST_F</name></member>
+    <member refid="test_2eparser_8cpp_1a9d00584eda85ad91bd3b865309697a92" kind="function"><name>TEST_F</name></member>
+    <member refid="test_2eparser_8cpp_1a9bae16de43d72897f903e5977107c60a" kind="function"><name>TEST_F</name></member>
+    <member refid="test_2eparser_8cpp_1a7ed288e238950900345be1751b543ab5" kind="function"><name>TEST_F</name></member>
+    <member refid="test_2eparser_8cpp_1a21f8c875c668e6dc3d1a1423cdba58a3" kind="function"><name>TEST_F</name></member>
+    <member refid="test_2eparser_8cpp_1aee28f89b9e4ebad2361a1f87e5068314" kind="function"><name>TEST_F</name></member>
+    <member refid="test_2eparser_8cpp_1a8178a3e2dd566ffdd7520265ce0c2fe3" kind="function"><name>TEST_F</name></member>
+    <member refid="test_2eparser_8cpp_1aeed0ae0397e5f82225fde1a6ba4f65a9" kind="function"><name>TEST_F</name></member>
+    <member refid="test_2eparser_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="font_8h" kind="file"><name>font.h</name>
+    <member refid="font_8h_1abee0e1ab69379ae42c9c1ddd2a3ce67e" kind="variable"><name>ROBOTO_BOLD</name></member>
+    <member refid="font_8h_1ae0ebae1583ff9713f2ddd26ec457f21d" kind="variable"><name>ROBOTO_BOLD_SIZE</name></member>
+  </compound>
+  <compound refid="interface_8cpp" kind="file"><name>interface.cpp</name>
+    <member refid="interface_8cpp_1a31756fa19db3072b9c12f6fc08f9fafc" kind="define"><name>INTERFACE_H</name></member>
+    <member refid="interface_8cpp_1af90117ebc964972ffe7ae17b5f730d84" kind="define"><name>HPADD</name></member>
+    <member refid="interface_8cpp_1a8962df677c8bafedc7d0b8fdb34aa3ec" kind="define"><name>WPADD</name></member>
+    <member refid="interface_8cpp_1abd2f426020aea634b230e411fc244864" kind="define"><name>CPOSY</name></member>
+    <member refid="interface_8cpp_1a7049d967a09a77ec18e2fbcf4b097257" kind="define"><name>CPOSX</name></member>
+    <member refid="interface_8cpp_1a69beff7cd62d1ee993c21243761488ca" kind="define"><name>PSIZE</name></member>
+    <member refid="interface_8cpp_1a2f7ee67c6d799ac1ca1c0c5db00153b2" kind="define"><name>TOFST</name></member>
+    <member refid="interface_8cpp_1ab18877221ac332d9dde05a1494ccbe8c" kind="define"><name>COLOR_ID</name></member>
+    <member refid="interface_8cpp_1a86b2b2d4eda22067d85d2287c118e2d8" kind="define"><name>KEY_ESC</name></member>
+    <member refid="interface_8cpp_1a4fa9fbcc86d5ee884a821459a87f3a54" kind="define"><name>KEY_TAB</name></member>
+    <member refid="interface_8cpp_1af0f1d3bb187064a2c4796a7609ffc7d9" kind="define"><name>KEY_SPC</name></member>
+    <member refid="interface_8cpp_1a76fcab7ae716facf6eefcee03457fe7d" kind="define"><name>KEY_E</name></member>
+    <member refid="interface_8cpp_1a201284fc5d50eea7e2db09fb5495bceb" kind="define"><name>KEY_Q</name></member>
+    <member refid="interface_8cpp_1a5a7fd35018971faa28dacd3e33a8f737" kind="define"><name>KEY_1</name></member>
+    <member refid="interface_8cpp_1a3a146cb397d373be978dfa9fd1dc9b3a" kind="define"><name>KEY_2</name></member>
+    <member refid="interface_8cpp_1a701a135e841c3cfb69d9c5bb1444e198" kind="define"><name>KEY_3</name></member>
+    <member refid="interface_8cpp_1a219891753a1b6ccd51c8ae763905dbf9" kind="define"><name>KEY_4</name></member>
+    <member refid="interface_8cpp_1a8520da12c76efb8ca95ca2068d1ca35c" kind="define"><name>KEY_5</name></member>
+    <member refid="interface_8cpp_1a4dc7a9e1034ed60729179c221d0373b0" kind="define"><name>LWIN</name></member>
+    <member refid="interface_8cpp_1a5edccfd64121a547c7322189e47066ec" kind="define"><name>RWIN</name></member>
+    <member refid="interface_8cpp_1a144dac6971aec659843df69ed0b82d01" kind="define"><name>BWIN</name></member>
+    <member refid="interface_8cpp_1aba4b9a24ebde1c981c8617d903170ff4" kind="define"><name>SG_FILE</name></member>
+    <member refid="interface_8cpp_1a8a5f5e613d0ade39bc451b93d0d66291" kind="define"><name>swp</name></member>
+    <member refid="interface_8cpp_1a966b680c79ba02cc05d252dc145d64b8" kind="define"><name>V_MENU</name></member>
+    <member refid="interface_8cpp_1ad0c741ef4d243ca21ea3c32c1a86c55b" kind="define"><name>V_OPERATION</name></member>
+    <member refid="interface_8cpp_1a1ba23172bff2dd7bfaf084bd4d440e6d" kind="define"><name>V_SCROLL</name></member>
+    <member refid="interface_8cpp_1a76c0ce823505e3318aecd871f33c774c" kind="define"><name>swpa</name></member>
+    <member refid="interface_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="test" kind="page"><name>test</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+  <compound refid="dir_13e138d54eb8818da29c3992edef070a" kind="dir"><name>test</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

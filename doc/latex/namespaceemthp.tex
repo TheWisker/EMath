@@ -1,0 +1,77 @@
+\hypertarget{namespaceemthp}{}\doxysection{emthp Namespace Reference}
+\label{namespaceemthp}\index{emthp@{emthp}}
+
+
+Englobes all the classes and functions of the parser.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classemthp_1_1Lexer}{Lexer}}
+\begin{DoxyCompactList}\small\item\em Class that works as a token supplier for the \mbox{\hyperlink{classemthp_1_1Parser}{Parser}} class. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classemthp_1_1Parser}{Parser}}
+\begin{DoxyCompactList}\small\item\em Class that wraps a std\+::string and parses it as a Monomial or as a Polynomial. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structemthp_1_1Token}{Token}}
+\begin{DoxyCompactList}\small\item\em Struct for representing a token as a type and a value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6b}{Token\+Type}} \{ \newline
+\mbox{\hyperlink{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6bab0be00ab2ea8e4a56ab22f220c7de9bf}{T\+\_\+\+PLUS}}
+, \mbox{\hyperlink{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6ba636464f87ad08d661e8f664b4a5903db}{T\+\_\+\+MINUS}}
+, \mbox{\hyperlink{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6bad7549ed90d6122d0761f3acfb1b56923}{T\+\_\+\+NUMBER}}
+, \mbox{\hyperlink{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6ba6aa4d0d8ca8e058abc4e4e38f466bbd2}{T\+\_\+\+VARIABLE}}
+, \newline
+\mbox{\hyperlink{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6ba7b607d6341806fa8bc4505c44670de8c}{T\+\_\+\+EXPONENT}}
+, \mbox{\hyperlink{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6ba5a13d17b3d73d6aa1a545e430284ec6d}{T\+\_\+\+EOF}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum with all the possible Token types. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Englobes all the classes and functions of the parser. 
+
+The emthp namespace contains two classes\+: \mbox{\hyperlink{classemthp_1_1Parser}{Parser}} and \mbox{\hyperlink{classemthp_1_1Lexer}{Lexer}}. It also contains the Token\+Type enum and a \mbox{\hyperlink{structemthp_1_1Token}{Token}} struct. 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6b}\label{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6b}} 
+\index{emthp@{emthp}!TokenType@{TokenType}}
+\index{TokenType@{TokenType}!emthp@{emthp}}
+\doxysubsubsection{\texorpdfstring{TokenType}{TokenType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6b}{emthp\+::\+Token\+Type}}}
+
+
+
+Enum with all the possible \mbox{\hyperlink{structemthp_1_1Token}{Token}} types. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\_PLUS@{T\_PLUS}!emthp@{emthp}}\index{emthp@{emthp}!T\_PLUS@{T\_PLUS}}}\mbox{\Hypertarget{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6bab0be00ab2ea8e4a56ab22f220c7de9bf}\label{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6bab0be00ab2ea8e4a56ab22f220c7de9bf}} 
+T\+\_\+\+PLUS&Plus sign type. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\_MINUS@{T\_MINUS}!emthp@{emthp}}\index{emthp@{emthp}!T\_MINUS@{T\_MINUS}}}\mbox{\Hypertarget{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6ba636464f87ad08d661e8f664b4a5903db}\label{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6ba636464f87ad08d661e8f664b4a5903db}} 
+T\+\_\+\+MINUS&Minus sign type. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\_NUMBER@{T\_NUMBER}!emthp@{emthp}}\index{emthp@{emthp}!T\_NUMBER@{T\_NUMBER}}}\mbox{\Hypertarget{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6bad7549ed90d6122d0761f3acfb1b56923}\label{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6bad7549ed90d6122d0761f3acfb1b56923}} 
+T\+\_\+\+NUMBER&Number type. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\_VARIABLE@{T\_VARIABLE}!emthp@{emthp}}\index{emthp@{emthp}!T\_VARIABLE@{T\_VARIABLE}}}\mbox{\Hypertarget{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6ba6aa4d0d8ca8e058abc4e4e38f466bbd2}\label{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6ba6aa4d0d8ca8e058abc4e4e38f466bbd2}} 
+T\+\_\+\+VARIABLE&X type. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\_EXPONENT@{T\_EXPONENT}!emthp@{emthp}}\index{emthp@{emthp}!T\_EXPONENT@{T\_EXPONENT}}}\mbox{\Hypertarget{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6ba7b607d6341806fa8bc4505c44670de8c}\label{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6ba7b607d6341806fa8bc4505c44670de8c}} 
+T\+\_\+\+EXPONENT&Exponent sign type. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\_EOF@{T\_EOF}!emthp@{emthp}}\index{emthp@{emthp}!T\_EOF@{T\_EOF}}}\mbox{\Hypertarget{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6ba5a13d17b3d73d6aa1a545e430284ec6d}\label{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6ba5a13d17b3d73d6aa1a545e430284ec6d}} 
+T\+\_\+\+EOF&EOF type. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{eparser_8h_source_l00024}{24}} of file \mbox{\hyperlink{eparser_8h_source}{eparser.\+h}}.
+

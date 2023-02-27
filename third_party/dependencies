@@ -1,0 +1,2 @@
+· Interface.cpp: Linux(ncurses: https://invisible-island.net/ncurses/), Windows(pdcurses: https://pdcurses.org/), (rapidjson: https://github.com/Tencent/rapidjson, sfml: https://www.sfml-dev.org/index.php)
+· Emath.cpp: (cset: https://github.com/TheWisker/CSet, eigen: https://eigen.tuxfamily.org/index.php?title=Main_Page)

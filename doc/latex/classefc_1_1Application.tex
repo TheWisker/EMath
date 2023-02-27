@@ -1,0 +1,84 @@
+\hypertarget{classefc_1_1Application}{}\doxysection{efc\+::Application Class Reference}
+\label{classefc_1_1Application}\index{efc::Application@{efc::Application}}
+
+
+Class that contains the application inner logic.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classefc_1_1Application_a151fab3a86220c774be08189cf8dcb46}{run}} ()
+\begin{DoxyCompactList}\small\item\em Main loop fallback, basically it starts the application event loop. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classefc_1_1Application_adc655697a7fa28de4f8526819eb1a083}{$\sim$\+Application}} () noexcept
+\begin{DoxyCompactList}\small\item\em Default destructor, it deletes the \mbox{\hyperlink{classefc_1_1Terminal}{Terminal}} pointer, sets the singleton instance to nullptr, and saves the Json data to the \mbox{\hyperlink{classefc_1_1Storage}{Storage}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classefc_1_1Application}{Application}} $\ast$ \mbox{\hyperlink{classefc_1_1Application_a612f4545a4b1e5d89decab2f5e092d90}{init}} () noexcept
+\begin{DoxyCompactList}\small\item\em Static function for building the singleton static instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that contains the application inner logic. 
+
+The class consist of some menus as loops and all the logic of the \mbox{\hyperlink{classefc_1_1Application}{Application}} 
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00829}{829}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classefc_1_1Application_adc655697a7fa28de4f8526819eb1a083}\label{classefc_1_1Application_adc655697a7fa28de4f8526819eb1a083}} 
+\index{efc::Application@{efc::Application}!````~Application@{$\sim$Application}}
+\index{````~Application@{$\sim$Application}!efc::Application@{efc::Application}}
+\doxysubsubsection{\texorpdfstring{$\sim$Application()}{~Application()}}
+{\footnotesize\ttfamily efc\+::\+Application\+::$\sim$\+Application (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Default destructor, it deletes the \mbox{\hyperlink{classefc_1_1Terminal}{Terminal}} pointer, sets the singleton instance to nullptr, and saves the Json data to the \mbox{\hyperlink{classefc_1_1Storage}{Storage}} object. 
+
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l01093}{1093}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classefc_1_1Application_a612f4545a4b1e5d89decab2f5e092d90}\label{classefc_1_1Application_a612f4545a4b1e5d89decab2f5e092d90}} 
+\index{efc::Application@{efc::Application}!init@{init}}
+\index{init@{init}!efc::Application@{efc::Application}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classefc_1_1Application}{Application}} $\ast$ efc\+::\+Application\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [noexcept]}}
+
+
+
+Static function for building the singleton static instance. 
+
+\begin{DoxyReturn}{Returns}
+(Application$\ast$) The singleton instance pointer also stored at Application\+::instance 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l01067}{1067}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+\mbox{\Hypertarget{classefc_1_1Application_a151fab3a86220c774be08189cf8dcb46}\label{classefc_1_1Application_a151fab3a86220c774be08189cf8dcb46}} 
+\index{efc::Application@{efc::Application}!run@{run}}
+\index{run@{run}!efc::Application@{efc::Application}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void efc\+::\+Application\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Main loop fallback, basically it starts the application event loop. 
+
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l01074}{1074}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{interface_8cpp}{interface.\+cpp}}\end{DoxyCompactItemize}

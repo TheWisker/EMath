@@ -1,0 +1,497 @@
+\hypertarget{classefc_1_1Window}{}\doxysection{efc\+::Window Class Reference}
+\label{classefc_1_1Window}\index{efc::Window@{efc::Window}}
+
+
+Generic class for wrapping a curses WINDOW.  
+
+
+
+
+Inheritance diagram for efc\+::Window\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classefc_1_1Window_ae5fb6b6600ebc4b528d664e8c6947ab2}{Window}} () noexcept
+\begin{DoxyCompactList}\small\item\em Generic constructor with default values. \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{classefc_1_1Window_a933c7e9e67d7423b1facb73a26a9fba3}{get\+\_\+title}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Returns the c\+\_\+str() const char pointer of the title std\+::string. \end{DoxyCompactList}\item 
+const unsigned int \& \mbox{\hyperlink{classefc_1_1Window_a433fbcc875c6e134a8c273c46525bca2}{get\+\_\+y}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Returns the y coordinate. \end{DoxyCompactList}\item 
+const unsigned int \& \mbox{\hyperlink{classefc_1_1Window_a1920c8ff02f120a08252797280a3a2aa}{get\+\_\+x}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Returns the x coordinate. \end{DoxyCompactList}\item 
+const unsigned int \& \mbox{\hyperlink{classefc_1_1Window_a0f64ddda75fb64027eaa7b7dd767ec4e}{get\+\_\+height}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Returns the height value. \end{DoxyCompactList}\item 
+const unsigned int \& \mbox{\hyperlink{classefc_1_1Window_a58e0eb74a3b1b20a268dae29d4525dad}{get\+\_\+width}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Returns the width value. \end{DoxyCompactList}\item 
+const unsigned int \mbox{\hyperlink{classefc_1_1Window_aad12ba19cc558f386a4f2f9e7b6f1acc}{get\+\_\+title\+\_\+size}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Returns the title size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classefc_1_1Window_aead8ed85b65db6a0b0c27d34903b8db5}{set\+\_\+title}} (const \+::std\+::string \&\&title) noexcept
+\begin{DoxyCompactList}\small\item\em Sets the title. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classefc_1_1Window_adb89ea880c531bb3e611378ec1f10f5f}{set\+\_\+coords}} (const unsigned int \mbox{\hyperlink{classefc_1_1Window_a560218b58e4b8e0a87d17d9d51c75ee0}{y}}, const unsigned int x) noexcept
+\begin{DoxyCompactList}\small\item\em Sets the y and x coordinates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classefc_1_1Window_ad9f8b6f349dfe11addce9781a4e32ffb}{set\+\_\+size}} (const unsigned int h, const unsigned int w) noexcept
+\begin{DoxyCompactList}\small\item\em Sets the size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classefc_1_1Window_a18c9f4d362aa8ae7cd322e038828e4de}{set\+\_\+active}} (const bool active) noexcept
+\begin{DoxyCompactList}\small\item\em Sets the active boolean to the provided value. \end{DoxyCompactList}\item 
+virtual const unsigned int \mbox{\hyperlink{classefc_1_1Window_a910926d607d7ac88e4d5e6640a52836a}{get\+\_\+title\+\_\+y}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Gets the title y coordinate. \end{DoxyCompactList}\item 
+virtual const unsigned int \mbox{\hyperlink{classefc_1_1Window_a2e177d9c72e6f7fcf29371df5bc08bea}{get\+\_\+title\+\_\+x}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Gets the title x coordinate. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{classefc_1_1Window_a2f46320775d22ce67fdbacf50772fd02}{needs\+\_\+update}} () noexcept
+\begin{DoxyCompactList}\small\item\em Gets if the window needs a redraw. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{classefc_1_1Window_a64f20e7199e6a9e85c1db282cd820ad6}{is\+\_\+active}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Gets if the window is active/focused. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classefc_1_1Window_a2feeecd90c7c634a15c4e84a3921ee14}{place}} ()
+\begin{DoxyCompactList}\small\item\em Deletes the WINDOW pointer and creates a new WINDOW at the class coordinates. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classefc_1_1Window_ac8ec94fb12450e4fc37ea2adc30f81f8}{$\sim$\+Window}} () noexcept
+\begin{DoxyCompactList}\small\item\em Calls curses delwin() function on the curses WINDOW object and returns. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+WINDOW $\ast$ \mbox{\hyperlink{classefc_1_1Window_ab18720ed62461884b759594ed60fb824}{o}}
+\begin{DoxyCompactList}\small\item\em Pointer to the curses WINDOW object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classefc_1_1Window_add171873b1a7a5c5e1263e8b3a61b6f9}{c}}
+\begin{DoxyCompactList}\small\item\em Two booleans\+: c for knowing if contents changed, and a for knowing if window is active. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classefc_1_1Window_aea9ca4761c6305661f459b77f9e95f87}{a}}
+\item 
+\+::std\+::string \mbox{\hyperlink{classefc_1_1Window_a7dc5e87a2ff69618b81041809b052e70}{t}}
+\begin{DoxyCompactList}\small\item\em String t\+: window title. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{classefc_1_1Window_a560218b58e4b8e0a87d17d9d51c75ee0}{y}}
+\begin{DoxyCompactList}\small\item\em Four unsigned ints\+: x and y for the coordinates relative to the console window, w and h for the size of the window. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{classefc_1_1Window_a07e3095c7f4d7320c008d5fd67692b61}{x}}
+\item 
+unsigned int \mbox{\hyperlink{classefc_1_1Window_a282f9857345806e5232bbbb0bc88c60c}{h}}
+\item 
+unsigned int \mbox{\hyperlink{classefc_1_1Window_ac189a55138f75bc910051d1598957018}{w}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Generic class for wrapping a curses WINDOW. 
+
+It wraps a curses WINDOW in a way that lets it manage some centralized structure. 
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00059}{59}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classefc_1_1Window_ae5fb6b6600ebc4b528d664e8c6947ab2}\label{classefc_1_1Window_ae5fb6b6600ebc4b528d664e8c6947ab2}} 
+\index{efc::Window@{efc::Window}!Window@{Window}}
+\index{Window@{Window}!efc::Window@{efc::Window}}
+\doxysubsubsection{\texorpdfstring{Window()}{Window()}}
+{\footnotesize\ttfamily efc\+::\+Window\+::\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Generic constructor with default values. 
+
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00081}{81}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+\mbox{\Hypertarget{classefc_1_1Window_ac8ec94fb12450e4fc37ea2adc30f81f8}\label{classefc_1_1Window_ac8ec94fb12450e4fc37ea2adc30f81f8}} 
+\index{efc::Window@{efc::Window}!````~Window@{$\sim$Window}}
+\index{````~Window@{$\sim$Window}!efc::Window@{efc::Window}}
+\doxysubsubsection{\texorpdfstring{$\sim$Window()}{~Window()}}
+{\footnotesize\ttfamily virtual efc\+::\+Window\+::$\sim$\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Calls curses delwin() function on the curses WINDOW object and returns. 
+
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00161}{161}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classefc_1_1Window_a0f64ddda75fb64027eaa7b7dd767ec4e}\label{classefc_1_1Window_a0f64ddda75fb64027eaa7b7dd767ec4e}} 
+\index{efc::Window@{efc::Window}!get\_height@{get\_height}}
+\index{get\_height@{get\_height}!efc::Window@{efc::Window}}
+\doxysubsubsection{\texorpdfstring{get\_height()}{get\_height()}}
+{\footnotesize\ttfamily const unsigned int \& efc\+::\+Window\+::get\+\_\+height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Returns the height value. 
+
+\begin{DoxyReturn}{Returns}
+(const unsigned int\&) The height value as a const unsigned int\& 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00101}{101}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+\mbox{\Hypertarget{classefc_1_1Window_a933c7e9e67d7423b1facb73a26a9fba3}\label{classefc_1_1Window_a933c7e9e67d7423b1facb73a26a9fba3}} 
+\index{efc::Window@{efc::Window}!get\_title@{get\_title}}
+\index{get\_title@{get\_title}!efc::Window@{efc::Window}}
+\doxysubsubsection{\texorpdfstring{get\_title()}{get\_title()}}
+{\footnotesize\ttfamily const char $\ast$ efc\+::\+Window\+::get\+\_\+title (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Returns the c\+\_\+str() const char pointer of the title std\+::string. 
+
+\begin{DoxyReturn}{Returns}
+(const char$\ast$) The title as a char array 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00086}{86}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+\mbox{\Hypertarget{classefc_1_1Window_aad12ba19cc558f386a4f2f9e7b6f1acc}\label{classefc_1_1Window_aad12ba19cc558f386a4f2f9e7b6f1acc}} 
+\index{efc::Window@{efc::Window}!get\_title\_size@{get\_title\_size}}
+\index{get\_title\_size@{get\_title\_size}!efc::Window@{efc::Window}}
+\doxysubsubsection{\texorpdfstring{get\_title\_size()}{get\_title\_size()}}
+{\footnotesize\ttfamily const unsigned int efc\+::\+Window\+::get\+\_\+title\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Returns the title size. 
+
+\begin{DoxyReturn}{Returns}
+(const unsigned int) The title size as a const unsigned int 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00111}{111}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+\mbox{\Hypertarget{classefc_1_1Window_a2e177d9c72e6f7fcf29371df5bc08bea}\label{classefc_1_1Window_a2e177d9c72e6f7fcf29371df5bc08bea}} 
+\index{efc::Window@{efc::Window}!get\_title\_x@{get\_title\_x}}
+\index{get\_title\_x@{get\_title\_x}!efc::Window@{efc::Window}}
+\doxysubsubsection{\texorpdfstring{get\_title\_x()}{get\_title\_x()}}
+{\footnotesize\ttfamily virtual const unsigned int efc\+::\+Window\+::get\+\_\+title\+\_\+x (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Gets the title x coordinate. 
+
+\begin{DoxyReturn}{Returns}
+(const unsigned int) The title x coordinate as a const unsigned int 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classefc_1_1OWindow_aa0224c53de48b27b7bc791f3ff1fe9fc}{efc\+::\+OWindow}}, and \mbox{\hyperlink{classefc_1_1IWindow_a91e48b892bd02b7c11020fdfc7e7c05d}{efc\+::\+IWindow}}.
+
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00143}{143}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+\mbox{\Hypertarget{classefc_1_1Window_a910926d607d7ac88e4d5e6640a52836a}\label{classefc_1_1Window_a910926d607d7ac88e4d5e6640a52836a}} 
+\index{efc::Window@{efc::Window}!get\_title\_y@{get\_title\_y}}
+\index{get\_title\_y@{get\_title\_y}!efc::Window@{efc::Window}}
+\doxysubsubsection{\texorpdfstring{get\_title\_y()}{get\_title\_y()}}
+{\footnotesize\ttfamily virtual const unsigned int efc\+::\+Window\+::get\+\_\+title\+\_\+y (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Gets the title y coordinate. 
+
+\begin{DoxyReturn}{Returns}
+(const unsigned int) The title y coordinate as a const unsigned int 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classefc_1_1OWindow_a6fa50bf6b31b39e3c9c2a14cedd70aac}{efc\+::\+OWindow}}, and \mbox{\hyperlink{classefc_1_1IWindow_a84cb0d425e279cd2b15dc2b43cb520d2}{efc\+::\+IWindow}}.
+
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00138}{138}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+\mbox{\Hypertarget{classefc_1_1Window_a58e0eb74a3b1b20a268dae29d4525dad}\label{classefc_1_1Window_a58e0eb74a3b1b20a268dae29d4525dad}} 
+\index{efc::Window@{efc::Window}!get\_width@{get\_width}}
+\index{get\_width@{get\_width}!efc::Window@{efc::Window}}
+\doxysubsubsection{\texorpdfstring{get\_width()}{get\_width()}}
+{\footnotesize\ttfamily const unsigned int \& efc\+::\+Window\+::get\+\_\+width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Returns the width value. 
+
+\begin{DoxyReturn}{Returns}
+(const unsigned int\&) The width value as a const unsigned int\& 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00106}{106}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+\mbox{\Hypertarget{classefc_1_1Window_a1920c8ff02f120a08252797280a3a2aa}\label{classefc_1_1Window_a1920c8ff02f120a08252797280a3a2aa}} 
+\index{efc::Window@{efc::Window}!get\_x@{get\_x}}
+\index{get\_x@{get\_x}!efc::Window@{efc::Window}}
+\doxysubsubsection{\texorpdfstring{get\_x()}{get\_x()}}
+{\footnotesize\ttfamily const unsigned int \& efc\+::\+Window\+::get\+\_\+x (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Returns the x coordinate. 
+
+\begin{DoxyReturn}{Returns}
+(const unsigned int\&) The x coordinate as a const unsigned int\& 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00096}{96}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+\mbox{\Hypertarget{classefc_1_1Window_a433fbcc875c6e134a8c273c46525bca2}\label{classefc_1_1Window_a433fbcc875c6e134a8c273c46525bca2}} 
+\index{efc::Window@{efc::Window}!get\_y@{get\_y}}
+\index{get\_y@{get\_y}!efc::Window@{efc::Window}}
+\doxysubsubsection{\texorpdfstring{get\_y()}{get\_y()}}
+{\footnotesize\ttfamily const unsigned int \& efc\+::\+Window\+::get\+\_\+y (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Returns the y coordinate. 
+
+\begin{DoxyReturn}{Returns}
+(const unsigned int\&) The y coordinate as a const unsigned int\& 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00091}{91}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{interface_8cpp_source_l00072}{y}}.
+
+\mbox{\Hypertarget{classefc_1_1Window_a64f20e7199e6a9e85c1db282cd820ad6}\label{classefc_1_1Window_a64f20e7199e6a9e85c1db282cd820ad6}} 
+\index{efc::Window@{efc::Window}!is\_active@{is\_active}}
+\index{is\_active@{is\_active}!efc::Window@{efc::Window}}
+\doxysubsubsection{\texorpdfstring{is\_active()}{is\_active()}}
+{\footnotesize\ttfamily const bool efc\+::\+Window\+::is\+\_\+active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Gets if the window is active/focused. 
+
+\begin{DoxyReturn}{Returns}
+(const bool) True if the window is active, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00153}{153}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+\mbox{\Hypertarget{classefc_1_1Window_a2f46320775d22ce67fdbacf50772fd02}\label{classefc_1_1Window_a2f46320775d22ce67fdbacf50772fd02}} 
+\index{efc::Window@{efc::Window}!needs\_update@{needs\_update}}
+\index{needs\_update@{needs\_update}!efc::Window@{efc::Window}}
+\doxysubsubsection{\texorpdfstring{needs\_update()}{needs\_update()}}
+{\footnotesize\ttfamily const bool efc\+::\+Window\+::needs\+\_\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Gets if the window needs a redraw. 
+
+\begin{DoxyReturn}{Returns}
+(const bool) True if the window should be redrawed, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00148}{148}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+\mbox{\Hypertarget{classefc_1_1Window_a2feeecd90c7c634a15c4e84a3921ee14}\label{classefc_1_1Window_a2feeecd90c7c634a15c4e84a3921ee14}} 
+\index{efc::Window@{efc::Window}!place@{place}}
+\index{place@{place}!efc::Window@{efc::Window}}
+\doxysubsubsection{\texorpdfstring{place()}{place()}}
+{\footnotesize\ttfamily void efc\+::\+Window\+::place (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Deletes the WINDOW pointer and creates a new WINDOW at the class coordinates. 
+
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00157}{157}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+\mbox{\Hypertarget{classefc_1_1Window_a18c9f4d362aa8ae7cd322e038828e4de}\label{classefc_1_1Window_a18c9f4d362aa8ae7cd322e038828e4de}} 
+\index{efc::Window@{efc::Window}!set\_active@{set\_active}}
+\index{set\_active@{set\_active}!efc::Window@{efc::Window}}
+\doxysubsubsection{\texorpdfstring{set\_active()}{set\_active()}}
+{\footnotesize\ttfamily void efc\+::\+Window\+::set\+\_\+active (\begin{DoxyParamCaption}\item[{const bool}]{active }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Sets the active boolean to the provided value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em active} & If it is a active as a const boolean \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00133}{133}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+\mbox{\Hypertarget{classefc_1_1Window_adb89ea880c531bb3e611378ec1f10f5f}\label{classefc_1_1Window_adb89ea880c531bb3e611378ec1f10f5f}} 
+\index{efc::Window@{efc::Window}!set\_coords@{set\_coords}}
+\index{set\_coords@{set\_coords}!efc::Window@{efc::Window}}
+\doxysubsubsection{\texorpdfstring{set\_coords()}{set\_coords()}}
+{\footnotesize\ttfamily void efc\+::\+Window\+::set\+\_\+coords (\begin{DoxyParamCaption}\item[{const unsigned int}]{y,  }\item[{const unsigned int}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Sets the y and x coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & The y coordinate as a const unsigned int y \\
+\hline
+{\em x} & The x coordinate as a const unsigned int x \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00122}{122}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{interface_8cpp_source_l00072}{y}}.
+
+\mbox{\Hypertarget{classefc_1_1Window_ad9f8b6f349dfe11addce9781a4e32ffb}\label{classefc_1_1Window_ad9f8b6f349dfe11addce9781a4e32ffb}} 
+\index{efc::Window@{efc::Window}!set\_size@{set\_size}}
+\index{set\_size@{set\_size}!efc::Window@{efc::Window}}
+\doxysubsubsection{\texorpdfstring{set\_size()}{set\_size()}}
+{\footnotesize\ttfamily void efc\+::\+Window\+::set\+\_\+size (\begin{DoxyParamCaption}\item[{const unsigned int}]{h,  }\item[{const unsigned int}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Sets the size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & The height as a const unsigned int y \\
+\hline
+{\em w} & The width as a const unsigned int x \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00128}{128}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+\mbox{\Hypertarget{classefc_1_1Window_aead8ed85b65db6a0b0c27d34903b8db5}\label{classefc_1_1Window_aead8ed85b65db6a0b0c27d34903b8db5}} 
+\index{efc::Window@{efc::Window}!set\_title@{set\_title}}
+\index{set\_title@{set\_title}!efc::Window@{efc::Window}}
+\doxysubsubsection{\texorpdfstring{set\_title()}{set\_title()}}
+{\footnotesize\ttfamily void efc\+::\+Window\+::set\+\_\+title (\begin{DoxyParamCaption}\item[{const \+::std\+::string \&\&}]{title }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Sets the title. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & The title as a cons std\+::string\&\& \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00116}{116}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classefc_1_1Window_aea9ca4761c6305661f459b77f9e95f87}\label{classefc_1_1Window_aea9ca4761c6305661f459b77f9e95f87}} 
+\index{efc::Window@{efc::Window}!a@{a}}
+\index{a@{a}!efc::Window@{efc::Window}}
+\doxysubsubsection{\texorpdfstring{a}{a}}
+{\footnotesize\ttfamily bool efc\+::\+Window\+::a\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00064}{64}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+\mbox{\Hypertarget{classefc_1_1Window_add171873b1a7a5c5e1263e8b3a61b6f9}\label{classefc_1_1Window_add171873b1a7a5c5e1263e8b3a61b6f9}} 
+\index{efc::Window@{efc::Window}!c@{c}}
+\index{c@{c}!efc::Window@{efc::Window}}
+\doxysubsubsection{\texorpdfstring{c}{c}}
+{\footnotesize\ttfamily bool efc\+::\+Window\+::c\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Two booleans\+: c for knowing if contents changed, and a for knowing if window is active. 
+
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00064}{64}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+\mbox{\Hypertarget{classefc_1_1Window_a282f9857345806e5232bbbb0bc88c60c}\label{classefc_1_1Window_a282f9857345806e5232bbbb0bc88c60c}} 
+\index{efc::Window@{efc::Window}!h@{h}}
+\index{h@{h}!efc::Window@{efc::Window}}
+\doxysubsubsection{\texorpdfstring{h}{h}}
+{\footnotesize\ttfamily unsigned int efc\+::\+Window\+::h\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00072}{72}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+\mbox{\Hypertarget{classefc_1_1Window_ab18720ed62461884b759594ed60fb824}\label{classefc_1_1Window_ab18720ed62461884b759594ed60fb824}} 
+\index{efc::Window@{efc::Window}!o@{o}}
+\index{o@{o}!efc::Window@{efc::Window}}
+\doxysubsubsection{\texorpdfstring{o}{o}}
+{\footnotesize\ttfamily WINDOW$\ast$ efc\+::\+Window\+::o}
+
+
+
+Pointer to the curses WINDOW object. 
+
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00077}{77}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+\mbox{\Hypertarget{classefc_1_1Window_a7dc5e87a2ff69618b81041809b052e70}\label{classefc_1_1Window_a7dc5e87a2ff69618b81041809b052e70}} 
+\index{efc::Window@{efc::Window}!t@{t}}
+\index{t@{t}!efc::Window@{efc::Window}}
+\doxysubsubsection{\texorpdfstring{t}{t}}
+{\footnotesize\ttfamily \+::std\+::string efc\+::\+Window\+::t\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+String t\+: window title. 
+
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00068}{68}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+\mbox{\Hypertarget{classefc_1_1Window_ac189a55138f75bc910051d1598957018}\label{classefc_1_1Window_ac189a55138f75bc910051d1598957018}} 
+\index{efc::Window@{efc::Window}!w@{w}}
+\index{w@{w}!efc::Window@{efc::Window}}
+\doxysubsubsection{\texorpdfstring{w}{w}}
+{\footnotesize\ttfamily unsigned int efc\+::\+Window\+::w\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00072}{72}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+\mbox{\Hypertarget{classefc_1_1Window_a07e3095c7f4d7320c008d5fd67692b61}\label{classefc_1_1Window_a07e3095c7f4d7320c008d5fd67692b61}} 
+\index{efc::Window@{efc::Window}!x@{x}}
+\index{x@{x}!efc::Window@{efc::Window}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily unsigned int efc\+::\+Window\+::x\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00072}{72}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+\mbox{\Hypertarget{classefc_1_1Window_a560218b58e4b8e0a87d17d9d51c75ee0}\label{classefc_1_1Window_a560218b58e4b8e0a87d17d9d51c75ee0}} 
+\index{efc::Window@{efc::Window}!y@{y}}
+\index{y@{y}!efc::Window@{efc::Window}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily unsigned int efc\+::\+Window\+::y\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Four unsigned ints\+: x and y for the coordinates relative to the console window, w and h for the size of the window. 
+
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00072}{72}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{interface_8cpp}{interface.\+cpp}}\end{DoxyCompactItemize}

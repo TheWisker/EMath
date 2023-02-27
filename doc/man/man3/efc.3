@@ -1,0 +1,98 @@
+.TH "efc" 3 "Mon Feb 27 2023" "EMath++" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+efc \- Englobes all the classes and functions of the emath text user interface\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBApplication\fP"
+.br
+.RI "Class that contains the application inner logic\&. "
+.ti -1c
+.RI "class \fBIWindow\fP"
+.br
+.RI "\fBWindow\fP class extension for input\&. "
+.ti -1c
+.RI "class \fBLexer\fP"
+.br
+.RI "Class that works as a token supplier for the \fBParser\fP class\&. "
+.ti -1c
+.RI "class \fBOWindow\fP"
+.br
+.RI "\fBWindow\fP class extension for output\&. "
+.ti -1c
+.RI "class \fBParser\fP"
+.br
+.RI "Class that wraps a std::string and parses it as a number or as a operation\&. "
+.ti -1c
+.RI "class \fBPlane\fP"
+.br
+.RI "\fBPlane\fP class to draw a function in the Cartesian plane\&. "
+.ti -1c
+.RI "class \fBStorage\fP"
+.br
+.RI "\fBStorage\fP class to read and write to a file\&. "
+.ti -1c
+.RI "class \fBTerminal\fP"
+.br
+.RI "\fBTerminal\fP class to manage the terminal through curses\&. "
+.ti -1c
+.RI "struct \fBToken\fP"
+.br
+.RI "Struct for representing a token as a type and a value\&. "
+.ti -1c
+.RI "class \fBWindow\fP"
+.br
+.RI "Generic class for wrapping a curses WINDOW\&. "
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBTokenType\fP { \fBT_NUMBER\fP, \fBT_PLUS\fP, \fBT_MINUS\fP, \fBT_MULTIPLICATION\fP, \fBT_DIVISION\fP, \fBT_EOF\fP }"
+.br
+.RI "Enum with all the possible Token types\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Englobes all the classes and functions of the emath text user interface\&. 
+
+The emth namespace contains the following classes: \fBWindow\fP, \fBIWindow\fP, \fBOWindow\fP, \fBTerminal\fP, \fBPlane\fP, \fBStorage\fP, \fBLexer\fP, \fBParser\fP and \fBApplication\fP\&. 
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBefc::TokenType\fP"
+
+.PP
+Enum with all the possible \fBToken\fP types\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIT_NUMBER \fP\fP
+Number type\&. 
+.TP
+\fB\fIT_PLUS \fP\fP
+Plus sign type\&. 
+.TP
+\fB\fIT_MINUS \fP\fP
+Minus sign type\&. 
+.TP
+\fB\fIT_MULTIPLICATION \fP\fP
+Multiplication sign type\&. 
+.TP
+\fB\fIT_DIVISION \fP\fP
+Division sign type\&. 
+.TP
+\fB\fIT_EOF \fP\fP
+End of file type\&. 
+.PP
+Definition at line \fB650\fP of file \fBinterface\&.cpp\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for EMath++ from the source code\&.

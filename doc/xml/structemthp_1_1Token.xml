@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="structemthp_1_1Token" kind="struct" language="C++" prot="public">
+    <compoundname>emthp::Token</compoundname>
+    <includes refid="eparser_8h" local="no">eparser.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structemthp_1_1Token_1ae532928c40581bc20349979955dfb2f3" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6b" kindref="member">TokenType</ref></type>
+        <definition>TokenType emthp::Token::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>emthp::Token::type</qualifiedname>
+        <briefdescription>
+<para>The token&apos;s type as a TokenType. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/eparser.h" line="59" column="23" bodyfile="include/eparser.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structemthp_1_1Token_1a0512f6f4c2a7dcf724d582d971393c2c" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double emthp::Token::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <qualifiedname>emthp::Token::value</qualifiedname>
+        <briefdescription>
+<para>The token&apos;s numerical value as a double. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/eparser.h" line="63" column="20" bodyfile="include/eparser.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Struct for representing a token as a type and a value. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/eparser.h" line="54" column="5" bodyfile="include/eparser.h" bodystart="54" bodyend="64"/>
+    <listofallmembers>
+      <member refid="structemthp_1_1Token_1ae532928c40581bc20349979955dfb2f3" prot="public" virt="non-virtual"><scope>emthp::Token</scope><name>type</name></member>
+      <member refid="structemthp_1_1Token_1a0512f6f4c2a7dcf724d582d971393c2c" prot="public" virt="non-virtual"><scope>emthp::Token</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

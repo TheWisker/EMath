@@ -1,0 +1,14 @@
+digraph "EParserTest"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="EParserTest",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Class that provides a test fixture for the test cases."];
+  Node2 -> Node1 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="testing::Test",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" lexer" ];
+  Node3 [label="emthp::Lexer",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classemthp_1_1Lexer.html",tooltip="Class that works as a token supplier for the Parser class."];
+  Node4 -> Node1 [dir="back",color="darkorchid3",style="dashed",label=" parser" ];
+  Node4 [label="emthp::Parser",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classemthp_1_1Parser.html",tooltip="Class that wraps a std::string and parses it as a Monomial or as a Polynomial."];
+}

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_unionvalue" xml:lang="en-US">
+<title>value Union Reference</title>
+<indexterm><primary>value</primary></indexterm>
+<para>
+
+<para>A union representing the value of the Token as a char or as a int. </para>
+ 
+</para>
+<section>
+<title>Detailed Description</title>
+
+<para>A union representing the value of the Token as a char or as a int. </para>
+<para>
+The documentation for this union was generated from the following file:</para>
+src/<link linkend="_interface_8cpp">interface.cpp</link></section>
+</section>

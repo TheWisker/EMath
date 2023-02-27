@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classefc_1_1Storage" xml:lang="en-US">
+<title>efc::Storage Class Reference</title>
+<indexterm><primary>efc::Storage</primary></indexterm>
+<para>
+
+<para><link linkend="_classefc_1_1Storage">Storage</link> class to read and write to a file. </para>
+ 
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classefc_1_1Storage_1a9a9cfce79f418f1ad0ee0bb53bb9d048">Storage</link> (const ::std::string file) noexcept</para>
+
+<para>The main constructor. </para>
+</listitem>
+            <listitem><para>const ::std::string <link linkend="_classefc_1_1Storage_1a62ca8189455b39656aa25531c3875cbd">read</link> () const noexcept</para>
+
+<para>The read function that returns the whole file as a std:.string. </para>
+</listitem>
+            <listitem><para>const int <link linkend="_classefc_1_1Storage_1af2c8369dcb906c07867a931387659788">write</link> (const ::std::string contents) const noexcept</para>
+
+<para>The write function that overwrites the whole file with a std::string. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_classefc_1_1Storage_1ac141ea203205c34ebd653682d88b7e2c">exists</link> () const noexcept</para>
+
+<para>This function check if the filename exists. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_classefc_1_1Storage_1a5d83512b8daaf9e2cb188f877cb7bb5b"/><emphasis role="strong">~Storage</emphasis> () noexcept=default</para>
+
+<para>Default destructor. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><link linkend="_classefc_1_1Storage">Storage</link> class to read and write to a file. </para>
+
+
+
+<para>Provides some functions to read and write to a filename saved in a class variable </para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l00595">595</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classefc_1_1Storage_1a9a9cfce79f418f1ad0ee0bb53bb9d048"/><section>
+    <title>Storage()</title>
+<indexterm><primary>Storage</primary><secondary>efc::Storage</secondary></indexterm>
+<indexterm><primary>efc::Storage</primary><secondary>Storage</secondary></indexterm>
+<para><computeroutput>efc::Storage::Storage (const ::std::string file)<computeroutput>[inline]</computeroutput>, <computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>The main constructor. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>file</entry><entry>
+<para>The filename to write to as a std::string </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l00606">606</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classefc_1_1Storage_1ac141ea203205c34ebd653682d88b7e2c"/><section>
+    <title>exists()</title>
+<indexterm><primary>exists</primary><secondary>efc::Storage</secondary></indexterm>
+<indexterm><primary>efc::Storage</primary><secondary>exists</secondary></indexterm>
+<para><computeroutput>bool efc::Storage::exists ( ) const<computeroutput>[inline]</computeroutput>, <computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>This function check if the filename exists. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>(bool) True if the file exists, false otherwise </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l00634">634</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<anchor xml:id="_classefc_1_1Storage_1a62ca8189455b39656aa25531c3875cbd"/><section>
+    <title>read()</title>
+<indexterm><primary>read</primary><secondary>efc::Storage</secondary></indexterm>
+<indexterm><primary>efc::Storage</primary><secondary>read</secondary></indexterm>
+<para><computeroutput>const ::std::string efc::Storage::read ( ) const<computeroutput>[inline]</computeroutput>, <computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>The read function that returns the whole file as a std:.string. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>(const ::std::string) The whole file as a std:.string </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l00611">611</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<anchor xml:id="_classefc_1_1Storage_1af2c8369dcb906c07867a931387659788"/><section>
+    <title>write()</title>
+<indexterm><primary>write</primary><secondary>efc::Storage</secondary></indexterm>
+<indexterm><primary>efc::Storage</primary><secondary>write</secondary></indexterm>
+<para><computeroutput>const int efc::Storage::write (const ::std::string contents) const<computeroutput>[inline]</computeroutput>, <computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>The write function that overwrites the whole file with a std::string. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>contents</entry><entry>
+<para>The contents to write as a std::string </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(int) 0 If successful, 1 otherwise </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l00624">624</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+src/<link linkend="_interface_8cpp">interface.cpp</link></section>
+</section>

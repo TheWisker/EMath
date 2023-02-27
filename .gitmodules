@@ -1,0 +1,12 @@
+[submodule "third_party/CSet"]
+	path = third_party/CSet
+	url = https://github.com/TheWisker/CSet
+[submodule "third_party/eigen"]
+	path = third_party/eigen
+	url = https://gitlab.com/libeigen/eigen
+[submodule "third_party/rapidjson"]
+	path = third_party/rapidjson
+	url = https://github.com/Tencent/rapidjson/
+[submodule "third_party/PDCurses"]
+	path = third_party/PDCurses
+	url = https://github.com/wmcbrine/PDCurses

@@ -1,0 +1,777 @@
+.TH "emth::Polynomial" 3 "Mon Feb 27 2023" "EMath++" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+emth::Polynomial \- Class for representing and operating polynomials\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <emath\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPolynomial\fP () noexcept"
+.br
+.RI "Default constructor for when initialized with no arguments\&. "
+.ti -1c
+.RI "\fBPolynomial\fP (const std::map< int, \fBMonomial\fP > mns) noexcept"
+.br
+.RI "Normal constructor for initialization with a std::map<int, Monomial> "
+.ti -1c
+.RI "\fBPolynomial\fP (const std::initializer_list< \fBMonomial\fP > mns) noexcept"
+.br
+.RI "List constructor for initialization with a std::initializer_list<Monomial> "
+.ti -1c
+.RI "\fBPolynomial\fP (const std::vector< \fBMonomial\fP > mns) noexcept"
+.br
+.RI "Vector constructor for initialization with a std::vector<Monomial> "
+.ti -1c
+.RI "\fBPolynomial\fP (const \fBPolynomial\fP &ogn) noexcept"
+.br
+.RI "Copy constructor for when initialized with an lvalue \fBPolynomial\fP object\&. "
+.ti -1c
+.RI "\fBPolynomial\fP (\fBPolynomial\fP &&ogn) noexcept"
+.br
+.RI "Move constructor for when initialized with an rvalue \fBPolynomial\fP object\&. "
+.ti -1c
+.RI "\fBPolynomial\fP & \fBoperator=\fP (const \fBPolynomial\fP &ogn) noexcept"
+.br
+.RI "Assigment operator overload for when called with an lvalue\&. "
+.ti -1c
+.RI "\fBPolynomial\fP & \fBoperator=\fP (\fBPolynomial\fP &&ogn) noexcept"
+.br
+.RI "Move assigment operator overload for when called with an rvalue\&. "
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBPolynomial\fP &ogn) const noexcept"
+.br
+.RI "Equal logic operator overload\&. "
+.ti -1c
+.RI "bool \fBoperator!=\fP (const \fBPolynomial\fP &ogn) const noexcept"
+.br
+.RI "Not equal logic operator overload\&. "
+.ti -1c
+.RI "bool \fBoperator>\fP (const \fBPolynomial\fP &ogn) const noexcept"
+.br
+.RI "Greater than logic operator overload\&. "
+.ti -1c
+.RI "bool \fBoperator<\fP (const \fBPolynomial\fP &ogn) const noexcept"
+.br
+.RI "Less than logic operator overload\&. "
+.ti -1c
+.RI "bool \fBoperator>=\fP (const \fBPolynomial\fP &ogn) const noexcept"
+.br
+.RI "Greater or equal than logic operator overload\&. "
+.ti -1c
+.RI "bool \fBoperator<=\fP (const \fBPolynomial\fP &ogn) const noexcept"
+.br
+.RI "Less or equal than logic operator overload\&. "
+.ti -1c
+.RI "\fBPolynomial\fP \fBoperator+\fP (const \fBPolynomial\fP &ogn) const noexcept"
+.br
+.RI "Addition operator overload\&. "
+.ti -1c
+.RI "\fBPolynomial\fP \fBoperator\-\fP (const \fBPolynomial\fP &ogn) const noexcept"
+.br
+.RI "Substraction operator overload\&. "
+.ti -1c
+.RI "\fBPolynomial\fP \fBoperator*\fP (const \fBPolynomial\fP &ogn) const noexcept"
+.br
+.RI "Multiplication operator overload\&. "
+.ti -1c
+.RI "\fBPolynomial\fP \fBoperator/\fP (const \fBPolynomial\fP &ogn) const noexcept"
+.br
+.RI "Division operator overload\&. "
+.ti -1c
+.RI "\fBPolynomial\fP \fBoperator%\fP (const \fBPolynomial\fP &ogn) const noexcept"
+.br
+.RI "Modulus operator overload\&. "
+.ti -1c
+.RI "\fBPolynomial\fP & \fBoperator+=\fP (const \fBPolynomial\fP &ogn) noexcept"
+.br
+.RI "Addition assigment operator overload\&. "
+.ti -1c
+.RI "\fBPolynomial\fP & \fBoperator\-=\fP (const \fBPolynomial\fP &ogn) noexcept"
+.br
+.RI "Substraction assigment operator overload\&. "
+.ti -1c
+.RI "\fBPolynomial\fP & \fBoperator*=\fP (const \fBPolynomial\fP &ogn) noexcept"
+.br
+.RI "Multiplication assigment operator overload\&. "
+.ti -1c
+.RI "\fBPolynomial\fP & \fBoperator/=\fP (const \fBPolynomial\fP &ogn) noexcept"
+.br
+.RI "Division assigment operator overload\&. "
+.ti -1c
+.RI "\fBPolynomial\fP & \fBoperator%=\fP (const \fBPolynomial\fP &ogn) noexcept"
+.br
+.RI "Modulus assigment operator overload\&. "
+.ti -1c
+.RI "int \fBget_degree\fP () const noexcept"
+.br
+.RI "Getter function for getting the degree of the \fBPolynomial\fP\&. "
+.ti -1c
+.RI "std::map< int, \fBMonomial\fP > \fBget_monomials\fP () const noexcept"
+.br
+.RI "Getter function for getting the monomials of the \fBPolynomial\fP\&. "
+.ti -1c
+.RI "bool \fBis_empty\fP () const noexcept"
+.br
+.RI "Function for knowing if the polynomial has or not any monomials\&. "
+.ti -1c
+.RI "bool \fBpush_monomial\fP (const \fBMonomial\fP &m) noexcept"
+.br
+.RI "Function for appending a lvalue monomial to the \fBPolynomial\fP\&. "
+.ti -1c
+.RI "bool \fBpush_monomial\fP (\fBMonomial\fP &&m) noexcept"
+.br
+.RI "Function for appending a rvalue monomial to the \fBPolynomial\fP\&. "
+.ti -1c
+.RI "std::string \fBget_expression\fP () const noexcept"
+.br
+.RI "Getter function for getting the expression of the \fBPolynomial\fP\&. "
+.ti -1c
+.RI "double \fBget_value\fP (const double &x) const noexcept"
+.br
+.RI "Calculus function for getting the value of the \fBPolynomial\fP at a point\&. "
+.ti -1c
+.RI "\fBPolynomial\fP \fBget_derivative\fP () const noexcept"
+.br
+.RI "Calculus function for getting the derivative of the \fBPolynomial\fP\&. "
+.ti -1c
+.RI "\fBPolynomial\fP \fBget_integral\fP () const noexcept"
+.br
+.RI "Calculus function for getting the integral of the \fBPolynomial\fP\&. "
+.ti -1c
+.RI "std::vector< std::complex< double > > \fBget_roots\fP () const noexcept"
+.br
+.RI "Calculus function for getting all the real and complex roots of the \fBPolynomial\fP using the Eigen library\&. "
+.ti -1c
+.RI "\fB~Polynomial\fP ()"
+.br
+.RI "The class destructor\&. "
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "std::stringstream & \fBoperator<<\fP (std::stringstream &ss, const \fBPolynomial\fP &p) noexcept"
+.br
+.RI "A friend operator to insert the \fBPolynomial\fP into a std::stringstream\&. "
+.ti -1c
+.RI "std::ostream & \fBoperator<<\fP (std::ostream &out, const \fBPolynomial\fP &p) noexcept"
+.br
+.RI "A friend operator to insert the \fBPolynomial\fP into a std::ostream\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Class for representing and operating polynomials\&. 
+
+The class consists of the constructors, the operators, the getters, the properties and some private functions\&. 
+.PP
+Definition at line \fB292\fP of file \fBemath\&.h\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "emth::Polynomial::Polynomial ()\fC [noexcept]\fP"
+
+.PP
+Default constructor for when initialized with no arguments\&. 
+.PP
+Definition at line \fB264\fP of file \fBemath\&.cpp\fP\&.
+.SS "emth::Polynomial::Polynomial (const std::map< int, \fBMonomial\fP > mns)\fC [noexcept]\fP"
+
+.PP
+Normal constructor for initialization with a std::map<int, Monomial> 
+.PP
+\fBParameters\fP
+.RS 4
+\fImns\fP The std::map<int, Monomial>\&. 
+.RE
+.PP
+
+.SS "emth::Polynomial::Polynomial (const std::initializer_list< \fBMonomial\fP > mns)\fC [noexcept]\fP"
+
+.PP
+List constructor for initialization with a std::initializer_list<Monomial> 
+.PP
+\fBParameters\fP
+.RS 4
+\fImns\fP The std::initializer_list<Monomial>\&. 
+.RE
+.PP
+
+.SS "emth::Polynomial::Polynomial (const std::vector< \fBMonomial\fP > mns)\fC [noexcept]\fP"
+
+.PP
+Vector constructor for initialization with a std::vector<Monomial> 
+.PP
+\fBParameters\fP
+.RS 4
+\fImns\fP The std::vector<Monomial>\&. 
+.RE
+.PP
+
+.SS "emth::Polynomial::Polynomial (const \fBPolynomial\fP & ogn)\fC [noexcept]\fP"
+
+.PP
+Copy constructor for when initialized with an lvalue \fBPolynomial\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The lvalue \fBPolynomial\fP object\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB284\fP of file \fBemath\&.cpp\fP\&.
+.SS "emth::Polynomial::Polynomial (\fBemth::Polynomial\fP && ogn)\fC [noexcept]\fP"
+
+.PP
+Move constructor for when initialized with an rvalue \fBPolynomial\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The rvalue \fBPolynomial\fP object\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB289\fP of file \fBemath\&.cpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "int emth::Polynomial::get_degree () const\fC [noexcept]\fP"
+
+.PP
+Getter function for getting the degree of the \fBPolynomial\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+(int) The degree of the \fBPolynomial\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB468\fP of file \fBemath\&.cpp\fP\&.
+.SS "\fBemth::Polynomial\fP emth::Polynomial::get_derivative () const\fC [noexcept]\fP"
+
+.PP
+Calculus function for getting the derivative of the \fBPolynomial\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+(\fBPolynomial\fP) The result of the derivative of the \fBPolynomial\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB515\fP of file \fBemath\&.cpp\fP\&.
+.SS "std::string emth::Polynomial::get_expression () const\fC [noexcept]\fP"
+
+.PP
+Getter function for getting the expression of the \fBPolynomial\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+(std::string) The expression of the \fBPolynomial\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB500\fP of file \fBemath\&.cpp\fP\&.
+.SS "\fBemth::Polynomial\fP emth::Polynomial::get_integral () const\fC [noexcept]\fP"
+
+.PP
+Calculus function for getting the integral of the \fBPolynomial\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+(\fBPolynomial\fP) The result of the integral of the \fBPolynomial\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB526\fP of file \fBemath\&.cpp\fP\&.
+.SS "std::map< int, \fBemth::Monomial\fP > emth::Polynomial::get_monomials () const\fC [noexcept]\fP"
+
+.PP
+Getter function for getting the monomials of the \fBPolynomial\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+(std::map<int, Monomial>) The monomials of the \fBPolynomial\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB473\fP of file \fBemath\&.cpp\fP\&.
+.SS "std::vector< std::complex< double > > emth::Polynomial::get_roots () const\fC [noexcept]\fP"
+
+.PP
+Calculus function for getting all the real and complex roots of the \fBPolynomial\fP using the Eigen library\&. 
+.PP
+\fBReturns\fP
+.RS 4
+(std::vector<double>) All the roots as doubles in a std::vector
+.RE
+.PP
+Does not handle the edge case when called with a constant polynomial (polynomial of degree zero)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+(std::vector<double>) All the roots as doubles in a std::vector 
+.RE
+.PP
+
+.PP
+Definition at line \fB538\fP of file \fBemath\&.cpp\fP\&.
+.SS "double emth::Polynomial::get_value (const double & x) const\fC [noexcept]\fP"
+
+.PP
+Calculus function for getting the value of the \fBPolynomial\fP at a point\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIx\fP The point to evaluate\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(double) The result of the evaluation of the \fBPolynomial\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB506\fP of file \fBemath\&.cpp\fP\&.
+.SS "bool emth::Polynomial::is_empty () const\fC [noexcept]\fP"
+
+.PP
+Function for knowing if the polynomial has or not any monomials\&. 
+.PP
+\fBReturns\fP
+.RS 4
+(bool) If the polynomial is empty\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB478\fP of file \fBemath\&.cpp\fP\&.
+.SS "bool emth::Polynomial::operator!= (const \fBPolynomial\fP & ogn) const\fC [noexcept]\fP"
+
+.PP
+Not equal logic operator overload\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The \fBPolynomial\fP object to compare to\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(true) If \fBPolynomial\fP objects degrees and monomials dont match\&. 
+.PP
+(false) If \fBPolynomial\fP objects degrees and monomials match\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB315\fP of file \fBemath\&.cpp\fP\&.
+.SS "\fBemth::Polynomial\fP emth::Polynomial::operator% (const \fBPolynomial\fP & ogn) const\fC [noexcept]\fP"
+
+.PP
+Modulus operator overload\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The \fBPolynomial\fP object to divide by\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(\fBPolynomial\fP) A brand new \fBPolynomial\fP that represents the result\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB373\fP of file \fBemath\&.cpp\fP\&.
+.SS "\fBemth::Polynomial\fP & emth::Polynomial::operator%= (const \fBPolynomial\fP & ogn)\fC [noexcept]\fP"
+
+.PP
+Modulus assigment operator overload\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The \fBPolynomial\fP object to divide by\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(\fBPolynomial\fP&) A reference to the lvalue of the operation\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB429\fP of file \fBemath\&.cpp\fP\&.
+.SS "\fBemth::Polynomial\fP emth::Polynomial::operator* (const \fBPolynomial\fP & ogn) const\fC [noexcept]\fP"
+
+.PP
+Multiplication operator overload\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The \fBPolynomial\fP object to multiply by\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(\fBPolynomial\fP) A brand new \fBPolynomial\fP that represents the result\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB361\fP of file \fBemath\&.cpp\fP\&.
+.SS "\fBemth::Polynomial\fP & emth::Polynomial::operator*= (const \fBPolynomial\fP & ogn)\fC [noexcept]\fP"
+
+.PP
+Multiplication assigment operator overload\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The \fBPolynomial\fP object to multiply by\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(\fBPolynomial\fP&) A reference to the lvalue of the operation\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB397\fP of file \fBemath\&.cpp\fP\&.
+.SS "\fBemth::Polynomial\fP emth::Polynomial::operator+ (const \fBPolynomial\fP & ogn) const\fC [noexcept]\fP"
+
+.PP
+Addition operator overload\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The \fBPolynomial\fP object to add\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(\fBPolynomial\fP) A brand new \fBPolynomial\fP that represents the result\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB349\fP of file \fBemath\&.cpp\fP\&.
+.SS "\fBemth::Polynomial\fP & emth::Polynomial::operator+= (const \fBPolynomial\fP & ogn)\fC [noexcept]\fP"
+
+.PP
+Addition assigment operator overload\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The \fBPolynomial\fP object to add\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(\fBPolynomial\fP&) A reference to the lvalue of the operation\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB379\fP of file \fBemath\&.cpp\fP\&.
+.SS "\fBemth::Polynomial\fP emth::Polynomial::operator\- (const \fBPolynomial\fP & ogn) const\fC [noexcept]\fP"
+
+.PP
+Substraction operator overload\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The \fBPolynomial\fP object to substract by\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(\fBPolynomial\fP) A brand new \fBPolynomial\fP that represents the result\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB355\fP of file \fBemath\&.cpp\fP\&.
+.SS "\fBemth::Polynomial\fP & emth::Polynomial::operator\-= (const \fBPolynomial\fP & ogn)\fC [noexcept]\fP"
+
+.PP
+Substraction assigment operator overload\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The \fBPolynomial\fP object to substract by\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(\fBPolynomial\fP&) A reference to the lvalue of the operation\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB388\fP of file \fBemath\&.cpp\fP\&.
+.SS "\fBemth::Polynomial\fP emth::Polynomial::operator/ (const \fBPolynomial\fP & ogn) const\fC [noexcept]\fP"
+
+.PP
+Division operator overload\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The \fBPolynomial\fP object to divide by\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(\fBPolynomial\fP) A brand new \fBPolynomial\fP that represents the result\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB367\fP of file \fBemath\&.cpp\fP\&.
+.SS "\fBemth::Polynomial\fP & emth::Polynomial::operator/= (const \fBPolynomial\fP & ogn)\fC [noexcept]\fP"
+
+.PP
+Division assigment operator overload\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The \fBPolynomial\fP object to divide by\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(\fBPolynomial\fP&) A reference to the lvalue of the operation\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB412\fP of file \fBemath\&.cpp\fP\&.
+.PP
+References \fBemth::Monomial::get_degree()\fP\&.
+.SS "bool emth::Polynomial::operator< (const \fBPolynomial\fP & ogn) const\fC [noexcept]\fP"
+
+.PP
+Less than logic operator overload\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The \fBPolynomial\fP object to compare to\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(true) If the \fBPolynomial\fP object degree is less than the degree of the passed \fBPolynomial\fP\&. 
+.PP
+(false) If the \fBPolynomial\fP object degree is equal or greater than the degree of the passed \fBPolynomial\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB329\fP of file \fBemath\&.cpp\fP\&.
+.SS "bool emth::Polynomial::operator<= (const \fBPolynomial\fP & ogn) const\fC [noexcept]\fP"
+
+.PP
+Less or equal than logic operator overload\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The \fBPolynomial\fP object to compare to\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(true) If the \fBPolynomial\fP object degree is less or equal than the degree of the passed \fBPolynomial\fP\&. 
+.PP
+(false) If the \fBPolynomial\fP object degree is greater than the degree of the passed \fBPolynomial\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB343\fP of file \fBemath\&.cpp\fP\&.
+.SS "\fBemth::Polynomial\fP & emth::Polynomial::operator= (const \fBPolynomial\fP & ogn)\fC [noexcept]\fP"
+
+.PP
+Assigment operator overload for when called with an lvalue\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The lvalue \fBPolynomial\fP object\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(\fBPolynomial\fP&) A reference to the lvalue of the operation 
+.RE
+.PP
+
+.PP
+Definition at line \fB295\fP of file \fBemath\&.cpp\fP\&.
+.SS "\fBemth::Polynomial\fP & emth::Polynomial::operator= (\fBemth::Polynomial\fP && ogn)\fC [noexcept]\fP"
+
+.PP
+Move assigment operator overload for when called with an rvalue\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The rvalue \fBPolynomial\fP object\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(\fBPolynomial\fP&) A reference to the lvalue of the operation 
+.RE
+.PP
+
+.PP
+Definition at line \fB301\fP of file \fBemath\&.cpp\fP\&.
+.SS "bool emth::Polynomial::operator== (const \fBPolynomial\fP & ogn) const\fC [noexcept]\fP"
+
+.PP
+Equal logic operator overload\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The \fBPolynomial\fP object to compare to\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(true) If \fBPolynomial\fP objects degrees and monomials match\&. 
+.PP
+(false) If \fBPolynomial\fP objects degrees and monomials dont match\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB308\fP of file \fBemath\&.cpp\fP\&.
+.SS "bool emth::Polynomial::operator> (const \fBPolynomial\fP & ogn) const\fC [noexcept]\fP"
+
+.PP
+Greater than logic operator overload\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The \fBPolynomial\fP object to compare to\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(true) If the \fBPolynomial\fP object degree is greater than the degree of the passed \fBPolynomial\fP\&. 
+.PP
+(false) If the \fBPolynomial\fP object degree is equal or less than the degree of the passed \fBPolynomial\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB322\fP of file \fBemath\&.cpp\fP\&.
+.SS "bool emth::Polynomial::operator>= (const \fBPolynomial\fP & ogn) const\fC [noexcept]\fP"
+
+.PP
+Greater or equal than logic operator overload\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIogn\fP The \fBPolynomial\fP object to compare to\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(true) If the \fBPolynomial\fP object degree is greater or equal than the degree of the passed \fBPolynomial\fP\&. 
+.PP
+(false) If the \fBPolynomial\fP object degree is less than the degree of the passed \fBPolynomial\fP\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB336\fP of file \fBemath\&.cpp\fP\&.
+.SS "bool emth::Polynomial::push_monomial (const \fBMonomial\fP & m)\fC [noexcept]\fP"
+
+.PP
+Function for appending a lvalue monomial to the \fBPolynomial\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIm\fP The \fBMonomial\fP object to append\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(bool) If the operation was successful\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB484\fP of file \fBemath\&.cpp\fP\&.
+.SS "bool emth::Polynomial::push_monomial (\fBemth::Monomial\fP && m)\fC [noexcept]\fP"
+
+.PP
+Function for appending a rvalue monomial to the \fBPolynomial\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIm\fP The \fBMonomial\fP object to append\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(bool) If the operation was successful\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB490\fP of file \fBemath\&.cpp\fP\&.
+.PP
+References \fBemth::Monomial::get_coeff()\fP, and \fBemth::Monomial::get_degree()\fP\&.
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "std::ostream & operator<< (std::ostream & out, const \fBPolynomial\fP & p)\fC [friend]\fP"
+
+.PP
+A friend operator to insert the \fBPolynomial\fP into a std::ostream\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIout\fP The std::ostream\&. 
+.br
+\fIm\fP The \fBPolynomial\fP object to insert\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(std::ostream&) A reference to the std::ostream\&. 
+.RE
+.PP
+
+.SS "std::stringstream & operator<< (std::stringstream & ss, const \fBPolynomial\fP & p)\fC [friend]\fP"
+
+.PP
+A friend operator to insert the \fBPolynomial\fP into a std::stringstream\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIss\fP The std::stringstream\&. 
+.br
+\fIm\fP The \fBPolynomial\fP object to insert\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(std::stringstream&) A reference to the std::stringstream\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for EMath++ from the source code\&.

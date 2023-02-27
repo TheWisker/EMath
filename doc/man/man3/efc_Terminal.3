@@ -1,0 +1,278 @@
+.TH "efc::Terminal" 3 "Mon Feb 27 2023" "EMath++" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+efc::Terminal \- \fBTerminal\fP class to manage the terminal through curses\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBflush\fP ()"
+.br
+.RI "Function for flushin all the \fBTerminal\fP's Windows\&. "
+.ti -1c
+.RI "void \fBset_ltitle\fP (const ::std::string title) noexcept"
+.br
+.RI "Function for setting the title of the left \fBWindow\fP\&. "
+.ti -1c
+.RI "void \fBset_rtitle\fP (const ::std::string title) noexcept"
+.br
+.RI "Function for setting the title of the right \fBWindow\fP\&. "
+.ti -1c
+.RI "void \fBset_prompt\fP (const ::std::string prompt) noexcept"
+.br
+.RI "Function for setting the prompt of the bottom \fBWindow\fP\&. "
+.ti -1c
+.RI "void \fBset_ldata\fP (::std::vector<::std::string > data) noexcept"
+.br
+.RI "Function for setting data vector of the left \fBWindow\fP\&. "
+.ti -1c
+.RI "void \fBset_rdata\fP (::std::vector<::std::string > data) noexcept"
+.br
+.RI "Function for setting data vector of the right \fBWindow\fP\&. "
+.ti -1c
+.RI "const int \fBget_short_input\fP () const"
+.br
+.RI "Function for getting short single char input from the \fBTerminal\fP\&. "
+.ti -1c
+.RI "const ::std::string \fBget_long_input\fP () const"
+.br
+.RI "Function for getting long single string input from the \fBTerminal\fP\&. "
+.ti -1c
+.RI "void \fBscroll_down\fP (const unsigned int id) noexcept"
+.br
+.RI "Function for scrolling down the left or right window depending on the provided id\&. "
+.ti -1c
+.RI "void \fBscroll_up\fP (const unsigned int id) noexcept"
+.br
+.RI "Function for scrolling up the left or right window depending on the provided id\&. "
+.ti -1c
+.RI "void \fBecho_result\fP (const ::std::string &result)"
+.br
+.RI "Echoes the provided result to the prompt and waits for a key press\&. "
+.ti -1c
+.RI "void \fBswap_active\fP (const unsigned int id) noexcept"
+.br
+.RI "Swaps the active window to the one matching the provide id\&. "
+.ti -1c
+.RI "\fB~Terminal\fP () noexcept"
+.br
+.RI "Default destructor, it deletes the \fBWindow\fP pointers, sets the singleton instance to nullptr, stops the signal listener and stops curses\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBTerminal\fP * \fBinit\fP () noexcept"
+.br
+.RI "Static function for building the singleton static instance\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBTerminal\fP class to manage the terminal through curses\&. 
+
+It works as a singleton\&. Not generic in any way\&. 
+.PP
+Definition at line \fB259\fP of file \fBinterface\&.cpp\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "efc::Terminal::~Terminal ()\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+Default destructor, it deletes the \fBWindow\fP pointers, sets the singleton instance to nullptr, stops the signal listener and stops curses\&. 
+.PP
+Definition at line \fB444\fP of file \fBinterface\&.cpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void efc::Terminal::echo_result (const ::std::string & result)\fC [inline]\fP"
+
+.PP
+Echoes the provided result to the prompt and waits for a key press\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIresult\fP The result to echo as a const ::std::string& 
+.RE
+.PP
+
+.PP
+Definition at line \fB422\fP of file \fBinterface\&.cpp\fP\&.
+.PP
+References \fBefc::Window::get_title()\fP, and \fBefc::Window::o\fP\&.
+.SS "void efc::Terminal::flush ()\fC [inline]\fP"
+
+.PP
+Function for flushin all the \fBTerminal\fP's Windows\&. 
+.PP
+Definition at line \fB362\fP of file \fBinterface\&.cpp\fP\&.
+.PP
+References \fBefc::Window::o\fP\&.
+.SS "const ::std::string efc::Terminal::get_long_input () const\fC [inline]\fP"
+
+.PP
+Function for getting long single string input from the \fBTerminal\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+(::std::string) The input as a std::string 
+.RE
+.PP
+
+.PP
+Definition at line \fB397\fP of file \fBinterface\&.cpp\fP\&.
+.PP
+References \fBefc::Window::o\fP\&.
+.SS "const int efc::Terminal::get_short_input () const\fC [inline]\fP"
+
+.PP
+Function for getting short single char input from the \fBTerminal\fP\&. 
+.PP
+\fBReturns\fP
+.RS 4
+(const int) Int representing the pressed key 
+.RE
+.PP
+
+.PP
+Definition at line \fB392\fP of file \fBinterface\&.cpp\fP\&.
+.PP
+References \fBefc::Window::o\fP\&.
+.SS "static \fBTerminal\fP * efc::Terminal::init ()\fC [inline]\fP, \fC [static]\fP, \fC [noexcept]\fP"
+
+.PP
+Static function for building the singleton static instance\&. 
+.PP
+\fBReturns\fP
+.RS 4
+(Terminal*) The singleton instance pointer also stored at Terminal::instance 
+.RE
+.PP
+
+.PP
+Definition at line \fB355\fP of file \fBinterface\&.cpp\fP\&.
+.SS "void efc::Terminal::scroll_down (const unsigned int id)\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+Function for scrolling down the left or right window depending on the provided id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP The id of the window as a const unsigned int 
+.RE
+.PP
+
+.PP
+Definition at line \fB402\fP of file \fBinterface\&.cpp\fP\&.
+.PP
+References \fBefc::OWindow::scroll_down()\fP\&.
+.SS "void efc::Terminal::scroll_up (const unsigned int id)\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+Function for scrolling up the left or right window depending on the provided id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP The id of the window as a const unsigned int 
+.RE
+.PP
+
+.PP
+Definition at line \fB412\fP of file \fBinterface\&.cpp\fP\&.
+.PP
+References \fBefc::OWindow::scroll_up()\fP\&.
+.SS "void efc::Terminal::set_ldata (::std::vector<::std::string > data)\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+Function for setting data vector of the left \fBWindow\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdata\fP The data as a std::vector of std::string 
+.RE
+.PP
+
+.PP
+Definition at line \fB382\fP of file \fBinterface\&.cpp\fP\&.
+.PP
+References \fBefc::OWindow::set_data()\fP\&.
+.SS "void efc::Terminal::set_ltitle (const ::std::string title)\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+Function for setting the title of the left \fBWindow\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItitle\fP The title as a std::string 
+.RE
+.PP
+
+.PP
+Definition at line \fB367\fP of file \fBinterface\&.cpp\fP\&.
+.PP
+References \fBefc::Window::set_title()\fP\&.
+.SS "void efc::Terminal::set_prompt (const ::std::string prompt)\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+Function for setting the prompt of the bottom \fBWindow\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIprompt\fP The prompt as a std::string 
+.RE
+.PP
+
+.PP
+Definition at line \fB377\fP of file \fBinterface\&.cpp\fP\&.
+.PP
+References \fBefc::Window::set_title()\fP\&.
+.SS "void efc::Terminal::set_rdata (::std::vector<::std::string > data)\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+Function for setting data vector of the right \fBWindow\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdata\fP The data as a std::vector of std::string 
+.RE
+.PP
+
+.PP
+Definition at line \fB387\fP of file \fBinterface\&.cpp\fP\&.
+.PP
+References \fBefc::OWindow::set_data()\fP\&.
+.SS "void efc::Terminal::set_rtitle (const ::std::string title)\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+Function for setting the title of the right \fBWindow\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fItitle\fP The title as a std::string 
+.RE
+.PP
+
+.PP
+Definition at line \fB372\fP of file \fBinterface\&.cpp\fP\&.
+.PP
+References \fBefc::Window::set_title()\fP\&.
+.SS "void efc::Terminal::swap_active (const unsigned int id)\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+Swaps the active window to the one matching the provide id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP The id of the window as a const unsigned int 
+.RE
+.PP
+
+.PP
+Definition at line \fB433\fP of file \fBinterface\&.cpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for EMath++ from the source code\&.

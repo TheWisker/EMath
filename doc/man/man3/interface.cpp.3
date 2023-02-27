@@ -1,0 +1,322 @@
+.TH "src/interface.cpp" 3 "Mon Feb 27 2023" "EMath++" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/interface.cpp \- This file contains the text user interface for the emath library\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <curses\&.h>\fP
+.br
+\fC#include <fstream>\fP
+.br
+\fC#include <string>\fP
+.br
+\fC#include <vector>\fP
+.br
+\fC#include 'rapidjson/document\&.h'\fP
+.br
+\fC#include 'rapidjson/writer\&.h'\fP
+.br
+\fC#include 'rapidjson/stringbuffer\&.h'\fP
+.br
+\fC#include <SFML/Graphics\&.hpp>\fP
+.br
+\fC#include <thread>\fP
+.br
+\fC#include 'emath\&.h'\fP
+.br
+\fC#include 'eparser\&.h'\fP
+.br
+\fC#include 'font\&.h'\fP
+.br
+\fC#include <signal\&.h>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBefc::Window\fP"
+.br
+.RI "Generic class for wrapping a curses WINDOW\&. "
+.ti -1c
+.RI "class \fBefc::OWindow\fP"
+.br
+.RI "\fBWindow\fP class extension for output\&. "
+.ti -1c
+.RI "class \fBefc::IWindow\fP"
+.br
+.RI "\fBWindow\fP class extension for input\&. "
+.ti -1c
+.RI "class \fBefc::Terminal\fP"
+.br
+.RI "\fBTerminal\fP class to manage the terminal through curses\&. "
+.ti -1c
+.RI "class \fBefc::Plane\fP"
+.br
+.RI "\fBPlane\fP class to draw a function in the Cartesian plane\&. "
+.ti -1c
+.RI "class \fBefc::Storage\fP"
+.br
+.RI "\fBStorage\fP class to read and write to a file\&. "
+.ti -1c
+.RI "struct \fBefc::Token\fP"
+.br
+.RI "Struct for representing a token as a type and a value\&. "
+.ti -1c
+.RI "class \fBefc::Lexer\fP"
+.br
+.RI "Class that works as a token supplier for the \fBParser\fP class\&. "
+.ti -1c
+.RI "class \fBefc::Parser\fP"
+.br
+.RI "Class that wraps a std::string and parses it as a number or as a operation\&. "
+.ti -1c
+.RI "class \fBefc::Application\fP"
+.br
+.RI "Class that contains the application inner logic\&. "
+.in -1c
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI "namespace \fBefc\fP"
+.br
+.RI "Englobes all the classes and functions of the emath text user interface\&. "
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBINTERFACE_H\fP"
+.br
+.ti -1c
+.RI "#define \fBHPADD\fP   1"
+.br
+.ti -1c
+.RI "#define \fBWPADD\fP   2"
+.br
+.ti -1c
+.RI "#define \fBCPOSY\fP   1"
+.br
+.ti -1c
+.RI "#define \fBCPOSX\fP   2"
+.br
+.ti -1c
+.RI "#define \fBPSIZE\fP   3"
+.br
+.ti -1c
+.RI "#define \fBTOFST\fP   2"
+.br
+.ti -1c
+.RI "#define \fBCOLOR_ID\fP   1"
+.br
+.ti -1c
+.RI "#define \fBKEY_ESC\fP   27"
+.br
+.ti -1c
+.RI "#define \fBKEY_TAB\fP   9"
+.br
+.ti -1c
+.RI "#define \fBKEY_SPC\fP   32"
+.br
+.ti -1c
+.RI "#define \fBKEY_E\fP   101"
+.br
+.ti -1c
+.RI "#define \fBKEY_Q\fP   113"
+.br
+.ti -1c
+.RI "#define \fBKEY_1\fP   49"
+.br
+.ti -1c
+.RI "#define \fBKEY_2\fP   50"
+.br
+.ti -1c
+.RI "#define \fBKEY_3\fP   51"
+.br
+.ti -1c
+.RI "#define \fBKEY_4\fP   52"
+.br
+.ti -1c
+.RI "#define \fBKEY_5\fP   53"
+.br
+.ti -1c
+.RI "#define \fBLWIN\fP   0"
+.br
+.ti -1c
+.RI "#define \fBRWIN\fP   1"
+.br
+.ti -1c
+.RI "#define \fBBWIN\fP   2"
+.br
+.ti -1c
+.RI "#define \fBSG_FILE\fP   'polynomials\&.json'"
+.br
+.ti -1c
+.RI "#define \fBswp\fP(l,  r,  b)   this\->lwin\->set_active(l); this\->rwin\->set_active(r); this\->bwin\->set_active(b);"
+.br
+.ti -1c
+.RI "#define \fBV_MENU\fP   {::std::string('[ESC] Exit program'), ::std::string('[TAB] Cycle focus'), ::std::string('[E] Add polynomial'), ::std::string('[Q] Remove polynomial'), ::std::string('[SPACE] New operation')}"
+.br
+.ti -1c
+.RI "#define \fBV_OPERATION\fP   {::std::string('[ESC] Back'), ::std::string('[TAB] Cycle focus'), ::std::string('[1] Evaluate operation'), ::std::string('[2] Derivative operation'), ::std::string('[3] Integral operation'), ::std::string('[4] Root finding operation'), ::std::string('[5] Drawing operation'), ::std::string('[SPACE] Arithmetic operations')}"
+.br
+.ti -1c
+.RI "#define \fBV_SCROLL\fP   {::std::string('[ESC] Exit program'), ::std::string('[UP ARROW] Scroll up'), ::std::string('[DOWN ARROW] Scroll down')}"
+.br
+.ti -1c
+.RI "#define \fBswpa\fP(o)   this\->active = o; this\->terminal\->swap_active(o);"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBefc::TokenType\fP { \fBefc::T_NUMBER\fP, \fBefc::T_PLUS\fP, \fBefc::T_MINUS\fP, \fBefc::T_MULTIPLICATION\fP, \fBefc::T_DIVISION\fP, \fBefc::T_EOF\fP }"
+.br
+.RI "Enum with all the possible Token types\&. "
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBmain\fP ()"
+.br
+.RI "The main function that creates the \fBefc::Application\fP instance, runs it and when it finishes it deletes it\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+This file contains the text user interface for the emath library\&. 
+
+It contains an efc namespace with all the implementations inside
+.br
+It comes with the capability to do arithmetic operations with polynomials, parse polynomials,
+.br
+solve polynomials, evaluate polynomials and graphically represent polynomials\&. 
+.PP
+Definition in file \fBinterface\&.cpp\fP\&.
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define BWIN   2"
+
+.PP
+Definition at line \fB52\fP of file \fBinterface\&.cpp\fP\&.
+.SS "#define COLOR_ID   1"
+
+.PP
+Definition at line \fB39\fP of file \fBinterface\&.cpp\fP\&.
+.SS "#define CPOSX   2"
+
+.PP
+Definition at line \fB36\fP of file \fBinterface\&.cpp\fP\&.
+.SS "#define CPOSY   1"
+
+.PP
+Definition at line \fB35\fP of file \fBinterface\&.cpp\fP\&.
+.SS "#define HPADD   1"
+
+.PP
+Definition at line \fB33\fP of file \fBinterface\&.cpp\fP\&.
+.SS "#define INTERFACE_H"
+
+.PP
+Definition at line \fB9\fP of file \fBinterface\&.cpp\fP\&.
+.SS "#define KEY_1   49"
+
+.PP
+Definition at line \fB45\fP of file \fBinterface\&.cpp\fP\&.
+.SS "#define KEY_2   50"
+
+.PP
+Definition at line \fB46\fP of file \fBinterface\&.cpp\fP\&.
+.SS "#define KEY_3   51"
+
+.PP
+Definition at line \fB47\fP of file \fBinterface\&.cpp\fP\&.
+.SS "#define KEY_4   52"
+
+.PP
+Definition at line \fB48\fP of file \fBinterface\&.cpp\fP\&.
+.SS "#define KEY_5   53"
+
+.PP
+Definition at line \fB49\fP of file \fBinterface\&.cpp\fP\&.
+.SS "#define KEY_E   101"
+
+.PP
+Definition at line \fB43\fP of file \fBinterface\&.cpp\fP\&.
+.SS "#define KEY_ESC   27"
+
+.PP
+Definition at line \fB40\fP of file \fBinterface\&.cpp\fP\&.
+.SS "#define KEY_Q   113"
+
+.PP
+Definition at line \fB44\fP of file \fBinterface\&.cpp\fP\&.
+.SS "#define KEY_SPC   32"
+
+.PP
+Definition at line \fB42\fP of file \fBinterface\&.cpp\fP\&.
+.SS "#define KEY_TAB   9"
+
+.PP
+Definition at line \fB41\fP of file \fBinterface\&.cpp\fP\&.
+.SS "#define LWIN   0"
+
+.PP
+Definition at line \fB50\fP of file \fBinterface\&.cpp\fP\&.
+.SS "#define PSIZE   3"
+
+.PP
+Definition at line \fB37\fP of file \fBinterface\&.cpp\fP\&.
+.SS "#define RWIN   1"
+
+.PP
+Definition at line \fB51\fP of file \fBinterface\&.cpp\fP\&.
+.SS "#define SG_FILE   'polynomials\&.json'"
+
+.PP
+Definition at line \fB53\fP of file \fBinterface\&.cpp\fP\&.
+.SS "#define TOFST   2"
+
+.PP
+Definition at line \fB38\fP of file \fBinterface\&.cpp\fP\&.
+.SS "#define V_MENU   {::std::string('[ESC] Exit program'), ::std::string('[TAB] Cycle focus'), ::std::string('[E] Add polynomial'), ::std::string('[Q] Remove polynomial'), ::std::string('[SPACE] New operation')}"
+
+.PP
+Definition at line \fB831\fP of file \fBinterface\&.cpp\fP\&.
+.SS "#define V_OPERATION   {::std::string('[ESC] Back'), ::std::string('[TAB] Cycle focus'), ::std::string('[1] Evaluate operation'), ::std::string('[2] Derivative operation'), ::std::string('[3] Integral operation'), ::std::string('[4] Root finding operation'), ::std::string('[5] Drawing operation'), ::std::string('[SPACE] Arithmetic operations')}"
+
+.PP
+Definition at line \fB832\fP of file \fBinterface\&.cpp\fP\&.
+.SS "#define V_SCROLL   {::std::string('[ESC] Exit program'), ::std::string('[UP ARROW] Scroll up'), ::std::string('[DOWN ARROW] Scroll down')}"
+
+.PP
+Definition at line \fB833\fP of file \fBinterface\&.cpp\fP\&.
+.SS "#define WPADD   2"
+
+.PP
+Definition at line \fB34\fP of file \fBinterface\&.cpp\fP\&.
+.SH "Function Documentation"
+.PP 
+.SS "int main ()"
+
+.PP
+The main function that creates the \fBefc::Application\fP instance, runs it and when it finishes it deletes it\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Int 0 If the \fBefc::Application\fP did not end abrubtly 
+.RE
+.PP
+
+.PP
+Definition at line \fB1104\fP of file \fBinterface\&.cpp\fP\&.
+.PP
+References \fBefc::Application::init()\fP, and \fBefc::Application::run()\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for EMath++ from the source code\&.

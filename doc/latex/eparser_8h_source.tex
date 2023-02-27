@@ -1,0 +1,51 @@
+\hypertarget{eparser_8h_source}{}\doxysection{eparser.\+h}
+\label{eparser_8h_source}\index{include/eparser.h@{include/eparser.h}}
+\mbox{\hyperlink{eparser_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00009}00009\ \textcolor{preprocessor}{\#ifndef\ EPARSER\_H}}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00010}00010\ \textcolor{preprocessor}{\#define\ EPARSER\_H}}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00011}00011\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00012}00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{emath_8h}{emath.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00013}00013\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00019}00019\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceemthp}{emthp}}\ \{}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00024}\mbox{\hyperlink{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6b}{00024}}\ \ \ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6b}{TokenType}}\ \{}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00028}\mbox{\hyperlink{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6bab0be00ab2ea8e4a56ab22f220c7de9bf}{00028}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6bab0be00ab2ea8e4a56ab22f220c7de9bf}{T\_PLUS}},}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00032}\mbox{\hyperlink{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6ba636464f87ad08d661e8f664b4a5903db}{00032}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6ba636464f87ad08d661e8f664b4a5903db}{T\_MINUS}},}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00036}\mbox{\hyperlink{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6bad7549ed90d6122d0761f3acfb1b56923}{00036}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6bad7549ed90d6122d0761f3acfb1b56923}{T\_NUMBER}},}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00040}\mbox{\hyperlink{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6ba6aa4d0d8ca8e058abc4e4e38f466bbd2}{00040}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6ba6aa4d0d8ca8e058abc4e4e38f466bbd2}{T\_VARIABLE}},}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00044}\mbox{\hyperlink{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6ba7b607d6341806fa8bc4505c44670de8c}{00044}}\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6ba7b607d6341806fa8bc4505c44670de8c}{T\_EXPONENT}},}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00048}00048\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6ba5a13d17b3d73d6aa1a545e430284ec6d}{T\_EOF}}}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00049}\mbox{\hyperlink{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6ba5a13d17b3d73d6aa1a545e430284ec6d}{00049}}\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00054}\mbox{\hyperlink{structemthp_1_1Token}{00054}}\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structemthp_1_1Token}{Token}}\ \{}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00055}00055\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00059}\mbox{\hyperlink{structemthp_1_1Token_ae532928c40581bc20349979955dfb2f3}{00059}}\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespaceemthp_a29873cfffe66c1e0b36436ebcc54dc6b}{TokenType}}\ \mbox{\hyperlink{structemthp_1_1Token_ae532928c40581bc20349979955dfb2f3}{type}};}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00063}\mbox{\hyperlink{structemthp_1_1Token_a0512f6f4c2a7dcf724d582d971393c2c}{00063}}\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structemthp_1_1Token_a0512f6f4c2a7dcf724d582d971393c2c}{value}};}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00064}00064\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00070}\mbox{\hyperlink{classemthp_1_1Lexer}{00070}}\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classemthp_1_1Lexer}{Lexer}}\ \{}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00071}00071\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00076}00076\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classemthp_1_1Lexer}{Lexer}}(\textcolor{keyword}{const}\ std::string\&\ input)\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00082}00082\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classemthp_1_1Lexer}{Lexer}}\&\ \mbox{\hyperlink{classemthp_1_1Lexer_a5116f34af8ec69634dc9202ae2d48b4a}{operator\ =}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classemthp_1_1Lexer}{Lexer}}\&\ ogn)\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00087}00087\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structemthp_1_1Token}{Token}}\ \mbox{\hyperlink{classemthp_1_1Lexer_a629ea5f393603e05dad17b004caba27d}{next}}()\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00091}00091\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classemthp_1_1Lexer_a273b288699191ec896c9857cfe7f5704}{back}}()\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00092}00092\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00096}00096\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ \_input;}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00100}00100\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \_pos;}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00105}00105\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ read\_number()\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00111}00111\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ std::string\ clean(\textcolor{keyword}{const}\ std::string\&\ input)\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00118}00118\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ is\_digit(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\&\ c)\ \textcolor{keyword}{noexcept}\ \{\textcolor{keywordflow}{return}\ ((c\ >=\ \textcolor{charliteral}{'0'}\ \&\&\ c\ <=\ \textcolor{charliteral}{'9'})\ ||\ c\ ==\ \textcolor{charliteral}{'.'});\}}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00119}00119\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00125}\mbox{\hyperlink{classemthp_1_1Parser}{00125}}\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classemthp_1_1Parser}{Parser}}\ \{}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00126}00126\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00131}00131\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classemthp_1_1Parser}{Parser}}(\textcolor{keyword}{const}\ std::string\&\ input)\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00137}00137\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classemthp_1_1Parser}{Parser}}\&\ \mbox{\hyperlink{classemthp_1_1Parser_ada7e099319ce350bb2d5dcfd5ea8b36a}{operator\ =}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classemthp_1_1Parser}{Parser}}\&\ ogn)\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00142}00142\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classemth_1_1Polynomial}{emth::Polynomial}}\ \mbox{\hyperlink{classemthp_1_1Parser_a933df3ba2501887aa6d947bfe6eafe4b}{parse\_polynomial}}()\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00147}00147\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classemth_1_1Monomial}{emth::Monomial}}\ \mbox{\hyperlink{classemthp_1_1Parser_a590566c3e893515a0dbb9db032a889cd}{parse\_monomial}}()\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00148}00148\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00152}00152\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classemthp_1_1Lexer}{Lexer}}\ \_lexer;}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00157}00157\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ parse\_number()\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00158}00158\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00159}00159\ \}}
+\DoxyCodeLine{\Hypertarget{eparser_8h_source_l00160}00160\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

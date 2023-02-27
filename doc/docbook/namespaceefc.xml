@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespaceefc" xml:lang="en-US">
+<title>efc Namespace Reference</title>
+<indexterm><primary>efc</primary></indexterm>
+<para>
+
+<para>Englobes all the classes and functions of the emath text user interface. </para>
+ 
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classefc_1_1Application">Application</link></para>
+
+<para>Class that contains the application inner logic. </para>
+</listitem>
+            <listitem><para>class <link linkend="_classefc_1_1IWindow">IWindow</link></para>
+
+<para><link linkend="_classefc_1_1Window">Window</link> class extension for input. </para>
+</listitem>
+            <listitem><para>class <link linkend="_classefc_1_1Lexer">Lexer</link></para>
+
+<para>Class that works as a token supplier for the <link linkend="_classefc_1_1Parser">Parser</link> class. </para>
+</listitem>
+            <listitem><para>class <link linkend="_classefc_1_1OWindow">OWindow</link></para>
+
+<para><link linkend="_classefc_1_1Window">Window</link> class extension for output. </para>
+</listitem>
+            <listitem><para>class <link linkend="_classefc_1_1Parser">Parser</link></para>
+
+<para>Class that wraps a std::string and parses it as a number or as a operation. </para>
+</listitem>
+            <listitem><para>class <link linkend="_classefc_1_1Plane">Plane</link></para>
+
+<para><link linkend="_classefc_1_1Plane">Plane</link> class to draw a function in the Cartesian plane. </para>
+</listitem>
+            <listitem><para>class <link linkend="_classefc_1_1Storage">Storage</link></para>
+
+<para><link linkend="_classefc_1_1Storage">Storage</link> class to read and write to a file. </para>
+</listitem>
+            <listitem><para>class <link linkend="_classefc_1_1Terminal">Terminal</link></para>
+
+<para><link linkend="_classefc_1_1Terminal">Terminal</link> class to manage the terminal through curses. </para>
+</listitem>
+            <listitem><para>struct <link linkend="_structefc_1_1Token">Token</link></para>
+
+<para>Struct for representing a token as a type and a value. </para>
+</listitem>
+            <listitem><para>class <link linkend="_classefc_1_1Window">Window</link></para>
+
+<para>Generic class for wrapping a curses WINDOW. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_namespaceefc_1af24b42c9a5c7268f47143ad4e796b58c">TokenType</link> { <?linebreak?><link linkend="_namespaceefc_1af24b42c9a5c7268f47143ad4e796b58ca6deff0133907b9e20a1c345afd3c42aa">T_NUMBER</link>
+, <link linkend="_namespaceefc_1af24b42c9a5c7268f47143ad4e796b58ca29baf11d038163906f69fb410fe1d4e0">T_PLUS</link>
+, <link linkend="_namespaceefc_1af24b42c9a5c7268f47143ad4e796b58cae5e24b6fa05d86c2c2b3dd760683a775">T_MINUS</link>
+, <link linkend="_namespaceefc_1af24b42c9a5c7268f47143ad4e796b58cabf0e9e601a2dbc828e933bd240bbe386">T_MULTIPLICATION</link>
+, <?linebreak?><link linkend="_namespaceefc_1af24b42c9a5c7268f47143ad4e796b58ca452aff6a9ea8337e9b27fc43824d0d00">T_DIVISION</link>
+, <link linkend="_namespaceefc_1af24b42c9a5c7268f47143ad4e796b58caa1fcef4084cd9aba09d36f5ed7110b6a">T_EOF</link>
+ }</para>
+
+<para>Enum with all the possible Token types. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Englobes all the classes and functions of the emath text user interface. </para>
+
+<para>The emth namespace contains the following classes: <link linkend="_classefc_1_1Window">Window</link>, <link linkend="_classefc_1_1IWindow">IWindow</link>, <link linkend="_classefc_1_1OWindow">OWindow</link>, <link linkend="_classefc_1_1Terminal">Terminal</link>, <link linkend="_classefc_1_1Plane">Plane</link>, <link linkend="_classefc_1_1Storage">Storage</link>, <link linkend="_classefc_1_1Lexer">Lexer</link>, <link linkend="_classefc_1_1Parser">Parser</link> and <link linkend="_classefc_1_1Application">Application</link>. </para>
+</section>
+<section>
+<title>Enumeration Type Documentation</title>
+<anchor xml:id="_namespaceefc_1af24b42c9a5c7268f47143ad4e796b58c"/><section>
+    <title>TokenType</title>
+<indexterm><primary>TokenType</primary><secondary>efc</secondary></indexterm>
+<indexterm><primary>efc</primary><secondary>TokenType</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespaceefc_1af24b42c9a5c7268f47143ad4e796b58c">efc::TokenType</link></computeroutput></para><para>
+
+<para>Enum with all the possible <link linkend="_structefc_1_1Token">Token</link> types. </para>
+</para>
+<informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>T_NUMBER</primary><secondary>efc</secondary></indexterm>
+<indexterm><primary>efc</primary><secondary>T_NUMBER</secondary></indexterm>
+<anchor xml:id="_namespaceefc_1af24b42c9a5c7268f47143ad4e796b58ca6deff0133907b9e20a1c345afd3c42aa"/>T_NUMBER</entry><entry>
+<para>Number type. </para>
+</entry></row><row><entry><indexterm><primary>T_PLUS</primary><secondary>efc</secondary></indexterm>
+<indexterm><primary>efc</primary><secondary>T_PLUS</secondary></indexterm>
+<anchor xml:id="_namespaceefc_1af24b42c9a5c7268f47143ad4e796b58ca29baf11d038163906f69fb410fe1d4e0"/>T_PLUS</entry><entry>
+<para>Plus sign type. </para>
+</entry></row><row><entry><indexterm><primary>T_MINUS</primary><secondary>efc</secondary></indexterm>
+<indexterm><primary>efc</primary><secondary>T_MINUS</secondary></indexterm>
+<anchor xml:id="_namespaceefc_1af24b42c9a5c7268f47143ad4e796b58cae5e24b6fa05d86c2c2b3dd760683a775"/>T_MINUS</entry><entry>
+<para>Minus sign type. </para>
+</entry></row><row><entry><indexterm><primary>T_MULTIPLICATION</primary><secondary>efc</secondary></indexterm>
+<indexterm><primary>efc</primary><secondary>T_MULTIPLICATION</secondary></indexterm>
+<anchor xml:id="_namespaceefc_1af24b42c9a5c7268f47143ad4e796b58cabf0e9e601a2dbc828e933bd240bbe386"/>T_MULTIPLICATION</entry><entry>
+<para>Multiplication sign type. </para>
+</entry></row><row><entry><indexterm><primary>T_DIVISION</primary><secondary>efc</secondary></indexterm>
+<indexterm><primary>efc</primary><secondary>T_DIVISION</secondary></indexterm>
+<anchor xml:id="_namespaceefc_1af24b42c9a5c7268f47143ad4e796b58ca452aff6a9ea8337e9b27fc43824d0d00"/>T_DIVISION</entry><entry>
+<para>Division sign type. </para>
+</entry></row><row><entry><indexterm><primary>T_EOF</primary><secondary>efc</secondary></indexterm>
+<indexterm><primary>efc</primary><secondary>T_EOF</secondary></indexterm>
+<anchor xml:id="_namespaceefc_1af24b42c9a5c7268f47143ad4e796b58caa1fcef4084cd9aba09d36f5ed7110b6a"/>T_EOF</entry><entry>
+<para>End of file type. </para>
+</entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l00650">650</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+</section>
+</section>

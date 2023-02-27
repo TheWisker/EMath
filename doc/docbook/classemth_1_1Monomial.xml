@@ -1,0 +1,1196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classemth_1_1Monomial" xml:lang="en-US">
+<title>emth::Monomial Class Reference</title>
+<indexterm><primary>emth::Monomial</primary></indexterm>
+<para>
+
+<para>Class for representing and operating monomials. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;emath.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classemth_1_1Monomial_1ae6048a5e8de2117072def861911aa4a7">Monomial</link> () noexcept</para>
+
+<para>Default constructor for when initialized with no arguments. </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Monomial_1a70ba615f776f89452b3b11bb9dfe045e">Monomial</link> (const double cf, const int dgr) noexcept</para>
+
+<para>Normal constructor for initialization with coeff and degree. </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Monomial_1aa5fc7752eb6a5db663872dd7298140c1">Monomial</link> (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp;ogn) noexcept</para>
+
+<para>Copy constructor for when initialized with an lvalue <link linkend="_classemth_1_1Monomial">Monomial</link> object. </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Monomial_1a0d77a762defbcd2cb1925e3258f6158f">Monomial</link> (<link linkend="_classemth_1_1Monomial">Monomial</link> &amp;&amp;ogn) noexcept</para>
+
+<para>Move constructor for when initialized with an rvalue <link linkend="_classemth_1_1Monomial">Monomial</link> object. </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Monomial">Monomial</link> &amp; <link linkend="_classemth_1_1Monomial_1a3de7a92cfd27acad4e1ff3d2158536f4">operator=</link> (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp;ogn) noexcept</para>
+
+<para>Assigment operator overload for when called with an lvalue. </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Monomial">Monomial</link> &amp; <link linkend="_classemth_1_1Monomial_1a7ea9ffbef1c53c8e0f7a9bfda2dcb691">operator=</link> (<link linkend="_classemth_1_1Monomial">Monomial</link> &amp;&amp;ogn) noexcept</para>
+
+<para>Move assigment operator overload for when called with an rvalue. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_classemth_1_1Monomial_1a2f9d14fa6443fc160258121c7907b989">operator==</link> (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp;ogn) const noexcept</para>
+
+<para>Equal logic operator overload. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_classemth_1_1Monomial_1ab7f80ead25e2f5d4ad80cdbbfe49d5e3">operator!=</link> (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp;ogn) const noexcept</para>
+
+<para>Not equal logic operator overload. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_classemth_1_1Monomial_1a995abc13b689075b21b43a30ce043e72">operator&gt;</link> (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp;ogn) const noexcept</para>
+
+<para>Greater than logic operator overload. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_classemth_1_1Monomial_1a33c3c8003322cc2a8f2c4f2e1b44a387">operator&lt;</link> (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp;ogn) const noexcept</para>
+
+<para>Less than logic operator overload. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_classemth_1_1Monomial_1a36079411f2ae6f90e71a09b6723ecf35">operator&gt;=</link> (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp;ogn) const noexcept</para>
+
+<para>Greater or equal than logic operator overload. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_classemth_1_1Monomial_1a80fe0433858cf335c1e29ff15aa4bcb8">operator&lt;=</link> (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp;ogn) const noexcept</para>
+
+<para>Less or equal than logic operator overload. </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Monomial">Monomial</link> <link linkend="_classemth_1_1Monomial_1aa545290af910fc7a0c68bc02decd41c5">operator+</link> (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp;ogn) const noexcept</para>
+
+<para>Addition operator overload. </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Monomial">Monomial</link> <link linkend="_classemth_1_1Monomial_1aee07c6d65bc594b8eaaa4d0299840e05">operator-</link> (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp;ogn) const noexcept</para>
+
+<para>Substraction operator overload. </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Monomial">Monomial</link> <link linkend="_classemth_1_1Monomial_1a98a931372dbd0ddafe82ce5601f30836">operator*</link> (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp;ogn) const noexcept</para>
+
+<para>Multiplication operator overload. </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Monomial">Monomial</link> <link linkend="_classemth_1_1Monomial_1a55982755a6223cbf977e55979fcad8ff">operator/</link> (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp;ogn) const noexcept</para>
+
+<para>Division operator overload. </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Monomial">Monomial</link> <link linkend="_classemth_1_1Monomial_1a8316e22fbd1420a2302fcf8bd6d3b6c2">operator%</link> (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp;ogn) const noexcept</para>
+
+<para>Modulus operator overload. </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Monomial">Monomial</link> &amp; <link linkend="_classemth_1_1Monomial_1a7cac7880021c7cf783daa15ee00b94d1">operator+=</link> (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp;ogn) noexcept</para>
+
+<para>Addition assigment operator overload. </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Monomial">Monomial</link> &amp; <link linkend="_classemth_1_1Monomial_1a45a932afba1f1f38c5ca16b6c16fd3c8">operator-=</link> (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp;ogn) noexcept</para>
+
+<para>Substraction assigment operator overload. </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Monomial">Monomial</link> &amp; <link linkend="_classemth_1_1Monomial_1a59e6ec6722fe75349e84c6c3397279f5">operator*=</link> (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp;ogn) noexcept</para>
+
+<para>Multiplication assigment operator overload. </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Monomial">Monomial</link> &amp; <link linkend="_classemth_1_1Monomial_1a1bdb99f916437cd3a7c127b71bec5787">operator/=</link> (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp;ogn) noexcept</para>
+
+<para>Division assigment operator overload. </para>
+</listitem>
+            <listitem><para><link linkend="_classemth_1_1Monomial">Monomial</link> &amp; <link linkend="_classemth_1_1Monomial_1ab4c89014e13b2f35f264492486a935fe">operator%=</link> (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp;ogn) noexcept</para>
+
+<para>Modulus assigment operator overload. </para>
+</listitem>
+            <listitem><para>double <link linkend="_classemth_1_1Monomial_1ac0ea8a4e12483048519184c536c27124">get_coeff</link> () const noexcept</para>
+
+<para>Getter function for getting the coefficient of the <link linkend="_classemth_1_1Monomial">Monomial</link>. </para>
+</listitem>
+            <listitem><para>int <link linkend="_classemth_1_1Monomial_1a1a11b6043ddc48006fe37241bb6bc6d0">get_degree</link> () const noexcept</para>
+
+<para>Getter function for getting the degree of the <link linkend="_classemth_1_1Monomial">Monomial</link>. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classemth_1_1Monomial_1adae9aaac815a7c86ec651e5bdb3d3043">set_coeff</link> (double cf) noexcept</para>
+
+<para>Setter function for setting the coefficient of the <link linkend="_classemth_1_1Monomial">Monomial</link>. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classemth_1_1Monomial_1ab695cba07bcbf08cfec7d32e0bf4cc20">set_degree</link> (int dgr) noexcept</para>
+
+<para>Setter function for setting the degree of the <link linkend="_classemth_1_1Monomial">Monomial</link>. </para>
+</listitem>
+            <listitem><para>std::string <link linkend="_classemth_1_1Monomial_1a2940ea82172b382f8354fe4d1556b996">get_expression</link> () const noexcept</para>
+
+<para>Getter function for getting the expression of the <link linkend="_classemth_1_1Monomial">Monomial</link>. </para>
+</listitem>
+            <listitem><para>double <link linkend="_classemth_1_1Monomial_1a50a76c251c4a66c3522b78f0aba3c157">get_value</link> (const double &amp;x) const noexcept</para>
+
+<para>Calculus function for getting the value of the <link linkend="_classemth_1_1Monomial">Monomial</link> at a point. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_classemth_1_1Monomial_1aecedb04edd52a33ba0ee110eedbd74db"/><emphasis role="strong">~Monomial</emphasis> ()</para>
+
+<para>The class destructor. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Friends    </title>
+        <itemizedlist>
+            <listitem><para>std::stringstream &amp; <link linkend="_classemth_1_1Monomial_1a01135c72790e63387bc07601dd3acc5b">operator&lt;&lt;</link> (std::stringstream &amp;ss, const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp;m)</para>
+
+<para>A friend operator to insert the <link linkend="_classemth_1_1Monomial">Monomial</link> into a std::stringstream. </para>
+</listitem>
+            <listitem><para>std::ostream &amp; <link linkend="_classemth_1_1Monomial_1ada77c9969b0422090c05636a895c0e8e">operator&lt;&lt;</link> (std::ostream &amp;out, const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp;m)</para>
+
+<para>A friend operator to insert the <link linkend="_classemth_1_1Monomial">Monomial</link> into a std::ostream. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Class for representing and operating monomials. </para>
+
+
+
+<para>The class consists of the constructors, the operators, the getters, the properties and some private functions. </para>
+<para>
+Definition at line <link linkend="_emath_8h_source_1l00087">87</link> of file <link linkend="_emath_8h_source">emath.h</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classemth_1_1Monomial_1ae6048a5e8de2117072def861911aa4a7"/><section>
+    <title>Monomial()<computeroutput>[1/4]</computeroutput></title>
+<indexterm><primary>Monomial</primary><secondary>emth::Monomial</secondary></indexterm>
+<indexterm><primary>emth::Monomial</primary><secondary>Monomial</secondary></indexterm>
+<para><computeroutput>emth::Monomial::Monomial ( )<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Default constructor for when initialized with no arguments. </para>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00030">30</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Monomial_1a70ba615f776f89452b3b11bb9dfe045e"/><section>
+    <title>Monomial()<computeroutput>[2/4]</computeroutput></title>
+<indexterm><primary>Monomial</primary><secondary>emth::Monomial</secondary></indexterm>
+<indexterm><primary>emth::Monomial</primary><secondary>Monomial</secondary></indexterm>
+<para><computeroutput>emth::Monomial::Monomial (const double cf, const int dgr)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Normal constructor for initialization with coeff and degree. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>cf</entry><entry>
+<para>The coefficient as a double. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>dgr</entry><entry>
+<para>The degree as a integer. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00036">36</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Monomial_1aa5fc7752eb6a5db663872dd7298140c1"/><section>
+    <title>Monomial()<computeroutput>[3/4]</computeroutput></title>
+<indexterm><primary>Monomial</primary><secondary>emth::Monomial</secondary></indexterm>
+<indexterm><primary>emth::Monomial</primary><secondary>Monomial</secondary></indexterm>
+<para><computeroutput>emth::Monomial::Monomial (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp; ogn)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Copy constructor for when initialized with an lvalue <link linkend="_classemth_1_1Monomial">Monomial</link> object. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The lvalue <link linkend="_classemth_1_1Monomial">Monomial</link> object. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00041">41</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Monomial_1a0d77a762defbcd2cb1925e3258f6158f"/><section>
+    <title>Monomial()<computeroutput>[4/4]</computeroutput></title>
+<indexterm><primary>Monomial</primary><secondary>emth::Monomial</secondary></indexterm>
+<indexterm><primary>emth::Monomial</primary><secondary>Monomial</secondary></indexterm>
+<para><computeroutput>emth::Monomial::Monomial (<link linkend="_classemth_1_1Monomial">Monomial</link> &amp;&amp; ogn)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Move constructor for when initialized with an rvalue <link linkend="_classemth_1_1Monomial">Monomial</link> object. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The rvalue <link linkend="_classemth_1_1Monomial">Monomial</link> object. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00046">46</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classemth_1_1Monomial_1ac0ea8a4e12483048519184c536c27124"/><section>
+    <title>get_coeff()</title>
+<indexterm><primary>get_coeff</primary><secondary>emth::Monomial</secondary></indexterm>
+<indexterm><primary>emth::Monomial</primary><secondary>get_coeff</secondary></indexterm>
+<para><computeroutput>double emth::Monomial::get_coeff ( ) const<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Getter function for getting the coefficient of the <link linkend="_classemth_1_1Monomial">Monomial</link>. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>(double) The coefficient of the <link linkend="_classemth_1_1Monomial">Monomial</link>. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00221">221</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Monomial_1a1a11b6043ddc48006fe37241bb6bc6d0"/><section>
+    <title>get_degree()</title>
+<indexterm><primary>get_degree</primary><secondary>emth::Monomial</secondary></indexterm>
+<indexterm><primary>emth::Monomial</primary><secondary>get_degree</secondary></indexterm>
+<para><computeroutput>int emth::Monomial::get_degree ( ) const<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Getter function for getting the degree of the <link linkend="_classemth_1_1Monomial">Monomial</link>. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>(int) The degree of the <link linkend="_classemth_1_1Monomial">Monomial</link>. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00226">226</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Monomial_1a2940ea82172b382f8354fe4d1556b996"/><section>
+    <title>get_expression()</title>
+<indexterm><primary>get_expression</primary><secondary>emth::Monomial</secondary></indexterm>
+<indexterm><primary>emth::Monomial</primary><secondary>get_expression</secondary></indexterm>
+<para><computeroutput>std::string emth::Monomial::get_expression ( ) const<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Getter function for getting the expression of the <link linkend="_classemth_1_1Monomial">Monomial</link>. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>(std::string) The expression of the <link linkend="_classemth_1_1Monomial">Monomial</link>. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00241">241</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Monomial_1a50a76c251c4a66c3522b78f0aba3c157"/><section>
+    <title>get_value()</title>
+<indexterm><primary>get_value</primary><secondary>emth::Monomial</secondary></indexterm>
+<indexterm><primary>emth::Monomial</primary><secondary>get_value</secondary></indexterm>
+<para><computeroutput>double emth::Monomial::get_value (const double &amp; x) const<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Calculus function for getting the value of the <link linkend="_classemth_1_1Monomial">Monomial</link> at a point. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>x</entry><entry>
+<para>The point to evaluate. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(double) The result of the evaluation of the <link linkend="_classemth_1_1Monomial">Monomial</link>. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00247">247</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Monomial_1ab7f80ead25e2f5d4ad80cdbbfe49d5e3"/><section>
+    <title>operator!=()</title>
+<indexterm><primary>operator!=</primary><secondary>emth::Monomial</secondary></indexterm>
+<indexterm><primary>emth::Monomial</primary><secondary>operator!=</secondary></indexterm>
+<para><computeroutput>bool emth::Monomial::operator!= (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp; ogn) const<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Not equal logic operator overload. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The <link linkend="_classemth_1_1Monomial">Monomial</link> object to compare to. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(true) If <link linkend="_classemth_1_1Monomial">Monomial</link> objects coefficients and degrees dont match. </para>
+
+<para>(false) If <link linkend="_classemth_1_1Monomial">Monomial</link> objects coefficients and degrees match. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00072">72</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Monomial_1a8316e22fbd1420a2302fcf8bd6d3b6c2"/><section>
+    <title>operator%()</title>
+<indexterm><primary>operator%</primary><secondary>emth::Monomial</secondary></indexterm>
+<indexterm><primary>emth::Monomial</primary><secondary>operator%</secondary></indexterm>
+<para><computeroutput><link linkend="_classemth_1_1Monomial">emth::Monomial</link> emth::Monomial::operator% (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp; ogn) const<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Modulus operator overload. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The <link linkend="_classemth_1_1Monomial">Monomial</link> object to divide by. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(<link linkend="_classemth_1_1Monomial">Monomial</link>) A brand new <link linkend="_classemth_1_1Monomial">Monomial</link> that represents the result. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00130">130</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Monomial_1ab4c89014e13b2f35f264492486a935fe"/><section>
+    <title>operator%=()</title>
+<indexterm><primary>operator%=</primary><secondary>emth::Monomial</secondary></indexterm>
+<indexterm><primary>emth::Monomial</primary><secondary>operator%=</secondary></indexterm>
+<para><computeroutput><link linkend="_classemth_1_1Monomial">emth::Monomial</link> &amp; emth::Monomial::operator%= (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp; ogn)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Modulus assigment operator overload. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The <link linkend="_classemth_1_1Monomial">Monomial</link> object to divide by. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(<link linkend="_classemth_1_1Monomial">Monomial</link>&amp;) A reference to the lvalue of the operation. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00182">182</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Monomial_1a98a931372dbd0ddafe82ce5601f30836"/><section>
+    <title>operator*()</title>
+<indexterm><primary>operator*</primary><secondary>emth::Monomial</secondary></indexterm>
+<indexterm><primary>emth::Monomial</primary><secondary>operator*</secondary></indexterm>
+<para><computeroutput><link linkend="_classemth_1_1Monomial">emth::Monomial</link> emth::Monomial::operator* (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp; ogn) const<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Multiplication operator overload. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The <link linkend="_classemth_1_1Monomial">Monomial</link> object to multiply by. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(<link linkend="_classemth_1_1Monomial">Monomial</link>) A brand new <link linkend="_classemth_1_1Monomial">Monomial</link> that represents the result. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00118">118</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Monomial_1a59e6ec6722fe75349e84c6c3397279f5"/><section>
+    <title>operator*=()</title>
+<indexterm><primary>operator*=</primary><secondary>emth::Monomial</secondary></indexterm>
+<indexterm><primary>emth::Monomial</primary><secondary>operator*=</secondary></indexterm>
+<para><computeroutput><link linkend="_classemth_1_1Monomial">emth::Monomial</link> &amp; emth::Monomial::operator*= (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp; ogn)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Multiplication assigment operator overload. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The <link linkend="_classemth_1_1Monomial">Monomial</link> object to multiply by. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(<link linkend="_classemth_1_1Monomial">Monomial</link>&amp;) A reference to the lvalue of the operation. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00160">160</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Monomial_1aa545290af910fc7a0c68bc02decd41c5"/><section>
+    <title>operator+()</title>
+<indexterm><primary>operator+</primary><secondary>emth::Monomial</secondary></indexterm>
+<indexterm><primary>emth::Monomial</primary><secondary>operator+</secondary></indexterm>
+<para><computeroutput><link linkend="_classemth_1_1Monomial">emth::Monomial</link> emth::Monomial::operator+ (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp; ogn) const<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Addition operator overload. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The <link linkend="_classemth_1_1Monomial">Monomial</link> object to add. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(<link linkend="_classemth_1_1Monomial">Monomial</link>) A brand new <link linkend="_classemth_1_1Monomial">Monomial</link> that represents the result. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00106">106</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Monomial_1a7cac7880021c7cf783daa15ee00b94d1"/><section>
+    <title>operator+=()</title>
+<indexterm><primary>operator+=</primary><secondary>emth::Monomial</secondary></indexterm>
+<indexterm><primary>emth::Monomial</primary><secondary>operator+=</secondary></indexterm>
+<para><computeroutput><link linkend="_classemth_1_1Monomial">emth::Monomial</link> &amp; emth::Monomial::operator+= (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp; ogn)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Addition assigment operator overload. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The <link linkend="_classemth_1_1Monomial">Monomial</link> object to add. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(<link linkend="_classemth_1_1Monomial">Monomial</link>&amp;) A reference to the lvalue of the operation. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00136">136</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Monomial_1aee07c6d65bc594b8eaaa4d0299840e05"/><section>
+    <title>operator-()</title>
+<indexterm><primary>operator-</primary><secondary>emth::Monomial</secondary></indexterm>
+<indexterm><primary>emth::Monomial</primary><secondary>operator-</secondary></indexterm>
+<para><computeroutput><link linkend="_classemth_1_1Monomial">emth::Monomial</link> emth::Monomial::operator- (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp; ogn) const<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Substraction operator overload. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The <link linkend="_classemth_1_1Monomial">Monomial</link> object to substract by. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(<link linkend="_classemth_1_1Monomial">Monomial</link>) A brand new <link linkend="_classemth_1_1Monomial">Monomial</link> that represents the result. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00112">112</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Monomial_1a45a932afba1f1f38c5ca16b6c16fd3c8"/><section>
+    <title>operator-=()</title>
+<indexterm><primary>operator-=</primary><secondary>emth::Monomial</secondary></indexterm>
+<indexterm><primary>emth::Monomial</primary><secondary>operator-=</secondary></indexterm>
+<para><computeroutput><link linkend="_classemth_1_1Monomial">emth::Monomial</link> &amp; emth::Monomial::operator-= (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp; ogn)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Substraction assigment operator overload. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The <link linkend="_classemth_1_1Monomial">Monomial</link> object to substract by. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(<link linkend="_classemth_1_1Monomial">Monomial</link>&amp;) A reference to the lvalue of the operation. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00148">148</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Monomial_1a55982755a6223cbf977e55979fcad8ff"/><section>
+    <title>operator/()</title>
+<indexterm><primary>operator/</primary><secondary>emth::Monomial</secondary></indexterm>
+<indexterm><primary>emth::Monomial</primary><secondary>operator/</secondary></indexterm>
+<para><computeroutput><link linkend="_classemth_1_1Monomial">emth::Monomial</link> emth::Monomial::operator/ (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp; ogn) const<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Division operator overload. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The <link linkend="_classemth_1_1Monomial">Monomial</link> object to divide by. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(<link linkend="_classemth_1_1Monomial">Monomial</link>) A brand new <link linkend="_classemth_1_1Monomial">Monomial</link> that represents the result. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00124">124</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Monomial_1a1bdb99f916437cd3a7c127b71bec5787"/><section>
+    <title>operator/=()</title>
+<indexterm><primary>operator/=</primary><secondary>emth::Monomial</secondary></indexterm>
+<indexterm><primary>emth::Monomial</primary><secondary>operator/=</secondary></indexterm>
+<para><computeroutput><link linkend="_classemth_1_1Monomial">emth::Monomial</link> &amp; emth::Monomial::operator/= (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp; ogn)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Division assigment operator overload. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The <link linkend="_classemth_1_1Monomial">Monomial</link> object to divide by. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(<link linkend="_classemth_1_1Monomial">Monomial</link>&amp;) A reference to the lvalue of the operation. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00170">170</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Monomial_1a33c3c8003322cc2a8f2c4f2e1b44a387"/><section>
+    <title>operator&lt;()</title>
+<indexterm><primary>operator&lt;</primary><secondary>emth::Monomial</secondary></indexterm>
+<indexterm><primary>emth::Monomial</primary><secondary>operator&lt;</secondary></indexterm>
+<para><computeroutput>bool emth::Monomial::operator&lt; (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp; ogn) const<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Less than logic operator overload. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The <link linkend="_classemth_1_1Monomial">Monomial</link> object to compare to. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(true) If the <link linkend="_classemth_1_1Monomial">Monomial</link> object degree is less than the degree of the passed <link linkend="_classemth_1_1Monomial">Monomial</link>. </para>
+
+<para>(false) If the <link linkend="_classemth_1_1Monomial">Monomial</link> object degree is equal or greater than the degree of the passed <link linkend="_classemth_1_1Monomial">Monomial</link>. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00086">86</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Monomial_1a80fe0433858cf335c1e29ff15aa4bcb8"/><section>
+    <title>operator&lt;=()</title>
+<indexterm><primary>operator&lt;=</primary><secondary>emth::Monomial</secondary></indexterm>
+<indexterm><primary>emth::Monomial</primary><secondary>operator&lt;=</secondary></indexterm>
+<para><computeroutput>bool emth::Monomial::operator&lt;= (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp; ogn) const<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Less or equal than logic operator overload. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The <link linkend="_classemth_1_1Monomial">Monomial</link> object to compare to. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(true) If the <link linkend="_classemth_1_1Monomial">Monomial</link> object degree is less or equal than the degree of the passed <link linkend="_classemth_1_1Monomial">Monomial</link>. </para>
+
+<para>(false) If the <link linkend="_classemth_1_1Monomial">Monomial</link> object degree is greater than the degree of the passed <link linkend="_classemth_1_1Monomial">Monomial</link>. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00100">100</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Monomial_1a3de7a92cfd27acad4e1ff3d2158536f4"/><section>
+    <title>operator=()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>operator=</primary><secondary>emth::Monomial</secondary></indexterm>
+<indexterm><primary>emth::Monomial</primary><secondary>operator=</secondary></indexterm>
+<para><computeroutput><link linkend="_classemth_1_1Monomial">emth::Monomial</link> &amp; emth::Monomial::operator= (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp; ogn)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Assigment operator overload for when called with an lvalue. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The lvalue <link linkend="_classemth_1_1Monomial">Monomial</link> object. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(<link linkend="_classemth_1_1Monomial">Monomial</link>&amp;) A reference to the lvalue of the operation </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00052">52</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Monomial_1a7ea9ffbef1c53c8e0f7a9bfda2dcb691"/><section>
+    <title>operator=()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>operator=</primary><secondary>emth::Monomial</secondary></indexterm>
+<indexterm><primary>emth::Monomial</primary><secondary>operator=</secondary></indexterm>
+<para><computeroutput><link linkend="_classemth_1_1Monomial">emth::Monomial</link> &amp; emth::Monomial::operator= (<link linkend="_classemth_1_1Monomial">emth::Monomial</link> &amp;&amp; ogn)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Move assigment operator overload for when called with an rvalue. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The rvalue <link linkend="_classemth_1_1Monomial">Monomial</link> object. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(<link linkend="_classemth_1_1Monomial">Monomial</link>&amp;) A reference to the lvalue of the operation </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00058">58</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Monomial_1a2f9d14fa6443fc160258121c7907b989"/><section>
+    <title>operator==()</title>
+<indexterm><primary>operator==</primary><secondary>emth::Monomial</secondary></indexterm>
+<indexterm><primary>emth::Monomial</primary><secondary>operator==</secondary></indexterm>
+<para><computeroutput>bool emth::Monomial::operator== (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp; ogn) const<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Equal logic operator overload. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The <link linkend="_classemth_1_1Monomial">Monomial</link> object to compare to. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(true) If <link linkend="_classemth_1_1Monomial">Monomial</link> objects coefficients and degrees match. </para>
+
+<para>(false) If <link linkend="_classemth_1_1Monomial">Monomial</link> objects coefficients and degrees dont match. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00065">65</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Monomial_1a995abc13b689075b21b43a30ce043e72"/><section>
+    <title>operator&gt;()</title>
+<indexterm><primary>operator&gt;</primary><secondary>emth::Monomial</secondary></indexterm>
+<indexterm><primary>emth::Monomial</primary><secondary>operator&gt;</secondary></indexterm>
+<para><computeroutput>bool emth::Monomial::operator&gt; (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp; ogn) const<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Greater than logic operator overload. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The <link linkend="_classemth_1_1Monomial">Monomial</link> object to compare to. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(true) If the <link linkend="_classemth_1_1Monomial">Monomial</link> object degree is greater than the degree of the passed <link linkend="_classemth_1_1Monomial">Monomial</link>. </para>
+
+<para>(false) If the <link linkend="_classemth_1_1Monomial">Monomial</link> object degree is equal or less than the degree of the passed <link linkend="_classemth_1_1Monomial">Monomial</link>. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00079">79</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Monomial_1a36079411f2ae6f90e71a09b6723ecf35"/><section>
+    <title>operator&gt;=()</title>
+<indexterm><primary>operator&gt;=</primary><secondary>emth::Monomial</secondary></indexterm>
+<indexterm><primary>emth::Monomial</primary><secondary>operator&gt;=</secondary></indexterm>
+<para><computeroutput>bool emth::Monomial::operator&gt;= (const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp; ogn) const<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Greater or equal than logic operator overload. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ogn</entry><entry>
+<para>The <link linkend="_classemth_1_1Monomial">Monomial</link> object to compare to. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(true) If the <link linkend="_classemth_1_1Monomial">Monomial</link> object degree is greater or equal than the degree of the passed <link linkend="_classemth_1_1Monomial">Monomial</link>. </para>
+
+<para>(false) If the <link linkend="_classemth_1_1Monomial">Monomial</link> object degree is less than the degree of the passed <link linkend="_classemth_1_1Monomial">Monomial</link>. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00093">93</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Monomial_1adae9aaac815a7c86ec651e5bdb3d3043"/><section>
+    <title>set_coeff()</title>
+<indexterm><primary>set_coeff</primary><secondary>emth::Monomial</secondary></indexterm>
+<indexterm><primary>emth::Monomial</primary><secondary>set_coeff</secondary></indexterm>
+<para><computeroutput>void emth::Monomial::set_coeff (double cf)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Setter function for setting the coefficient of the <link linkend="_classemth_1_1Monomial">Monomial</link>. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>cf</entry><entry>
+<para>The coefficient to set to. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00231">231</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<anchor xml:id="_classemth_1_1Monomial_1ab695cba07bcbf08cfec7d32e0bf4cc20"/><section>
+    <title>set_degree()</title>
+<indexterm><primary>set_degree</primary><secondary>emth::Monomial</secondary></indexterm>
+<indexterm><primary>emth::Monomial</primary><secondary>set_degree</secondary></indexterm>
+<para><computeroutput>void emth::Monomial::set_degree (int dgr)<computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Setter function for setting the degree of the <link linkend="_classemth_1_1Monomial">Monomial</link>. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>dgr</entry><entry>
+<para>The degree to set to. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_src_2emath_8cpp_source_1l00236">236</link> of file <link linkend="_src_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Friends And Related Function Documentation</title>
+<anchor xml:id="_classemth_1_1Monomial_1ada77c9969b0422090c05636a895c0e8e"/><section>
+    <title>operator&lt;&lt;<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>operator&lt;&lt;</primary><secondary>emth::Monomial</secondary></indexterm>
+<indexterm><primary>emth::Monomial</primary><secondary>operator&lt;&lt;</secondary></indexterm>
+<para><computeroutput>std::ostream &amp; operator&lt;&lt; (std::ostream &amp; out, const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp; m)<computeroutput>[friend]</computeroutput></computeroutput></para><para>
+
+<para>A friend operator to insert the <link linkend="_classemth_1_1Monomial">Monomial</link> into a std::ostream. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>out</entry><entry>
+<para>The std::ostream. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>m</entry><entry>
+<para>The <link linkend="_classemth_1_1Monomial">Monomial</link> object to insert. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(std::ostream&amp;) A reference to the std::ostream. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classemth_1_1Monomial_1a01135c72790e63387bc07601dd3acc5b"/><section>
+    <title>operator&lt;&lt;<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>operator&lt;&lt;</primary><secondary>emth::Monomial</secondary></indexterm>
+<indexterm><primary>emth::Monomial</primary><secondary>operator&lt;&lt;</secondary></indexterm>
+<para><computeroutput>std::stringstream &amp; operator&lt;&lt; (std::stringstream &amp; ss, const <link linkend="_classemth_1_1Monomial">Monomial</link> &amp; m)<computeroutput>[friend]</computeroutput></computeroutput></para><para>
+
+<para>A friend operator to insert the <link linkend="_classemth_1_1Monomial">Monomial</link> into a std::stringstream. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ss</entry><entry>
+<para>The std::stringstream. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>m</entry><entry>
+<para>The <link linkend="_classemth_1_1Monomial">Monomial</link> object to insert. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(std::stringstream&amp;) A reference to the std::stringstream. </para>
+</formalpara>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+include/<link linkend="_emath_8h">emath.h</link>src/<link linkend="_src_2emath_8cpp">emath.cpp</link></section>
+</section>

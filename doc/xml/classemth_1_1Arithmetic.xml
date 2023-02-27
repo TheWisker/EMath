@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classemth_1_1Arithmetic" kind="class" language="C++" prot="public">
+    <compoundname>emth::Arithmetic</compoundname>
+    <includes refid="emath_8h" local="no">emath.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classemth_1_1Arithmetic_1adddfba367517025753ae37062ac6f483" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void emth::Arithmetic::get_divisors</definition>
+        <argsstring>(int n, std::vector&lt; int &gt; &amp;v) noexcept</argsstring>
+        <name>get_divisors</name>
+        <qualifiedname>emth::Arithmetic::get_divisors</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Gets the all the positive divisors for an integer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The integer to get the divisors for. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The vector reference where to store the divisors. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/emath.h" line="80" column="25" bodyfile="src/emath.cpp" bodystart="15" bodyend="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class with some functions for arithmetic math. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The class consists of the functions that operate with real numbers. </para>
+    </detaileddescription>
+    <location file="include/emath.h" line="73" column="5" bodyfile="include/emath.h" bodystart="73" bodyend="81"/>
+    <listofallmembers>
+      <member refid="classemth_1_1Arithmetic_1adddfba367517025753ae37062ac6f483" prot="public" virt="non-virtual"><scope>emth::Arithmetic</scope><name>get_divisors</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

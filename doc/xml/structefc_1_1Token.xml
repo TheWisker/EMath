@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="structefc_1_1Token" kind="struct" language="C++" prot="public">
+    <compoundname>efc::Token</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structefc_1_1Token_1abd56361d2f52a2c345e106f8e2ec4197" prot="public" static="no" mutable="no">
+        <type>const <ref refid="namespaceefc_1af24b42c9a5c7268f47143ad4e796b58c" kindref="member">TokenType</ref></type>
+        <definition>const TokenType efc::Token::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>efc::Token::type</qualifiedname>
+        <briefdescription>
+<para>The token&apos;s type as a TokenType. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="684" column="25" bodyfile="src/interface.cpp" bodystart="684" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structefc_1_1Token_1a2bcb3afeb2d611ead7041f924d621587" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char efc::Token::c</definition>
+        <argsstring></argsstring>
+        <name>c</name>
+        <qualifiedname>efc::Token::c</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="689" column="20" bodyfile="src/interface.cpp" bodystart="689" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structefc_1_1Token_1a8fbcc67cb189f58f5e1a6af27e059c2b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int efc::Token::n</definition>
+        <argsstring></argsstring>
+        <name>n</name>
+        <qualifiedname>efc::Token::n</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="689" column="26" bodyfile="src/interface.cpp" bodystart="689" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structefc_1_1Token_1ad5ee17926cf07cb994367a0d86717248" prot="public" static="no" mutable="no">
+        <type>union efc::Token::@0</type>
+        <definition>union efc::Token::@0 efc::Token::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <qualifiedname>efc::Token::value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="689" column="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Struct for representing a token as a type and a value. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/interface.cpp" line="680" column="5" bodyfile="src/interface.cpp" bodystart="680" bodyend="690"/>
+    <listofallmembers>
+      <member refid="structefc_1_1Token_1a2bcb3afeb2d611ead7041f924d621587" prot="public" virt="non-virtual"><scope>efc::Token</scope><name>c</name></member>
+      <member refid="structefc_1_1Token_1a8fbcc67cb189f58f5e1a6af27e059c2b" prot="public" virt="non-virtual"><scope>efc::Token</scope><name>n</name></member>
+      <member refid="structefc_1_1Token_1abd56361d2f52a2c345e106f8e2ec4197" prot="public" virt="non-virtual"><scope>efc::Token</scope><name>type</name></member>
+      <member refid="structefc_1_1Token_1ad5ee17926cf07cb994367a0d86717248" prot="public" virt="non-virtual"><scope>efc::Token</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

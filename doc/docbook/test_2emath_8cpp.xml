@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_test_2emath_8cpp" xml:lang="en-US">
+<title>test/emath.cpp File Reference</title>
+<indexterm><primary>test/emath.cpp</primary></indexterm>
+<para>
+
+<para>This is the main test file of the emath library. It contains all the tests needed to assure that the library works properly. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &lt;cassert&gt;<?linebreak?>#include &lt;iostream&gt;<?linebreak?>#include &quot;emath.h&quot;<?linebreak?></programlisting>Include dependency graph for emath.cpp:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="test_2emath_8cpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_test_2emath_8cpp_1aa47d761ab4eda6102588b7c387bf9414">vequal</link> (const std::vector&lt; std::complex&lt; double &gt; &gt; v1, const std::vector&lt; std::complex&lt; double &gt; &gt; v2, bool t)</para>
+
+<para>Checks if two vectors with std::complex items have the same items, even if not in the same order. </para>
+</listitem>
+            <listitem><para>int <link linkend="_test_2emath_8cpp_1ab880f6083075d1f2c3c6ca54d36fba6f">test_monomial</link> ()</para>
+
+<para>Runs all the monomial class tests. </para>
+</listitem>
+            <listitem><para>int <link linkend="_test_2emath_8cpp_1ada79f825efa86697f40154987f0f6129">test_polynomial</link> ()</para>
+
+<para>Runs all the polynomial class tests. </para>
+</listitem>
+            <listitem><para>int <link linkend="_test_2emath_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4">main</link> ()</para>
+
+<para>Calls the monomial and polynomial tests. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>This is the main test file of the emath library. It contains all the tests needed to assure that the library works properly. </para>
+
+<para>This file contains a main function that calls a function for the monomials and a function for the polynomials that test that every method works as it should.<?linebreak?>If it doesn&apos;t then a message gets printed to the console describing the error. If this does happen open an issue on my github page. </para>
+<para>
+Definition in file <link linkend="_test_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_test_2emath_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4"/><section>
+    <title>main()</title>
+<indexterm><primary>main</primary><secondary>emath.cpp</secondary></indexterm>
+<indexterm><primary>emath.cpp</primary><secondary>main</secondary></indexterm>
+<para><computeroutput>int main ( )</computeroutput></para><para>
+
+<para>Calls the monomial and polynomial tests. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>(int) The sum of the test_monomial and test_polynomial function wich should be zero when all tests pass </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_test_2emath_8cpp_source_1l00224">224</link> of file <link linkend="_test_2emath_8cpp_source">emath.cpp</link>.</para>
+<para>
+References <link linkend="_test_2emath_8cpp_source_1l00028">test_monomial()</link>, and <link linkend="_test_2emath_8cpp_source_1l00115">test_polynomial()</link>.</para>
+</section>
+<anchor xml:id="_test_2emath_8cpp_1ab880f6083075d1f2c3c6ca54d36fba6f"/><section>
+    <title>test_monomial()</title>
+<indexterm><primary>test_monomial</primary><secondary>emath.cpp</secondary></indexterm>
+<indexterm><primary>emath.cpp</primary><secondary>test_monomial</secondary></indexterm>
+<para><computeroutput>int test_monomial ( )</computeroutput></para><para>
+
+<para>Runs all the monomial class tests. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>(int) Returns 0 to specify to Meson that the tests finished correctly </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_test_2emath_8cpp_source_1l00028">28</link> of file <link linkend="_test_2emath_8cpp_source">emath.cpp</link>.</para>
+<para>
+References <link linkend="_src_2emath_8cpp_source_1l00221">emth::Monomial::get_coeff()</link>, <link linkend="_src_2emath_8cpp_source_1l00226">emth::Monomial::get_degree()</link>, <link linkend="_src_2emath_8cpp_source_1l00241">emth::Monomial::get_expression()</link>, and <link linkend="_src_2emath_8cpp_source_1l00247">emth::Monomial::get_value()</link>.</para>
+</section>
+<anchor xml:id="_test_2emath_8cpp_1ada79f825efa86697f40154987f0f6129"/><section>
+    <title>test_polynomial()</title>
+<indexterm><primary>test_polynomial</primary><secondary>emath.cpp</secondary></indexterm>
+<indexterm><primary>emath.cpp</primary><secondary>test_polynomial</secondary></indexterm>
+<para><computeroutput>int test_polynomial ( )</computeroutput></para><para>
+
+<para>Runs all the polynomial class tests. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>(int) Returns 0 to specify to Meson that the tests finished correctly </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_test_2emath_8cpp_source_1l00115">115</link> of file <link linkend="_test_2emath_8cpp_source">emath.cpp</link>.</para>
+<para>
+References <link linkend="_src_2emath_8cpp_source_1l00468">emth::Polynomial::get_degree()</link>, <link linkend="_src_2emath_8cpp_source_1l00515">emth::Polynomial::get_derivative()</link>, <link linkend="_src_2emath_8cpp_source_1l00500">emth::Polynomial::get_expression()</link>, <link linkend="_src_2emath_8cpp_source_1l00526">emth::Polynomial::get_integral()</link>, <link linkend="_src_2emath_8cpp_source_1l00473">emth::Polynomial::get_monomials()</link>, <link linkend="_src_2emath_8cpp_source_1l00538">emth::Polynomial::get_roots()</link>, <link linkend="_src_2emath_8cpp_source_1l00506">emth::Polynomial::get_value()</link>, and <link linkend="_test_2emath_8cpp_source_1l00018">vequal()</link>.</para>
+</section>
+<anchor xml:id="_test_2emath_8cpp_1aa47d761ab4eda6102588b7c387bf9414"/><section>
+    <title>vequal()</title>
+<indexterm><primary>vequal</primary><secondary>emath.cpp</secondary></indexterm>
+<indexterm><primary>emath.cpp</primary><secondary>vequal</secondary></indexterm>
+<para><computeroutput>bool vequal (const std::vector&lt; std::complex&lt; double &gt; &gt; v1, const std::vector&lt; std::complex&lt; double &gt; &gt; v2, bool t)</computeroutput></para><para>
+
+<para>Checks if two vectors with std::complex items have the same items, even if not in the same order. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>v1</entry><entry>
+<para>First vector to check </para>
+</entry>
+                            </row>
+                            <row>
+<entry>v2</entry><entry>
+<para>Second vector to check </para>
+</entry>
+                            </row>
+                            <row>
+<entry>t</entry><entry>
+<para>If true compares the real parts when sorting, if false compares the imaginary parts </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>(bool) If they do or do not have the same items </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_test_2emath_8cpp_source_1l00018">18</link> of file <link linkend="_test_2emath_8cpp_source">emath.cpp</link>.</para>
+</section>
+</section>
+</section>

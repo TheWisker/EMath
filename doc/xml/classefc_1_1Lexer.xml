@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classefc_1_1Lexer" kind="class" language="C++" prot="public">
+    <compoundname>efc::Lexer</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classefc_1_1Lexer_1ac16277e2dd67e2bd313025141888818f" prot="private" static="no" mutable="no">
+        <type>const ::std::string</type>
+        <definition>const ::std::string efc::Lexer::_input</definition>
+        <argsstring></argsstring>
+        <name>_input</name>
+        <qualifiedname>efc::Lexer::_input</qualifiedname>
+        <briefdescription>
+<para>The provided input as a private std::string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="701" column="33" bodyfile="src/interface.cpp" bodystart="701" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classefc_1_1Lexer_1aa83595f2703d850a65e78db3b25d348f" prot="private" static="no" mutable="no">
+        <type>short unsigned int</type>
+        <definition>short unsigned int efc::Lexer::_pos</definition>
+        <argsstring></argsstring>
+        <name>_pos</name>
+        <qualifiedname>efc::Lexer::_pos</qualifiedname>
+        <briefdescription>
+<para>Private long unsigned int that represents the cursor&apos;s position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="705" column="32" bodyfile="src/interface.cpp" bodystart="705" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classefc_1_1Lexer_1aa970e0a4c885ed01ee6438364a5e4be3" prot="private" static="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const ::std::string</type>
+        <definition>static const ::std::string efc::Lexer::clean</definition>
+        <argsstring>(const std::string &amp;input) noexcept</argsstring>
+        <name>clean</name>
+        <qualifiedname>efc::Lexer::clean</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+<para>Private static function that cleans the input string of the unexpected characters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string to clean. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>(std::string) The clean output </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="711" column="40" bodyfile="src/interface.cpp" bodystart="711" bodyend="722"/>
+      </memberdef>
+      <memberdef kind="function" id="classefc_1_1Lexer_1a87c191b744deb54023a13622b373557f" prot="private" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>static constexpr bool efc::Lexer::is_integer</definition>
+        <argsstring>(const char &amp;c) noexcept</argsstring>
+        <name>is_integer</name>
+        <qualifiedname>efc::Lexer::is_integer</qualifiedname>
+        <param>
+          <type>const char &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Miscellaneous private function that checks if a char is an integer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The char to check if it is an integer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>(true) If the char is an integer </para>
+</simplesect>
+<simplesect kind="return"><para>(false) If the char is not an integer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="729" column="42" bodyfile="src/interface.cpp" bodystart="729" bodyend="729"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classefc_1_1Lexer_1ab12855801b122c387031155dec257b50" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>efc::Lexer::Lexer</definition>
+        <argsstring>(const std::string &amp;input) noexcept</argsstring>
+        <name>Lexer</name>
+        <qualifiedname>efc::Lexer::Lexer</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+<para>Standalone constructor for the <ref refid="classefc_1_1Lexer" kindref="compound">Lexer</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A const reference to the std::string to tokenize. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="735" column="13" bodyfile="src/interface.cpp" bodystart="735" bodyend="735"/>
+      </memberdef>
+      <memberdef kind="function" id="classefc_1_1Lexer_1a3eb3b61f1ba41e9d3150052b6280167b" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const <ref refid="structefc_1_1Token" kindref="compound">Token</ref></type>
+        <definition>const Token efc::Lexer::next</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>next</name>
+        <qualifiedname>efc::Lexer::next</qualifiedname>
+        <briefdescription>
+<para>Function that returns the next <ref refid="structefc_1_1Token" kindref="compound">Token</ref> in the input provided in the constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>(<ref refid="structefc_1_1Token" kindref="compound">Token</ref>) The next <ref refid="structefc_1_1Token" kindref="compound">Token</ref> in the input </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="740" column="25" bodyfile="src/interface.cpp" bodystart="740" bodyend="749"/>
+      </memberdef>
+      <memberdef kind="function" id="classefc_1_1Lexer_1a77d56d461130cb509b3831daa7e06851" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>efc::Lexer::~Lexer</definition>
+        <argsstring>() noexcept=default</argsstring>
+        <name>~Lexer</name>
+        <qualifiedname>efc::Lexer::~Lexer</qualifiedname>
+        <briefdescription>
+<para>Default destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="753" column="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class that works as a token supplier for the <ref refid="classefc_1_1Parser" kindref="compound">Parser</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The class consists of a public function for getting the next <ref refid="structefc_1_1Token" kindref="compound">Token</ref> </para>
+    </detaileddescription>
+    <location file="src/interface.cpp" line="696" column="5" bodyfile="src/interface.cpp" bodystart="696" bodyend="754"/>
+    <listofallmembers>
+      <member refid="classefc_1_1Lexer_1ac16277e2dd67e2bd313025141888818f" prot="private" virt="non-virtual"><scope>efc::Lexer</scope><name>_input</name></member>
+      <member refid="classefc_1_1Lexer_1aa83595f2703d850a65e78db3b25d348f" prot="private" virt="non-virtual"><scope>efc::Lexer</scope><name>_pos</name></member>
+      <member refid="classefc_1_1Lexer_1aa970e0a4c885ed01ee6438364a5e4be3" prot="private" virt="non-virtual"><scope>efc::Lexer</scope><name>clean</name></member>
+      <member refid="classefc_1_1Lexer_1a87c191b744deb54023a13622b373557f" prot="private" virt="non-virtual"><scope>efc::Lexer</scope><name>is_integer</name></member>
+      <member refid="classefc_1_1Lexer_1ab12855801b122c387031155dec257b50" prot="public" virt="non-virtual"><scope>efc::Lexer</scope><name>Lexer</name></member>
+      <member refid="classefc_1_1Lexer_1a3eb3b61f1ba41e9d3150052b6280167b" prot="public" virt="non-virtual"><scope>efc::Lexer</scope><name>next</name></member>
+      <member refid="classefc_1_1Lexer_1a77d56d461130cb509b3831daa7e06851" prot="public" virt="non-virtual"><scope>efc::Lexer</scope><name>~Lexer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

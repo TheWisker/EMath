@@ -1,0 +1,69 @@
+.TH "efc::Application" 3 "Mon Feb 27 2023" "EMath++" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+efc::Application \- Class that contains the application inner logic\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBrun\fP ()"
+.br
+.RI "Main loop fallback, basically it starts the application event loop\&. "
+.ti -1c
+.RI "\fB~Application\fP () noexcept"
+.br
+.RI "Default destructor, it deletes the \fBTerminal\fP pointer, sets the singleton instance to nullptr, and saves the Json data to the \fBStorage\fP object\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBApplication\fP * \fBinit\fP () noexcept"
+.br
+.RI "Static function for building the singleton static instance\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Class that contains the application inner logic\&. 
+
+The class consist of some menus as loops and all the logic of the \fBApplication\fP 
+.PP
+Definition at line \fB829\fP of file \fBinterface\&.cpp\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "efc::Application::~Application ()\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+Default destructor, it deletes the \fBTerminal\fP pointer, sets the singleton instance to nullptr, and saves the Json data to the \fBStorage\fP object\&. 
+.PP
+Definition at line \fB1093\fP of file \fBinterface\&.cpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "static \fBApplication\fP * efc::Application::init ()\fC [inline]\fP, \fC [static]\fP, \fC [noexcept]\fP"
+
+.PP
+Static function for building the singleton static instance\&. 
+.PP
+\fBReturns\fP
+.RS 4
+(Application*) The singleton instance pointer also stored at Application::instance 
+.RE
+.PP
+
+.PP
+Definition at line \fB1067\fP of file \fBinterface\&.cpp\fP\&.
+.SS "void efc::Application::run ()\fC [inline]\fP"
+
+.PP
+Main loop fallback, basically it starts the application event loop\&. 
+.PP
+Definition at line \fB1074\fP of file \fBinterface\&.cpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for EMath++ from the source code\&.

@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_test_2eparser_8cpp_source" xml:lang="en-US">
+<title>eparser.cpp</title>
+<indexterm><primary>test/eparser.cpp</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_test_2eparser_8cpp_source_1l00001"/>00001 
+<anchor xml:id="_test_2eparser_8cpp_source_1l00008"/>00008 <emphasis role="preprocessor">#include&#32;&lt;gtest/gtest.h&gt;</emphasis>
+<anchor xml:id="_test_2eparser_8cpp_source_1l00009"/>00009 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_eparser_8h">eparser.h</link>&quot;</emphasis>
+<anchor xml:id="_test_2eparser_8cpp_source_1l00014"/><link linkend="_classEParserTest">00014</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classEParserTest">EParserTest</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;::testing::Test&#32;{
+<anchor xml:id="_test_2eparser_8cpp_source_1l00015"/>00015 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_test_2eparser_8cpp_source_1l00020"/><link linkend="_classEParserTest_1abcb56f6fe9d5fd3ca9320b5f981bc52c">00020</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classEParserTest_1abcb56f6fe9d5fd3ca9320b5f981bc52c">EParserTest</link>()&#32;:&#32;<link linkend="_classEParserTest_1a84cd16fd9d2f4b968c36ec280b7a7423">lexer</link>(<emphasis role="stringliteral">&quot;&quot;</emphasis>),&#32;<link linkend="_classEParserTest_1a272d2e82239321467bce8dacd326bf6f">parser</link>(<emphasis role="stringliteral">&quot;&quot;</emphasis>)&#32;{};
+<anchor xml:id="_test_2eparser_8cpp_source_1l00025"/><link linkend="_classEParserTest_1a3f86e942a3c31352d1a6019e22fabe14">00025</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classEParserTest_1a3f86e942a3c31352d1a6019e22fabe14">set_input</link>(<emphasis role="keyword">const</emphasis>&#32;std::string&#32;&amp;input)&#32;{
+<anchor xml:id="_test_2eparser_8cpp_source_1l00026"/>00026 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="_classEParserTest_1a84cd16fd9d2f4b968c36ec280b7a7423">lexer</link>&#32;=&#32;<link linkend="_classemthp_1_1Lexer">emthp::Lexer</link>(input);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00027"/>00027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="_classEParserTest_1a272d2e82239321467bce8dacd326bf6f">parser</link>&#32;=&#32;<link linkend="_classemthp_1_1Parser">emthp::Parser</link>(input);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00028"/>00028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_test_2eparser_8cpp_source_1l00029"/>00029 &#32;&#32;&#32;&#32;<emphasis role="keyword">protected</emphasis>:
+<anchor xml:id="_test_2eparser_8cpp_source_1l00033"/><link linkend="_classEParserTest_1a84cd16fd9d2f4b968c36ec280b7a7423">00033</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classemthp_1_1Lexer">emthp::Lexer</link>&#32;<link linkend="_classEParserTest_1a84cd16fd9d2f4b968c36ec280b7a7423">lexer</link>;
+<anchor xml:id="_test_2eparser_8cpp_source_1l00037"/><link linkend="_classEParserTest_1a272d2e82239321467bce8dacd326bf6f">00037</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classemthp_1_1Parser">emthp::Parser</link>&#32;<link linkend="_classEParserTest_1a272d2e82239321467bce8dacd326bf6f">parser</link>;
+<anchor xml:id="_test_2eparser_8cpp_source_1l00038"/>00038 };
+<anchor xml:id="_test_2eparser_8cpp_source_1l00042"/><link linkend="_test_2eparser_8cpp_1adb859937dfb6fcd56c656c3c2555afc9">00042</link> <link linkend="_test_2eparser_8cpp_1adb859937dfb6fcd56c656c3c2555afc9">TEST_F</link>(<link linkend="_classEParserTest">EParserTest</link>,&#32;Lexer)&#32;{
+<anchor xml:id="_test_2eparser_8cpp_source_1l00043"/>00043 &#32;&#32;&#32;&#32;<link linkend="_structemthp_1_1Token">emthp::Token</link>&#32;token;
+<anchor xml:id="_test_2eparser_8cpp_source_1l00044"/>00044 &#32;&#32;&#32;&#32;this-&gt;set_input(<emphasis role="stringliteral">&quot;2x^2&#32;-&#32;8&quot;</emphasis>);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00045"/>00045 
+<anchor xml:id="_test_2eparser_8cpp_source_1l00046"/>00046 &#32;&#32;&#32;&#32;token&#32;=&#32;this-&gt;lexer.next();
+<anchor xml:id="_test_2eparser_8cpp_source_1l00047"/>00047 &#32;&#32;&#32;&#32;ASSERT_EQ(token.<link linkend="_structemthp_1_1Token_1ae532928c40581bc20349979955dfb2f3">type</link>,&#32;<link linkend="_namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6bad7549ed90d6122d0761f3acfb1b56923">emthp::TokenType::T_NUMBER</link>);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00048"/>00048 &#32;&#32;&#32;&#32;ASSERT_EQ(token.<link linkend="_structemthp_1_1Token_1a0512f6f4c2a7dcf724d582d971393c2c">value</link>,&#32;2.0);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00049"/>00049 
+<anchor xml:id="_test_2eparser_8cpp_source_1l00050"/>00050 &#32;&#32;&#32;&#32;token&#32;=&#32;this-&gt;lexer.next();
+<anchor xml:id="_test_2eparser_8cpp_source_1l00051"/>00051 &#32;&#32;&#32;&#32;ASSERT_EQ(token.<link linkend="_structemthp_1_1Token_1ae532928c40581bc20349979955dfb2f3">type</link>,&#32;<link linkend="_namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6ba6aa4d0d8ca8e058abc4e4e38f466bbd2">emthp::TokenType::T_VARIABLE</link>);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00052"/>00052 &#32;&#32;&#32;&#32;ASSERT_EQ(token.<link linkend="_structemthp_1_1Token_1a0512f6f4c2a7dcf724d582d971393c2c">value</link>,&#32;0.0);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00053"/>00053 
+<anchor xml:id="_test_2eparser_8cpp_source_1l00054"/>00054 &#32;&#32;&#32;&#32;token&#32;=&#32;this-&gt;lexer.next();
+<anchor xml:id="_test_2eparser_8cpp_source_1l00055"/>00055 &#32;&#32;&#32;&#32;ASSERT_EQ(token.<link linkend="_structemthp_1_1Token_1ae532928c40581bc20349979955dfb2f3">type</link>,&#32;<link linkend="_namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6ba7b607d6341806fa8bc4505c44670de8c">emthp::TokenType::T_EXPONENT</link>);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00056"/>00056 &#32;&#32;&#32;&#32;ASSERT_EQ(token.<link linkend="_structemthp_1_1Token_1a0512f6f4c2a7dcf724d582d971393c2c">value</link>,&#32;0.0);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00057"/>00057 
+<anchor xml:id="_test_2eparser_8cpp_source_1l00058"/>00058 &#32;&#32;&#32;&#32;token&#32;=&#32;this-&gt;lexer.next();
+<anchor xml:id="_test_2eparser_8cpp_source_1l00059"/>00059 &#32;&#32;&#32;&#32;ASSERT_EQ(token.<link linkend="_structemthp_1_1Token_1ae532928c40581bc20349979955dfb2f3">type</link>,&#32;<link linkend="_namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6bad7549ed90d6122d0761f3acfb1b56923">emthp::TokenType::T_NUMBER</link>);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00060"/>00060 &#32;&#32;&#32;&#32;ASSERT_EQ(token.<link linkend="_structemthp_1_1Token_1a0512f6f4c2a7dcf724d582d971393c2c">value</link>,&#32;2.0);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00061"/>00061 
+<anchor xml:id="_test_2eparser_8cpp_source_1l00062"/>00062 &#32;&#32;&#32;&#32;token&#32;=&#32;this-&gt;lexer.next();
+<anchor xml:id="_test_2eparser_8cpp_source_1l00063"/>00063 &#32;&#32;&#32;&#32;ASSERT_EQ(token.<link linkend="_structemthp_1_1Token_1ae532928c40581bc20349979955dfb2f3">type</link>,&#32;<link linkend="_namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6ba636464f87ad08d661e8f664b4a5903db">emthp::TokenType::T_MINUS</link>);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00064"/>00064 &#32;&#32;&#32;&#32;ASSERT_EQ(token.<link linkend="_structemthp_1_1Token_1a0512f6f4c2a7dcf724d582d971393c2c">value</link>,&#32;0.0);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00065"/>00065 
+<anchor xml:id="_test_2eparser_8cpp_source_1l00066"/>00066 &#32;&#32;&#32;&#32;token&#32;=&#32;this-&gt;lexer.next();
+<anchor xml:id="_test_2eparser_8cpp_source_1l00067"/>00067 &#32;&#32;&#32;&#32;ASSERT_EQ(token.<link linkend="_structemthp_1_1Token_1ae532928c40581bc20349979955dfb2f3">type</link>,&#32;<link linkend="_namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6bad7549ed90d6122d0761f3acfb1b56923">emthp::TokenType::T_NUMBER</link>);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00068"/>00068 &#32;&#32;&#32;&#32;ASSERT_EQ(token.<link linkend="_structemthp_1_1Token_1a0512f6f4c2a7dcf724d582d971393c2c">value</link>,&#32;8.0);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00069"/>00069 
+<anchor xml:id="_test_2eparser_8cpp_source_1l00070"/>00070 &#32;&#32;&#32;&#32;token&#32;=&#32;this-&gt;lexer.next();
+<anchor xml:id="_test_2eparser_8cpp_source_1l00071"/>00071 &#32;&#32;&#32;&#32;ASSERT_EQ(token.<link linkend="_structemthp_1_1Token_1ae532928c40581bc20349979955dfb2f3">type</link>,&#32;<link linkend="_namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6ba5a13d17b3d73d6aa1a545e430284ec6d">emthp::TokenType::T_EOF</link>);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00072"/>00072 &#32;&#32;&#32;&#32;ASSERT_EQ(token.<link linkend="_structemthp_1_1Token_1a0512f6f4c2a7dcf724d582d971393c2c">value</link>,&#32;0.0);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00073"/>00073 }
+<anchor xml:id="_test_2eparser_8cpp_source_1l00077"/><link linkend="_test_2eparser_8cpp_1a9d00584eda85ad91bd3b865309697a92">00077</link> <link linkend="_test_2eparser_8cpp_1adb859937dfb6fcd56c656c3c2555afc9">TEST_F</link>(<link linkend="_classEParserTest">EParserTest</link>,&#32;CompoundLexer)&#32;{
+<anchor xml:id="_test_2eparser_8cpp_source_1l00078"/>00078 &#32;&#32;&#32;&#32;<link linkend="_structemthp_1_1Token">emthp::Token</link>&#32;token;
+<anchor xml:id="_test_2eparser_8cpp_source_1l00079"/>00079 &#32;&#32;&#32;&#32;this-&gt;set_input(<emphasis role="stringliteral">&quot;1.11x^2.22&quot;</emphasis>);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00080"/>00080 &#32;&#32;&#32;&#32;
+<anchor xml:id="_test_2eparser_8cpp_source_1l00081"/>00081 &#32;&#32;&#32;&#32;token&#32;=&#32;this-&gt;lexer.next();
+<anchor xml:id="_test_2eparser_8cpp_source_1l00082"/>00082 &#32;&#32;&#32;&#32;ASSERT_EQ(token.<link linkend="_structemthp_1_1Token_1ae532928c40581bc20349979955dfb2f3">type</link>,&#32;<link linkend="_namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6bad7549ed90d6122d0761f3acfb1b56923">emthp::TokenType::T_NUMBER</link>);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00083"/>00083 &#32;&#32;&#32;&#32;ASSERT_EQ(token.<link linkend="_structemthp_1_1Token_1a0512f6f4c2a7dcf724d582d971393c2c">value</link>,&#32;1.11);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00084"/>00084 
+<anchor xml:id="_test_2eparser_8cpp_source_1l00085"/>00085 &#32;&#32;&#32;&#32;token&#32;=&#32;this-&gt;lexer.next();
+<anchor xml:id="_test_2eparser_8cpp_source_1l00086"/>00086 &#32;&#32;&#32;&#32;ASSERT_EQ(token.<link linkend="_structemthp_1_1Token_1ae532928c40581bc20349979955dfb2f3">type</link>,&#32;<link linkend="_namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6ba6aa4d0d8ca8e058abc4e4e38f466bbd2">emthp::TokenType::T_VARIABLE</link>);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00087"/>00087 &#32;&#32;&#32;&#32;ASSERT_EQ(token.<link linkend="_structemthp_1_1Token_1a0512f6f4c2a7dcf724d582d971393c2c">value</link>,&#32;0.0);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00088"/>00088 
+<anchor xml:id="_test_2eparser_8cpp_source_1l00089"/>00089 &#32;&#32;&#32;&#32;token&#32;=&#32;this-&gt;lexer.next();
+<anchor xml:id="_test_2eparser_8cpp_source_1l00090"/>00090 &#32;&#32;&#32;&#32;ASSERT_EQ(token.<link linkend="_structemthp_1_1Token_1ae532928c40581bc20349979955dfb2f3">type</link>,&#32;<link linkend="_namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6ba7b607d6341806fa8bc4505c44670de8c">emthp::TokenType::T_EXPONENT</link>);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00091"/>00091 &#32;&#32;&#32;&#32;ASSERT_EQ(token.<link linkend="_structemthp_1_1Token_1a0512f6f4c2a7dcf724d582d971393c2c">value</link>,&#32;0.0);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00092"/>00092 
+<anchor xml:id="_test_2eparser_8cpp_source_1l00093"/>00093 &#32;&#32;&#32;&#32;token&#32;=&#32;this-&gt;lexer.next();
+<anchor xml:id="_test_2eparser_8cpp_source_1l00094"/>00094 &#32;&#32;&#32;&#32;ASSERT_EQ(token.<link linkend="_structemthp_1_1Token_1ae532928c40581bc20349979955dfb2f3">type</link>,&#32;<link linkend="_namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6bad7549ed90d6122d0761f3acfb1b56923">emthp::TokenType::T_NUMBER</link>);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00095"/>00095 &#32;&#32;&#32;&#32;ASSERT_EQ(token.<link linkend="_structemthp_1_1Token_1a0512f6f4c2a7dcf724d582d971393c2c">value</link>,&#32;2.22);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00096"/>00096 &#32;&#32;&#32;&#32;
+<anchor xml:id="_test_2eparser_8cpp_source_1l00097"/>00097 &#32;&#32;&#32;&#32;token&#32;=&#32;this-&gt;lexer.next();
+<anchor xml:id="_test_2eparser_8cpp_source_1l00098"/>00098 &#32;&#32;&#32;&#32;ASSERT_EQ(token.<link linkend="_structemthp_1_1Token_1ae532928c40581bc20349979955dfb2f3">type</link>,&#32;<link linkend="_namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6ba5a13d17b3d73d6aa1a545e430284ec6d">emthp::TokenType::T_EOF</link>);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00099"/>00099 &#32;&#32;&#32;&#32;ASSERT_EQ(token.<link linkend="_structemthp_1_1Token_1a0512f6f4c2a7dcf724d582d971393c2c">value</link>,&#32;0.0);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00100"/>00100 }
+<anchor xml:id="_test_2eparser_8cpp_source_1l00104"/><link linkend="_test_2eparser_8cpp_1a9bae16de43d72897f903e5977107c60a">00104</link> <link linkend="_test_2eparser_8cpp_1adb859937dfb6fcd56c656c3c2555afc9">TEST_F</link>(<link linkend="_classEParserTest">EParserTest</link>,&#32;ArithmeticLexer)&#32;{
+<anchor xml:id="_test_2eparser_8cpp_source_1l00105"/>00105 &#32;&#32;&#32;&#32;<link linkend="_structemthp_1_1Token">emthp::Token</link>&#32;token;
+<anchor xml:id="_test_2eparser_8cpp_source_1l00106"/>00106 &#32;&#32;&#32;&#32;this-&gt;set_input(<emphasis role="stringliteral">&quot;2*8/4^3&#32;x^&#32;2^2&quot;</emphasis>);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00107"/>00107 &#32;&#32;&#32;&#32;
+<anchor xml:id="_test_2eparser_8cpp_source_1l00108"/>00108 &#32;&#32;&#32;&#32;token&#32;=&#32;this-&gt;lexer.next();
+<anchor xml:id="_test_2eparser_8cpp_source_1l00109"/>00109 &#32;&#32;&#32;&#32;ASSERT_EQ(token.<link linkend="_structemthp_1_1Token_1ae532928c40581bc20349979955dfb2f3">type</link>,&#32;<link linkend="_namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6bad7549ed90d6122d0761f3acfb1b56923">emthp::TokenType::T_NUMBER</link>);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00110"/>00110 &#32;&#32;&#32;&#32;ASSERT_EQ(token.<link linkend="_structemthp_1_1Token_1a0512f6f4c2a7dcf724d582d971393c2c">value</link>,&#32;64.0);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00111"/>00111 
+<anchor xml:id="_test_2eparser_8cpp_source_1l00112"/>00112 &#32;&#32;&#32;&#32;token&#32;=&#32;this-&gt;lexer.next();
+<anchor xml:id="_test_2eparser_8cpp_source_1l00113"/>00113 &#32;&#32;&#32;&#32;ASSERT_EQ(token.<link linkend="_structemthp_1_1Token_1ae532928c40581bc20349979955dfb2f3">type</link>,&#32;<link linkend="_namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6ba6aa4d0d8ca8e058abc4e4e38f466bbd2">emthp::TokenType::T_VARIABLE</link>);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00114"/>00114 &#32;&#32;&#32;&#32;ASSERT_EQ(token.<link linkend="_structemthp_1_1Token_1a0512f6f4c2a7dcf724d582d971393c2c">value</link>,&#32;0.0);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00115"/>00115 
+<anchor xml:id="_test_2eparser_8cpp_source_1l00116"/>00116 &#32;&#32;&#32;&#32;token&#32;=&#32;this-&gt;lexer.next();
+<anchor xml:id="_test_2eparser_8cpp_source_1l00117"/>00117 &#32;&#32;&#32;&#32;ASSERT_EQ(token.<link linkend="_structemthp_1_1Token_1ae532928c40581bc20349979955dfb2f3">type</link>,&#32;<link linkend="_namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6ba7b607d6341806fa8bc4505c44670de8c">emthp::TokenType::T_EXPONENT</link>);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00118"/>00118 &#32;&#32;&#32;&#32;ASSERT_EQ(token.<link linkend="_structemthp_1_1Token_1a0512f6f4c2a7dcf724d582d971393c2c">value</link>,&#32;0.0);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00119"/>00119 
+<anchor xml:id="_test_2eparser_8cpp_source_1l00120"/>00120 &#32;&#32;&#32;&#32;token&#32;=&#32;this-&gt;lexer.next();
+<anchor xml:id="_test_2eparser_8cpp_source_1l00121"/>00121 &#32;&#32;&#32;&#32;ASSERT_EQ(token.<link linkend="_structemthp_1_1Token_1ae532928c40581bc20349979955dfb2f3">type</link>,&#32;<link linkend="_namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6bad7549ed90d6122d0761f3acfb1b56923">emthp::TokenType::T_NUMBER</link>);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00122"/>00122 &#32;&#32;&#32;&#32;ASSERT_EQ(token.<link linkend="_structemthp_1_1Token_1a0512f6f4c2a7dcf724d582d971393c2c">value</link>,&#32;4.0);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00123"/>00123 &#32;&#32;&#32;&#32;
+<anchor xml:id="_test_2eparser_8cpp_source_1l00124"/>00124 &#32;&#32;&#32;&#32;token&#32;=&#32;this-&gt;lexer.next();
+<anchor xml:id="_test_2eparser_8cpp_source_1l00125"/>00125 &#32;&#32;&#32;&#32;ASSERT_EQ(token.<link linkend="_structemthp_1_1Token_1ae532928c40581bc20349979955dfb2f3">type</link>,&#32;<link linkend="_namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6ba5a13d17b3d73d6aa1a545e430284ec6d">emthp::TokenType::T_EOF</link>);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00126"/>00126 &#32;&#32;&#32;&#32;ASSERT_EQ(token.<link linkend="_structemthp_1_1Token_1a0512f6f4c2a7dcf724d582d971393c2c">value</link>,&#32;0.0);
+<anchor xml:id="_test_2eparser_8cpp_source_1l00127"/>00127 }
+<anchor xml:id="_test_2eparser_8cpp_source_1l00131"/><link linkend="_test_2eparser_8cpp_1a7ed288e238950900345be1751b543ab5">00131</link> <link linkend="_test_2eparser_8cpp_1adb859937dfb6fcd56c656c3c2555afc9">TEST_F</link>(<link linkend="_classEParserTest">EParserTest</link>,&#32;Variables)&#32;{
+<anchor xml:id="_test_2eparser_8cpp_source_1l00132"/>00132 &#32;&#32;&#32;&#32;this-&gt;set_input(<emphasis role="stringliteral">&quot;x&quot;</emphasis>);&#32;ASSERT_EQ(this-&gt;parser.parse_monomial(),&#32;<link linkend="_classemth_1_1Monomial">emth::Monomial</link>(1,&#32;1));
+<anchor xml:id="_test_2eparser_8cpp_source_1l00133"/>00133 &#32;&#32;&#32;&#32;this-&gt;set_input(<emphasis role="stringliteral">&quot;2x&quot;</emphasis>);&#32;ASSERT_EQ(this-&gt;parser.parse_monomial(),&#32;<link linkend="_classemth_1_1Monomial">emth::Monomial</link>(2,&#32;1));
+<anchor xml:id="_test_2eparser_8cpp_source_1l00134"/>00134 &#32;&#32;&#32;&#32;this-&gt;set_input(<emphasis role="stringliteral">&quot;x^2&quot;</emphasis>);&#32;ASSERT_EQ(this-&gt;parser.parse_monomial(),&#32;<link linkend="_classemth_1_1Monomial">emth::Monomial</link>(1,&#32;2));
+<anchor xml:id="_test_2eparser_8cpp_source_1l00135"/>00135 &#32;&#32;&#32;&#32;this-&gt;set_input(<emphasis role="stringliteral">&quot;2x^2&quot;</emphasis>);&#32;ASSERT_EQ(this-&gt;parser.parse_monomial(),&#32;<link linkend="_classemth_1_1Monomial">emth::Monomial</link>(2,&#32;2));
+<anchor xml:id="_test_2eparser_8cpp_source_1l00136"/>00136 }
+<anchor xml:id="_test_2eparser_8cpp_source_1l00140"/><link linkend="_test_2eparser_8cpp_1a21f8c875c668e6dc3d1a1423cdba58a3">00140</link> <link linkend="_test_2eparser_8cpp_1adb859937dfb6fcd56c656c3c2555afc9">TEST_F</link>(<link linkend="_classEParserTest">EParserTest</link>,&#32;Compound)&#32;{this-&gt;set_input(<emphasis role="stringliteral">&quot;2x^2&#32;-&#32;2x&#32;+&#32;2&quot;</emphasis>);&#32;ASSERT_EQ(this-&gt;parser.parse_polynomial(),&#32;<link linkend="_classemth_1_1Polynomial">emth::Polynomial</link>({emth::Monomial(2,&#32;2),&#32;emth::Monomial(-2,&#32;1),&#32;emth::Monomial(2,&#32;0)}));}
+<anchor xml:id="_test_2eparser_8cpp_source_1l00144"/><link linkend="_test_2eparser_8cpp_1aee28f89b9e4ebad2361a1f87e5068314">00144</link> <link linkend="_test_2eparser_8cpp_1adb859937dfb6fcd56c656c3c2555afc9">TEST_F</link>(<link linkend="_classEParserTest">EParserTest</link>,&#32;Signs)&#32;{
+<anchor xml:id="_test_2eparser_8cpp_source_1l00145"/>00145 &#32;&#32;&#32;&#32;this-&gt;set_input(<emphasis role="stringliteral">&quot;-x&quot;</emphasis>);&#32;ASSERT_EQ(this-&gt;parser.parse_monomial(),&#32;<link linkend="_classemth_1_1Monomial">emth::Monomial</link>(-1,&#32;1));
+<anchor xml:id="_test_2eparser_8cpp_source_1l00146"/>00146 &#32;&#32;&#32;&#32;this-&gt;set_input(<emphasis role="stringliteral">&quot;--x&quot;</emphasis>);&#32;ASSERT_EQ(this-&gt;parser.parse_monomial(),&#32;<link linkend="_classemth_1_1Monomial">emth::Monomial</link>(1,&#32;1));
+<anchor xml:id="_test_2eparser_8cpp_source_1l00147"/>00147 &#32;&#32;&#32;&#32;this-&gt;set_input(<emphasis role="stringliteral">&quot;---x&quot;</emphasis>);&#32;ASSERT_EQ(this-&gt;parser.parse_monomial(),&#32;<link linkend="_classemth_1_1Monomial">emth::Monomial</link>(-1,&#32;1));
+<anchor xml:id="_test_2eparser_8cpp_source_1l00148"/>00148 &#32;&#32;&#32;&#32;this-&gt;set_input(<emphasis role="stringliteral">&quot;-+x&quot;</emphasis>);&#32;ASSERT_EQ(this-&gt;parser.parse_monomial(),&#32;<link linkend="_classemth_1_1Monomial">emth::Monomial</link>(-1,&#32;1));
+<anchor xml:id="_test_2eparser_8cpp_source_1l00149"/>00149 &#32;&#32;&#32;&#32;this-&gt;set_input(<emphasis role="stringliteral">&quot;+-+x&quot;</emphasis>);&#32;ASSERT_EQ(this-&gt;parser.parse_monomial(),&#32;<link linkend="_classemth_1_1Monomial">emth::Monomial</link>(-1,&#32;1));
+<anchor xml:id="_test_2eparser_8cpp_source_1l00150"/>00150 }
+<anchor xml:id="_test_2eparser_8cpp_source_1l00154"/><link linkend="_test_2eparser_8cpp_1a8178a3e2dd566ffdd7520265ce0c2fe3">00154</link> <link linkend="_test_2eparser_8cpp_1adb859937dfb6fcd56c656c3c2555afc9">TEST_F</link>(<link linkend="_classEParserTest">EParserTest</link>,&#32;Noise)&#32;{
+<anchor xml:id="_test_2eparser_8cpp_source_1l00155"/>00155 &#32;&#32;&#32;&#32;this-&gt;set_input(<emphasis role="stringliteral">&quot;(1)&lt;···(0)&lt;···_x_···&gt;^{2}&quot;</emphasis>);&#32;ASSERT_EQ(this-&gt;parser.parse_monomial(),&#32;<link linkend="_classemth_1_1Monomial">emth::Monomial</link>(10,&#32;2));
+<anchor xml:id="_test_2eparser_8cpp_source_1l00156"/>00156 &#32;&#32;&#32;&#32;this-&gt;set_input(<emphasis role="stringliteral">&quot;(1)&lt;···(0)&lt;···_x_···&gt;^{2}&#32;-&#32;(0)&lt;···(5)&lt;···_x_···&gt;^{2}&quot;</emphasis>);&#32;ASSERT_EQ(this-&gt;parser.parse_polynomial(),&#32;<link linkend="_classemth_1_1Polynomial">emth::Polynomial</link>({emth::Monomial(5,&#32;2)}));
+<anchor xml:id="_test_2eparser_8cpp_source_1l00157"/>00157 }
+<anchor xml:id="_test_2eparser_8cpp_source_1l00161"/><link linkend="_test_2eparser_8cpp_1aeed0ae0397e5f82225fde1a6ba4f65a9">00161</link> <link linkend="_test_2eparser_8cpp_1adb859937dfb6fcd56c656c3c2555afc9">TEST_F</link>(<link linkend="_classEParserTest">EParserTest</link>,&#32;Edge)&#32;{this-&gt;set_input(<emphasis role="stringliteral">&quot;&quot;</emphasis>);&#32;ASSERT_EQ(this-&gt;parser.parse_polynomial(),&#32;<link linkend="_classemth_1_1Polynomial">emth::Polynomial</link>());}
+<anchor xml:id="_test_2eparser_8cpp_source_1l00169"/><link linkend="_test_2eparser_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627">00169</link> <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_interface_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4">main</link>(<emphasis role="keywordtype">int</emphasis>&#32;argc,&#32;<emphasis role="keywordtype">char</emphasis>**&#32;argv)&#32;{testing::InitGoogleTest(&amp;argc,&#32;argv);&#32;<emphasis role="keywordflow">return</emphasis>&#32;RUN_ALL_TESTS();}
+</programlisting></section>

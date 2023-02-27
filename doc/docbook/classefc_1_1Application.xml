@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classefc_1_1Application" xml:lang="en-US">
+<title>efc::Application Class Reference</title>
+<indexterm><primary>efc::Application</primary></indexterm>
+<para>
+
+<para>Class that contains the application inner logic. </para>
+ 
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_classefc_1_1Application_1a151fab3a86220c774be08189cf8dcb46">run</link> ()</para>
+
+<para>Main loop fallback, basically it starts the application event loop. </para>
+</listitem>
+            <listitem><para><link linkend="_classefc_1_1Application_1adc655697a7fa28de4f8526819eb1a083">~Application</link> () noexcept</para>
+
+<para>Default destructor, it deletes the <link linkend="_classefc_1_1Terminal">Terminal</link> pointer, sets the singleton instance to nullptr, and saves the Json data to the <link linkend="_classefc_1_1Storage">Storage</link> object. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static <link linkend="_classefc_1_1Application">Application</link> * <link linkend="_classefc_1_1Application_1a612f4545a4b1e5d89decab2f5e092d90">init</link> () noexcept</para>
+
+<para>Static function for building the singleton static instance. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Class that contains the application inner logic. </para>
+
+
+
+<para>The class consist of some menus as loops and all the logic of the <link linkend="_classefc_1_1Application">Application</link> </para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l00829">829</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classefc_1_1Application_1adc655697a7fa28de4f8526819eb1a083"/><section>
+    <title>~Application()</title>
+<indexterm><primary>~Application</primary><secondary>efc::Application</secondary></indexterm>
+<indexterm><primary>efc::Application</primary><secondary>~Application</secondary></indexterm>
+<para><computeroutput>efc::Application::~Application ( )<computeroutput>[inline]</computeroutput>, <computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Default destructor, it deletes the <link linkend="_classefc_1_1Terminal">Terminal</link> pointer, sets the singleton instance to nullptr, and saves the Json data to the <link linkend="_classefc_1_1Storage">Storage</link> object. </para>
+</para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l01093">1093</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classefc_1_1Application_1a612f4545a4b1e5d89decab2f5e092d90"/><section>
+    <title>init()</title>
+<indexterm><primary>init</primary><secondary>efc::Application</secondary></indexterm>
+<indexterm><primary>efc::Application</primary><secondary>init</secondary></indexterm>
+<para><computeroutput>static <link linkend="_classefc_1_1Application">Application</link> * efc::Application::init ( )<computeroutput>[inline]</computeroutput>, <computeroutput>[static]</computeroutput>, <computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Static function for building the singleton static instance. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>(Application*) The singleton instance pointer also stored at Application::instance </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l01067">1067</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<anchor xml:id="_classefc_1_1Application_1a151fab3a86220c774be08189cf8dcb46"/><section>
+    <title>run()</title>
+<indexterm><primary>run</primary><secondary>efc::Application</secondary></indexterm>
+<indexterm><primary>efc::Application</primary><secondary>run</secondary></indexterm>
+<para><computeroutput>void efc::Application::run ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Main loop fallback, basically it starts the application event loop. </para>
+</para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l01074">1074</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+src/<link linkend="_interface_8cpp">interface.cpp</link></section>
+</section>

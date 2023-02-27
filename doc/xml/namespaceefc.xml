@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="namespaceefc" kind="namespace" language="C++">
+    <compoundname>efc</compoundname>
+    <innerclass refid="classefc_1_1Application" prot="public">efc::Application</innerclass>
+    <innerclass refid="classefc_1_1IWindow" prot="public">efc::IWindow</innerclass>
+    <innerclass refid="classefc_1_1Lexer" prot="public">efc::Lexer</innerclass>
+    <innerclass refid="classefc_1_1OWindow" prot="public">efc::OWindow</innerclass>
+    <innerclass refid="classefc_1_1Parser" prot="public">efc::Parser</innerclass>
+    <innerclass refid="classefc_1_1Plane" prot="public">efc::Plane</innerclass>
+    <innerclass refid="classefc_1_1Storage" prot="public">efc::Storage</innerclass>
+    <innerclass refid="classefc_1_1Terminal" prot="public">efc::Terminal</innerclass>
+    <innerclass refid="structefc_1_1Token" prot="public">efc::Token</innerclass>
+    <innerclass refid="classefc_1_1Window" prot="public">efc::Window</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespaceefc_1af24b42c9a5c7268f47143ad4e796b58c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>TokenType</name>
+        <qualifiedname>efc::TokenType</qualifiedname>
+        <enumvalue id="namespaceefc_1af24b42c9a5c7268f47143ad4e796b58ca6deff0133907b9e20a1c345afd3c42aa" prot="public">
+          <name>T_NUMBER</name>
+          <briefdescription>
+<para>Number type. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceefc_1af24b42c9a5c7268f47143ad4e796b58ca29baf11d038163906f69fb410fe1d4e0" prot="public">
+          <name>T_PLUS</name>
+          <briefdescription>
+<para>Plus sign type. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceefc_1af24b42c9a5c7268f47143ad4e796b58cae5e24b6fa05d86c2c2b3dd760683a775" prot="public">
+          <name>T_MINUS</name>
+          <briefdescription>
+<para>Minus sign type. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceefc_1af24b42c9a5c7268f47143ad4e796b58cabf0e9e601a2dbc828e933bd240bbe386" prot="public">
+          <name>T_MULTIPLICATION</name>
+          <briefdescription>
+<para>Multiplication sign type. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceefc_1af24b42c9a5c7268f47143ad4e796b58ca452aff6a9ea8337e9b27fc43824d0d00" prot="public">
+          <name>T_DIVISION</name>
+          <briefdescription>
+<para>Division sign type. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceefc_1af24b42c9a5c7268f47143ad4e796b58caa1fcef4084cd9aba09d36f5ed7110b6a" prot="public">
+          <name>T_EOF</name>
+          <briefdescription>
+<para>End of file type. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum with all the possible <ref refid="structefc_1_1Token" kindref="compound">Token</ref> types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="650" column="5" bodyfile="src/interface.cpp" bodystart="650" bodyend="675"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Englobes all the classes and functions of the emath text user interface. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The emth namespace contains the following classes: <ref refid="classefc_1_1Window" kindref="compound">Window</ref>, <ref refid="classefc_1_1IWindow" kindref="compound">IWindow</ref>, <ref refid="classefc_1_1OWindow" kindref="compound">OWindow</ref>, <ref refid="classefc_1_1Terminal" kindref="compound">Terminal</ref>, <ref refid="classefc_1_1Plane" kindref="compound">Plane</ref>, <ref refid="classefc_1_1Storage" kindref="compound">Storage</ref>, <ref refid="classefc_1_1Lexer" kindref="compound">Lexer</ref>, <ref refid="classefc_1_1Parser" kindref="compound">Parser</ref> and <ref refid="classefc_1_1Application" kindref="compound">Application</ref>. </para>
+    </detaileddescription>
+    <location file="src/interface.cpp" line="28" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structefc_1_1Token" xml:lang="en-US">
+<title>efc::Token Struct Reference</title>
+<indexterm><primary>efc::Token</primary></indexterm>
+<para>
+
+<para>Struct for representing a token as a type and a value. </para>
+ 
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>const <link linkend="_namespaceefc_1af24b42c9a5c7268f47143ad4e796b58c">TokenType</link> <link linkend="_structefc_1_1Token_1abd56361d2f52a2c345e106f8e2ec4197">type</link></para>
+
+<para>The token&apos;s type as a TokenType. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_structefc_1_1Token_1ad5ee17926cf07cb994367a0d86717248"/>union {</para>
+        <itemizedlist>
+            <listitem><para>&#160;&#160;&#160;char <link linkend="_structefc_1_1Token_1a2bcb3afeb2d611ead7041f924d621587">c</link></para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;int <link linkend="_structefc_1_1Token_1a8fbcc67cb189f58f5e1a6af27e059c2b">n</link></para>
+</listitem>
+        </itemizedlist>
+</listitem>
+            <listitem><para>} <emphasis role="strong">value</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Struct for representing a token as a type and a value. </para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l00680">680</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_structefc_1_1Token_1a2bcb3afeb2d611ead7041f924d621587"/><section>
+    <title>c</title>
+<indexterm><primary>c</primary><secondary>efc::Token</secondary></indexterm>
+<indexterm><primary>efc::Token</primary><secondary>c</secondary></indexterm>
+<para><computeroutput>char efc::Token::c</computeroutput></para><para>
+Definition at line <link linkend="_interface_8cpp_source_1l00689">689</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<anchor xml:id="_structefc_1_1Token_1a8fbcc67cb189f58f5e1a6af27e059c2b"/><section>
+    <title>n</title>
+<indexterm><primary>n</primary><secondary>efc::Token</secondary></indexterm>
+<indexterm><primary>efc::Token</primary><secondary>n</secondary></indexterm>
+<para><computeroutput>int efc::Token::n</computeroutput></para><para>
+Definition at line <link linkend="_interface_8cpp_source_1l00689">689</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<anchor xml:id="_structefc_1_1Token_1abd56361d2f52a2c345e106f8e2ec4197"/><section>
+    <title>type</title>
+<indexterm><primary>type</primary><secondary>efc::Token</secondary></indexterm>
+<indexterm><primary>efc::Token</primary><secondary>type</secondary></indexterm>
+<para><computeroutput>const <link linkend="_namespaceefc_1af24b42c9a5c7268f47143ad4e796b58c">TokenType</link> efc::Token::type</computeroutput></para><para>
+
+<para>The token&apos;s type as a TokenType. </para>
+</para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l00684">684</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+src/<link linkend="_interface_8cpp">interface.cpp</link></section>
+</section>

@@ -1,0 +1,66 @@
+.TH "efc::Lexer" 3 "Mon Feb 27 2023" "EMath++" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+efc::Lexer \- Class that works as a token supplier for the \fBParser\fP class\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBLexer\fP (const std::string &input) noexcept"
+.br
+.RI "Standalone constructor for the \fBLexer\fP class\&. "
+.ti -1c
+.RI "const \fBToken\fP \fBnext\fP () noexcept"
+.br
+.RI "Function that returns the next \fBToken\fP in the input provided in the constructor\&. "
+.ti -1c
+.RI "\fB~Lexer\fP () noexcept=default"
+.br
+.RI "Default destructor\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Class that works as a token supplier for the \fBParser\fP class\&. 
+
+The class consists of a public function for getting the next \fBToken\fP 
+.PP
+Definition at line \fB696\fP of file \fBinterface\&.cpp\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "efc::Lexer::Lexer (const std::string & input)\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+Standalone constructor for the \fBLexer\fP class\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIinput\fP A const reference to the std::string to tokenize\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB735\fP of file \fBinterface\&.cpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "const \fBToken\fP efc::Lexer::next ()\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+Function that returns the next \fBToken\fP in the input provided in the constructor\&. 
+.PP
+\fBReturns\fP
+.RS 4
+(\fBToken\fP) The next \fBToken\fP in the input 
+.RE
+.PP
+
+.PP
+Definition at line \fB740\fP of file \fBinterface\&.cpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for EMath++ from the source code\&.

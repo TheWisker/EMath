@@ -1,0 +1,409 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classefc_1_1Plane" kind="class" language="C++" prot="public">
+    <compoundname>efc::Plane</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classefc_1_1Plane_1a9747c7ae721d8ed0802b0f5ba4c5046b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int efc::Plane::xogn</definition>
+        <argsstring></argsstring>
+        <name>xogn</name>
+        <qualifiedname>efc::Plane::xogn</qualifiedname>
+        <briefdescription>
+<para>The x and y offsets where the drawing starts. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="463" column="17" bodyfile="src/interface.cpp" bodystart="463" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classefc_1_1Plane_1a4277e9297d50cca99d7b9dc805afe9da" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int efc::Plane::yogn</definition>
+        <argsstring></argsstring>
+        <name>yogn</name>
+        <qualifiedname>efc::Plane::yogn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="463" column="22" bodyfile="src/interface.cpp" bodystart="463" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classefc_1_1Plane_1a40f8caf029cbb6dd9791fb6549f5c371" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int efc::Plane::_xogn</definition>
+        <argsstring></argsstring>
+        <name>_xogn</name>
+        <qualifiedname>efc::Plane::_xogn</qualifiedname>
+        <briefdescription>
+<para>The original x and y offsets first provided on instantiation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="467" column="23" bodyfile="src/interface.cpp" bodystart="467" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classefc_1_1Plane_1ad99f943f9e7003cc993844daca1e66b5" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int efc::Plane::_yogn</definition>
+        <argsstring></argsstring>
+        <name>_yogn</name>
+        <qualifiedname>efc::Plane::_yogn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="467" column="29" bodyfile="src/interface.cpp" bodystart="467" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classefc_1_1Plane_1a56f1e4d70f873583d71338769c846281" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int efc::Plane::domain</definition>
+        <argsstring></argsstring>
+        <name>domain</name>
+        <qualifiedname>efc::Plane::domain</qualifiedname>
+        <briefdescription>
+<para>The domain and image of the Cartesian plane visible. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="471" column="26" bodyfile="src/interface.cpp" bodystart="471" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classefc_1_1Plane_1af3b69a0b97fe039ba70edc61f390e1c5" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int efc::Plane::image</definition>
+        <argsstring></argsstring>
+        <name>image</name>
+        <qualifiedname>efc::Plane::image</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="471" column="33" bodyfile="src/interface.cpp" bodystart="471" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classefc_1_1Plane_1aa339c940ad9f49d1e5e556d24117aab9" prot="private" static="no" mutable="no">
+        <type><ref refid="classemth_1_1Polynomial" kindref="compound">::emth::Polynomial</ref></type>
+        <definition>::emth::Polynomial efc::Plane::function</definition>
+        <argsstring></argsstring>
+        <name>function</name>
+        <qualifiedname>efc::Plane::function</qualifiedname>
+        <briefdescription>
+<para>The function to draw. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="475" column="32" bodyfile="src/interface.cpp" bodystart="475" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classefc_1_1Plane_1a328b55648088128e29e01ee42cd600fd" prot="private" static="no" mutable="no">
+        <type>::sf::Font</type>
+        <definition>::sf::Font efc::Plane::font</definition>
+        <argsstring></argsstring>
+        <name>font</name>
+        <qualifiedname>efc::Plane::font</qualifiedname>
+        <briefdescription>
+<para>The sf::Font for the coordinate tooltip. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="479" column="24" bodyfile="src/interface.cpp" bodystart="479" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classefc_1_1Plane_1ac6ea3d776ca07561a4d7ba3f2c32f878" prot="private" static="no" mutable="no">
+        <type>::sf::Text</type>
+        <definition>::sf::Text efc::Plane::tooltip</definition>
+        <argsstring></argsstring>
+        <name>tooltip</name>
+        <qualifiedname>efc::Plane::tooltip</qualifiedname>
+        <briefdescription>
+<para>The sf::Text coordinate tooltip. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="483" column="24" bodyfile="src/interface.cpp" bodystart="483" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classefc_1_1Plane_1aa212846ffd8e77176560d4bf9e794eec" prot="private" static="no" mutable="no">
+        <type>::sf::VertexArray</type>
+        <definition>::sf::VertexArray efc::Plane::axes</definition>
+        <argsstring></argsstring>
+        <name>axes</name>
+        <qualifiedname>efc::Plane::axes</qualifiedname>
+        <briefdescription>
+<para>The sf::VertexArray that contains the Cartesian plane axes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="487" column="31" bodyfile="src/interface.cpp" bodystart="487" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classefc_1_1Plane_1a781ba0c9b6b13978ddc6ebdf0745001a" prot="private" static="no" mutable="no">
+        <type>::sf::RenderWindow</type>
+        <definition>::sf::RenderWindow efc::Plane::window</definition>
+        <argsstring></argsstring>
+        <name>window</name>
+        <qualifiedname>efc::Plane::window</qualifiedname>
+        <briefdescription>
+<para>The sf::RenderWindow where everything gets drawed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="491" column="32" bodyfile="src/interface.cpp" bodystart="491" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classefc_1_1Plane_1a9d2dc87d59fe49cbb266c502633f9f03" prot="private" static="no" mutable="no">
+        <type>::sf::RectangleShape</type>
+        <definition>::sf::RectangleShape efc::Plane::line</definition>
+        <argsstring></argsstring>
+        <name>line</name>
+        <qualifiedname>efc::Plane::line</qualifiedname>
+        <briefdescription>
+<para>The sf::RectangleShape vertical line that follows the mouse. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="495" column="34" bodyfile="src/interface.cpp" bodystart="495" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classefc_1_1Plane_1a04c414305224c91390311aa60c9cf7b8" prot="private" static="no" mutable="no">
+        <type>::sf::CircleShape</type>
+        <definition>::sf::CircleShape efc::Plane::intersection</definition>
+        <argsstring></argsstring>
+        <name>intersection</name>
+        <qualifiedname>efc::Plane::intersection</qualifiedname>
+        <briefdescription>
+<para>The sf::CircleShape that gets drawed on the intersection between the line and the function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="499" column="31" bodyfile="src/interface.cpp" bodystart="499" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classefc_1_1Plane_1ab18ac66ecb99594953163e735c89d308" prot="private" static="no" mutable="no">
+        <type>::sf::VertexArray</type>
+        <definition>::sf::VertexArray efc::Plane::representation</definition>
+        <argsstring></argsstring>
+        <name>representation</name>
+        <qualifiedname>efc::Plane::representation</qualifiedname>
+        <briefdescription>
+<para>The sf::VertexArray that contains the points of the function for drawing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="503" column="31" bodyfile="src/interface.cpp" bodystart="503" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classefc_1_1Plane_1a0322d412e5fa1ea41c5dcf7fe14e7df0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void efc::Plane::draw</definition>
+        <argsstring>()</argsstring>
+        <name>draw</name>
+        <qualifiedname>efc::Plane::draw</qualifiedname>
+        <briefdescription>
+<para>This function draws one frame per call of the <ref refid="classefc_1_1Plane" kindref="compound">Plane</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="507" column="18" bodyfile="src/interface.cpp" bodystart="507" bodyend="515"/>
+      </memberdef>
+      <memberdef kind="function" id="classefc_1_1Plane_1ab3444096cc5192892c611a9b701aea57" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void efc::Plane::populate</definition>
+        <argsstring>()</argsstring>
+        <name>populate</name>
+        <qualifiedname>efc::Plane::populate</qualifiedname>
+        <briefdescription>
+<para>This function populates the representation with the function image in the current domain. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="519" column="18" bodyfile="src/interface.cpp" bodystart="519" bodyend="529"/>
+      </memberdef>
+      <memberdef kind="function" id="classefc_1_1Plane_1a9d8c3d6344387936a54378f80ea64a5f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void efc::Plane::resize</definition>
+        <argsstring>(const ::sf::Event &amp;event)</argsstring>
+        <name>resize</name>
+        <qualifiedname>efc::Plane::resize</qualifiedname>
+        <param>
+          <type>const ::sf::Event &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>This function resizes the <ref refid="classefc_1_1Plane" kindref="compound">Plane</ref> window and all the primitives that need to also be resized. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sf::Event object that represents the resizing event </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="534" column="18" bodyfile="src/interface.cpp" bodystart="534" bodyend="539"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classefc_1_1Plane_1aead86518dab0bbea050a5399bc85a801" prot="private" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr int</type>
+        <definition>static constexpr int efc::Plane::inverse</definition>
+        <argsstring>(const int &amp;n) noexcept</argsstring>
+        <name>inverse</name>
+        <qualifiedname>efc::Plane::inverse</qualifiedname>
+        <param>
+          <type>const int &amp;</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>This function inverts a int. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The int to be inverted </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>(int) The inverted int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="545" column="41" bodyfile="src/interface.cpp" bodystart="545" bodyend="545"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classefc_1_1Plane_1a59f6b4316752f2dfb6b56b2196017a4d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>efc::Plane::Plane</definition>
+        <argsstring>(int ox, int oy, const ::emth::Polynomial &amp;func)</argsstring>
+        <name>Plane</name>
+        <qualifiedname>efc::Plane::Plane</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>ox</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>oy</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classemth_1_1Polynomial" kindref="compound">::emth::Polynomial</ref> &amp;</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+<para>The main constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ox</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x offset </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>oy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y offset </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The function to be drawed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="553" column="13" bodyfile="src/interface.cpp" bodystart="553" bodyend="560"/>
+        <references refid="font_8h_1abee0e1ab69379ae42c9c1ddd2a3ce67e" compoundref="font_8h" startline="12">ROBOTO_BOLD</references>
+      </memberdef>
+      <memberdef kind="function" id="classefc_1_1Plane_1a972b3c48d4213d433dc4b3e99ded3727" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void efc::Plane::run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <qualifiedname>efc::Plane::run</qualifiedname>
+        <briefdescription>
+<para>Runs the main application loop, processing events. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="564" column="18" bodyfile="src/interface.cpp" bodystart="564" bodyend="588"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classefc_1_1Plane" kindref="compound">Plane</ref> class to draw a function in the Cartesian plane. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Provides the capability to run multiple Planes in different threads in paralell </para>
+    </detaileddescription>
+    <location file="src/interface.cpp" line="458" column="5" bodyfile="src/interface.cpp" bodystart="458" bodyend="589"/>
+    <listofallmembers>
+      <member refid="classefc_1_1Plane_1a40f8caf029cbb6dd9791fb6549f5c371" prot="private" virt="non-virtual"><scope>efc::Plane</scope><name>_xogn</name></member>
+      <member refid="classefc_1_1Plane_1ad99f943f9e7003cc993844daca1e66b5" prot="private" virt="non-virtual"><scope>efc::Plane</scope><name>_yogn</name></member>
+      <member refid="classefc_1_1Plane_1aa212846ffd8e77176560d4bf9e794eec" prot="private" virt="non-virtual"><scope>efc::Plane</scope><name>axes</name></member>
+      <member refid="classefc_1_1Plane_1a56f1e4d70f873583d71338769c846281" prot="private" virt="non-virtual"><scope>efc::Plane</scope><name>domain</name></member>
+      <member refid="classefc_1_1Plane_1a0322d412e5fa1ea41c5dcf7fe14e7df0" prot="private" virt="non-virtual"><scope>efc::Plane</scope><name>draw</name></member>
+      <member refid="classefc_1_1Plane_1a328b55648088128e29e01ee42cd600fd" prot="private" virt="non-virtual"><scope>efc::Plane</scope><name>font</name></member>
+      <member refid="classefc_1_1Plane_1aa339c940ad9f49d1e5e556d24117aab9" prot="private" virt="non-virtual"><scope>efc::Plane</scope><name>function</name></member>
+      <member refid="classefc_1_1Plane_1af3b69a0b97fe039ba70edc61f390e1c5" prot="private" virt="non-virtual"><scope>efc::Plane</scope><name>image</name></member>
+      <member refid="classefc_1_1Plane_1a04c414305224c91390311aa60c9cf7b8" prot="private" virt="non-virtual"><scope>efc::Plane</scope><name>intersection</name></member>
+      <member refid="classefc_1_1Plane_1aead86518dab0bbea050a5399bc85a801" prot="private" virt="non-virtual"><scope>efc::Plane</scope><name>inverse</name></member>
+      <member refid="classefc_1_1Plane_1a9d2dc87d59fe49cbb266c502633f9f03" prot="private" virt="non-virtual"><scope>efc::Plane</scope><name>line</name></member>
+      <member refid="classefc_1_1Plane_1a59f6b4316752f2dfb6b56b2196017a4d" prot="public" virt="non-virtual"><scope>efc::Plane</scope><name>Plane</name></member>
+      <member refid="classefc_1_1Plane_1ab3444096cc5192892c611a9b701aea57" prot="private" virt="non-virtual"><scope>efc::Plane</scope><name>populate</name></member>
+      <member refid="classefc_1_1Plane_1ab18ac66ecb99594953163e735c89d308" prot="private" virt="non-virtual"><scope>efc::Plane</scope><name>representation</name></member>
+      <member refid="classefc_1_1Plane_1a9d8c3d6344387936a54378f80ea64a5f" prot="private" virt="non-virtual"><scope>efc::Plane</scope><name>resize</name></member>
+      <member refid="classefc_1_1Plane_1a972b3c48d4213d433dc4b3e99ded3727" prot="public" virt="non-virtual"><scope>efc::Plane</scope><name>run</name></member>
+      <member refid="classefc_1_1Plane_1ac6ea3d776ca07561a4d7ba3f2c32f878" prot="private" virt="non-virtual"><scope>efc::Plane</scope><name>tooltip</name></member>
+      <member refid="classefc_1_1Plane_1a781ba0c9b6b13978ddc6ebdf0745001a" prot="private" virt="non-virtual"><scope>efc::Plane</scope><name>window</name></member>
+      <member refid="classefc_1_1Plane_1a9747c7ae721d8ed0802b0f5ba4c5046b" prot="private" virt="non-virtual"><scope>efc::Plane</scope><name>xogn</name></member>
+      <member refid="classefc_1_1Plane_1a4277e9297d50cca99d7b9dc805afe9da" prot="private" virt="non-virtual"><scope>efc::Plane</scope><name>yogn</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

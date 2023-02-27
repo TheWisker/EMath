@@ -1,0 +1,355 @@
+\hypertarget{classefc_1_1Terminal}{}\doxysection{efc\+::Terminal Class Reference}
+\label{classefc_1_1Terminal}\index{efc::Terminal@{efc::Terminal}}
+
+
+\mbox{\hyperlink{classefc_1_1Terminal}{Terminal}} class to manage the terminal through curses.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classefc_1_1Terminal_a873c2d27e271e805c0665ff6952bf8a2}{flush}} ()
+\begin{DoxyCompactList}\small\item\em Function for flushin all the \mbox{\hyperlink{classefc_1_1Terminal}{Terminal}}\textquotesingle{}s Windows. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classefc_1_1Terminal_a9103a252f46463cd09adc2bb2436fa30}{set\+\_\+ltitle}} (const \+::std\+::string title) noexcept
+\begin{DoxyCompactList}\small\item\em Function for setting the title of the left \mbox{\hyperlink{classefc_1_1Window}{Window}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classefc_1_1Terminal_acc6236b69a0d0a2b1c9ae9cb3e6b1056}{set\+\_\+rtitle}} (const \+::std\+::string title) noexcept
+\begin{DoxyCompactList}\small\item\em Function for setting the title of the right \mbox{\hyperlink{classefc_1_1Window}{Window}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classefc_1_1Terminal_ad8cb9d988b58a3b0d59dd703b47467fa}{set\+\_\+prompt}} (const \+::std\+::string prompt) noexcept
+\begin{DoxyCompactList}\small\item\em Function for setting the prompt of the bottom \mbox{\hyperlink{classefc_1_1Window}{Window}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classefc_1_1Terminal_aa705ec16ca8fcc9549b90793c58b4d83}{set\+\_\+ldata}} (\+::std\+::vector$<$\+::std\+::string $>$ data) noexcept
+\begin{DoxyCompactList}\small\item\em Function for setting data vector of the left \mbox{\hyperlink{classefc_1_1Window}{Window}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classefc_1_1Terminal_ac9e693242036242db200bbbebc3d83e6}{set\+\_\+rdata}} (\+::std\+::vector$<$\+::std\+::string $>$ data) noexcept
+\begin{DoxyCompactList}\small\item\em Function for setting data vector of the right \mbox{\hyperlink{classefc_1_1Window}{Window}}. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{classefc_1_1Terminal_a966affe71a3fd3c461a907e41a609cc8}{get\+\_\+short\+\_\+input}} () const
+\begin{DoxyCompactList}\small\item\em Function for getting short single char input from the \mbox{\hyperlink{classefc_1_1Terminal}{Terminal}}. \end{DoxyCompactList}\item 
+const \+::std\+::string \mbox{\hyperlink{classefc_1_1Terminal_a49bb9b2d0fc46335d4426c79b0b1f781}{get\+\_\+long\+\_\+input}} () const
+\begin{DoxyCompactList}\small\item\em Function for getting long single string input from the \mbox{\hyperlink{classefc_1_1Terminal}{Terminal}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classefc_1_1Terminal_ab06e104fb3af3517e2e0413e26accd9a}{scroll\+\_\+down}} (const unsigned int id) noexcept
+\begin{DoxyCompactList}\small\item\em Function for scrolling down the left or right window depending on the provided id. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classefc_1_1Terminal_a2b2ddbc6125d3a7ffa8101e161066034}{scroll\+\_\+up}} (const unsigned int id) noexcept
+\begin{DoxyCompactList}\small\item\em Function for scrolling up the left or right window depending on the provided id. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classefc_1_1Terminal_ac8d0de8abed39f84908622187f5cb95e}{echo\+\_\+result}} (const \+::std\+::string \&result)
+\begin{DoxyCompactList}\small\item\em Echoes the provided result to the prompt and waits for a key press. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classefc_1_1Terminal_ad3b80961a79f1534316d8e57ec4ada30}{swap\+\_\+active}} (const unsigned int id) noexcept
+\begin{DoxyCompactList}\small\item\em Swaps the active window to the one matching the provide id. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classefc_1_1Terminal_a64a6c41cf5396f6a5ab91a75e44faac6}{$\sim$\+Terminal}} () noexcept
+\begin{DoxyCompactList}\small\item\em Default destructor, it deletes the \mbox{\hyperlink{classefc_1_1Window}{Window}} pointers, sets the singleton instance to nullptr, stops the signal listener and stops curses. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classefc_1_1Terminal}{Terminal}} $\ast$ \mbox{\hyperlink{classefc_1_1Terminal_aa058bcd027c3dc1212fb53eb0a6ecafb}{init}} () noexcept
+\begin{DoxyCompactList}\small\item\em Static function for building the singleton static instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classefc_1_1Terminal}{Terminal}} class to manage the terminal through curses. 
+
+It works as a singleton. Not generic in any way. 
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00259}{259}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classefc_1_1Terminal_a64a6c41cf5396f6a5ab91a75e44faac6}\label{classefc_1_1Terminal_a64a6c41cf5396f6a5ab91a75e44faac6}} 
+\index{efc::Terminal@{efc::Terminal}!````~Terminal@{$\sim$Terminal}}
+\index{````~Terminal@{$\sim$Terminal}!efc::Terminal@{efc::Terminal}}
+\doxysubsubsection{\texorpdfstring{$\sim$Terminal()}{~Terminal()}}
+{\footnotesize\ttfamily efc\+::\+Terminal\+::$\sim$\+Terminal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Default destructor, it deletes the \mbox{\hyperlink{classefc_1_1Window}{Window}} pointers, sets the singleton instance to nullptr, stops the signal listener and stops curses. 
+
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00444}{444}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classefc_1_1Terminal_ac8d0de8abed39f84908622187f5cb95e}\label{classefc_1_1Terminal_ac8d0de8abed39f84908622187f5cb95e}} 
+\index{efc::Terminal@{efc::Terminal}!echo\_result@{echo\_result}}
+\index{echo\_result@{echo\_result}!efc::Terminal@{efc::Terminal}}
+\doxysubsubsection{\texorpdfstring{echo\_result()}{echo\_result()}}
+{\footnotesize\ttfamily void efc\+::\+Terminal\+::echo\+\_\+result (\begin{DoxyParamCaption}\item[{const \+::std\+::string \&}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Echoes the provided result to the prompt and waits for a key press. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & The result to echo as a const \+::std\+::string\& \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00422}{422}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{interface_8cpp_source_l00086}{efc\+::\+Window\+::get\+\_\+title()}}, and \mbox{\hyperlink{interface_8cpp_source_l00077}{efc\+::\+Window\+::o}}.
+
+\mbox{\Hypertarget{classefc_1_1Terminal_a873c2d27e271e805c0665ff6952bf8a2}\label{classefc_1_1Terminal_a873c2d27e271e805c0665ff6952bf8a2}} 
+\index{efc::Terminal@{efc::Terminal}!flush@{flush}}
+\index{flush@{flush}!efc::Terminal@{efc::Terminal}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily void efc\+::\+Terminal\+::flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function for flushin all the \mbox{\hyperlink{classefc_1_1Terminal}{Terminal}}\textquotesingle{}s Windows. 
+
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00362}{362}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{interface_8cpp_source_l00077}{efc\+::\+Window\+::o}}.
+
+\mbox{\Hypertarget{classefc_1_1Terminal_a49bb9b2d0fc46335d4426c79b0b1f781}\label{classefc_1_1Terminal_a49bb9b2d0fc46335d4426c79b0b1f781}} 
+\index{efc::Terminal@{efc::Terminal}!get\_long\_input@{get\_long\_input}}
+\index{get\_long\_input@{get\_long\_input}!efc::Terminal@{efc::Terminal}}
+\doxysubsubsection{\texorpdfstring{get\_long\_input()}{get\_long\_input()}}
+{\footnotesize\ttfamily const \+::std\+::string efc\+::\+Terminal\+::get\+\_\+long\+\_\+input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function for getting long single string input from the \mbox{\hyperlink{classefc_1_1Terminal}{Terminal}}. 
+
+\begin{DoxyReturn}{Returns}
+(\+::std\+::string) The input as a std\+::string 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00397}{397}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{interface_8cpp_source_l00077}{efc\+::\+Window\+::o}}.
+
+\mbox{\Hypertarget{classefc_1_1Terminal_a966affe71a3fd3c461a907e41a609cc8}\label{classefc_1_1Terminal_a966affe71a3fd3c461a907e41a609cc8}} 
+\index{efc::Terminal@{efc::Terminal}!get\_short\_input@{get\_short\_input}}
+\index{get\_short\_input@{get\_short\_input}!efc::Terminal@{efc::Terminal}}
+\doxysubsubsection{\texorpdfstring{get\_short\_input()}{get\_short\_input()}}
+{\footnotesize\ttfamily const int efc\+::\+Terminal\+::get\+\_\+short\+\_\+input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function for getting short single char input from the \mbox{\hyperlink{classefc_1_1Terminal}{Terminal}}. 
+
+\begin{DoxyReturn}{Returns}
+(const int) Int representing the pressed key 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00392}{392}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{interface_8cpp_source_l00077}{efc\+::\+Window\+::o}}.
+
+\mbox{\Hypertarget{classefc_1_1Terminal_aa058bcd027c3dc1212fb53eb0a6ecafb}\label{classefc_1_1Terminal_aa058bcd027c3dc1212fb53eb0a6ecafb}} 
+\index{efc::Terminal@{efc::Terminal}!init@{init}}
+\index{init@{init}!efc::Terminal@{efc::Terminal}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classefc_1_1Terminal}{Terminal}} $\ast$ efc\+::\+Terminal\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [noexcept]}}
+
+
+
+Static function for building the singleton static instance. 
+
+\begin{DoxyReturn}{Returns}
+(Terminal$\ast$) The singleton instance pointer also stored at Terminal\+::instance 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00355}{355}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+\mbox{\Hypertarget{classefc_1_1Terminal_ab06e104fb3af3517e2e0413e26accd9a}\label{classefc_1_1Terminal_ab06e104fb3af3517e2e0413e26accd9a}} 
+\index{efc::Terminal@{efc::Terminal}!scroll\_down@{scroll\_down}}
+\index{scroll\_down@{scroll\_down}!efc::Terminal@{efc::Terminal}}
+\doxysubsubsection{\texorpdfstring{scroll\_down()}{scroll\_down()}}
+{\footnotesize\ttfamily void efc\+::\+Terminal\+::scroll\+\_\+down (\begin{DoxyParamCaption}\item[{const unsigned int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Function for scrolling down the left or right window depending on the provided id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The id of the window as a const unsigned int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00402}{402}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{interface_8cpp_source_l00221}{efc\+::\+OWindow\+::scroll\+\_\+down()}}.
+
+\mbox{\Hypertarget{classefc_1_1Terminal_a2b2ddbc6125d3a7ffa8101e161066034}\label{classefc_1_1Terminal_a2b2ddbc6125d3a7ffa8101e161066034}} 
+\index{efc::Terminal@{efc::Terminal}!scroll\_up@{scroll\_up}}
+\index{scroll\_up@{scroll\_up}!efc::Terminal@{efc::Terminal}}
+\doxysubsubsection{\texorpdfstring{scroll\_up()}{scroll\_up()}}
+{\footnotesize\ttfamily void efc\+::\+Terminal\+::scroll\+\_\+up (\begin{DoxyParamCaption}\item[{const unsigned int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Function for scrolling up the left or right window depending on the provided id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The id of the window as a const unsigned int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00412}{412}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{interface_8cpp_source_l00217}{efc\+::\+OWindow\+::scroll\+\_\+up()}}.
+
+\mbox{\Hypertarget{classefc_1_1Terminal_aa705ec16ca8fcc9549b90793c58b4d83}\label{classefc_1_1Terminal_aa705ec16ca8fcc9549b90793c58b4d83}} 
+\index{efc::Terminal@{efc::Terminal}!set\_ldata@{set\_ldata}}
+\index{set\_ldata@{set\_ldata}!efc::Terminal@{efc::Terminal}}
+\doxysubsubsection{\texorpdfstring{set\_ldata()}{set\_ldata()}}
+{\footnotesize\ttfamily void efc\+::\+Terminal\+::set\+\_\+ldata (\begin{DoxyParamCaption}\item[{\+::std\+::vector$<$\+::std\+::string $>$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Function for setting data vector of the left \mbox{\hyperlink{classefc_1_1Window}{Window}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The data as a std\+::vector of std\+::string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00382}{382}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{interface_8cpp_source_l00213}{efc\+::\+OWindow\+::set\+\_\+data()}}.
+
+\mbox{\Hypertarget{classefc_1_1Terminal_a9103a252f46463cd09adc2bb2436fa30}\label{classefc_1_1Terminal_a9103a252f46463cd09adc2bb2436fa30}} 
+\index{efc::Terminal@{efc::Terminal}!set\_ltitle@{set\_ltitle}}
+\index{set\_ltitle@{set\_ltitle}!efc::Terminal@{efc::Terminal}}
+\doxysubsubsection{\texorpdfstring{set\_ltitle()}{set\_ltitle()}}
+{\footnotesize\ttfamily void efc\+::\+Terminal\+::set\+\_\+ltitle (\begin{DoxyParamCaption}\item[{const \+::std\+::string}]{title }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Function for setting the title of the left \mbox{\hyperlink{classefc_1_1Window}{Window}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & The title as a std\+::string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00367}{367}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{interface_8cpp_source_l00116}{efc\+::\+Window\+::set\+\_\+title()}}.
+
+\mbox{\Hypertarget{classefc_1_1Terminal_ad8cb9d988b58a3b0d59dd703b47467fa}\label{classefc_1_1Terminal_ad8cb9d988b58a3b0d59dd703b47467fa}} 
+\index{efc::Terminal@{efc::Terminal}!set\_prompt@{set\_prompt}}
+\index{set\_prompt@{set\_prompt}!efc::Terminal@{efc::Terminal}}
+\doxysubsubsection{\texorpdfstring{set\_prompt()}{set\_prompt()}}
+{\footnotesize\ttfamily void efc\+::\+Terminal\+::set\+\_\+prompt (\begin{DoxyParamCaption}\item[{const \+::std\+::string}]{prompt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Function for setting the prompt of the bottom \mbox{\hyperlink{classefc_1_1Window}{Window}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prompt} & The prompt as a std\+::string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00377}{377}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{interface_8cpp_source_l00116}{efc\+::\+Window\+::set\+\_\+title()}}.
+
+\mbox{\Hypertarget{classefc_1_1Terminal_ac9e693242036242db200bbbebc3d83e6}\label{classefc_1_1Terminal_ac9e693242036242db200bbbebc3d83e6}} 
+\index{efc::Terminal@{efc::Terminal}!set\_rdata@{set\_rdata}}
+\index{set\_rdata@{set\_rdata}!efc::Terminal@{efc::Terminal}}
+\doxysubsubsection{\texorpdfstring{set\_rdata()}{set\_rdata()}}
+{\footnotesize\ttfamily void efc\+::\+Terminal\+::set\+\_\+rdata (\begin{DoxyParamCaption}\item[{\+::std\+::vector$<$\+::std\+::string $>$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Function for setting data vector of the right \mbox{\hyperlink{classefc_1_1Window}{Window}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The data as a std\+::vector of std\+::string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00387}{387}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{interface_8cpp_source_l00213}{efc\+::\+OWindow\+::set\+\_\+data()}}.
+
+\mbox{\Hypertarget{classefc_1_1Terminal_acc6236b69a0d0a2b1c9ae9cb3e6b1056}\label{classefc_1_1Terminal_acc6236b69a0d0a2b1c9ae9cb3e6b1056}} 
+\index{efc::Terminal@{efc::Terminal}!set\_rtitle@{set\_rtitle}}
+\index{set\_rtitle@{set\_rtitle}!efc::Terminal@{efc::Terminal}}
+\doxysubsubsection{\texorpdfstring{set\_rtitle()}{set\_rtitle()}}
+{\footnotesize\ttfamily void efc\+::\+Terminal\+::set\+\_\+rtitle (\begin{DoxyParamCaption}\item[{const \+::std\+::string}]{title }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Function for setting the title of the right \mbox{\hyperlink{classefc_1_1Window}{Window}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & The title as a std\+::string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00372}{372}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{interface_8cpp_source_l00116}{efc\+::\+Window\+::set\+\_\+title()}}.
+
+\mbox{\Hypertarget{classefc_1_1Terminal_ad3b80961a79f1534316d8e57ec4ada30}\label{classefc_1_1Terminal_ad3b80961a79f1534316d8e57ec4ada30}} 
+\index{efc::Terminal@{efc::Terminal}!swap\_active@{swap\_active}}
+\index{swap\_active@{swap\_active}!efc::Terminal@{efc::Terminal}}
+\doxysubsubsection{\texorpdfstring{swap\_active()}{swap\_active()}}
+{\footnotesize\ttfamily void efc\+::\+Terminal\+::swap\+\_\+active (\begin{DoxyParamCaption}\item[{const unsigned int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Swaps the active window to the one matching the provide id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The id of the window as a const unsigned int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00433}{433}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{interface_8cpp}{interface.\+cpp}}\end{DoxyCompactItemize}

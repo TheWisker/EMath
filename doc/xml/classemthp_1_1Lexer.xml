@@ -1,0 +1,245 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classemthp_1_1Lexer" kind="class" language="C++" prot="public">
+    <compoundname>emthp::Lexer</compoundname>
+    <includes refid="eparser_8h" local="no">eparser.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classemthp_1_1Lexer_1a9d9656d89fd1ef35aec1a8af4ff56cd5" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string emthp::Lexer::_input</definition>
+        <argsstring></argsstring>
+        <name>_input</name>
+        <qualifiedname>emthp::Lexer::_input</qualifiedname>
+        <briefdescription>
+<para>The provided input as a private std::string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/eparser.h" line="96" column="25" bodyfile="include/eparser.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classemthp_1_1Lexer_1a6e704edea7f4eaf079d0674eeb57ffb7" prot="private" static="no" mutable="no">
+        <type>long unsigned int</type>
+        <definition>long unsigned int emthp::Lexer::_pos</definition>
+        <argsstring></argsstring>
+        <name>_pos</name>
+        <qualifiedname>emthp::Lexer::_pos</qualifiedname>
+        <briefdescription>
+<para>Private long unsigned int that represents the cursor&apos;s position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/eparser.h" line="100" column="31" bodyfile="include/eparser.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classemthp_1_1Lexer_1ad3560b27e6813e3e0aeaa48b19dc5dd2" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>emthp::Lexer::Lexer</definition>
+        <argsstring>(const std::string &amp;input) noexcept</argsstring>
+        <name>Lexer</name>
+        <qualifiedname>emthp::Lexer::Lexer</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+<para>Standalone constructor for the <ref refid="classemthp_1_1Lexer" kindref="compound">Lexer</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A const reference to the std::string to tokenize. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/eparser.h" line="76" column="13" bodyfile="src/eparser.cpp" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classemthp_1_1Lexer_1a5116f34af8ec69634dc9202ae2d48b4a" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classemthp_1_1Lexer" kindref="compound">Lexer</ref> &amp;</type>
+        <definition>emthp::Lexer &amp; emthp::Lexer::operator=</definition>
+        <argsstring>(const Lexer &amp;ogn) noexcept</argsstring>
+        <name>operator=</name>
+        <qualifiedname>emthp::Lexer::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classemthp_1_1Lexer" kindref="compound">Lexer</ref> &amp;</type>
+          <declname>ogn</declname>
+        </param>
+        <briefdescription>
+<para>Assigment operator for when called with an lvalue. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ogn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The lvalue <ref refid="classemthp_1_1Lexer" kindref="compound">Lexer</ref> object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>(<ref refid="classemthp_1_1Lexer" kindref="compound">Lexer</ref>&amp;) A reference to the lvalue of the operation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/eparser.h" line="82" column="19" bodyfile="src/eparser.cpp" bodystart="20" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classemthp_1_1Lexer_1a629ea5f393603e05dad17b004caba27d" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="structemthp_1_1Token" kindref="compound">Token</ref></type>
+        <definition>emthp::Token emthp::Lexer::next</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>next</name>
+        <qualifiedname>emthp::Lexer::next</qualifiedname>
+        <briefdescription>
+<para>Function that returns the next <ref refid="structemthp_1_1Token" kindref="compound">Token</ref> in the input provided in the constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>(<ref refid="structemthp_1_1Token" kindref="compound">Token</ref>) The next <ref refid="structemthp_1_1Token" kindref="compound">Token</ref> in the input </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/eparser.h" line="87" column="19" bodyfile="src/eparser.cpp" bodystart="29" bodyend="48"/>
+        <references refid="classemthp_1_1Lexer_1a629ea5f393603e05dad17b004caba27d" compoundref="src_2eparser_8cpp" startline="29" endline="48">next</references>
+        <references refid="namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6ba5a13d17b3d73d6aa1a545e430284ec6d" compoundref="eparser_8h" startline="48">emthp::T_EOF</references>
+        <references refid="namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6ba7b607d6341806fa8bc4505c44670de8c" compoundref="eparser_8h" startline="44">emthp::T_EXPONENT</references>
+        <references refid="namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6ba636464f87ad08d661e8f664b4a5903db" compoundref="eparser_8h" startline="32">emthp::T_MINUS</references>
+        <references refid="namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6bad7549ed90d6122d0761f3acfb1b56923" compoundref="eparser_8h" startline="36">emthp::T_NUMBER</references>
+        <references refid="namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6bab0be00ab2ea8e4a56ab22f220c7de9bf" compoundref="eparser_8h" startline="28">emthp::T_PLUS</references>
+        <references refid="namespaceemthp_1a29873cfffe66c1e0b36436ebcc54dc6ba6aa4d0d8ca8e058abc4e4e38f466bbd2" compoundref="eparser_8h" startline="40">emthp::T_VARIABLE</references>
+      </memberdef>
+      <memberdef kind="function" id="classemthp_1_1Lexer_1a273b288699191ec896c9857cfe7f5704" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void emthp::Lexer::back</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>back</name>
+        <qualifiedname>emthp::Lexer::back</qualifiedname>
+        <briefdescription>
+<para>Backtrack function that moves the cursor&apos;s position one position backwards. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/eparser.h" line="91" column="18" bodyfile="src/eparser.cpp" bodystart="52" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classemthp_1_1Lexer_1a638bde6ca6cb63363ef550a54261f3eb" prot="private" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double emthp::Lexer::read_number</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>read_number</name>
+        <qualifiedname>emthp::Lexer::read_number</qualifiedname>
+        <briefdescription>
+<para>Private function that reads the next <ref refid="structemthp_1_1Token" kindref="compound">Token</ref> as a number consisting of various characters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>(double) The number that was read </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/eparser.h" line="105" column="20" bodyfile="src/eparser.cpp" bodystart="81" bodyend="89"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classemthp_1_1Lexer_1a4f42a6e9643892a58267d5e37baf261f" prot="private" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string emthp::Lexer::clean</definition>
+        <argsstring>(const std::string &amp;input) noexcept</argsstring>
+        <name>clean</name>
+        <qualifiedname>emthp::Lexer::clean</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+<para>Private static function that cleans the input string of the unexpected characters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string to clean. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>(std::string) The clean output </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/eparser.h" line="111" column="32" bodyfile="src/eparser.cpp" bodystart="62" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classemthp_1_1Lexer_1af91a6c3eb34a9ef37002bfb7b500259e" prot="private" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>constexpr bool</type>
+        <definition>static constexpr bool emthp::Lexer::is_digit</definition>
+        <argsstring>(const char &amp;c) noexcept</argsstring>
+        <name>is_digit</name>
+        <qualifiedname>emthp::Lexer::is_digit</qualifiedname>
+        <param>
+          <type>const char &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Miscellaneous private function that checks if a char is a digit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The char to check if it is a digit. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>(true) If the char is a digit </para>
+</simplesect>
+<simplesect kind="return"><para>(false) If the char is not a digit </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/eparser.h" line="118" column="42" bodyfile="include/eparser.h" bodystart="118" bodyend="118"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class that works as a token supplier for the <ref refid="classemthp_1_1Parser" kindref="compound">Parser</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The class consists of two public functions, one for getting the next <ref refid="structemthp_1_1Token" kindref="compound">Token</ref> and the other for going back one position. </para>
+    </detaileddescription>
+    <location file="include/eparser.h" line="70" column="5" bodyfile="include/eparser.h" bodystart="70" bodyend="119"/>
+    <listofallmembers>
+      <member refid="classemthp_1_1Lexer_1a9d9656d89fd1ef35aec1a8af4ff56cd5" prot="private" virt="non-virtual"><scope>emthp::Lexer</scope><name>_input</name></member>
+      <member refid="classemthp_1_1Lexer_1a6e704edea7f4eaf079d0674eeb57ffb7" prot="private" virt="non-virtual"><scope>emthp::Lexer</scope><name>_pos</name></member>
+      <member refid="classemthp_1_1Lexer_1a273b288699191ec896c9857cfe7f5704" prot="public" virt="non-virtual"><scope>emthp::Lexer</scope><name>back</name></member>
+      <member refid="classemthp_1_1Lexer_1a4f42a6e9643892a58267d5e37baf261f" prot="private" virt="non-virtual"><scope>emthp::Lexer</scope><name>clean</name></member>
+      <member refid="classemthp_1_1Lexer_1af91a6c3eb34a9ef37002bfb7b500259e" prot="private" virt="non-virtual"><scope>emthp::Lexer</scope><name>is_digit</name></member>
+      <member refid="classemthp_1_1Lexer_1ad3560b27e6813e3e0aeaa48b19dc5dd2" prot="public" virt="non-virtual"><scope>emthp::Lexer</scope><name>Lexer</name></member>
+      <member refid="classemthp_1_1Lexer_1a629ea5f393603e05dad17b004caba27d" prot="public" virt="non-virtual"><scope>emthp::Lexer</scope><name>next</name></member>
+      <member refid="classemthp_1_1Lexer_1a5116f34af8ec69634dc9202ae2d48b4a" prot="public" virt="non-virtual"><scope>emthp::Lexer</scope><name>operator=</name></member>
+      <member refid="classemthp_1_1Lexer_1a638bde6ca6cb63363ef550a54261f3eb" prot="private" virt="non-virtual"><scope>emthp::Lexer</scope><name>read_number</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

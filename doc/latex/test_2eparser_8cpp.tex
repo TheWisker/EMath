@@ -1,0 +1,185 @@
+\hypertarget{test_2eparser_8cpp}{}\doxysection{test/eparser.cpp File Reference}
+\label{test_2eparser_8cpp}\index{test/eparser.cpp@{test/eparser.cpp}}
+
+
+This is the main test file for the equation parser.  
+
+
+{\ttfamily \#include $<$gtest/gtest.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}eparser.\+h\char`\"{}}\newline
+Include dependency graph for eparser.\+cpp\+:
+% FIG 0
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classEParserTest}{EParser\+Test}}
+\begin{DoxyCompactList}\small\item\em Class that provides a test fixture for the test cases. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{test_2eparser_8cpp_adb859937dfb6fcd56c656c3c2555afc9}{TEST\+\_\+F}} (\mbox{\hyperlink{classEParserTest}{EParser\+Test}}, Lexer)
+\item 
+\mbox{\hyperlink{test_2eparser_8cpp_a9d00584eda85ad91bd3b865309697a92}{TEST\+\_\+F}} (\mbox{\hyperlink{classEParserTest}{EParser\+Test}}, Compound\+Lexer)
+\item 
+\mbox{\hyperlink{test_2eparser_8cpp_a9bae16de43d72897f903e5977107c60a}{TEST\+\_\+F}} (\mbox{\hyperlink{classEParserTest}{EParser\+Test}}, Arithmetic\+Lexer)
+\item 
+\mbox{\hyperlink{test_2eparser_8cpp_a7ed288e238950900345be1751b543ab5}{TEST\+\_\+F}} (\mbox{\hyperlink{classEParserTest}{EParser\+Test}}, Variables)
+\item 
+\mbox{\hyperlink{test_2eparser_8cpp_a21f8c875c668e6dc3d1a1423cdba58a3}{TEST\+\_\+F}} (\mbox{\hyperlink{classEParserTest}{EParser\+Test}}, Compound)
+\item 
+\mbox{\hyperlink{test_2eparser_8cpp_aee28f89b9e4ebad2361a1f87e5068314}{TEST\+\_\+F}} (\mbox{\hyperlink{classEParserTest}{EParser\+Test}}, Signs)
+\item 
+\mbox{\hyperlink{test_2eparser_8cpp_a8178a3e2dd566ffdd7520265ce0c2fe3}{TEST\+\_\+F}} (\mbox{\hyperlink{classEParserTest}{EParser\+Test}}, Noise)
+\item 
+\mbox{\hyperlink{test_2eparser_8cpp_aeed0ae0397e5f82225fde1a6ba4f65a9}{TEST\+\_\+F}} (\mbox{\hyperlink{classEParserTest}{EParser\+Test}}, Edge)
+\item 
+int \mbox{\hyperlink{test_2eparser_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em Function that runs all the declared tests. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the main test file for the equation parser. 
+
+This file contains a text fixture class and all the test cases.~\newline
+It consists of the \mbox{\hyperlink{classEParserTest}{EParser\+Test}} classe that provides the test fixture for all the tests.~\newline
+Then it contains all the test cases, for testing correct execution. 
+
+Definition in file \mbox{\hyperlink{test_2eparser_8cpp_source}{eparser.\+cpp}}.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{test_2eparser_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{test_2eparser_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{eparser.cpp@{eparser.cpp}!main@{main}}
+\index{main@{main}!eparser.cpp@{eparser.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+Function that runs all the declared tests. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & The console arguments count \\
+\hline
+{\em argv} & The console arguments as a array of char arrays \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(0) If all tests passed 
+
+(1) If one or more tests failed 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{test_2eparser_8cpp_source_l00169}{169}} of file \mbox{\hyperlink{test_2eparser_8cpp_source}{eparser.\+cpp}}.
+
+\mbox{\Hypertarget{test_2eparser_8cpp_a9bae16de43d72897f903e5977107c60a}\label{test_2eparser_8cpp_a9bae16de43d72897f903e5977107c60a}} 
+\index{eparser.cpp@{eparser.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!eparser.cpp@{eparser.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEParserTest}{EParser\+Test}}}]{,  }\item[{Arithmetic\+Lexer}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000003}{Test}}]Test lexer functionality with arithmetic expressions \end{DoxyRefDesc}
+
+
+Definition at line \mbox{\hyperlink{test_2eparser_8cpp_source_l00104}{104}} of file \mbox{\hyperlink{test_2eparser_8cpp_source}{eparser.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{eparser_8h_source_l00048}{emthp\+::\+T\+\_\+\+EOF}}, \mbox{\hyperlink{eparser_8h_source_l00044}{emthp\+::\+T\+\_\+\+EXPONENT}}, \mbox{\hyperlink{eparser_8h_source_l00036}{emthp\+::\+T\+\_\+\+NUMBER}}, \mbox{\hyperlink{eparser_8h_source_l00040}{emthp\+::\+T\+\_\+\+VARIABLE}}, \mbox{\hyperlink{eparser_8h_source_l00059}{emthp\+::\+Token\+::type}}, and \mbox{\hyperlink{eparser_8h_source_l00063}{emthp\+::\+Token\+::value}}.
+
+\mbox{\Hypertarget{test_2eparser_8cpp_a21f8c875c668e6dc3d1a1423cdba58a3}\label{test_2eparser_8cpp_a21f8c875c668e6dc3d1a1423cdba58a3}} 
+\index{eparser.cpp@{eparser.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!eparser.cpp@{eparser.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEParserTest}{EParser\+Test}}}]{,  }\item[{Compound}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000005}{Test}}]Test parser functionality with polynomial expressions \end{DoxyRefDesc}
+
+
+Definition at line \mbox{\hyperlink{test_2eparser_8cpp_source_l00140}{140}} of file \mbox{\hyperlink{test_2eparser_8cpp_source}{eparser.\+cpp}}.
+
+\mbox{\Hypertarget{test_2eparser_8cpp_a9d00584eda85ad91bd3b865309697a92}\label{test_2eparser_8cpp_a9d00584eda85ad91bd3b865309697a92}} 
+\index{eparser.cpp@{eparser.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!eparser.cpp@{eparser.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEParserTest}{EParser\+Test}}}]{,  }\item[{Compound\+Lexer}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000002}{Test}}]Test lexer functionality with compund expressions \end{DoxyRefDesc}
+
+
+Definition at line \mbox{\hyperlink{test_2eparser_8cpp_source_l00077}{77}} of file \mbox{\hyperlink{test_2eparser_8cpp_source}{eparser.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{eparser_8h_source_l00048}{emthp\+::\+T\+\_\+\+EOF}}, \mbox{\hyperlink{eparser_8h_source_l00044}{emthp\+::\+T\+\_\+\+EXPONENT}}, \mbox{\hyperlink{eparser_8h_source_l00036}{emthp\+::\+T\+\_\+\+NUMBER}}, \mbox{\hyperlink{eparser_8h_source_l00040}{emthp\+::\+T\+\_\+\+VARIABLE}}, \mbox{\hyperlink{eparser_8h_source_l00059}{emthp\+::\+Token\+::type}}, and \mbox{\hyperlink{eparser_8h_source_l00063}{emthp\+::\+Token\+::value}}.
+
+\mbox{\Hypertarget{test_2eparser_8cpp_aeed0ae0397e5f82225fde1a6ba4f65a9}\label{test_2eparser_8cpp_aeed0ae0397e5f82225fde1a6ba4f65a9}} 
+\index{eparser.cpp@{eparser.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!eparser.cpp@{eparser.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEParserTest}{EParser\+Test}}}]{,  }\item[{Edge}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000008}{Test}}]Test parser edge cases \end{DoxyRefDesc}
+
+
+Definition at line \mbox{\hyperlink{test_2eparser_8cpp_source_l00161}{161}} of file \mbox{\hyperlink{test_2eparser_8cpp_source}{eparser.\+cpp}}.
+
+\mbox{\Hypertarget{test_2eparser_8cpp_adb859937dfb6fcd56c656c3c2555afc9}\label{test_2eparser_8cpp_adb859937dfb6fcd56c656c3c2555afc9}} 
+\index{eparser.cpp@{eparser.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!eparser.cpp@{eparser.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEParserTest}{EParser\+Test}}}]{,  }\item[{Lexer}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000001}{Test}}]Test lexer functionality with simple expressions \end{DoxyRefDesc}
+
+
+Definition at line \mbox{\hyperlink{test_2eparser_8cpp_source_l00042}{42}} of file \mbox{\hyperlink{test_2eparser_8cpp_source}{eparser.\+cpp}}.
+
+
+
+References \mbox{\hyperlink{eparser_8h_source_l00048}{emthp\+::\+T\+\_\+\+EOF}}, \mbox{\hyperlink{eparser_8h_source_l00044}{emthp\+::\+T\+\_\+\+EXPONENT}}, \mbox{\hyperlink{eparser_8h_source_l00032}{emthp\+::\+T\+\_\+\+MINUS}}, \mbox{\hyperlink{eparser_8h_source_l00036}{emthp\+::\+T\+\_\+\+NUMBER}}, \mbox{\hyperlink{eparser_8h_source_l00040}{emthp\+::\+T\+\_\+\+VARIABLE}}, \mbox{\hyperlink{eparser_8h_source_l00059}{emthp\+::\+Token\+::type}}, and \mbox{\hyperlink{eparser_8h_source_l00063}{emthp\+::\+Token\+::value}}.
+
+\mbox{\Hypertarget{test_2eparser_8cpp_a8178a3e2dd566ffdd7520265ce0c2fe3}\label{test_2eparser_8cpp_a8178a3e2dd566ffdd7520265ce0c2fe3}} 
+\index{eparser.cpp@{eparser.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!eparser.cpp@{eparser.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEParserTest}{EParser\+Test}}}]{,  }\item[{Noise}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000007}{Test}}]Test parser functionality with noise in the expressions \end{DoxyRefDesc}
+
+
+Definition at line \mbox{\hyperlink{test_2eparser_8cpp_source_l00154}{154}} of file \mbox{\hyperlink{test_2eparser_8cpp_source}{eparser.\+cpp}}.
+
+\mbox{\Hypertarget{test_2eparser_8cpp_aee28f89b9e4ebad2361a1f87e5068314}\label{test_2eparser_8cpp_aee28f89b9e4ebad2361a1f87e5068314}} 
+\index{eparser.cpp@{eparser.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!eparser.cpp@{eparser.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEParserTest}{EParser\+Test}}}]{,  }\item[{Signs}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000006}{Test}}]Test parser functionality with sign expressions \end{DoxyRefDesc}
+
+
+Definition at line \mbox{\hyperlink{test_2eparser_8cpp_source_l00144}{144}} of file \mbox{\hyperlink{test_2eparser_8cpp_source}{eparser.\+cpp}}.
+
+\mbox{\Hypertarget{test_2eparser_8cpp_a7ed288e238950900345be1751b543ab5}\label{test_2eparser_8cpp_a7ed288e238950900345be1751b543ab5}} 
+\index{eparser.cpp@{eparser.cpp}!TEST\_F@{TEST\_F}}
+\index{TEST\_F@{TEST\_F}!eparser.cpp@{eparser.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_F()}{TEST\_F()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily TEST\+\_\+F (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEParserTest}{EParser\+Test}}}]{,  }\item[{Variables}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000004}{Test}}]Test parser functionality with monomial expressions \end{DoxyRefDesc}
+
+
+Definition at line \mbox{\hyperlink{test_2eparser_8cpp_source_l00131}{131}} of file \mbox{\hyperlink{test_2eparser_8cpp_source}{eparser.\+cpp}}.
+

@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classefc_1_1Storage" kind="class" language="C++" prot="public">
+    <compoundname>efc::Storage</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classefc_1_1Storage_1a70bb36f639d31d0341b17fd262ff0215" prot="private" static="no" mutable="no">
+        <type>const ::std::string</type>
+        <definition>const ::std::string efc::Storage::filename</definition>
+        <argsstring></argsstring>
+        <name>filename</name>
+        <qualifiedname>efc::Storage::filename</qualifiedname>
+        <briefdescription>
+<para>The filename to write to as a std::string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="600" column="33" bodyfile="src/interface.cpp" bodystart="600" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classefc_1_1Storage_1a9a9cfce79f418f1ad0ee0bb53bb9d048" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>efc::Storage::Storage</definition>
+        <argsstring>(const ::std::string file) noexcept</argsstring>
+        <name>Storage</name>
+        <qualifiedname>efc::Storage::Storage</qualifiedname>
+        <param>
+          <type>const ::std::string</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+<para>The main constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The filename to write to as a std::string </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="606" column="13" bodyfile="src/interface.cpp" bodystart="606" bodyend="606"/>
+      </memberdef>
+      <memberdef kind="function" id="classefc_1_1Storage_1a62ca8189455b39656aa25531c3875cbd" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const ::std::string</type>
+        <definition>const ::std::string efc::Storage::read</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>read</name>
+        <qualifiedname>efc::Storage::read</qualifiedname>
+        <briefdescription>
+<para>The read function that returns the whole file as a std:.string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>(const ::std::string) The whole file as a std:.string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="611" column="33" bodyfile="src/interface.cpp" bodystart="611" bodyend="618"/>
+      </memberdef>
+      <memberdef kind="function" id="classefc_1_1Storage_1af2c8369dcb906c07867a931387659788" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int efc::Storage::write</definition>
+        <argsstring>(const ::std::string contents) const noexcept</argsstring>
+        <name>write</name>
+        <qualifiedname>efc::Storage::write</qualifiedname>
+        <param>
+          <type>const ::std::string</type>
+          <declname>contents</declname>
+        </param>
+        <briefdescription>
+<para>The write function that overwrites the whole file with a std::string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>contents</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The contents to write as a std::string </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>(int) 0 If successful, 1 otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="624" column="23" bodyfile="src/interface.cpp" bodystart="624" bodyend="629"/>
+      </memberdef>
+      <memberdef kind="function" id="classefc_1_1Storage_1ac141ea203205c34ebd653682d88b7e2c" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool efc::Storage::exists</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>exists</name>
+        <qualifiedname>efc::Storage::exists</qualifiedname>
+        <briefdescription>
+<para>This function check if the filename exists. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>(bool) True if the file exists, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="634" column="18" bodyfile="src/interface.cpp" bodystart="634" bodyend="640"/>
+      </memberdef>
+      <memberdef kind="function" id="classefc_1_1Storage_1a5d83512b8daaf9e2cb188f877cb7bb5b" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>efc::Storage::~Storage</definition>
+        <argsstring>() noexcept=default</argsstring>
+        <name>~Storage</name>
+        <qualifiedname>efc::Storage::~Storage</qualifiedname>
+        <briefdescription>
+<para>Default destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="644" column="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classefc_1_1Storage" kindref="compound">Storage</ref> class to read and write to a file. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Provides some functions to read and write to a filename saved in a class variable </para>
+    </detaileddescription>
+    <location file="src/interface.cpp" line="595" column="5" bodyfile="src/interface.cpp" bodystart="595" bodyend="645"/>
+    <listofallmembers>
+      <member refid="classefc_1_1Storage_1ac141ea203205c34ebd653682d88b7e2c" prot="public" virt="non-virtual"><scope>efc::Storage</scope><name>exists</name></member>
+      <member refid="classefc_1_1Storage_1a70bb36f639d31d0341b17fd262ff0215" prot="private" virt="non-virtual"><scope>efc::Storage</scope><name>filename</name></member>
+      <member refid="classefc_1_1Storage_1a62ca8189455b39656aa25531c3875cbd" prot="public" virt="non-virtual"><scope>efc::Storage</scope><name>read</name></member>
+      <member refid="classefc_1_1Storage_1a9a9cfce79f418f1ad0ee0bb53bb9d048" prot="public" virt="non-virtual"><scope>efc::Storage</scope><name>Storage</name></member>
+      <member refid="classefc_1_1Storage_1af2c8369dcb906c07867a931387659788" prot="public" virt="non-virtual"><scope>efc::Storage</scope><name>write</name></member>
+      <member refid="classefc_1_1Storage_1a5d83512b8daaf9e2cb188f877cb7bb5b" prot="public" virt="non-virtual"><scope>efc::Storage</scope><name>~Storage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

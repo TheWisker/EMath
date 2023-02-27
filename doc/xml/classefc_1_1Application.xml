@@ -1,0 +1,555 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="classefc_1_1Application" kind="class" language="C++" prot="public">
+    <compoundname>efc::Application</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classefc_1_1Application_1a26bf17b39d8a3b7a16468826b43e425a" prot="private" static="yes" mutable="no">
+        <type><ref refid="classefc_1_1Application" kindref="compound">Application</ref> *</type>
+        <definition>Application * efc::Application::instance</definition>
+        <argsstring></argsstring>
+        <name>instance</name>
+        <qualifiedname>efc::Application::instance</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>Singleton <ref refid="classefc_1_1Application" kindref="compound">Application</ref> instance pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="837" column="32" bodyfile="src/interface.cpp" bodystart="837" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classefc_1_1Application_1a635dea1ef969ead7f88c8ae76981108e" prot="private" static="no" mutable="no">
+        <type><ref refid="classefc_1_1Terminal" kindref="compound">Terminal</ref> *</type>
+        <definition>Terminal* efc::Application::terminal</definition>
+        <argsstring></argsstring>
+        <name>terminal</name>
+        <qualifiedname>efc::Application::terminal</qualifiedname>
+        <briefdescription>
+<para>Singleton <ref refid="classefc_1_1Terminal" kindref="compound">Terminal</ref> instance pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="841" column="22" bodyfile="src/interface.cpp" bodystart="841" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classefc_1_1Application_1ab292c34e4cb10e3cfae317b4fb9d4b09" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classefc_1_1Storage" kindref="compound">Storage</ref></type>
+        <definition>const Storage efc::Application::storage</definition>
+        <argsstring></argsstring>
+        <name>storage</name>
+        <qualifiedname>efc::Application::storage</qualifiedname>
+        <briefdescription>
+<para>The <ref refid="classefc_1_1Storage" kindref="compound">Storage</ref> object for writing the JSON file containing the saved Polynomials. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="845" column="27" bodyfile="src/interface.cpp" bodystart="845" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classefc_1_1Application_1a1ec2e38410b026a66837d4a0024a9cdf" prot="private" static="no" mutable="no">
+        <type>rapidjson::Document</type>
+        <definition>rapidjson::Document efc::Application::json</definition>
+        <argsstring></argsstring>
+        <name>json</name>
+        <qualifiedname>efc::Application::json</qualifiedname>
+        <briefdescription>
+<para>The rapidjson::Document representing the JSON array of Polynomials. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="849" column="33" bodyfile="src/interface.cpp" bodystart="849" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classefc_1_1Application_1a4e741d91d8446d3ecbaa85543d5c8279" prot="private" static="no" mutable="no">
+        <type>::std::vector&lt; <ref refid="classemth_1_1Polynomial" kindref="compound">emth::Polynomial</ref> &gt;</type>
+        <definition>::std::vector&lt;emth::Polynomial&gt; efc::Application::polynomials</definition>
+        <argsstring></argsstring>
+        <name>polynomials</name>
+        <qualifiedname>efc::Application::polynomials</qualifiedname>
+        <briefdescription>
+<para>The std::vector of the currently saved Polynomials. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="853" column="27" bodyfile="src/interface.cpp" bodystart="853" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classefc_1_1Application_1a3fde6e56735191556c786c6c46bcac6a" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int efc::Application::active</definition>
+        <argsstring></argsstring>
+        <name>active</name>
+        <qualifiedname>efc::Application::active</qualifiedname>
+        <briefdescription>
+<para>The id of the active <ref refid="classefc_1_1Window" kindref="compound">Window</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="857" column="26" bodyfile="src/interface.cpp" bodystart="857" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classefc_1_1Application_1a813b224b86170bce0b085af83ca15d10" prot="private" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>efc::Application::Application</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>Application</name>
+        <qualifiedname>efc::Application::Application</qualifiedname>
+        <briefdescription>
+<para>Default constructor with default values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="861" column="13" bodyfile="src/interface.cpp" bodystart="861" bodyend="868"/>
+      </memberdef>
+      <memberdef kind="function" id="classefc_1_1Application_1a690dae179fe46d15c9456bc63cb291ae" prot="private" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int efc::Application::save_json</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>save_json</name>
+        <qualifiedname>efc::Application::save_json</qualifiedname>
+        <briefdescription>
+<para>Function for saving JSON to the <ref refid="classefc_1_1Storage" kindref="compound">Storage</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>(const int) 0 If susccessful, 1 otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="873" column="23" bodyfile="src/interface.cpp" bodystart="873" bodyend="880"/>
+      </memberdef>
+      <memberdef kind="function" id="classefc_1_1Application_1a442ecc993b0afec9d0d912706f2c9eeb" prot="private" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int efc::Application::read_json</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>read_json</name>
+        <qualifiedname>efc::Application::read_json</qualifiedname>
+        <briefdescription>
+<para>Function for retrieving JSON from the <ref refid="classefc_1_1Storage" kindref="compound">Storage</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>(const int) 0 If susccessful, 1 otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="885" column="23" bodyfile="src/interface.cpp" bodystart="885" bodyend="893"/>
+      </memberdef>
+      <memberdef kind="function" id="classefc_1_1Application_1a5d77c949c8fa11474315bd79e750623c" prot="private" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int efc::Application::cycle_focus</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>cycle_focus</name>
+        <qualifiedname>efc::Application::cycle_focus</qualifiedname>
+        <briefdescription>
+<para>Function for cycling the <ref refid="classefc_1_1Window" kindref="compound">Window</ref> focus. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>(const int) 0 If bottom window active, 1 otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="898" column="23" bodyfile="src/interface.cpp" bodystart="898" bodyend="905"/>
+      </memberdef>
+      <memberdef kind="function" id="classefc_1_1Application_1aee1a8b4512ecb9845deeb0c43a512e46" prot="private" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int efc::Application::scroll_loop</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>scroll_loop</name>
+        <qualifiedname>efc::Application::scroll_loop</qualifiedname>
+        <briefdescription>
+<para>Scroll menu as a loop. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>(const int) 0 If exit triggered, 1 otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="910" column="23" bodyfile="src/interface.cpp" bodystart="910" bodyend="921"/>
+      </memberdef>
+      <memberdef kind="function" id="classefc_1_1Application_1ab9a0c62bd0782de76bc82ff96a43e2d8" prot="private" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int efc::Application::get_polynomial</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>get_polynomial</name>
+        <qualifiedname>efc::Application::get_polynomial</qualifiedname>
+        <briefdescription>
+<para>Function for retrieving a Polynomial from <ref refid="classefc_1_1Terminal" kindref="compound">Terminal</ref> input. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>(const int) 0 If susccessful, 1 otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="926" column="23" bodyfile="src/interface.cpp" bodystart="926" bodyend="933"/>
+      </memberdef>
+      <memberdef kind="function" id="classefc_1_1Application_1ae83eb076df23d827af71e1662f73246c" prot="private" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int efc::Application::add_polynomial</definition>
+        <argsstring>(const emth::Polynomial &amp;polynomial) noexcept</argsstring>
+        <name>add_polynomial</name>
+        <qualifiedname>efc::Application::add_polynomial</qualifiedname>
+        <param>
+          <type>const <ref refid="classemth_1_1Polynomial" kindref="compound">emth::Polynomial</ref> &amp;</type>
+          <declname>polynomial</declname>
+        </param>
+        <briefdescription>
+<para>Function for adding a Polynomial to the <ref refid="classefc_1_1Application" kindref="compound">Application</ref> instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>(const int) 0 If susccessful, 1 otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="938" column="23" bodyfile="src/interface.cpp" bodystart="938" bodyend="946"/>
+      </memberdef>
+      <memberdef kind="function" id="classefc_1_1Application_1af766c0e04436c9bf05ecd3759e054dc3" prot="private" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int efc::Application::remove_polynomial</definition>
+        <argsstring>(const unsigned int id) noexcept</argsstring>
+        <name>remove_polynomial</name>
+        <qualifiedname>efc::Application::remove_polynomial</qualifiedname>
+        <param>
+          <type>const unsigned int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Function for removing a Polynomial from the <ref refid="classefc_1_1Application" kindref="compound">Application</ref> instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>(const int) 0 If susccessful, 1 otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="951" column="23" bodyfile="src/interface.cpp" bodystart="951" bodyend="960"/>
+      </memberdef>
+      <memberdef kind="function" id="classefc_1_1Application_1a8c0ef790120bec7ce7d3e343ffe8f659" prot="private" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const ::std::vector&lt;::std::string &gt;</type>
+        <definition>const ::std::vector&lt;::std::string &gt; efc::Application::stringify_polynomials</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>stringify_polynomials</name>
+        <qualifiedname>efc::Application::stringify_polynomials</qualifiedname>
+        <briefdescription>
+<para>Function for stringifying Polynomials to a :std::vector&lt;std::string&gt; for <ref refid="classefc_1_1Terminal" kindref="compound">Terminal</ref> echoing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>(std::vector&lt;std::string&gt;) The stringification results </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="965" column="33" bodyfile="src/interface.cpp" bodystart="965" bodyend="965"/>
+      </memberdef>
+      <memberdef kind="function" id="classefc_1_1Application_1af11dea6fee6e95f4eed38bb9a1947ed1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int efc::Application::main_loop</definition>
+        <argsstring>()</argsstring>
+        <name>main_loop</name>
+        <qualifiedname>efc::Application::main_loop</qualifiedname>
+        <briefdescription>
+<para>The main application menu as a loop. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>(const int) 0 If exit triggered, 1 if operation triggered and 2 if active window cycling triggered </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="970" column="23" bodyfile="src/interface.cpp" bodystart="970" bodyend="981"/>
+      </memberdef>
+      <memberdef kind="function" id="classefc_1_1Application_1a809af0e5356af9b179873178d9fa1bf9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int efc::Application::operation_loop</definition>
+        <argsstring>()</argsstring>
+        <name>operation_loop</name>
+        <qualifiedname>efc::Application::operation_loop</qualifiedname>
+        <briefdescription>
+<para>The operation menu as a loop. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>(const int) 0 If exit triggered, 1 if operation triggered and 2 if active window cycling triggered </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="986" column="23" bodyfile="src/interface.cpp" bodystart="986" bodyend="1002"/>
+      </memberdef>
+      <memberdef kind="function" id="classefc_1_1Application_1ae71606094c937e0e453277a000e3ef0e" prot="private" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void efc::Application::calculate</definition>
+        <argsstring>(const int t) noexcept</argsstring>
+        <name>calculate</name>
+        <qualifiedname>efc::Application::calculate</qualifiedname>
+        <param>
+          <type>const int</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Subcaller for efectuating a operation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="1007" column="18" bodyfile="src/interface.cpp" bodystart="1007" bodyend="1031"/>
+      </memberdef>
+      <memberdef kind="function" id="classefc_1_1Application_1a5f82f73953cf829ff907ba66434d5599" prot="private" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void efc::Application::launch_plane</definition>
+        <argsstring>(const emth::Polynomial &amp;function) const noexcept</argsstring>
+        <name>launch_plane</name>
+        <qualifiedname>efc::Application::launch_plane</qualifiedname>
+        <param>
+          <type>const <ref refid="classemth_1_1Polynomial" kindref="compound">emth::Polynomial</ref> &amp;</type>
+          <declname>function</declname>
+        </param>
+        <briefdescription>
+<para>Function for launching a <ref refid="classefc_1_1Plane" kindref="compound">Plane</ref> object in a different thread and detaching it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>function</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The function that the <ref refid="classefc_1_1Plane" kindref="compound">Plane</ref> object will represent </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="1036" column="18" bodyfile="src/interface.cpp" bodystart="1036" bodyend="1043"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classefc_1_1Application_1a447e888f956520e1586d31749ca891c7" prot="private" static="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const int</type>
+        <definition>static const int efc::Application::to_int</definition>
+        <argsstring>(const ::std::string &amp;number) noexcept</argsstring>
+        <name>to_int</name>
+        <qualifiedname>efc::Application::to_int</qualifiedname>
+        <param>
+          <type>const ::std::string &amp;</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+<para>Function for parsing a std::string as an int. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number to parse as a std:.string </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>(const int) The parsed int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="1049" column="30" bodyfile="src/interface.cpp" bodystart="1049" bodyend="1049"/>
+      </memberdef>
+      <memberdef kind="function" id="classefc_1_1Application_1a5665c2ca16c2117d8d1f5a4e73a3d35f" prot="private" static="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const std::string</type>
+        <definition>static const std::string efc::Application::vtoss</definition>
+        <argsstring>(const std::vector&lt; std::complex&lt; double &gt; &gt; &amp;v) noexcept</argsstring>
+        <name>vtoss</name>
+        <qualifiedname>efc::Application::vtoss</qualifiedname>
+        <param>
+          <type>const std::vector&lt; std::complex&lt; double &gt; &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Function for transforming a std::vector&lt;std::complex&lt;double&gt;&gt; to a std::string representing it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The std::vector&lt;std::complex&lt;double&gt;&gt; to transform </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>(std::string) The std::string representing it </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="1055" column="38" bodyfile="src/interface.cpp" bodystart="1055" bodyend="1055"/>
+      </memberdef>
+      <memberdef kind="function" id="classefc_1_1Application_1aa7092638b0b9b4a7506ee76ffa3725f5" prot="private" static="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const void</type>
+        <definition>static const void efc::Application::ctoss</definition>
+        <argsstring>(std::stringstream &amp;ss, const std::complex&lt; double &gt; &amp;c) noexcept</argsstring>
+        <name>ctoss</name>
+        <qualifiedname>efc::Application::ctoss</qualifiedname>
+        <param>
+          <type>std::stringstream &amp;</type>
+          <declname>ss</declname>
+        </param>
+        <param>
+          <type>const std::complex&lt; double &gt; &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Function for inserting &lt;std::complex&lt;double&gt; to a std::stringstream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ss</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The std::stringstream to insert the representation to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The std::complex&lt;double&gt; to transform </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="1061" column="31" bodyfile="src/interface.cpp" bodystart="1061" bodyend="1061"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classefc_1_1Application_1a612f4545a4b1e5d89decab2f5e092d90" prot="public" static="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classefc_1_1Application" kindref="compound">Application</ref> *</type>
+        <definition>static Application * efc::Application::init</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>init</name>
+        <qualifiedname>efc::Application::init</qualifiedname>
+        <briefdescription>
+<para>Static function for building the singleton static instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>(Application*) The singleton instance pointer also stored at Application::instance </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="1067" column="32" bodyfile="src/interface.cpp" bodystart="1067" bodyend="1070"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classefc_1_1Application_1a151fab3a86220c774be08189cf8dcb46" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void efc::Application::run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <qualifiedname>efc::Application::run</qualifiedname>
+        <briefdescription>
+<para>Main loop fallback, basically it starts the application event loop. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="1074" column="18" bodyfile="src/interface.cpp" bodystart="1074" bodyend="1089"/>
+      </memberdef>
+      <memberdef kind="function" id="classefc_1_1Application_1adc655697a7fa28de4f8526819eb1a083" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>efc::Application::~Application</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>~Application</name>
+        <qualifiedname>efc::Application::~Application</qualifiedname>
+        <briefdescription>
+<para>Default destructor, it deletes the <ref refid="classefc_1_1Terminal" kindref="compound">Terminal</ref> pointer, sets the singleton instance to nullptr, and saves the Json data to the <ref refid="classefc_1_1Storage" kindref="compound">Storage</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/interface.cpp" line="1093" column="13" bodyfile="src/interface.cpp" bodystart="1093" bodyend="1097"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class that contains the application inner logic. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The class consist of some menus as loops and all the logic of the <ref refid="classefc_1_1Application" kindref="compound">Application</ref> </para>
+    </detaileddescription>
+    <location file="src/interface.cpp" line="829" column="5" bodyfile="src/interface.cpp" bodystart="829" bodyend="1098"/>
+    <listofallmembers>
+      <member refid="classefc_1_1Application_1a3fde6e56735191556c786c6c46bcac6a" prot="private" virt="non-virtual"><scope>efc::Application</scope><name>active</name></member>
+      <member refid="classefc_1_1Application_1ae83eb076df23d827af71e1662f73246c" prot="private" virt="non-virtual"><scope>efc::Application</scope><name>add_polynomial</name></member>
+      <member refid="classefc_1_1Application_1a813b224b86170bce0b085af83ca15d10" prot="private" virt="non-virtual"><scope>efc::Application</scope><name>Application</name></member>
+      <member refid="classefc_1_1Application_1ae71606094c937e0e453277a000e3ef0e" prot="private" virt="non-virtual"><scope>efc::Application</scope><name>calculate</name></member>
+      <member refid="classefc_1_1Application_1aa7092638b0b9b4a7506ee76ffa3725f5" prot="private" virt="non-virtual"><scope>efc::Application</scope><name>ctoss</name></member>
+      <member refid="classefc_1_1Application_1a5d77c949c8fa11474315bd79e750623c" prot="private" virt="non-virtual"><scope>efc::Application</scope><name>cycle_focus</name></member>
+      <member refid="classefc_1_1Application_1ab9a0c62bd0782de76bc82ff96a43e2d8" prot="private" virt="non-virtual"><scope>efc::Application</scope><name>get_polynomial</name></member>
+      <member refid="classefc_1_1Application_1a612f4545a4b1e5d89decab2f5e092d90" prot="public" virt="non-virtual"><scope>efc::Application</scope><name>init</name></member>
+      <member refid="classefc_1_1Application_1a26bf17b39d8a3b7a16468826b43e425a" prot="private" virt="non-virtual"><scope>efc::Application</scope><name>instance</name></member>
+      <member refid="classefc_1_1Application_1a1ec2e38410b026a66837d4a0024a9cdf" prot="private" virt="non-virtual"><scope>efc::Application</scope><name>json</name></member>
+      <member refid="classefc_1_1Application_1a5f82f73953cf829ff907ba66434d5599" prot="private" virt="non-virtual"><scope>efc::Application</scope><name>launch_plane</name></member>
+      <member refid="classefc_1_1Application_1af11dea6fee6e95f4eed38bb9a1947ed1" prot="private" virt="non-virtual"><scope>efc::Application</scope><name>main_loop</name></member>
+      <member refid="classefc_1_1Application_1a809af0e5356af9b179873178d9fa1bf9" prot="private" virt="non-virtual"><scope>efc::Application</scope><name>operation_loop</name></member>
+      <member refid="classefc_1_1Application_1a4e741d91d8446d3ecbaa85543d5c8279" prot="private" virt="non-virtual"><scope>efc::Application</scope><name>polynomials</name></member>
+      <member refid="classefc_1_1Application_1a442ecc993b0afec9d0d912706f2c9eeb" prot="private" virt="non-virtual"><scope>efc::Application</scope><name>read_json</name></member>
+      <member refid="classefc_1_1Application_1af766c0e04436c9bf05ecd3759e054dc3" prot="private" virt="non-virtual"><scope>efc::Application</scope><name>remove_polynomial</name></member>
+      <member refid="classefc_1_1Application_1a151fab3a86220c774be08189cf8dcb46" prot="public" virt="non-virtual"><scope>efc::Application</scope><name>run</name></member>
+      <member refid="classefc_1_1Application_1a690dae179fe46d15c9456bc63cb291ae" prot="private" virt="non-virtual"><scope>efc::Application</scope><name>save_json</name></member>
+      <member refid="classefc_1_1Application_1aee1a8b4512ecb9845deeb0c43a512e46" prot="private" virt="non-virtual"><scope>efc::Application</scope><name>scroll_loop</name></member>
+      <member refid="classefc_1_1Application_1ab292c34e4cb10e3cfae317b4fb9d4b09" prot="private" virt="non-virtual"><scope>efc::Application</scope><name>storage</name></member>
+      <member refid="classefc_1_1Application_1a8c0ef790120bec7ce7d3e343ffe8f659" prot="private" virt="non-virtual"><scope>efc::Application</scope><name>stringify_polynomials</name></member>
+      <member refid="classefc_1_1Application_1a635dea1ef969ead7f88c8ae76981108e" prot="private" virt="non-virtual"><scope>efc::Application</scope><name>terminal</name></member>
+      <member refid="classefc_1_1Application_1a447e888f956520e1586d31749ca891c7" prot="private" virt="non-virtual"><scope>efc::Application</scope><name>to_int</name></member>
+      <member refid="classefc_1_1Application_1a5665c2ca16c2117d8d1f5a4e73a3d35f" prot="private" virt="non-virtual"><scope>efc::Application</scope><name>vtoss</name></member>
+      <member refid="classefc_1_1Application_1adc655697a7fa28de4f8526819eb1a083" prot="public" virt="non-virtual"><scope>efc::Application</scope><name>~Application</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

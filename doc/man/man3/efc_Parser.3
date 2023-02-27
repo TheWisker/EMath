@@ -1,0 +1,92 @@
+.TH "efc::Parser" 3 "Mon Feb 27 2023" "EMath++" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+efc::Parser \- Class that wraps a std::string and parses it as a number or as a operation\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBParser\fP (const std::string &input) noexcept"
+.br
+.RI "Standalone constructor for the \fBParser\fP class\&. "
+.ti -1c
+.RI "const int \fBparse_number\fP () noexcept"
+.br
+.RI "Function for parsing a plus, minus and number Tokens as a positive or negative int\&. "
+.ti -1c
+.RI "const \fBemth::Polynomial\fP \fBparse_operation\fP (const ::std::vector< \fBemth::Polynomial\fP > &ps)"
+.br
+.RI "Function for parsing std::string as a mathematical operation consisting of Polynomials represented as integers\&. "
+.ti -1c
+.RI "\fB~Parser\fP () noexcept=default"
+.br
+.RI "Default destructor\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Class that wraps a std::string and parses it as a number or as a operation\&. 
+
+The class consists of two public functions, one for parsing the entire input as a number and the other for it as a operation\&. 
+.PP
+Definition at line \fB760\fP of file \fBinterface\&.cpp\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "efc::Parser::Parser (const std::string & input)\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+Standalone constructor for the \fBParser\fP class\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIinput\fP A const reference to the std::string to parse when needed\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB771\fP of file \fBinterface\&.cpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "const int efc::Parser::parse_number ()\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+Function for parsing a plus, minus and number Tokens as a positive or negative int\&. 
+.PP
+\fBReturns\fP
+.RS 4
+(int) The parsed number 
+.RE
+.PP
+
+.PP
+Definition at line \fB776\fP of file \fBinterface\&.cpp\fP\&.
+.PP
+References \fBefc::Lexer::next()\fP, and \fBefc::Token::type\fP\&.
+.SS "const \fBemth::Polynomial\fP efc::Parser::parse_operation (const ::std::vector< \fBemth::Polynomial\fP > & ps)\fC [inline]\fP"
+
+.PP
+Function for parsing std::string as a mathematical operation consisting of Polynomials represented as integers\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIps\fP A std::vector of Polynomials, the integers representing the Polynomials map to this std::vector indexes 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(\fBemth::Polynomial\fP) The parsed polynomial resulting of the operation 
+.RE
+.PP
+
+.PP
+Definition at line \fB793\fP of file \fBinterface\&.cpp\fP\&.
+.PP
+References \fBefc::Lexer::next()\fP, and \fBefc::Token::type\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for EMath++ from the source code\&.

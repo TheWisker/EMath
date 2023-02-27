@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classefc_1_1Plane" xml:lang="en-US">
+<title>efc::Plane Class Reference</title>
+<indexterm><primary>efc::Plane</primary></indexterm>
+<para>
+
+<para><link linkend="_classefc_1_1Plane">Plane</link> class to draw a function in the Cartesian plane. </para>
+ 
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classefc_1_1Plane_1a59f6b4316752f2dfb6b56b2196017a4d">Plane</link> (int ox, int oy, const <link linkend="_classemth_1_1Polynomial">::emth::Polynomial</link> &amp;func)</para>
+
+<para>The main constructor. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classefc_1_1Plane_1a972b3c48d4213d433dc4b3e99ded3727">run</link> ()</para>
+
+<para>Runs the main application loop, processing events. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><link linkend="_classefc_1_1Plane">Plane</link> class to draw a function in the Cartesian plane. </para>
+
+
+
+<para>Provides the capability to run multiple Planes in different threads in paralell </para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l00458">458</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classefc_1_1Plane_1a59f6b4316752f2dfb6b56b2196017a4d"/><section>
+    <title>Plane()</title>
+<indexterm><primary>Plane</primary><secondary>efc::Plane</secondary></indexterm>
+<indexterm><primary>efc::Plane</primary><secondary>Plane</secondary></indexterm>
+<para><computeroutput>efc::Plane::Plane (int ox, int oy, const <link linkend="_classemth_1_1Polynomial">::emth::Polynomial</link> &amp; func)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>The main constructor. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ox</entry><entry>
+<para>The x offset </para>
+</entry>
+                            </row>
+                            <row>
+<entry>oy</entry><entry>
+<para>The y offset </para>
+</entry>
+                            </row>
+                            <row>
+<entry>func</entry><entry>
+<para>The function to be drawed </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l00553">553</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+<para>
+References <link linkend="_font_8h_source_1l00012">ROBOTO_BOLD</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classefc_1_1Plane_1a972b3c48d4213d433dc4b3e99ded3727"/><section>
+    <title>run()</title>
+<indexterm><primary>run</primary><secondary>efc::Plane</secondary></indexterm>
+<indexterm><primary>efc::Plane</primary><secondary>run</secondary></indexterm>
+<para><computeroutput>void efc::Plane::run ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Runs the main application loop, processing events. </para>
+</para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l00564">564</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+src/<link linkend="_interface_8cpp">interface.cpp</link></section>
+</section>

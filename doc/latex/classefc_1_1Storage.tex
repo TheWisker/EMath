@@ -1,0 +1,116 @@
+\hypertarget{classefc_1_1Storage}{}\doxysection{efc\+::Storage Class Reference}
+\label{classefc_1_1Storage}\index{efc::Storage@{efc::Storage}}
+
+
+\mbox{\hyperlink{classefc_1_1Storage}{Storage}} class to read and write to a file.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classefc_1_1Storage_a9a9cfce79f418f1ad0ee0bb53bb9d048}{Storage}} (const \+::std\+::string file) noexcept
+\begin{DoxyCompactList}\small\item\em The main constructor. \end{DoxyCompactList}\item 
+const \+::std\+::string \mbox{\hyperlink{classefc_1_1Storage_a62ca8189455b39656aa25531c3875cbd}{read}} () const noexcept
+\begin{DoxyCompactList}\small\item\em The read function that returns the whole file as a std\+:.string. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{classefc_1_1Storage_af2c8369dcb906c07867a931387659788}{write}} (const \+::std\+::string contents) const noexcept
+\begin{DoxyCompactList}\small\item\em The write function that overwrites the whole file with a std\+::string. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classefc_1_1Storage_ac141ea203205c34ebd653682d88b7e2c}{exists}} () const noexcept
+\begin{DoxyCompactList}\small\item\em This function check if the filename exists. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classefc_1_1Storage_a5d83512b8daaf9e2cb188f877cb7bb5b}\label{classefc_1_1Storage_a5d83512b8daaf9e2cb188f877cb7bb5b}} 
+{\bfseries $\sim$\+Storage} () noexcept=default
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classefc_1_1Storage}{Storage}} class to read and write to a file. 
+
+Provides some functions to read and write to a filename saved in a class variable 
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00595}{595}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classefc_1_1Storage_a9a9cfce79f418f1ad0ee0bb53bb9d048}\label{classefc_1_1Storage_a9a9cfce79f418f1ad0ee0bb53bb9d048}} 
+\index{efc::Storage@{efc::Storage}!Storage@{Storage}}
+\index{Storage@{Storage}!efc::Storage@{efc::Storage}}
+\doxysubsubsection{\texorpdfstring{Storage()}{Storage()}}
+{\footnotesize\ttfamily efc\+::\+Storage\+::\+Storage (\begin{DoxyParamCaption}\item[{const \+::std\+::string}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+The main constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & The filename to write to as a std\+::string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00606}{606}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classefc_1_1Storage_ac141ea203205c34ebd653682d88b7e2c}\label{classefc_1_1Storage_ac141ea203205c34ebd653682d88b7e2c}} 
+\index{efc::Storage@{efc::Storage}!exists@{exists}}
+\index{exists@{exists}!efc::Storage@{efc::Storage}}
+\doxysubsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily bool efc\+::\+Storage\+::exists (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+This function check if the filename exists. 
+
+\begin{DoxyReturn}{Returns}
+(bool) True if the file exists, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00634}{634}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+\mbox{\Hypertarget{classefc_1_1Storage_a62ca8189455b39656aa25531c3875cbd}\label{classefc_1_1Storage_a62ca8189455b39656aa25531c3875cbd}} 
+\index{efc::Storage@{efc::Storage}!read@{read}}
+\index{read@{read}!efc::Storage@{efc::Storage}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily const \+::std\+::string efc\+::\+Storage\+::read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+The read function that returns the whole file as a std\+:.string. 
+
+\begin{DoxyReturn}{Returns}
+(const \+::std\+::string) The whole file as a std\+:.string 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00611}{611}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+\mbox{\Hypertarget{classefc_1_1Storage_af2c8369dcb906c07867a931387659788}\label{classefc_1_1Storage_af2c8369dcb906c07867a931387659788}} 
+\index{efc::Storage@{efc::Storage}!write@{write}}
+\index{write@{write}!efc::Storage@{efc::Storage}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily const int efc\+::\+Storage\+::write (\begin{DoxyParamCaption}\item[{const \+::std\+::string}]{contents }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+The write function that overwrites the whole file with a std\+::string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em contents} & The contents to write as a std\+::string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(int) 0 If successful, 1 otherwise 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{interface_8cpp_source_l00624}{624}} of file \mbox{\hyperlink{interface_8cpp_source}{interface.\+cpp}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{interface_8cpp}{interface.\+cpp}}\end{DoxyCompactItemize}

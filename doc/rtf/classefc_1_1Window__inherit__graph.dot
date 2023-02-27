@@ -1,0 +1,12 @@
+digraph "efc::Window"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [label="efc::Window",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Generic class for wrapping a curses WINDOW."];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="efc::IWindow",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classefc_1_1IWindow.html",tooltip="Window class extension for input."];
+  Node1 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="efc::OWindow",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classefc_1_1OWindow.html",tooltip="Window class extension for output."];
+}

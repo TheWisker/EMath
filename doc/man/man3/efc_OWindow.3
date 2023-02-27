@@ -1,0 +1,288 @@
+.TH "efc::OWindow" 3 "Mon Feb 27 2023" "EMath++" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+efc::OWindow \- \fBWindow\fP class extension for output\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBefc::Window\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBOWindow\fP () noexcept"
+.br
+.RI "Default constructor\&. "
+.ti -1c
+.RI "const unsigned int & \fBget_scroll_index\fP () const noexcept"
+.br
+.RI "Gets if the scroll index\&. "
+.ti -1c
+.RI "const ::std::vector<::std::string > & \fBget_data\fP () const noexcept"
+.br
+.RI "Gets the data vector\&. "
+.ti -1c
+.RI "const unsigned int \fBget_data_size\fP () const noexcept"
+.br
+.RI "Gets the data vector size\&. "
+.ti -1c
+.RI "const unsigned int \fBget_title_y\fP () const noexcept override"
+.br
+.RI "Gets the title y coordinate\&. "
+.ti -1c
+.RI "const unsigned int \fBget_title_x\fP () const noexcept override"
+.br
+.RI "Gets the title x coordinate\&. "
+.ti -1c
+.RI "void \fBset_data\fP (::std::vector<::std::string > &&data) noexcept"
+.br
+.RI "Sets the data vector\&. "
+.ti -1c
+.RI "void \fBscroll_up\fP () noexcept"
+.br
+.RI "Scrolls up, internally substracts from the scroll index within certain bounds\&. "
+.ti -1c
+.RI "void \fBscroll_down\fP () noexcept"
+.br
+.RI "Scrolls down, internally adds to the scroll index within certain bounds\&. "
+.ti -1c
+.RI "\fB~OWindow\fP () noexcept=default"
+.br
+.RI "Default destructor\&. "
+.in -1c
+
+Public Member Functions inherited from \fBefc::Window\fP
+.in +1c
+.ti -1c
+.RI "\fBWindow\fP () noexcept"
+.br
+.RI "Generic constructor with default values\&. "
+.ti -1c
+.RI "const char * \fBget_title\fP () const noexcept"
+.br
+.RI "Returns the c_str() const char pointer of the title std::string\&. "
+.ti -1c
+.RI "const unsigned int & \fBget_y\fP () const noexcept"
+.br
+.RI "Returns the y coordinate\&. "
+.ti -1c
+.RI "const unsigned int & \fBget_x\fP () const noexcept"
+.br
+.RI "Returns the x coordinate\&. "
+.ti -1c
+.RI "const unsigned int & \fBget_height\fP () const noexcept"
+.br
+.RI "Returns the height value\&. "
+.ti -1c
+.RI "const unsigned int & \fBget_width\fP () const noexcept"
+.br
+.RI "Returns the width value\&. "
+.ti -1c
+.RI "const unsigned int \fBget_title_size\fP () const noexcept"
+.br
+.RI "Returns the title size\&. "
+.ti -1c
+.RI "void \fBset_title\fP (const ::std::string &&title) noexcept"
+.br
+.RI "Sets the title\&. "
+.ti -1c
+.RI "void \fBset_coords\fP (const unsigned int \fBy\fP, const unsigned int x) noexcept"
+.br
+.RI "Sets the y and x coordinates\&. "
+.ti -1c
+.RI "void \fBset_size\fP (const unsigned int h, const unsigned int w) noexcept"
+.br
+.RI "Sets the size\&. "
+.ti -1c
+.RI "void \fBset_active\fP (const bool active) noexcept"
+.br
+.RI "Sets the active boolean to the provided value\&. "
+.ti -1c
+.RI "virtual const unsigned int \fBget_title_y\fP () const noexcept"
+.br
+.RI "Gets the title y coordinate\&. "
+.ti -1c
+.RI "virtual const unsigned int \fBget_title_x\fP () const noexcept"
+.br
+.RI "Gets the title x coordinate\&. "
+.ti -1c
+.RI "const bool \fBneeds_update\fP () noexcept"
+.br
+.RI "Gets if the window needs a redraw\&. "
+.ti -1c
+.RI "const bool \fBis_active\fP () const noexcept"
+.br
+.RI "Gets if the window is active/focused\&. "
+.ti -1c
+.RI "void \fBplace\fP ()"
+.br
+.RI "Deletes the WINDOW pointer and creates a new WINDOW at the class coordinates\&. "
+.ti -1c
+.RI "virtual \fB~Window\fP () noexcept"
+.br
+.RI "Calls curses delwin() function on the curses WINDOW object and returns\&. "
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Public Attributes inherited from \fBefc::Window\fP
+.in +1c
+.ti -1c
+.RI "WINDOW * \fBo\fP"
+.br
+.RI "Pointer to the curses WINDOW object\&. "
+.in -1c
+
+Protected Attributes inherited from \fBefc::Window\fP
+.in +1c
+.ti -1c
+.RI "bool \fBc\fP"
+.br
+.RI "Two booleans: c for knowing if contents changed, and a for knowing if window is active\&. "
+.ti -1c
+.RI "bool \fBa\fP"
+.br
+.ti -1c
+.RI "::std::string \fBt\fP"
+.br
+.RI "String t: window title\&. "
+.ti -1c
+.RI "unsigned int \fBy\fP"
+.br
+.RI "Four unsigned ints: x and y for the coordinates relative to the console window, w and h for the size of the window\&. "
+.ti -1c
+.RI "unsigned int \fBx\fP"
+.br
+.ti -1c
+.RI "unsigned int \fBh\fP"
+.br
+.ti -1c
+.RI "unsigned int \fBw\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBWindow\fP class extension for output\&. 
+
+\fBWindow\fP class implementation that focuses on showin data\&. Comes with the ability to scroll through an std::vector of std::string 
+.PP
+Definition at line \fB169\fP of file \fBinterface\&.cpp\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "efc::OWindow::OWindow ()\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+Default constructor\&. 
+.PP
+Definition at line \fB183\fP of file \fBinterface\&.cpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "const ::std::vector<::std::string > & efc::OWindow::get_data () const\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+Gets the data vector\&. 
+.PP
+\fBReturns\fP
+.RS 4
+(const ::std::vector<::std::string>&) The data vector as a const ::std::vector<::std::string>& 
+.RE
+.PP
+
+.PP
+Definition at line \fB193\fP of file \fBinterface\&.cpp\fP\&.
+.SS "const unsigned int efc::OWindow::get_data_size () const\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+Gets the data vector size\&. 
+.PP
+\fBReturns\fP
+.RS 4
+(const unsigned int) The data vector size as a const unsigned int 
+.RE
+.PP
+
+.PP
+Definition at line \fB198\fP of file \fBinterface\&.cpp\fP\&.
+.SS "const unsigned int & efc::OWindow::get_scroll_index () const\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+Gets if the scroll index\&. 
+.PP
+\fBReturns\fP
+.RS 4
+(const unsigned int&) The scroll index as a const unsigned int& 
+.RE
+.PP
+
+.PP
+Definition at line \fB188\fP of file \fBinterface\&.cpp\fP\&.
+.SS "const unsigned int efc::OWindow::get_title_x () const\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP, \fC [noexcept]\fP"
+
+.PP
+Gets the title x coordinate\&. 
+.PP
+\fBReturns\fP
+.RS 4
+(const unsigned int) The title x coordinate as a const unsigned int 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBefc::Window\fP\&.
+.PP
+Definition at line \fB208\fP of file \fBinterface\&.cpp\fP\&.
+.PP
+References \fBefc::Window::t\fP\&.
+.SS "const unsigned int efc::OWindow::get_title_y () const\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP, \fC [noexcept]\fP"
+
+.PP
+Gets the title y coordinate\&. 
+.PP
+\fBReturns\fP
+.RS 4
+(const unsigned int) The title y coordinate as a const unsigned int 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBefc::Window\fP\&.
+.PP
+Definition at line \fB203\fP of file \fBinterface\&.cpp\fP\&.
+.SS "void efc::OWindow::scroll_down ()\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+Scrolls down, internally adds to the scroll index within certain bounds\&. 
+.PP
+Definition at line \fB221\fP of file \fBinterface\&.cpp\fP\&.
+.PP
+References \fBefc::Window::c\fP\&.
+.SS "void efc::OWindow::scroll_up ()\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+Scrolls up, internally substracts from the scroll index within certain bounds\&. 
+.PP
+Definition at line \fB217\fP of file \fBinterface\&.cpp\fP\&.
+.PP
+References \fBefc::Window::c\fP\&.
+.SS "void efc::OWindow::set_data (::std::vector<::std::string > && data)\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+Sets the data vector\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdata\fP The data vector to replace with 
+.RE
+.PP
+
+.PP
+Definition at line \fB213\fP of file \fBinterface\&.cpp\fP\&.
+.PP
+References \fBefc::Window::c\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for EMath++ from the source code\&.

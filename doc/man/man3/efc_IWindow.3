@@ -1,0 +1,192 @@
+.TH "efc::IWindow" 3 "Mon Feb 27 2023" "EMath++" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+efc::IWindow \- \fBWindow\fP class extension for input\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBefc::Window\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBIWindow\fP () noexcept"
+.br
+.RI "Default constructor\&. "
+.ti -1c
+.RI "const unsigned int \fBget_title_y\fP () const noexcept override"
+.br
+.RI "Gets the title y coordinate\&. "
+.ti -1c
+.RI "const unsigned int \fBget_title_x\fP () const noexcept override"
+.br
+.RI "Gets the title x coordinate\&. "
+.ti -1c
+.RI "\fB~IWindow\fP () noexcept=default"
+.br
+.RI "Default destructor\&. "
+.in -1c
+
+Public Member Functions inherited from \fBefc::Window\fP
+.in +1c
+.ti -1c
+.RI "\fBWindow\fP () noexcept"
+.br
+.RI "Generic constructor with default values\&. "
+.ti -1c
+.RI "const char * \fBget_title\fP () const noexcept"
+.br
+.RI "Returns the c_str() const char pointer of the title std::string\&. "
+.ti -1c
+.RI "const unsigned int & \fBget_y\fP () const noexcept"
+.br
+.RI "Returns the y coordinate\&. "
+.ti -1c
+.RI "const unsigned int & \fBget_x\fP () const noexcept"
+.br
+.RI "Returns the x coordinate\&. "
+.ti -1c
+.RI "const unsigned int & \fBget_height\fP () const noexcept"
+.br
+.RI "Returns the height value\&. "
+.ti -1c
+.RI "const unsigned int & \fBget_width\fP () const noexcept"
+.br
+.RI "Returns the width value\&. "
+.ti -1c
+.RI "const unsigned int \fBget_title_size\fP () const noexcept"
+.br
+.RI "Returns the title size\&. "
+.ti -1c
+.RI "void \fBset_title\fP (const ::std::string &&title) noexcept"
+.br
+.RI "Sets the title\&. "
+.ti -1c
+.RI "void \fBset_coords\fP (const unsigned int \fBy\fP, const unsigned int x) noexcept"
+.br
+.RI "Sets the y and x coordinates\&. "
+.ti -1c
+.RI "void \fBset_size\fP (const unsigned int h, const unsigned int w) noexcept"
+.br
+.RI "Sets the size\&. "
+.ti -1c
+.RI "void \fBset_active\fP (const bool active) noexcept"
+.br
+.RI "Sets the active boolean to the provided value\&. "
+.ti -1c
+.RI "virtual const unsigned int \fBget_title_y\fP () const noexcept"
+.br
+.RI "Gets the title y coordinate\&. "
+.ti -1c
+.RI "virtual const unsigned int \fBget_title_x\fP () const noexcept"
+.br
+.RI "Gets the title x coordinate\&. "
+.ti -1c
+.RI "const bool \fBneeds_update\fP () noexcept"
+.br
+.RI "Gets if the window needs a redraw\&. "
+.ti -1c
+.RI "const bool \fBis_active\fP () const noexcept"
+.br
+.RI "Gets if the window is active/focused\&. "
+.ti -1c
+.RI "void \fBplace\fP ()"
+.br
+.RI "Deletes the WINDOW pointer and creates a new WINDOW at the class coordinates\&. "
+.ti -1c
+.RI "virtual \fB~Window\fP () noexcept"
+.br
+.RI "Calls curses delwin() function on the curses WINDOW object and returns\&. "
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Public Attributes inherited from \fBefc::Window\fP
+.in +1c
+.ti -1c
+.RI "WINDOW * \fBo\fP"
+.br
+.RI "Pointer to the curses WINDOW object\&. "
+.in -1c
+
+Protected Attributes inherited from \fBefc::Window\fP
+.in +1c
+.ti -1c
+.RI "bool \fBc\fP"
+.br
+.RI "Two booleans: c for knowing if contents changed, and a for knowing if window is active\&. "
+.ti -1c
+.RI "bool \fBa\fP"
+.br
+.ti -1c
+.RI "::std::string \fBt\fP"
+.br
+.RI "String t: window title\&. "
+.ti -1c
+.RI "unsigned int \fBy\fP"
+.br
+.RI "Four unsigned ints: x and y for the coordinates relative to the console window, w and h for the size of the window\&. "
+.ti -1c
+.RI "unsigned int \fBx\fP"
+.br
+.ti -1c
+.RI "unsigned int \fBh\fP"
+.br
+.ti -1c
+.RI "unsigned int \fBw\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBWindow\fP class extension for input\&. 
+
+\fBWindow\fP class implementation that focuses on showin data\&. 
+.PP
+Definition at line \fB233\fP of file \fBinterface\&.cpp\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "efc::IWindow::IWindow ()\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+Default constructor\&. 
+.PP
+Definition at line \fB238\fP of file \fBinterface\&.cpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "const unsigned int efc::IWindow::get_title_x () const\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP, \fC [noexcept]\fP"
+
+.PP
+Gets the title x coordinate\&. 
+.PP
+\fBReturns\fP
+.RS 4
+(const unsigned int) The title x coordinate as a const unsigned int 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBefc::Window\fP\&.
+.PP
+Definition at line \fB248\fP of file \fBinterface\&.cpp\fP\&.
+.SS "const unsigned int efc::IWindow::get_title_y () const\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP, \fC [noexcept]\fP"
+
+.PP
+Gets the title y coordinate\&. 
+.PP
+\fBReturns\fP
+.RS 4
+(const unsigned int) The title y coordinate as a const unsigned int 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBefc::Window\fP\&.
+.PP
+Definition at line \fB243\fP of file \fBinterface\&.cpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for EMath++ from the source code\&.

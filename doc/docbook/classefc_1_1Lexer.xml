@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classefc_1_1Lexer" xml:lang="en-US">
+<title>efc::Lexer Class Reference</title>
+<indexterm><primary>efc::Lexer</primary></indexterm>
+<para>
+
+<para>Class that works as a token supplier for the <link linkend="_classefc_1_1Parser">Parser</link> class. </para>
+ 
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classefc_1_1Lexer_1ab12855801b122c387031155dec257b50">Lexer</link> (const std::string &amp;input) noexcept</para>
+
+<para>Standalone constructor for the <link linkend="_classefc_1_1Lexer">Lexer</link> class. </para>
+</listitem>
+            <listitem><para>const <link linkend="_structefc_1_1Token">Token</link> <link linkend="_classefc_1_1Lexer_1a3eb3b61f1ba41e9d3150052b6280167b">next</link> () noexcept</para>
+
+<para>Function that returns the next <link linkend="_structefc_1_1Token">Token</link> in the input provided in the constructor. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_classefc_1_1Lexer_1a77d56d461130cb509b3831daa7e06851"/><emphasis role="strong">~Lexer</emphasis> () noexcept=default</para>
+
+<para>Default destructor. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Class that works as a token supplier for the <link linkend="_classefc_1_1Parser">Parser</link> class. </para>
+
+
+
+<para>The class consists of a public function for getting the next <link linkend="_structefc_1_1Token">Token</link> </para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l00696">696</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classefc_1_1Lexer_1ab12855801b122c387031155dec257b50"/><section>
+    <title>Lexer()</title>
+<indexterm><primary>Lexer</primary><secondary>efc::Lexer</secondary></indexterm>
+<indexterm><primary>efc::Lexer</primary><secondary>Lexer</secondary></indexterm>
+<para><computeroutput>efc::Lexer::Lexer (const std::string &amp; input)<computeroutput>[inline]</computeroutput>, <computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Standalone constructor for the <link linkend="_classefc_1_1Lexer">Lexer</link> class. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>input</entry><entry>
+<para>A const reference to the std::string to tokenize. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l00735">735</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classefc_1_1Lexer_1a3eb3b61f1ba41e9d3150052b6280167b"/><section>
+    <title>next()</title>
+<indexterm><primary>next</primary><secondary>efc::Lexer</secondary></indexterm>
+<indexterm><primary>efc::Lexer</primary><secondary>next</secondary></indexterm>
+<para><computeroutput>const <link linkend="_structefc_1_1Token">Token</link> efc::Lexer::next ( )<computeroutput>[inline]</computeroutput>, <computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Function that returns the next <link linkend="_structefc_1_1Token">Token</link> in the input provided in the constructor. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>(<link linkend="_structefc_1_1Token">Token</link>) The next <link linkend="_structefc_1_1Token">Token</link> in the input </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l00740">740</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+src/<link linkend="_interface_8cpp">interface.cpp</link></section>
+</section>

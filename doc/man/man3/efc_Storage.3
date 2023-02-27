@@ -1,0 +1,105 @@
+.TH "efc::Storage" 3 "Mon Feb 27 2023" "EMath++" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+efc::Storage \- \fBStorage\fP class to read and write to a file\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBStorage\fP (const ::std::string file) noexcept"
+.br
+.RI "The main constructor\&. "
+.ti -1c
+.RI "const ::std::string \fBread\fP () const noexcept"
+.br
+.RI "The read function that returns the whole file as a std:\&.string\&. "
+.ti -1c
+.RI "const int \fBwrite\fP (const ::std::string contents) const noexcept"
+.br
+.RI "The write function that overwrites the whole file with a std::string\&. "
+.ti -1c
+.RI "bool \fBexists\fP () const noexcept"
+.br
+.RI "This function check if the filename exists\&. "
+.ti -1c
+.RI "\fB~Storage\fP () noexcept=default"
+.br
+.RI "Default destructor\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBStorage\fP class to read and write to a file\&. 
+
+Provides some functions to read and write to a filename saved in a class variable 
+.PP
+Definition at line \fB595\fP of file \fBinterface\&.cpp\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "efc::Storage::Storage (const ::std::string file)\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+The main constructor\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfile\fP The filename to write to as a std::string 
+.RE
+.PP
+
+.PP
+Definition at line \fB606\fP of file \fBinterface\&.cpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "bool efc::Storage::exists () const\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+This function check if the filename exists\&. 
+.PP
+\fBReturns\fP
+.RS 4
+(bool) True if the file exists, false otherwise 
+.RE
+.PP
+
+.PP
+Definition at line \fB634\fP of file \fBinterface\&.cpp\fP\&.
+.SS "const ::std::string efc::Storage::read () const\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+The read function that returns the whole file as a std:\&.string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+(const ::std::string) The whole file as a std:\&.string 
+.RE
+.PP
+
+.PP
+Definition at line \fB611\fP of file \fBinterface\&.cpp\fP\&.
+.SS "const int efc::Storage::write (const ::std::string contents) const\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+The write function that overwrites the whole file with a std::string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcontents\fP The contents to write as a std::string 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+(int) 0 If successful, 1 otherwise 
+.RE
+.PP
+
+.PP
+Definition at line \fB624\fP of file \fBinterface\&.cpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for EMath++ from the source code\&.

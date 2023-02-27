@@ -1,0 +1,487 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classefc_1_1Terminal" xml:lang="en-US">
+<title>efc::Terminal Class Reference</title>
+<indexterm><primary>efc::Terminal</primary></indexterm>
+<para>
+
+<para><link linkend="_classefc_1_1Terminal">Terminal</link> class to manage the terminal through curses. </para>
+ 
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_classefc_1_1Terminal_1a873c2d27e271e805c0665ff6952bf8a2">flush</link> ()</para>
+
+<para>Function for flushin all the <link linkend="_classefc_1_1Terminal">Terminal</link>&apos;s Windows. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classefc_1_1Terminal_1a9103a252f46463cd09adc2bb2436fa30">set_ltitle</link> (const ::std::string title) noexcept</para>
+
+<para>Function for setting the title of the left <link linkend="_classefc_1_1Window">Window</link>. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classefc_1_1Terminal_1acc6236b69a0d0a2b1c9ae9cb3e6b1056">set_rtitle</link> (const ::std::string title) noexcept</para>
+
+<para>Function for setting the title of the right <link linkend="_classefc_1_1Window">Window</link>. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classefc_1_1Terminal_1ad8cb9d988b58a3b0d59dd703b47467fa">set_prompt</link> (const ::std::string prompt) noexcept</para>
+
+<para>Function for setting the prompt of the bottom <link linkend="_classefc_1_1Window">Window</link>. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classefc_1_1Terminal_1aa705ec16ca8fcc9549b90793c58b4d83">set_ldata</link> (::std::vector&lt;::std::string &gt; data) noexcept</para>
+
+<para>Function for setting data vector of the left <link linkend="_classefc_1_1Window">Window</link>. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classefc_1_1Terminal_1ac9e693242036242db200bbbebc3d83e6">set_rdata</link> (::std::vector&lt;::std::string &gt; data) noexcept</para>
+
+<para>Function for setting data vector of the right <link linkend="_classefc_1_1Window">Window</link>. </para>
+</listitem>
+            <listitem><para>const int <link linkend="_classefc_1_1Terminal_1a966affe71a3fd3c461a907e41a609cc8">get_short_input</link> () const</para>
+
+<para>Function for getting short single char input from the <link linkend="_classefc_1_1Terminal">Terminal</link>. </para>
+</listitem>
+            <listitem><para>const ::std::string <link linkend="_classefc_1_1Terminal_1a49bb9b2d0fc46335d4426c79b0b1f781">get_long_input</link> () const</para>
+
+<para>Function for getting long single string input from the <link linkend="_classefc_1_1Terminal">Terminal</link>. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classefc_1_1Terminal_1ab06e104fb3af3517e2e0413e26accd9a">scroll_down</link> (const unsigned int id) noexcept</para>
+
+<para>Function for scrolling down the left or right window depending on the provided id. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classefc_1_1Terminal_1a2b2ddbc6125d3a7ffa8101e161066034">scroll_up</link> (const unsigned int id) noexcept</para>
+
+<para>Function for scrolling up the left or right window depending on the provided id. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classefc_1_1Terminal_1ac8d0de8abed39f84908622187f5cb95e">echo_result</link> (const ::std::string &amp;result)</para>
+
+<para>Echoes the provided result to the prompt and waits for a key press. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classefc_1_1Terminal_1ad3b80961a79f1534316d8e57ec4ada30">swap_active</link> (const unsigned int id) noexcept</para>
+
+<para>Swaps the active window to the one matching the provide id. </para>
+</listitem>
+            <listitem><para><link linkend="_classefc_1_1Terminal_1a64a6c41cf5396f6a5ab91a75e44faac6">~Terminal</link> () noexcept</para>
+
+<para>Default destructor, it deletes the <link linkend="_classefc_1_1Window">Window</link> pointers, sets the singleton instance to nullptr, stops the signal listener and stops curses. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static <link linkend="_classefc_1_1Terminal">Terminal</link> * <link linkend="_classefc_1_1Terminal_1aa058bcd027c3dc1212fb53eb0a6ecafb">init</link> () noexcept</para>
+
+<para>Static function for building the singleton static instance. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><link linkend="_classefc_1_1Terminal">Terminal</link> class to manage the terminal through curses. </para>
+
+
+
+<para>It works as a singleton. Not generic in any way. </para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l00259">259</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classefc_1_1Terminal_1a64a6c41cf5396f6a5ab91a75e44faac6"/><section>
+    <title>~Terminal()</title>
+<indexterm><primary>~Terminal</primary><secondary>efc::Terminal</secondary></indexterm>
+<indexterm><primary>efc::Terminal</primary><secondary>~Terminal</secondary></indexterm>
+<para><computeroutput>efc::Terminal::~Terminal ( )<computeroutput>[inline]</computeroutput>, <computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Default destructor, it deletes the <link linkend="_classefc_1_1Window">Window</link> pointers, sets the singleton instance to nullptr, stops the signal listener and stops curses. </para>
+</para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l00444">444</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classefc_1_1Terminal_1ac8d0de8abed39f84908622187f5cb95e"/><section>
+    <title>echo_result()</title>
+<indexterm><primary>echo_result</primary><secondary>efc::Terminal</secondary></indexterm>
+<indexterm><primary>efc::Terminal</primary><secondary>echo_result</secondary></indexterm>
+<para><computeroutput>void efc::Terminal::echo_result (const ::std::string &amp; result)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Echoes the provided result to the prompt and waits for a key press. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>result</entry><entry>
+<para>The result to echo as a const ::std::string&amp; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l00422">422</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+<para>
+References <link linkend="_interface_8cpp_source_1l00086">efc::Window::get_title()</link>, and <link linkend="_interface_8cpp_source_1l00077">efc::Window::o</link>.</para>
+</section>
+<anchor xml:id="_classefc_1_1Terminal_1a873c2d27e271e805c0665ff6952bf8a2"/><section>
+    <title>flush()</title>
+<indexterm><primary>flush</primary><secondary>efc::Terminal</secondary></indexterm>
+<indexterm><primary>efc::Terminal</primary><secondary>flush</secondary></indexterm>
+<para><computeroutput>void efc::Terminal::flush ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Function for flushin all the <link linkend="_classefc_1_1Terminal">Terminal</link>&apos;s Windows. </para>
+</para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l00362">362</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+<para>
+References <link linkend="_interface_8cpp_source_1l00077">efc::Window::o</link>.</para>
+</section>
+<anchor xml:id="_classefc_1_1Terminal_1a49bb9b2d0fc46335d4426c79b0b1f781"/><section>
+    <title>get_long_input()</title>
+<indexterm><primary>get_long_input</primary><secondary>efc::Terminal</secondary></indexterm>
+<indexterm><primary>efc::Terminal</primary><secondary>get_long_input</secondary></indexterm>
+<para><computeroutput>const ::std::string efc::Terminal::get_long_input ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Function for getting long single string input from the <link linkend="_classefc_1_1Terminal">Terminal</link>. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>(::std::string) The input as a std::string </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l00397">397</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+<para>
+References <link linkend="_interface_8cpp_source_1l00077">efc::Window::o</link>.</para>
+</section>
+<anchor xml:id="_classefc_1_1Terminal_1a966affe71a3fd3c461a907e41a609cc8"/><section>
+    <title>get_short_input()</title>
+<indexterm><primary>get_short_input</primary><secondary>efc::Terminal</secondary></indexterm>
+<indexterm><primary>efc::Terminal</primary><secondary>get_short_input</secondary></indexterm>
+<para><computeroutput>const int efc::Terminal::get_short_input ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Function for getting short single char input from the <link linkend="_classefc_1_1Terminal">Terminal</link>. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>(const int) Int representing the pressed key </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l00392">392</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+<para>
+References <link linkend="_interface_8cpp_source_1l00077">efc::Window::o</link>.</para>
+</section>
+<anchor xml:id="_classefc_1_1Terminal_1aa058bcd027c3dc1212fb53eb0a6ecafb"/><section>
+    <title>init()</title>
+<indexterm><primary>init</primary><secondary>efc::Terminal</secondary></indexterm>
+<indexterm><primary>efc::Terminal</primary><secondary>init</secondary></indexterm>
+<para><computeroutput>static <link linkend="_classefc_1_1Terminal">Terminal</link> * efc::Terminal::init ( )<computeroutput>[inline]</computeroutput>, <computeroutput>[static]</computeroutput>, <computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Static function for building the singleton static instance. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>(Terminal*) The singleton instance pointer also stored at Terminal::instance </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l00355">355</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<anchor xml:id="_classefc_1_1Terminal_1ab06e104fb3af3517e2e0413e26accd9a"/><section>
+    <title>scroll_down()</title>
+<indexterm><primary>scroll_down</primary><secondary>efc::Terminal</secondary></indexterm>
+<indexterm><primary>efc::Terminal</primary><secondary>scroll_down</secondary></indexterm>
+<para><computeroutput>void efc::Terminal::scroll_down (const unsigned int id)<computeroutput>[inline]</computeroutput>, <computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Function for scrolling down the left or right window depending on the provided id. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>id</entry><entry>
+<para>The id of the window as a const unsigned int </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l00402">402</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+<para>
+References <link linkend="_interface_8cpp_source_1l00221">efc::OWindow::scroll_down()</link>.</para>
+</section>
+<anchor xml:id="_classefc_1_1Terminal_1a2b2ddbc6125d3a7ffa8101e161066034"/><section>
+    <title>scroll_up()</title>
+<indexterm><primary>scroll_up</primary><secondary>efc::Terminal</secondary></indexterm>
+<indexterm><primary>efc::Terminal</primary><secondary>scroll_up</secondary></indexterm>
+<para><computeroutput>void efc::Terminal::scroll_up (const unsigned int id)<computeroutput>[inline]</computeroutput>, <computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Function for scrolling up the left or right window depending on the provided id. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>id</entry><entry>
+<para>The id of the window as a const unsigned int </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l00412">412</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+<para>
+References <link linkend="_interface_8cpp_source_1l00217">efc::OWindow::scroll_up()</link>.</para>
+</section>
+<anchor xml:id="_classefc_1_1Terminal_1aa705ec16ca8fcc9549b90793c58b4d83"/><section>
+    <title>set_ldata()</title>
+<indexterm><primary>set_ldata</primary><secondary>efc::Terminal</secondary></indexterm>
+<indexterm><primary>efc::Terminal</primary><secondary>set_ldata</secondary></indexterm>
+<para><computeroutput>void efc::Terminal::set_ldata (::std::vector&lt;::std::string &gt; data)<computeroutput>[inline]</computeroutput>, <computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Function for setting data vector of the left <link linkend="_classefc_1_1Window">Window</link>. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>data</entry><entry>
+<para>The data as a std::vector of std::string </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l00382">382</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+<para>
+References <link linkend="_interface_8cpp_source_1l00213">efc::OWindow::set_data()</link>.</para>
+</section>
+<anchor xml:id="_classefc_1_1Terminal_1a9103a252f46463cd09adc2bb2436fa30"/><section>
+    <title>set_ltitle()</title>
+<indexterm><primary>set_ltitle</primary><secondary>efc::Terminal</secondary></indexterm>
+<indexterm><primary>efc::Terminal</primary><secondary>set_ltitle</secondary></indexterm>
+<para><computeroutput>void efc::Terminal::set_ltitle (const ::std::string title)<computeroutput>[inline]</computeroutput>, <computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Function for setting the title of the left <link linkend="_classefc_1_1Window">Window</link>. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>title</entry><entry>
+<para>The title as a std::string </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l00367">367</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+<para>
+References <link linkend="_interface_8cpp_source_1l00116">efc::Window::set_title()</link>.</para>
+</section>
+<anchor xml:id="_classefc_1_1Terminal_1ad8cb9d988b58a3b0d59dd703b47467fa"/><section>
+    <title>set_prompt()</title>
+<indexterm><primary>set_prompt</primary><secondary>efc::Terminal</secondary></indexterm>
+<indexterm><primary>efc::Terminal</primary><secondary>set_prompt</secondary></indexterm>
+<para><computeroutput>void efc::Terminal::set_prompt (const ::std::string prompt)<computeroutput>[inline]</computeroutput>, <computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Function for setting the prompt of the bottom <link linkend="_classefc_1_1Window">Window</link>. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>prompt</entry><entry>
+<para>The prompt as a std::string </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l00377">377</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+<para>
+References <link linkend="_interface_8cpp_source_1l00116">efc::Window::set_title()</link>.</para>
+</section>
+<anchor xml:id="_classefc_1_1Terminal_1ac9e693242036242db200bbbebc3d83e6"/><section>
+    <title>set_rdata()</title>
+<indexterm><primary>set_rdata</primary><secondary>efc::Terminal</secondary></indexterm>
+<indexterm><primary>efc::Terminal</primary><secondary>set_rdata</secondary></indexterm>
+<para><computeroutput>void efc::Terminal::set_rdata (::std::vector&lt;::std::string &gt; data)<computeroutput>[inline]</computeroutput>, <computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Function for setting data vector of the right <link linkend="_classefc_1_1Window">Window</link>. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>data</entry><entry>
+<para>The data as a std::vector of std::string </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l00387">387</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+<para>
+References <link linkend="_interface_8cpp_source_1l00213">efc::OWindow::set_data()</link>.</para>
+</section>
+<anchor xml:id="_classefc_1_1Terminal_1acc6236b69a0d0a2b1c9ae9cb3e6b1056"/><section>
+    <title>set_rtitle()</title>
+<indexterm><primary>set_rtitle</primary><secondary>efc::Terminal</secondary></indexterm>
+<indexterm><primary>efc::Terminal</primary><secondary>set_rtitle</secondary></indexterm>
+<para><computeroutput>void efc::Terminal::set_rtitle (const ::std::string title)<computeroutput>[inline]</computeroutput>, <computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Function for setting the title of the right <link linkend="_classefc_1_1Window">Window</link>. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>title</entry><entry>
+<para>The title as a std::string </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l00372">372</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+<para>
+References <link linkend="_interface_8cpp_source_1l00116">efc::Window::set_title()</link>.</para>
+</section>
+<anchor xml:id="_classefc_1_1Terminal_1ad3b80961a79f1534316d8e57ec4ada30"/><section>
+    <title>swap_active()</title>
+<indexterm><primary>swap_active</primary><secondary>efc::Terminal</secondary></indexterm>
+<indexterm><primary>efc::Terminal</primary><secondary>swap_active</secondary></indexterm>
+<para><computeroutput>void efc::Terminal::swap_active (const unsigned int id)<computeroutput>[inline]</computeroutput>, <computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Swaps the active window to the one matching the provide id. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>id</entry><entry>
+<para>The id of the window as a const unsigned int </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l00433">433</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+src/<link linkend="_interface_8cpp">interface.cpp</link></section>
+</section>

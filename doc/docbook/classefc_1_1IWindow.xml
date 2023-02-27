@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classefc_1_1IWindow" xml:lang="en-US">
+<title>efc::IWindow Class Reference</title>
+<indexterm><primary>efc::IWindow</primary></indexterm>
+<para>
+
+<para><link linkend="_classefc_1_1Window">Window</link> class extension for input. </para>
+ 
+</para>
+Inheritance diagram for efc::IWindow:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classefc_1_1IWindow__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for efc::IWindow:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classefc_1_1IWindow__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classefc_1_1IWindow_1af8bd92992015e0b7f07a726ed2f329e5">IWindow</link> () noexcept</para>
+
+<para>Default constructor. </para>
+</listitem>
+            <listitem><para>const unsigned int <link linkend="_classefc_1_1IWindow_1a84cb0d425e279cd2b15dc2b43cb520d2">get_title_y</link> () const noexcept override</para>
+
+<para>Gets the title y coordinate. </para>
+</listitem>
+            <listitem><para>const unsigned int <link linkend="_classefc_1_1IWindow_1a91e48b892bd02b7c11020fdfc7e7c05d">get_title_x</link> () const noexcept override</para>
+
+<para>Gets the title x coordinate. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_classefc_1_1IWindow_1a373ef8f5d58d8d99852a90f7096cfdef"/><emphasis role="strong">~IWindow</emphasis> () noexcept=default</para>
+
+<para>Default destructor. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_classefc_1_1Window">efc::Window</link>        <itemizedlist>
+            <listitem><para><link linkend="_classefc_1_1Window_1ae5fb6b6600ebc4b528d664e8c6947ab2">Window</link> () noexcept</para>
+
+<para>Generic constructor with default values. </para>
+</listitem>
+            <listitem><para>const char * <link linkend="_classefc_1_1Window_1a933c7e9e67d7423b1facb73a26a9fba3">get_title</link> () const noexcept</para>
+
+<para>Returns the c_str() const char pointer of the title std::string. </para>
+</listitem>
+            <listitem><para>const unsigned int &amp; <link linkend="_classefc_1_1Window_1a433fbcc875c6e134a8c273c46525bca2">get_y</link> () const noexcept</para>
+
+<para>Returns the y coordinate. </para>
+</listitem>
+            <listitem><para>const unsigned int &amp; <link linkend="_classefc_1_1Window_1a1920c8ff02f120a08252797280a3a2aa">get_x</link> () const noexcept</para>
+
+<para>Returns the x coordinate. </para>
+</listitem>
+            <listitem><para>const unsigned int &amp; <link linkend="_classefc_1_1Window_1a0f64ddda75fb64027eaa7b7dd767ec4e">get_height</link> () const noexcept</para>
+
+<para>Returns the height value. </para>
+</listitem>
+            <listitem><para>const unsigned int &amp; <link linkend="_classefc_1_1Window_1a58e0eb74a3b1b20a268dae29d4525dad">get_width</link> () const noexcept</para>
+
+<para>Returns the width value. </para>
+</listitem>
+            <listitem><para>const unsigned int <link linkend="_classefc_1_1Window_1aad12ba19cc558f386a4f2f9e7b6f1acc">get_title_size</link> () const noexcept</para>
+
+<para>Returns the title size. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classefc_1_1Window_1aead8ed85b65db6a0b0c27d34903b8db5">set_title</link> (const ::std::string &amp;&amp;title) noexcept</para>
+
+<para>Sets the title. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classefc_1_1Window_1adb89ea880c531bb3e611378ec1f10f5f">set_coords</link> (const unsigned int <link linkend="_classefc_1_1Window_1a560218b58e4b8e0a87d17d9d51c75ee0">y</link>, const unsigned int x) noexcept</para>
+
+<para>Sets the y and x coordinates. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classefc_1_1Window_1ad9f8b6f349dfe11addce9781a4e32ffb">set_size</link> (const unsigned int h, const unsigned int w) noexcept</para>
+
+<para>Sets the size. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classefc_1_1Window_1a18c9f4d362aa8ae7cd322e038828e4de">set_active</link> (const bool active) noexcept</para>
+
+<para>Sets the active boolean to the provided value. </para>
+</listitem>
+            <listitem><para>virtual const unsigned int <link linkend="_classefc_1_1Window_1a910926d607d7ac88e4d5e6640a52836a">get_title_y</link> () const noexcept</para>
+
+<para>Gets the title y coordinate. </para>
+</listitem>
+            <listitem><para>virtual const unsigned int <link linkend="_classefc_1_1Window_1a2e177d9c72e6f7fcf29371df5bc08bea">get_title_x</link> () const noexcept</para>
+
+<para>Gets the title x coordinate. </para>
+</listitem>
+            <listitem><para>const bool <link linkend="_classefc_1_1Window_1a2f46320775d22ce67fdbacf50772fd02">needs_update</link> () noexcept</para>
+
+<para>Gets if the window needs a redraw. </para>
+</listitem>
+            <listitem><para>const bool <link linkend="_classefc_1_1Window_1a64f20e7199e6a9e85c1db282cd820ad6">is_active</link> () const noexcept</para>
+
+<para>Gets if the window is active/focused. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classefc_1_1Window_1a2feeecd90c7c634a15c4e84a3921ee14">place</link> ()</para>
+
+<para>Deletes the WINDOW pointer and creates a new WINDOW at the class coordinates. </para>
+</listitem>
+            <listitem><para>virtual <link linkend="_classefc_1_1Window_1ac8ec94fb12450e4fc37ea2adc30f81f8">~Window</link> () noexcept</para>
+
+<para>Calls curses delwin() function on the curses WINDOW object and returns. </para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Public Attributes inherited from <link linkend="_classefc_1_1Window">efc::Window</link>        <itemizedlist>
+            <listitem><para>WINDOW * <link linkend="_classefc_1_1Window_1ab18720ed62461884b759594ed60fb824">o</link></para>
+
+<para>Pointer to the curses WINDOW object. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Protected Attributes inherited from <link linkend="_classefc_1_1Window">efc::Window</link>        <itemizedlist>
+            <listitem><para>bool <link linkend="_classefc_1_1Window_1add171873b1a7a5c5e1263e8b3a61b6f9">c</link></para>
+
+<para>Two booleans: c for knowing if contents changed, and a for knowing if window is active. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_classefc_1_1Window_1aea9ca4761c6305661f459b77f9e95f87">a</link></para>
+</listitem>
+            <listitem><para>::std::string <link linkend="_classefc_1_1Window_1a7dc5e87a2ff69618b81041809b052e70">t</link></para>
+
+<para>String t: window title. </para>
+</listitem>
+            <listitem><para>unsigned int <link linkend="_classefc_1_1Window_1a560218b58e4b8e0a87d17d9d51c75ee0">y</link></para>
+
+<para>Four unsigned ints: x and y for the coordinates relative to the console window, w and h for the size of the window. </para>
+</listitem>
+            <listitem><para>unsigned int <link linkend="_classefc_1_1Window_1a07e3095c7f4d7320c008d5fd67692b61">x</link></para>
+</listitem>
+            <listitem><para>unsigned int <link linkend="_classefc_1_1Window_1a282f9857345806e5232bbbb0bc88c60c">h</link></para>
+</listitem>
+            <listitem><para>unsigned int <link linkend="_classefc_1_1Window_1ac189a55138f75bc910051d1598957018">w</link></para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para><link linkend="_classefc_1_1Window">Window</link> class extension for input. </para>
+
+
+
+<para><link linkend="_classefc_1_1Window">Window</link> class implementation that focuses on showin data. </para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l00233">233</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classefc_1_1IWindow_1af8bd92992015e0b7f07a726ed2f329e5"/><section>
+    <title>IWindow()</title>
+<indexterm><primary>IWindow</primary><secondary>efc::IWindow</secondary></indexterm>
+<indexterm><primary>efc::IWindow</primary><secondary>IWindow</secondary></indexterm>
+<para><computeroutput>efc::IWindow::IWindow ( )<computeroutput>[inline]</computeroutput>, <computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Default constructor. </para>
+</para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l00238">238</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classefc_1_1IWindow_1a91e48b892bd02b7c11020fdfc7e7c05d"/><section>
+    <title>get_title_x()</title>
+<indexterm><primary>get_title_x</primary><secondary>efc::IWindow</secondary></indexterm>
+<indexterm><primary>efc::IWindow</primary><secondary>get_title_x</secondary></indexterm>
+<para><computeroutput>const unsigned int efc::IWindow::get_title_x ( ) const<computeroutput>[inline]</computeroutput>, <computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput>, <computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Gets the title x coordinate. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>(const unsigned int) The title x coordinate as a const unsigned int </para>
+</formalpara>
+</para>
+<para>
+Reimplemented from <link linkend="_classefc_1_1Window_1a2e177d9c72e6f7fcf29371df5bc08bea">efc::Window</link>.</para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l00248">248</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<anchor xml:id="_classefc_1_1IWindow_1a84cb0d425e279cd2b15dc2b43cb520d2"/><section>
+    <title>get_title_y()</title>
+<indexterm><primary>get_title_y</primary><secondary>efc::IWindow</secondary></indexterm>
+<indexterm><primary>efc::IWindow</primary><secondary>get_title_y</secondary></indexterm>
+<para><computeroutput>const unsigned int efc::IWindow::get_title_y ( ) const<computeroutput>[inline]</computeroutput>, <computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput>, <computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+
+<para>Gets the title y coordinate. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>(const unsigned int) The title y coordinate as a const unsigned int </para>
+</formalpara>
+</para>
+<para>
+Reimplemented from <link linkend="_classefc_1_1Window_1a910926d607d7ac88e4d5e6640a52836a">efc::Window</link>.</para>
+<para>
+Definition at line <link linkend="_interface_8cpp_source_1l00243">243</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+src/<link linkend="_interface_8cpp">interface.cpp</link></section>
+</section>
