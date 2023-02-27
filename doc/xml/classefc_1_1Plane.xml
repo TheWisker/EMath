@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="463" column="17" bodyfile="src/interface.cpp" bodystart="463" bodyend="-1"/>
+        <location file="src/interface.cpp" line="457" column="17" bodyfile="src/interface.cpp" bodystart="457" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classefc_1_1Plane_1a4277e9297d50cca99d7b9dc805afe9da" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="463" column="22" bodyfile="src/interface.cpp" bodystart="463" bodyend="-1"/>
+        <location file="src/interface.cpp" line="457" column="22" bodyfile="src/interface.cpp" bodystart="457" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classefc_1_1Plane_1a40f8caf029cbb6dd9791fb6549f5c371" prot="private" static="no" mutable="no">
         <type>const int</type>
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="467" column="23" bodyfile="src/interface.cpp" bodystart="467" bodyend="-1"/>
+        <location file="src/interface.cpp" line="461" column="23" bodyfile="src/interface.cpp" bodystart="461" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classefc_1_1Plane_1ad99f943f9e7003cc993844daca1e66b5" prot="private" static="no" mutable="no">
         <type>const int</type>
@@ -59,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="467" column="29" bodyfile="src/interface.cpp" bodystart="467" bodyend="-1"/>
+        <location file="src/interface.cpp" line="461" column="29" bodyfile="src/interface.cpp" bodystart="461" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classefc_1_1Plane_1a56f1e4d70f873583d71338769c846281" prot="private" static="no" mutable="no">
         <type>unsigned int</type>
@@ -74,7 +74,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="471" column="26" bodyfile="src/interface.cpp" bodystart="471" bodyend="-1"/>
+        <location file="src/interface.cpp" line="465" column="26" bodyfile="src/interface.cpp" bodystart="465" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classefc_1_1Plane_1af3b69a0b97fe039ba70edc61f390e1c5" prot="private" static="no" mutable="no">
         <type>unsigned int</type>
@@ -88,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="471" column="33" bodyfile="src/interface.cpp" bodystart="471" bodyend="-1"/>
+        <location file="src/interface.cpp" line="465" column="33" bodyfile="src/interface.cpp" bodystart="465" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classefc_1_1Plane_1aa339c940ad9f49d1e5e556d24117aab9" prot="private" static="no" mutable="no">
         <type><ref refid="classemth_1_1Polynomial" kindref="compound">::emth::Polynomial</ref></type>
@@ -103,7 +103,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="475" column="32" bodyfile="src/interface.cpp" bodystart="475" bodyend="-1"/>
+        <location file="src/interface.cpp" line="469" column="32" bodyfile="src/interface.cpp" bodystart="469" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classefc_1_1Plane_1a328b55648088128e29e01ee42cd600fd" prot="private" static="no" mutable="no">
         <type>::sf::Font</type>
@@ -118,7 +118,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="479" column="24" bodyfile="src/interface.cpp" bodystart="479" bodyend="-1"/>
+        <location file="src/interface.cpp" line="473" column="24" bodyfile="src/interface.cpp" bodystart="473" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classefc_1_1Plane_1ac6ea3d776ca07561a4d7ba3f2c32f878" prot="private" static="no" mutable="no">
         <type>::sf::Text</type>
@@ -133,7 +133,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="483" column="24" bodyfile="src/interface.cpp" bodystart="483" bodyend="-1"/>
+        <location file="src/interface.cpp" line="477" column="24" bodyfile="src/interface.cpp" bodystart="477" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classefc_1_1Plane_1aa212846ffd8e77176560d4bf9e794eec" prot="private" static="no" mutable="no">
         <type>::sf::VertexArray</type>
@@ -148,7 +148,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="487" column="31" bodyfile="src/interface.cpp" bodystart="487" bodyend="-1"/>
+        <location file="src/interface.cpp" line="481" column="31" bodyfile="src/interface.cpp" bodystart="481" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classefc_1_1Plane_1a781ba0c9b6b13978ddc6ebdf0745001a" prot="private" static="no" mutable="no">
         <type>::sf::RenderWindow</type>
@@ -163,7 +163,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="491" column="32" bodyfile="src/interface.cpp" bodystart="491" bodyend="-1"/>
+        <location file="src/interface.cpp" line="485" column="32" bodyfile="src/interface.cpp" bodystart="485" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classefc_1_1Plane_1a9d2dc87d59fe49cbb266c502633f9f03" prot="private" static="no" mutable="no">
         <type>::sf::RectangleShape</type>
@@ -178,7 +178,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="495" column="34" bodyfile="src/interface.cpp" bodystart="495" bodyend="-1"/>
+        <location file="src/interface.cpp" line="489" column="34" bodyfile="src/interface.cpp" bodystart="489" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classefc_1_1Plane_1a04c414305224c91390311aa60c9cf7b8" prot="private" static="no" mutable="no">
         <type>::sf::CircleShape</type>
@@ -193,7 +193,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="499" column="31" bodyfile="src/interface.cpp" bodystart="499" bodyend="-1"/>
+        <location file="src/interface.cpp" line="493" column="31" bodyfile="src/interface.cpp" bodystart="493" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classefc_1_1Plane_1ab18ac66ecb99594953163e735c89d308" prot="private" static="no" mutable="no">
         <type>::sf::VertexArray</type>
@@ -208,7 +208,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="503" column="31" bodyfile="src/interface.cpp" bodystart="503" bodyend="-1"/>
+        <location file="src/interface.cpp" line="497" column="31" bodyfile="src/interface.cpp" bodystart="497" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -225,7 +225,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="507" column="18" bodyfile="src/interface.cpp" bodystart="507" bodyend="515"/>
+        <location file="src/interface.cpp" line="501" column="18" bodyfile="src/interface.cpp" bodystart="501" bodyend="509"/>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Plane_1ab3444096cc5192892c611a9b701aea57" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -240,7 +240,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="519" column="18" bodyfile="src/interface.cpp" bodystart="519" bodyend="529"/>
+        <location file="src/interface.cpp" line="513" column="18" bodyfile="src/interface.cpp" bodystart="513" bodyend="523"/>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Plane_1a9d8c3d6344387936a54378f80ea64a5f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -269,7 +269,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="534" column="18" bodyfile="src/interface.cpp" bodystart="534" bodyend="539"/>
+        <location file="src/interface.cpp" line="528" column="18" bodyfile="src/interface.cpp" bodystart="528" bodyend="533"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-static-func">
@@ -302,7 +302,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="545" column="41" bodyfile="src/interface.cpp" bodystart="545" bodyend="545"/>
+        <location file="src/interface.cpp" line="539" column="41" bodyfile="src/interface.cpp" bodystart="539" bodyend="539"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -357,7 +357,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="553" column="13" bodyfile="src/interface.cpp" bodystart="553" bodyend="560"/>
+        <location file="src/interface.cpp" line="547" column="13" bodyfile="src/interface.cpp" bodystart="547" bodyend="554"/>
         <references refid="font_8h_1abee0e1ab69379ae42c9c1ddd2a3ce67e" compoundref="font_8h" startline="12">ROBOTO_BOLD</references>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Plane_1a972b3c48d4213d433dc4b3e99ded3727" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -373,7 +373,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="564" column="18" bodyfile="src/interface.cpp" bodystart="564" bodyend="588"/>
+        <location file="src/interface.cpp" line="558" column="18" bodyfile="src/interface.cpp" bodystart="558" bodyend="582"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -382,7 +382,7 @@
     <detaileddescription>
 <para>Provides the capability to run multiple Planes in different threads in paralell </para>
     </detaileddescription>
-    <location file="src/interface.cpp" line="458" column="5" bodyfile="src/interface.cpp" bodystart="458" bodyend="589"/>
+    <location file="src/interface.cpp" line="452" column="5" bodyfile="src/interface.cpp" bodystart="452" bodyend="583"/>
     <listofallmembers>
       <member refid="classefc_1_1Plane_1a40f8caf029cbb6dd9791fb6549f5c371" prot="private" virt="non-virtual"><scope>efc::Plane</scope><name>_xogn</name></member>
       <member refid="classefc_1_1Plane_1ad99f943f9e7003cc993844daca1e66b5" prot="private" virt="non-virtual"><scope>efc::Plane</scope><name>_yogn</name></member>

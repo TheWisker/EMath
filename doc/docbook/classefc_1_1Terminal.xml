@@ -95,7 +95,7 @@ Definition at line <link linkend="_interface_8cpp_source_1l00259">259</link> of 
 <para>Default destructor, it deletes the <link linkend="_classefc_1_1Window">Window</link> pointers, sets the singleton instance to nullptr, stops the signal listener and stops curses. </para>
 </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l00444">444</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00438">438</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 </section>
 </section>
 <section>
@@ -131,7 +131,7 @@ Parameters</title>
                 </formalpara>
                 </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l00422">422</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00416">416</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 <para>
 References <link linkend="_interface_8cpp_source_1l00086">efc::Window::get_title()</link>, and <link linkend="_interface_8cpp_source_1l00077">efc::Window::o</link>.</para>
 </section>
@@ -144,7 +144,7 @@ References <link linkend="_interface_8cpp_source_1l00086">efc::Window::get_title
 <para>Function for flushin all the <link linkend="_classefc_1_1Terminal">Terminal</link>&apos;s Windows. </para>
 </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l00362">362</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00347">347</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 <para>
 References <link linkend="_interface_8cpp_source_1l00077">efc::Window::o</link>.</para>
 </section>
@@ -163,7 +163,7 @@ References <link linkend="_interface_8cpp_source_1l00077">efc::Window::o</link>.
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l00397">397</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00391">391</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 <para>
 References <link linkend="_interface_8cpp_source_1l00077">efc::Window::o</link>.</para>
 </section>
@@ -182,7 +182,7 @@ References <link linkend="_interface_8cpp_source_1l00077">efc::Window::o</link>.
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l00392">392</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00377">377</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 <para>
 References <link linkend="_interface_8cpp_source_1l00077">efc::Window::o</link>.</para>
 </section>
@@ -201,7 +201,7 @@ References <link linkend="_interface_8cpp_source_1l00077">efc::Window::o</link>.
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l00355">355</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00340">340</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 </section>
 <anchor xml:id="_classefc_1_1Terminal_1ab06e104fb3af3517e2e0413e26accd9a"/><section>
     <title>scroll_down()</title>
@@ -234,7 +234,7 @@ Parameters</title>
                 </formalpara>
                 </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l00402">402</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00396">396</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 <para>
 References <link linkend="_interface_8cpp_source_1l00221">efc::OWindow::scroll_down()</link>.</para>
 </section>
@@ -269,7 +269,7 @@ Parameters</title>
                 </formalpara>
                 </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l00412">412</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00406">406</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 <para>
 References <link linkend="_interface_8cpp_source_1l00217">efc::OWindow::scroll_up()</link>.</para>
 </section>
@@ -304,7 +304,7 @@ Parameters</title>
                 </formalpara>
                 </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l00382">382</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00367">367</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 <para>
 References <link linkend="_interface_8cpp_source_1l00213">efc::OWindow::set_data()</link>.</para>
 </section>
@@ -339,7 +339,7 @@ Parameters</title>
                 </formalpara>
                 </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l00367">367</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00352">352</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 <para>
 References <link linkend="_interface_8cpp_source_1l00116">efc::Window::set_title()</link>.</para>
 </section>
@@ -374,7 +374,7 @@ Parameters</title>
                 </formalpara>
                 </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l00377">377</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00362">362</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 <para>
 References <link linkend="_interface_8cpp_source_1l00116">efc::Window::set_title()</link>.</para>
 </section>
@@ -409,7 +409,7 @@ Parameters</title>
                 </formalpara>
                 </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l00387">387</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00372">372</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 <para>
 References <link linkend="_interface_8cpp_source_1l00213">efc::OWindow::set_data()</link>.</para>
 </section>
@@ -444,7 +444,7 @@ Parameters</title>
                 </formalpara>
                 </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l00372">372</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00357">357</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 <para>
 References <link linkend="_interface_8cpp_source_1l00116">efc::Window::set_title()</link>.</para>
 </section>
@@ -479,7 +479,7 @@ Parameters</title>
                 </formalpara>
                 </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l00433">433</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00427">427</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 </section>
 <para>
 The documentation for this class was generated from the following file:</para>

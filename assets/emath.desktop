@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=EMath
+TryExec=/usr/bin/emath_cli_s
+Exec=/usr/bin/emath_cli_d
+Icon=/usr/share/icons/emath.png
+Terminal=true

@@ -31,7 +31,7 @@
 
 <para>Struct for representing a token as a type and a value. </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l00680">680</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00674">674</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 </section>
 <section>
 <title>Member Data Documentation</title>
@@ -40,14 +40,14 @@ Definition at line <link linkend="_interface_8cpp_source_1l00680">680</link> of 
 <indexterm><primary>c</primary><secondary>efc::Token</secondary></indexterm>
 <indexterm><primary>efc::Token</primary><secondary>c</secondary></indexterm>
 <para><computeroutput>char efc::Token::c</computeroutput></para><para>
-Definition at line <link linkend="_interface_8cpp_source_1l00689">689</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00683">683</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 </section>
 <anchor xml:id="_structefc_1_1Token_1a8fbcc67cb189f58f5e1a6af27e059c2b"/><section>
     <title>n</title>
 <indexterm><primary>n</primary><secondary>efc::Token</secondary></indexterm>
 <indexterm><primary>efc::Token</primary><secondary>n</secondary></indexterm>
 <para><computeroutput>int efc::Token::n</computeroutput></para><para>
-Definition at line <link linkend="_interface_8cpp_source_1l00689">689</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00683">683</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 </section>
 <anchor xml:id="_structefc_1_1Token_1abd56361d2f52a2c345e106f8e2ec4197"/><section>
     <title>type</title>
@@ -58,7 +58,7 @@ Definition at line <link linkend="_interface_8cpp_source_1l00689">689</link> of 
 <para>The token&apos;s type as a TokenType. </para>
 </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l00684">684</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00678">678</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 </section>
 <para>
 The documentation for this struct was generated from the following file:</para>

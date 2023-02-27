@@ -169,7 +169,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="339" column="32" bodyfile="src/interface.cpp" bodystart="339" bodyend="349"/>
+        <location file="src/interface.cpp" line="327" column="32" bodyfile="src/interface.cpp" bodystart="327" bodyend="334"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -189,7 +189,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="355" column="29" bodyfile="src/interface.cpp" bodystart="355" bodyend="358"/>
+        <location file="src/interface.cpp" line="340" column="29" bodyfile="src/interface.cpp" bodystart="340" bodyend="343"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -206,7 +206,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="362" column="25" bodyfile="src/interface.cpp" bodystart="362" bodyend="362"/>
+        <location file="src/interface.cpp" line="347" column="25" bodyfile="src/interface.cpp" bodystart="347" bodyend="347"/>
         <references refid="classefc_1_1Window_1ab18720ed62461884b759594ed60fb824" compoundref="interface_8cpp" startline="77">efc::Window::o</references>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Terminal_1a9103a252f46463cd09adc2bb2436fa30" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
@@ -236,7 +236,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="367" column="18" bodyfile="src/interface.cpp" bodystart="367" bodyend="367"/>
+        <location file="src/interface.cpp" line="352" column="18" bodyfile="src/interface.cpp" bodystart="352" bodyend="352"/>
         <references refid="classefc_1_1Window_1aead8ed85b65db6a0b0c27d34903b8db5" compoundref="interface_8cpp" startline="116" endline="116">efc::Window::set_title</references>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Terminal_1acc6236b69a0d0a2b1c9ae9cb3e6b1056" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
@@ -266,7 +266,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="372" column="18" bodyfile="src/interface.cpp" bodystart="372" bodyend="372"/>
+        <location file="src/interface.cpp" line="357" column="18" bodyfile="src/interface.cpp" bodystart="357" bodyend="357"/>
         <references refid="classefc_1_1Window_1aead8ed85b65db6a0b0c27d34903b8db5" compoundref="interface_8cpp" startline="116" endline="116">efc::Window::set_title</references>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Terminal_1ad8cb9d988b58a3b0d59dd703b47467fa" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
@@ -296,7 +296,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="377" column="18" bodyfile="src/interface.cpp" bodystart="377" bodyend="377"/>
+        <location file="src/interface.cpp" line="362" column="18" bodyfile="src/interface.cpp" bodystart="362" bodyend="362"/>
         <references refid="classefc_1_1Window_1aead8ed85b65db6a0b0c27d34903b8db5" compoundref="interface_8cpp" startline="116" endline="116">efc::Window::set_title</references>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Terminal_1aa705ec16ca8fcc9549b90793c58b4d83" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
@@ -326,7 +326,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="382" column="18" bodyfile="src/interface.cpp" bodystart="382" bodyend="382"/>
+        <location file="src/interface.cpp" line="367" column="18" bodyfile="src/interface.cpp" bodystart="367" bodyend="367"/>
         <references refid="classefc_1_1OWindow_1ae8e1bfbd75a83c820e825a73765a5691" compoundref="interface_8cpp" startline="213" endline="213">efc::OWindow::set_data</references>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Terminal_1ac9e693242036242db200bbbebc3d83e6" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
@@ -356,7 +356,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="387" column="18" bodyfile="src/interface.cpp" bodystart="387" bodyend="387"/>
+        <location file="src/interface.cpp" line="372" column="18" bodyfile="src/interface.cpp" bodystart="372" bodyend="372"/>
         <references refid="classefc_1_1OWindow_1ae8e1bfbd75a83c820e825a73765a5691" compoundref="interface_8cpp" startline="213" endline="213">efc::OWindow::set_data</references>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Terminal_1a966affe71a3fd3c461a907e41a609cc8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
@@ -375,7 +375,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="392" column="23" bodyfile="src/interface.cpp" bodystart="392" bodyend="392"/>
+        <location file="src/interface.cpp" line="377" column="23" bodyfile="src/interface.cpp" bodystart="377" bodyend="386"/>
         <references refid="classefc_1_1Window_1ab18720ed62461884b759594ed60fb824" compoundref="interface_8cpp" startline="77">efc::Window::o</references>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Terminal_1a49bb9b2d0fc46335d4426c79b0b1f781" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
@@ -394,7 +394,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="397" column="33" bodyfile="src/interface.cpp" bodystart="397" bodyend="397"/>
+        <location file="src/interface.cpp" line="391" column="33" bodyfile="src/interface.cpp" bodystart="391" bodyend="391"/>
         <references refid="classefc_1_1Window_1ab18720ed62461884b759594ed60fb824" compoundref="interface_8cpp" startline="77">efc::Window::o</references>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Terminal_1ab06e104fb3af3517e2e0413e26accd9a" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
@@ -424,7 +424,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="402" column="18" bodyfile="src/interface.cpp" bodystart="402" bodyend="407"/>
+        <location file="src/interface.cpp" line="396" column="18" bodyfile="src/interface.cpp" bodystart="396" bodyend="401"/>
         <references refid="classefc_1_1OWindow_1a360df1d628255154c3cefce86d88499d" compoundref="interface_8cpp" startline="221" endline="221">efc::OWindow::scroll_down</references>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Terminal_1a2b2ddbc6125d3a7ffa8101e161066034" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
@@ -454,7 +454,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="412" column="18" bodyfile="src/interface.cpp" bodystart="412" bodyend="417"/>
+        <location file="src/interface.cpp" line="406" column="18" bodyfile="src/interface.cpp" bodystart="406" bodyend="411"/>
         <references refid="classefc_1_1OWindow_1aac80548173360aa9c8336b60330a14a8" compoundref="interface_8cpp" startline="217" endline="217">efc::OWindow::scroll_up</references>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Terminal_1ac8d0de8abed39f84908622187f5cb95e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -484,7 +484,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="422" column="18" bodyfile="src/interface.cpp" bodystart="422" bodyend="428"/>
+        <location file="src/interface.cpp" line="416" column="18" bodyfile="src/interface.cpp" bodystart="416" bodyend="422"/>
         <references refid="classefc_1_1Window_1a933c7e9e67d7423b1facb73a26a9fba3" compoundref="interface_8cpp" startline="86" endline="86">efc::Window::get_title</references>
         <references refid="classefc_1_1Window_1ab18720ed62461884b759594ed60fb824" compoundref="interface_8cpp" startline="77">efc::Window::o</references>
       </memberdef>
@@ -515,7 +515,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="433" column="18" bodyfile="src/interface.cpp" bodystart="433" bodyend="440"/>
+        <location file="src/interface.cpp" line="427" column="18" bodyfile="src/interface.cpp" bodystart="427" bodyend="434"/>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Terminal_1a64a6c41cf5396f6a5ab91a75e44faac6" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type></type>
@@ -530,7 +530,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="444" column="13" bodyfile="src/interface.cpp" bodystart="444" bodyend="451"/>
+        <location file="src/interface.cpp" line="438" column="13" bodyfile="src/interface.cpp" bodystart="438" bodyend="445"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -539,7 +539,7 @@
     <detaileddescription>
 <para>It works as a singleton. Not generic in any way. </para>
     </detaileddescription>
-    <location file="src/interface.cpp" line="259" column="5" bodyfile="src/interface.cpp" bodystart="259" bodyend="452"/>
+    <location file="src/interface.cpp" line="259" column="5" bodyfile="src/interface.cpp" bodystart="259" bodyend="446"/>
     <listofallmembers>
       <member refid="classefc_1_1Terminal_1abf489ab89aa473897bc808d726960b8e" prot="private" virt="non-virtual"><scope>efc::Terminal</scope><name>bwin</name></member>
       <member refid="classefc_1_1Terminal_1a985ca5779ab03587d9c51cc6e24ecefa" prot="private" virt="non-virtual"><scope>efc::Terminal</scope><name>cbounds</name></member>

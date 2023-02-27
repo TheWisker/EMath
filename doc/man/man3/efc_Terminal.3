@@ -85,7 +85,7 @@ Definition at line \fB259\fP of file \fBinterface\&.cpp\fP\&.
 .PP
 Default destructor, it deletes the \fBWindow\fP pointers, sets the singleton instance to nullptr, stops the signal listener and stops curses\&. 
 .PP
-Definition at line \fB444\fP of file \fBinterface\&.cpp\fP\&.
+Definition at line \fB438\fP of file \fBinterface\&.cpp\fP\&.
 .SH "Member Function Documentation"
 .PP 
 .SS "void efc::Terminal::echo_result (const ::std::string & result)\fC [inline]\fP"
@@ -100,7 +100,7 @@ Echoes the provided result to the prompt and waits for a key press\&.
 .PP
 
 .PP
-Definition at line \fB422\fP of file \fBinterface\&.cpp\fP\&.
+Definition at line \fB416\fP of file \fBinterface\&.cpp\fP\&.
 .PP
 References \fBefc::Window::get_title()\fP, and \fBefc::Window::o\fP\&.
 .SS "void efc::Terminal::flush ()\fC [inline]\fP"
@@ -108,7 +108,7 @@ References \fBefc::Window::get_title()\fP, and \fBefc::Window::o\fP\&.
 .PP
 Function for flushin all the \fBTerminal\fP's Windows\&. 
 .PP
-Definition at line \fB362\fP of file \fBinterface\&.cpp\fP\&.
+Definition at line \fB347\fP of file \fBinterface\&.cpp\fP\&.
 .PP
 References \fBefc::Window::o\fP\&.
 .SS "const ::std::string efc::Terminal::get_long_input () const\fC [inline]\fP"
@@ -123,7 +123,7 @@ Function for getting long single string input from the \fBTerminal\fP\&.
 .PP
 
 .PP
-Definition at line \fB397\fP of file \fBinterface\&.cpp\fP\&.
+Definition at line \fB391\fP of file \fBinterface\&.cpp\fP\&.
 .PP
 References \fBefc::Window::o\fP\&.
 .SS "const int efc::Terminal::get_short_input () const\fC [inline]\fP"
@@ -138,7 +138,7 @@ Function for getting short single char input from the \fBTerminal\fP\&.
 .PP
 
 .PP
-Definition at line \fB392\fP of file \fBinterface\&.cpp\fP\&.
+Definition at line \fB377\fP of file \fBinterface\&.cpp\fP\&.
 .PP
 References \fBefc::Window::o\fP\&.
 .SS "static \fBTerminal\fP * efc::Terminal::init ()\fC [inline]\fP, \fC [static]\fP, \fC [noexcept]\fP"
@@ -153,7 +153,7 @@ Static function for building the singleton static instance\&.
 .PP
 
 .PP
-Definition at line \fB355\fP of file \fBinterface\&.cpp\fP\&.
+Definition at line \fB340\fP of file \fBinterface\&.cpp\fP\&.
 .SS "void efc::Terminal::scroll_down (const unsigned int id)\fC [inline]\fP, \fC [noexcept]\fP"
 
 .PP
@@ -166,7 +166,7 @@ Function for scrolling down the left or right window depending on the provided i
 .PP
 
 .PP
-Definition at line \fB402\fP of file \fBinterface\&.cpp\fP\&.
+Definition at line \fB396\fP of file \fBinterface\&.cpp\fP\&.
 .PP
 References \fBefc::OWindow::scroll_down()\fP\&.
 .SS "void efc::Terminal::scroll_up (const unsigned int id)\fC [inline]\fP, \fC [noexcept]\fP"
@@ -181,7 +181,7 @@ Function for scrolling up the left or right window depending on the provided id\
 .PP
 
 .PP
-Definition at line \fB412\fP of file \fBinterface\&.cpp\fP\&.
+Definition at line \fB406\fP of file \fBinterface\&.cpp\fP\&.
 .PP
 References \fBefc::OWindow::scroll_up()\fP\&.
 .SS "void efc::Terminal::set_ldata (::std::vector<::std::string > data)\fC [inline]\fP, \fC [noexcept]\fP"
@@ -196,7 +196,7 @@ Function for setting data vector of the left \fBWindow\fP\&.
 .PP
 
 .PP
-Definition at line \fB382\fP of file \fBinterface\&.cpp\fP\&.
+Definition at line \fB367\fP of file \fBinterface\&.cpp\fP\&.
 .PP
 References \fBefc::OWindow::set_data()\fP\&.
 .SS "void efc::Terminal::set_ltitle (const ::std::string title)\fC [inline]\fP, \fC [noexcept]\fP"
@@ -211,7 +211,7 @@ Function for setting the title of the left \fBWindow\fP\&.
 .PP
 
 .PP
-Definition at line \fB367\fP of file \fBinterface\&.cpp\fP\&.
+Definition at line \fB352\fP of file \fBinterface\&.cpp\fP\&.
 .PP
 References \fBefc::Window::set_title()\fP\&.
 .SS "void efc::Terminal::set_prompt (const ::std::string prompt)\fC [inline]\fP, \fC [noexcept]\fP"
@@ -226,7 +226,7 @@ Function for setting the prompt of the bottom \fBWindow\fP\&.
 .PP
 
 .PP
-Definition at line \fB377\fP of file \fBinterface\&.cpp\fP\&.
+Definition at line \fB362\fP of file \fBinterface\&.cpp\fP\&.
 .PP
 References \fBefc::Window::set_title()\fP\&.
 .SS "void efc::Terminal::set_rdata (::std::vector<::std::string > data)\fC [inline]\fP, \fC [noexcept]\fP"
@@ -241,7 +241,7 @@ Function for setting data vector of the right \fBWindow\fP\&.
 .PP
 
 .PP
-Definition at line \fB387\fP of file \fBinterface\&.cpp\fP\&.
+Definition at line \fB372\fP of file \fBinterface\&.cpp\fP\&.
 .PP
 References \fBefc::OWindow::set_data()\fP\&.
 .SS "void efc::Terminal::set_rtitle (const ::std::string title)\fC [inline]\fP, \fC [noexcept]\fP"
@@ -256,7 +256,7 @@ Function for setting the title of the right \fBWindow\fP\&.
 .PP
 
 .PP
-Definition at line \fB372\fP of file \fBinterface\&.cpp\fP\&.
+Definition at line \fB357\fP of file \fBinterface\&.cpp\fP\&.
 .PP
 References \fBefc::Window::set_title()\fP\&.
 .SS "void efc::Terminal::swap_active (const unsigned int id)\fC [inline]\fP, \fC [noexcept]\fP"
@@ -271,7 +271,7 @@ Swaps the active window to the one matching the provide id\&.
 .PP
 
 .PP
-Definition at line \fB433\fP of file \fBinterface\&.cpp\fP\&.
+Definition at line \fB427\fP of file \fBinterface\&.cpp\fP\&.
 
 .SH "Author"
 .PP 

@@ -29,7 +29,7 @@
 
 <para>Provides the capability to run multiple Planes in different threads in paralell </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l00458">458</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00452">452</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
@@ -74,7 +74,7 @@ Parameters</title>
                 </formalpara>
                 </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l00553">553</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00547">547</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 <para>
 References <link linkend="_font_8h_source_1l00012">ROBOTO_BOLD</link>.</para>
 </section>
@@ -90,7 +90,7 @@ References <link linkend="_font_8h_source_1l00012">ROBOTO_BOLD</link>.</para>
 <para>Runs the main application loop, processing events. </para>
 </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l00564">564</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00558">558</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 </section>
 <para>
 The documentation for this class was generated from the following file:</para>

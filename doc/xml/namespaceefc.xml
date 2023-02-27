@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="650" column="5" bodyfile="src/interface.cpp" bodystart="650" bodyend="675"/>
+        <location file="src/interface.cpp" line="644" column="5" bodyfile="src/interface.cpp" bodystart="644" bodyend="669"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

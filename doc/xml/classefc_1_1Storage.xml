@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="600" column="33" bodyfile="src/interface.cpp" bodystart="600" bodyend="-1"/>
+        <location file="src/interface.cpp" line="594" column="33" bodyfile="src/interface.cpp" bodystart="594" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="606" column="13" bodyfile="src/interface.cpp" bodystart="606" bodyend="606"/>
+        <location file="src/interface.cpp" line="600" column="13" bodyfile="src/interface.cpp" bodystart="600" bodyend="600"/>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Storage_1a62ca8189455b39656aa25531c3875cbd" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>const ::std::string</type>
@@ -65,7 +65,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="611" column="33" bodyfile="src/interface.cpp" bodystart="611" bodyend="618"/>
+        <location file="src/interface.cpp" line="605" column="33" bodyfile="src/interface.cpp" bodystart="605" bodyend="612"/>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Storage_1af2c8369dcb906c07867a931387659788" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>const int</type>
@@ -96,7 +96,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="624" column="23" bodyfile="src/interface.cpp" bodystart="624" bodyend="629"/>
+        <location file="src/interface.cpp" line="618" column="23" bodyfile="src/interface.cpp" bodystart="618" bodyend="623"/>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Storage_1ac141ea203205c34ebd653682d88b7e2c" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>bool</type>
@@ -114,7 +114,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="634" column="18" bodyfile="src/interface.cpp" bodystart="634" bodyend="640"/>
+        <location file="src/interface.cpp" line="628" column="18" bodyfile="src/interface.cpp" bodystart="628" bodyend="634"/>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Storage_1a5d83512b8daaf9e2cb188f877cb7bb5b" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type></type>
@@ -129,7 +129,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="644" column="13"/>
+        <location file="src/interface.cpp" line="638" column="13"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -138,7 +138,7 @@
     <detaileddescription>
 <para>Provides some functions to read and write to a filename saved in a class variable </para>
     </detaileddescription>
-    <location file="src/interface.cpp" line="595" column="5" bodyfile="src/interface.cpp" bodystart="595" bodyend="645"/>
+    <location file="src/interface.cpp" line="589" column="5" bodyfile="src/interface.cpp" bodystart="589" bodyend="639"/>
     <listofallmembers>
       <member refid="classefc_1_1Storage_1ac141ea203205c34ebd653682d88b7e2c" prot="public" virt="non-virtual"><scope>efc::Storage</scope><name>exists</name></member>
       <member refid="classefc_1_1Storage_1a70bb36f639d31d0341b17fd262ff0215" prot="private" virt="non-virtual"><scope>efc::Storage</scope><name>filename</name></member>

@@ -41,7 +41,7 @@
 
 <para>Provides some functions to read and write to a filename saved in a class variable </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l00595">595</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00589">589</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
@@ -76,7 +76,7 @@ Parameters</title>
                 </formalpara>
                 </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l00606">606</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00600">600</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 </section>
 </section>
 <section>
@@ -96,7 +96,7 @@ Definition at line <link linkend="_interface_8cpp_source_1l00606">606</link> of 
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l00634">634</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00628">628</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 </section>
 <anchor xml:id="_classefc_1_1Storage_1a62ca8189455b39656aa25531c3875cbd"/><section>
     <title>read()</title>
@@ -113,7 +113,7 @@ Definition at line <link linkend="_interface_8cpp_source_1l00634">634</link> of 
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l00611">611</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00605">605</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 </section>
 <anchor xml:id="_classefc_1_1Storage_1af2c8369dcb906c07867a931387659788"/><section>
     <title>write()</title>
@@ -150,7 +150,7 @@ Parameters</title>
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l00624">624</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00618">618</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 </section>
 <para>
 The documentation for this class was generated from the following file:</para>

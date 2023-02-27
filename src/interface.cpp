@@ -320,29 +320,14 @@ namespace efc {
             * @brief Resize handler called on Terminal resize
             * @param signal The id of the calling signal
             **/
-            static inline void resize(int signal) {endwin(); refresh(); Terminal::instance->cbounds(); return;}
-            #ifdef WINDOWS
-            /**
-            * @brief WindowProc function for Windows Terminal resizing (Windows_Exclusive)
-            **/
-            static LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
-                switch (uMsg) {
-                    case WM_SIZE: Terminal::resize(0); break;
-                    case WM_CLOSE: PostQuitMessage(0); break;
-                    default: return DefWindowProc(hwnd, uMsg, wParam, lParam);
-                } return 0;
-            }
-            #endif         
+            static inline void resize(int signal) {endwin(); refresh(); Terminal::instance->cbounds(); return;}        
             /**
             * @brief Static function that groups all the curses procedure for launching the Terminal
             **/
             static inline void launch() {
                 initscr(); curs_set(2); start_color(); cbreak(); keypad(stdscr, TRUE); noecho();
                 init_pair(COLOR_ID, COLOR_YELLOW, COLOR_BLACK); 
-                #ifdef WINDOWS 
-                    HWND hwnd = GetConsoleWindow();
-                    SetWindowLongPtr(hwnd, GWLP_WNDPROC, (LONG_PTR)WindowProc);
-                #else
+                #ifndef WINDOWS
                     set_escdelay(0);
                 #endif
                 return;
@@ -389,7 +374,16 @@ namespace efc {
             * @brief Function for getting short single char input from the Terminal
             * @return (const int) Int representing the pressed key
             **/
-            const int get_short_input() const {wmove(this->bwin->o, this->bwin->get_title_y(), this->bwin->get_title_x() + this->bwin->get_title_size()); return wgetch(this->bwin->o);}
+            const int get_short_input() const {
+                wmove(this->bwin->o, this->bwin->get_title_y(), this->bwin->get_title_x() + this->bwin->get_title_size()); return wgetch(this->bwin->o);
+                #ifdef WINDOWS
+                    const int ch = getch();
+                    if (ch == KEY_RESIZE) {resizeterm(0, 0);}
+                    return ch;
+                #else
+                    return wgetch(this->bwin->o);
+                #endif
+            }
             /**
             * @brief Function for getting long single string input from the Terminal
             * @return (::std::string) The input as a std::string
