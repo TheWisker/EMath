@@ -1,0 +1,691 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\comment begin body}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+interface.cpp\par \pard\plain 
+{\tc\tcl2 \v src/interface.cpp}
+{\xe \v src/interface.cpp}
+{\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+Go to the documentation of this file.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 \par
+00008 {\cf21 #ifndef INTERFACE_H}\par
+00009 {\cf21 #define INTERFACE_H}\par
+00010 {\cf21 #include <curses.h>} \par
+00011 {\cf21 #include <fstream>}\par
+00012 {\cf21 #include <string>}\par
+00013 {\cf21 #include <vector>}\par
+00014 {\cf21 #include "rapidjson/document.h"}\par
+00015 {\cf21 #include "rapidjson/writer.h"}\par
+00016 {\cf21 #include "rapidjson/stringbuffer.h"}\par
+00017 {\cf21 #include <SFML/Graphics.hpp>}\par
+00018 {\cf21 #include <thread>}\par
+00019 {\cf21 #include "emath.h"}\par
+00020 {\cf21 #include "eparser.h"}\par
+00021 {\cf21 #include "font.h"}\par
+00022 {\cf21 #ifdef WINDOWS}\par
+00023 {\cf21     #include <windows.h>}\par
+00024 {\cf21 #else}\par
+00025 {\cf21     #include <signal.h>}\par
+00026 {\cf21 #endif}\par
+00032 {\cf17 namespace }efc \{\par
+00033 {\cf21     #define HPADD 1}\par
+00034 {\cf21     #define WPADD 2}\par
+00035 {\cf21     #define CPOSY 1}\par
+00036 {\cf21     #define CPOSX 2}\par
+00037 {\cf21     #define PSIZE 3}\par
+00038 {\cf21     #define TOFST 2}\par
+00039 {\cf21     #define COLOR_ID 1}\par
+00040 {\cf21     #define KEY_ESC 27}\par
+00041 {\cf21     #define KEY_TAB 9}\par
+00042 {\cf21     #define KEY_SPC 32}\par
+00043 {\cf21     #define KEY_E 101}\par
+00044 {\cf21     #define KEY_Q 113}\par
+00045 {\cf21     #define KEY_1 49}\par
+00046 {\cf21     #define KEY_2 50}\par
+00047 {\cf21     #define KEY_3 51}\par
+00048 {\cf21     #define KEY_4 52}\par
+00049 {\cf21     #define KEY_5 53}\par
+00050 {\cf21     #define LWIN 0}\par
+00051 {\cf21     #define RWIN 1}\par
+00052 {\cf21     #define BWIN 2}\par
+00053 {\cf21     #define SG_FILE "polynomials.json"}\par
+00059     {\cf17 class }Window \{\par
+00060         {\cf17 protected}:\par
+00064             {\cf18 bool} c, a;\par
+00068             ::std::string t;\par
+00072             {\cf18 unsigned} {\cf18 int} y, x, h, w;\par
+00073         {\cf17 public}:\par
+00077             WINDOW* o;\par
+00081             Window() noexcept : c(true), a(false), y(0), x(0), h(0), w(0), o(newwin(0, 0, 0, 0)) \{keypad(this->o, TRUE); {\cf19 return};\}\par
+00086             {\cf17 const} {\cf18 char}* get_title() const noexcept \{{\cf19 return} this->t.c_str();\}\par
+00091             {\cf17 const} {\cf18 unsigned} {\cf18 int}& get_y() const noexcept \{{\cf19 return} this->y;\}\par
+00096             {\cf17 const} {\cf18 unsigned} {\cf18 int}& get_x() const noexcept \{{\cf19 return} this->x;\}\par
+00101             {\cf17 const} {\cf18 unsigned} {\cf18 int}& get_height() const noexcept \{{\cf19 return} this->h;\}\par
+00106             {\cf17 const} {\cf18 unsigned} {\cf18 int}& get_width() const noexcept \{{\cf19 return} this->w;\}\par
+00111             {\cf17 const} {\cf18 unsigned} {\cf18 int} get_title_size() const noexcept \{{\cf19 return} this->t.size();\}\par
+00116             {\cf18 void} set_title(const ::std::string&& title) {\cf17 noexcept} \{this->t = title; this->c = {\cf17 true}; {\cf19 return};\}\par
+00122             {\cf18 void} set_coords({\cf17 const} {\cf18 unsigned} {\cf18 int} y, {\cf17 const} {\cf18 unsigned} {\cf18 int} x) {\cf17 noexcept} \{this->y = y; this->x = x; this->c = {\cf17 true}; {\cf19 return};\}\par
+00128             {\cf18 void} set_size({\cf17 const} {\cf18 unsigned} {\cf18 int} h, {\cf17 const} {\cf18 unsigned} {\cf18 int} w) {\cf17 noexcept} \{this->h = h; this->w = w; this->c = {\cf17 true}; {\cf19 return};\}\par
+00133             {\cf18 void} set_active({\cf17 const} {\cf18 bool} active) {\cf17 noexcept} \{{\cf19 if} (this-> a != active) \{this->a = active; this->c = {\cf17 true};\} {\cf19 return};\}\par
+00138             {\cf17 virtual} {\cf17 const} {\cf18 unsigned} {\cf18 int} get_title_y() const noexcept \{{\cf19 return} 0;\}\par
+00143             {\cf17 virtual} {\cf17 const} {\cf18 unsigned} {\cf18 int} get_title_x() const noexcept \{{\cf19 return} 0;\}\par
+00148             {\cf17 const} {\cf18 bool} needs_update() noexcept \{{\cf19 if} (this->c) \{this->c = {\cf17 false}; {\cf19 return} {\cf17 true};\} {\cf19 return} {\cf17 false};\}\par
+00153             {\cf17 const} {\cf18 bool} is_active() const noexcept \{{\cf19 return} this->a;\}\par
+00157             {\cf18 void} place() \{wclear(this->o); wrefresh(this->o); delwin(this->o); this->o = newwin(this->h, this->w, this->y, this->x); keypad(this->o, TRUE); {\cf19 return};\}\par
+00161             {\cf17 virtual} ~Window() noexcept \{delwin(this->o); {\cf19 return};\}\par
+00162     \};\par
+00169     {\cf17 class }OWindow : {\cf17 public} Window \{\par
+00170         {\cf17 private}:\par
+00174             {\cf18 unsigned} {\cf18 int} s; {\cf20 //Scroll index}\par
+00178 {\cf20 }            ::std::vector<::std::string> d; {\cf20 // Data vector}\par
+00179         {\cf17 public}:\par
+00183             OWindow() noexcept : Window(), s(0) \{{\cf19 return};\}\par
+00188             {\cf17 const} {\cf18 unsigned} {\cf18 int}& get_scroll_index() const noexcept \{{\cf19 return} this->s;\}\par
+00193             const ::std::vector<::std::string>& get_data() const noexcept \{{\cf19 return} this->d;\}\par
+00198             {\cf17 const} {\cf18 unsigned} {\cf18 int} get_data_size() const noexcept \{{\cf19 return} this->d.size();\}\par
+00203             {\cf17 const} {\cf18 unsigned} {\cf18 int} get_title_y() const noexcept{\cf17  override }\{{\cf19 return} 1;\}\par
+00208             {\cf17 const} {\cf18 unsigned} {\cf18 int} get_title_x() const noexcept{\cf17  override }\{{\cf19 return} (((this->w / 2) - (this->t.size() / 2)) > 2) ? ((this->w / 2) - (this->t.size() / 2)) : 3;\}\par
+00213             {\cf18 void} set_data(::std::vector<::std::string>&& data) {\cf17 noexcept} \{this->d = data; this->c = {\cf17 true}; {\cf19 return};\}\par
+00217             {\cf18 void} scroll_up() noexcept \{{\cf19 if} (this->s > 0) \{this->s--;\} this->c = {\cf17 true}; {\cf19 return};\}\par
+00221             {\cf18 void} scroll_down() noexcept \{{\cf19 if} (this->s < (this->d.size() - this->h + (HPADD * 2) + 1)) \{this->s++;\} this->c = {\cf17 true}; {\cf19 return};\}\par
+00225             ~OWindow() noexcept = default;\par
+00226     \};\par
+00233     class IWindow : public Window \{\par
+00234         {\cf17 public}:\par
+00238             IWindow() noexcept : Window() \{{\cf19 return};\}\par
+00243             {\cf17 const} {\cf18 unsigned} {\cf18 int} get_title_y() const noexcept{\cf17  override }\{{\cf19 return} 1;\}\par
+00248             {\cf17 const} {\cf18 unsigned} {\cf18 int} get_title_x() const noexcept{\cf17  override }\{{\cf19 return} 4;\}\par
+00252             ~IWindow() noexcept = default;\par
+00253     \};\par
+00259     class Terminal \{\par
+00260         {\cf17 private}:\par
+00264             {\cf17 static} Terminal* instance;\par
+00268             Window *lwin, *rwin, *bwin;\par
+00272             Terminal() \{\par
+00273                 this->launch(); {\cf20 //Launch curses}\par
+00274                 this->lwin = {\cf17 new} OWindow; this->rwin = {\cf17 new} OWindow; this->bwin = {\cf17 new} IWindow;\par
+00275 {\cf21                 #ifndef WINDOWS}\par
+00276                     signal(SIGWINCH, Terminal::resize);\par
+00277 {\cf21                 #endif}\par
+00278                 this->bwin->set_active({\cf17 true});\par
+00279                 this->cbounds();\par
+00280                 {\cf19 return};\par
+00281             \}\par
+00285             {\cf18 void} cbounds() \{\par
+00286                 {\cf18 unsigned} {\cf18 int} height, width;\par
+00287                 getmaxyx(stdscr, height, width);\par
+00288                 this->bwin->set_size(PSIZE, width - (WPADD * 2));\par
+00289                 this->lwin->set_size(height - (HPADD * 3) - this->bwin->get_height(), (width / 2) - (WPADD * 1.5));\par
+00290                 this->rwin->set_size(this->lwin->get_height(), this->lwin->get_width());\par
+00291                 this->bwin->set_coords(height - (HPADD + this->bwin->get_height()), WPADD);\par
+00292                 this->lwin->set_coords(HPADD, WPADD);\par
+00293                 this->rwin->set_coords(HPADD, (WPADD * 2) + this->lwin->get_width());\par
+00294                 this->lwin->place(); this->rwin->place(); this->bwin->place();\par
+00295                 bkgd(COLOR_PAIR(COLOR_ID)); refresh();\par
+00296                 this->flush();\par
+00297                 {\cf19 return};\par
+00298             \}\par
+00303             {\cf17 static} {\cf18 void} wflush(Window*& win) \{\par
+00304                 {\cf19 if} (win->needs_update()) \{\par
+00305                     wclear(win->o);\par
+00306                     box(win->o, 0, 0);\par
+00307                     wbkgd(win->o, COLOR_PAIR(COLOR_ID));\par
+00308                     wmove(win->o, win->get_title_y(), win->get_title_x()); \par
+00309                     wattron(win->o, A_BOLD); waddnstr(win->o, win->get_title(), win->get_width() - (WPADD * 2) - 2); wattroff(win->o, A_BOLD);\par
+00310                     {\cf19 if} ({\cf17 const} OWindow *owin = {\cf17 dynamic_cast<}OWindow *{\cf17 >}(win)) \{{\cf20 //Checks if instance of OWindow}\par
+00311                         {\cf19 for} ({\cf18 unsigned} {\cf18 int} i = owin->get_scroll_index(); i < ((owin->get_height() - 3 >= owin->get_data_size()) ? owin->get_data_size() : owin->get_height() - 3 - HPADD * 2) + owin->get_scroll_index(); i++) \{\par
+00312                             wmove(owin->o, i+2 - owin->get_scroll_index() + HPADD, 1 + TOFST); waddnstr(owin->o, owin->get_data()[i].c_str(), owin->get_width() - 2 - TOFST);\par
+00313                         \}\par
+00314                     \}\par
+00315                     {\cf19 if} (win->is_active()) \{wmove(win->o, CPOSY, CPOSX); wattron(win->o, A_BOLD | A_BLINK); waddch(win->o, {\cf23 '>'}); wattroff(win->o, A_BOLD | A_BLINK);\}\par
+00316                     wrefresh(win->o);\par
+00317                 \} {\cf19 return};\par
+00318             \}\par
+00323             {\cf17 static} {\cf17 inline} {\cf18 void} resize({\cf18 int} signal) \{endwin(); refresh(); Terminal::instance->cbounds(); {\cf19 return};\}\par
+00324 {\cf21             #ifdef WINDOWS}\par
+00328             {\cf17 static} LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) \{\par
+00329                 {\cf19 switch} (uMsg) \{\par
+00330                     {\cf19 case} WM_SIZE: Terminal::resize(0); {\cf19 break};\par
+00331                     {\cf19 case} WM_CLOSE: PostQuitMessage(0); {\cf19 break};\par
+00332                     {\cf19 default}: {\cf19 return} DefWindowProc(hwnd, uMsg, wParam, lParam);\par
+00333                 \} {\cf19 return} 0;\par
+00334             \}\par
+00335 {\cf21             #endif         }\par
+00339             {\cf17 static} {\cf17 inline} {\cf18 void} launch() \{\par
+00340                 initscr(); curs_set(2); start_color(); cbreak(); keypad(stdscr, TRUE); noecho();\par
+00341                 init_pair(COLOR_ID, COLOR_YELLOW, COLOR_BLACK); \par
+00342 {\cf21                 #ifdef WINDOWS }\par
+00343                     HWND hwnd = GetConsoleWindow();\par
+00344                     SetWindowLongPtr(hwnd, GWLP_WNDPROC, (LONG_PTR)WindowProc);\par
+00345 {\cf21                 #else}\par
+00346                     set_escdelay(0);\par
+00347 {\cf21                 #endif}\par
+00348                 {\cf19 return};\par
+00349             \}\par
+00350         {\cf17 public}:\par
+00355             {\cf17 static} Terminal* init() noexcept \{\par
+00356                 {\cf19 if} (Terminal::instance != {\cf17 nullptr}) \{{\cf17 delete} Terminal::instance;\}\par
+00357                 {\cf19 return} Terminal::instance = {\cf17 new} Terminal();\par
+00358             \}\par
+00362             {\cf17 inline} {\cf18 void} flush() \{Terminal::wflush(this->lwin); Terminal::wflush(this->rwin); Terminal::wflush(this->bwin); wmove(this->bwin->o, this->bwin->get_title_y(), this->bwin->get_title_x() + this->bwin->get_title_size()); {\cf19 return};\}\par
+00367             {\cf18 void} set_ltitle(const ::std::string title) {\cf17 noexcept} \{this->lwin->set_title(::std::move(title)); {\cf19 return};\}\par
+00372             {\cf18 void} set_rtitle(const ::std::string title) {\cf17 noexcept} \{this->rwin->set_title(::std::move(title)); {\cf19 return};\}\par
+00377             {\cf18 void} set_prompt(const ::std::string prompt) {\cf17 noexcept} \{this->bwin->set_title(::std::move(prompt)); {\cf19 return};\}\par
+00382             {\cf18 void} set_ldata(::std::vector<::std::string> data) {\cf17 noexcept} \{{\cf17 dynamic_cast<}OWindow *{\cf17 >}(this->lwin)->set_data(::std::move(data)); {\cf19 return};\}\par
+00387             {\cf18 void} set_rdata(::std::vector<::std::string> data) {\cf17 noexcept} \{{\cf17 dynamic_cast<}OWindow *{\cf17 >}(this->rwin)->set_data(::std::move(data)); {\cf19 return};\}\par
+00392             {\cf17 const} {\cf18 int} get_short_input(){\cf17  const }\{wmove(this->bwin->o, this->bwin->get_title_y(), this->bwin->get_title_x() + this->bwin->get_title_size()); {\cf19 return} wgetch(this->bwin->o);\}\par
+00397             const ::std::string get_long_input(){\cf17  const }\{{\cf18 char}* buffer = {\cf17 new} char(); echo(); wmove(this->bwin->o, this->bwin->get_title_y(), this->bwin->get_title_x() + this->bwin->get_title_size()); wgetnstr(this->bwin->o, buffer, this->bwin->get_width() - (this->bwin->get_title_x() + this->bwin->get_title_size()) - WPADD - 1); noecho(); return ::std::move(buffer);\}\par
+00402             {\cf18 void} scroll_down({\cf17 const} {\cf18 unsigned} {\cf18 int} {\cf18 id}) {\cf17 noexcept} \{\par
+00403                 {\cf19 switch} ({\cf18 id}) \{\par
+00404                     {\cf19 case} LWIN: {\cf17 dynamic_cast<}OWindow *{\cf17 >}(this->lwin)->scroll_down(); {\cf19 break};\par
+00405                     {\cf19 case} RWIN: {\cf17 dynamic_cast<}OWindow *{\cf17 >}(this->rwin)->scroll_down(); {\cf19 break};\par
+00406                 \} {\cf19 return};\par
+00407             \}\par
+00412             {\cf18 void} scroll_up({\cf17 const} {\cf18 unsigned} {\cf18 int} {\cf18 id}) {\cf17 noexcept} \{\par
+00413                 {\cf19 switch} ({\cf18 id}) \{\par
+00414                     {\cf19 case} LWIN: {\cf17 dynamic_cast<}OWindow *{\cf17 >}(this->lwin)->scroll_up(); {\cf19 break};\par
+00415                     {\cf19 case} RWIN: {\cf17 dynamic_cast<}OWindow *{\cf17 >}(this->rwin)->scroll_up(); {\cf19 break};\par
+00416                 \} {\cf19 return};\par
+00417             \}\par
+00422             {\cf18 void} echo_result(const ::std::string& result) \{\par
+00423                 const ::std::string old_title = this->bwin->get_title(); this->set_prompt({\cf22 "Result:"}); this->flush();\par
+00424                 wmove(this->bwin->o, this->bwin->get_title_y(), this->bwin->get_title_x() + this->bwin->get_title_size());\par
+00425                 waddnstr(bwin->o, result.c_str(), this->bwin->get_width() - (this->bwin->get_title_x() + this->bwin->get_title_size()) - WPADD - 1);\par
+00426                 wgetch(bwin->o); this->set_prompt(old_title);\par
+00427                 {\cf19 return};\par
+00428             \}\par
+00433             {\cf18 void} swap_active({\cf17 const} {\cf18 unsigned} {\cf18 int} {\cf18 id}) {\cf17 noexcept} \{\par
+00434 {\cf21                 #define swp(l, r, b) this->lwin->set_active(l); this->rwin->set_active(r); this->bwin->set_active(b);}\par
+00435                 {\cf19 switch}({\cf18 id}) \{\par
+00436                     {\cf19 case} LWIN: swp({\cf17 true}, {\cf17 false}, {\cf17 false}); {\cf19 break};\par
+00437                     {\cf19 case} RWIN: swp({\cf17 false}, {\cf17 true}, {\cf17 false}); {\cf19 break};\par
+00438                     {\cf19 case} BWIN: swp({\cf17 false}, {\cf17 false}, {\cf17 true}); {\cf19 break};\par
+00439                 \} {\cf19 return};\par
+00440             \}\par
+00444             ~Terminal() noexcept \{\par
+00445                 {\cf17 delete} this->lwin; {\cf17 delete} this->rwin; {\cf17 delete} this->bwin;\par
+00446                 Terminal::instance = {\cf17 nullptr};\par
+00447 {\cf21                 #ifndef WINDOWS }\par
+00448                     signal(SIGWINCH, SIG_DFL);\par
+00449 {\cf21                 #endif}\par
+00450                 endwin(); {\cf19 return};\par
+00451             \}\par
+00452     \}; Terminal* Terminal::instance = {\cf17 nullptr};\par
+00458     {\cf17 class }Plane \{\par
+00459         {\cf17 private}:\par
+00463             {\cf18 int} xogn, yogn;\par
+00467             {\cf17 const} {\cf18 int} _xogn, _yogn;\par
+00471             {\cf18 unsigned} {\cf18 int} domain, image;\par
+00475             ::emth::Polynomial function;\par
+00479             ::sf::Font font;\par
+00483             ::sf::Text tooltip;\par
+00487             ::sf::VertexArray axes;\par
+00491             ::sf::RenderWindow window;\par
+00495             ::sf::RectangleShape line;\par
+00499             ::sf::CircleShape intersection;\par
+00503             ::sf::VertexArray representation;\par
+00507             {\cf18 void} draw() \{\par
+00508                 this->window.clear(::sf::Color::Black);\par
+00509                 this->window.draw(this->axes);\par
+00510                 this->window.draw(this->line);\par
+00511                 this->window.draw(this->representation);\par
+00512                 this->window.draw(this->intersection);\par
+00513                 this->window.draw(this->tooltip);\par
+00514                 this->window.display(); {\cf19 return};\par
+00515             \}\par
+00519             {\cf18 void} populate() \{\par
+00520                 {\cf17 const} {\cf18 int} end = (this->xogn + this->domain);\par
+00521                 this->axes[0].position = ::sf::Vector2f(0, -this->yogn);\par
+00522                 this->axes[1].position = ::sf::Vector2f(this->domain, -this->yogn);\par
+00523                 this->axes[2].position = ::sf::Vector2f(-this->xogn, 0);\par
+00524                 this->axes[3].position = ::sf::Vector2f(-this->xogn, this->image);\par
+00525                 {\cf19 for} ({\cf18 int} x = this->xogn; x < end; x++) \{\par
+00526                     this->representation[(x - this->xogn)].position = ::sf::Vector2f((x - this->xogn), (-this->yogn - this->function.get_value(x)));\par
+00527                     this->representation[(x - this->xogn)].color = ::sf::Color::Red;\par
+00528                 \} {\cf19 return};\par
+00529             \}\par
+00534             {\cf18 void} resize(const ::sf::Event& event) \{\par
+00535                 this->domain = ::std::min(event.size.width, ::sf::VideoMode::getDesktopMode().width); this->image = ::std::min(event.size.height, ::sf::VideoMode::getDesktopMode().height);\par
+00536                 this->window.setSize(::sf::Vector2u(this->domain, this->image)); this->representation = ::sf::VertexArray(::sf::LineStrip, this->domain); this->line.setSize(::sf::Vector2f(1, this->image));\par
+00537                 this->window.setView(::sf::View(::sf::FloatRect(0, 0, this->domain, this->image)));\par
+00538                 this->populate(); {\cf19 return};\par
+00539             \}\par
+00545             {\cf17 static} {\cf17 constexpr} {\cf17 inline} {\cf18 int} inverse({\cf17 const} {\cf18 int}& n) {\cf17 noexcept} \{{\cf19 return} ((n != 0) ? -n : n);\}\par
+00546         {\cf17 public}:\par
+00553             Plane({\cf18 int} ox, {\cf18 int} oy, const ::emth::Polynomial& func) : xogn(ox), yogn(oy), _xogn(ox), _yogn(oy), domain(::sf::VideoMode::getDesktopMode().width/2), image(::sf::VideoMode::getDesktopMode().height/2), function(func), window(::sf::VideoMode(::sf::VideoMode::getDesktopMode().width/2, ::sf::VideoMode::getDesktopMode().height/2), {\cf22 "Polynomial: "} + func.get_expression(), ::sf::Style::Titlebar | ::sf::Style::Close, ::sf::ContextSettings(0, 0, 16, 1, 1, 0, false)), axes(::sf::Lines, 4), representation(::sf::LineStrip, ::sf::VideoMode::getDesktopMode().width/2), line(::sf::Vector2f(1, ::sf::VideoMode::getDesktopMode().height/2)), intersection(5/2) \{\par
+00554                 this->window.setVerticalSyncEnabled({\cf17 true});\par
+00555                 this->font.loadFromMemory(ROBOTO_BOLD, {\cf17 sizeof}(ROBOTO_BOLD));\par
+00556                 tooltip.setFont(this->font); this->tooltip.setCharacterSize(16); this->tooltip.setFillColor(::sf::Color::White);\par
+00557                 this->axes[0].color = this->axes[1].color = this->axes[2].color = this->axes[3].color = ::sf::Color::White;\par
+00558                 this->line.setFillColor(::sf::Color::Yellow); this->intersection.setFillColor(::sf::Color::Blue); this->intersection.setPointCount(25);\par
+00559                 {\cf19 return};\par
+00560             \}\par
+00564             {\cf18 void} run() \{\par
+00565                 {\cf19 while}(this->window.isOpen()) \{\par
+00566                     ::sf::Event event; ::std::stringstream ts;\par
+00567                     {\cf19 while} (window.pollEvent(event)) \{\par
+00568                         {\cf19 switch}(event.type) \{\par
+00569                             case ::sf::Event::Closed: this->window.close(); {\cf19 break};\par
+00570                             case ::sf::Event::MouseMoved: \par
+00571                                 this->line.setPosition(event.mouseMove.x, 0); \par
+00572                                 this->intersection.setPosition(event.mouseMove.x - this->intersection.getRadius(), this->representation[event.mouseMove.x].position.y - this->intersection.getRadius());\par
+00573                                 ts = ::std::stringstream(); ts << {\cf22 "("} << {\cf17 event}.mouseMove.x + this->xogn << {\cf22 ","} << inverse(this->representation[event.mouseMove.x].position.y + this->yogn) << {\cf22 ")"}; tooltip.setString(ts.str());\par
+00574                                 tooltip.setPosition(event.mouseMove.x + 10, this->representation[event.mouseMove.x].position.y);\par
+00575                                 {\cf19 break};\par
+00576                             case ::sf::Event::KeyPressed: \par
+00577                                 {\cf19 switch}(event.key.code) \{\par
+00578                                     case ::sf::Keyboard::Up: this->yogn -= this->window.getSize().y/100; {\cf19 break};\par
+00579                                     case ::sf::Keyboard::Down: this->yogn += this->window.getSize().y/100; {\cf19 break};\par
+00580                                     case ::sf::Keyboard::Right: this->xogn += this->window.getSize().x/100; {\cf19 break};\par
+00581                                     case ::sf::Keyboard::Left: this->xogn -= this->window.getSize().x/100; {\cf19 break};\par
+00582                                     case ::sf::Keyboard::Space: this->xogn = this->_xogn; this->yogn = this->_yogn; {\cf19 break};\par
+00583                                 \} this->populate(); {\cf19 break};\par
+00584                             case ::sf::Event::Resized: this->resize(event); {\cf19 break};\par
+00585                         \}\par
+00586                     \} this->draw();\par
+00587                 \} {\cf19 return};\par
+00588             \}\par
+00589     \};\par
+00595     {\cf17 class }Storage \{\par
+00596         {\cf17 private}:\par
+00600             const ::std::string filename;\par
+00601         {\cf17 public}:\par
+00606             Storage(const ::std::string file) noexcept : filename(::std::move(file)) \{{\cf19 return};\}\par
+00611             const ::std::string read() const noexcept \{\par
+00612                 {\cf19 try} \{\par
+00613                     ::std::ifstream file(this->filename);\par
+00614                     {\cf19 if} (!file.is_open()) \{throw ::std::runtime_error({\cf22 "Input file does not exist"});\}\par
+00615                     ::std::string contents((::std::istreambuf_iterator<char>(file)), ::std::istreambuf_iterator<char>());\par
+00616                     file.close(); {\cf19 return} contents;\par
+00617                 \} {\cf19 catch}(const ::std::exception& e) \{{\cf19 return} {\cf22 ""};\}\par
+00618             \}\par
+00624             {\cf17 const} {\cf18 int} write(const ::std::string contents) {\cf17 const} {\cf17 noexcept} \{\par
+00625                 {\cf19 try} \{\par
+00626                     ::std::ofstream file(this->filename, ::std::ios::out | ::std::ios::trunc);\par
+00627                     file << contents; file.close(); {\cf19 return} 0;\par
+00628                 \} {\cf19 catch} (const ::std::exception& e) \{{\cf19 return} 1;\}\par
+00629             \}\par
+00634             {\cf18 bool} exists() const noexcept \{\par
+00635                 {\cf19 try} \{\par
+00636                     ::std::ifstream file(this->filename);\par
+00637                     {\cf19 if} (!file.is_open()) \{{\cf19 return} {\cf17 false};\}\par
+00638                     file.close(); {\cf19 return} {\cf17 true};\par
+00639                 \} {\cf19 catch}(const ::std::exception& e) \{{\cf19 return} {\cf17 false};\}\par
+00640             \}\par
+00644             ~Storage() noexcept = default;\par
+00645     \};\par
+00650     enum TokenType \{\par
+00654         T_NUMBER,\par
+00658         T_PLUS,\par
+00662         T_MINUS,\par
+00666         T_MULTIPLICATION,\par
+00670         T_DIVISION,\par
+00674         T_EOF\par
+00675     \};\par
+00680     {\cf17 struct }Token \{\par
+00684         {\cf17 const} TokenType type;\par
+00689         {\cf17 union }\{{\cf18 char} c; {\cf18 int} n;\} value;\par
+00690     \};\par
+00696     {\cf17 class }Lexer \{\par
+00697         {\cf17 private}:\par
+00701             const ::std::string _input;\par
+00705             {\cf18 short} {\cf18 unsigned} {\cf18 int} _pos;\par
+00711             {\cf17 static} const ::std::string clean({\cf17 const} std::string& input) {\cf17 noexcept} \{\par
+00712                 {\cf18 short} {\cf18 unsigned} {\cf18 int} pos = 0; ::std::string result;\par
+00713                 {\cf19 while} (pos < input.size()) \{\par
+00714                     {\cf19 switch} (input[pos]) \{\par
+00715                         {\cf19 case} {\cf23 '+'}: result += {\cf23 '+'}; {\cf19 break};\par
+00716                         {\cf19 case} {\cf23 '-'}: result += {\cf23 '-'}; {\cf19 break};\par
+00717                         {\cf19 case} {\cf23 '*'}: result += {\cf23 '*'}; {\cf19 break};\par
+00718                         {\cf19 case} {\cf23 '/'}: result += {\cf23 '/'}; {\cf19 break};\par
+00719                         {\cf19 default}: {\cf19 if} (Lexer::is_integer(input[pos])) \{result += input[pos];\} {\cf19 break};\par
+00720                     \} pos++;\par
+00721                 \} {\cf19 return} result;\par
+00722             \}\par
+00729             {\cf17 static} {\cf17 constexpr} {\cf17 inline} {\cf18 bool} is_integer({\cf17 const} {\cf18 char}& c) {\cf17 noexcept} \{{\cf19 return} (c >= {\cf23 '0'} && c <= {\cf23 '9'});\}\par
+00730         {\cf17 public}:\par
+00735             Lexer({\cf17 const} std::string& input) noexcept : _input(Lexer::clean(input)), _pos(0) \{\}\par
+00740             {\cf17 const} Token next() noexcept \{\par
+00741                 {\cf19 if} (this->_pos >= this->_input.size()) \{{\cf19 return} \{TokenType::T_EOF, \{0\}\};\}\par
+00742                 {\cf19 switch} (this->_input[this->_pos]) \{\par
+00743                     {\cf19 case} {\cf23 '+'}: this->_pos++; {\cf19 return} \{TokenType::T_PLUS, \{0\}\};\par
+00744                     {\cf19 case} {\cf23 '-'}: this->_pos++; {\cf19 return} \{TokenType::T_MINUS, \{0\}\};\par
+00745                     {\cf19 case} {\cf23 '*'}: this->_pos++; {\cf19 return} \{TokenType::T_MULTIPLICATION, \{0\}\};\par
+00746                     {\cf19 case} {\cf23 '/'}: this->_pos++; {\cf19 return} \{TokenType::T_DIVISION, \{0\}\};\par
+00747                     {\cf19 default}: this->_pos++; {\cf19 return} \{TokenType::T_NUMBER, \{(char) this->_input[this->_pos - 1]\}\};\par
+00748                 \}\par
+00749             \}\par
+00753             ~Lexer() noexcept = default;\par
+00754     \};\par
+00760     class Parser \{\par
+00761         {\cf17 private}:\par
+00765             Lexer _lexer;\par
+00766         {\cf17 public}:\par
+00771             Parser({\cf17 const} std::string& input) noexcept : _lexer(input) \{\}\par
+00776             {\cf17 const} {\cf18 int} parse_number() noexcept \{\par
+00777                 {\cf18 bool} positive = {\cf17 true};\par
+00778                 ::std::string buffer = {\cf22 "0"};\par
+00779                 {\cf19 while} ({\cf17 true}) \{\par
+00780                     {\cf17 const} Token token = this->_lexer.next();\par
+00781                     {\cf19 switch} (token.type) \{\par
+00782                         {\cf19 case} TokenType::T_MINUS: positive = !positive; {\cf19 break};\par
+00783                         {\cf19 case} TokenType::T_NUMBER: buffer += token.value.c; {\cf19 break};\par
+00784                         {\cf19 case} TokenType::T_EOF: {\cf19 return} positive ? std::stoi(buffer) : -1 * std::stoi(buffer);\par
+00785                     \}\par
+00786                 \}\par
+00787             \}\par
+00793             {\cf17 const} emth::Polynomial parse_operation(const ::std::vector<emth::Polynomial>& ps) \{\par
+00794                 {\cf18 bool} hook = {\cf17 false};\par
+00795                 std::vector<emth::Polynomial> data; std::vector<TokenType> operations;\par
+00796                 {\cf19 while} ({\cf17 true}) \{\par
+00797                     {\cf17 const} Token token = this->_lexer.next();\par
+00798                     {\cf19 if} (token.type == TokenType::T_EOF) \{{\cf19 break};\}\par
+00799                     {\cf19 switch} (token.type) \{\par
+00800                         {\cf19 case} TokenType::T_NUMBER: {\cf19 if} (!hook && ({\cf18 unsigned} {\cf18 int}) std::stoi(std::string(1, token.value.c)) < ps.size()) \{data.push_back(ps[std::stoi(std::string(1, token.value.c))]); hook = {\cf17 true};\} {\cf19 break};\par
+00801                         {\cf19 default}: {\cf19 if} (hook) \{operations.push_back(token.type); hook = {\cf17 false};\} {\cf19 break};\par
+00802                     \}\par
+00803                 \}\par
+00804                 {\cf19 for} ({\cf18 unsigned} {\cf18 int} i = 0; i < operations.size(); i++) \{\par
+00805                     {\cf19 if} (operations[i] == TokenType::T_MULTIPLICATION || operations[i] == TokenType::T_DIVISION) \{\par
+00806                         {\cf19 switch} (operations[i]) \{\par
+00807                             {\cf19 case} TokenType::T_MULTIPLICATION: data[i] *= data[i + 1]; {\cf19 break};\par
+00808                             {\cf19 case} TokenType::T_DIVISION: data[i] /= data[i + 1]; {\cf19 break};\par
+00809                         \} data.erase(data.begin() + i + 1); operations.erase(operations.begin() + i); i--;\par
+00810                     \}\par
+00811                 \}\par
+00812                 {\cf19 for} ({\cf18 unsigned} {\cf18 int} i = 0; i < operations.size(); i++) \{\par
+00813                     {\cf19 switch} (operations[i]) \{\par
+00814                         {\cf19 case} TokenType::T_PLUS: data[i] += data[i + 1]; {\cf19 break};\par
+00815                         {\cf19 case} TokenType::T_MINUS: data[i] -= data[i + 1]; {\cf19 break};\par
+00816                     \} data.erase(data.begin() + i + 1); operations.erase(operations.begin() + i); i--;\par
+00817                 \} {\cf19 return} data[0];\par
+00818             \}\par
+00822             ~Parser() noexcept = default;\par
+00823     \};\par
+00829     class Application \{\par
+00830         {\cf17 private}:\par
+00831 {\cf21             #define V_MENU \{::std::string("[ESC] Exit program"}), ::std::string("[TAB] Cycle focus"), ::std::string("[E] Add polynomial"), ::std::string("[Q] Remove polynomial"), ::std::string("[SPACE] New operation")\}\par
+00832 {\cf21             #define V_OPERATION \{::std::string("[ESC] Back"}), ::std::string("[TAB] Cycle focus"), ::std::string("[1] Evaluate operation"), ::std::string("[2] Derivative operation"), ::std::string("[3] Integral operation"), ::std::string("[4] Root finding operation"), ::std::string("[5] Drawing operation"), ::std::string("[SPACE] Arithmetic operations")\}\par
+00833 {\cf21             #define V_SCROLL \{::std::string("[ESC] Exit program"}), ::std::string("[UP ARROW] Scroll up"), ::std::string("[DOWN ARROW] Scroll down")\}\par
+00837             {\cf17 static} Application* instance;\par
+00841             Terminal* terminal;\par
+00845             {\cf17 const} Storage storage;\par
+00849             rapidjson::Document json;\par
+00853             ::std::vector<emth::Polynomial> polynomials;\par
+00857             {\cf18 unsigned} {\cf18 int} active;\par
+00861             Application() noexcept : terminal(Terminal::init()), storage(Storage(SG_FILE)), active(BWIN) \{\par
+00862                 {\cf19 if} (!this->storage.exists()) \{this->json.SetArray();\} {\cf19 else} \{this->json.Parse(this->storage.read().c_str()); this->read_json();\}\par
+00863                 this->terminal->set_ltitle({\cf22 "<Main menu>"});\par
+00864                 this->terminal->set_rtitle({\cf22 "<Polynomials>"});\par
+00865                 this->terminal->set_prompt({\cf22 "Option:"});\par
+00866                 this->terminal->set_rdata(this->stringify_polynomials());\par
+00867                 {\cf19 return};\par
+00868             \}\par
+00873             {\cf17 const} {\cf18 int} save_json() {\cf17 const} {\cf17 noexcept} \{\par
+00874                 {\cf19 try} \{\par
+00875                     rapidjson::StringBuffer buffer;\par
+00876                     rapidjson::Writer<rapidjson::StringBuffer> writer(buffer);\par
+00877                     this->json.Accept(writer);\par
+00878                     this->storage.write(buffer.GetString());\par
+00879                 \} {\cf19 catch} (::std::exception& e) \{{\cf19 return} 1;\} {\cf19 return} 0;\par
+00880             \}\par
+00885             {\cf17 const} {\cf18 int} read_json() {\cf17 noexcept} \{\par
+00886                 {\cf19 try} \{\par
+00887                     {\cf19 if} (this->json.IsArray()) \{\par
+00888                         {\cf19 for} ({\cf17 const} {\cf17 auto}& o : this->json.GetArray()) \{\par
+00889                             {\cf19 if} (o.IsString()) \{this->polynomials.push_back(emthp::Parser(o.GetString()).parse_polynomial());\}\par
+00890                         \}\par
+00891                     \}\par
+00892                 \} {\cf19 catch} (::std::exception& e) \{{\cf19 return} 1;\} {\cf19 return} 0;\par
+00893             \}\par
+00898             {\cf17 const} {\cf18 int} cycle_focus() {\cf17 noexcept} \{\par
+00899 {\cf21                 #define swpa(o) this->active = o; this->terminal->swap_active(o);}\par
+00900                 {\cf19 switch}(this->active) \{\par
+00901                     {\cf19 case} LWIN: swpa(RWIN); {\cf19 return} 1;\par
+00902                     {\cf19 case} RWIN: swpa(BWIN); {\cf19 break};\par
+00903                     {\cf19 case} BWIN: swpa(LWIN); {\cf19 return} 1;\par
+00904                 \} {\cf19 return} 0;\par
+00905             \}\par
+00910             {\cf17 const} {\cf18 int} scroll_loop() {\cf17 noexcept} \{\par
+00911                 this->terminal->set_ldata(V_SCROLL);\par
+00912                 this->terminal->flush();\par
+00913                 {\cf19 while}({\cf17 true}) \{\par
+00914                     {\cf19 switch}(this->terminal->get_short_input()) \{\par
+00915                         {\cf19 case} KEY_ESC: {\cf19 return} 0;\par
+00916                         {\cf19 case} KEY_TAB: {\cf19 return} 1;\par
+00917                         {\cf19 case} KEY_UP: this->terminal->scroll_up(this->active); {\cf19 break};\par
+00918                         {\cf19 case} KEY_DOWN: this->terminal->scroll_up(this->active); {\cf19 break};\par
+00919                     \} this->terminal->flush();\par
+00920                 \} {\cf19 return} 0;\par
+00921             \}\par
+00926             {\cf17 const} {\cf18 int} get_polynomial() {\cf17 noexcept} \{\par
+00927                 {\cf19 try} \{\par
+00928                     this->terminal->set_prompt({\cf22 "Polynomial:"}); this->terminal->flush();\par
+00929                     {\cf17 const} emth::Polynomial polynomial(emthp::Parser(this->terminal->get_long_input()).parse_polynomial());\par
+00930                     this->add_polynomial(polynomial);\par
+00931                 \} {\cf19 catch} (::std::exception& e) \{{\cf19 return} 1;\} \par
+00932                 this->terminal->set_prompt({\cf22 "Option:"}); {\cf19 return} 0;\par
+00933             \}\par
+00938             {\cf17 const} {\cf18 int} add_polynomial({\cf17 const} emth::Polynomial& polynomial) {\cf17 noexcept} \{\par
+00939                 {\cf19 try} \{\par
+00940                     this->json.PushBack(rapidjson::Value(polynomial.get_expression().c_str(), this->json.GetAllocator()).Move(), this->json.GetAllocator());\par
+00941                     this->polynomials.push_back(::std::move(polynomial));\par
+00942                     this->terminal->set_rdata(this->stringify_polynomials());\par
+00943                     this->save_json();\par
+00944                 \} {\cf19 catch} (::std::exception& e) \{{\cf19 return} 1;\} \par
+00945                 {\cf19 return} 0;\par
+00946             \}\par
+00951             {\cf17 const} {\cf18 int} remove_polynomial({\cf17 const} {\cf18 unsigned} {\cf18 int} {\cf18 id}) {\cf17 noexcept} \{\par
+00952                 {\cf19 try} \{\par
+00953                     {\cf19 if} (id < this->polynomials.size()) \{\par
+00954                         this->polynomials.erase(this->polynomials.begin() + {\cf18 id});\par
+00955                         this->json.Erase(this->json.Begin() + {\cf18 id});\par
+00956                         this->terminal->set_rdata(this->stringify_polynomials());\par
+00957                         this->save_json();\par
+00958                     \} {\cf19 else} \{this->terminal->echo_result({\cf22 "No polynomial with index:"} + std::to_string({\cf18 id}));\}\par
+00959                 \} {\cf19 catch} (::std::exception& e) \{{\cf19 return} 1;\} {\cf19 return} 0;\par
+00960             \}\par
+00965             const ::std::vector<::std::string> stringify_polynomials() {\cf17 const} {\cf17 noexcept} \{::std::vector<::std::string> buffer; {\cf19 for} ({\cf18 unsigned} {\cf18 int} i = 0; i < this->polynomials.size(); i++) \{buffer.push_back({\cf22 "["} + std::to_string(i) + {\cf22 "] "} + ::std::move(this->polynomials[i].get_expression()));\} {\cf19 return} buffer;\}\par
+00970             {\cf17 const} {\cf18 int} main_loop() \{\par
+00971                 this->terminal->set_ldata(V_MENU);\par
+00972                 this->terminal->flush();\par
+00973                 {\cf19 while}({\cf17 true}) \{\par
+00974                     {\cf19 switch}(this->terminal->get_short_input()) \{\par
+00975                         {\cf19 case} KEY_ESC: {\cf19 return} 0; {\cf19 case} KEY_SPC: {\cf19 return} 1; \par
+00976                         {\cf19 case} KEY_TAB: {\cf19 return} 2;\par
+00977                         {\cf19 case} KEY_E: this->get_polynomial(); {\cf19 break};\par
+00978                         {\cf19 case} KEY_Q: this->terminal->set_prompt({\cf22 "Id:"}); this->terminal->flush(); this->remove_polynomial(Application::to_int(this->terminal->get_long_input())); this->terminal->set_prompt({\cf22 "Option:"}); {\cf19 break};\par
+00979                     \} this->terminal->flush();\par
+00980                 \} {\cf19 return} 0;\par
+00981             \}\par
+00986             {\cf17 const} {\cf18 int} operation_loop() \{\par
+00987                 {\cf19 if} (!this->polynomials.empty()) \{\par
+00988                     this->terminal->set_ldata(V_OPERATION);\par
+00989                     this->terminal->flush();\par
+00990                     {\cf19 while}({\cf17 true}) \{\par
+00991                         {\cf19 switch}(this->terminal->get_short_input()) \{\par
+00992                             {\cf19 case} KEY_ESC: {\cf19 return} 0; {\cf19 case} KEY_TAB: {\cf19 return} 2;\par
+00993                             {\cf19 case} KEY_SPC: this->calculate(0); {\cf19 return} 1;\par
+00994                             {\cf19 case} KEY_1: this->calculate(1); {\cf19 return} 1;\par
+00995                             {\cf19 case} KEY_2: this->calculate(2); {\cf19 return} 1;\par
+00996                             {\cf19 case} KEY_3: this->calculate(3); {\cf19 return} 1;\par
+00997                             {\cf19 case} KEY_4: this->calculate(4); {\cf19 return} 1;\par
+00998                             {\cf19 case} KEY_5: this->calculate(5); {\cf19 return} 1;\par
+00999                         \} this->terminal->flush();\par
+01000                     \}\par
+01001                 \} this->terminal->echo_result({\cf22 "No polynomials registered!"}); {\cf19 return} 0;\par
+01002             \}\par
+01007             {\cf18 void} calculate({\cf17 const} {\cf18 int} t) {\cf17 noexcept} \{\par
+01008                 this->terminal->set_prompt({\cf22 "Input:"}); this->terminal->flush();\par
+01009                 {\cf19 if} (t == 0) \{\par
+01010                     {\cf19 try} \{\par
+01011                         std::string in = this->terminal->get_long_input();\par
+01012                         {\cf17 const} emth::Polynomial r = Parser(in).parse_operation(this->polynomials);\par
+01013                         this->terminal->echo_result(r.is_empty() ? {\cf22 "0"} : r.get_expression());\par
+01014                         {\cf19 if} (in[0] == {\cf23 '_'}) \{this->add_polynomial(r);\}\par
+01015                     \} {\cf19 catch} ({\cf18 int} e) \{this->terminal->echo_result({\cf22 "No polynomial with index:"} + std::to_string(e));\}\par
+01016                 \} {\cf19 else} \{\par
+01017                     {\cf17 const} {\cf18 unsigned} {\cf18 int} sinput = Application::to_int(this->terminal->get_long_input());\par
+01018                     {\cf19 if} (sinput < this->polynomials.size()) \{\par
+01019                         {\cf19 switch}(t) \{\par
+01020                             {\cf19 case} 1:\par
+01021                                 this->terminal->set_prompt({\cf22 "Value:"}); this->terminal->flush();\par
+01022                                 this->terminal->echo_result((::std::stringstream() << this->polynomials[sinput].get_value(Application::to_int(this->terminal->get_long_input()))).str());\par
+01023                                 {\cf19 break};\par
+01024                             {\cf19 case} 2: this->terminal->echo_result(this->polynomials[sinput].get_derivative().get_expression()); {\cf19 break};\par
+01025                             {\cf19 case} 3: this->terminal->echo_result(this->polynomials[sinput].get_integral().get_expression()); {\cf19 break};\par
+01026                             {\cf19 case} 4: this->terminal->echo_result(vtoss(this->polynomials[sinput].get_roots())); {\cf19 break};\par
+01027                             {\cf19 case} 5: launch_plane(this->polynomials[sinput]); {\cf19 break};\par
+01028                         \}\par
+01029                     \} {\cf19 else} \{this->terminal->echo_result({\cf22 "No polynomial with index:"} + std::to_string(sinput));\}\par
+01030                 \} this->terminal->set_prompt({\cf22 "Option:"}); {\cf19 return};\par
+01031             \}\par
+01036             {\cf18 void} launch_plane({\cf17 const} emth::Polynomial& function) {\cf17 const} {\cf17 noexcept} \{\par
+01037                 this->terminal->set_prompt({\cf22 "X Offset:"}); this->terminal->flush();\par
+01038                 {\cf18 int} x = Application::to_int(this->terminal->get_long_input());\par
+01039                 this->terminal->set_prompt({\cf22 "Y Offset:"}); this->terminal->flush();\par
+01040                 {\cf18 int} y = Application::to_int(this->terminal->get_long_input());\par
+01041                 std::thread plane_thread([function, x, y]()\{Plane p(-x, -y, function); p.run(); {\cf19 return};\});\par
+01042                 plane_thread.detach(); {\cf19 return};\par
+01043             \}\par
+01049             {\cf17 static} {\cf17 const} {\cf18 int} to_int(const ::std::string& number) {\cf17 noexcept} \{{\cf19 return} Parser(number).parse_number();\}\par
+01055             {\cf17 static} {\cf17 const} std::string vtoss({\cf17 const} std::vector<std::complex<double>>& v) {\cf17 noexcept} \{std::stringstream ss; ss << {\cf22 "["}; ctoss(ss, v[0]); {\cf19 for}({\cf18 unsigned} {\cf18 int} i = 1; i < v.size(); i++) \{ss << {\cf22 ", "}; ctoss(ss, v[i]);\} ss << {\cf22 "]"}; {\cf19 return} ss.str();\}\par
+01061             {\cf17 static} {\cf17 const} {\cf18 void} ctoss(std::stringstream& ss, {\cf17 const} std::complex<double>& c) {\cf17 noexcept} \{ss << {\cf22 "("}; {\cf19 if} (std::abs(c.real()) > 1e-9 && std::abs(c.imag()) > 1e-9) \{ss << c.real() << {\cf22 " "} << ((c.imag() > 0) ? {\cf22 "+ "} : {\cf22 "- "}) << std::abs(c.imag()) << {\cf22 "i"};\} {\cf19 else} {\cf19 if} (std::abs(c.real()) > 1e-9) \{ss << c.real();\} {\cf19 else} {\cf19 if} (std::abs(c.imag()) > 1e-9) \{ss << c.imag() << {\cf22 "i"};\} {\cf19 else} \{ss << {\cf22 "0"};\} ss << {\cf22 ")"}; {\cf19 return};\}\par
+01062         {\cf17 public}:\par
+01067             {\cf17 static} Application* init() noexcept \{\par
+01068                 {\cf19 if} (Application::instance != {\cf17 nullptr}) \{{\cf17 delete} Application::instance;\}\par
+01069                 {\cf19 return} Application::instance = {\cf17 new} Application();\par
+01070             \}\par
+01074             {\cf18 void} run() \{\par
+01075                 {\cf18 bool} hook = {\cf17 false};\par
+01076                 {\cf19 while}({\cf17 true}) \{\par
+01077                     {\cf19 switch}(this->main_loop()) \{\par
+01078                         {\cf19 case} 0: {\cf19 return};\par
+01079                         {\cf19 case} 1: {\cf19 if} (this->operation_loop() == 2 && this->cycle_focus() == 1) \{hook = {\cf17 true};\} {\cf19 break};\par
+01080                         {\cf19 case} 2: {\cf19 if} (this->cycle_focus() == 1) \{hook = {\cf17 true};\} {\cf19 break};\par
+01081                     \}\par
+01082                     {\cf19 while} (hook) \{\par
+01083                         {\cf19 switch} (this->scroll_loop()) \{\par
+01084                             {\cf19 case} 0: {\cf19 return};\par
+01085                             {\cf19 case} 1: {\cf19 if} (this->cycle_focus() != 1) \{hook = {\cf17 false};\}; {\cf19 break};\par
+01086                         \}\par
+01087                     \}\par
+01088                 \} {\cf19 return};\par
+01089             \}\par
+01093             ~Application() noexcept \{\par
+01094                 Application::instance = {\cf17 nullptr};\par
+01095                 {\cf17 delete} this->terminal;\par
+01096                 this->save_json(); {\cf19 return};\par
+01097             \}\par
+01098     \}; Application* Application::instance = {\cf17 nullptr};\par
+01099 \}\par
+01104 {\cf18 int} main() \{efc::Application* app = efc::Application::init(); app->run(); {\cf17 delete} app; {\cf19 return} 0;\}\par
+01105 {\cf21 #endif}\par
+}
+}

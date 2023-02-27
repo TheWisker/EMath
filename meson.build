@@ -61,7 +61,7 @@ endif
 
 #Add interface executable dependencies: interface_dependencies, 
 executable('emath_cli_d', files(interface_files), include_directories: interface_include, dependencies: dynamic_interface_dependencies, link_args: ['-dynamic'], name_suffix: exe_ext, install: not meson.is_cross_build(), native: not meson.is_cross_build())
-executable('emath_cli_s', files(interface_files), include_directories: interface_include, dependencies: static_interface_dependencies, link_args: ['-static-libgcc', '-static-libstdc++', '-static'], name_suffix: exe_ext, install: not meson.is_cross_build(), native: not meson.is_cross_build())
+executable('emath_cli_s', files(interface_files), include_directories: interface_include, dependencies: static_interface_dependencies, link_args: ['-static-libgcc', '-static-libstdc++'], name_suffix: exe_ext, install: not meson.is_cross_build(), native: not meson.is_cross_build())
 
 #Install the documentation
 run_command('doxygen', 'doxygen.conf', check: false)

@@ -1,8 +1,7 @@
-<div align="center">
-    <img width="400" height="300" src="./assets/big_logo.svg">
-</div>
-
 <h1 align="center">C++ Equation Math Library</h1>
+<div align="center">
+    <img width="400" src="./assets/big_logo.svg">
+</div>
 <p align="center">Library for representing and operating abstract algebraic concepts</p>
 
 <h2 align="center">Introdution</h2>
@@ -11,9 +10,24 @@ This is a project that aims to provide some wrapper classes for algebraic mathem
 
 <h2 align="center">Terminal Client</h2>
 
-The library comes with a Terminal client for Linux and Windows capable of using the header files to do some operations with polynomials, capable even to draw them in the Cartesian plane!
+The library comes with a Terminal client for Linux and Windows capable of using the header files to do some operations with polynomials, capable even to draw them in the Cartesian plane! More informartion regarding the terminal client is found at the docs.
 
+<h2 align="center">Screenshots</h2>
 
+Here are some screenshots of the Terminal Client
+
+<div align="center">
+    <img width="500" src="./assets/screenshot_one.png">
+</div>
+<div align="center">
+    <img width="500" src="./assets/screenshot_two.png">
+</div>
+<div align="center">
+    <img width="500" src="./assets/screenshot_three.png">
+</div>
+<div align="center">
+    <img width="500" src="./assets/screenshot_four.png">
+</div>
 
 <h2 align="center">Documentation</h2>
 
