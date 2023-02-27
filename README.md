@@ -14,19 +14,21 @@ The library comes with a Terminal client for Linux and Windows capable of using 
 
 <h2 align="center">Screenshots</h2>
 
-Here are some screenshots of the Terminal Client
-
+<p align="center">Main menu</p>
 <div align="center">
     <img width="500" src="./assets/screenshot_one.png">
 </div>
-<div align="center">
-    <img width="500" src="./assets/screenshot_two.png">
-</div>
+<p align="center">Operation menu</p>
 <div align="center">
     <img width="500" src="./assets/screenshot_three.png">
 </div>
+<p align="center">Root finding operation</p>
 <div align="center">
     <img width="500" src="./assets/screenshot_four.png">
+</div>
+<p align="center">Cartesian plane representation</p>
+<div align="center">
+    <img width="500" src="./assets/screenshot_two.png">
 </div>
 
 <h2 align="center">Documentation</h2>
