@@ -14,19 +14,19 @@ The library comes with a Terminal client for Linux and Windows capable of using 
 
 <h2 align="center">Screenshots</h2>
 
-<p align="center">Main menu</p>
+<h3 align="center">Main menu</h3>
 <div align="center">
     <img width="500" src="./assets/screenshot_one.png">
 </div>
-<p align="center">Operation menu</p>
+<h3 align="center">Operation menu</h3>
 <div align="center">
     <img width="500" src="./assets/screenshot_three.png">
 </div>
-<p align="center">Root finding operation</p>
+<h3 align="center">Root finding operation</h3>
 <div align="center">
     <img width="500" src="./assets/screenshot_four.png">
 </div>
-<p align="center">Cartesian plane representation</p>
+<h3 align="center">Cartesian plane representation</h3>
 <div align="center">
     <img width="500" src="./assets/screenshot_two.png">
 </div>
