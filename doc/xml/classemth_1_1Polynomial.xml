@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="512" column="22" bodyfile="include/emath.h" bodystart="512" bodyend="-1"/>
+        <location file="include/emath.h" line="612" column="22" bodyfile="include/emath.h" bodystart="612" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -34,7 +34,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="297" column="13" bodyfile="src/emath.cpp" bodystart="264" bodyend="264"/>
+        <location file="include/emath.h" line="397" column="13" bodyfile="src/emath.cpp" bodystart="264" bodyend="264"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Polynomial_1af0f389de210155a112852f013aaa18d3" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type></type>
@@ -63,7 +63,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="302" column="13"/>
+        <location file="include/emath.h" line="402" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Polynomial_1a98e8835f620927464b617d6b6ebd1329" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type></type>
@@ -92,7 +92,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="307" column="13"/>
+        <location file="include/emath.h" line="407" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Polynomial_1a084aed33935ade2f689f09103daaac53" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type></type>
@@ -121,7 +121,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="312" column="13"/>
+        <location file="include/emath.h" line="412" column="13"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Polynomial_1a3612ca54a3bef015a9809d77af2be355" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type></type>
@@ -150,7 +150,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="317" column="13" bodyfile="src/emath.cpp" bodystart="284" bodyend="284"/>
+        <location file="include/emath.h" line="417" column="13" bodyfile="src/emath.cpp" bodystart="284" bodyend="284"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Polynomial_1a3f55b493797c89e9079c7019fb905059" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type></type>
@@ -179,7 +179,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="322" column="13" bodyfile="src/emath.cpp" bodystart="289" bodyend="289"/>
+        <location file="include/emath.h" line="422" column="13" bodyfile="src/emath.cpp" bodystart="289" bodyend="289"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Polynomial_1a33ba807b5465ead26edd077d8289f4f3" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type><ref refid="classemth_1_1Polynomial" kindref="compound">Polynomial</ref> &amp;</type>
@@ -210,7 +210,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="328" column="24" bodyfile="src/emath.cpp" bodystart="295" bodyend="295"/>
+        <location file="include/emath.h" line="428" column="24" bodyfile="src/emath.cpp" bodystart="295" bodyend="295"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Polynomial_1a93818b33532e3f8e80fa614ca8287479" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type><ref refid="classemth_1_1Polynomial" kindref="compound">Polynomial</ref> &amp;</type>
@@ -241,7 +241,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="334" column="24" bodyfile="src/emath.cpp" bodystart="301" bodyend="301"/>
+        <location file="include/emath.h" line="434" column="24" bodyfile="src/emath.cpp" bodystart="301" bodyend="301"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Polynomial_1ad042381e1713be21b332d3f8fbdfd0a7" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>bool</type>
@@ -274,7 +274,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="341" column="18" bodyfile="src/emath.cpp" bodystart="308" bodyend="308"/>
+        <location file="include/emath.h" line="441" column="18" bodyfile="src/emath.cpp" bodystart="308" bodyend="308"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Polynomial_1a40fefffeb0043d193d5aa7ecb3adba55" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>bool</type>
@@ -307,7 +307,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="348" column="18" bodyfile="src/emath.cpp" bodystart="315" bodyend="315"/>
+        <location file="include/emath.h" line="448" column="18" bodyfile="src/emath.cpp" bodystart="315" bodyend="315"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Polynomial_1ae358f6f9b93783601af6999b67e0dafb" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>bool</type>
@@ -340,7 +340,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="355" column="18" bodyfile="src/emath.cpp" bodystart="322" bodyend="322"/>
+        <location file="include/emath.h" line="455" column="18" bodyfile="src/emath.cpp" bodystart="322" bodyend="322"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Polynomial_1a0f0640fcb0dd0a59b685a646d494bfc7" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>bool</type>
@@ -373,7 +373,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="362" column="13" bodyfile="src/emath.cpp" bodystart="329" bodyend="329"/>
+        <location file="include/emath.h" line="462" column="13" bodyfile="src/emath.cpp" bodystart="329" bodyend="329"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Polynomial_1a2321b93b1482b6677dbd125739848724" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>bool</type>
@@ -406,7 +406,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="369" column="18" bodyfile="src/emath.cpp" bodystart="336" bodyend="336"/>
+        <location file="include/emath.h" line="469" column="18" bodyfile="src/emath.cpp" bodystart="336" bodyend="336"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Polynomial_1a7b234cebd032016c0a8ece92a4f68141" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>bool</type>
@@ -439,7 +439,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="376" column="13" bodyfile="src/emath.cpp" bodystart="343" bodyend="343"/>
+        <location file="include/emath.h" line="476" column="13" bodyfile="src/emath.cpp" bodystart="343" bodyend="343"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Polynomial_1a9d46082ad38edc17f875127208626281" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type><ref refid="classemth_1_1Polynomial" kindref="compound">Polynomial</ref></type>
@@ -470,7 +470,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="382" column="24" bodyfile="src/emath.cpp" bodystart="349" bodyend="349"/>
+        <location file="include/emath.h" line="482" column="24" bodyfile="src/emath.cpp" bodystart="349" bodyend="349"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Polynomial_1a1cd22ae48bfcb14b53835730091e5f4d" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type><ref refid="classemth_1_1Polynomial" kindref="compound">Polynomial</ref></type>
@@ -501,7 +501,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="388" column="24" bodyfile="src/emath.cpp" bodystart="355" bodyend="355"/>
+        <location file="include/emath.h" line="488" column="24" bodyfile="src/emath.cpp" bodystart="355" bodyend="355"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Polynomial_1ac461b9aeb93c33d540f0a918bdefd203" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type><ref refid="classemth_1_1Polynomial" kindref="compound">Polynomial</ref></type>
@@ -532,7 +532,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="394" column="24" bodyfile="src/emath.cpp" bodystart="361" bodyend="361"/>
+        <location file="include/emath.h" line="494" column="24" bodyfile="src/emath.cpp" bodystart="361" bodyend="361"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Polynomial_1aa2a054dcc203257bfc3d06621ce876b1" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type><ref refid="classemth_1_1Polynomial" kindref="compound">Polynomial</ref></type>
@@ -563,7 +563,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="400" column="24" bodyfile="src/emath.cpp" bodystart="367" bodyend="367"/>
+        <location file="include/emath.h" line="500" column="24" bodyfile="src/emath.cpp" bodystart="367" bodyend="367"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Polynomial_1a56a499385ad24715b1240611217277c5" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type><ref refid="classemth_1_1Polynomial" kindref="compound">Polynomial</ref></type>
@@ -594,7 +594,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="406" column="24" bodyfile="src/emath.cpp" bodystart="373" bodyend="373"/>
+        <location file="include/emath.h" line="506" column="24" bodyfile="src/emath.cpp" bodystart="373" bodyend="373"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Polynomial_1a791a5aa2207acd2fccc4124ff36eb0bf" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type><ref refid="classemth_1_1Polynomial" kindref="compound">Polynomial</ref> &amp;</type>
@@ -625,7 +625,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="412" column="24" bodyfile="src/emath.cpp" bodystart="379" bodyend="382"/>
+        <location file="include/emath.h" line="512" column="24" bodyfile="src/emath.cpp" bodystart="379" bodyend="382"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Polynomial_1af545354b4dade3e286be26207d02a442" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type><ref refid="classemth_1_1Polynomial" kindref="compound">Polynomial</ref> &amp;</type>
@@ -656,7 +656,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="418" column="24" bodyfile="src/emath.cpp" bodystart="388" bodyend="391"/>
+        <location file="include/emath.h" line="518" column="24" bodyfile="src/emath.cpp" bodystart="388" bodyend="391"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Polynomial_1abdeb3769c43eec881ae8ed1a20a5d01d" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type><ref refid="classemth_1_1Polynomial" kindref="compound">Polynomial</ref> &amp;</type>
@@ -687,7 +687,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="424" column="24" bodyfile="src/emath.cpp" bodystart="397" bodyend="406"/>
+        <location file="include/emath.h" line="524" column="24" bodyfile="src/emath.cpp" bodystart="397" bodyend="406"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Polynomial_1ac5a003db2381c99c97c4a78341145b26" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type><ref refid="classemth_1_1Polynomial" kindref="compound">Polynomial</ref> &amp;</type>
@@ -718,7 +718,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="430" column="24" bodyfile="src/emath.cpp" bodystart="412" bodyend="423"/>
+        <location file="include/emath.h" line="530" column="24" bodyfile="src/emath.cpp" bodystart="412" bodyend="423"/>
         <references refid="classemth_1_1Monomial_1a1a11b6043ddc48006fe37241bb6bc6d0" compoundref="src_2emath_8cpp" startline="226" endline="226">emth::Monomial::get_degree</references>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Polynomial_1a2e6bd9b16b732b38caabf950acfd5cb2" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
@@ -750,7 +750,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="436" column="24" bodyfile="src/emath.cpp" bodystart="429" bodyend="437"/>
+        <location file="include/emath.h" line="536" column="24" bodyfile="src/emath.cpp" bodystart="429" bodyend="437"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Polynomial_1a7eb2c1c9bbbb013220d24f5d2a24a963" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>int</type>
@@ -768,7 +768,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="455" column="17" bodyfile="src/emath.cpp" bodystart="468" bodyend="468"/>
+        <location file="include/emath.h" line="555" column="17" bodyfile="src/emath.cpp" bodystart="468" bodyend="468"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Polynomial_1a02fda10cd15abff226c5a8013f4928f7" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>std::map&lt; int, <ref refid="classemth_1_1Monomial" kindref="compound">Monomial</ref> &gt;</type>
@@ -786,7 +786,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="460" column="22" bodyfile="src/emath.cpp" bodystart="473" bodyend="473"/>
+        <location file="include/emath.h" line="560" column="22" bodyfile="src/emath.cpp" bodystart="473" bodyend="473"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Polynomial_1a66649c1d2b624555d375096e27bc9855" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>bool</type>
@@ -804,7 +804,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="465" column="18" bodyfile="src/emath.cpp" bodystart="478" bodyend="478"/>
+        <location file="include/emath.h" line="565" column="18" bodyfile="src/emath.cpp" bodystart="478" bodyend="478"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Polynomial_1a1dc4825c3d5005949f0869e204e4fedc" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>bool</type>
@@ -835,7 +835,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="471" column="18" bodyfile="src/emath.cpp" bodystart="484" bodyend="484"/>
+        <location file="include/emath.h" line="571" column="18" bodyfile="src/emath.cpp" bodystart="484" bodyend="484"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Polynomial_1acd1befa11dd8d4e3da213114dc88cff7" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>bool</type>
@@ -866,7 +866,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="477" column="18" bodyfile="src/emath.cpp" bodystart="490" bodyend="495"/>
+        <location file="include/emath.h" line="577" column="18" bodyfile="src/emath.cpp" bodystart="490" bodyend="495"/>
         <references refid="classemth_1_1Monomial_1ac0ea8a4e12483048519184c536c27124" compoundref="src_2emath_8cpp" startline="221" endline="221">emth::Monomial::get_coeff</references>
         <references refid="classemth_1_1Monomial_1a1a11b6043ddc48006fe37241bb6bc6d0" compoundref="src_2emath_8cpp" startline="226" endline="226">emth::Monomial::get_degree</references>
       </memberdef>
@@ -886,7 +886,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="482" column="25" bodyfile="src/emath.cpp" bodystart="500" bodyend="500"/>
+        <location file="include/emath.h" line="582" column="25" bodyfile="src/emath.cpp" bodystart="500" bodyend="500"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Polynomial_1a644cd3ebe3afa676cc3db99557f6eed3" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>double</type>
@@ -917,7 +917,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="488" column="20" bodyfile="src/emath.cpp" bodystart="506" bodyend="510"/>
+        <location file="include/emath.h" line="588" column="20" bodyfile="src/emath.cpp" bodystart="506" bodyend="510"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Polynomial_1a1f27fae485c94bb0f00a46c50214ab37" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type><ref refid="classemth_1_1Polynomial" kindref="compound">Polynomial</ref></type>
@@ -935,7 +935,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="493" column="24" bodyfile="src/emath.cpp" bodystart="515" bodyend="521"/>
+        <location file="include/emath.h" line="593" column="24" bodyfile="src/emath.cpp" bodystart="515" bodyend="521"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Polynomial_1ac87df7094ce26a8e9cba6df79a3eaf2d" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type><ref refid="classemth_1_1Polynomial" kindref="compound">Polynomial</ref></type>
@@ -953,7 +953,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="498" column="24" bodyfile="src/emath.cpp" bodystart="526" bodyend="532"/>
+        <location file="include/emath.h" line="598" column="24" bodyfile="src/emath.cpp" bodystart="526" bodyend="532"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Polynomial_1adcba2128b5bfcc6ee15023684edc53f2" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>std::vector&lt; std::complex&lt; double &gt; &gt;</type>
@@ -973,7 +973,7 @@ Does not handle the edge case when called with a constant polynomial (polynomial
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="503" column="25" bodyfile="src/emath.cpp" bodystart="538" bodyend="543"/>
+        <location file="include/emath.h" line="603" column="25" bodyfile="src/emath.cpp" bodystart="538" bodyend="543"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Polynomial_1a056e1df4102b0d0add0e8e2805401b82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -988,7 +988,7 @@ Does not handle the edge case when called with a constant polynomial (polynomial
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="507" column="13"/>
+        <location file="include/emath.h" line="607" column="13"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
@@ -1033,7 +1033,7 @@ Does not handle the edge case when called with a constant polynomial (polynomial
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="443" column="20"/>
+        <location file="include/emath.h" line="543" column="20"/>
       </memberdef>
       <memberdef kind="friend" id="classemth_1_1Polynomial_1a444148f9a6121f040d0149c4b5d94ac5" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>std::ostream &amp;</type>
@@ -1076,7 +1076,7 @@ Does not handle the edge case when called with a constant polynomial (polynomial
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="450" column="20"/>
+        <location file="include/emath.h" line="550" column="20"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -1107,7 +1107,7 @@ Does not handle the edge case when called with a constant polynomial (polynomial
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="517" column="18" bodyfile="src/emath.cpp" bodystart="548" bodyend="551"/>
+        <location file="include/emath.h" line="617" column="18" bodyfile="src/emath.cpp" bodystart="548" bodyend="551"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Polynomial_1a3d28b34143d180686a38f5b12900a38c" prot="private" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type><ref refid="classemth_1_1Polynomial" kindref="compound">Polynomial</ref> &amp;</type>
@@ -1122,7 +1122,7 @@ Does not handle the edge case when called with a constant polynomial (polynomial
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="521" column="24" bodyfile="src/emath.cpp" bodystart="555" bodyend="562"/>
+        <location file="include/emath.h" line="621" column="24" bodyfile="src/emath.cpp" bodystart="555" bodyend="562"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1131,7 +1131,7 @@ Does not handle the edge case when called with a constant polynomial (polynomial
     <detaileddescription>
 <para>The class consists of the constructors, the operators, the getters, the properties and some private functions. </para>
     </detaileddescription>
-    <location file="include/emath.h" line="292" column="5" bodyfile="include/emath.h" bodystart="292" bodyend="522"/>
+    <location file="include/emath.h" line="392" column="5" bodyfile="include/emath.h" bodystart="392" bodyend="622"/>
     <listofallmembers>
       <member refid="classemth_1_1Polynomial_1a7eb2c1c9bbbb013220d24f5d2a24a963" prot="public" virt="non-virtual"><scope>emth::Polynomial</scope><name>get_degree</name></member>
       <member refid="classemth_1_1Polynomial_1a1f27fae485c94bb0f00a46c50214ab37" prot="public" virt="non-virtual"><scope>emth::Polynomial</scope><name>get_derivative</name></member>

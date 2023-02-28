@@ -115,14 +115,16 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <div class="textblock"><h1><a class="anchor" id="intro"></a>
 Introduction</h1>
 <p>This is a project that aims to provide some wrapper classes for algebraic mathematical concepts.<br  />
-At the moment it includes the Monomial and Polynomial classes for general calculus. The library is currently in expansion.<br  />
+It includes the Monomial and Polynomial classes for general calculus, plus a Parser for transforming std::string to Polynomial objects.<br  />
+It also comes with a Termial interface for doing multiple operatios with polynomials: arithemtic, root finding, graphical representation.<br  />
+ The library is currently in expansion. It will include in the future support for Exponential, Trigonometric and Radical functions.<br  />
 Any feedback is much appreciated!</p>
-<h1><a class="anchor" id="install"></a>
-Installation</h1>
+<h1><a class="anchor" id="libinstall"></a>
+Library Installation</h1>
 <p>The project comes with a folder with some bash files that complete some Meson related tasks.<br  />
 All bash files must be executed from the project's root directory to work properly.<br  />
 To install the project, there is only need to execute two of them files.<br  />
-Once installed just include the <a class="el" href="emath_8h.html" title="This is the main header file for the emath library.">emath.h</a> header file in your code and link it with its implementation.</p>
+Once installed just include the <a class="el" href="emath_8h.html" title="This is the main header file for the emath library.">emath.h</a> or <a class="el" href="eparser_8h.html" title="This is the main header file for the equation parser.">eparser.h</a> header files in your code respectively and link them with their implementation.</p>
 <h2><a class="anchor" id="step1"></a>
 Step one: Setup the Project</h2>
 <p>To setup the Meson project run the setup.sh bash file: </p><div class="fragment"><div class="line">bash ./scripts/setup.sh</div>
@@ -135,13 +137,79 @@ Step two: Install the Library</h2>
 Testing</h1>
 <p>The project comes with some test files located in the test folder.<br  />
 To test that the library code works properly run the following bash file: </p><div class="fragment"><div class="line">bash ./scripts/test.sh</div>
-</div><!-- fragment --> </div></div><!-- PageDoc -->
+</div><!-- fragment --><h1><a class="anchor" id="terinstall"></a>
+Interface Installation</h1>
+<p>The project comes with a folder with some bash files that complete some Meson related tasks.<br  />
+All bash files must be executed from the project's root directory to work properly.<br  />
+There are two ways to install the Interface, when following the Library Installation instructions or manually as explained here:</p>
+<h2><a class="anchor" id="istep1"></a>
+Step one: Setup the Project</h2>
+<p>To setup the Meson project run the setup.sh bash file: </p><div class="fragment"><div class="line">bash ./scripts/setup.sh</div>
+</div><!-- fragment --><h2><a class="anchor" id="istep2"></a>
+Step two: Compile the Interface</h2>
+<p>To compile the Interface run the compile.sh bash file: </p><div class="fragment"><div class="line">bash ./scripts/compile.sh</div>
+</div><!-- fragment --><h2><a class="anchor" id="istep3"></a>
+Step three: Move to final directory</h2>
+<p>To finish installing the Interface choose one of the two executable files: emath_cli_d or emath_cli_s. The executable ending in _d is the dynamic version and the one ending in _s is the static version.</p>
+<dl class="section note"><dt>Note</dt><dd>When installing to a Windows machine the executable files will have prefixed '.exe' </dd>
+<dd>
+If the dynamic version does not work try the static version: This could resolve missing dependencies</dd></dl>
+<h1><a class="anchor" id="terusage"></a>
+Interface Usage</h1>
+<h2><a class="anchor" id="launching"></a>
+Launching the Interface</h2>
+<p>To launch the Interface just open a console and cd to the directory with the binaries: </p><div class="fragment"><div class="line">cd /path/to/emath_cli_dir</div>
+<div class="line">./emath_cli_d</div>
+</div><!-- fragment --><p>Or if they are in the PATH environment variable call them normally: </p><div class="fragment"><div class="line">emath_cli_d</div>
+</div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>We will use emath_cli_d as the binary executable, but if you installed the static version you should call emath_cli_s instead</dd></dl>
+<h2><a class="anchor" id="adding"></a>
+Adding polynomials</h2>
+<p>To add polynomials to the cache and consecuently be able to operate with them you should press 'e' on the main menu. Then you should write the polynomial in the following markup [ 3/2x^2 + 2*2.2x - 5 ] and press enter.</p>
+<dl class="section note"><dt>Note</dt><dd>If you have added toomany polynomials to the cache a scroll function will be enabled, cycle pressing tab on the main or operation menus until the polynomials window is focused and the press the arrow functions to scroll.</dd></dl>
+<div class="image">
+<img src="screenshot_one.png" alt=""/>
+</div>
+<h2><a class="anchor" id="removing"></a>
+Removing polynomials</h2>
+<p>To remove polynomials from the cache and consecuently delete them you should press 'q' on the main menu. Then you should write the number corresponding to the polynomial's index.</p>
+<h2><a class="anchor" id="operation"></a>
+New operation</h2>
+<p>Once at least one polynomial has been added you can press space on the main menu to enter to the operation menu:</p>
+<div class="image">
+<img src="screenshot_three.png" alt=""/>
+</div>
+<p>Now you have a variety of choices: numbered different operations and arithmetic operations.</p>
+<h2><a class="anchor" id="arithmetic"></a>
+Arithmetic operation</h2>
+<p>Once in the operation menu, you can press space again to input a arithmetic operation. Arithmetic operations consist of +, -, *, / operations beetwen the polynomial indexes. Here is an example of what you would input to multiply the polynomial with index 0 to the one with index 1 and add to that what results the polynomial with index 2: [ 0 * 1 + 2 ]. Then the results will be printed, and you will ahve to press any key to continue.</p>
+<dl class="section note"><dt>Note</dt><dd>Higher grade operations like multiplication and division are computer before their lower grade counter parts addition and substraction </dd>
+<dd>
+If you want to save the resulting polynomial to cache write the '_' character as the first character and then write the rest of the operation normally</dd></dl>
+<h2><a class="anchor" id="evaluate"></a>
+Evaluate operation</h2>
+<p>To get the value of y for some x, you make a evaluate operation. Press 1 on the operation menu, input the polynomial's index and then input the x's value.</p>
+<h2><a class="anchor" id="derint"></a>
+Derivative and Integral operation</h2>
+<p>Both these operations are done in an indentical way: Press 2 or 3 respectively on the operation menu and then input the polynomial's index.</p>
+<h2><a class="anchor" id="root"></a>
+Root finding operation</h2>
+<p>To find the real and complex roots of a polynomial when on the operation menu: Press 4 and then input the polynomial's index. The roots will be printed inside parenthesis.</p>
+<div class="image">
+<img src="screenshot_four.png" alt=""/>
+</div>
+<h2><a class="anchor" id="draw"></a>
+Drawing operation</h2>
+<p>To draw a polynomial in the Cartesian plane: Press 5 on the operation menu and then input the polynomial's index. A new window will open showing the polynomail on the Cartesian plane. You then can move with the arrow keys around the Cartesian plane and resize the window to expand the Cartesian plane.</p>
+<div class="image">
+<img src="screenshot_two.png" alt=""/>
+</div>
+ </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Feb 27 2023 21:55:54 for EMath++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated on Tue Feb 28 2023 20:33:05 for EMath++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

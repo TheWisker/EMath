@@ -12,6 +12,10 @@ This is a project that aims to provide some wrapper classes for algebraic mathem
 
 The library comes with a Terminal client for Linux and Windows capable of using the header files to do some operations with polynomials, capable even to draw them in the Cartesian plane! More informartion regarding the terminal client is found at the docs.
 
+<h2 align="center">Dependencies</h2>
+
+The dependencies are listed in the ./third_party/dependencies file. The only not optional depdendencies are ncurses and opengl in Linux.
+
 <h2 align="center">Screenshots</h2>
 
 <h3 align="center">Main menu</h3>

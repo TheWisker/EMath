@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="831" column="32" bodyfile="src/interface.cpp" bodystart="831" bodyend="-1"/>
+        <location file="src/interface.cpp" line="830" column="32" bodyfile="src/interface.cpp" bodystart="830" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -34,7 +34,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="835" column="22" bodyfile="src/interface.cpp" bodystart="835" bodyend="-1"/>
+        <location file="src/interface.cpp" line="834" column="22" bodyfile="src/interface.cpp" bodystart="834" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classefc_1_1Application_1ab292c34e4cb10e3cfae317b4fb9d4b09" prot="private" static="no" mutable="no">
         <type>const <ref refid="classefc_1_1Storage" kindref="compound">Storage</ref></type>
@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="839" column="27" bodyfile="src/interface.cpp" bodystart="839" bodyend="-1"/>
+        <location file="src/interface.cpp" line="838" column="27" bodyfile="src/interface.cpp" bodystart="838" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classefc_1_1Application_1a1ec2e38410b026a66837d4a0024a9cdf" prot="private" static="no" mutable="no">
         <type>rapidjson::Document</type>
@@ -64,7 +64,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="843" column="33" bodyfile="src/interface.cpp" bodystart="843" bodyend="-1"/>
+        <location file="src/interface.cpp" line="842" column="33" bodyfile="src/interface.cpp" bodystart="842" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classefc_1_1Application_1a4e741d91d8446d3ecbaa85543d5c8279" prot="private" static="no" mutable="no">
         <type>::std::vector&lt; <ref refid="classemth_1_1Polynomial" kindref="compound">emth::Polynomial</ref> &gt;</type>
@@ -79,7 +79,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="847" column="27" bodyfile="src/interface.cpp" bodystart="847" bodyend="-1"/>
+        <location file="src/interface.cpp" line="846" column="27" bodyfile="src/interface.cpp" bodystart="846" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classefc_1_1Application_1a3fde6e56735191556c786c6c46bcac6a" prot="private" static="no" mutable="no">
         <type>unsigned int</type>
@@ -94,7 +94,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="851" column="26" bodyfile="src/interface.cpp" bodystart="851" bodyend="-1"/>
+        <location file="src/interface.cpp" line="850" column="26" bodyfile="src/interface.cpp" bodystart="850" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -111,7 +111,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="855" column="13" bodyfile="src/interface.cpp" bodystart="855" bodyend="862"/>
+        <location file="src/interface.cpp" line="854" column="13" bodyfile="src/interface.cpp" bodystart="854" bodyend="861"/>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Application_1a690dae179fe46d15c9456bc63cb291ae" prot="private" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>const int</type>
@@ -129,7 +129,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="867" column="23" bodyfile="src/interface.cpp" bodystart="867" bodyend="874"/>
+        <location file="src/interface.cpp" line="866" column="23" bodyfile="src/interface.cpp" bodystart="866" bodyend="873"/>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Application_1a442ecc993b0afec9d0d912706f2c9eeb" prot="private" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>const int</type>
@@ -147,7 +147,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="879" column="23" bodyfile="src/interface.cpp" bodystart="879" bodyend="887"/>
+        <location file="src/interface.cpp" line="878" column="23" bodyfile="src/interface.cpp" bodystart="878" bodyend="886"/>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Application_1a5d77c949c8fa11474315bd79e750623c" prot="private" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>const int</type>
@@ -165,7 +165,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="892" column="23" bodyfile="src/interface.cpp" bodystart="892" bodyend="899"/>
+        <location file="src/interface.cpp" line="891" column="23" bodyfile="src/interface.cpp" bodystart="891" bodyend="898"/>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Application_1aee1a8b4512ecb9845deeb0c43a512e46" prot="private" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>const int</type>
@@ -183,7 +183,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="904" column="23" bodyfile="src/interface.cpp" bodystart="904" bodyend="915"/>
+        <location file="src/interface.cpp" line="903" column="23" bodyfile="src/interface.cpp" bodystart="903" bodyend="914"/>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Application_1ab9a0c62bd0782de76bc82ff96a43e2d8" prot="private" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>const int</type>
@@ -201,7 +201,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="920" column="23" bodyfile="src/interface.cpp" bodystart="920" bodyend="927"/>
+        <location file="src/interface.cpp" line="919" column="23" bodyfile="src/interface.cpp" bodystart="919" bodyend="926"/>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Application_1ae83eb076df23d827af71e1662f73246c" prot="private" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>const int</type>
@@ -223,7 +223,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="932" column="23" bodyfile="src/interface.cpp" bodystart="932" bodyend="940"/>
+        <location file="src/interface.cpp" line="931" column="23" bodyfile="src/interface.cpp" bodystart="931" bodyend="939"/>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Application_1af766c0e04436c9bf05ecd3759e054dc3" prot="private" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>const int</type>
@@ -245,7 +245,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="945" column="23" bodyfile="src/interface.cpp" bodystart="945" bodyend="954"/>
+        <location file="src/interface.cpp" line="944" column="23" bodyfile="src/interface.cpp" bodystart="944" bodyend="953"/>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Application_1a8c0ef790120bec7ce7d3e343ffe8f659" prot="private" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>const ::std::vector&lt;::std::string &gt;</type>
@@ -263,7 +263,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="959" column="33" bodyfile="src/interface.cpp" bodystart="959" bodyend="959"/>
+        <location file="src/interface.cpp" line="958" column="33" bodyfile="src/interface.cpp" bodystart="958" bodyend="958"/>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Application_1af11dea6fee6e95f4eed38bb9a1947ed1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const int</type>
@@ -281,7 +281,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="964" column="23" bodyfile="src/interface.cpp" bodystart="964" bodyend="975"/>
+        <location file="src/interface.cpp" line="963" column="23" bodyfile="src/interface.cpp" bodystart="963" bodyend="974"/>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Application_1a809af0e5356af9b179873178d9fa1bf9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const int</type>
@@ -299,7 +299,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="980" column="23" bodyfile="src/interface.cpp" bodystart="980" bodyend="996"/>
+        <location file="src/interface.cpp" line="979" column="23" bodyfile="src/interface.cpp" bodystart="979" bodyend="995"/>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Application_1ae71606094c937e0e453277a000e3ef0e" prot="private" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>void</type>
@@ -328,7 +328,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="1001" column="18" bodyfile="src/interface.cpp" bodystart="1001" bodyend="1025"/>
+        <location file="src/interface.cpp" line="1000" column="18" bodyfile="src/interface.cpp" bodystart="1000" bodyend="1024"/>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Application_1a5f82f73953cf829ff907ba66434d5599" prot="private" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>void</type>
@@ -357,7 +357,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="1030" column="18" bodyfile="src/interface.cpp" bodystart="1030" bodyend="1037"/>
+        <location file="src/interface.cpp" line="1029" column="18" bodyfile="src/interface.cpp" bodystart="1029" bodyend="1036"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-static-func">
@@ -390,7 +390,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="1043" column="30" bodyfile="src/interface.cpp" bodystart="1043" bodyend="1043"/>
+        <location file="src/interface.cpp" line="1042" column="30" bodyfile="src/interface.cpp" bodystart="1042" bodyend="1042"/>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Application_1a5665c2ca16c2117d8d1f5a4e73a3d35f" prot="private" static="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>const std::string</type>
@@ -421,7 +421,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="1049" column="38" bodyfile="src/interface.cpp" bodystart="1049" bodyend="1049"/>
+        <location file="src/interface.cpp" line="1048" column="38" bodyfile="src/interface.cpp" bodystart="1048" bodyend="1048"/>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Application_1aa7092638b0b9b4a7506ee76ffa3725f5" prot="private" static="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>const void</type>
@@ -462,7 +462,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="1055" column="31" bodyfile="src/interface.cpp" bodystart="1055" bodyend="1055"/>
+        <location file="src/interface.cpp" line="1054" column="31" bodyfile="src/interface.cpp" bodystart="1054" bodyend="1054"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -482,7 +482,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="1061" column="32" bodyfile="src/interface.cpp" bodystart="1061" bodyend="1064"/>
+        <location file="src/interface.cpp" line="1060" column="32" bodyfile="src/interface.cpp" bodystart="1060" bodyend="1063"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -499,7 +499,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="1068" column="18" bodyfile="src/interface.cpp" bodystart="1068" bodyend="1083"/>
+        <location file="src/interface.cpp" line="1067" column="18" bodyfile="src/interface.cpp" bodystart="1067" bodyend="1082"/>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Application_1adc655697a7fa28de4f8526819eb1a083" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type></type>
@@ -514,7 +514,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="1087" column="13" bodyfile="src/interface.cpp" bodystart="1087" bodyend="1091"/>
+        <location file="src/interface.cpp" line="1086" column="13" bodyfile="src/interface.cpp" bodystart="1086" bodyend="1090"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -523,7 +523,7 @@
     <detaileddescription>
 <para>The class consist of some menus as loops and all the logic of the <ref refid="classefc_1_1Application" kindref="compound">Application</ref> </para>
     </detaileddescription>
-    <location file="src/interface.cpp" line="823" column="5" bodyfile="src/interface.cpp" bodystart="823" bodyend="1092"/>
+    <location file="src/interface.cpp" line="822" column="5" bodyfile="src/interface.cpp" bodystart="822" bodyend="1091"/>
     <listofallmembers>
       <member refid="classefc_1_1Application_1a3fde6e56735191556c786c6c46bcac6a" prot="private" virt="non-virtual"><scope>efc::Application</scope><name>active</name></member>
       <member refid="classefc_1_1Application_1ae83eb076df23d827af71e1662f73246c" prot="private" virt="non-virtual"><scope>efc::Application</scope><name>add_polynomial</name></member>

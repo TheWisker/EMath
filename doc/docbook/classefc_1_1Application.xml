@@ -38,7 +38,7 @@
 
 <para>The class consist of some menus as loops and all the logic of the <link linkend="_classefc_1_1Application">Application</link> </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l00823">823</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00822">822</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
@@ -51,7 +51,7 @@ Definition at line <link linkend="_interface_8cpp_source_1l00823">823</link> of 
 <para>Default destructor, it deletes the <link linkend="_classefc_1_1Terminal">Terminal</link> pointer, sets the singleton instance to nullptr, and saves the Json data to the <link linkend="_classefc_1_1Storage">Storage</link> object. </para>
 </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l01087">1087</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l01086">1086</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 </section>
 </section>
 <section>
@@ -71,7 +71,7 @@ Definition at line <link linkend="_interface_8cpp_source_1l01087">1087</link> of
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l01061">1061</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l01060">1060</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 </section>
 <anchor xml:id="_classefc_1_1Application_1a151fab3a86220c774be08189cf8dcb46"/><section>
     <title>run()</title>
@@ -82,7 +82,7 @@ Definition at line <link linkend="_interface_8cpp_source_1l01061">1061</link> of
 <para>Main loop fallback, basically it starts the application event loop. </para>
 </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l01068">1068</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l01067">1067</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 </section>
 <para>
 The documentation for this class was generated from the following file:</para>

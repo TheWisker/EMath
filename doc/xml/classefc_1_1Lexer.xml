@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="695" column="33" bodyfile="src/interface.cpp" bodystart="695" bodyend="-1"/>
+        <location file="src/interface.cpp" line="694" column="33" bodyfile="src/interface.cpp" bodystart="694" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classefc_1_1Lexer_1aa83595f2703d850a65e78db3b25d348f" prot="private" static="no" mutable="no">
         <type>short unsigned int</type>
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="699" column="32" bodyfile="src/interface.cpp" bodystart="699" bodyend="-1"/>
+        <location file="src/interface.cpp" line="698" column="32" bodyfile="src/interface.cpp" bodystart="698" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-static-func">
@@ -64,7 +64,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="705" column="40" bodyfile="src/interface.cpp" bodystart="705" bodyend="716"/>
+        <location file="src/interface.cpp" line="704" column="40" bodyfile="src/interface.cpp" bodystart="704" bodyend="715"/>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Lexer_1a87c191b744deb54023a13622b373557f" prot="private" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>constexpr bool</type>
@@ -97,7 +97,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="723" column="42" bodyfile="src/interface.cpp" bodystart="723" bodyend="723"/>
+        <location file="src/interface.cpp" line="722" column="42" bodyfile="src/interface.cpp" bodystart="722" bodyend="722"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -128,7 +128,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="729" column="13" bodyfile="src/interface.cpp" bodystart="729" bodyend="729"/>
+        <location file="src/interface.cpp" line="728" column="13" bodyfile="src/interface.cpp" bodystart="728" bodyend="728"/>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Lexer_1a3eb3b61f1ba41e9d3150052b6280167b" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>const <ref refid="structefc_1_1Token" kindref="compound">Token</ref></type>
@@ -146,7 +146,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="734" column="25" bodyfile="src/interface.cpp" bodystart="734" bodyend="743"/>
+        <location file="src/interface.cpp" line="733" column="25" bodyfile="src/interface.cpp" bodystart="733" bodyend="742"/>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Lexer_1a77d56d461130cb509b3831daa7e06851" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type></type>
@@ -161,7 +161,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="747" column="13"/>
+        <location file="src/interface.cpp" line="746" column="13"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -170,7 +170,7 @@
     <detaileddescription>
 <para>The class consists of a public function for getting the next <ref refid="structefc_1_1Token" kindref="compound">Token</ref> </para>
     </detaileddescription>
-    <location file="src/interface.cpp" line="690" column="5" bodyfile="src/interface.cpp" bodystart="690" bodyend="748"/>
+    <location file="src/interface.cpp" line="689" column="5" bodyfile="src/interface.cpp" bodystart="689" bodyend="747"/>
     <listofallmembers>
       <member refid="classefc_1_1Lexer_1ac16277e2dd67e2bd313025141888818f" prot="private" virt="non-virtual"><scope>efc::Lexer</scope><name>_input</name></member>
       <member refid="classefc_1_1Lexer_1aa83595f2703d850a65e78db3b25d348f" prot="private" virt="non-virtual"><scope>efc::Lexer</scope><name>_pos</name></member>

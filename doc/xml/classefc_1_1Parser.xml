@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="759" column="19" bodyfile="src/interface.cpp" bodystart="759" bodyend="-1"/>
+        <location file="src/interface.cpp" line="758" column="19" bodyfile="src/interface.cpp" bodystart="758" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="765" column="13" bodyfile="src/interface.cpp" bodystart="765" bodyend="765"/>
+        <location file="src/interface.cpp" line="764" column="13" bodyfile="src/interface.cpp" bodystart="764" bodyend="764"/>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Parser_1ad801320ff4014bb3e2822a2b56dc246e" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
         <type>const int</type>
@@ -65,9 +65,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="770" column="23" bodyfile="src/interface.cpp" bodystart="770" bodyend="781"/>
-        <references refid="classefc_1_1Lexer_1a3eb3b61f1ba41e9d3150052b6280167b" compoundref="interface_8cpp" startline="734" endline="743">efc::Lexer::next</references>
+        <location file="src/interface.cpp" line="769" column="23" bodyfile="src/interface.cpp" bodystart="769" bodyend="780"/>
+        <references refid="classefc_1_1Lexer_1a3eb3b61f1ba41e9d3150052b6280167b" compoundref="interface_8cpp" startline="733" endline="742">efc::Lexer::next</references>
         <references refid="structefc_1_1Token_1abd56361d2f52a2c345e106f8e2ec4197" compoundref="interface_8cpp" startline="678">efc::Token::type</references>
+        <references refid="structefc_1_1Token_1ad5ee17926cf07cb994367a0d86717248">efc::Token::value</references>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Parser_1aa3007aab2177728edcfba4c0e4bb460f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="classemth_1_1Polynomial" kindref="compound">emth::Polynomial</ref></type>
@@ -98,9 +99,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="787" column="36" bodyfile="src/interface.cpp" bodystart="787" bodyend="812"/>
-        <references refid="classefc_1_1Lexer_1a3eb3b61f1ba41e9d3150052b6280167b" compoundref="interface_8cpp" startline="734" endline="743">efc::Lexer::next</references>
+        <location file="src/interface.cpp" line="786" column="36" bodyfile="src/interface.cpp" bodystart="786" bodyend="811"/>
+        <references refid="classefc_1_1Lexer_1a3eb3b61f1ba41e9d3150052b6280167b" compoundref="interface_8cpp" startline="733" endline="742">efc::Lexer::next</references>
         <references refid="structefc_1_1Token_1abd56361d2f52a2c345e106f8e2ec4197" compoundref="interface_8cpp" startline="678">efc::Token::type</references>
+        <references refid="structefc_1_1Token_1ad5ee17926cf07cb994367a0d86717248">efc::Token::value</references>
       </memberdef>
       <memberdef kind="function" id="classefc_1_1Parser_1a56a3102383a805ae6e3ed858f3efbfe1" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type></type>
@@ -115,7 +117,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="816" column="13"/>
+        <location file="src/interface.cpp" line="815" column="13"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -124,7 +126,7 @@
     <detaileddescription>
 <para>The class consists of two public functions, one for parsing the entire input as a number and the other for it as a operation. </para>
     </detaileddescription>
-    <location file="src/interface.cpp" line="754" column="5" bodyfile="src/interface.cpp" bodystart="754" bodyend="817"/>
+    <location file="src/interface.cpp" line="753" column="5" bodyfile="src/interface.cpp" bodystart="753" bodyend="816"/>
     <listofallmembers>
       <member refid="classefc_1_1Parser_1a9725e73ad99732a3da5196ce541daefc" prot="private" virt="non-virtual"><scope>efc::Parser</scope><name>_lexer</name></member>
       <member refid="classefc_1_1Parser_1ad801320ff4014bb3e2822a2b56dc246e" prot="public" virt="non-virtual"><scope>efc::Parser</scope><name>parse_number</name></member>

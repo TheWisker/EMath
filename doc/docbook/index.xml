@@ -35,7 +35,6 @@
     <xi:include href="classefc_1_1Terminal.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="structefc_1_1Token.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="structemthp_1_1Token.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="unionvalue.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="classefc_1_1Window.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </chapter>
 <chapter>

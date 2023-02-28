@@ -16,7 +16,6 @@ var hierarchy =
     ] ],
     [ "efc::Token", "structefc_1_1Token.html", null ],
     [ "emthp::Token", "structemthp_1_1Token.html", null ],
-    [ "value", "unionvalue.html", null ],
     [ "efc::Window", "classefc_1_1Window.html", [
       [ "efc::IWindow", "classefc_1_1IWindow.html", null ],
       [ "efc::OWindow", "classefc_1_1OWindow.html", null ]

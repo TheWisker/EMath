@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="683" column="20" bodyfile="src/interface.cpp" bodystart="683" bodyend="-1"/>
+        <location file="src/interface.cpp" line="682" column="20" bodyfile="src/interface.cpp" bodystart="682" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structefc_1_1Token_1a8fbcc67cb189f58f5e1a6af27e059c2b" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="683" column="26" bodyfile="src/interface.cpp" bodystart="683" bodyend="-1"/>
+        <location file="src/interface.cpp" line="682" column="26" bodyfile="src/interface.cpp" bodystart="682" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structefc_1_1Token_1ad5ee17926cf07cb994367a0d86717248" prot="public" static="no" mutable="no">
         <type>union efc::Token::@0</type>
@@ -53,12 +53,13 @@
         <name>value</name>
         <qualifiedname>efc::Token::value</qualifiedname>
         <briefdescription>
+<para>A union representing the value of the <ref refid="structefc_1_1Token" kindref="compound">Token</ref> as a char or as a int. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/interface.cpp" line="683" column="21"/>
+        <location file="src/interface.cpp" line="682" column="21"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -66,7 +67,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="src/interface.cpp" line="674" column="5" bodyfile="src/interface.cpp" bodystart="674" bodyend="684"/>
+    <location file="src/interface.cpp" line="674" column="5" bodyfile="src/interface.cpp" bodystart="674" bodyend="683"/>
     <listofallmembers>
       <member refid="structefc_1_1Token_1a2bcb3afeb2d611ead7041f924d621587" prot="public" virt="non-virtual"><scope>efc::Token</scope><name>c</name></member>
       <member refid="structefc_1_1Token_1a8fbcc67cb189f58f5e1a6af27e059c2b" prot="public" virt="non-virtual"><scope>efc::Token</scope><name>n</name></member>

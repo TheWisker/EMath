@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="80" column="25" bodyfile="src/emath.cpp" bodystart="15" bodyend="26"/>
+        <location file="include/emath.h" line="180" column="25" bodyfile="src/emath.cpp" bodystart="15" bodyend="26"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -52,7 +52,7 @@
     <detaileddescription>
 <para>The class consists of the functions that operate with real numbers. </para>
     </detaileddescription>
-    <location file="include/emath.h" line="73" column="5" bodyfile="include/emath.h" bodystart="73" bodyend="81"/>
+    <location file="include/emath.h" line="173" column="5" bodyfile="include/emath.h" bodystart="173" bodyend="181"/>
     <listofallmembers>
       <member refid="classemth_1_1Arithmetic_1adddfba367517025753ae37062ac6f483" prot="public" virt="non-virtual"><scope>emth::Arithmetic</scope><name>get_divisors</name></member>
     </listofallmembers>

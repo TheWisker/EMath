@@ -12445,7 +12445,26 @@ $doxydocs=
             virtualness => 'non_virtual',
             protection => 'public',
             static => 'no',
-            brief => {},
+            brief => {
+              doc => [
+                {
+                  type => 'parbreak'
+                },
+                {
+                  type => 'text',
+                  content => 'A union representing the value of the '
+                },
+                {
+                  type => 'url',
+                  link => 'structefc_1_1Token',
+                  content => 'Token'
+                },
+                {
+                  type => 'text',
+                  content => ' as a char or as a int. '
+                }
+              ]
+            },
             detailed => {},
             type => 'union efc::Token::@0'
           }
@@ -12539,26 +12558,6 @@ $doxydocs=
           {
             type => 'text',
             content => 'Struct for representing a token as a type and a value. '
-          }
-        ]
-      },
-      detailed => {}
-    },
-    {
-      name => 'value',
-      kind => 'union',
-      inner => [
-      ],
-      all_members => [
-      ],
-      brief => {
-        doc => [
-          {
-            type => 'parbreak'
-          },
-          {
-            type => 'text',
-            content => 'A union representing the value of the Token as a char or as a int. '
           }
         ]
       },
@@ -29973,7 +29972,21 @@ $doxydocs=
               },
               {
                 type => 'text',
-                content => 'At the moment it includes the Monomial and Polynomial classes for general calculus. The library is currently in expansion.'
+                content => 'It includes the Monomial and Polynomial classes for general calculus, plus a Parser for transforming std::string to Polynomial objects.'
+              },
+              {
+                type => 'linebreak'
+              },
+              {
+                type => 'text',
+                content => 'It also comes with a Termial interface for doing multiple operatios with polynomials: arithemtic, root finding, graphical representation.'
+              },
+              {
+                type => 'linebreak'
+              },
+              {
+                type => 'text',
+                content => ' The library is currently in expansion. It will include in the future support for Exponential, Trigonometric and Radical functions.'
               },
               {
                 type => 'linebreak'
@@ -29986,7 +29999,7 @@ $doxydocs=
           },
           {
             type => 'sect1',
-            title => 'Installation',
+            title => 'Library Installation',
             content => [
               {
                 type => 'text',
@@ -30020,7 +30033,16 @@ $doxydocs=
               },
               {
                 type => 'text',
-                content => ' header file in your code and link it with its implementation.'
+                content => ' or '
+              },
+              {
+                type => 'url',
+                link => 'eparser_8h',
+                content => 'eparser.h'
+              },
+              {
+                type => 'text',
+                content => ' header files in your code respectively and link them with their implementation.'
               },
               {
                 type => 'sect2',
@@ -30084,10 +30106,258 @@ $doxydocs=
               {
                 type => 'preformatted',
                 content => 'bash ./scripts/test.sh'
+              }
+            ]
+          },
+          {
+            type => 'sect1',
+            title => 'Interface Installation',
+            content => [
+              {
+                type => 'text',
+                content => 'The project comes with a folder with some bash files that complete some Meson related tasks.'
+              },
+              {
+                type => 'linebreak'
               },
               {
                 type => 'text',
-                content => ' '
+                content => 'All bash files must be executed from the project\'s root directory to work properly.'
+              },
+              {
+                type => 'linebreak'
+              },
+              {
+                type => 'text',
+                content => 'There are two ways to install the Interface, when following the Library Installation instructions or manually as explained here:'
+              },
+              {
+                type => 'sect2',
+                title => 'Step one: Setup the Project',
+                content => [
+                  {
+                    type => 'text',
+                    content => 'To setup the Meson project run the setup.sh bash file: '
+                  },
+                  {
+                    type => 'preformatted',
+                    content => 'bash ./scripts/setup.sh'
+                  }
+                ]
+              },
+              {
+                type => 'sect2',
+                title => 'Step two: Compile the Interface',
+                content => [
+                  {
+                    type => 'text',
+                    content => 'To compile the Interface run the compile.sh bash file: '
+                  },
+                  {
+                    type => 'preformatted',
+                    content => 'bash ./scripts/compile.sh'
+                  }
+                ]
+              },
+              {
+                type => 'sect2',
+                title => 'Step three: Move to final directory',
+                content => [
+                  {
+                    type => 'text',
+                    content => 'To finish installing the Interface choose one of the two executable files: emath_cli_d or emath_cli_s. The executable ending in _d is the dynamic version and the one ending in _s is the static version.'
+                  },
+                  {
+                    type => 'parbreak'
+                  },
+                  {
+                    note => [
+                      {
+                        type => 'text',
+                        content => 'When installing to a Windows machine the executable files will have prefixed \'.exe\' '
+                      },
+                      {
+                        type => 'parbreak'
+                      },
+                      {
+                        type => 'text',
+                        content => 'If the dynamic version does not work try the static version: This could resolve missing dependencies'
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            type => 'sect1',
+            title => 'Interface Usage',
+            content => [
+              {
+                type => 'sect2',
+                title => 'Launching the Interface',
+                content => [
+                  {
+                    type => 'text',
+                    content => 'To launch the Interface just open a console and cd to the directory with the binaries: '
+                  },
+                  {
+                    type => 'preformatted',
+                    content => 'cd /path/to/emath_cli_dir
+./emath_cli_d'
+                  },
+                  {
+                    type => 'parbreak'
+                  },
+                  {
+                    type => 'text',
+                    content => 'Or if they are in the PATH environment variable call them normally: '
+                  },
+                  {
+                    type => 'preformatted',
+                    content => 'emath_cli_d'
+                  },
+                  {
+                    type => 'parbreak'
+                  },
+                  {
+                    note => [
+                      {
+                        type => 'text',
+                        content => 'We will use emath_cli_d as the binary executable, but if you installed the static version you should call emath_cli_s instead'
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                type => 'sect2',
+                title => 'Adding polynomials',
+                content => [
+                  {
+                    type => 'text',
+                    content => 'To add polynomials to the cache and consecuently be able to operate with them you should press \'e\' on the main menu. Then you should write the polynomial in the following markup [ 3/2x^2 + 2*2.2x - 5 ] and press enter.'
+                  },
+                  {
+                    type => 'parbreak'
+                  },
+                  {
+                    note => [
+                      {
+                        type => 'text',
+                        content => 'If you have added toomany polynomials to the cache a scroll function will be enabled, cycle pressing tab on the main or operation menus until the polynomials window is focused and the press the arrow functions to scroll.'
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                type => 'sect2',
+                title => 'Removing polynomials',
+                content => [
+                  {
+                    type => 'text',
+                    content => 'To remove polynomials from the cache and consecuently delete them you should press \'q\' on the main menu. Then you should write the number corresponding to the polynomial\'s index.'
+                  }
+                ]
+              },
+              {
+                type => 'sect2',
+                title => 'New operation',
+                content => [
+                  {
+                    type => 'text',
+                    content => 'Once at least one polynomial has been added you can press space on the main menu to enter to the operation menu:'
+                  },
+                  {
+                    type => 'parbreak'
+                  },
+                  {
+                    type => 'parbreak'
+                  },
+                  {
+                    type => 'text',
+                    content => 'Now you have a variety of choices: numbered different operations and arithmetic operations.'
+                  }
+                ]
+              },
+              {
+                type => 'sect2',
+                title => 'Arithmetic operation',
+                content => [
+                  {
+                    type => 'text',
+                    content => 'Once in the operation menu, you can press space again to input a arithmetic operation. Arithmetic operations consist of +, -, *, / operations beetwen the polynomial indexes. Here is an example of what you would input to multiply the polynomial with index 0 to the one with index 1 and add to that what results the polynomial with index 2: [ 0 * 1 + 2 ]. Then the results will be printed, and you will ahve to press any key to continue.'
+                  },
+                  {
+                    type => 'parbreak'
+                  },
+                  {
+                    note => [
+                      {
+                        type => 'text',
+                        content => 'Higher grade operations like multiplication and division are computer before their lower grade counter parts addition and substraction '
+                      },
+                      {
+                        type => 'parbreak'
+                      },
+                      {
+                        type => 'text',
+                        content => 'If you want to save the resulting polynomial to cache write the \'_\' character as the first character and then write the rest of the operation normally'
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                type => 'sect2',
+                title => 'Evaluate operation',
+                content => [
+                  {
+                    type => 'text',
+                    content => 'To get the value of y for some x, you make a evaluate operation. Press 1 on the operation menu, input the polynomial\'s index and then input the x\'s value.'
+                  }
+                ]
+              },
+              {
+                type => 'sect2',
+                title => 'Derivative and Integral operation',
+                content => [
+                  {
+                    type => 'text',
+                    content => 'Both these operations are done in an indentical way: Press 2 or 3 respectively on the operation menu and then input the polynomial\'s index.'
+                  }
+                ]
+              },
+              {
+                type => 'sect2',
+                title => 'Root finding operation',
+                content => [
+                  {
+                    type => 'text',
+                    content => 'To find the real and complex roots of a polynomial when on the operation menu: Press 4 and then input the polynomial\'s index. The roots will be printed inside parenthesis.'
+                  },
+                  {
+                    type => 'parbreak'
+                  }
+                ]
+              },
+              {
+                type => 'sect2',
+                title => 'Drawing operation',
+                content => [
+                  {
+                    type => 'text',
+                    content => 'To draw a polynomial in the Cartesian plane: Press 5 on the operation menu and then input the polynomial\'s index. A new window will open showing the polynomail on the Cartesian plane. You then can move with the arrow keys around the Cartesian plane and resize the window to expand the Cartesian plane.'
+                  },
+                  {
+                    type => 'parbreak'
+                  },
+                  {
+                    type => 'text',
+                    content => ' '
+                  }
+                ]
               }
             ]
           }

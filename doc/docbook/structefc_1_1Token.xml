@@ -23,6 +23,8 @@
         </itemizedlist>
 </listitem>
             <listitem><para>} <emphasis role="strong">value</emphasis></para>
+
+<para>A union representing the value of the <link linkend="_structefc_1_1Token">Token</link> as a char or as a int. </para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -40,14 +42,14 @@ Definition at line <link linkend="_interface_8cpp_source_1l00674">674</link> of 
 <indexterm><primary>c</primary><secondary>efc::Token</secondary></indexterm>
 <indexterm><primary>efc::Token</primary><secondary>c</secondary></indexterm>
 <para><computeroutput>char efc::Token::c</computeroutput></para><para>
-Definition at line <link linkend="_interface_8cpp_source_1l00683">683</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00682">682</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 </section>
 <anchor xml:id="_structefc_1_1Token_1a8fbcc67cb189f58f5e1a6af27e059c2b"/><section>
     <title>n</title>
 <indexterm><primary>n</primary><secondary>efc::Token</secondary></indexterm>
 <indexterm><primary>efc::Token</primary><secondary>n</secondary></indexterm>
 <para><computeroutput>int efc::Token::n</computeroutput></para><para>
-Definition at line <link linkend="_interface_8cpp_source_1l00683">683</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00682">682</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 </section>
 <anchor xml:id="_structefc_1_1Token_1abd56361d2f52a2c345e106f8e2ec4197"/><section>
     <title>type</title>

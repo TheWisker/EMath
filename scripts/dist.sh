@@ -24,6 +24,9 @@ mkdir -v ./temp
 cp -r ./EMath++ ./temp
 rm -fr ./temp/EMath++/bin
 rm -fr ./temp/EMath++/.git
+rm -fr ./temp/EMath++/dist
+rm -fr ./temp/EMath++/.secret
+rm -fr ./temp/EMath++/clear
 mv ./temp/EMath++ ./EMath++/dist/source/
 rm -fr ./temp
 cd ./EMath++/dist/linux
@@ -31,7 +34,7 @@ tar -czvf linux_dist.tar.gz ../source/EMath++/ ./emath_cli_d ./emath_cli_s
 cd ../windows
 zip -r windows_dist.zip ../source/EMath++/ ./emath_cli_d.exe ./emath_cli_s.exe
 cd ../../
-rm -fr ./dist/source/
+rm -fr ./dist/source
 #git add .
 #git commit -m "New distribution!"
 #git push

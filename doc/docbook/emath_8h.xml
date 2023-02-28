@@ -76,14 +76,14 @@ Definition in file <link linkend="_emath_8h_source">emath.h</link>.</para>
 <indexterm><primary>R_ITR</primary><secondary>emath.h</secondary></indexterm>
 <indexterm><primary>emath.h</primary><secondary>R_ITR</secondary></indexterm>
 <para><computeroutput>#define R_ITR&#160;&#160;&#160;1000</computeroutput></para><para>
-Definition at line <link linkend="_emath_8h_source_1l00067">67</link> of file <link linkend="_emath_8h_source">emath.h</link>.</para>
+Definition at line <link linkend="_emath_8h_source_1l00167">167</link> of file <link linkend="_emath_8h_source">emath.h</link>.</para>
 </section>
 <anchor xml:id="_emath_8h_1acdecae10545d6a882ff7b96070c917dc"/><section>
     <title>R_TOL</title>
 <indexterm><primary>R_TOL</primary><secondary>emath.h</secondary></indexterm>
 <indexterm><primary>emath.h</primary><secondary>R_TOL</secondary></indexterm>
 <para><computeroutput>#define R_TOL&#160;&#160;&#160;std::numeric_limits&lt;double&gt;::epsilon()</computeroutput></para><para>
-Definition at line <link linkend="_emath_8h_source_1l00066">66</link> of file <link linkend="_emath_8h_source">emath.h</link>.</para>
+Definition at line <link linkend="_emath_8h_source_1l00166">166</link> of file <link linkend="_emath_8h_source">emath.h</link>.</para>
 </section>
 </section>
 </section>

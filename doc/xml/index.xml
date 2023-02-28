@@ -234,8 +234,6 @@
     <member refid="structemthp_1_1Token_1ae532928c40581bc20349979955dfb2f3" kind="variable"><name>type</name></member>
     <member refid="structemthp_1_1Token_1a0512f6f4c2a7dcf724d582d971393c2c" kind="variable"><name>value</name></member>
   </compound>
-  <compound refid="unionvalue" kind="union"><name>value</name>
-  </compound>
   <compound refid="classefc_1_1Window" kind="class"><name>efc::Window</name>
     <member refid="classefc_1_1Window_1add171873b1a7a5c5e1263e8b3a61b6f9" kind="variable"><name>c</name></member>
     <member refid="classefc_1_1Window_1aea9ca4761c6305661f459b77f9e95f87" kind="variable"><name>a</name></member>

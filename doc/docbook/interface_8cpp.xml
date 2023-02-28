@@ -316,21 +316,21 @@ Definition at line <link linkend="_interface_8cpp_source_1l00038">38</link> of f
 <indexterm><primary>V_MENU</primary><secondary>interface.cpp</secondary></indexterm>
 <indexterm><primary>interface.cpp</primary><secondary>V_MENU</secondary></indexterm>
 <para><computeroutput>#define V_MENU&#160;&#160;&#160;{::std::string(&quot;[ESC] Exit program&quot;), ::std::string(&quot;[TAB] Cycle focus&quot;), ::std::string(&quot;[E] Add polynomial&quot;), ::std::string(&quot;[Q] Remove polynomial&quot;), ::std::string(&quot;[SPACE] New operation&quot;)}</computeroutput></para><para>
-Definition at line <link linkend="_interface_8cpp_source_1l00825">825</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00824">824</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 </section>
 <anchor xml:id="_interface_8cpp_1ad0c741ef4d243ca21ea3c32c1a86c55b"/><section>
     <title>V_OPERATION</title>
 <indexterm><primary>V_OPERATION</primary><secondary>interface.cpp</secondary></indexterm>
 <indexterm><primary>interface.cpp</primary><secondary>V_OPERATION</secondary></indexterm>
 <para><computeroutput>#define V_OPERATION&#160;&#160;&#160;{::std::string(&quot;[ESC] Back&quot;), ::std::string(&quot;[TAB] Cycle focus&quot;), ::std::string(&quot;[1] Evaluate operation&quot;), ::std::string(&quot;[2] Derivative operation&quot;), ::std::string(&quot;[3] Integral operation&quot;), ::std::string(&quot;[4] Root finding operation&quot;), ::std::string(&quot;[5] Drawing operation&quot;), ::std::string(&quot;[SPACE] Arithmetic operations&quot;)}</computeroutput></para><para>
-Definition at line <link linkend="_interface_8cpp_source_1l00826">826</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00825">825</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 </section>
 <anchor xml:id="_interface_8cpp_1a1ba23172bff2dd7bfaf084bd4d440e6d"/><section>
     <title>V_SCROLL</title>
 <indexterm><primary>V_SCROLL</primary><secondary>interface.cpp</secondary></indexterm>
 <indexterm><primary>interface.cpp</primary><secondary>V_SCROLL</secondary></indexterm>
 <para><computeroutput>#define V_SCROLL&#160;&#160;&#160;{::std::string(&quot;[ESC] Exit program&quot;), ::std::string(&quot;[UP ARROW] Scroll up&quot;), ::std::string(&quot;[DOWN ARROW] Scroll down&quot;)}</computeroutput></para><para>
-Definition at line <link linkend="_interface_8cpp_source_1l00827">827</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00826">826</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 </section>
 <anchor xml:id="_interface_8cpp_1a8962df677c8bafedc7d0b8fdb34aa3ec"/><section>
     <title>WPADD</title>
@@ -357,9 +357,9 @@ Definition at line <link linkend="_interface_8cpp_source_1l00034">34</link> of f
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l01098">1098</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l01097">1097</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 <para>
-References <link linkend="_interface_8cpp_source_1l01061">efc::Application::init()</link>, and <link linkend="_interface_8cpp_source_1l01068">efc::Application::run()</link>.</para>
+References <link linkend="_interface_8cpp_source_1l01060">efc::Application::init()</link>, and <link linkend="_interface_8cpp_source_1l01067">efc::Application::run()</link>.</para>
 </section>
 </section>
 </section>

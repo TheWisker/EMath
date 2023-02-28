@@ -33,7 +33,7 @@
 
 <para>The class consists of a public function for getting the next <link linkend="_structefc_1_1Token">Token</link> </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l00690">690</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00689">689</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
@@ -68,7 +68,7 @@ Parameters</title>
                 </formalpara>
                 </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l00729">729</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00728">728</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 </section>
 </section>
 <section>
@@ -88,7 +88,7 @@ Definition at line <link linkend="_interface_8cpp_source_1l00729">729</link> of 
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l00734">734</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00733">733</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 </section>
 <para>
 The documentation for this class was generated from the following file:</para>

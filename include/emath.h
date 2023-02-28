@@ -4,15 +4,17 @@
 * @section intro Introduction
 * 
 * This is a project that aims to provide some wrapper classes for algebraic mathematical concepts.\n
-* At the moment it includes the Monomial and Polynomial classes for general calculus. The library is currently in expansion.\n
+* It includes the Monomial and Polynomial classes for general calculus, plus a Parser for transforming std::string to Polynomial objects.\n
+* It also comes with a Termial interface for doing multiple operatios with polynomials: arithemtic, root finding, graphical representation.\n 
+* The library is currently in expansion. It will include in the future support for Exponential, Trigonometric and Radical functions.\n
 * Any feedback is much appreciated!
 *
-* @section install Installation
+* @section libinstall Library Installation
 * 
 * The project comes with a folder with some bash files that complete some Meson related tasks.\n
 * All bash files must be executed from the project's root directory to work properly.\n
 * To install the project, there is only need to execute two of them files.\n
-* Once installed just include the emath.h header file in your code and link it with its implementation.
+* Once installed just include the emath.h or eparser.h header files in your code respectively and link them with their implementation.
 * 
 * @subsection step1 Step one: Setup the Project
 * 
@@ -38,6 +40,104 @@
 * @code
 * bash ./scripts/test.sh
 * @endcode
+*
+* @section terinstall Interface Installation
+*
+* The project comes with a folder with some bash files that complete some Meson related tasks.\n
+* All bash files must be executed from the project's root directory to work properly.\n
+* There are two ways to install the Interface, when following the Library Installation instructions or manually as explained here:
+*
+* @subsection istep1 Step one: Setup the Project
+*
+* To setup the Meson project run the setup.sh bash file:
+* @code
+* bash ./scripts/setup.sh
+* @endcode
+* 
+* @subsection istep2 Step two: Compile the Interface
+* 
+* To compile the Interface run the compile.sh bash file:
+* @code
+* bash ./scripts/compile.sh
+* @endcode
+*
+* @subsection istep3 Step three: Move to final directory
+*
+* To finish installing the Interface choose one of the two executable files: emath_cli_d or emath_cli_s.
+* The executable ending in _d is the dynamic version and the one ending in _s is the static version.
+*
+* @note When installing to a Windows machine the executable files will have prefixed '.exe'
+* @note If the dynamic version does not work try the static version: This could resolve missing dependencies
+*
+* @section terusage Interface Usage
+*
+* @subsection launching Launching the Interface
+* 
+* To launch the Interface just open a console and cd to the directory with the binaries:
+* @code
+* cd /path/to/emath_cli_dir
+* ./emath_cli_d
+* @endcode
+*
+* Or if they are in the PATH environment variable call them normally:
+* @code
+* emath_cli_d
+* @endcode
+*
+* @note We will use emath_cli_d as the binary executable, but if you installed the static version you should call emath_cli_s instead
+*
+* @subsection adding Adding polynomials
+*
+* To add polynomials to the cache and consecuently be able to operate with them you should press 'e' on the main menu.
+* Then you should write the polynomial in the following markup [ 3/2x^2 + 2*2.2x - 5 ] and press enter.
+*
+* @note If you have added toomany polynomials to the cache a scroll function will be enabled, cycle pressing tab on the main or operation menus until the polynomials window is focused and the press the arrow functions to scroll.
+*
+* @image html screenshot_one.png
+*
+* @subsection removing Removing polynomials
+*
+* To remove polynomials from the cache and consecuently delete them you should press 'q' on the main menu.
+* Then you should write the number corresponding to the polynomial's index.
+*
+* @subsection operation New operation
+*
+* Once at least one polynomial has been added you can press space on the main menu to enter to the operation menu:
+*
+* @image html screenshot_three.png
+* 
+* Now you have a variety of choices: numbered different operations and arithmetic operations.
+*
+* @subsection arithmetic Arithmetic operation
+*
+* Once in the operation menu, you can press space again to input a arithmetic operation.
+* Arithmetic operations consist of +, -, *, / operations beetwen the polynomial indexes.
+* Here is an example of what you would input to multiply the polynomial with index 0 to the one with index 1
+* and add to that what results the polynomial with index 2: [ 0 * 1 + 2 ]. Then the results will be printed, and you will ahve to press any key to continue.
+*
+* @note Higher grade operations like multiplication and division are computer before their lower grade counter parts addition and substraction
+* @note If you want to save the resulting polynomial to cache write the '_' character as the first character and then write the rest of the operation normally
+*
+* @subsection evaluate Evaluate operation
+*
+* To get the value of y for some x, you make a evaluate operation. Press 1 on the operation menu, input the polynomial's index and then input the x's value.
+*
+* @subsection derint Derivative and Integral operation
+*
+* Both these operations are done in an indentical way: Press 2 or 3 respectively on the operation menu and then input the polynomial's index.
+*
+* @subsection root Root finding operation
+*
+* To find the real and complex roots of a polynomial when on the operation menu: Press 4 and then input the polynomial's index. The roots will be printed inside parenthesis.
+*
+* @image html screenshot_four.png
+*
+* @subsection draw Drawing operation
+*
+* To draw a polynomial in the Cartesian plane: Press 5 on the operation menu and then input the polynomial's index. A new window will open showing the polynomail on the Cartesian plane.
+* You then can move with the arrow keys around the Cartesian plane and resize the window to expand the Cartesian plane.
+*
+* @image html screenshot_two.png
 **/
 /**
 * @file emath.h

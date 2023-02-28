@@ -33,8 +33,6 @@ Here are the classes, structs, unions and interfaces with brief descriptions:<li
 <para>Struct for representing a token as a type and a value </para>
 <link linkend="_structemthp_1_1Token">emthp::Token</link>
 <para>Struct for representing a token as a type and a value </para>
-<link linkend="_unionvalue">value</link>
-<para>A union representing the value of the Token as a char or as a int </para>
 <link linkend="_classefc_1_1Window">efc::Window</link>
 <para>Generic class for wrapping a curses WINDOW </para>
 </section>

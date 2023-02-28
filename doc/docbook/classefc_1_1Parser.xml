@@ -37,7 +37,7 @@
 
 <para>The class consists of two public functions, one for parsing the entire input as a number and the other for it as a operation. </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l00754">754</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00753">753</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
@@ -72,7 +72,7 @@ Parameters</title>
                 </formalpara>
                 </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l00765">765</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00764">764</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 </section>
 </section>
 <section>
@@ -92,9 +92,9 @@ Definition at line <link linkend="_interface_8cpp_source_1l00765">765</link> of 
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l00770">770</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00769">769</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 <para>
-References <link linkend="_interface_8cpp_source_1l00734">efc::Lexer::next()</link>, and <link linkend="_interface_8cpp_source_1l00678">efc::Token::type</link>.</para>
+References <link linkend="_interface_8cpp_source_1l00733">efc::Lexer::next()</link>, <link linkend="_interface_8cpp_source_1l00678">efc::Token::type</link>, and <link linkend="_structefc_1_1Token_1ad5ee17926cf07cb994367a0d86717248">efc::Token::value</link>.</para>
 </section>
 <anchor xml:id="_classefc_1_1Parser_1aa3007aab2177728edcfba4c0e4bb460f"/><section>
     <title>parse_operation()</title>
@@ -131,9 +131,9 @@ Parameters</title>
 </formalpara>
 </para>
 <para>
-Definition at line <link linkend="_interface_8cpp_source_1l00787">787</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
+Definition at line <link linkend="_interface_8cpp_source_1l00786">786</link> of file <link linkend="_interface_8cpp_source">interface.cpp</link>.</para>
 <para>
-References <link linkend="_interface_8cpp_source_1l00734">efc::Lexer::next()</link>, and <link linkend="_interface_8cpp_source_1l00678">efc::Token::type</link>.</para>
+References <link linkend="_interface_8cpp_source_1l00733">efc::Lexer::next()</link>, <link linkend="_interface_8cpp_source_1l00678">efc::Token::type</link>, and <link linkend="_structefc_1_1Token_1ad5ee17926cf07cb994367a0d86717248">efc::Token::value</link>.</para>
 </section>
 <para>
 The documentation for this class was generated from the following file:</para>

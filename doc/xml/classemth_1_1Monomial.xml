@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="276" column="20" bodyfile="include/emath.h" bodystart="276" bodyend="-1"/>
+        <location file="include/emath.h" line="376" column="20" bodyfile="include/emath.h" bodystart="376" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classemth_1_1Monomial_1a7ac5ee0ccb8199fb3dc40d93059d95ba" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="280" column="17" bodyfile="include/emath.h" bodystart="280" bodyend="-1"/>
+        <location file="include/emath.h" line="380" column="17" bodyfile="include/emath.h" bodystart="380" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="92" column="13" bodyfile="src/emath.cpp" bodystart="30" bodyend="30"/>
+        <location file="include/emath.h" line="192" column="13" bodyfile="src/emath.cpp" bodystart="30" bodyend="30"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Monomial_1a70ba615f776f89452b3b11bb9dfe045e" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type></type>
@@ -90,7 +90,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="98" column="13" bodyfile="src/emath.cpp" bodystart="36" bodyend="36"/>
+        <location file="include/emath.h" line="198" column="13" bodyfile="src/emath.cpp" bodystart="36" bodyend="36"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Monomial_1aa5fc7752eb6a5db663872dd7298140c1" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type></type>
@@ -119,7 +119,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="103" column="13" bodyfile="src/emath.cpp" bodystart="41" bodyend="41"/>
+        <location file="include/emath.h" line="203" column="13" bodyfile="src/emath.cpp" bodystart="41" bodyend="41"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Monomial_1a0d77a762defbcd2cb1925e3258f6158f" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type></type>
@@ -148,7 +148,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="108" column="13" bodyfile="src/emath.cpp" bodystart="46" bodyend="46"/>
+        <location file="include/emath.h" line="208" column="13" bodyfile="src/emath.cpp" bodystart="46" bodyend="46"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Monomial_1a3de7a92cfd27acad4e1ff3d2158536f4" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type><ref refid="classemth_1_1Monomial" kindref="compound">Monomial</ref> &amp;</type>
@@ -179,7 +179,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="114" column="22" bodyfile="src/emath.cpp" bodystart="52" bodyend="52"/>
+        <location file="include/emath.h" line="214" column="22" bodyfile="src/emath.cpp" bodystart="52" bodyend="52"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Monomial_1a7ea9ffbef1c53c8e0f7a9bfda2dcb691" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type><ref refid="classemth_1_1Monomial" kindref="compound">Monomial</ref> &amp;</type>
@@ -210,7 +210,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="120" column="22" bodyfile="src/emath.cpp" bodystart="58" bodyend="58"/>
+        <location file="include/emath.h" line="220" column="22" bodyfile="src/emath.cpp" bodystart="58" bodyend="58"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Monomial_1a2f9d14fa6443fc160258121c7907b989" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>bool</type>
@@ -243,7 +243,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="127" column="18" bodyfile="src/emath.cpp" bodystart="65" bodyend="65"/>
+        <location file="include/emath.h" line="227" column="18" bodyfile="src/emath.cpp" bodystart="65" bodyend="65"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Monomial_1ab7f80ead25e2f5d4ad80cdbbfe49d5e3" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>bool</type>
@@ -276,7 +276,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="134" column="18" bodyfile="src/emath.cpp" bodystart="72" bodyend="72"/>
+        <location file="include/emath.h" line="234" column="18" bodyfile="src/emath.cpp" bodystart="72" bodyend="72"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Monomial_1a995abc13b689075b21b43a30ce043e72" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>bool</type>
@@ -309,7 +309,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="141" column="18" bodyfile="src/emath.cpp" bodystart="79" bodyend="79"/>
+        <location file="include/emath.h" line="241" column="18" bodyfile="src/emath.cpp" bodystart="79" bodyend="79"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Monomial_1a33c3c8003322cc2a8f2c4f2e1b44a387" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>bool</type>
@@ -342,7 +342,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="148" column="13" bodyfile="src/emath.cpp" bodystart="86" bodyend="86"/>
+        <location file="include/emath.h" line="248" column="13" bodyfile="src/emath.cpp" bodystart="86" bodyend="86"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Monomial_1a36079411f2ae6f90e71a09b6723ecf35" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>bool</type>
@@ -375,7 +375,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="155" column="18" bodyfile="src/emath.cpp" bodystart="93" bodyend="93"/>
+        <location file="include/emath.h" line="255" column="18" bodyfile="src/emath.cpp" bodystart="93" bodyend="93"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Monomial_1a80fe0433858cf335c1e29ff15aa4bcb8" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>bool</type>
@@ -408,7 +408,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="162" column="13" bodyfile="src/emath.cpp" bodystart="100" bodyend="100"/>
+        <location file="include/emath.h" line="262" column="13" bodyfile="src/emath.cpp" bodystart="100" bodyend="100"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Monomial_1aa545290af910fc7a0c68bc02decd41c5" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type><ref refid="classemth_1_1Monomial" kindref="compound">Monomial</ref></type>
@@ -439,7 +439,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="168" column="22" bodyfile="src/emath.cpp" bodystart="106" bodyend="106"/>
+        <location file="include/emath.h" line="268" column="22" bodyfile="src/emath.cpp" bodystart="106" bodyend="106"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Monomial_1aee07c6d65bc594b8eaaa4d0299840e05" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type><ref refid="classemth_1_1Monomial" kindref="compound">Monomial</ref></type>
@@ -470,7 +470,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="174" column="22" bodyfile="src/emath.cpp" bodystart="112" bodyend="112"/>
+        <location file="include/emath.h" line="274" column="22" bodyfile="src/emath.cpp" bodystart="112" bodyend="112"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Monomial_1a98a931372dbd0ddafe82ce5601f30836" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type><ref refid="classemth_1_1Monomial" kindref="compound">Monomial</ref></type>
@@ -501,7 +501,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="180" column="22" bodyfile="src/emath.cpp" bodystart="118" bodyend="118"/>
+        <location file="include/emath.h" line="280" column="22" bodyfile="src/emath.cpp" bodystart="118" bodyend="118"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Monomial_1a55982755a6223cbf977e55979fcad8ff" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type><ref refid="classemth_1_1Monomial" kindref="compound">Monomial</ref></type>
@@ -532,7 +532,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="186" column="22" bodyfile="src/emath.cpp" bodystart="124" bodyend="124"/>
+        <location file="include/emath.h" line="286" column="22" bodyfile="src/emath.cpp" bodystart="124" bodyend="124"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Monomial_1a8316e22fbd1420a2302fcf8bd6d3b6c2" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type><ref refid="classemth_1_1Monomial" kindref="compound">Monomial</ref></type>
@@ -563,7 +563,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="192" column="22" bodyfile="src/emath.cpp" bodystart="130" bodyend="130"/>
+        <location file="include/emath.h" line="292" column="22" bodyfile="src/emath.cpp" bodystart="130" bodyend="130"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Monomial_1a7cac7880021c7cf783daa15ee00b94d1" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type><ref refid="classemth_1_1Monomial" kindref="compound">Monomial</ref> &amp;</type>
@@ -594,7 +594,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="198" column="22" bodyfile="src/emath.cpp" bodystart="136" bodyend="142"/>
+        <location file="include/emath.h" line="298" column="22" bodyfile="src/emath.cpp" bodystart="136" bodyend="142"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Monomial_1a45a932afba1f1f38c5ca16b6c16fd3c8" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type><ref refid="classemth_1_1Monomial" kindref="compound">Monomial</ref> &amp;</type>
@@ -625,7 +625,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="204" column="22" bodyfile="src/emath.cpp" bodystart="148" bodyend="154"/>
+        <location file="include/emath.h" line="304" column="22" bodyfile="src/emath.cpp" bodystart="148" bodyend="154"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Monomial_1a59e6ec6722fe75349e84c6c3397279f5" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type><ref refid="classemth_1_1Monomial" kindref="compound">Monomial</ref> &amp;</type>
@@ -656,7 +656,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="210" column="22" bodyfile="src/emath.cpp" bodystart="160" bodyend="164"/>
+        <location file="include/emath.h" line="310" column="22" bodyfile="src/emath.cpp" bodystart="160" bodyend="164"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Monomial_1a1bdb99f916437cd3a7c127b71bec5787" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type><ref refid="classemth_1_1Monomial" kindref="compound">Monomial</ref> &amp;</type>
@@ -687,7 +687,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="216" column="22" bodyfile="src/emath.cpp" bodystart="170" bodyend="176"/>
+        <location file="include/emath.h" line="316" column="22" bodyfile="src/emath.cpp" bodystart="170" bodyend="176"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Monomial_1ab4c89014e13b2f35f264492486a935fe" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type><ref refid="classemth_1_1Monomial" kindref="compound">Monomial</ref> &amp;</type>
@@ -718,7 +718,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="222" column="22" bodyfile="src/emath.cpp" bodystart="182" bodyend="188"/>
+        <location file="include/emath.h" line="322" column="22" bodyfile="src/emath.cpp" bodystart="182" bodyend="188"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Monomial_1ac0ea8a4e12483048519184c536c27124" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>double</type>
@@ -736,7 +736,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="241" column="20" bodyfile="src/emath.cpp" bodystart="221" bodyend="221"/>
+        <location file="include/emath.h" line="341" column="20" bodyfile="src/emath.cpp" bodystart="221" bodyend="221"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Monomial_1a1a11b6043ddc48006fe37241bb6bc6d0" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>int</type>
@@ -754,7 +754,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="246" column="17" bodyfile="src/emath.cpp" bodystart="226" bodyend="226"/>
+        <location file="include/emath.h" line="346" column="17" bodyfile="src/emath.cpp" bodystart="226" bodyend="226"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Monomial_1adae9aaac815a7c86ec651e5bdb3d3043" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
@@ -783,7 +783,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="251" column="18" bodyfile="src/emath.cpp" bodystart="231" bodyend="231"/>
+        <location file="include/emath.h" line="351" column="18" bodyfile="src/emath.cpp" bodystart="231" bodyend="231"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Monomial_1ab695cba07bcbf08cfec7d32e0bf4cc20" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
@@ -812,7 +812,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="256" column="18" bodyfile="src/emath.cpp" bodystart="236" bodyend="236"/>
+        <location file="include/emath.h" line="356" column="18" bodyfile="src/emath.cpp" bodystart="236" bodyend="236"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Monomial_1a2940ea82172b382f8354fe4d1556b996" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>std::string</type>
@@ -830,7 +830,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="261" column="25" bodyfile="src/emath.cpp" bodystart="241" bodyend="241"/>
+        <location file="include/emath.h" line="361" column="25" bodyfile="src/emath.cpp" bodystart="241" bodyend="241"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Monomial_1a50a76c251c4a66c3522b78f0aba3c157" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>double</type>
@@ -861,7 +861,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="267" column="20" bodyfile="src/emath.cpp" bodystart="247" bodyend="247"/>
+        <location file="include/emath.h" line="367" column="20" bodyfile="src/emath.cpp" bodystart="247" bodyend="247"/>
       </memberdef>
       <memberdef kind="function" id="classemth_1_1Monomial_1aecedb04edd52a33ba0ee110eedbd74db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -876,7 +876,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="271" column="13"/>
+        <location file="include/emath.h" line="371" column="13"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
@@ -921,7 +921,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="229" column="20"/>
+        <location file="include/emath.h" line="329" column="20"/>
       </memberdef>
       <memberdef kind="friend" id="classemth_1_1Monomial_1ada77c9969b0422090c05636a895c0e8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::ostream &amp;</type>
@@ -964,7 +964,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="236" column="20"/>
+        <location file="include/emath.h" line="336" column="20"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -995,7 +995,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/emath.h" line="285" column="18" bodyfile="src/emath.cpp" bodystart="252" bodyend="256"/>
+        <location file="include/emath.h" line="385" column="18" bodyfile="src/emath.cpp" bodystart="252" bodyend="256"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1004,7 +1004,7 @@
     <detaileddescription>
 <para>The class consists of the constructors, the operators, the getters, the properties and some private functions. </para>
     </detaileddescription>
-    <location file="include/emath.h" line="87" column="5" bodyfile="include/emath.h" bodystart="87" bodyend="286"/>
+    <location file="include/emath.h" line="187" column="5" bodyfile="include/emath.h" bodystart="187" bodyend="386"/>
     <listofallmembers>
       <member refid="classemth_1_1Monomial_1a997731ccf2707a956c8e236b25451702" prot="private" virt="non-virtual"><scope>emth::Monomial</scope><name>coeff</name></member>
       <member refid="classemth_1_1Monomial_1a7ac5ee0ccb8199fb3dc40d93059d95ba" prot="private" virt="non-virtual"><scope>emth::Monomial</scope><name>degree</name></member>

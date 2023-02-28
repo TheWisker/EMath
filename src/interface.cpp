@@ -378,7 +378,7 @@ namespace efc {
                 wmove(this->bwin->o, this->bwin->get_title_y(), this->bwin->get_title_x() + this->bwin->get_title_size()); return wgetch(this->bwin->o);
                 #ifdef WINDOWS
                     const int ch = getch();
-                    if (ch == KEY_RESIZE) {resizeterm(0, 0);}
+                    if (ch == KEY_RESIZE) {resize_term(0, 0);}
                     return ch;
                 #else
                     return wgetch(this->bwin->o);
@@ -677,7 +677,6 @@ namespace efc {
         **/
         const TokenType type;
         /**
-         * @union value
          * @brief A union representing the value of the Token as a char or as a int
         **/
         union {char c; int n;} value;

@@ -11,6 +11,6 @@
     <detaileddescription>
 <para>The emth namespace contains three classes: <ref refid="classemth_1_1Arithmetic" kindref="compound">Arithmetic</ref>, <ref refid="classemth_1_1Monomial" kindref="compound">Monomial</ref> and <ref refid="classemth_1_1Polynomial" kindref="compound">Polynomial</ref>. The first contains functions for arithmetic operations. The last two are wrappers on abstract algebraic concepts. </para>
     </detaileddescription>
-    <location file="include/emath.h" line="61" column="1"/>
+    <location file="include/emath.h" line="161" column="1"/>
   </compounddef>
 </doxygen>

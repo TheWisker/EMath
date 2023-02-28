@@ -20,18 +20,18 @@ if host_machine.system() in ['windows', 'mingw']
     exe_ext = 'exe'
     add_project_arguments('-DWINDOWS', '-DSFML_STATIC', language : 'cpp')
     dynamic_interface_dependencies = [declare_dependency(
-        link_args : [meson.current_source_dir() + '/third_party/PDCurses/wincon/pdcurses.a', '-Wl,--no-whole-archive', '-dynamic'],
-        include_directories : ['./third_party/PDCurses/', './third_party/PDCurses/wincon', './third_party/PDCurses/pdcurses']
+        link_args: [meson.current_source_dir() + '/third_party/PDCurses/wincon/pdcurses.a', '-Wl,--no-whole-archive', '-dynamic'],
+        include_directories: ['./third_party/PDCurses/', './third_party/PDCurses/wincon', './third_party/PDCurses/pdcurses']
     ), declare_dependency(
-        link_args : ['-DSFML_GRAPHICS_OPENGL', '-DSFML_SYSTEM_WINDOWS', '-L/usr/x86_64-w64-mingw32/lib/', '-L' + meson.current_source_dir() + '/third_party/SFML/lib/', '-lopengl32', '-lwinmm', '-lglfw3', '-lgdi32', meson.current_source_dir() + '/third_party/SFML/lib/libfreetype.a', meson.current_source_dir() + '/third_party/SFML/lib/libsfml-graphics.a', meson.current_source_dir() + '/third_party/SFML/lib/libsfml-window.a', meson.current_source_dir() + '/third_party/SFML/lib/libsfml-system.a', '-dynamic'],
-        include_directories : ['./third_party/SFML/', './third_party/SFML/include/', './third_party/SFML/include/SFML/']
+        link_args: ['-DSFML_GRAPHICS_OPENGL', '-DSFML_SYSTEM_WINDOWS', '-L/usr/x86_64-w64-mingw32/lib/', '-L' + meson.current_source_dir() + '/third_party/SFML/lib/', '-lopengl32', '-lwinmm', '-lglfw3', '-lgdi32', meson.current_source_dir() + '/third_party/SFML/lib/libfreetype.a', meson.current_source_dir() + '/third_party/SFML/lib/libsfml-graphics.a', meson.current_source_dir() + '/third_party/SFML/lib/libsfml-window.a', meson.current_source_dir() + '/third_party/SFML/lib/libsfml-system.a', '-dynamic'],
+        include_directories: ['./third_party/SFML/', './third_party/SFML/include/', './third_party/SFML/include/SFML/']
     )]
     static_interface_dependencies = [declare_dependency(
-        link_args : [meson.current_source_dir() + '/third_party/PDCurses/wincon/pdcurses.a', '-Wl,--no-whole-archive', '-static'],
-        include_directories : ['./third_party/PDCurses/', './third_party/PDCurses/wincon', './third_party/PDCurses/pdcurses']
+        link_args: [meson.current_source_dir() + '/third_party/PDCurses/wincon/pdcurses.a', '-Wl,--no-whole-archive', '-static'],
+        include_directories: ['./third_party/PDCurses/', './third_party/PDCurses/wincon', './third_party/PDCurses/pdcurses']
     ), declare_dependency(
-        link_args : ['-DSFML_STATIC', '-DSFML_GRAPHICS_OPENGL', '-DSFML_SYSTEM_WINDOWS', '-L/usr/x86_64-w64-mingw32/lib/', '-L' + meson.current_source_dir() + '/third_party/SFML/lib/', '-lopengl32', '-lwinmm', '-lglfw3', '-lgdi32', meson.current_source_dir() + '/third_party/SFML/lib/libfreetype.a', meson.current_source_dir() + '/third_party/SFML/lib/libsfml-graphics-s.a', meson.current_source_dir() + '/third_party/SFML/lib/libsfml-window-s.a', meson.current_source_dir() + '/third_party/SFML/lib/libsfml-system-s.a', '-static'],
-        include_directories : ['./third_party/SFML/', './third_party/SFML/include/', './third_party/SFML/include/SFML/']
+        link_args: ['-DSFML_STATIC', '-DSFML_GRAPHICS_OPENGL', '-DSFML_SYSTEM_WINDOWS', '-L/usr/x86_64-w64-mingw32/lib/', '-L' + meson.current_source_dir() + '/third_party/SFML/lib/', '-lopengl32', '-lwinmm', '-lglfw3', '-lgdi32', meson.current_source_dir() + '/third_party/SFML/lib/libfreetype.a', meson.current_source_dir() + '/third_party/SFML/lib/libsfml-graphics-s.a', meson.current_source_dir() + '/third_party/SFML/lib/libsfml-window-s.a', meson.current_source_dir() + '/third_party/SFML/lib/libsfml-system-s.a', '-static'],
+        include_directories: ['./third_party/SFML/', './third_party/SFML/include/', './third_party/SFML/include/SFML/']
     )]
 else
     message('Linux machine detected, thus building for linux!')

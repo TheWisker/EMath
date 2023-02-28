@@ -22,6 +22,5 @@ var annotated_dup =
       [ "Parser", "classemthp_1_1Parser.html", "classemthp_1_1Parser" ],
       [ "Token", "structemthp_1_1Token.html", "structemthp_1_1Token" ]
     ] ],
-    [ "EParserTest", "classEParserTest.html", "classEParserTest" ],
-    [ "value", "unionvalue.html", null ]
+    [ "EParserTest", "classEParserTest.html", "classEParserTest" ]
 ];
