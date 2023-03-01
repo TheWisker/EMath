@@ -14,7 +14,7 @@ The library comes with a Terminal client for Linux and Windows capable of using 
 
 <h2 align="center">Dependencies</h2>
 
-The dependencies are listed in the ./third_party/dependencies file. The only not optional depdendencies are ncurses and opengl in Linux.
+The dependencies are listed in the ./third_party/dependencies file.
 
 <h2 align="center">Screenshots</h2>
 
