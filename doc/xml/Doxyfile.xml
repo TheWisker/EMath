@@ -4,7 +4,7 @@
   <option  id='PROJECT_NAME' default='no' type='string'><value><![CDATA[EMath++]]></value></option>
   <option  id='PROJECT_NUMBER' default='yes' type='string'><value><![CDATA[]]></value></option>
   <option  id='PROJECT_BRIEF' default='no' type='string'><value><![CDATA["Wrapper classes for algebra mathematical concepts"]]></value></option>
-  <option  id='PROJECT_LOGO' default='yes' type='string'><value><![CDATA[]]></value></option>
+  <option  id='PROJECT_LOGO' default='no' type='string'><value><![CDATA[./assets/logo.png]]></value></option>
   <option  id='OUTPUT_DIRECTORY' default='no' type='string'><value><![CDATA[./doc]]></value></option>
   <option  id='CREATE_SUBDIRS' default='yes' type='bool'><value>NO</value></option>
   <option  id='CREATE_SUBDIRS_LEVEL' default='yes' type='int'><value>8</value></option>

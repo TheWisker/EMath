@@ -8,7 +8,7 @@
 <section xml:id="_index_1libinstall">
 <title>Library Installation</title>
 
-<para>The project comes with a folder with some bash files that complete some Meson related tasks.<?linebreak?>All bash files must be executed from the project&apos;s root directory to work properly.<?linebreak?>To install the project, there is only need to execute two of them files.<?linebreak?>Once installed just include the <link linkend="_emath_8h">emath.h</link> or <link linkend="_eparser_8h">eparser.h</link> header files in your code respectively and link them with their implementation.</para>
+<para>The project comes with a folder with some bash files that complete some Meson related tasks.<?linebreak?>All bash files must be executed from the project&apos;s root directory to work properly.<?linebreak?>To install the project, it is only necessary to execute two files.<?linebreak?>Once installed, just include the <link linkend="_emath_8h">emath.h</link> or <link linkend="_eparser_8h">eparser.h</link> header files in your code as needed, and link them with their implementation.</para>
 <section xml:id="_index_1step1">
 <title>Step one: Setup the Project</title>
 

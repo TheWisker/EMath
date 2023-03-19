@@ -30017,14 +30017,14 @@ $doxydocs=
               },
               {
                 type => 'text',
-                content => 'To install the project, there is only need to execute two of them files.'
+                content => 'To install the project, it is only necessary to execute two files.'
               },
               {
                 type => 'linebreak'
               },
               {
                 type => 'text',
-                content => 'Once installed just include the '
+                content => 'Once installed, just include the '
               },
               {
                 type => 'url',
@@ -30042,7 +30042,7 @@ $doxydocs=
               },
               {
                 type => 'text',
-                content => ' header files in your code respectively and link them with their implementation.'
+                content => ' header files in your code as needed, and link them with their implementation.'
               },
               {
                 type => 'sect2',

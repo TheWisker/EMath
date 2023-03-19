@@ -1,8 +1,8 @@
-DOXY_EXEC_PATH = /home/kopi/GitHub/EMath++
-DOXYFILE = /home/kopi/GitHub/EMath++/doxygen.conf
-DOXYDOCS_PM = /home/kopi/GitHub/EMath++/./doc/perlmod/DoxyDocs.pm
-DOXYSTRUCTURE_PM = /home/kopi/GitHub/EMath++/./doc/perlmod/DoxyStructure.pm
-DOXYRULES = /home/kopi/GitHub/EMath++/./doc/perlmod/doxyrules.make
+DOXY_EXEC_PATH = /home/kopi/GitHub/Emath
+DOXYFILE = /home/kopi/GitHub/Emath/doxygen.conf
+DOXYDOCS_PM = /home/kopi/GitHub/Emath/./doc/perlmod/DoxyDocs.pm
+DOXYSTRUCTURE_PM = /home/kopi/GitHub/Emath/./doc/perlmod/DoxyStructure.pm
+DOXYRULES = /home/kopi/GitHub/Emath/./doc/perlmod/doxyrules.make
 
 .PHONY: clean-perlmod
 clean-perlmod::

@@ -13,8 +13,8 @@
 * 
 * The project comes with a folder with some bash files that complete some Meson related tasks.\n
 * All bash files must be executed from the project's root directory to work properly.\n
-* To install the project, there is only need to execute two of them files.\n
-* Once installed just include the emath.h or eparser.h header files in your code respectively and link them with their implementation.
+* To install the project, it is only necessary to execute two files.\n
+* Once installed, just include the emath.h or eparser.h header files in your code as needed, and link them with their implementation.
 * 
 * @subsection step1 Step one: Setup the Project
 * 

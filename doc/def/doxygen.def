@@ -13,7 +13,7 @@ class = {
 void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'run';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '1067';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Main loop fallback, basically it starts the application event loop.
@@ -31,7 +31,7 @@ _EnD_oF_dEf_TeXt_;
 
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = '~Application';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '1086';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Default destructor, it deletes the Terminal pointer, sets the singleton instance to nullptr, and saves the Json data to the Storage object.
@@ -52,7 +52,7 @@ _EnD_oF_dEf_TeXt_;
 static Application *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'init';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '1060';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Static function for building the singleton static instance.
@@ -73,7 +73,7 @@ _EnD_oF_dEf_TeXt_;
 
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'Application';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '854';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Default constructor with default values.
@@ -91,7 +91,7 @@ _EnD_oF_dEf_TeXt_;
 const int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'save_json';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '866';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Function for saving JSON to the Storage object.
@@ -109,7 +109,7 @@ _EnD_oF_dEf_TeXt_;
 const int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'read_json';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '878';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Function for retrieving JSON from the Storage object.
@@ -127,7 +127,7 @@ _EnD_oF_dEf_TeXt_;
 const int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'cycle_focus';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '891';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Function for cycling the Window focus.
@@ -145,7 +145,7 @@ _EnD_oF_dEf_TeXt_;
 const int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'scroll_loop';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '903';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Scroll menu as a loop.
@@ -163,7 +163,7 @@ _EnD_oF_dEf_TeXt_;
 const int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'get_polynomial';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '919';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Function for retrieving a Polynomial from Terminal input.
@@ -187,7 +187,7 @@ const emth::Polynomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'polynomial';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '931';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Function for adding a Polynomial to the Application instance.
@@ -211,7 +211,7 @@ const unsigned int
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'id';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '944';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Function for removing a Polynomial from the Application instance.
@@ -229,7 +229,7 @@ _EnD_oF_dEf_TeXt_;
 const ::std::vector<::std::string >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'stringify_polynomials';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '958';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Function for stringifying Polynomials to a :std::vector<std::string> for Terminal echoing.
@@ -247,7 +247,7 @@ _EnD_oF_dEf_TeXt_;
 const int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'main_loop';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '963';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The main application menu as a loop.
@@ -265,7 +265,7 @@ _EnD_oF_dEf_TeXt_;
 const int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'operation_loop';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '979';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The operation menu as a loop.
@@ -289,7 +289,7 @@ const int
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 't';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '1000';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Subcaller for efectuating a operation.
@@ -313,7 +313,7 @@ const emth::Polynomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'function';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '1029';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Function for launching a Plane object in a different thread and detaching it.
@@ -334,7 +334,7 @@ _EnD_oF_dEf_TeXt_;
 Terminal *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'terminal';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '834';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Singleton Terminal instance pointer.
@@ -352,7 +352,7 @@ _EnD_oF_dEf_TeXt_;
 const Storage
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'storage';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '838';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The Storage object for writing the JSON file containing the saved Polynomials.
@@ -370,7 +370,7 @@ _EnD_oF_dEf_TeXt_;
 rapidjson::Document
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'json';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '842';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The rapidjson::Document representing the JSON array of Polynomials.
@@ -388,7 +388,7 @@ _EnD_oF_dEf_TeXt_;
 ::std::vector< emth::Polynomial >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'polynomials';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '846';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The std::vector of the currently saved Polynomials.
@@ -406,7 +406,7 @@ _EnD_oF_dEf_TeXt_;
 unsigned int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'active';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '850';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The id of the active Window.
@@ -433,7 +433,7 @@ const ::std::string &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'number';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '1042';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Function for parsing a std::string as an int.
@@ -458,7 +458,7 @@ const std::vector< std::complex< double > > &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'v';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '1048';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Function for transforming a std::vector<std::complex<double>> to a std::string representing it.
@@ -489,7 +489,7 @@ const std::complex< double > &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'c';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '1054';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Function for inserting <std::complex<double> to a std::stringstream.
@@ -514,7 +514,7 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = nullptr
 _EnD_oF_dEf_TeXt_;
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '830';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Singleton Application instance pointer.
@@ -524,7 +524,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
-  cp-filename  = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+  cp-filename  = '/home/kopi/GitHub/Emath/src/interface.cpp';
   cp-fileline  = '822';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 Class that contains the application inner logic.
@@ -559,7 +559,7 @@ std::vector< int > &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'v';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '180';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Gets the all the positive divisors for an integer.
@@ -570,7 +570,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
-  cp-filename  = '/home/kopi/GitHub/EMath++/include/emath.h';
+  cp-filename  = '/home/kopi/GitHub/Emath/include/emath.h';
   cp-fileline  = '173';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 Class with some functions for arithmetic math.
@@ -599,7 +599,7 @@ class = {
 
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'EParserTest';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/test/eparser.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/test/eparser.cpp';
       sec-mem-desc-line = '20';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Standalone constructor for the EParserTest class.
@@ -623,7 +623,7 @@ const std::string &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'input';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/test/eparser.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/test/eparser.cpp';
       sec-mem-desc-line = '25';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Function for setting the input to the lexer and parser objects.
@@ -654,7 +654,7 @@ _EnD_oF_dEf_TeXt_;
 emthp::Lexer
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'lexer';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/test/eparser.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/test/eparser.cpp';
       sec-mem-desc-line = '33';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The lexer object on which to perform the tests on.
@@ -672,7 +672,7 @@ _EnD_oF_dEf_TeXt_;
 emthp::Parser
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'parser';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/test/eparser.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/test/eparser.cpp';
       sec-mem-desc-line = '37';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The parser object on which to perform the tests on.
@@ -682,7 +682,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
-  cp-filename  = '/home/kopi/GitHub/EMath++/test/eparser.cpp';
+  cp-filename  = '/home/kopi/GitHub/Emath/test/eparser.cpp';
   cp-fileline  = '14';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 Class that provides a test fixture for the test cases.
@@ -775,7 +775,7 @@ class = {
 
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'IWindow';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '238';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Default constructor.
@@ -793,7 +793,7 @@ _EnD_oF_dEf_TeXt_;
 const unsigned int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'get_title_y';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '243';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Gets the title y coordinate.
@@ -811,7 +811,7 @@ _EnD_oF_dEf_TeXt_;
 const unsigned int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'get_title_x';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '248';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Gets the title x coordinate.
@@ -829,7 +829,7 @@ _EnD_oF_dEf_TeXt_;
 
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = '~IWindow';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '252';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Default destructor.
@@ -839,7 +839,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
-  cp-filename  = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+  cp-filename  = '/home/kopi/GitHub/Emath/src/interface.cpp';
   cp-fileline  = '233';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 Window class extension for input.
@@ -910,7 +910,7 @@ const std::string &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'input';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '728';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Standalone constructor for the Lexer class.
@@ -928,7 +928,7 @@ _EnD_oF_dEf_TeXt_;
 const Token
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'next';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '733';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Function that returns the next Token in the input provided in the constructor.
@@ -946,7 +946,7 @@ _EnD_oF_dEf_TeXt_;
 
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = '~Lexer';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '746';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Default destructor.
@@ -967,7 +967,7 @@ _EnD_oF_dEf_TeXt_;
 const ::std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = '_input';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '694';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The provided input as a private std::string.
@@ -985,7 +985,7 @@ _EnD_oF_dEf_TeXt_;
 short unsigned int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = '_pos';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '698';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Private long unsigned int that represents the cursor's position.
@@ -1012,7 +1012,7 @@ const std::string &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'input';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '704';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Private static function that cleans the input string of the unexpected characters.
@@ -1037,7 +1037,7 @@ const char &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'c';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '722';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Miscellaneous private function that checks if a char is an integer.
@@ -1049,7 +1049,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
-  cp-filename  = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+  cp-filename  = '/home/kopi/GitHub/Emath/src/interface.cpp';
   cp-fileline  = '689';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 Class that works as a token supplier for the Parser class.
@@ -1078,7 +1078,7 @@ const std::string &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'input';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/eparser.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/eparser.h';
       sec-mem-desc-line = '76';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Standalone constructor for the Lexer class.
@@ -1102,7 +1102,7 @@ const Lexer &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/eparser.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/eparser.h';
       sec-mem-desc-line = '82';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Assigment operator for when called with an lvalue.
@@ -1121,7 +1121,7 @@ _EnD_oF_dEf_TeXt_;
 Token
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'next';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/eparser.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/eparser.h';
       sec-mem-desc-line = '87';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Function that returns the next Token in the input provided in the constructor.
@@ -1174,7 +1174,7 @@ _EnD_oF_dEf_TeXt_;
 void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'back';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/eparser.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/eparser.h';
       sec-mem-desc-line = '91';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Backtrack function that moves the cursor's position one position backwards.
@@ -1195,7 +1195,7 @@ _EnD_oF_dEf_TeXt_;
 double
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'read_number';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/eparser.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/eparser.h';
       sec-mem-desc-line = '105';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Private function that reads the next Token as a number consisting of various characters.
@@ -1216,7 +1216,7 @@ _EnD_oF_dEf_TeXt_;
 std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = '_input';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/eparser.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/eparser.h';
       sec-mem-desc-line = '96';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The provided input as a private std::string.
@@ -1234,7 +1234,7 @@ _EnD_oF_dEf_TeXt_;
 long unsigned int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = '_pos';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/eparser.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/eparser.h';
       sec-mem-desc-line = '100';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Private long unsigned int that represents the cursor's position.
@@ -1261,7 +1261,7 @@ const std::string &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'input';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/eparser.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/eparser.h';
       sec-mem-desc-line = '111';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Private static function that cleans the input string of the unexpected characters.
@@ -1286,7 +1286,7 @@ const char &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'c';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/eparser.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/eparser.h';
       sec-mem-desc-line = '118';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Miscellaneous private function that checks if a char is a digit.
@@ -1298,7 +1298,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
-  cp-filename  = '/home/kopi/GitHub/EMath++/include/eparser.h';
+  cp-filename  = '/home/kopi/GitHub/Emath/include/eparser.h';
   cp-fileline  = '70';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 Class that works as a token supplier for the Parser class.
@@ -1321,7 +1321,7 @@ class = {
 
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'Monomial';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '192';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Default constructor for when initialized with no arguments.
@@ -1351,7 +1351,7 @@ const int
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'dgr';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '198';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Normal constructor for initialization with coeff and degree.
@@ -1376,7 +1376,7 @@ const Monomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '203';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Copy constructor for when initialized with an lvalue Monomial object.
@@ -1400,7 +1400,7 @@ Monomial &&
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '208';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Move constructor for when initialized with an rvalue Monomial object.
@@ -1424,7 +1424,7 @@ const Monomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '214';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Assigment operator overload for when called with an lvalue.
@@ -1449,7 +1449,7 @@ Monomial &&
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '220';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Move assigment operator overload for when called with an rvalue.
@@ -1474,7 +1474,7 @@ const Monomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '227';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Equal logic operator overload.
@@ -1500,7 +1500,7 @@ const Monomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '234';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Not equal logic operator overload.
@@ -1526,7 +1526,7 @@ const Monomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '241';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Greater than logic operator overload.
@@ -1552,7 +1552,7 @@ const Monomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '248';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Less than logic operator overload.
@@ -1578,7 +1578,7 @@ const Monomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '255';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Greater or equal than logic operator overload.
@@ -1604,7 +1604,7 @@ const Monomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '262';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Less or equal than logic operator overload.
@@ -1630,7 +1630,7 @@ const Monomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '268';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Addition operator overload.
@@ -1655,7 +1655,7 @@ const Monomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '274';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Substraction operator overload.
@@ -1680,7 +1680,7 @@ const Monomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '280';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Multiplication operator overload.
@@ -1705,7 +1705,7 @@ const Monomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '286';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Division operator overload.
@@ -1730,7 +1730,7 @@ const Monomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '292';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Modulus operator overload.
@@ -1755,7 +1755,7 @@ const Monomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '298';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Addition assigment operator overload.
@@ -1780,7 +1780,7 @@ const Monomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '304';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Substraction assigment operator overload.
@@ -1805,7 +1805,7 @@ const Monomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '310';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Multiplication assigment operator overload.
@@ -1830,7 +1830,7 @@ const Monomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '316';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Division assigment operator overload.
@@ -1855,7 +1855,7 @@ const Monomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '322';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Modulus assigment operator overload.
@@ -1874,7 +1874,7 @@ _EnD_oF_dEf_TeXt_;
 double
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'get_coeff';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '341';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Getter function for getting the coefficient of the Monomial.
@@ -1892,7 +1892,7 @@ _EnD_oF_dEf_TeXt_;
 int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'get_degree';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '346';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Getter function for getting the degree of the Monomial.
@@ -1916,7 +1916,7 @@ double
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'cf';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '351';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Setter function for setting the coefficient of the Monomial.
@@ -1940,7 +1940,7 @@ int
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'dgr';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '356';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Setter function for setting the degree of the Monomial.
@@ -1958,7 +1958,7 @@ _EnD_oF_dEf_TeXt_;
 std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'get_expression';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '361';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Getter function for getting the expression of the Monomial.
@@ -1982,7 +1982,7 @@ const double &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'x';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '367';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Calculus function for getting the value of the Monomial at a point.
@@ -2001,7 +2001,7 @@ _EnD_oF_dEf_TeXt_;
 
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = '~Monomial';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '371';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The class destructor.
@@ -2028,7 +2028,7 @@ Monomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '385';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The swap function for the copy-and-swap idiom implemented by the assigment operators.
@@ -2049,7 +2049,7 @@ _EnD_oF_dEf_TeXt_;
 double
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'coeff';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '376';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The coefficient of the Monomial.
@@ -2067,7 +2067,7 @@ _EnD_oF_dEf_TeXt_;
 int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'degree';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '380';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The degree of the Monomial.
@@ -2100,7 +2100,7 @@ const Monomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'm';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '329';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 A friend operator to insert the Monomial into a std::stringstream.
@@ -2132,7 +2132,7 @@ const Monomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'm';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '336';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 A friend operator to insert the Monomial into a std::ostream.
@@ -2144,7 +2144,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
-  cp-filename  = '/home/kopi/GitHub/EMath++/include/emath.h';
+  cp-filename  = '/home/kopi/GitHub/Emath/include/emath.h';
   cp-fileline  = '187';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 Class for representing and operating monomials.
@@ -2173,7 +2173,7 @@ class = {
 
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'OWindow';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '183';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Default constructor.
@@ -2191,7 +2191,7 @@ _EnD_oF_dEf_TeXt_;
 const unsigned int &
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'get_scroll_index';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '188';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Gets if the scroll index.
@@ -2209,7 +2209,7 @@ _EnD_oF_dEf_TeXt_;
 const ::std::vector<::std::string > &
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'get_data';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '193';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Gets the data vector.
@@ -2227,7 +2227,7 @@ _EnD_oF_dEf_TeXt_;
 const unsigned int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'get_data_size';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '198';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Gets the data vector size.
@@ -2245,7 +2245,7 @@ _EnD_oF_dEf_TeXt_;
 const unsigned int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'get_title_y';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '203';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Gets the title y coordinate.
@@ -2263,7 +2263,7 @@ _EnD_oF_dEf_TeXt_;
 const unsigned int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'get_title_x';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '208';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Gets the title x coordinate.
@@ -2292,7 +2292,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'data';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '213';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Sets the data vector.
@@ -2315,7 +2315,7 @@ _EnD_oF_dEf_TeXt_;
 void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'scroll_up';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '217';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Scrolls up, internally substracts from the scroll index within certain bounds.
@@ -2338,7 +2338,7 @@ _EnD_oF_dEf_TeXt_;
 void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'scroll_down';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '221';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Scrolls down, internally adds to the scroll index within certain bounds.
@@ -2361,7 +2361,7 @@ _EnD_oF_dEf_TeXt_;
 
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = '~OWindow';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '225';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Default destructor.
@@ -2382,7 +2382,7 @@ _EnD_oF_dEf_TeXt_;
 unsigned int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 's';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '174';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The scroll index as the first visible element index.
@@ -2400,7 +2400,7 @@ _EnD_oF_dEf_TeXt_;
 ::std::vector<::std::string >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'd';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '178';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The data vector, a std::vector of std::string.
@@ -2410,7 +2410,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
-  cp-filename  = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+  cp-filename  = '/home/kopi/GitHub/Emath/src/interface.cpp';
   cp-fileline  = '169';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 Window class extension for output.
@@ -2481,7 +2481,7 @@ const std::string &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'input';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '764';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Standalone constructor for the Parser class.
@@ -2499,7 +2499,7 @@ _EnD_oF_dEf_TeXt_;
 const int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'parse_number';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '769';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Function for parsing a plus, minus and number Tokens as a positive or negative int.
@@ -2533,7 +2533,7 @@ const ::std::vector< emth::Polynomial > &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ps';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '786';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Function for parsing std::string as a mathematical operation consisting of Polynomials represented as integers.
@@ -2562,7 +2562,7 @@ _EnD_oF_dEf_TeXt_;
 
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = '~Parser';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '815';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Default destructor.
@@ -2583,7 +2583,7 @@ _EnD_oF_dEf_TeXt_;
 Lexer
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = '_lexer';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '758';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Private Lexer instance for supplying tokens.
@@ -2593,7 +2593,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
-  cp-filename  = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+  cp-filename  = '/home/kopi/GitHub/Emath/src/interface.cpp';
   cp-fileline  = '753';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 Class that wraps a std::string and parses it as a number or as a operation.
@@ -2622,7 +2622,7 @@ const std::string &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'input';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/eparser.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/eparser.h';
       sec-mem-desc-line = '131';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Standalone constructor for the Parser class.
@@ -2646,7 +2646,7 @@ const Parser &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/eparser.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/eparser.h';
       sec-mem-desc-line = '137';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Assigment operator for when called with an lvalue.
@@ -2665,7 +2665,7 @@ _EnD_oF_dEf_TeXt_;
 emth::Polynomial
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'parse_polynomial';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/eparser.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/eparser.h';
       sec-mem-desc-line = '142';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Function that parses the input as a Polynomial.
@@ -2688,7 +2688,7 @@ _EnD_oF_dEf_TeXt_;
 emth::Monomial
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'parse_monomial';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/eparser.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/eparser.h';
       sec-mem-desc-line = '147';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Function that parses the next Monomial in the input.
@@ -2754,7 +2754,7 @@ _EnD_oF_dEf_TeXt_;
 double
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'parse_number';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/eparser.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/eparser.h';
       sec-mem-desc-line = '157';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Private function for parsing a plus, minus and number Tokens as a positive or negative double.
@@ -2775,7 +2775,7 @@ _EnD_oF_dEf_TeXt_;
 Lexer
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = '_lexer';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/eparser.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/eparser.h';
       sec-mem-desc-line = '152';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Private Lexer instance for supplying tokens.
@@ -2785,7 +2785,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
-  cp-filename  = '/home/kopi/GitHub/EMath++/include/eparser.h';
+  cp-filename  = '/home/kopi/GitHub/Emath/include/eparser.h';
   cp-fileline  = '125';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 Class that wraps a std::string and parses it as a Monomial or as a Polynomial.
@@ -2826,7 +2826,7 @@ const ::emth::Polynomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'func';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '547';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The main constructor.
@@ -2851,7 +2851,7 @@ _EnD_oF_dEf_TeXt_;
 void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'run';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '558';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Runs the main application loop, processing events.
@@ -2872,7 +2872,7 @@ _EnD_oF_dEf_TeXt_;
 void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'draw';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '501';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 This function draws one frame per call of the Plane.
@@ -2890,7 +2890,7 @@ _EnD_oF_dEf_TeXt_;
 void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'populate';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '513';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 This function populates the representation with the function image in the current domain.
@@ -2914,7 +2914,7 @@ const ::sf::Event &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'event';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '528';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 This function resizes the Plane window and all the primitives that need to also be resized.
@@ -2935,7 +2935,7 @@ _EnD_oF_dEf_TeXt_;
 int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'xogn';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '457';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The x and y offsets where the drawing starts.
@@ -2953,7 +2953,7 @@ _EnD_oF_dEf_TeXt_;
 int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'yogn';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '457';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -2971,7 +2971,7 @@ _EnD_oF_dEf_TeXt_;
 const int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = '_xogn';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '461';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The original x and y offsets first provided on instantiation.
@@ -2989,7 +2989,7 @@ _EnD_oF_dEf_TeXt_;
 const int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = '_yogn';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '461';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -3007,7 +3007,7 @@ _EnD_oF_dEf_TeXt_;
 unsigned int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'domain';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '465';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The domain and image of the Cartesian plane visible.
@@ -3025,7 +3025,7 @@ _EnD_oF_dEf_TeXt_;
 unsigned int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'image';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '465';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -3043,7 +3043,7 @@ _EnD_oF_dEf_TeXt_;
 ::emth::Polynomial
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'function';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '469';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The function to draw.
@@ -3061,7 +3061,7 @@ _EnD_oF_dEf_TeXt_;
 ::sf::Font
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'font';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '473';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The sf::Font for the coordinate tooltip.
@@ -3079,7 +3079,7 @@ _EnD_oF_dEf_TeXt_;
 ::sf::Text
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'tooltip';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '477';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The sf::Text coordinate tooltip.
@@ -3097,7 +3097,7 @@ _EnD_oF_dEf_TeXt_;
 ::sf::VertexArray
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'axes';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '481';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The sf::VertexArray that contains the Cartesian plane axes.
@@ -3115,7 +3115,7 @@ _EnD_oF_dEf_TeXt_;
 ::sf::RenderWindow
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'window';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '485';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The sf::RenderWindow where everything gets drawed.
@@ -3133,7 +3133,7 @@ _EnD_oF_dEf_TeXt_;
 ::sf::RectangleShape
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'line';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '489';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The sf::RectangleShape vertical line that follows the mouse.
@@ -3151,7 +3151,7 @@ _EnD_oF_dEf_TeXt_;
 ::sf::CircleShape
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'intersection';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '493';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The sf::CircleShape that gets drawed on the intersection between the line and the function.
@@ -3169,7 +3169,7 @@ _EnD_oF_dEf_TeXt_;
 ::sf::VertexArray
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'representation';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '497';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The sf::VertexArray that contains the points of the function for drawing.
@@ -3196,7 +3196,7 @@ const int &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'n';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '539';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 This function inverts a int.
@@ -3207,7 +3207,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
-  cp-filename  = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+  cp-filename  = '/home/kopi/GitHub/Emath/src/interface.cpp';
   cp-fileline  = '452';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 Plane class to draw a function in the Cartesian plane.
@@ -3230,7 +3230,7 @@ class = {
 
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'Polynomial';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '397';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Default constructor for when initialized with no arguments.
@@ -3254,7 +3254,7 @@ const std::map< int, Monomial >
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'mns';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '402';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Normal constructor for initialization with a std::map<int, Monomial>
@@ -3278,7 +3278,7 @@ const std::initializer_list< Monomial >
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'mns';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '407';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 List constructor for initialization with a std::initializer_list<Monomial>
@@ -3302,7 +3302,7 @@ const std::vector< Monomial >
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'mns';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '412';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Vector constructor for initialization with a std::vector<Monomial>
@@ -3326,7 +3326,7 @@ const Polynomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '417';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Copy constructor for when initialized with an lvalue Polynomial object.
@@ -3350,7 +3350,7 @@ Polynomial &&
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '422';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Move constructor for when initialized with an rvalue Polynomial object.
@@ -3374,7 +3374,7 @@ const Polynomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '428';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Assigment operator overload for when called with an lvalue.
@@ -3399,7 +3399,7 @@ Polynomial &&
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '434';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Move assigment operator overload for when called with an rvalue.
@@ -3424,7 +3424,7 @@ const Polynomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '441';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Equal logic operator overload.
@@ -3450,7 +3450,7 @@ const Polynomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '448';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Not equal logic operator overload.
@@ -3476,7 +3476,7 @@ const Polynomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '455';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Greater than logic operator overload.
@@ -3502,7 +3502,7 @@ const Polynomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '462';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Less than logic operator overload.
@@ -3528,7 +3528,7 @@ const Polynomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '469';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Greater or equal than logic operator overload.
@@ -3554,7 +3554,7 @@ const Polynomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '476';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Less or equal than logic operator overload.
@@ -3580,7 +3580,7 @@ const Polynomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '482';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Addition operator overload.
@@ -3605,7 +3605,7 @@ const Polynomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '488';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Substraction operator overload.
@@ -3630,7 +3630,7 @@ const Polynomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '494';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Multiplication operator overload.
@@ -3655,7 +3655,7 @@ const Polynomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '500';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Division operator overload.
@@ -3680,7 +3680,7 @@ const Polynomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '506';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Modulus operator overload.
@@ -3705,7 +3705,7 @@ const Polynomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '512';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Addition assigment operator overload.
@@ -3730,7 +3730,7 @@ const Polynomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '518';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Substraction assigment operator overload.
@@ -3755,7 +3755,7 @@ const Polynomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '524';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Multiplication assigment operator overload.
@@ -3780,7 +3780,7 @@ const Polynomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '530';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Division assigment operator overload.
@@ -3810,7 +3810,7 @@ const Polynomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '536';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Modulus assigment operator overload.
@@ -3829,7 +3829,7 @@ _EnD_oF_dEf_TeXt_;
 int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'get_degree';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '555';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Getter function for getting the degree of the Polynomial.
@@ -3847,7 +3847,7 @@ _EnD_oF_dEf_TeXt_;
 std::map< int, Monomial >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'get_monomials';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '560';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Getter function for getting the monomials of the Polynomial.
@@ -3865,7 +3865,7 @@ _EnD_oF_dEf_TeXt_;
 bool
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'is_empty';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '565';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Function for knowing if the polynomial has or not any monomials.
@@ -3889,7 +3889,7 @@ const Monomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'm';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '571';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Function for appending a lvalue monomial to the Polynomial.
@@ -3914,7 +3914,7 @@ Monomial &&
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'm';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '577';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Function for appending a rvalue monomial to the Polynomial.
@@ -3943,7 +3943,7 @@ _EnD_oF_dEf_TeXt_;
 std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'get_expression';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '582';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Getter function for getting the expression of the Polynomial.
@@ -3967,7 +3967,7 @@ const double &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'x';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '588';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Calculus function for getting the value of the Polynomial at a point.
@@ -3986,7 +3986,7 @@ _EnD_oF_dEf_TeXt_;
 Polynomial
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'get_derivative';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '593';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Calculus function for getting the derivative of the Polynomial.
@@ -4004,7 +4004,7 @@ _EnD_oF_dEf_TeXt_;
 Polynomial
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'get_integral';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '598';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Calculus function for getting the integral of the Polynomial.
@@ -4022,7 +4022,7 @@ _EnD_oF_dEf_TeXt_;
 std::vector< std::complex< double > >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'get_roots';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '603';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Calculus function for getting all the real and complex roots of the Polynomial using the Eigen library.
@@ -4043,7 +4043,7 @@ _EnD_oF_dEf_TeXt_;
 
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = '~Polynomial';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '607';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The class destructor.
@@ -4070,7 +4070,7 @@ Polynomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'ogn';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '617';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The swap function for the copy-and-swap idiom implemented by the assigment operators.
@@ -4088,7 +4088,7 @@ _EnD_oF_dEf_TeXt_;
 Polynomial &
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'redux';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '621';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The redux function for removing the Monomials of zero coefficient.
@@ -4109,7 +4109,7 @@ _EnD_oF_dEf_TeXt_;
 std::map< int, Monomial >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'monomials';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '612';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The monomials of the Polynomial as a std::map<int, Monomial> where the key is the degree of the Monomial.
@@ -4142,7 +4142,7 @@ const Polynomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'p';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '543';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 A friend operator to insert the Polynomial into a std::stringstream.
@@ -4174,7 +4174,7 @@ const Polynomial &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'p';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       sec-mem-desc-line = '550';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 A friend operator to insert the Polynomial into a std::ostream.
@@ -4186,7 +4186,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
-  cp-filename  = '/home/kopi/GitHub/EMath++/include/emath.h';
+  cp-filename  = '/home/kopi/GitHub/Emath/include/emath.h';
   cp-fileline  = '392';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 Class for representing and operating polynomials.
@@ -4215,7 +4215,7 @@ const ::std::string
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'file';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '600';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The main constructor.
@@ -4233,7 +4233,7 @@ _EnD_oF_dEf_TeXt_;
 const ::std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'read';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '605';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The read function that returns the whole file as a std:.string.
@@ -4257,7 +4257,7 @@ const ::std::string
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'contents';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '618';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The write function that overwrites the whole file with a std::string.
@@ -4276,7 +4276,7 @@ _EnD_oF_dEf_TeXt_;
 bool
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'exists';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '628';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 This function check if the filename exists.
@@ -4294,7 +4294,7 @@ _EnD_oF_dEf_TeXt_;
 
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = '~Storage';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '638';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Default destructor.
@@ -4315,7 +4315,7 @@ _EnD_oF_dEf_TeXt_;
 const ::std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'filename';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '594';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The filename to write to as a  std::string.
@@ -4325,7 +4325,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
-  cp-filename  = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+  cp-filename  = '/home/kopi/GitHub/Emath/src/interface.cpp';
   cp-fileline  = '589';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 Storage class to read and write to a file.
@@ -4348,7 +4348,7 @@ class = {
 void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'flush';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '347';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Function for flushin all the Terminal's Windows.
@@ -4377,7 +4377,7 @@ const ::std::string
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'title';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '352';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Function for setting the title of the left Window.
@@ -4406,7 +4406,7 @@ const ::std::string
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'title';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '357';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Function for setting the title of the right Window.
@@ -4435,7 +4435,7 @@ const ::std::string
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'prompt';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '362';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Function for setting the prompt of the bottom Window.
@@ -4464,7 +4464,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'data';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '367';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Function for setting data vector of the left Window.
@@ -4493,7 +4493,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'data';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '372';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Function for setting data vector of the right Window.
@@ -4516,7 +4516,7 @@ _EnD_oF_dEf_TeXt_;
 const int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'get_short_input';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '377';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Function for getting short single char input from the Terminal.
@@ -4539,7 +4539,7 @@ _EnD_oF_dEf_TeXt_;
 const ::std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'get_long_input';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '391';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Function for getting long single string input from the Terminal.
@@ -4568,7 +4568,7 @@ const unsigned int
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'id';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '396';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Function for scrolling down the left or right window depending on the provided id.
@@ -4597,7 +4597,7 @@ const unsigned int
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'id';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '406';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Function for scrolling up the left or right window depending on the provided id.
@@ -4626,7 +4626,7 @@ const ::std::string &
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'result';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '416';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Echoes the provided result to the prompt and waits for a key press.
@@ -4660,7 +4660,7 @@ const unsigned int
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'id';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '427';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Swaps the active window to the one matching the provide id.
@@ -4678,7 +4678,7 @@ _EnD_oF_dEf_TeXt_;
 
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = '~Terminal';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '438';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Default destructor, it deletes the Window pointers, sets the singleton instance to nullptr, stops the signal listener and stops curses.
@@ -4699,7 +4699,7 @@ _EnD_oF_dEf_TeXt_;
 static Terminal *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'init';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '340';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Static function for building the singleton static instance.
@@ -4720,7 +4720,7 @@ _EnD_oF_dEf_TeXt_;
 
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'Terminal';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '272';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Single constructor wich initializes curses, creates the Windows, adds the resize signal and computes the bounds.
@@ -4738,7 +4738,7 @@ _EnD_oF_dEf_TeXt_;
 void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'cbounds';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '285';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Function with the single task of computing the Terminal bounds and the bounds of the Windows.
@@ -4759,7 +4759,7 @@ _EnD_oF_dEf_TeXt_;
 Window *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'lwin';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '268';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Pointers to all the Windows as the parent class.
@@ -4777,7 +4777,7 @@ _EnD_oF_dEf_TeXt_;
 Window *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'rwin';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '268';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -4795,7 +4795,7 @@ _EnD_oF_dEf_TeXt_;
 Window *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'bwin';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '268';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -4822,7 +4822,7 @@ Window *&
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'win';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '303';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Private function that flushes one Window to the Terminal.
@@ -4846,7 +4846,7 @@ int
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'signal';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '323';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Resize handler called on Terminal resize.
@@ -4864,7 +4864,7 @@ _EnD_oF_dEf_TeXt_;
 static void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'launch';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '327';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Static function that groups all the curses procedure for launching the Terminal.
@@ -4888,7 +4888,7 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = nullptr
 _EnD_oF_dEf_TeXt_;
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '264';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Singleton Terminal instance pointer.
@@ -4898,7 +4898,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
-  cp-filename  = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+  cp-filename  = '/home/kopi/GitHub/Emath/src/interface.cpp';
   cp-fileline  = '259';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 Terminal class to manage the terminal through curses.
@@ -4916,7 +4916,7 @@ class = {
     ref-prot = public;
     ref-virt = non-virtual;
   };
-  cp-filename  = '/home/kopi/GitHub/EMath++/test/eparser.cpp';
+  cp-filename  = '/home/kopi/GitHub/Emath/test/eparser.cpp';
   cp-fileline  = '14';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 
@@ -4957,7 +4957,7 @@ struct = {
 const TokenType
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'type';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '678';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The token's type as a TokenType.
@@ -4975,7 +4975,7 @@ _EnD_oF_dEf_TeXt_;
 char
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'c';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '682';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -4993,7 +4993,7 @@ _EnD_oF_dEf_TeXt_;
 int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'n';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '682';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -5011,7 +5011,7 @@ _EnD_oF_dEf_TeXt_;
 union efc::Token::
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'value';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '682';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 A union representing the value of the Token as a char or as a int.
@@ -5021,7 +5021,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
-  cp-filename  = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+  cp-filename  = '/home/kopi/GitHub/Emath/src/interface.cpp';
   cp-fileline  = '674';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 Struct for representing a token as a type and a value.
@@ -5044,7 +5044,7 @@ struct = {
 TokenType
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'type';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/eparser.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/eparser.h';
       sec-mem-desc-line = '59';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The token's type as a TokenType.
@@ -5062,7 +5062,7 @@ _EnD_oF_dEf_TeXt_;
 double
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'value';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/include/eparser.h';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/include/eparser.h';
       sec-mem-desc-line = '63';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The token's numerical value as a double.
@@ -5072,7 +5072,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
-  cp-filename  = '/home/kopi/GitHub/EMath++/include/eparser.h';
+  cp-filename  = '/home/kopi/GitHub/Emath/include/eparser.h';
   cp-fileline  = '54';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 Struct for representing a token as a type and a value.
@@ -5107,7 +5107,7 @@ class = {
 
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'Window';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '81';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Generic constructor with default values.
@@ -5125,7 +5125,7 @@ _EnD_oF_dEf_TeXt_;
 const char *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'get_title';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '86';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Returns the c_str() const char pointer of the title std::string.
@@ -5143,7 +5143,7 @@ _EnD_oF_dEf_TeXt_;
 const unsigned int &
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'get_y';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '91';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Returns the y coordinate.
@@ -5166,7 +5166,7 @@ _EnD_oF_dEf_TeXt_;
 const unsigned int &
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'get_x';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '96';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Returns the x coordinate.
@@ -5184,7 +5184,7 @@ _EnD_oF_dEf_TeXt_;
 const unsigned int &
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'get_height';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '101';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Returns the height value.
@@ -5202,7 +5202,7 @@ _EnD_oF_dEf_TeXt_;
 const unsigned int &
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'get_width';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '106';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Returns the width value.
@@ -5220,7 +5220,7 @@ _EnD_oF_dEf_TeXt_;
 const unsigned int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'get_title_size';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '111';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Returns the title size.
@@ -5244,7 +5244,7 @@ const ::std::string &&
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'title';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '116';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Sets the title.
@@ -5274,7 +5274,7 @@ const unsigned int
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'x';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '122';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Sets the y and x coordinates.
@@ -5310,7 +5310,7 @@ const unsigned int
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'w';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '128';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Sets the size.
@@ -5335,7 +5335,7 @@ const bool
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'active';
       }; /*        sec-mem-param--param */
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '133';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Sets the active boolean to the provided value.
@@ -5353,7 +5353,7 @@ _EnD_oF_dEf_TeXt_;
 virtual const unsigned int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'get_title_y';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '138';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Gets the title y coordinate.
@@ -5371,7 +5371,7 @@ _EnD_oF_dEf_TeXt_;
 virtual const unsigned int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'get_title_x';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '143';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Gets the title x coordinate.
@@ -5389,7 +5389,7 @@ _EnD_oF_dEf_TeXt_;
 const bool
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'needs_update';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '148';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Gets if the window needs a redraw.
@@ -5407,7 +5407,7 @@ _EnD_oF_dEf_TeXt_;
 const bool
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'is_active';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '153';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Gets if the window is active/focused.
@@ -5425,7 +5425,7 @@ _EnD_oF_dEf_TeXt_;
 void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'place';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '157';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Deletes the WINDOW pointer and creates a new WINDOW at the class coordinates.
@@ -5443,7 +5443,7 @@ _EnD_oF_dEf_TeXt_;
 virtual
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = '~Window';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '161';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Calls curses delwin() function on the curses WINDOW object and returns.
@@ -5464,7 +5464,7 @@ _EnD_oF_dEf_TeXt_;
 WINDOW *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'o';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '77';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Pointer to the curses WINDOW object.
@@ -5485,7 +5485,7 @@ _EnD_oF_dEf_TeXt_;
 bool
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'c';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '64';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Two booleans: c for knowing if contents changed, and a for knowing if window is active.
@@ -5503,7 +5503,7 @@ _EnD_oF_dEf_TeXt_;
 bool
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'a';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '64';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -5521,7 +5521,7 @@ _EnD_oF_dEf_TeXt_;
 ::std::string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 't';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '68';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 String t: window title.
@@ -5539,7 +5539,7 @@ _EnD_oF_dEf_TeXt_;
 unsigned int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'y';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '72';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Four unsigned ints: x and y for the coordinates relative to the console window, w and h for the size of the window.
@@ -5557,7 +5557,7 @@ _EnD_oF_dEf_TeXt_;
 unsigned int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'x';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '72';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -5575,7 +5575,7 @@ _EnD_oF_dEf_TeXt_;
 unsigned int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'h';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '72';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -5593,7 +5593,7 @@ _EnD_oF_dEf_TeXt_;
 unsigned int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'w';
-      sec-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      sec-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       sec-mem-desc-line = '72';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -5603,7 +5603,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
-  cp-filename  = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+  cp-filename  = '/home/kopi/GitHub/Emath/src/interface.cpp';
   cp-fileline  = '59';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 Generic class for wrapping a curses WINDOW.
@@ -5657,7 +5657,7 @@ file = {
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 std::numeric_limits<double>::epsilon()
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      define-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       define-mem-desc-line = '166';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -5675,7 +5675,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 1000
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/home/kopi/GitHub/EMath++/include/emath.h';
+      define-mem-desc-file = '/home/kopi/GitHub/Emath/include/emath.h';
       define-mem-desc-line = '167';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -5685,7 +5685,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* define-member */
     };
-  file-full-name  = '/home/kopi/GitHub/EMath++/include/emath.h';
+  file-full-name  = '/home/kopi/GitHub/Emath/include/emath.h';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
 This is the main header file for the emath library.
@@ -5713,7 +5713,7 @@ file = {
       enum-mem-enum = { enum-name = T_VARIABLE; };
       enum-mem-enum = { enum-name = T_EXPONENT; };
       enum-mem-enum = { enum-name = T_EOF; };
-      enum-mem-desc-file = '/home/kopi/GitHub/EMath++/include/eparser.h';
+      enum-mem-desc-file = '/home/kopi/GitHub/Emath/include/eparser.h';
       enum-mem-desc-line = '24';
       enum-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Enum with all the possible Token types.
@@ -5723,7 +5723,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* enum-member */
     };
-  file-full-name  = '/home/kopi/GitHub/EMath++/include/eparser.h';
+  file-full-name  = '/home/kopi/GitHub/Emath/include/eparser.h';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
 This is the main header file for the equation parser.
@@ -5738,7 +5738,7 @@ _EnD_oF_dEf_TeXt_;
 file = {
   file-id   = 'src_2emath_8cpp';
   file-name = 'emath.cpp';
-  file-full-name  = '/home/kopi/GitHub/EMath++/src/emath.cpp';
+  file-full-name  = '/home/kopi/GitHub/Emath/src/emath.cpp';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
 This is the main source file for the mathematical equation operations.
@@ -5781,7 +5781,7 @@ bool
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 't';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/home/kopi/GitHub/EMath++/test/emath.cpp';
+      func-mem-desc-file = '/home/kopi/GitHub/Emath/test/emath.cpp';
       func-mem-desc-line = '18';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Checks if two vectors with std::complex items have the same items, even if not in the same order.
@@ -5802,7 +5802,7 @@ _EnD_oF_dEf_TeXt_;
 int
 _EnD_oF_dEf_TeXt_;
       func-mem-name = 'test_monomial';
-      func-mem-desc-file = '/home/kopi/GitHub/EMath++/test/emath.cpp';
+      func-mem-desc-file = '/home/kopi/GitHub/Emath/test/emath.cpp';
       func-mem-desc-line = '28';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Runs all the monomial class tests.
@@ -5840,7 +5840,7 @@ _EnD_oF_dEf_TeXt_;
 int
 _EnD_oF_dEf_TeXt_;
       func-mem-name = 'test_polynomial';
-      func-mem-desc-file = '/home/kopi/GitHub/EMath++/test/emath.cpp';
+      func-mem-desc-file = '/home/kopi/GitHub/Emath/test/emath.cpp';
       func-mem-desc-line = '115';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Runs all the polynomial class tests.
@@ -5898,7 +5898,7 @@ _EnD_oF_dEf_TeXt_;
 int
 _EnD_oF_dEf_TeXt_;
       func-mem-name = 'main';
-      func-mem-desc-file = '/home/kopi/GitHub/EMath++/test/emath.cpp';
+      func-mem-desc-file = '/home/kopi/GitHub/Emath/test/emath.cpp';
       func-mem-desc-line = '224';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Calls the monomial and polynomial tests.
@@ -5918,7 +5918,7 @@ _EnD_oF_dEf_TeXt_;
     };
     }; /* func-member */
     };
-  file-full-name  = '/home/kopi/GitHub/EMath++/test/emath.cpp';
+  file-full-name  = '/home/kopi/GitHub/Emath/test/emath.cpp';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
 This is the main test file of the emath library. It contains all the tests needed to assure that the library works properly.
@@ -5931,7 +5931,7 @@ _EnD_oF_dEf_TeXt_;
 file = {
   file-id   = 'src_2eparser_8cpp';
   file-name = 'eparser.cpp';
-  file-full-name  = '/home/kopi/GitHub/EMath++/src/eparser.cpp';
+  file-full-name  = '/home/kopi/GitHub/Emath/src/eparser.cpp';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
 This is the main implementation file for the equation parser.
@@ -5966,7 +5966,7 @@ _EnD_oF_dEf_TeXt_;
 Lexer
 _EnD_oF_dEf_TeXt_;
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/home/kopi/GitHub/EMath++/test/eparser.cpp';
+      func-mem-desc-file = '/home/kopi/GitHub/Emath/test/eparser.cpp';
       func-mem-desc-line = '42';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -6029,7 +6029,7 @@ _EnD_oF_dEf_TeXt_;
 CompoundLexer
 _EnD_oF_dEf_TeXt_;
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/home/kopi/GitHub/EMath++/test/eparser.cpp';
+      func-mem-desc-file = '/home/kopi/GitHub/Emath/test/eparser.cpp';
       func-mem-desc-line = '77';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -6087,7 +6087,7 @@ _EnD_oF_dEf_TeXt_;
 ArithmeticLexer
 _EnD_oF_dEf_TeXt_;
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/home/kopi/GitHub/EMath++/test/eparser.cpp';
+      func-mem-desc-file = '/home/kopi/GitHub/Emath/test/eparser.cpp';
       func-mem-desc-line = '104';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -6145,7 +6145,7 @@ _EnD_oF_dEf_TeXt_;
 Variables
 _EnD_oF_dEf_TeXt_;
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/home/kopi/GitHub/EMath++/test/eparser.cpp';
+      func-mem-desc-file = '/home/kopi/GitHub/Emath/test/eparser.cpp';
       func-mem-desc-line = '131';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -6173,7 +6173,7 @@ _EnD_oF_dEf_TeXt_;
 Compound
 _EnD_oF_dEf_TeXt_;
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/home/kopi/GitHub/EMath++/test/eparser.cpp';
+      func-mem-desc-file = '/home/kopi/GitHub/Emath/test/eparser.cpp';
       func-mem-desc-line = '140';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -6201,7 +6201,7 @@ _EnD_oF_dEf_TeXt_;
 Signs
 _EnD_oF_dEf_TeXt_;
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/home/kopi/GitHub/EMath++/test/eparser.cpp';
+      func-mem-desc-file = '/home/kopi/GitHub/Emath/test/eparser.cpp';
       func-mem-desc-line = '144';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -6229,7 +6229,7 @@ _EnD_oF_dEf_TeXt_;
 Noise
 _EnD_oF_dEf_TeXt_;
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/home/kopi/GitHub/EMath++/test/eparser.cpp';
+      func-mem-desc-file = '/home/kopi/GitHub/Emath/test/eparser.cpp';
       func-mem-desc-line = '154';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -6257,7 +6257,7 @@ _EnD_oF_dEf_TeXt_;
 Edge
 _EnD_oF_dEf_TeXt_;
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/home/kopi/GitHub/EMath++/test/eparser.cpp';
+      func-mem-desc-file = '/home/kopi/GitHub/Emath/test/eparser.cpp';
       func-mem-desc-line = '161';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -6287,7 +6287,7 @@ char **
 _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'argv';
       }; /*        func-mem-param--param */
-      func-mem-desc-file = '/home/kopi/GitHub/EMath++/test/eparser.cpp';
+      func-mem-desc-file = '/home/kopi/GitHub/Emath/test/eparser.cpp';
       func-mem-desc-line = '169';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Function that runs all the declared tests.
@@ -6300,7 +6300,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* func-member */
     };
-  file-full-name  = '/home/kopi/GitHub/EMath++/test/eparser.cpp';
+  file-full-name  = '/home/kopi/GitHub/Emath/test/eparser.cpp';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
 This is the main test file for the equation parser.
@@ -20273,7 +20273,7 @@ _EnD_oF_dEf_TeXt_;
   0x00, 0x03, 0x00, 0x4a, 0x00, 0x57, 0x00, 0x95
 }
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = '/home/kopi/GitHub/EMath++/src/font.h';
+      var-mem-desc-file = '/home/kopi/GitHub/Emath/src/font.h';
       var-mem-desc-line = '12';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The Roboto Bold font as a unsigned char array.
@@ -20294,7 +20294,7 @@ _EnD_oF_dEf_TeXt_;
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
 = 167336
 _EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = '/home/kopi/GitHub/EMath++/src/font.h';
+      var-mem-desc-file = '/home/kopi/GitHub/Emath/src/font.h';
       var-mem-desc-line = '13962';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The Roboto Bold font size as a unsigned int.
@@ -20304,7 +20304,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* var-member */
     };
-  file-full-name  = '/home/kopi/GitHub/EMath++/src/font.h';
+  file-full-name  = '/home/kopi/GitHub/Emath/src/font.h';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
 This file contains some fonts as a unsigned char arrays.
@@ -20323,7 +20323,7 @@ file = {
       define-mem-virt = normal;
       define-mem-prot = public;
       define-mem-name = 'INTERFACE_H';
-      define-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      define-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       define-mem-desc-line = '9';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -20341,7 +20341,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 1
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      define-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       define-mem-desc-line = '33';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -20359,7 +20359,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 2
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      define-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       define-mem-desc-line = '34';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -20377,7 +20377,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 1
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      define-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       define-mem-desc-line = '35';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -20395,7 +20395,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 2
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      define-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       define-mem-desc-line = '36';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -20413,7 +20413,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 3
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      define-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       define-mem-desc-line = '37';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -20431,7 +20431,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 2
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      define-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       define-mem-desc-line = '38';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -20449,7 +20449,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 1
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      define-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       define-mem-desc-line = '39';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -20467,7 +20467,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 27
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      define-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       define-mem-desc-line = '40';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -20485,7 +20485,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 9
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      define-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       define-mem-desc-line = '41';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -20503,7 +20503,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 32
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      define-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       define-mem-desc-line = '42';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -20521,7 +20521,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 101
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      define-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       define-mem-desc-line = '43';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -20539,7 +20539,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 113
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      define-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       define-mem-desc-line = '44';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -20557,7 +20557,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 49
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      define-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       define-mem-desc-line = '45';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -20575,7 +20575,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 50
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      define-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       define-mem-desc-line = '46';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -20593,7 +20593,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 51
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      define-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       define-mem-desc-line = '47';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -20611,7 +20611,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 52
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      define-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       define-mem-desc-line = '48';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -20629,7 +20629,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 53
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      define-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       define-mem-desc-line = '49';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -20647,7 +20647,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 0
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      define-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       define-mem-desc-line = '50';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -20665,7 +20665,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 1
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      define-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       define-mem-desc-line = '51';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -20683,7 +20683,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 2
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      define-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       define-mem-desc-line = '52';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -20701,7 +20701,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 "polynomials.json"
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      define-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       define-mem-desc-line = '53';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -20728,7 +20728,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 this->lwin->set_active(l); this->rwin->set_active(r); this->bwin->set_active(b);
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      define-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       define-mem-desc-line = '428';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -20746,7 +20746,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 {::std::string("[ESC] Exit program"), ::std::string("[TAB] Cycle focus"), ::std::string("[E] Add polynomial"), ::std::string("[Q] Remove polynomial"), ::std::string("[SPACE] New operation")}
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      define-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       define-mem-desc-line = '824';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -20764,7 +20764,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 {::std::string("[ESC] Back"), ::std::string("[TAB] Cycle focus"), ::std::string("[1] Evaluate operation"), ::std::string("[2] Derivative operation"), ::std::string("[3] Integral operation"), ::std::string("[4] Root finding operation"), ::std::string("[5] Drawing operation"), ::std::string("[SPACE] Arithmetic operations")}
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      define-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       define-mem-desc-line = '825';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -20782,7 +20782,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 {::std::string("[ESC] Exit program"), ::std::string("[UP ARROW] Scroll up"), ::std::string("[DOWN ARROW] Scroll down")}
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      define-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       define-mem-desc-line = '826';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -20803,7 +20803,7 @@ _EnD_oF_dEf_TeXt_;
       define-mem-initializer = <<_EnD_oF_dEf_TeXt_
 this->active = o; this->terminal->swap_active(o);
 _EnD_oF_dEf_TeXt_;
-      define-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      define-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       define-mem-desc-line = '892';
       define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
@@ -20826,7 +20826,7 @@ _EnD_oF_dEf_TeXt_;
       enum-mem-enum = { enum-name = T_MULTIPLICATION; };
       enum-mem-enum = { enum-name = T_DIVISION; };
       enum-mem-enum = { enum-name = T_EOF; };
-      enum-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      enum-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       enum-mem-desc-line = '644';
       enum-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Enum with all the possible Token types.
@@ -20846,7 +20846,7 @@ _EnD_oF_dEf_TeXt_;
 int
 _EnD_oF_dEf_TeXt_;
       func-mem-name = 'main';
-      func-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      func-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       func-mem-desc-line = '1097';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 The main function that creates the efc::Application instance, runs it and when it finishes it deletes it.
@@ -20866,7 +20866,7 @@ _EnD_oF_dEf_TeXt_;
     };
     }; /* func-member */
     };
-  file-full-name  = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+  file-full-name  = '/home/kopi/GitHub/Emath/src/interface.cpp';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
 This file contains the text user interface for the emath library.
@@ -20893,7 +20893,7 @@ _EnD_oF_dEf_TeXt_;
       enum-mem-enum = { enum-name = T_MULTIPLICATION; };
       enum-mem-enum = { enum-name = T_DIVISION; };
       enum-mem-enum = { enum-name = T_EOF; };
-      enum-mem-desc-file = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+      enum-mem-desc-file = '/home/kopi/GitHub/Emath/src/interface.cpp';
       enum-mem-desc-line = '644';
       enum-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Enum with all the possible Token types.
@@ -20903,7 +20903,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* enum-member */
     };
-  ns-filename  = '/home/kopi/GitHub/EMath++/src/interface.cpp';
+  ns-filename  = '/home/kopi/GitHub/Emath/src/interface.cpp';
   ns-fileline  = '28';
   ns-briefdesc = <<_EnD_oF_dEf_TeXt_
 Englobes all the classes and functions of the emath text user interface.
@@ -20915,7 +20915,7 @@ _EnD_oF_dEf_TeXt_;
   namespace = {
     ns-id   = 'namespaceemth';
     ns-name = 'emth';
-  ns-filename  = '/home/kopi/GitHub/EMath++/include/emath.h';
+  ns-filename  = '/home/kopi/GitHub/Emath/include/emath.h';
   ns-fileline  = '161';
   ns-briefdesc = <<_EnD_oF_dEf_TeXt_
 Englobes all the classes and functions of the emath library.
@@ -20940,7 +20940,7 @@ _EnD_oF_dEf_TeXt_;
       enum-mem-enum = { enum-name = T_VARIABLE; };
       enum-mem-enum = { enum-name = T_EXPONENT; };
       enum-mem-enum = { enum-name = T_EOF; };
-      enum-mem-desc-file = '/home/kopi/GitHub/EMath++/include/eparser.h';
+      enum-mem-desc-file = '/home/kopi/GitHub/Emath/include/eparser.h';
       enum-mem-desc-line = '24';
       enum-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Enum with all the possible Token types.
@@ -20950,7 +20950,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
     }; /* enum-member */
     };
-  ns-filename  = '/home/kopi/GitHub/EMath++/include/eparser.h';
+  ns-filename  = '/home/kopi/GitHub/Emath/include/eparser.h';
   ns-fileline  = '15';
   ns-briefdesc = <<_EnD_oF_dEf_TeXt_
 Englobes all the classes and functions of the parser.

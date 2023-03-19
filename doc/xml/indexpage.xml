@@ -18,8 +18,8 @@ Any feedback is much appreciated!</para>
 <title>Library Installation</title>
 <para>The project comes with a folder with some bash files that complete some Meson related tasks.<linebreak/>
 All bash files must be executed from the project&apos;s root directory to work properly.<linebreak/>
-To install the project, there is only need to execute two of them files.<linebreak/>
-Once installed just include the <ref refid="emath_8h" kindref="compound">emath.h</ref> or <ref refid="eparser_8h" kindref="compound">eparser.h</ref> header files in your code respectively and link them with their implementation.</para>
+To install the project, it is only necessary to execute two files.<linebreak/>
+Once installed, just include the <ref refid="emath_8h" kindref="compound">emath.h</ref> or <ref refid="eparser_8h" kindref="compound">eparser.h</ref> header files in your code as needed, and link them with their implementation.</para>
 <sect2 id="index_1step1">
 <title>Step one: Setup the Project</title>
 <para>To setup the Meson project run the setup.sh bash file: <programlisting><codeline><highlight class="normal">bash<sp/>./scripts/setup.sh</highlight></codeline>
